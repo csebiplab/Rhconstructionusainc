@@ -57,7 +57,7 @@ const Home = () => {
                   <img
                     src={item.img}
                     alt=""
-                    className="max-w-sm w-full hidden md:visible"
+                    className="w-full hidden md:block"
                   />
                 </div>
               </div>

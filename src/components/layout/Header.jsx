@@ -188,7 +188,7 @@ function NavList() {
         href="/about"
         variant="small"
         color="blue-gray"
-        className="font-normal"
+        className="font-normal text-lg"
       >
         <ListItem className="flex items-center gap-2 py-2 pr-4">About</ListItem>
       </Typography>
@@ -197,9 +197,55 @@ function NavList() {
         href="/our-service"
         variant="small"
         color="blue-gray"
-        className="font-normal"
+        className="font-normal text-lg"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4">Our Service</ListItem>
+        <ListItem className="flex items-center gap-2 py-2 pr-4">
+          Our Service
+        </ListItem>
+      </Typography>
+      <Typography
+        as={Link}
+        href="/customer-reviews"
+        variant="small"
+        color="blue-gray"
+        className="font-normal text-lg"
+      >
+        <ListItem className="flex items-center gap-2 py-2 pr-4">
+          Reviews
+        </ListItem>
+      </Typography>
+      <Typography
+        as={Link}
+        href="/blogs"
+        variant="small"
+        color="blue-gray"
+        className="font-normal text-lg"
+      >
+        <ListItem className="flex items-center gap-2 py-2 pr-4">
+          Blogs
+        </ListItem>
+      </Typography>
+      <Typography
+        as={Link}
+        href="/notice"
+        variant="small"
+        color="blue-gray"
+        className="font-normal text-lg"
+      >
+        <ListItem className="flex items-center gap-2 py-2 pr-4">
+          🔔 Notice
+        </ListItem>
+      </Typography>
+      <Typography
+        as={Link}
+        href="/contact-us"
+        variant="normal"
+        color="blue-gray"
+        className="font-normal text-lg"
+      >
+        <ListItem className="flex items-center gap-2 py-2 pr-4">
+          Contact US
+        </ListItem>
       </Typography>
       <NavListMenu />
       <Typography
@@ -246,11 +292,12 @@ export function Header() {
       </div>
       <Navbar className="mx-auto px-4 py-2 shadow-none">
         <div className="flex items-center justify-between text-blue-gray-900">
-          <Link
-            href="/"
-            className="mr-4 cursor-pointer py-1.5 lg:ml-2"
-          >
-            <img src="/assets/images/logo.webp" alt="" className="w-full max-w-[140px] rounded-md " />
+          <Link href="/" className="mr-4 cursor-pointer py-1.5 lg:ml-2">
+            <img
+              src="/assets/images/logo.webp"
+              alt=""
+              className="w-full max-w-[140px] rounded-md "
+            />
           </Link>
           <div className="hidden lg:block">
             <NavList />
