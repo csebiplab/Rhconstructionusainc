@@ -29,6 +29,7 @@ import {
   Typography,
 } from "@material-tailwind/react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 import { HiMailOpen } from "react-icons/hi";
 
@@ -265,8 +266,8 @@ function NavList() {
 }
 
 export function Header() {
+  const pathname = usePathname();
   const [openNav, setOpenNav] = React.useState(false);
-
   React.useEffect(() => {
     window.addEventListener(
       "resize",
@@ -274,6 +275,7 @@ export function Header() {
     );
   }, []);
 
+  if(pathname.startsWith('/admin')) return null;
   return (
     <header>
       <div className="container flex justify-end items-center py-1 flex-wrap gap-2">

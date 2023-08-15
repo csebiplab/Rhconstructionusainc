@@ -17,6 +17,9 @@
   .container{
     @apply max-w-7xl px-3 mx-auto;
   }
+  .container-fluid{
+    @apply w-full px-4 mx-auto;
+  }
 }
 
 @layer components{

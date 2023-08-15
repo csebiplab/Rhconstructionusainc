@@ -1,10 +1,13 @@
 "use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { FaMapMarkedAlt } from "react-icons/fa";
 import { HiMailOpen } from "react-icons/hi";
 import { MdOutlineAddIcCall } from "react-icons/md";
 
 const Footer = () => {
+  const pathname = usePathname();
+  if(pathname.startsWith('/admin')) return null;
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container">
