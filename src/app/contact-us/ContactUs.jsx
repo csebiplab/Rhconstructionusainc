@@ -1,14 +1,43 @@
 "use client";
 
 import PageHeader from "@/components/common/PageHeader";
+import API from "@/config/API.config";
+import { errorMessage } from "@/libs/utils";
 import { Button, Input, Textarea } from "@material-tailwind/react";
+import { useState } from "react";
+import { useForm } from "react-hook-form";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { CgWebsite } from "react-icons/cg";
 import { GrMapLocation } from "react-icons/gr";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { IoSend } from "react-icons/io5";
+import Swal from "sweetalert2";
 
 const ContactUs = () => {
+  const { handleSubmit, register, reset } = useForm();
+  const [loading, setLoading] = useState(false);
+
+  async function onSubmit(data) {
+    try {
+      setLoading(true);
+      await API.post("/contact-us", data);
+      reset();
+      Swal.fire({
+        title: "Thank you.",
+        text: "We will contact with you as soon as possible.",
+        icon: "success",
+      });
+    } catch (error) {
+      Swal.fire({
+        title: "Failed",
+        text: errorMessage(error),
+        icon: "error",
+      });
+    }finally{
+      setLoading(false);
+    }
+  }
+
   return (
     <>
       <PageHeader
@@ -25,27 +54,68 @@ const ContactUs = () => {
             <h2 className="mb-3">
               GET IN <span className="text-primary">TOUCH</span>
             </h2>
-            <form>
+            <form onSubmit={handleSubmit(onSubmit)}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
-                <Input variant="standard" label="First Name" />
-                <Input variant="standard" label="Last Name" />
+                <Input
+                  variant="standard"
+                  label="First Name"
+                  {...register("first_name", { required: true })}
+                />
+                <Input
+                  variant="standard"
+                  label="Last Name"
+                  {...register("last_name", { required: true })}
+                />
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
-                <Input variant="standard" label="Email" />
-                <Input variant="standard" label="Service" />
+                <Input
+                  variant="standard"
+                  label="Email"
+                  {...register("email", { required: true })}
+                />
+                <Input
+                  variant="standard"
+                  label="Service"
+                  {...register("service", { required: true })}
+                />
               </div>
-              <Input variant="standard" label="Phone Number" className="mb-4" />
+              <Input
+                variant="standard"
+                label="Phone Number"
+                className="mb-4"
+                {...register("phone", { required: true })}
+              />
               <br />
-              <Textarea size="md" variant="standard" label="Your Message" />
+              <Textarea
+                size="md"
+                variant="standard"
+                label="Your Message"
+                {...register("message", { required: true })}
+              />
               <br />
-              <Button
-                variant="filled"
-                color="amber"
-                size="lg"
-                className="flex items-center gap-2"
-              >
-                <IoSend /> SEND
-              </Button>
+              <div className="flex gap-2 flex-wrap">
+                <Button
+                  type="submit"
+                  variant="filled"
+                  color="amber"
+                  size="lg"
+                  disabled={loading}
+                  className="flex items-center gap-2"
+                >
+                  <IoSend /> SEND
+                </Button>
+                <Button
+                  onClick={reset}
+                  type="reset"
+                  variant="text"
+                  color="red"
+                  size="lg"
+                  disabled={loading}
+                  className="flex items-center gap-2"
+                >
+                  Cancel
+                </Button>
+              </div>
             </form>
           </div>
           <div>
@@ -62,25 +132,25 @@ const ContactUs = () => {
             <h5 className="mb-2">Headquarters</h5>
             <div className="mt-3 text-lg">
               <address className="mb-1 font-sans flex gap-2 items-center">
-                <GrMapLocation /> 553 E 2nd St, Brooklyn, NY 11218
+                <GrMapLocation className="text-primary" /> 553 E 2nd St, Brooklyn, NY 11218
               </address>
               <a
                 href="tel:+1 (646) 683-4612"
                 className="flex text-blue-800 gap-2 items-center mb-1"
               >
-                <BsFillTelephoneFill /> +1 (646) 683-4612
+                <BsFillTelephoneFill className="text-primary" /> +1 (646) 683-4612
               </a>
               <a
                 href="mailto:rhconusa@gmail.com"
-                className="flex text-purple-800 gap-2 items-center mb-1"
+                className="flex text-blue-800 gap-2 items-center mb-1"
               >
-                <HiOutlineMailOpen /> rhconusa@gmail.com
+                <HiOutlineMailOpen className="text-primary" /> rhconusa@gmail.com
               </a>
               <a
                 href="https://www.rhconstructionusa.com/"
-                className="flex text-green-800 gap-2 items-center mb-1"
+                className="flex text-blue-800 gap-2 items-center mb-1"
               >
-                <CgWebsite /> www.rhconstructionusa.com
+                <CgWebsite className="text-primary" /> www.rhconstructionusa.com
               </a>
             </div>
           </div>

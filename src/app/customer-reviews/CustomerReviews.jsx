@@ -1,5 +1,7 @@
 "use client";
 import PageHeader from "@/components/common/PageHeader";
+import API from "@/config/API.config";
+import { errorMessage } from "@/libs/utils";
 import {
   Button,
   Input,
@@ -7,12 +9,74 @@ import {
   Textarea,
   Typography,
 } from "@material-tailwind/react";
+import { useState } from "react";
+import Swal from "sweetalert2";
 import "swiper/css";
 import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import useSwr from "swr";
+
+const DEFAULT_VAL = {
+  name: "",
+  summary: "",
+  review: "",
+  rating: 0,
+};
 
 const CustomerReviews = () => {
+  const {
+    data: reviews,
+    error,
+    isLoading,
+  } = useSwr("/reviews", async (url) => {
+    try {
+      const { data } = await API?.get(url);
+      return data;
+    } catch (error) {
+      throw errorMessage(error);
+    }
+  });
+
+  const [loading, setLoading] = useState(false);
+  const [formData, setFormData] = useState(DEFAULT_VAL);
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    let valid = true;
+    Object.keys(formData).forEach((key) => {
+      if (!formData[key]) {
+        Swal.fire({
+          title: `Invalid '${key}' value`,
+          icon: "error",
+        });
+        valid = false;
+        return;
+      }
+    });
+    if (valid) {
+      try {
+        setLoading(true);
+        await API.post("/reviews", formData);
+        Swal.fire({
+          title: "Thank You.",
+          icon: "success",
+        });
+      } catch (error) {
+        Swal.fire({
+          title: "Try again",
+          icon: "error",
+          text: errorMessage(error),
+        });
+      } finally {
+        setLoading(false);
+      }
+    }
+  };
+
+  const handleChange = (key, value) => {
+    setFormData((prevData) => ({ ...prevData, [key]: value }));
+  };
+
   return (
     <>
       <PageHeader
@@ -64,12 +128,12 @@ const CustomerReviews = () => {
         </div>
       </section>
 
-      <section className="bg-gray-100">
+      {!!reviews?.length ? <section className="bg-gray-100">
         <div className="container py-20">
           <h1 className="mb-4">
             WHAT OUR <span className="text-primary">CLIENT SAYS</span>
           </h1>
-          <Swiper
+          {!!reviews?.length? <Swiper
             spaceBetween={10}
             breakpoints={{
               100: {
@@ -85,30 +149,28 @@ const CustomerReviews = () => {
             autoplay
             modules={[Autoplay]}
           >
-            {[...Array(5)].map((item, index) => (
+            {(reviews||[])?.map((item, index) => (
               <SwiperSlide className="me-3 bg-white">
                 <figure className="flex gap-4 flex-col md:flex-row">
                   <div className="h-40  min-w-[10rem] bg-primary p-3 flex flex-col justify-center items-center text-white">
                     <h3 className="italic">Reviews</h3>
-                    <Rating value={4} readonly ratedColor="white" />
+                    <Rating value={Number(item?.rating)} readonly ratedColor="white" />
                   </div>
                   <div className="py-2">
-                    <p className="text-lg mb-1 italic">Mark Joseph</p>
+                    <p className="text-lg mb-1 italic">{item?.name}</p>
                     <p className="text-primary mb-2 italic">
                       Satisfied Customer
                     </p>
                     <p className="text-secondary line-clamp-3">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Et nemo necessitatibus nostrum deleniti facere corrupti
-                      eius ipsa. Et architecto.
+                      {item?.summary || item?.review}
                     </p>
                   </div>
                 </figure>
               </SwiperSlide>
             ))}
-          </Swiper>
+          </Swiper>:null}
         </div>
-      </section>
+      </section>:null}
 
       <section>
         <div className="container py-20">
@@ -118,10 +180,23 @@ const CustomerReviews = () => {
                 LEAVE <span className="text-primary">YOUR RATING</span>
               </h2>
             </div>
-            <form>
+            <form onSubmit={handleSubmit}>
+              <label className="mb-3">
+                <p className="text-gray-800 mb-1">Name</p>
+                <Input
+                  value={formData.name}
+                  onChange={(e) => handleChange("name", e?.target?.value)}
+                  variant="outlined"
+                  className="mb-3"
+                  label="Your Name"
+                />
+              </label>
+              <br />
               <label className="mb-3">
                 <p className="text-gray-800 mb-1">Summary</p>
                 <Input
+                  value={formData.summary}
+                  onChange={(e) => handleChange("summary", e?.target?.value)}
                   variant="outlined"
                   className="mb-3"
                   label="Review Summary"
@@ -130,12 +205,21 @@ const CustomerReviews = () => {
               <br />
               <label className="mb-3">
                 <p className="text-gray-800 mb-1">Review</p>
-                <Textarea size="md" label="Review" className="mb-3" />
+                <Textarea
+                  size="md"
+                  name="review"
+                  value={formData.review}
+                  onChange={(e) => handleChange("review", e?.target?.value)}
+                  label="Review"
+                  className="mb-3"
+                />
               </label>
               <label className="mb-3">
                 <p className="text-gray-800 mb-1">Rating</p>
                 <Rating
-                  value={0}
+                  name="rating"
+                  value={formData.rating}
+                  onChange={(e) => handleChange("rating", e)}
                   ratedColor="amber"
                   className="mb-6 text-4xl"
                 />
@@ -146,14 +230,17 @@ const CustomerReviews = () => {
                   variant="gradient"
                   color="amber"
                   className="flex-grow text-center"
+                  disabled={loading || !Object.values(formData).every(e=>!!e)}
                 >
-                  SUBMIT
+                  {loading ? `Loading` : `SUBMIT`}
                 </Button>
                 <Button
-                  type="submit"
+                  onClick={() => setFormData(DEFAULT_VAL)}
+                  type="reset"
                   variant="text"
                   color="red"
                   className="flex-grow text-center"
+                  disabled={loading}
                 >
                   CANCEL
                 </Button>
