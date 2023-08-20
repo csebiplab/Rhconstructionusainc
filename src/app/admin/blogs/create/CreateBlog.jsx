@@ -3,42 +3,13 @@
 import API from "@/config/API.config";
 import { errorMessage } from "@/libs/utils";
 import { Button, Input, Spinner, Textarea } from "@material-tailwind/react";
-import dynamic from "next/dynamic";
 import { useRouter } from "next/navigation";
+import "quill-image-uploader/dist/quill.imageUploader.min.css";
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import "react-quill/dist/quill.snow.css"; // Import Quill's styles
 import Swal from "sweetalert2";
-const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
-
-const modules = {
-  toolbar: [
-    [{ header: "1" }, { header: "2" }, { font: [] }],
-    [{ list: "ordered" }, { list: "bullet" }],
-    ["bold", "italic", "underline", "strike", "blockquote"],
-    [{ color: [] }, { background: [] }],
-    [{ align: [] }],
-    ["link", "image"],
-    ["clean"],
-  ],
-};
-
-const formats = [
-  "header",
-  "font",
-  "list",
-  "bold",
-  "italic",
-  "underline",
-  "strike",
-  "blockquote",
-  "color",
-  "background",
-  "align",
-  "link",
-  "image",
-];
-
+import Editor from "./Editor";
 const CreateBlog = ({ blog = {} }) => {
   const {
     register,
@@ -50,7 +21,6 @@ const CreateBlog = ({ blog = {} }) => {
     defaultValues: {
       title: blog?.title,
       keywords: blog?.keywords,
-      banner:  blog?.banner,
     },
   });
   const [loading, setLoading] = useState(false);
@@ -59,12 +29,18 @@ const CreateBlog = ({ blog = {} }) => {
   const [slug, setSlug] = useState("");
   const handleSlug = (e) => setSlug(e.target.value);
   const handleDescription = (e) => setDescription(e.target.value);
-  const router= useRouter();
-
+  const router = useRouter();
   async function onSubmit(data) {
     data = { slug, blog: content, description, ...data };
     if (!slug || !data.blog) return;
     try {
+      const formData = new FormData();
+      blog?.id ? null : formData.append("banner", data?.banner[0]);
+      formData.append("title", data?.title);
+      formData.append("slug", data?.slug);
+      formData.append("keywords", data?.keywords);
+      formData.append("description", data?.description);
+      formData.append("blog", content);
       const { isConfirmed } = await Swal.fire({
         title: "Wanna publish?",
         text: 'If you wanna publish then press "Ok"',
@@ -73,9 +49,10 @@ const CreateBlog = ({ blog = {} }) => {
       });
       if (!isConfirmed) return;
       setLoading(true);
-      data.banner = "/pic";
-      console.log(blog)
-      const result = blog?.id? await API.patch(`/blogs/${blog?.id}`, data) : await API.post("/blogs", data);
+      console.log(blog);
+      const result = blog?.id
+        ? await API.patch(`/blogs/${blog?.id}`, formData)
+        : await API.post("/blogs", formData);
       Swal.fire({
         title: "Published",
       });
@@ -101,11 +78,11 @@ const CreateBlog = ({ blog = {} }) => {
     setSlug(encodeURI(slug));
   }, [watch("title")]);
 
-  useEffect(()=>{
+  useEffect(() => {
     setContent(blog?.blog);
     setSlug(blog?.slug);
     setDescription(blog?.description);
-  },[blog?.id])
+  }, [blog?.id]);
 
   return (
     <main className="relative">
@@ -165,24 +142,22 @@ const CreateBlog = ({ blog = {} }) => {
                 type="text"
               />
             </div>
-            <div className="mb-4">
-              <Input
-                variant="standard"
-                multiple={false}
-                accept="image/*"
-                {...register("banner", { required: true })}
-                label={`Banner Image`}
-                name="banner"
-                type="file"
-              />
-            </div>
-            <ReactQuill
-              placeholder="Edit your post here."
-              className="rounded-md shadow-lg border-2 border-gray-600 overflow-hidden min-h-[200px] my-5"
-              value={content}
-              onChange={setContent}
-              modules={modules}
-              formats={formats}
+            {!blog?.id && (
+              <div className="mb-4">
+                <Input
+                  variant="standard"
+                  multiple={false}
+                  accept="image/*"
+                  {...register("banner", { required: true })}
+                  label={`Banner Image`}
+                  name="banner"
+                  type="file"
+                />
+              </div>
+            )}
+            <Editor
+              value={content || "<div></div>"}
+              onChange={(val) => setContent(val)}
             />
             <div className="my-10 flex gap-2 flex-wrap justify-end">
               <Button variant="filled" color="red" type="reset">
@@ -192,9 +167,7 @@ const CreateBlog = ({ blog = {} }) => {
                 PUBLISH
               </Button>
             </div>
-            <pre>
-              {JSON.stringify({blog},null,2)}
-            </pre>
+            <pre>content:{content}</pre>
           </form>
         </div>
       </div>

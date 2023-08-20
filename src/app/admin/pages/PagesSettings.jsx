@@ -1,5 +1,7 @@
 "use client";
 import { Typography } from "@material-tailwind/react";
+import PageForm from "./Form";
+import { useState } from "react";
 
 const TABLE_HEAD = ["Title", "Keyword", "Description", ""];
 
@@ -32,6 +34,10 @@ const TABLE_ROWS = [
 ];
 
 const PagesSettings = () => {
+  const [edit,setEdit]=useState(null);
+  const handleClose=()=>setEdit(null);
+  const handleOpen=(data)=>setEdit(data);
+
   return (
     <>
       <section>
@@ -117,6 +123,9 @@ const PagesSettings = () => {
           </table>
         </div>
       </section>
+
+      {/* MODAL */}
+      <PageForm open={true} />
     </>
   );
 };

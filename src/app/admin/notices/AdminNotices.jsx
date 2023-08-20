@@ -3,22 +3,21 @@ import API from "@/config/API.config";
 import { errorMessage } from "@/libs/utils";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import {
-    DocumentPlusIcon,
-    PencilIcon,
-    TrashIcon,
+  DocumentPlusIcon,
+  TrashIcon
 } from "@heroicons/react/24/solid";
 import {
-    Alert,
-    Button,
-    Card,
-    CardBody,
-    CardFooter,
-    CardHeader,
-    IconButton,
-    Input,
-    Spinner,
-    Tooltip,
-    Typography,
+  Alert,
+  Button,
+  Card,
+  CardBody,
+  CardFooter,
+  CardHeader,
+  IconButton,
+  Input,
+  Spinner,
+  Tooltip,
+  Typography,
 } from "@material-tailwind/react";
 import Link from "next/link";
 import Swal from "sweetalert2";
@@ -159,11 +158,6 @@ export default function() {
                           </div>
                         </td>
                         <td className={`${classes} gap-1 flex flex-wrap`}>
-                          <Tooltip content="Edit">
-                            <IconButton variant="filled" color="gray">
-                              <PencilIcon className="h-4 w-4" />
-                            </IconButton>
-                          </Tooltip>
                           <Tooltip content="Delete">
                             <IconButton
                               variant="filled"

@@ -6,8 +6,8 @@ import useSwr from "swr";
 import CreateBlog from "../create/CreateBlog";
 
 export default function ({ params }) {
-  const { data, error, isLoading } = useSwr(
-    `/blogs/${params?.id}`,
+  const { data, error, isLoading,mutate } = useSwr(
+    `/blogs/${params?.id}?v=${new Date()}`,
     async (api_end_point) => {
       try {
         const {data} = await API.get(api_end_point);
@@ -16,7 +16,8 @@ export default function ({ params }) {
         throw errorMessage(error);
       }
     }
-  );
+  ,{ refreshInterval: 500 });
+
   if (isLoading)
     return (
       <div className="absolute top-0 left-0 z-50 h-full w-full bg-black/30 backdrop-blur-sm backdrop-saturate-150 flex justify-center items-center">
