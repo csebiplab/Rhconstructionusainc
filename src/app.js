@@ -7,6 +7,8 @@ const BlogRouter = require("./routers/blog.router");
 const ReviewRouter = require("./routers/review.router");
 const ContactUsRouter = require("./routers/contactUs.router");
 const NoticeRouter = require("./routers/notice.router");
+const path= require('path');
+const uploadRouter = require("./routers/upload.router");
 
 const app = express();
 const root = new express.Router();
@@ -18,7 +20,7 @@ app.use([
   morgan(":method :url :status :res[content-length] - :response-time ms"),
   connectDB,
 ]);
-
+app.use('/public', express.static(path.join(__dirname,'../', 'public')));
 app.use("/api", root);
 app.get("/", (req, res) => res.send("<h2>RH construction.</h2>"));
 root.get("/", (req, res) => res.send("<h2>RH construction.</h2>"));
@@ -27,6 +29,7 @@ root.use('/blogs',BlogRouter);
 root.use('/reviews', ReviewRouter);
 root.use('/contact-us', ContactUsRouter);
 root.use('/notices', NoticeRouter);
+root.use('/upload', uploadRouter);
 
 
 module.exports=app;

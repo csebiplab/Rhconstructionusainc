@@ -6,12 +6,13 @@ const obj = {};
 
 obj.createBlog = async function (req, res, next) {
   try {
-    if (!req.body) throw createHttpError(400, "Invalid request.");
-    const { id, ...data } = req?.body;
+    console.log(req.file)
+    const banner = req.file ? req.file.path : "";
+    const data= req?.body;
     const newBlog = await Blog.create({
       title: data.title,
       slug: data.slug,
-      banner: data.banner,
+      banner: banner,
       keywords: data.keywords,
       description: data.description,
       blog: data.blog,
@@ -26,10 +27,9 @@ obj.createBlog = async function (req, res, next) {
 
 obj.getBlog = async function (req, res, next) {
   try {
-    
-    let { query, page=1, limit=10, orderBy } = req.query;
-    page= Math.abs(page);
-    limit= Math.abs(limit);
+    let { query, page = 1, limit = 10, orderBy } = req.query;
+    page = Math.abs(page);
+    limit = Math.abs(limit);
     const whereClause = {};
     if (query) {
       whereClause.title = { [Op.like]: `%${query}%` };
@@ -41,7 +41,7 @@ obj.getBlog = async function (req, res, next) {
       where: whereClause,
       limit: parseInt(limit),
       offset: offset,
-      order: orderBy ? [orderBy.split(":")] : [["createdAt", "DESC"]]
+      order: orderBy ? [orderBy.split(":")] : [["createdAt", "DESC"]],
     });
 
     const totalCount = await Blog.count({ where: whereClause });
@@ -51,7 +51,7 @@ obj.getBlog = async function (req, res, next) {
       pages: Math.abs(totalPages),
       currentPage: Math.abs(parseInt(page)),
       limit: Math.abs(parseInt(limit)),
-      data: blogs
+      data: blogs,
     });
   } catch (error) {
     res.status(500).json({
@@ -85,7 +85,7 @@ obj.updateBlog = async function (req, res, next) {
     const blog = await Blog.findByPk(blogId);
     if (!blog) throw createHttpError(404, "Blog not found.");
     const { slug, ...data } = req.body;
-    console.log(data)
+    console.log(data);
     const result = await blog.update(data);
     res.status(200).json(result);
   } catch (error) {
