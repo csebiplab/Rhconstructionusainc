@@ -1,36 +1,41 @@
 "use client";
+import firebase_app from "@/config/firebase";
+import { errorMessage } from "@/libs/utils";
 import {
-    ArrowTrendingUpIcon,
-    Bars2Icon,
-    ChevronDownIcon,
-    Cog6ToothIcon,
-    InboxArrowDownIcon,
-    LifebuoyIcon,
-    PowerIcon,
-    PresentationChartBarIcon,
-    RocketLaunchIcon,
-    Square3Stack3DIcon,
-    UserCircleIcon
+  ArrowTrendingUpIcon,
+  Bars2Icon,
+  ChevronDownIcon,
+  Cog6ToothIcon,
+  InboxArrowDownIcon,
+  LifebuoyIcon,
+  PowerIcon,
+  PresentationChartBarIcon,
+  RocketLaunchIcon,
+  Square3Stack3DIcon,
+  UserCircleIcon,
 } from "@heroicons/react/24/outline";
 import {
-    Avatar,
-    Button,
-    Card,
-    Drawer,
-    IconButton,
-    List,
-    ListItem,
-    ListItemPrefix,
-    Menu,
-    MenuHandler,
-    MenuItem,
-    MenuList,
-    Navbar,
-    Typography
+  Avatar,
+  Button,
+  Card,
+  Drawer,
+  IconButton,
+  List,
+  ListItem,
+  ListItemPrefix,
+  Menu,
+  MenuHandler,
+  MenuItem,
+  MenuList,
+  Navbar,
+  Typography,
 } from "@material-tailwind/react";
+import { getAuth, signOut } from "firebase/auth";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
+import Swal from "sweetalert2";
+import { AuthContext } from "./provider/AuthProvider";
 
 // profile menu component
 const profileMenuItems = [
@@ -58,8 +63,30 @@ const profileMenuItems = [
 
 function ProfileMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-
+  const {user}=useContext(AuthContext);
   const closeMenu = () => setIsMenuOpen(false);
+
+  const onSignOut = async ()=>{
+    try {
+      const {isConfirmed}= await Swal.fire({
+        title:'Do you want to sign out?',
+        icon:'question',
+        showConfirmButton:true,
+        confirmButtonText:"Yes",
+        showCancelButton:true,
+        cancelButtonText:"No",
+      })
+      if(isConfirmed){
+       await signOut(getAuth(firebase_app))
+      }
+    } catch (error) {
+      Swal.fire({
+        title:"Faild",
+        text:errorMessage(error),
+        icon:"error"
+      })
+    }
+  }
 
   return (
     <Menu open={isMenuOpen} handler={setIsMenuOpen} placement="bottom-end">
@@ -69,13 +96,15 @@ function ProfileMenu() {
           color="blue-gray"
           className="flex items-center gap-1 rounded-full py-0.5 pr-2 pl-0.5 lg:ml-auto"
         >
-          <Avatar
+          {user?.photoURL?(
+            <Avatar
             variant="circular"
             size="sm"
             alt="tania andrew"
             className="border border-gray-900 p-0.5"
-            src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
+            src={user?.photoURL}
           />
+          ):<UserCircleIcon className="h-10 w-10" />}
           <ChevronDownIcon
             strokeWidth={2.5}
             className={`h-3 w-3 transition-transform ${
@@ -85,7 +114,42 @@ function ProfileMenu() {
         </Button>
       </MenuHandler>
       <MenuList className="p-1">
-        {profileMenuItems.map(({ label, icon }, key) => {
+        <MenuItem
+          onClick={closeMenu}
+          className={`flex items-center gap-2 rounded`}
+        >
+          <UserCircleIcon className="h-4 w-4" />
+          <div>
+          <Typography as="span" className="text-[12px] font-normal">
+            {user?.displayName}
+          </Typography>
+          <Typography as="span" className="text-[10px] font-normal">
+            {user?.email}
+          </Typography>
+          </div>
+        </MenuItem>
+        <MenuItem
+          onClick={closeMenu}
+          className={`flex items-center gap-2 rounded`}
+        >
+          <Cog6ToothIcon className="h-4 w-4" />
+          <Typography as="span" variant="small" className="font-normal">
+            ADMIN
+          </Typography>
+        </MenuItem>
+        <MenuItem
+          onClick={()=>{
+            onSignOut();
+            closeMenu();
+          }}
+          className={`flex items-center gap-2 rounded bg-red-100`}
+        >
+          <PowerIcon className="h-4 w-4 text-red-700" />
+          <Typography as="span" variant="small" className="font-normal text-red-700">
+            LOG OUT
+          </Typography>
+        </MenuItem>
+        {/* {profileMenuItems.map(({ label, icon }, key) => {
           const isLastItem = key === profileMenuItems.length - 1;
           return (
             <MenuItem
@@ -111,7 +175,7 @@ function ProfileMenu() {
               </Typography>
             </MenuItem>
           );
-        })}
+        })} */}
       </MenuList>
     </Menu>
   );
@@ -207,6 +271,11 @@ export function AdminHeader() {
   useEffect(() => {
     setIsNavOpen(false);
   }, [pathname]);
+
+  const hide_on = ["/admin/signin", "/admin/signup"];
+  for (const path of hide_on) {
+    if (pathname.includes(path)) return null;
+  }
 
   return (
     <>
