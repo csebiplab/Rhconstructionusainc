@@ -1,5 +1,6 @@
 const { Router } = require("express");
 const reviewController = require("../controllers/review.controllers");
+const { forAdmin, decodeToken } = require("../middlewares/auth.middleware");
 
 const ReviewRouter = new Router();
 
@@ -10,7 +11,7 @@ ReviewRouter
 ReviewRouter
   .route("/:id")
   .get(reviewController.getReviewById)
-  .patch(reviewController.updateReview)
-  .delete(reviewController.deleteReview);
+  .patch(decodeToken,forAdmin,reviewController.updateReview)
+  .delete(decodeToken,forAdmin,reviewController.deleteReview);
 
 module.exports = ReviewRouter;

@@ -3,6 +3,7 @@ const { development } = require("./config")
 
 const sequelize = new Sequelize({
     ...development,
+    logging:false,
     dialect:"mysql"
 })
 

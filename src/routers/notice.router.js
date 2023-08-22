@@ -1,5 +1,6 @@
 const { Router } = require("express");
 const noticeController = require("../controllers/notice.controllers");
+const { forAdmin, decodeToken } = require("../middlewares/auth.middleware");
 
 const NoticeRouter = new Router();
 
@@ -10,7 +11,7 @@ NoticeRouter
 NoticeRouter
   .route("/:id")
   .get(noticeController.getNoticeById)
-  .patch(noticeController.updateNotice)
-  .delete(noticeController.deleteNotice);
+  .patch(decodeToken,forAdmin,noticeController.updateNotice)
+  .delete(decodeToken,forAdmin,noticeController.deleteNotice);
 
 module.exports = NoticeRouter;
