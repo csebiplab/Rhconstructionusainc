@@ -6,7 +6,6 @@ const obj = {};
 
 obj.createBlog = async function (req, res, next) {
   try {
-    console.log(req.file)
     const banner = req.file ? req.file.path : "";
     const data= req?.body;
     const newBlog = await Blog.create({
@@ -34,14 +33,12 @@ obj.getBlog = async function (req, res, next) {
     if (query) {
       whereClause.title = { [Op.like]: `%${query}%` };
     }
-
     const offset = (page - 1) * Math.abs(limit);
-
     const blogs = await Blog.findAll({
       where: whereClause,
       limit: parseInt(limit),
       offset: offset,
-      order: orderBy ? [orderBy.split(":")] : [["createdAt", "DESC"]],
+      order: orderBy ? [orderBy.split(":")] : [["updatedAt", "DESC"]],
     });
 
     const totalCount = await Blog.count({ where: whereClause });
