@@ -7,7 +7,10 @@ import 'sweetalert2/src/sweetalert2.scss'
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "% - RH Construction",
+  title: {
+    template: '%s | RH Construction',
+    default: 'RH Construction',
+  },
 };
 
 export default function RootLayout({ children }) {

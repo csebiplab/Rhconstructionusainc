@@ -10,6 +10,8 @@ import { useForm } from "react-hook-form";
 import "react-quill/dist/quill.snow.css"; // Import Quill's styles
 import Swal from "sweetalert2";
 import Editor from "./Editor";
+import { getAuth } from "firebase/auth";
+import firebase_app from "@/config/firebase";
 const CreateBlog = ({ blog = {} }) => {
   const {
     register,
@@ -51,8 +53,16 @@ const CreateBlog = ({ blog = {} }) => {
       setLoading(true);
       console.log(blog);
       const result = blog?.id
-        ? await API.patch(`/blogs/${blog?.id}`, formData)
-        : await API.post("/blogs", formData);
+        ? await API.patch(`/blogs/${blog?.id}`, formData, {
+            headers: {
+              Authorization: getAuth(firebase_app)?.currentUser?.accessToken,
+            },
+          })
+        : await API.post("/blogs", formData, {
+            headers: {
+              Authorization: getAuth(firebase_app)?.currentUser?.accessToken,
+            },
+          });
       Swal.fire({
         title: "Published",
       });

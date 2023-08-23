@@ -1,5 +1,7 @@
 "use client";
 import API from "@/config/API.config";
+import firebase_app from "@/config/firebase";
+import { getAuth } from "firebase/auth";
 import { useEffect, useState } from "react";
 import "react-quill/dist/quill.snow.css";
 import { useQuill } from "react-quilljs";
@@ -63,7 +65,7 @@ const Editor = ({ value, onChange }) => {
     formData.append("image", file);
     try {
       const response = await API.post("/upload", formData, {
-        headers: { "Content-Type": "multipart/form-data" },
+        headers: { "Content-Type": "multipart/form-data",Authorization:getAuth(firebase_app)?.currentUser?.accessToken },
       });
       const src = response.data.src;
       insertToEditor(src);

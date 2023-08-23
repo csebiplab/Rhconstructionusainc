@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+    width: 8px;
+    background: #00000020;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #00000080;
+}
+
 @layer base{
   h1,h2,h3,h4,h5,h6{
     @apply font-semibold;
@@ -12,6 +21,7 @@
   h4{@apply text-xl};
   h5{@apply text-lg};
 }
+
 
 @layer utilities{
   .container{

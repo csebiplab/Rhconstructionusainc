@@ -13,7 +13,7 @@ import { HiUserCircle } from "react-icons/hi";
 
 export function BlogCard({ data }) {
   return (
-    <Link href="/" className="block">
+    <Link href={`/blogs/${data?.id}`} className="block">
       <Card className="overflow-hidden rounded-md hover:shadow-lg shadow-black/20 duration-150">
         <CardHeader
           floated={false}
@@ -22,7 +22,7 @@ export function BlogCard({ data }) {
           className="m-0 rounded-none"
         >
           <img
-            src={data?.image}
+            src={`http://localhost:8080/${data?.banner}`}
             alt="Blog image"
             className="h-64 w-full object-cover object-center"
           />
