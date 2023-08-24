@@ -6,6 +6,7 @@ import {
   CardHeader,
   Typography,
 } from "@material-tailwind/react";
+import moment from "moment";
 import Link from "next/link";
 import { BiCommentDots } from "react-icons/bi";
 import { BsCalendar2Date } from "react-icons/bs";
@@ -31,17 +32,15 @@ export function BlogCard({ data }) {
           <div className="flex gap-2 flex-wrap items-center mb-2">
             <span className="inline-flex font-medium gap-1 py-1 px-2 justify-center items-center">
               <HiUserCircle className="" />
-              <span className="text-[10px]">Admin</span>
+              <span className="text-[12px]">Admin</span>
             </span>
             <span className="inline-flex font-medium gap-1 py-1 px-2 justify-center items-center">
               <BsCalendar2Date className="" />
-              <span className="text-[10px]">{data.date}</span>
+              <span className="text-[12px]">{moment(data?.createAt).format("DD MMM, YYYY")}</span>
             </span>
             <span className="inline-flex font-medium gap-1 py-1 px-2 justify-center items-center">
               <BiCommentDots className="" />
-              <span className="text-[10px]">{`${
-                data.comments || "No"
-              } comments`}</span>
+              <span className="text-[12px]">{`${data.comment_count || "No"} comments`}</span>
             </span>
           </div>
 

@@ -1,5 +1,6 @@
 "use client";
 import API from "@/config/API.config";
+import firebase_app from "@/config/firebase";
 import { errorMessage } from "@/libs/utils";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import {
@@ -19,6 +20,7 @@ import {
   Tooltip,
   Typography,
 } from "@material-tailwind/react";
+import { getAuth } from "firebase/auth";
 import Link from "next/link";
 import Swal from "sweetalert2";
 import useSwr from "swr";
@@ -44,7 +46,11 @@ export default function() {
         showCancelButton: true,
       });
       if (!isConfirmed) return;
-      await API.delete(`/notices/${id}`);
+      await API.delete(`/notices/${id}`,{
+        headers:{
+          Authorization:getAuth(firebase_app)?.currentUser?.accessToken
+        }
+      });
       Swal.fire({
         title: "Deleted",
         icon: "success",

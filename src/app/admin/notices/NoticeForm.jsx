@@ -1,8 +1,10 @@
 "use client";
 
 import API from "@/config/API.config";
+import firebase_app from "@/config/firebase";
 import { errorMessage } from "@/libs/utils";
 import { Button, Input } from "@material-tailwind/react";
+import { getAuth } from "firebase/auth";
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 import "react-quill/dist/quill.snow.css";
@@ -50,14 +52,30 @@ const NoticeForm = ({ notice: old_notice }) => {
     try {
       setLoading(true);
       old_notice?.id
-        ? await API.patch(`/notices/${old_notice?.id}`, { title, notice })
-        : await API.post(`/notices`, { title, notice });
+        ? await API.patch(
+            `/notices/${old_notice?.id}`,
+            { title, notice },
+            {
+              headers: {
+                Authorization: getAuth(firebase_app)?.currentUser?.accessToken,
+              },
+            }
+          )
+        : await API.post(
+            `/notices`,
+            { title, notice },
+            {
+              headers: {
+                Authorization: getAuth(firebase_app)?.currentUser?.accessToken,
+              },
+            }
+          );
       Swal.fire({
         title: !old_notice?.id ? "Created" : "Updated Notice",
         icon: "success",
       });
-      setTitle('')
-      setNotice('')
+      setTitle("");
+      setNotice("");
     } catch (error) {
       Swal.fire({
         title: "Failed",

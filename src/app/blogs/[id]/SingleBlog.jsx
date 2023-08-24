@@ -3,7 +3,24 @@
 import API from "@/config/API.config";
 import { errorMessage } from "@/libs/utils";
 import { ChatBubbleLeftIcon } from "@heroicons/react/24/solid";
-import { Alert, Button, Dialog, DialogBody, DialogFooter, DialogHeader, Input, Spinner, Textarea, Timeline, TimelineBody, TimelineConnector, TimelineHeader, TimelineIcon, TimelineItem, Typography } from "@material-tailwind/react";
+import {
+  Alert,
+  Button,
+  Dialog,
+  DialogBody,
+  DialogFooter,
+  DialogHeader,
+  Input,
+  Spinner,
+  Textarea,
+  Timeline,
+  TimelineBody,
+  TimelineConnector,
+  TimelineHeader,
+  TimelineIcon,
+  TimelineItem,
+  Typography,
+} from "@material-tailwind/react";
 import moment from "moment/moment";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
@@ -14,33 +31,59 @@ import Swal from "sweetalert2";
 import useSwr from "swr";
 
 const SingleBlog = ({ params }) => {
-  const { data, error, isLoading } = useSwr(params?.id, async (id) => {
-    try {
-      const { data } = await API.get(`/blogs/${id}`);
-      return data;
-    } catch (error) {
-      throw errorMessage(error);
+  const { data, error, isLoading } = useSwr(
+    params?.id,
+    async (id) => {
+      try {
+        const { data } = await API.get(`/blogs/${id}`);
+        return data;
+      } catch (error) {
+        throw errorMessage(error);
+      }
+    },
+    {
+      keepPreviousData: false,
     }
-  });
-  const [open_comments,setOpenComments]=useState(false);
-  
-
-  const {register,handleSubmit}= useForm();
-
-  async function onSubmit(data){
+  );
+  const {
+    data: comments,
+    error: comments_error,
+    isLoading: comment_loading,
+    mutate: mutate_comment,
+  } = useSwr(
+    {blog_id:params?.id},
+    async ({blog_id}) => {
+      try {
+        const { data } = await API.get(`/comments/${blog_id}`);
+        return data;
+      } catch (error) {
+        throw errorMessage(error);
+      }
+    },
+    {
+      keepPreviousData: false,
+    }
+  );
+  console.log({comments})
+  const [open_comments, setOpenComments] = useState(false);
+  const [commenting,setCommenting]=useState(false);
+  const { register, handleSubmit,reset } = useForm();
+  async function onSubmit(data) {
     try {
-        console.log(data);
-        return;
-        // const {data} = await API.post(`/comments/${params?.id}`,data);
+      setCommenting(true);
+      await API.post(`/comments/${params?.id}`,data);
+      Swal.fire({
+        title: "Success",
+        text: 'Successfully commented.',
+        icon: "success",
+      });
+      mutate_comment(comments);
+      reset();
     } catch (error) {
-        Swal.fire({
-            title:"Failed",
-            text: errorMessage(error),
-            icon:'error'
-        })
+    }finally{
+      setCommenting(false);
     }
   }
-
 
   if (isLoading) {
     return (
@@ -79,7 +122,7 @@ const SingleBlog = ({ params }) => {
           </div>
           <span className="inline-flex font-medium gap-1 py-1 px-2 justify-center items-center">
             <BiCommentDots className="" />
-            <span className="">{`comments`}</span>
+            <span className="">{`${comments?.length} comments`}</span>
           </span>
         </div>
         <fieldset className="border-2 border-black/70 bg-primary/5 rounded-md p-2">
@@ -105,7 +148,7 @@ const SingleBlog = ({ params }) => {
             variant="gradient"
             color="amber"
             className="flex gap-1 items-center"
-            onClick={()=>setOpenComments(true)}
+            onClick={() => setOpenComments(true)}
           >
             <BiCommentDots /> ALL COMMENTS
           </Button>
@@ -124,7 +167,7 @@ const SingleBlog = ({ params }) => {
               label="Email"
               required
               variant="standard"
-              className=""
+              className="md:col-span-2"
             />
             <Input
               {...register("website", { required: true })}
@@ -142,31 +185,49 @@ const SingleBlog = ({ params }) => {
             size="lg"
           />
           <br />
-          <Button type="submit" color="amber" variant="gradient">
-            Submit
+          <Button type="submit" color="amber" variant="gradient" disabled={commenting}>
+            {commenting?'Loading...':'Submit'}
           </Button>
-          <Button type="reset" color="red" variant="text">
+          <Button type="reset" color="red" variant="text" disabled={commenting}>
             Cancel
           </Button>
         </form>
       </div>
 
-      <Dialog open={open_comments} className="max-h-[80vh] flex flex-col overflow-auto">
+      <Dialog
+        open={open_comments}
+        className="max-h-[80vh] flex flex-col overflow-auto"
+      >
         <DialogHeader>Comments</DialogHeader>
         <DialogBody divider className="overflow-auto flex-grow">
           <Timeline>
-            {[...Array(10)].map((e, key,array) => (
+            {comment_loading && (
+              <div className="text-center">
+                <Spinner height={30} width={30} />
+              </div>
+            )}
+            {comments_error && (
+              <Alert variant="ghost" color="red">
+                {comments_error}
+              </Alert>
+            )}
+            {!comments?.length && (
+              <Alert variant="ghost" color="amber">
+                No comment yet now.
+              </Alert>
+            )}
+            {(comments||[])?.map((e, key, array) => (
               <TimelineItem key={key}>
-                {array.length !== key+1 && <TimelineConnector />}
+                {array.length !== key + 1 && <TimelineConnector />}
                 <TimelineHeader>
                   <TimelineIcon className="p-2">
                     <ChatBubbleLeftIcon className="h-5 w-5" />
                   </TimelineIcon>
                   <Typography variant="h5" color="blue-gray">
-                    Timeline Title Here.
+                    {e?.name}
                   </Typography>
                   <Typography variant="small" color="blue-gray">
-                    12 Aug, 2023
+                    {moment(e?.createdAt).format("DD MMM, YYYY")}
                   </Typography>
                 </TimelineHeader>
                 <TimelineBody className="pb-8">
@@ -174,11 +235,7 @@ const SingleBlog = ({ params }) => {
                     color="gary"
                     className="font-normal text-gray-600"
                   >
-                    The key to more success is to have a lot of pillows. Put it
-                    this way, it took me twenty five years to get these plants,
-                    twenty five years of blood sweat and tears, and I&apos;m
-                    never giving up, I&apos;m just getting started. I&apos;m up
-                    to something. Fan luv.
+                    {e?.comment}
                   </Typography>
                 </TimelineBody>
               </TimelineItem>
@@ -186,7 +243,11 @@ const SingleBlog = ({ params }) => {
           </Timeline>
         </DialogBody>
         <DialogFooter className="space-x-2">
-          <Button variant="outlined" color="red" onClick={()=>setOpenComments(false)}>
+          <Button
+            variant="outlined"
+            color="red"
+            onClick={() => setOpenComments(false)}
+          >
             close
           </Button>
         </DialogFooter>

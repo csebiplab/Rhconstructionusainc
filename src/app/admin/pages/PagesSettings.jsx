@@ -1,7 +1,10 @@
 "use client";
-import { Typography } from "@material-tailwind/react";
-import PageForm from "./Form";
+import API from "@/config/API.config";
+import { errorMessage } from "@/libs/utils";
+import { Alert, Button, Spinner, Typography } from "@material-tailwind/react";
 import { useState } from "react";
+import useSwr from 'swr';
+import PageForm from "./Form";
 
 const TABLE_HEAD = ["Title", "Keyword", "Description", ""];
 
@@ -34,20 +37,39 @@ const TABLE_ROWS = [
 ];
 
 const PagesSettings = () => {
-  const [edit,setEdit]=useState(null);
-  const handleClose=()=>setEdit(null);
-  const handleOpen=(data)=>setEdit(data);
+  const {data,isLoading,error,mutate}=useSwr('/pages',async(key)=>{
+    try {
+      const {data}= await API.get(key);
+      return data;
+    } catch (error) {
+      throw errorMessage(error);
+    }
+  })
+  const [editOrCreate,setEditOrCreate]=useState(null);
+  const handleClose=()=>setEditOrCreate(null);
+  const handleOpen=(data)=>setEditOrCreate(data);
 
+  if (isLoading) {
+    return (
+      <div className="h-screen w-full flex justify-center items-center ">
+        <Spinner height={30} width={30} />
+      </div>
+    );
+  }
   return (
     <>
       <section>
-        <div className="container-fluid pt-4">
+        <div className="container-fluid pt-4 flex gap-3 flex-wrap items-center justify-between">
           <h1>Pages Settings</h1>
+          <Button variant="gradient" color="blue" onClick={()=>setEditOrCreate(true)}>
+              CREATE
+          </Button>
         </div>
       </section>
 
       <section>
         <div className="container-fluid py-5">
+          {error && <Alert variant="ghost" color="red">{error}</Alert>}
           <table className="w-full min-w-max table-auto text-left">
             <thead>
               <tr>
@@ -68,8 +90,9 @@ const PagesSettings = () => {
               </tr>
             </thead>
             <tbody>
-              {TABLE_ROWS.map(({ title, keywords, description }, index) => {
-                const isLast = index === TABLE_ROWS.length - 1;
+              {data?.map((page, index,array) => {
+                const { title, keywords, description }=page;
+                const isLast = index === array.length - 1;
                 const classes = isLast
                   ? "p-4"
                   : "p-4 border-b border-blue-gray-50";
@@ -112,6 +135,7 @@ const PagesSettings = () => {
                         variant="small"
                         color="blue-gray"
                         className="font-medium"
+                        onClick={()=>setEditOrCreate(page)}
                       >
                         Edit
                       </Typography>
@@ -125,7 +149,7 @@ const PagesSettings = () => {
       </section>
 
       {/* MODAL */}
-      <PageForm open={true} />
+      <PageForm onSuccess={()=>mutate(data)} page={editOrCreate} open={!!editOrCreate} handleClose={()=>setEditOrCreate(null)} />
     </>
   );
 };
