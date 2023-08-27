@@ -1,53 +1,52 @@
-"use client";
+"use client"
 import API from "@/config/API.config";
 import firebase_app from "@/config/firebase";
 import { getAuth } from "firebase/auth";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import { Quill } from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import { useQuill } from "react-quilljs";
 
-const modules = {
-  toolbar: [
-    [{ header: "1" }, { header: "2" }, { font: [] }],
-    [{ list: "ordered" }, { list: "bullet" }],
-    ["bold", "italic", "underline", "strike", "blockquote"],
-    [{ color: [] }, { background: [] }],
-    [{ align: [] }],
-    ["link", "image"],
-    ["clean"],
-  ],
-};
+function handleVideoIframe(node, delta) {
+  var src = node.getAttribute("src");
+  if (src && src.match(/^(https?:)?\/\/(www\.)?(youtube\.com|youtu\.be)\//)) {
+    var videoId = src.match(
+      /(?:\/embed\/|\/watch\?v=|\/v\/|\/embed\?video_id=|youtu\.be\/|\/\d{1,2}\/|\/embed\/videoseries\?list=)([^#\&\?]{11})/
+    )[1];
+    var videoDelta = {
+      video: videoId,
+    };
+    delta.ops.push(videoDelta);
+  }
+  return delta;
+}
 
-const formats = [
-  "header",
-  "font",
-  "list",
-  "bold",
-  "italic",
-  "underline",
-  "strike",
-  "blockquote",
-  "color",
-  "background",
-  "align",
-  "link",
-  "image",
-];
+function VideoBlot() {
+  return (
+    <iframe
+      frameBorder="0"
+      allowFullScreen
+      style='width:100%\";aspectRatio:16/9;'
+      src={`https://www.youtube.com/embed/${this.domNode.getAttribute(
+        "src"
+      )}`}
+    />
+  );
+}
+
+Quill.register(VideoBlot, true);
 
 const Editor = ({ value, onChange }) => {
   const { quill, quillRef } = useQuill({
     placeholder: "Edit here...",
-    modules,
-    formats,
   });
-  const [editor_value,setEditorValue]= useState(value);
 
   useEffect(() => {
     if (quill) {
-      // Set the initial content of the editor
       quill.root.style.direction = "ltr";
       quill.clipboard.dangerouslyPasteHTML(value);
       quill.getModule("toolbar").addHandler("image", selectLocalImage);
+
       quill.on("editor-change", () => {
         onChange(quill.root.innerHTML);
       });
@@ -61,11 +60,13 @@ const Editor = ({ value, onChange }) => {
 
   const saveToServer = async (file) => {
     const formData = new FormData();
-    console.log(file)
     formData.append("image", file);
     try {
       const response = await API.post("/upload", formData, {
-        headers: { "Content-Type": "multipart/form-data",Authorization:getAuth(firebase_app)?.currentUser?.accessToken },
+        headers: {
+          "Content-Type": "multipart/form-data",
+          Authorization: getAuth(firebase_app)?.currentUser?.accessToken,
+        },
       });
       const src = response.data.src;
       insertToEditor(src);
@@ -83,19 +84,19 @@ const Editor = ({ value, onChange }) => {
     input.onchange = () => {
       const file = input.files[0];
       saveToServer(file).then((imageUrl) => {
-        insertToEditor(imageUrl); // Insert the uploaded image URL
+        insertToEditor(imageUrl);
       });
     };
   };
 
   const handleEditorChange = () => {
     const content = quill.root.innerHTML;
-    onChange(content); // Call the onChange callback with the updated content
+    onChange(content);
   };
 
   return (
     <div style={{ minHeight: 400, border: "1px solid lightgray" }}>
-      <div ref={quillRef} placeholder="Editor" onChange={handleEditorChange} />
+      <div ref={quillRef} placeholder="Editor" />
     </div>
   );
 };

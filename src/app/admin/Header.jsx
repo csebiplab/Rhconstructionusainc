@@ -36,6 +36,7 @@ import { usePathname } from "next/navigation";
 import React, { useContext, useEffect } from "react";
 import Swal from "sweetalert2";
 import { AuthContext } from "./provider/AuthProvider";
+import { BellIcon } from "@heroicons/react/24/solid";
 
 // profile menu component
 const profileMenuItems = [
@@ -348,6 +349,30 @@ export function AdminHeader() {
                 <ArrowTrendingUpIcon className="h-5 w-5" />
               </ListItemPrefix>
               SEO
+            </ListItem>
+          </Link>
+          <Link href="/admin/category">
+            <ListItem>
+              <ListItemPrefix>
+                {/* <ArrowTrendingUpIcon className="h-5 w-5" /> */}
+              </ListItemPrefix>
+              Category
+            </ListItem>
+          </Link>
+          <Link href="/admin/notices">
+            <ListItem>
+              <ListItemPrefix>
+                <BellIcon className="h-5 w-5" />
+              </ListItemPrefix>
+              Notices
+            </ListItem>
+          </Link>
+          <Link href="/admin/contact-us">
+            <ListItem>
+              <ListItemPrefix>
+                {/* <MessageIcon className="h-5 w-5" /> */}
+              </ListItemPrefix>
+              Contact US
             </ListItem>
           </Link>
         </List>

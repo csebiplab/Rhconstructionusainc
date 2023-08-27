@@ -31,15 +31,15 @@ export function BlogCard({ data }) {
         <CardBody>
           <div className="flex gap-2 flex-wrap items-center mb-2">
             <span className="inline-flex font-medium gap-1 py-1 px-2 justify-center items-center">
-              <HiUserCircle className="" />
+              <HiUserCircle className="text-primary" />
               <span className="text-[12px]">Admin</span>
             </span>
             <span className="inline-flex font-medium gap-1 py-1 px-2 justify-center items-center">
-              <BsCalendar2Date className="" />
+              <BsCalendar2Date className="text-primary" />
               <span className="text-[12px]">{moment(data?.createAt).format("DD MMM, YYYY")}</span>
             </span>
             <span className="inline-flex font-medium gap-1 py-1 px-2 justify-center items-center">
-              <BiCommentDots className="" />
+              <BiCommentDots className="text-primary" />
               <span className="text-[12px]">{`${data.comment_count || "No"} comments`}</span>
             </span>
           </div>

@@ -106,22 +106,22 @@ const SingleBlog = ({ params }) => {
           alt=""
           className="rounded-lg shadow-lg w-full mb-5 max-h-[460px] object-contain object-center"
         />
-        <h1 className="mb-2 text-4xl md:text-6xl">{data?.title}</h1>
+        <h1 className="mb-2 text-3xl md:text-5xl text-primary">{data?.title}</h1>
         <div className="mb-5 flex flex-wrap gap-3 justify-between items-center">
           <div className="flex gap-2 flex-wrap items-center mb-2">
             <span className="inline-flex font-medium gap-1 py-1 px-2 justify-center items-center">
-              <HiUserCircle className="" />
+              <HiUserCircle className="text-primary" />
               <span className="">Admin</span>
             </span>
             <span className="inline-flex font-medium gap-1 py-1 px-2 justify-center items-center">
-              <BsCalendar2Date className="" />
+              <BsCalendar2Date className="text-primary" />
               <span className="">
                 {moment(data?.createdAt).format("MMM DD, YYYY")}
               </span>
             </span>
           </div>
           <span className="inline-flex font-medium gap-1 py-1 px-2 justify-center items-center">
-            <BiCommentDots className="" />
+            <BiCommentDots className="text-primary" />
             <span className="">{`${comments?.length} comments`}</span>
           </span>
         </div>

@@ -11,8 +11,18 @@ import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import "react-quill/dist/quill.snow.css"; // Import Quill's styles
 import Swal from "sweetalert2";
+import useSwr from 'swr';
 import Editor from "./Editor";
 const CreateBlog = ({ blog = {} }) => {
+  const {data:categories,error,isLoading}=useSwr('/category',async()=>{
+    try {
+      const {data} = await API.get('/category');      
+      return data;
+    } catch (error) {
+      throw error.message
+    }
+  });
+  console.log(categories,error)
   const {
     register,
     handleSubmit,
@@ -43,6 +53,7 @@ const CreateBlog = ({ blog = {} }) => {
       formData.append("slug", data?.slug);
       formData.append("keywords", data?.keywords);
       formData.append("summary", data?.summary);
+      formData.append("categoryId", data?.categoryId);
       formData.append("description", data?.description);
       formData.append("blog", content);
       const { isConfirmed } = await Swal.fire({
@@ -131,6 +142,22 @@ const CreateBlog = ({ blog = {} }) => {
                 type="text"
               />
               {!slug && <p className="text-red-500">* Required.</p>}
+            </div>
+            <div className="mb-4">
+              <select
+              className="w-full p-2 rounded-md border border-gray-200 py-4"
+                variant="standard"
+                label="Category"
+                defaultValue={blog?.categoryId}
+                {...register("categoryId", { required: true })}
+                name="categoryId"
+                type="text"
+              >
+                <option value="">Select Category</option>
+                {categories?.map(item=>(
+                <option value={item?.id}>{item.name}</option>
+                ))}
+              </select>
             </div>
             <div className="mb-4">
               <Input
