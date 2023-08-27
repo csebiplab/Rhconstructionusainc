@@ -130,10 +130,7 @@ const SingleBlog = ({ params }) => {
             Summary
           </legend>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta
-            voluptas aspernatur fugiat a, animi tempora inventore enim facere ad
-            non porro sed, similique nemo nulla atque dolores distinctio fugit
-            praesentium!
+            {data?.summary}
           </p>
         </fieldset>
         <div className="mt-5 leading-relaxed text-lg">

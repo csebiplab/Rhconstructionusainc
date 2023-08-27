@@ -47,8 +47,8 @@ export function BlogCard({ data }) {
           <Typography variant="h5" color="blue-gray">
             {data.title}
           </Typography>
-          <Typography variant="small" color="gray" className="mt-3 font-normal">
-            {data.short_story}
+          <Typography variant="small" color="gray" className="mt-3 font-normal line-clamp-3">
+            {data.summary}
           </Typography>
         </CardBody>
       </Card>

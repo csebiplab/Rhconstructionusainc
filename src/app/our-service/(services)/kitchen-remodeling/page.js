@@ -1,7 +1,7 @@
-import { PageWrapper } from "@/components/Theme";
-import OurService from "./OurService";
+
 import { headers } from "next/headers";
 import API from "@/config/API.config";
+import RC from "./RC";
 export async function generateMetadata() {
   const headersList = headers();
   const pathname = headersList.get("x-invoke-path") || "";
@@ -26,9 +26,9 @@ export async function generateMetadata() {
 export default function Page() {
   return (
     <main>
-      <PageWrapper>
-        <OurService />
-      </PageWrapper>
+      <>
+        <RC />
+      </>
     </main>
   );
 }

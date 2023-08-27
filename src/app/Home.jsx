@@ -2,11 +2,55 @@
 
 import Slider from "@/components/Slider";
 import { BlogCard } from "@/components/cards/Blog.Card";
+import API from "@/config/API.config";
 import constant from "@/libs/constant";
-import { Button } from "@material-tailwind/react";
+import { errorMessage } from "@/libs/utils";
+import { Button, Spinner } from "@material-tailwind/react";
 import Link from "next/link";
 import { BsTelephoneForwardFill } from "react-icons/bs";
 import { SwiperSlide } from "swiper/react";
+import useSwr from "swr";
+const HomeBlogs=()=>{
+  const {data: blogs,error,isLoading} = useSwr("/blogs?limit=3",async(uri)=>{
+    try {
+      const {data}= await API.get(uri);
+      return data?.data;
+    } catch (error) {
+      throw errorMessage(error);
+    }
+  })
+  if(isLoading){
+    return (
+      <div className="py-16 flex justify-center">
+        <Spinner height={25}width={25}/>
+        </div>
+    )
+  }
+  if(error) return null;
+  return (
+      <section>
+        <div className="container py-16">
+          <div className="text-center mb-5">
+            <h1 className="text-gray-900 font-bold mb-2">
+              POPULAR <span className="text-primary">BLOGS</span>
+            </h1>
+            <p className="max-w-md mx-auto text-secondary">
+              Most recent blogs.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {(Array.isArray(blogs)?blogs:[])?.map((item, key) => (
+              <BlogCard data={item} key={key} />
+            ))}
+          </div>
+          <div className="text-center py-10 ">
+            <Button>SEE MORE </Button>
+          </div>
+        </div>
+      </section>
+  )
+}
+
 
 const Home = () => {
   return (
@@ -229,56 +273,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {/* BLOGS */}
-      <section>
-        <div className="container py-16">
-          <div className="text-center mb-5">
-            <h1 className="text-gray-900 font-bold mb-2">
-              POPULAR <span className="text-primary">BLOGS</span>
-            </h1>
-            <p className="max-w-md mx-auto text-secondary">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.{"\n"}{" "}
-              Mollitia porro assumenda cum.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {[
-              {
-                image:
-                  "https://cdn-hbbgd.nitrocdn.com/GXqlIhyLTtxzkyLSNKUPSPNbPDzoicjF/assets/images/optimized/rev-10a5dd0/www.rhconstructionusa.com/wp-content/uploads/2023/07/af92ceab984ce5619ff2c7c9a9a81e37-jpg.webp",
-                title: "How to Smooth Walls Without Plastering: A Handy Guide",
-                date: "July 12 2023",
-                comment: 0,
-                short_story:
-                  "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis pariatur praesentium necessitatibus ea reiciendis quibusdam?",
-              },
-              {
-                image:
-                  "https://cdn-hbbgd.nitrocdn.com/GXqlIhyLTtxzkyLSNKUPSPNbPDzoicjF/assets/images/optimized/rev-10a5dd0/www.rhconstructionusa.com/wp-content/uploads/2023/07/siding-styles-2022-beyond-Large-jpeg.webp",
-                title: "Walls Without Plastering: A Handy Guide",
-                date: "July 12 2023",
-                comment: 0,
-                short_story:
-                  "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis pariatur praesentium necessitatibus ea reiciendis quibusdam?",
-              },
-              {
-                image:
-                  "https://cdn-hbbgd.nitrocdn.com/GXqlIhyLTtxzkyLSNKUPSPNbPDzoicjF/assets/images/optimized/rev-10a5dd0/www.rhconstructionusa.com/wp-content/uploads/2023/07/PergoPOLY-TOPClass-1700px-jpg.webp",
-                title: "How to Smooth Walls Without Plastering: A Handy Guide",
-                date: "July 12 2023",
-                comment: 0,
-                short_story:
-                  "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis pariatur praesentium necessitatibus ea reiciendis quibusdam?",
-              },
-            ].map((item, key) => (
-              <BlogCard data={item} key={key} />
-            ))}
-          </div>
-          <div className="text-center py-10 ">
-            <Button>SEE MORE </Button>
-          </div>
-        </div>
-      </section>
+      <HomeBlogs/>
       {/* OUR COMMITMENT */}
       <section
         className="bg-cover bg-right bg-fixed"

@@ -1,8 +1,10 @@
 "use client";
 
 import API from "@/config/API.config";
+import firebase_app from "@/config/firebase";
 import { errorMessage } from "@/libs/utils";
 import { Button, Input, Spinner, Textarea } from "@material-tailwind/react";
+import { getAuth } from "firebase/auth";
 import { useRouter } from "next/navigation";
 import "quill-image-uploader/dist/quill.imageUploader.min.css";
 import { useEffect, useState } from "react";
@@ -10,8 +12,6 @@ import { useForm } from "react-hook-form";
 import "react-quill/dist/quill.snow.css"; // Import Quill's styles
 import Swal from "sweetalert2";
 import Editor from "./Editor";
-import { getAuth } from "firebase/auth";
-import firebase_app from "@/config/firebase";
 const CreateBlog = ({ blog = {} }) => {
   const {
     register,
@@ -22,6 +22,7 @@ const CreateBlog = ({ blog = {} }) => {
   } = useForm({
     defaultValues: {
       title: blog?.title,
+      summary : blog?.summary,
       keywords: blog?.keywords,
     },
   });
@@ -41,6 +42,7 @@ const CreateBlog = ({ blog = {} }) => {
       formData.append("title", data?.title);
       formData.append("slug", data?.slug);
       formData.append("keywords", data?.keywords);
+      formData.append("summary", data?.summary);
       formData.append("description", data?.description);
       formData.append("blog", content);
       const { isConfirmed } = await Swal.fire({
@@ -165,6 +167,17 @@ const CreateBlog = ({ blog = {} }) => {
                 />
               </div>
             )}
+            <div className="mb-4">
+              <Input
+                variant="standard"
+                label="Summary"
+                {...register("summary", { required: true })}
+                defaultValue={blog?.summary}
+                name="summary"
+                type="text"
+              />
+              {!slug && <p className="text-red-500">* Required.</p>}
+            </div>
             <Editor
               value={content || "<div></div>"}
               onChange={(val) => setContent(val)}

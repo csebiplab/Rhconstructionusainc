@@ -1,5 +1,6 @@
 "use client";
 
+import PageBuilder from "@/components/PageBuilder";
 import PageHeader from "@/components/common/PageHeader";
 import constants from "@/libs/constant";
 import { Button, Typography } from "@material-tailwind/react";
@@ -15,6 +16,7 @@ const OurService = () => {
         className="bg-gray-900/70 bg-blend-multiply"
         page={{ title: "Our Service", route: "/our-service" }}
       />
+      <PageBuilder />
 
       <section>
         <div className="container py-20 grid grid-cols-1 md:grid-cols-2 gap-10">

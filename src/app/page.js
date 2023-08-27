@@ -3,7 +3,7 @@ import API from "@/config/API.config";
 import { headers } from "next/headers";
 import Home from "./Home";
 
-export async function generateMetadata({ params,...rest }) {
+export async function generateMetadata() {
   const headersList = headers();
   const pathname = headersList.get("x-invoke-path") || "";
   try {
@@ -19,13 +19,13 @@ export async function generateMetadata({ params,...rest }) {
       description: data?.[0]?.description,
     }
   } catch (error) {
-   return {
-    title:'Home',
-   } 
+   console.log(error.message);
+   return;
   }
 }
 
 export default function Page() {
+  // return <PageBuilder/>
   return (
     <main className="min-h-screen">
       <PageWrapper>
