@@ -1,38 +1,29 @@
 const { DataTypes } = require("sequelize");
 const { sequelize } = require("..");
 
-const Comment = sequelize.define(
-  "Comment",
-  {
+const Page = sequelize.define('page', {
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true,
     },
-    blog_id: {
-      type: DataTypes.INTEGER,
+    route: {
+      type: DataTypes.STRING,
       allowNull: false,
+      unique: true,
     },
-    name: {
+    title: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    email: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    website: {
+    keywords: {
       type: DataTypes.STRING,
     },
-    comment: {
+    description: {
       type: DataTypes.TEXT,
-      allowNull: false,
     },
-  },
-  {
-    freezeTableName: true,
-    timestamps: true,
-  }
-);
-
-module.exports = Comment;
+  }, {
+    freezeTableName:true,
+    timestamps:true,
+  });
+  module.exports=Page;

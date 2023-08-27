@@ -11,7 +11,10 @@ const path = require("path");
 const uploadRouter = require("./routers/upload.router");
 const { parseToken } = require("./middlewares/auth.middleware");
 const AdminRouter = require("./routers/admin.router");
+const CommentRouter = require("./routers/comment.router");
 const { initFirebase } = require("./config/firebase.config");
+const PageRouter = require("./routers/page.router");
+const CategoryRouter = require("./routers/category.router");
 
 const app = express();
 const root = new express.Router();
@@ -35,5 +38,8 @@ root.use("/contact-us", ContactUsRouter);
 root.use("/notices", NoticeRouter);
 root.use("/upload", uploadRouter);
 root.use("/admin", AdminRouter);
+root.use("/comments", CommentRouter);
+root.use("/pages", PageRouter);
+root.use("/category", CategoryRouter);
 
 module.exports = app;

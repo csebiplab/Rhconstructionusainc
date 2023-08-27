@@ -1,6 +1,9 @@
 const createHttpError = require("http-errors");
 const Blog = require("../db/models/blog.model");
 const { Op } = require("sequelize");
+const { sequelize } = require("../db");
+const Comment = require("../db/models/Comment.model");
+const Category = require("../db/models/category.model");
 
 const obj = {};
 
@@ -8,12 +11,15 @@ obj.createBlog = async function (req, res, next) {
   try {
     const banner = req.file ? req.file.path : "";
     const data= req?.body;
+    console.log(data);
     const newBlog = await Blog.create({
       title: data.title,
       slug: data.slug,
       banner: banner,
+      categoryId:data.categoryId,
       keywords: data.keywords,
       description: data.description,
+      summary: data.summary,
       blog: data.blog,
     });
     res.status(201).json(newBlog);
@@ -36,8 +42,12 @@ obj.getBlog = async function (req, res, next) {
     const offset = (page - 1) * Math.abs(limit);
     const blogs = await Blog.findAll({
       where: whereClause,
+      attributes:[...Object.keys(Blog.getAttributes()),[sequelize.literal('(SELECT COUNT(*) FROM `comment` WHERE `comment`.`blog_id` = `blogs`.`id`)'), 'comment_count']],
       limit: parseInt(limit),
       offset: offset,
+      include:[
+        {model:Category}
+      ],
       order: orderBy ? [orderBy.split(":")] : [["updatedAt", "DESC"]],
     });
 
@@ -60,7 +70,11 @@ obj.getBlog = async function (req, res, next) {
 obj.getBlogById = async function (req, res, next) {
   const blogId = req.params.id;
   try {
-    const blog = await Blog.findByPk(blogId);
+    const blog = await Blog.findByPk(blogId,{
+      include:[
+        {model:Category}
+      ]
+    });
     if (blog) {
       res.json(blog);
     } else {
