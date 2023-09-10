@@ -9,9 +9,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 
-export const metadata={
-    title:'Sign Up | Admin'
-}
+
 
 export default function () {
   const [loading, setLoading] = useState(false);

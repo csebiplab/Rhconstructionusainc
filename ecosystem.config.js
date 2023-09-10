@@ -5,7 +5,7 @@ module.exports = {
 
   deploy : {
     production : {
-      key:'key.pub',
+      key:'key.pems',
       user : 'rhconstructionus',
       host : '69.57.161.196',
       ref  : 'origin/main',
