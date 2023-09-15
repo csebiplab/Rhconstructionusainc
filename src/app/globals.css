@@ -11,6 +11,9 @@
     background-color: #00000080;
 }
 
+.pswp__img{
+  object-fit:contain;
+}
 .ql-video {
     width: 100%;
     aspect-ratio: 16/9;
@@ -30,11 +33,14 @@
 
 @layer utilities{
   .container{
-    @apply max-w-7xl px-3 mx-auto;
+    @apply max-w-6xl px-3 mx-auto;
   }
   .container-fluid{
     @apply w-full px-4 mx-auto;
   }
+}
+.swiper-button-prev,.swiper-button-next{
+  font-weight: bolder;
 }
 
 @layer components{

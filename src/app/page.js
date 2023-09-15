@@ -1,8 +1,8 @@
 import { PageWrapper } from "@/components/Theme";
-import API from "@/config/API.config";
-import { headers } from "next/headers";
 import Home from "./Home";
 
+import API from "@/config/API.config";
+import { headers } from "next/headers";
 export async function generateMetadata() {
   const headersList = headers();
   const pathname = headersList.get("x-invoke-path") || "";
@@ -20,7 +20,10 @@ export async function generateMetadata() {
     }
   } catch (error) {
    console.log(error.message);
-   return;
+   return {
+      title: "Home | RH Construction USA",
+      keywords: "Home, RH Construction USA",
+    };
   }
 }
 

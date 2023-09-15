@@ -1,10 +1,11 @@
+import ProgressBar from "@/components/common/ProgressBar";
 import Footer from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
-import { Inter } from "next/font/google";
+import { Raleway } from "next/font/google";
+import 'sweetalert2/src/sweetalert2.scss';
 import "./globals.css";
-import 'sweetalert2/src/sweetalert2.scss'
 
-const inter = Inter({ subsets: ["latin"] });
+const raleway = Raleway({ subsets: ["latin"],variable:'--font-raleway' });
 
 export const metadata = {
   title: {
@@ -17,7 +18,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} min-h-screen`}>
+      <body className={`${raleway.className} min-h-screen`}>
+        <ProgressBar />
         <Header />
         <main className="min-h-[60vh]">
         {children}

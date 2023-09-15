@@ -10,52 +10,53 @@ import Link from "next/link";
 import { BsTelephoneForwardFill } from "react-icons/bs";
 import { SwiperSlide } from "swiper/react";
 import useSwr from "swr";
-const HomeBlogs=()=>{
-  const {data: blogs,error,isLoading} = useSwr("/blogs?limit=3",async(uri)=>{
+const HomeBlogs = () => {
+  const {
+    data: blogs,
+    error,
+    isLoading,
+  } = useSwr("/blogs?limit=3", async (uri) => {
     try {
-      const {data}= await API.get(uri);
+      const { data } = await API.get(uri);
       return data?.data;
     } catch (error) {
       throw errorMessage(error);
     }
-  })
-  if(isLoading){
+  });
+  if (isLoading) {
     return (
       <div className="py-16 flex justify-center">
-        <Spinner height={25}width={25}/>
-        </div>
-    )
+        <Spinner height={25} width={25} />
+      </div>
+    );
   }
-  if(error) return null;
+  if (error) return null;
   return (
-      <section>
-        <div className="container py-16">
-          <div className="text-center mb-5">
-            <h1 className="text-gray-900 font-bold mb-2">
-              POPULAR <span className="text-primary">BLOGS</span>
-            </h1>
-            <p className="max-w-md mx-auto text-secondary">
-              Most recent blogs.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {(Array.isArray(blogs)?blogs:[])?.map((item, key) => (
-              <BlogCard data={item} key={key} />
-            ))}
-          </div>
-          <div className="text-center py-10 ">
-            <Button>SEE MORE </Button>
-          </div>
+    <section>
+      <div className="container py-16">
+        <div className="text-center mb-5">
+          <h1 className="text-gray-900 font-bold mb-2">
+            POPULAR <span className="text-primary">BLOGS</span>
+          </h1>
+          <p className="max-w-md mx-auto text-secondary">Most recent blogs.</p>
         </div>
-      </section>
-  )
-}
-
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {(Array.isArray(blogs) ? blogs : [])?.map((item, key) => (
+            <BlogCard data={item} key={key} />
+          ))}
+        </div>
+        <div className="text-center py-10 ">
+          <Button>SEE MORE </Button>
+        </div>
+      </div>
+    </section>
+  );
+};
 
 const Home = () => {
   return (
     <main>
-      <Slider>
+      <Slider className="max-h-[600px] overflow-hidden" id="home-banner-slider" style={{"--swiper-navigation-size":'22px',"--swiper-theme-color":'white'}}>
         {[
           {
             bg: "/assets/images/slider-bg-one.webp",
@@ -82,11 +83,14 @@ const Home = () => {
           <SwiperSlide key={key} className=" h-full">
             {({ isActive }) => (
               <div
-                style={{ backgroundImage: `url(${item.bg})`,opacity: isActive?1:0 }}
+                style={{
+                  backgroundImage: `url(${item.bg})`,
+                  opacity: isActive ? 1 : 0,
+                }}
                 className="bg-cover bg-center text-white"
               >
                 <div className="container grid grid-cols-1 md:grid-cols-2 items-end">
-                  <div className=" py-52">
+                  <div className=" py-52 text-center md:text-left">
                     <h1 className="mb-3 font-bold lg:text-6xl">
                       {item?.title}
                     </h1>
@@ -109,7 +113,10 @@ const Home = () => {
           </SwiperSlide>
         ))}
       </Slider>
-      <section className="py-10 pt-20">
+      <div className="container flex justify-center items-center absolute left-1/2 -translate-x-1/2 z-50">
+      <img src="/assets/images/hat.png" className="w-40 h-40 object-contain object-center mx-auto -mt-20" />
+      </div>
+      <section className="py-10 pt-32">
         <div className="container">
           <div className="text-center mb-3">
             <h1>
@@ -123,19 +130,35 @@ const Home = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center">
-            {[...Array(3)].map((item, key) => (
+            {[
+              {
+                icon: "/assets/images/construction-icon.png",
+                title: "Highly trained Staff",
+                desc: "We hire only highly trained staff for best results.",
+              },
+              {
+                icon: "/assets/images/construction-icon-2.png",
+                title: "Competitive Pricing",
+                desc: "We quote the best price possible in the industry.",
+              },
+              {
+                icon: "/assets/images/construction-icon-3.png",
+                title: "Satisfaction Guaranteed",
+                desc: "100% Customer satisfaction is our sole motto.",
+              },
+            ].map((item, key) => (
               <figure
                 key={key}
                 className="flex flex-col justify-center items-center p-3 max-w-[320px] text-center mx-auto"
               >
                 <img
-                  src="/assets/images/construction-icon.png"
-                  alt="Construction"
+                  src={item.icon}
+                  alt={item.title}
                   loading="lazy"
-                  className="w-3/4 max-w-[160px]"
+                  className="h-24 w-24 object-contain mb-3"
                 />
-                <h3>Highly trained Staff</h3>
-                <p>We hire only highly trained staff for best results.</p>
+                <h3 className="text-gray-700">{item.title}</h3>
+                <p className="text-gray-600">{item.desc}</p>
               </figure>
             ))}
           </div>
@@ -273,7 +296,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <HomeBlogs/>
+      <HomeBlogs />
       {/* OUR COMMITMENT */}
       <section
         className="bg-cover bg-right bg-fixed"
@@ -304,7 +327,7 @@ const Home = () => {
       </section>
       {/* OUR COMMITMENT */}
       <section>
-        <div className="container grid grid-cols-1 md:grid-cols-2 py-10">
+        <div className="container grid grid-cols-1 md:grid-cols-2 py-10 pb-0">
           <div className=" py-10 pt-20">
             <h1 className="mb-4 font-bold">
               OUR <span className="text-primary">COMMITMENT</span>

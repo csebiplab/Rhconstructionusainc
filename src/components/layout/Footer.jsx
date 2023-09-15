@@ -10,7 +10,7 @@ const Footer = () => {
   const pathname = usePathname();
   if (pathname.startsWith("/admin")) return null;
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-gray-900 text-white" style={{backgroundImage:'url(https://www.rhconstructionusa.com/wp-content/uploads/2022/09/footer-bg.jpg)'}}>
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10">
           <div>
@@ -28,7 +28,7 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <h2 className="font-medium mb-4">Service Area</h2>
+            <h3 className="font-semibold text-primary mb-4">Service Area</h3>
             <ul className="pl-3">
               <li>
                 <Link href="#" className="footer-link">
@@ -58,21 +58,21 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h2 className="font-medium mb-4">Contact Us</h2>
+            <h3 className="font-semibold text-primary  mb-4">Contact Us</h3>
             <ul className="pl-2 text-lg ">
               <li>
                 <a href="" className="footer-link">
-                  <FaMapMarkedAlt /> 553 East 2nd Street Brooklyn, NY 11218
+                  <FaMapMarkedAlt  className="text-primary"/> 553 East 2nd Street Brooklyn, NY 11218
                 </a>
               </li>
               <li>
                 <a href="tel:+1 (646) 683-4612" className="footer-link">
-                  <MdOutlineAddIcCall /> +1 (646) 683-4612
+                  <MdOutlineAddIcCall  className="text-primary"/> +1 (646) 683-4612
                 </a>
               </li>
               <li>
                 <a href="mailto:rhconusa@gmail.com" className="footer-link">
-                  <HiMailOpen /> rhconusa@gmail.com
+                  <HiMailOpen className="text-primary" /> rhconusa@gmail.com
                 </a>
               </li>
             </ul>

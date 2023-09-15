@@ -1,23 +1,14 @@
 "use client";
 
+import constants from "@/libs/constant";
 import {
   Bars3Icon,
-  ChatBubbleOvalLeftIcon,
   ChevronDownIcon,
-  FaceSmileIcon,
-  FlagIcon,
-  FolderIcon,
-  GiftIcon,
-  PuzzlePieceIcon,
-  RocketLaunchIcon,
-  Square3Stack3DIcon,
-  UserCircleIcon,
-  UsersIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import {
-  Chip,
   Collapse,
+  Drawer,
   IconButton,
   List,
   ListItem,
@@ -31,7 +22,14 @@ import {
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
-import { HiMailOpen } from "react-icons/hi";
+import { FaFacebookF, FaTwitter } from "react-icons/fa";
+import {
+  HiMailOpen,
+  HiOutlineHome,
+  HiOutlineMailOpen,
+  HiPhone,
+  HiPhoneIncoming
+} from "react-icons/hi";
 
 const colors = {
   blue: "bg-blue-50 text-blue-500",
@@ -44,117 +42,80 @@ const colors = {
   pink: "bg-pink-50 text-pink-500",
 };
 
-const navListMenuItems = [
-  {
-    color: "blue",
-    icon: FlagIcon,
-    title: "About us",
-    description: "Learn about our story and our mission statement.",
-  },
-  {
-    color: "orange",
-    icon: ChatBubbleOvalLeftIcon,
-    title: "Press",
-    description: "News and writings, press releases, and resources",
-  },
-  {
-    color: "green",
-    icon: UsersIcon,
-    title: (
-      <div className="flex items-center gap-1">
-        Careers{" "}
-        <Chip
-          size="sm"
-          color="green"
-          variant="ghost"
-          value="We're hiring!"
-          className="capitalize"
-        />
-      </div>
-    ),
-    description: "We are always looking for talented people. Join us!",
-  },
-  {
-    color: "blue-gray",
-    icon: FolderIcon,
-    title: "Legal",
-    description: "All the stuff that we dan from legal made us add.",
-  },
-  {
-    color: "purple",
-    icon: RocketLaunchIcon,
-    title: "Products",
-    description: "Checkout our products that helps a startup running.",
-  },
-  {
-    color: "teal",
-    icon: FaceSmileIcon,
-    title: "Icons",
-    description: "Set of beautiful icons that you can use in your project.",
-  },
-  {
-    color: "cyan",
-    icon: PuzzlePieceIcon,
-    title: "UI Kits",
-    description: "High quality UI Kits helps you to 2x faster.",
-  },
-  {
-    color: "pink",
-    icon: GiftIcon,
-    title: "Open Source",
-    description: "List of all our open-source projects, it's all free.",
-  },
-];
+const our_service_menu_items = {
+  interior: [
+    { title: "Bathroom Remodeling", route: "/bathroom-remodeling-brooklyn" },
+    { title: "Kitchen Remodeling", route: "/kitchen-remodeling" },
+    { title: "Painting", route: "/painting" },
+    { title: "Sheetrock", route: "/sheetrock" },
+    { title: "Plastering", route: "/plastering" },
+    {
+      title: "Electrical & Plumbing",
+      route: "/emergency-electrical-service",
+    },
+  ],
+  exterior: [
+    { title: "Concrete Contractor", route: "/concrete-contractor" },
+    { title: "Roofing", route: "/roofing" },
+    { title: "Pointing", route: "/pointing" },
+    { title: "Water Proofing", route: "/water-proofing" },
+    {
+      title: "Sidewalk Repair and Replace",
+      route: "/sidewalk-repair-and-replace",
+    },
+    { title: "Brown Stone Repair", route: "/brown-stone" },
+    { title: "Exterior Brickwork", route: "/exterior-brickwork" },
+    {
+      title: "Emergency Plumbing",
+      route: "/emergency-plumber-brooklyn",
+    },
+    { title: "Brick Works", route: "/exterior-brickwork" },
+    { title: "Power Wash", route: "/power-wash" },
+    { title: "Siding", route: "/siding-contractors" },
+    {
+      title: "All kinds of Masonry Work",
+      route: "/all-kinds-of-masonry-work",
+    },
+  ],
+};
 
-function NavListMenu() {
+function OurServiceManu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
-
-  const renderItems = navListMenuItems.map(
-    ({ icon, title, description, color }, key) => (
-      <a href="#" key={key}>
-        <MenuItem className="flex items-center gap-3 rounded-lg">
-          <div className={`rounded-lg p-5 ${colors[color]}`}>
-            {React.createElement(icon, {
-              strokeWidth: 2,
-              className: "h-6 w-6",
-            })}
-          </div>
-          <div>
-            <Typography
-              variant="h6"
-              color="blue-gray"
-              className="flex items-center text-sm"
-            >
-              {title}
-            </Typography>
-            <Typography variant="small" color="gray" className="font-normal">
-              {description}
-            </Typography>
-          </div>
+  const renderItems = (data = []) => {
+    return data?.map(({ route, title }, key) => (
+      <Link href={route} key={key}>
+        <MenuItem className="rounded-md">
+          <Typography color="blue-gray">{title}</Typography>
         </MenuItem>
-      </a>
-    )
-  );
+      </Link>
+    ));
+  };
 
   return (
-    <React.Fragment>
+    <>
       <Menu
         open={isMenuOpen}
         handler={setIsMenuOpen}
         offset={{ mainAxis: 20 }}
         placement="bottom"
         allowHover={true}
+        className="bg-gray-100"
       >
         <MenuHandler>
-          <Typography as="div" variant="small" className="font-normal">
+          <Typography
+            as={Link}
+            href="/our-services"
+            variant="small"
+            color="blue-gray"
+            className="font-medium text-lg"
+          >
             <ListItem
-              className="flex items-center gap-2 py-2 pr-4"
+              className="flex items-center gap-2 rounded-full py-1  pr-4 text-[17px] font-medium"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
-              <Square3Stack3DIcon className="h-[18px] w-[18px]" />
-              Resources
+              Our Services
               <ChevronDownIcon
                 strokeWidth={2.5}
                 className={`hidden h-3 w-3 transition-transform lg:block ${
@@ -170,49 +131,65 @@ function NavListMenu() {
             </ListItem>
           </Typography>
         </MenuHandler>
-        <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
-          <ul className="grid grid-cols-4 gap-y-2">{renderItems}</ul>
+        <MenuList className="hidden max-w-[100vw] w-screen lg:block border-0 outline-0 bg-gray-100">
+          <div className="container grid grid-cols-3 gap-y-2">
+            <div>
+              <h3 className="mb-1 text-primary font-semibold">Interior</h3>
+              <ul>{renderItems(our_service_menu_items.interior)}</ul>
+            </div>
+            <div>
+              <h3 className="mb-1 text-primary font-semibold">Exterior</h3>
+              <ul>
+                {renderItems(our_service_menu_items.exterior.slice(0, 6))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="mb-1 text-primary font-semibold"></h3>
+              <ul>
+                {renderItems(our_service_menu_items.exterior.slice(6, 12))}
+              </ul>
+            </div>
+          </div>
         </MenuList>
       </Menu>
       <div className="block lg:hidden">
-        <Collapse open={isMobileMenuOpen}>{renderItems}</Collapse>
+        <Collapse open={isMobileMenuOpen}>
+          <h4 className="text-primary mb-1 font-semibold">Interior</h4>
+          <ul>{renderItems(our_service_menu_items.interior)}</ul>
+          <hr className="my-1" />
+          <h4 className="text-primary mb-1 font-semibold">Exterior</h4>
+          <ul>{renderItems(our_service_menu_items.exterior)}</ul>
+          <hr className="my-1" />
+        </Collapse>
       </div>
-    </React.Fragment>
+    </>
   );
 }
 
 function NavList() {
   return (
-    <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1 border-0 outline-none">
+    <List className=" mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1 gap-1 border-0 outline-none">
       <Typography
         as={Link}
-        href="/about"
+        href="/about-rh-constraction"
         variant="small"
         color="blue-gray"
-        className="font-normal text-lg"
+        className="font-medium rounded-full text-[17px]"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4">About</ListItem>
-      </Typography>
-      <Typography
-        as={Link}
-        href="/our-service"
-        variant="small"
-        color="blue-gray"
-        className="font-normal text-lg"
-      >
-        <ListItem className="flex items-center gap-2 py-2 pr-4">
-          Our Service
+        <ListItem className="flex items-center gap-2 py-2 pr-4 rounded-full hover:bg-primary px-4">
+          About
         </ListItem>
       </Typography>
+      <OurServiceManu />
       <Typography
         as={Link}
         href="/customer-reviews"
         variant="small"
         color="blue-gray"
-        className="font-normal text-lg"
+        className="font-medium rounded-full text-[17px]"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4">
-          Reviews
+        <ListItem className="flex items-center gap-2 py-2 pr-4 rounded-full hover:bg-primary px-4">
+          Customer Reviews
         </ListItem>
       </Typography>
       <Typography
@@ -220,10 +197,21 @@ function NavList() {
         href="/blogs"
         variant="small"
         color="blue-gray"
-        className="font-normal text-lg"
+        className="font-medium rounded-full text-[17px]"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4">
+        <ListItem className="flex items-center gap-2 py-2 pr-4 rounded-full hover:bg-primary px-4">
           Blogs
+        </ListItem>
+      </Typography>
+      <Typography
+        as={Link}
+        href="/our-projects"
+        variant="small"
+        color="blue-gray"
+        className="font-medium rounded-full text-[17px]"
+      >
+        <ListItem className="flex items-center gap-2 py-2 pr-4 rounded-full hover:bg-primary px-4">
+          Projects
         </ListItem>
       </Typography>
       <Typography
@@ -231,39 +219,56 @@ function NavList() {
         href="/notice"
         variant="small"
         color="blue-gray"
-        className="font-normal text-lg"
+        className="font-medium rounded-full text-[17px]"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4">
+        <ListItem className="flex items-center gap-2 py-2 pr-4 rounded-full hover:bg-primary px-4">
           🔔 Notice
         </ListItem>
       </Typography>
       <Typography
         as={Link}
-        href="/contact-us"
+        href="/contact"
         variant="normal"
         color="blue-gray"
-        className="font-normal text-lg"
+        className="font-medium rounded-full text-[17px]"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4">
-          Contact US
+        <ListItem className="flex items-center gap-2 py-2 pr-4 rounded-full hover:bg-primary px-4">
+          Contact
         </ListItem>
       </Typography>
-      <NavListMenu />
-      <Typography
-        as="a"
-        href="#"
-        variant="small"
-        color="blue-gray"
-        className="font-normal"
-      >
-        <ListItem className="flex items-center gap-2 py-2 pr-4">
-          <UserCircleIcon className="h-[18px] w-[18px]" />
-          Account
-        </ListItem>
-      </Typography>
+      <a href={constants.facebook} target="_blank">
+        <IconButton className="rounded-full" color="amber">
+          <FaFacebookF size={18} color="white" />
+        </IconButton>
+      </a>
+      <a href={constants.twitter} target="_blank">
+        <IconButton className="rounded-full" color="amber">
+          <FaTwitter size={18} color="white" />
+        </IconButton>
+      </a>
     </List>
   );
 }
+
+function BottomMenu() {
+  return (
+    <figure className=" bg-primary py-2 text-4xl text-white md:hidden fixed bottom-0 left-0 z-[1000000] w-full px-5 flex gap-2 justify-between items-center">
+      <Link href="/">
+        <HiOutlineHome />
+      </Link>
+      <a href={`tel:+1 (646) 683-4612`}>
+        <div className="bg-white rounded-full text-primary inline-book -mt-8 shadow-xl h-16 w-16 flex justify-center items-center">
+        <HiPhoneIncoming />
+        </div>
+      </a>
+      <a href="mailto:rhconusa@gmail.com">
+        <HiOutlineMailOpen />
+      </a>
+    </figure>
+  );
+}
+
+
 
 export function Header() {
   const pathname = usePathname();
@@ -275,52 +280,93 @@ export function Header() {
     );
   }, []);
 
-  if(pathname.startsWith('/admin')) return null;
+  if (pathname.startsWith("/admin")) return null;
   return (
-    <header>
-      <div className="container flex justify-end items-center py-1 flex-wrap gap-2">
-        <a
-          href="#"
-          className="flex gap-2 items-center p-1 rounded-md hover:bg-primary/10 hover:text-blue-700"
-        >
-          <HiMailOpen /> rhconusa@gmail.com
-        </a>
-        <a
-          href="#"
-          className="flex gap-2 items-center p-1 rounded-md hover:bg-primary/10 hover:text-blue-700"
-        >
-          <HiMailOpen /> rhconusa@gmail.com
-        </a>
-      </div>
-      <Navbar className="mx-auto px-4 py-2 shadow-none">
-        <div className="flex items-center justify-between text-blue-gray-900">
-          <Link href="/" className="mr-4 cursor-pointer py-1.5 lg:ml-2">
-            <img
-              src="/assets/images/logo.webp"
-              alt=""
-              className="w-full max-w-[140px] rounded-md "
-            />
-          </Link>
-          <div className="hidden lg:block">
-            <NavList />
+    <>
+      <header>
+        <div className=" bg-gray-100">
+          <div className="container flex justify-between items-center py-1 flex-wrap gap-2">
+            <a href="/" className="text-dark font-medium hidden md:block">
+              Construction company Brooklyn, Queens and New York
+            </a>
+            <div className="flex gap-2 items-center">
+              <a
+                href={`mailto:${constants.mail}`}
+                className="flex gap-2 items-center p-1 rounded-md hover:bg-primary/10 hover:text-blue-700"
+              >
+                <HiMailOpen className="text-primary" /> {constants.mail}
+              </a>
+              <a
+                href={`tel:${constants.hotline}`}
+                className="flex gap-2 items-center p-1 rounded-md hover:bg-primary/10 hover:text-blue-700"
+              >
+                <HiPhone className="text-primary" /> {constants.hotline}
+              </a>
+            </div>
           </div>
+        </div>
+        <Navbar className="mx-auto px-4 py-2 shadow-none max-w-full container">
+          <div className="flex items-center justify-between text-blue-gray-900">
+            <Link href="/" className="mr-4 cursor-pointer">
+              <img
+                src="/assets/images/logo.webp"
+                alt=""
+                className="w-full max-w-[140px] rounded-md "
+              />
+            </Link>
+            <div className="hidden lg:block">
+              <NavList />
+            </div>
+            <IconButton
+              variant="text"
+              color="blue-gray"
+              className="lg:hidden"
+              onClick={() => setOpenNav(!openNav)}
+            >
+              {openNav ? (
+                <XMarkIcon className="h-6 w-6" strokeWidth={2} />
+              ) : (
+                <Bars3Icon className="h-6 w-6" strokeWidth={2} />
+              )}
+            </IconButton>
+          </div>
+        </Navbar>
+      </header>
+      <Drawer
+        placement="right"
+        open={openNav}
+        onClose={()=>setOpenNav(false)}
+        className="p-4"
+        style={{ zIndex:openNav? 1000000:'auto', }}
+      >
+        <div className="mb-6 flex items-center justify-between">
+          <Typography variant="h5" color="blue-gray">
+            RH Construction
+          </Typography>
           <IconButton
             variant="text"
             color="blue-gray"
-            className="lg:hidden"
-            onClick={() => setOpenNav(!openNav)}
+            onClick={()=>setOpenNav(false)}
           >
-            {openNav ? (
-              <XMarkIcon className="h-6 w-6" strokeWidth={2} />
-            ) : (
-              <Bars3Icon className="h-6 w-6" strokeWidth={2} />
-            )}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={2}
+              stroke="currentColor"
+              className="h-5 w-5"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
           </IconButton>
         </div>
-        <Collapse open={openNav}>
-          <NavList />
-        </Collapse>
-      </Navbar>
-    </header>
+        <NavList/>
+      </Drawer>
+      <BottomMenu />
+    </>
   );
 }

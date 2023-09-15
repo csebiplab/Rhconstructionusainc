@@ -2,16 +2,16 @@
 import API from "@/config/API.config";
 import { errorMessage } from "@/libs/utils";
 import {
-  BellIcon
+    BellIcon
 } from "@heroicons/react/24/solid";
 import {
-  Timeline,
-  TimelineBody,
-  TimelineConnector,
-  TimelineHeader,
-  TimelineIcon,
-  TimelineItem,
-  Typography,
+    Timeline,
+    TimelineBody,
+    TimelineConnector,
+    TimelineHeader,
+    TimelineIcon,
+    TimelineItem,
+    Typography,
 } from "@material-tailwind/react";
 import useSwr from "swr";
 
@@ -34,9 +34,9 @@ const Notice = () => {
             className="h-44 w-44 object-cover object-center mx-auto"
           />
           <h2 className="underline underline-offset-2 decoration-wavy decoration-yellow-900 text-yellow-800 italic">
-            <span className="text-yellow-900">IMPORTANT</span> NOTICE!
+            <span className="text-primary">IMPORTANT</span> NOTICE!
           </h2>
-          <div className="max-w-3xl text-left rounded-lg mx-auto mt-10 p-3 bg-yellow-50 text-yellow-900 border border-yellow-300">
+          <div className="max-w-3xl text-left rounded-lg mx-auto mt-10 p-3 bg-yellow-50 text-primary border border-yellow-300">
             <Timeline>
               {data?.map((item) => (
                 <TimelineItem key={item?.id}>
