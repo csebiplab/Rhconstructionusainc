@@ -16,7 +16,8 @@ module.exports = {
       console.log("\t\tDB CONNECTED");
       next();
     } catch (error) {
-      res.status(500).json({ message: "Failed to connect database." });
+      console.log(error)
+      res.status(500).json({ message: error?.message||"Failed to connect database." });
     }
   },
 };
