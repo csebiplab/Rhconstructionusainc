@@ -1,0 +1,4 @@
+###generate ssh key with putty key generator
+key passphrase: rhcon
+
+root password: 0LjlVn4j431Ew9LBeX

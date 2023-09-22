@@ -9,6 +9,10 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> a9ba6489bfad591177cf48498f1200e4006cbe64
 
 export default function () {
   const [loading, setLoading] = useState(false);
