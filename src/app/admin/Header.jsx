@@ -14,6 +14,7 @@ import {
   Square3Stack3DIcon,
   UserCircleIcon,
 } from "@heroicons/react/24/outline";
+import { BellIcon } from "@heroicons/react/24/solid";
 import {
   Avatar,
   Button,
@@ -36,7 +37,6 @@ import { usePathname } from "next/navigation";
 import React, { useContext, useEffect } from "react";
 import Swal from "sweetalert2";
 import { AuthContext } from "./provider/AuthProvider";
-import { BellIcon } from "@heroicons/react/24/solid";
 
 // profile menu component
 const profileMenuItems = [
@@ -309,7 +309,7 @@ export function AdminHeader() {
       <Drawer
         open={isNavOpen}
         onClose={() => setIsNavOpen(false)}
-        className="p-4"
+        className="p-4 overflow-y-auto pb-28"
       >
         <div className="mb-6 flex items-center justify-between">
           <Typography variant="h5" color="blue-gray">

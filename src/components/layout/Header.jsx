@@ -336,8 +336,7 @@ export function Header() {
         placement="right"
         open={openNav}
         onClose={()=>setOpenNav(false)}
-        className="p-4"
-        style={{ zIndex:openNav? 1000000:'auto', }}
+        className="p-4 overflow-y-auto pb-24 !z-[1000000000000000000]"
       >
         <div className="mb-6 flex items-center justify-between">
           <Typography variant="h5" color="blue-gray">
