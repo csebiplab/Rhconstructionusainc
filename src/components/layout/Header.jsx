@@ -28,7 +28,7 @@ import {
   HiOutlineHome,
   HiOutlineMailOpen,
   HiPhone,
-  HiPhoneIncoming
+  HiPhoneIncoming,
 } from "react-icons/hi";
 
 const colors = {
@@ -258,7 +258,7 @@ function BottomMenu() {
       </Link>
       <a href={`tel:+1 (646) 683-4612`}>
         <div className="bg-white rounded-full text-primary inline-book -mt-8 shadow-xl h-16 w-16 flex justify-center items-center">
-        <HiPhoneIncoming />
+          <HiPhoneIncoming />
         </div>
       </a>
       <a href="mailto:rhconusa@gmail.com">
@@ -267,8 +267,6 @@ function BottomMenu() {
     </figure>
   );
 }
-
-
 
 export function Header() {
   const pathname = usePathname();
@@ -287,7 +285,7 @@ export function Header() {
         <div className=" bg-gray-100">
           <div className="container flex justify-between items-center py-1 flex-wrap gap-2">
             <a href="/" className="text-dark font-medium hidden md:block">
-              Construction company Brooklyn, Queens and New York
+              Best construction company brooklyn
             </a>
             <div className="flex gap-2 items-center">
               <a
@@ -335,7 +333,7 @@ export function Header() {
       <Drawer
         placement="right"
         open={openNav}
-        onClose={()=>setOpenNav(false)}
+        onClose={() => setOpenNav(false)}
         className="p-4 overflow-y-auto pb-24 !z-[1000000000000000000]"
       >
         <div className="mb-6 flex items-center justify-between">
@@ -345,7 +343,7 @@ export function Header() {
           <IconButton
             variant="text"
             color="blue-gray"
-            onClick={()=>setOpenNav(false)}
+            onClick={() => setOpenNav(false)}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -363,7 +361,7 @@ export function Header() {
             </svg>
           </IconButton>
         </div>
-        <NavList/>
+        <NavList />
       </Drawer>
       <BottomMenu />
     </>
