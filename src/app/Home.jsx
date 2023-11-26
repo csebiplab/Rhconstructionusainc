@@ -3,13 +3,18 @@
 import Slider from "@/components/Slider";
 import { BlogCard } from "@/components/cards/Blog.Card";
 import API from "@/config/API.config";
-import constant, { constructionProjectConsiderations } from "@/libs/constant";
+import constant, {
+  constructionProjectConsiderations,
+  partOfconstructionProjectConsiderations,
+} from "@/libs/constant";
+
 import { errorMessage } from "@/libs/utils";
 import { Button, Spinner } from "@material-tailwind/react";
 import Link from "next/link";
 import { BsTelephoneForwardFill } from "react-icons/bs";
 import { SwiperSlide } from "swiper/react";
 import useSwr from "swr";
+import "./styles/Home.css";
 const HomeBlogs = () => {
   const {
     data: blogs,
@@ -52,7 +57,10 @@ const HomeBlogs = () => {
     </section>
   );
 };
-
+console.log(
+  "partOfconstructionProjectConsiderations",
+  partOfconstructionProjectConsiderations
+);
 const Home = () => {
   return (
     <main>
@@ -344,7 +352,7 @@ const Home = () => {
       <HomeBlogs />
       {/* OUR COMMITMENT */}
       <section
-        className="bg-cover bg-right bg-fixed"
+        className="consideringPlan__arrea bg-cover bg-right bg-fixed"
         style={{
           backgroundImage:
             "linear-gradient(to left, white 50%, transparent 60%), url(/assets/images/house-bg.webp)",
@@ -385,6 +393,40 @@ const Home = () => {
               What To Consider First When You Start Planning for Your{" "}
               <span className="text-primary">Construction Project</span>
             </h1>
+            <Slider
+              className="max-h-[600px] overflow-hidden slider-area"
+              id="home-banner-slider"
+              style={{
+                "--swiper-navigation-size": "22px",
+                "--swiper-theme-color": "black",
+              }}
+            >
+              {partOfconstructionProjectConsiderations?.map((item, key) => (
+                <SwiperSlide key={key} className=" h-full">
+                  {({ isActive }) => (
+                    <div
+                      style={{
+                        // backgroundImage: `url(${item.bg})`,
+                        // background: "#000",
+                        opacity: isActive ? 1 : 0,
+                      }}
+                      className="bg-cover bg-center text-white"
+                    >
+                      <div className="content-areea">
+                        <ul className="planning__more-content-list">
+                          {item?.part?.data?.map((item, key) => (
+                            <li className="flex gap-2 items-center py-1 px-2 text-lg text-secondary font-medium mb-2">
+                              <span className="inline-block h-2 w-2 rounded-full bg-primary" />
+                              <span>{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  )}
+                </SwiperSlide>
+              ))}
+            </Slider>
             <ul className="planning__more-content-list">
               {constructionProjectConsiderations?.map((item, key) => (
                 <li className="flex gap-2 items-center py-1 px-2 text-lg text-secondary font-medium mb-2">
@@ -397,7 +439,7 @@ const Home = () => {
           <img
             src="/assets/images/man-like-smile.webp"
             alt="man-like-smile"
-            className="max-w-[260] mx-auto"
+            className="h-full mx-auto"
           />
         </div>
       </section>

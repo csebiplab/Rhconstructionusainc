@@ -5,7 +5,7 @@ const constants = {
   twitter: "https://twitter.com/_rhconstruction",
 };
 export default constants;
-export const constructionProjectConsiderations = [
+const constructionProjectConsiderations = [
   "Establishing clear goals and defining the scope of your construction project.",
   "Developing a comprehensive budget and financial strategy for the construction project.",
   "Identifying potential risks and implementing strategies to manage and mitigate them.",
@@ -26,4 +26,52 @@ export const constructionProjectConsiderations = [
   "Establishing a collaborative relationship with the client and managing expectations throughout the construction process.",
   "Exploring and implementing innovative construction methods to enhance efficiency and reduce costs.",
   "Establishing a robust system for record-keeping and documentation to track progress and ensure accountability.",
+];
+const totalLength = constructionProjectConsiderations?.length;
+const partLength = Math.ceil(totalLength / 5);
+const part1 = constructionProjectConsiderations.slice(0, partLength);
+const part2 = constructionProjectConsiderations.slice(
+  partLength,
+  2 * partLength
+);
+const part3 = constructionProjectConsiderations.slice(
+  2 * partLength,
+  3 * partLength
+);
+const part4 = constructionProjectConsiderations.slice(
+  3 * partLength,
+  4 * partLength
+);
+const part5 = constructionProjectConsiderations.slice(4 * partLength);
+export const partOfconstructionProjectConsiderations = [
+  {
+    part: {
+      data: part1,
+      length: part1.length,
+    },
+  },
+  {
+    part: {
+      data: part2,
+      length: part2.length,
+    },
+  },
+  {
+    part: {
+      data: part3,
+      length: part3.length,
+    },
+  },
+  {
+    part: {
+      data: part4,
+      length: part4.length,
+    },
+  },
+  {
+    part: {
+      data: part5,
+      length: part5.length,
+    },
+  },
 ];
