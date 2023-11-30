@@ -10,7 +10,13 @@ import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import { GrFormPrevious } from "react-icons/gr";
 
-export default ({ children, spaceBetween=0, slidesPerView=1,navigation=true, ...rest }) => {
+export default ({
+  children,
+  spaceBetween = 0,
+  slidesPerView = 1,
+  navigation = true,
+  ...rest
+}) => {
   return (
     <Swiper
       spaceBetween={spaceBetween}
@@ -20,10 +26,11 @@ export default ({ children, spaceBetween=0, slidesPerView=1,navigation=true, ...
       autoplay={{
         disableOnInteraction: false,
         pauseOnMouseEnter: false,
-        delay: 3000,
+        // delay: 3000,
       }}
       navigation={navigation}
-      modules={[Navigation, Autoplay, EffectFade]}
+      // modules={[Navigation, Autoplay, EffectFade]}
+      modules={[Navigation, EffectFade]}
       {...rest}
     >
       {children}
