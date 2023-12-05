@@ -5,7 +5,7 @@ const constants = {
   twitter: "https://twitter.com/_rhconstruction",
 };
 export default constants;
-const constructionProjectConsiderations = [
+export const constructionProjectConsiderations = [
   "Establishing clear goals and defining the scope of your construction project.",
   "Developing a comprehensive budget and financial strategy for the construction project.",
   "Identifying potential risks and implementing strategies to manage and mitigate them.",

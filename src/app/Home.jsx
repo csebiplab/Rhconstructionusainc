@@ -4,7 +4,6 @@ import Slider from "@/components/Slider";
 import { BlogCard } from "@/components/cards/Blog.Card";
 import API from "@/config/API.config";
 import constant, {
-  constructionProjectConsiderations,
   partOfconstructionProjectConsiderations,
 } from "@/libs/constant";
 
@@ -57,10 +56,7 @@ const HomeBlogs = () => {
     </section>
   );
 };
-console.log(
-  "partOfconstructionProjectConsiderations",
-  partOfconstructionProjectConsiderations
-);
+
 const Home = () => {
   return (
     <main>
@@ -427,14 +423,6 @@ const Home = () => {
                 </SwiperSlide>
               ))}
             </Slider>
-            <ul className="planning__more-content-list">
-              {constructionProjectConsiderations?.map((item, key) => (
-                <li className="flex gap-2 items-center py-1 px-2 text-lg text-secondary font-medium mb-2">
-                  <span className="inline-block h-2 w-2 rounded-full bg-primary" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
           </div>
           <img
             src="/assets/images/man-like-smile.webp"
