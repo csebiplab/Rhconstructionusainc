@@ -14,6 +14,7 @@ import { BsTelephoneForwardFill } from "react-icons/bs";
 import { SwiperSlide } from "swiper/react";
 import useSwr from "swr";
 import "./styles/Home.css";
+import OurCommitment from "@/components/__home_components/OurCommitment";
 
 // Slider info
 const slidersInfo = [
@@ -233,6 +234,12 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* OUR COMMITMENT SECTION */}
+      <section className="py-10">
+        <OurCommitment />
+      </section>
+
       {/* OUR SERVICE */}
       <section>
         <div className="container py-20">
