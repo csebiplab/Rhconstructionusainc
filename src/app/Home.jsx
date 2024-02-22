@@ -345,7 +345,7 @@ const Home = () => {
         </div>
       </section>
       <HomeBlogs />
-      {/* OUR COMMITMENT */}
+      {/* OUR COMMITMENT Start*/}
       <section
         className="consideringPlan__arrea bg-cover bg-right bg-fixed"
         style={{
@@ -357,30 +357,30 @@ const Home = () => {
           <div />
           <div className="py-10">
             <h1 className="mb-4 font-bold">
-              <span className="text-primary">OUR Commitment </span>
-              as Best Contractors Brooklyn
+              The Best Dependable Construction Companies in Brooklyn
             </h1>
             <p className="text-secondary mb-2 leading-relaxed font-medium">
-              RH Construction USA, Inc. stands out as one of the best
-              contractors in Brooklyn, setting a benchmark for excellence in the
-              industry. With a sterling reputation built on years of dedicated
-              service, we have consistently delivered exceptional craftsmanship
-              and superior results. Our team of skilled professionals brings a
-              wealth of experience to every project, ensuring meticulous
-              attention to detail and a commitment to exceeding client
-              expectations. From residential renovations to commercial builds,
-              RH Construction USA, Inc.
-              <br /> <br /> showcases a diverse portfolio that reflects our
-              versatility and expertise. With a client-centric approach and a
-              passion for quality, our general contractor in Brooklyn truly
-              exemplifies the pinnacle of construction excellence in Brooklyn.
-              Since 2009, we have been delivering the best home remodeling and
-              roof repair services.
+              When it comes to dependable construction companies in Brooklyn, a
+              few names stand out for their consistent quality and reliability.
+              One such company is RH Construction USA Inc., known for its
+              commitment to excellence and attention to detail. With a track
+              record of successful projects across the borough, our construction
+              company has earned a reputation for delivering projects on time
+              and within budget, making them a top choice for clients seeking
+              reliability and professionalism.
+              <br /> <br /> Our construction company in Brooklyn is renowned for
+              its expertise in both residential and commercial projects. With a
+              team of skilled professionals and a dedication to client
+              satisfaction, our builders have built a strong presence in the
+              local construction industry. Our emphasis on transparency and
+              clear communication ensures that clients are kept informed every
+              step of the way, fostering trust and confidence in our abilities
+              to deliver exceptional results.
             </p>
           </div>
         </div>
       </section>
-      {/* OUR COMMITMENT */}
+      {/* OUR COMMITMENT End*/}
       <section>
         <div className="container grid grid-cols-1 md:grid-cols-2 py-10 pb-0">
           <div className=" py-10 pt-20">
