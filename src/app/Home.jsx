@@ -14,6 +14,35 @@ import { BsTelephoneForwardFill } from "react-icons/bs";
 import { SwiperSlide } from "swiper/react";
 import useSwr from "swr";
 import "./styles/Home.css";
+
+// Slider info
+const slidersInfo = [
+  {
+    bg: "/assets/images/slider-bg-one.webp",
+    img: "/assets/images/slider-img-one.webp",
+    title: "The Best Construction Companies in Brooklyn",
+    subtitle:
+      "RH Construction USA Inc. stands as a beacon of excellence among construction companies in Brooklyn, earning its reputation as one of the best in the industry.",
+    route: "/",
+  },
+  {
+    bg: "/assets/images/slider-bg-two.webp",
+    img: "/assets/images/slider-img-two.webp",
+    title: "Industrial Contractor",
+    subtitle:
+      "With a reputation for delivering innovative solutions and unmatched expertise, our industrial contractor seamlessly transforms visions into reality, setting new standards of excellence in every project.",
+    route: "/",
+  },
+  {
+    bg: "/assets/images/slider-bg-three.webp",
+    img: "/assets/images/slider-img-three.webp",
+    title: "All Construction Services",
+    subtitle:
+      "From construction groundbreaking to construction cleaning services, our construction services company brings your vision to life with precision and expertise.",
+    route: "/",
+  },
+];
+
 const HomeBlogs = () => {
   const {
     data: blogs,
@@ -68,32 +97,7 @@ const Home = () => {
           "--swiper-theme-color": "white",
         }}
       >
-        {[
-          {
-            bg: "/assets/images/slider-bg-one.webp",
-            img: "/assets/images/slider-img-one.webp",
-            title: "General Contractor Brooklyn",
-            subtitle:
-              "Our experienced general contractor services in Brooklyn encompass everything from project planning and management to skilled craftsmanship, ensuring a seamless and successful construction experience for our clients.",
-            route: "/",
-          },
-          {
-            bg: "/assets/images/slider-bg-two.webp",
-            img: "/assets/images/slider-img-two.webp",
-            title: "Industrial Contractor",
-            subtitle:
-              "With a reputation for delivering innovative solutions and unmatched expertise, our industrial contractor seamlessly transforms visions into reality, setting new standards of excellence in every project.",
-            route: "/",
-          },
-          {
-            bg: "/assets/images/slider-bg-three.webp",
-            img: "/assets/images/slider-img-three.webp",
-            title: "All Construction Services",
-            subtitle:
-              "From construction groundbreaking to construction cleaning services, our construction services company brings your vision to life with precision and expertise.",
-            route: "/",
-          },
-        ].map((item, key) => (
+        {slidersInfo.map((item, key) => (
           <SwiperSlide key={key} className=" h-full">
             {({ isActive }) => (
               <div
