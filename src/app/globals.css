@@ -3,57 +3,71 @@
 @tailwind utilities;
 
 ::-webkit-scrollbar {
-    width: 8px;
-    background: #00000020;
+  width: 8px;
+  background: #00000020;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #00000080;
+  background-color: #00000080;
 }
 
-.pswp__img{
-  object-fit:contain;
+.pswp__img {
+  object-fit: contain;
 }
 .ql-video {
-    width: 100%;
-    aspect-ratio: 16/9;
+  width: 100%;
+  aspect-ratio: 16/9;
 }
 
-@layer base{
-  h1,h2,h3,h4,h5,h6{
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-semibold;
   }
-  h1{@apply text-4xl};
-  h2{@apply text-3xl};
-  h3{@apply text-2xl};
-  h4{@apply text-xl};
-  h5{@apply text-lg};
+  h1 {
+    @apply text-4xl;
+  }
+  h2 {
+    @apply text-3xl;
+  }
+  h3 {
+    @apply text-2xl;
+  }
+  h4 {
+    @apply text-xl;
+  }
+  h5 {
+    @apply text-lg;
+  }
 }
 
+img {
+  @apply select-none;
+}
 
-@layer utilities{
-  .container{
+@layer utilities {
+  .container {
     @apply max-w-6xl px-3 mx-auto;
   }
-  .container-fluid{
+  .container-fluid {
     @apply w-full px-4 mx-auto;
   }
 }
-.swiper-button-prev,.swiper-button-next{
+.swiper-button-prev,
+.swiper-button-next {
   font-weight: bolder;
 }
 
-@layer components{
-
-
-
-
+@layer components {
   /*
   FOOTER CLASSES
   */
 
-  .footer-link{
+  .footer-link {
     @apply flex gap-2 mb-2 text-lg;
   }
-
 }

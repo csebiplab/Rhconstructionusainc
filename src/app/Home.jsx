@@ -386,10 +386,17 @@ const Home = () => {
       <section>
         <div className="container grid grid-cols-1 md:grid-cols-2 py-10 pb-0">
           <div className=" py-10 pt-20">
-            <h1 className="mb-4 font-bold">
-              What To Consider First When You Start Planning for Your{" "}
-              <span className="text-primary">Construction Project</span>
+            <h1 className="mb-2 font-bold">
+              What To Consider First When You Hire the
+              <span className="text-primary ml-2">Best Contractors</span>
             </h1>
+            <p className="font-medium mb-4">
+              When selecting the best contractors from all construction
+              companies in Brooklyn for your project, it's crucial to consider
+              several key factors to ensure a successful and satisfactory
+              outcome. Here are the top considerations to prioritize, listed in
+              order of importance:
+            </p>
             <Slider
               className="max-h-[600px] overflow-hidden slider-area"
               id="home-banner-slider"
@@ -410,10 +417,13 @@ const Home = () => {
                       className="bg-cover bg-center text-white"
                     >
                       <div className="content-areea">
-                        <ul className="planning__more-content-list">
+                        <ul className="list-inside list-disc planning__more-content-list">
                           {item?.part?.data?.map((item, key) => (
-                            <li className="flex gap-2 items-center py-1 px-2 text-lg text-secondary font-medium mb-2">
-                              <span className="inline-block h-2 w-2 rounded-full bg-primary" />
+                            <li
+                              key={key}
+                              className="flex gap-2 items-center py-1 px-2 text-lg text-secondary font-medium mb-2"
+                            >
+                              <span className="h-4 w-4 rounded-full bg-primary" />
                               <span>{item}</span>
                             </li>
                           ))}
@@ -424,6 +434,12 @@ const Home = () => {
                 </SwiperSlide>
               ))}
             </Slider>
+            <p>
+              By systematically evaluating these factors, you'll be better
+              equipped to choose the best contractor for your project, ensuring
+              a successful and stress-free construction or renovation
+              experience.
+            </p>
           </div>
           <img
             src="/assets/images/man-like-smile.webp"

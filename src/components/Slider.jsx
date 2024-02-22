@@ -22,7 +22,7 @@ export default ({
       spaceBetween={spaceBetween}
       slidesPerView={3}
       effect="fade"
-      loop
+      loop={false}
       autoplay={{
         disableOnInteraction: false,
         pauseOnMouseEnter: false,
