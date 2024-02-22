@@ -201,12 +201,23 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
             <div className="lg:col-span-2" />
             <div className="lg:col-span-3">
-              <h2 className="text-base mb-5 leading-6 ">
-                RH Construction USA, Inc. stands out as one of the best trusted
-                and reputable construction companies in Brooklyn, known for
-                their impeccable craftsmanship and dedication to excellence in
-                every project they undertake.
-              </h2>
+              <h1 class="leading-10">
+                Discover Excellence in Construction with{" "}
+                <span className="text-gray-900">R H</span> Construction USA Inc
+              </h1>
+              <p className="text-base mb-5 leading-6 font-bold mt-4">
+                RH Construction USA Inc. is your gateway to discovering
+                excellence in construction services. With a commitment to
+                quality craftsmanship, innovation, and client satisfaction, we
+                bring a wealth of experience to every project. Whether it's
+                residential, commercial, or industrial construction, our skilled
+                team strives for perfection in every detail. From the initial
+                concept to the final touches, we prioritize efficiency and
+                precision, ensuring that your vision becomes a reality. At our
+                company, we believe in building more than structures; we build
+                lasting relationships with our clients through trust and
+                reliability from all construction companies in Brooklyn.
+              </p>
               <div className="flex gap-3  items-center flex-wrap">
                 <Button className="rounded-full bg-white hover:bg-gray-900 text-black hover:text-white text-lg font-semibold tracking-wider">
                   Request a Quote
