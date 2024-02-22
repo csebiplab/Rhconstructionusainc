@@ -142,11 +142,11 @@ const Home = () => {
       <section className="py-10 pt-32">
         <div className="container">
           <div className="text-center mb-3">
-            <h1 class="leading-10 mb-4 sm:mb-4">
+            <h1 class="leading-10 mb-1">
               <span className="text-primary">R H</span> Construction USA, Inc.
-              Best <br /> Brooklyn Contractors
             </h1>
-            <p className="max-w-lg xl:max-w-5xl mx-auto text-secondary">
+            <h3>Welcome to The Leading Construction Companies in Brooklyn</h3>
+            <p className="max-w-lg xl:max-w-5xl mx-auto text-secondary mt-4">
               RH Construction USA, Inc. stands as a beacon of excellence among
               general contractors in Brooklyn. With a reputation built on
               unwavering dedication to quality and precision, this company has
