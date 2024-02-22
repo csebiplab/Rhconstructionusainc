@@ -233,7 +233,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {/* OUT SERVICE */}
+      {/* OUR SERVICE */}
       <section>
         <div className="container py-20">
           <div className="grid grid-cols-1 mg:grid-cols-4 lg:grid-cols-6 gap-2">
@@ -246,25 +246,20 @@ const Home = () => {
                   <Link href="/" className="text-primary text-lg font-semibold">
                     RH Construction USA,
                   </Link>{" "}
-                  Inc. stands as a beacon of excellence in the realm of Brooklyn
-                  construction services. With a proven track record of
-                  delivering top-notch projects, we have earned a stellar
-                  reputation for our commitment to quality and customer
-                  satisfaction. This dynamic company brings a wealth of
-                  expertise to every endeavor, ensuring that each project is
-                  executed with precision and finesse. From residential
-                  construction services, industrial construction services to
-                  commercial construction services, RH Construction USA, Inc.
-                  exhibits a versatile skill set that caters to a diverse
-                  clientele. Our team of highly skilled professionals is
-                  equipped with the latest industry knowledge and technology,
-                  guaranteeing that every project is completed to the highest
-                  standards. Moreover, their dedication to transparency and open
-                  communication fosters a collaborative approach, allowing
-                  clients to be actively involved in every stage of the
-                  construction process. With a keen eye for detail and a passion
-                  for innovation, RH Construction USA, Inc. continues to set the
-                  benchmark for excellence in general contractor in Brooklyn.
+                  is your trusted partner for top-notch construction services,
+                  dedicated to bringing your dream project to life. From
+                  conceptualization to completion, we prioritize quality
+                  craftsmanship, timely delivery, and cost-effective solutions
+                  to meet and exceed your expectations.
+                </p>
+                <p className="text-secondary leading-7 mt-2">
+                  At our company, we understand that your dream project is a
+                  significant investment, and we take pride in delivering
+                  unparalleled construction service that reflects our unwavering
+                  commitment to customer satisfaction. Whether you're
+                  envisioning a residential masterpiece or a commercial
+                  endeavor, our experienced team is equipped to handle a diverse
+                  range of projects.
                 </p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
@@ -277,7 +272,8 @@ const Home = () => {
                       "Painting",
                       "Sheetrock",
                       "Plastering",
-                      "Electrical and Plumbing",
+                      "Electrical",
+                      "Plumbing",
                     ].map((item, key) => (
                       <li key={key}>
                         <Link
@@ -292,15 +288,17 @@ const Home = () => {
                   </ul>
                 </figure>
                 <figure>
-                  <h3 className="mb-2">Interior</h3>
+                  <h3 className="mb-2">Exterior</h3>
                   <ul>
                     {[
-                      "Bathroom Remodeling",
-                      "Kitchen Remodeling",
-                      "Painting",
-                      "Sheetrock",
-                      "Plastering",
-                      "Electrical and Plumbing",
+                      "Roofing",
+                      "Pointing",
+                      "Water Proofing",
+                      "Sidewalk Repair and Replace",
+                      "Brown Stone Repair",
+                      "Brick Works",
+                      "Power Wash",
+                      "Siding and all kinds of masonry work",
                     ].map((item, key) => (
                       <li key={key}>
                         <Link
@@ -314,7 +312,7 @@ const Home = () => {
                     ))}
                   </ul>
                 </figure>
-                <figure>
+                {/* <figure>
                   <ul className="lg:mt-10">
                     {[
                       "Bathroom Remodeling",
@@ -335,13 +333,13 @@ const Home = () => {
                       </li>
                     ))}
                   </ul>
-                </figure>
+                </figure> */}
               </div>
             </div>
             <img
               src="/assets/images/our-service-home-man.webp"
               alt="ourservice man"
-              className="col-span-2 mx-auto h-full"
+              className="col-span-2 mx-auto h-full mt-16"
             />
           </div>
         </div>
