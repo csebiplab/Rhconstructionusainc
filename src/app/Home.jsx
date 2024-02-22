@@ -147,26 +147,12 @@ const Home = () => {
             </h1>
             <h3>Welcome to The Leading Construction Companies in Brooklyn</h3>
             <p className="max-w-lg xl:max-w-5xl mx-auto text-secondary mt-4">
-              RH Construction USA, Inc. stands as a beacon of excellence among
-              general contractors in Brooklyn. With a reputation built on
-              unwavering dedication to quality and precision, this company has
-              established itself as a cornerstone of the construction industry
-              in the borough. Their team of skilled professionals brings a
-              wealth of experience to every project, ensuring that each endeavor
-              is met with the highest standards of craftsmanship. From
-              residential renovations to commercial builds, RH Construction USA,
-              Inc. approaches every undertaking with meticulous attention to
-              detail, ensuring that every client's vision is brought to life.
-              What sets them apart is their commitment to open communication,
-              fostering a collaborative environment that nurtures creativity and
-              innovation. This company understands the unique challenges that
-              come with Brooklyn's diverse architectural landscape, and they
-              have honed their expertise to seamlessly integrate modern design
-              with the area's rich historical character. With a track record of
-              successful projects and a portfolio that showcases their
-              versatility, RH Construction USA, Inc. continues to be a trusted
-              name in the industry, delivering exceptional results that exceed
-              expectations time and time again.
+              RH Construction USA Inc. stands out as one of the leading
+              construction companies in Brooklyn, embodying a commitment to
+              excellence and innovation in the industry. With a proven track
+              record of successfully delivering a diverse range of construction
+              projects, our construction company has earned a stellar reputation
+              for its dedication to quality craftsmanship and timely completion.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center">
