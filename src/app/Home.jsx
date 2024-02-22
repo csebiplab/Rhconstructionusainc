@@ -381,6 +381,8 @@ const Home = () => {
         </div>
       </section>
       {/* OUR COMMITMENT End*/}
+
+      {/* Construction Project Section Starts */}
       <section>
         <div className="container grid grid-cols-1 md:grid-cols-2 py-10 pb-0">
           <div className=" py-10 pt-20">
@@ -430,6 +432,7 @@ const Home = () => {
           />
         </div>
       </section>
+      {/* Construction Project Section Ends */}
     </main>
   );
 };
