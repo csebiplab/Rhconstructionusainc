@@ -17,6 +17,7 @@ import "./styles/Home.css";
 import OurCommitment from "@/components/__home_components/OurCommitment";
 import OurWorkingProcess from "@/components/__home_components/OurWorkingProcess";
 import GeneralContractor from "@/components/__home_components/GeneralContractor";
+import YourConstructionProjects from "@/components/__home_components/YourConstructionProjects";
 
 // Slider info
 const slidersInfo = [
@@ -400,6 +401,11 @@ const Home = () => {
       {/* General Contractor section */}
       <section className="my-10">
         <GeneralContractor />
+      </section>
+
+      {/* Your Construction Project */}
+      <section className="my-10 container">
+        <YourConstructionProjects />
       </section>
 
       {/* Construction Project Section Starts */}
