@@ -21,7 +21,8 @@ const slidersInfo = [
   {
     bg: "/assets/images/slider-bg-one.webp",
     img: "/assets/images/slider-img-one.webp",
-    title: "The Best Construction Companies in Brooklyn",
+    title: `#1 Construction Companies
+    in Brooklyn`,
     subtitle:
       "RH Construction USA Inc. stands as a beacon of excellence among construction companies in Brooklyn, earning its reputation as one of the best in the industry.",
     route: "/",
@@ -108,9 +109,9 @@ const Home = () => {
                 }}
                 className="bg-cover bg-center text-white"
               >
-                <div className="container grid grid-cols-1 md:grid-cols-2 items-end">
-                  <div className="h-full w-full flex flex-col justify-center items-center text-center md:text-left">
-                    <h1 className="mb-3 font-bold lg:text-6xl">
+                <div className="container grid grid-cols-1 md:grid-cols-5 items-end">
+                  <div className="h-full w-full md:col-span-3 flex flex-col justify-center items-center text-center md:text-left">
+                    <h1 className="mb-3 font-bold lg:text-[50px] leading-tight">
                       {item?.title}
                     </h1>
                     <h3 className="mb-8">{item?.subtitle}</h3>
@@ -126,7 +127,7 @@ const Home = () => {
                   <img
                     src={item.img}
                     alt=""
-                    className="w-full hidden md:block"
+                    className="w-full hidden md:block md:col-span-2"
                   />
                 </div>
               </div>
@@ -143,7 +144,7 @@ const Home = () => {
       <section className="py-10 pt-32">
         <div className="container">
           <div className="text-center mb-3">
-            <h1 class="leading-10 mb-1">
+            <h1 className="leading-10 mb-1">
               <span className="text-primary">R H</span> Construction USA, Inc.
             </h1>
             <h3>Welcome to The Leading Construction Companies in Brooklyn</h3>
@@ -202,7 +203,7 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
             <div className="lg:col-span-2" />
             <div className="lg:col-span-3">
-              <h1 class="leading-10">
+              <h1 className="leading-10">
                 Discover Excellence in Construction with{" "}
                 <span className="text-gray-900">R H</span> Construction USA Inc
               </h1>

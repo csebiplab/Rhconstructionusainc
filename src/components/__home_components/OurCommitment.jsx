@@ -43,18 +43,18 @@ const OurCommitment = () => {
   return (
     <div className="container mx-auto">
       <div className="w-full flex justify-center">
-        <div className="w-11/12 text-center">
+        <div className="">
           <div className="flex justify-center">
-            <h1 class="leading-10 mb-1 max-w-4xl">
+            <h1 className="leading-10 mb-1 max-w-4xl">
               <span className="text-primary">Our Commitment </span> as one of
               the Best Construction Companies in Brooklyn
             </h1>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center items-center h-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10 justify-center items-center h-full">
             {commitments?.map((commitment, idx) => (
               <div
                 key={commitment.id}
-                className="md:max-w-xs h-full border-b-2 border-gray-600 rounded-none"
+                className="md:max-w-xs h-[460px] border-b-2 border-gray-600 rounded-none text-center"
               >
                 <OurCommitmentCard commitment={commitment} />
               </div>
