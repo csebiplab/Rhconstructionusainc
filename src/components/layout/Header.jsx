@@ -282,7 +282,7 @@ export function Header() {
   return (
     <>
       <header>
-        <div className=" bg-gray-100">
+        <div className="">
           <div className="container flex justify-between items-center py-1 flex-wrap gap-2">
             <a href="/" className="text-dark font-medium hidden md:block">
               Best construction company brooklyn
@@ -303,32 +303,35 @@ export function Header() {
             </div>
           </div>
         </div>
-        <Navbar className="mx-auto px-4 py-2 shadow-none max-w-full container">
-          <div className="flex items-center justify-between text-blue-gray-900">
-            <Link href="/" className="mr-4 cursor-pointer">
-              <img
-                src="/assets/images/logo.webp"
-                alt=""
-                className="w-full max-w-[140px] rounded-md "
-              />
-            </Link>
-            <div className="hidden lg:block">
-              <NavList />
+
+        <div className="bg-gray-300">
+          <Navbar className="mx-auto px-5 md:px-24 rounded-none py-2 shadow-none max-w-full">
+            <div className="flex items-center justify-between text-blue-gray-900">
+              <Link href="/" className="mr-4 cursor-pointer">
+                <img
+                  src="/assets/images/logo.webp"
+                  alt=""
+                  className="w-full max-w-[140px] rounded-md "
+                />
+              </Link>
+              <div className="hidden lg:block">
+                <NavList />
+              </div>
+              <IconButton
+                variant="text"
+                color="blue-gray"
+                className="lg:hidden"
+                onClick={() => setOpenNav(!openNav)}
+              >
+                {openNav ? (
+                  <XMarkIcon className="h-6 w-6" strokeWidth={2} />
+                ) : (
+                  <Bars3Icon className="h-6 w-6" strokeWidth={2} />
+                )}
+              </IconButton>
             </div>
-            <IconButton
-              variant="text"
-              color="blue-gray"
-              className="lg:hidden"
-              onClick={() => setOpenNav(!openNav)}
-            >
-              {openNav ? (
-                <XMarkIcon className="h-6 w-6" strokeWidth={2} />
-              ) : (
-                <Bars3Icon className="h-6 w-6" strokeWidth={2} />
-              )}
-            </IconButton>
-          </div>
-        </Navbar>
+          </Navbar>
+        </div>
       </header>
       <Drawer
         placement="right"
