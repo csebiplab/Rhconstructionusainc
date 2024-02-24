@@ -15,6 +15,7 @@ import { SwiperSlide } from "swiper/react";
 import useSwr from "swr";
 import "./styles/Home.css";
 import OurCommitment from "@/components/__home_components/OurCommitment";
+import OurWorkingProcess from "@/components/__home_components/OurWorkingProcess";
 
 // Slider info
 const slidersInfo = [
@@ -389,6 +390,11 @@ const Home = () => {
         </div>
       </section>
       {/* OUR COMMITMENT End*/}
+
+      {/* Our working process */}
+      <section className="container my-10">
+        <OurWorkingProcess />
+      </section>
 
       {/* Construction Project Section Starts */}
       <section>
