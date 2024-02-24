@@ -237,9 +237,9 @@ const Home = () => {
       </section>
 
       {/* OUR COMMITMENT SECTION */}
-      <section className="py-10">
+      {/* <section className="py-10">
         <OurCommitment />
-      </section>
+      </section> */}
 
       {/* OUR SERVICE */}
       <section>
