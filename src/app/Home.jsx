@@ -16,6 +16,7 @@ import useSwr from "swr";
 import "./styles/Home.css";
 import OurCommitment from "@/components/__home_components/OurCommitment";
 import OurWorkingProcess from "@/components/__home_components/OurWorkingProcess";
+import GeneralContractor from "@/components/__home_components/GeneralContractor";
 
 // Slider info
 const slidersInfo = [
@@ -394,6 +395,11 @@ const Home = () => {
       {/* Our working process */}
       <section className="container my-10">
         <OurWorkingProcess />
+      </section>
+
+      {/* General Contractor section */}
+      <section className="my-10">
+        <GeneralContractor />
       </section>
 
       {/* Construction Project Section Starts */}
