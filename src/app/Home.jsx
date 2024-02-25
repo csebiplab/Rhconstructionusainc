@@ -220,7 +220,8 @@ const Home = () => {
               <h1 className="leading-10 text-[2rem]">
                 Discover Excellence in Construction
                 <br />
-                with R H Construction USA Inc
+                with
+                <span className="text-white ml-2">R H Construction USA Inc</span>
               </h1>
               <p className="text-base mb-5 leading-6 font-medium mt-4 text-white">
                 RH Construction USA Inc. is your gateway to discovering
