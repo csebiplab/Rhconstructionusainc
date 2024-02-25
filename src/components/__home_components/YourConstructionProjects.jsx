@@ -19,7 +19,7 @@ export default function YourConstructionProjects() {
             <br />
             <span className="text-primary">RH Construction USA Inc</span>
           </h1>
-          <p className="mt-2 font-medium">
+          <p className="mt-4 font-medium">
             Elevate your construction projects to new heights with RH
             Construction USA Inc., one of the best construction companies in
             Brooklyn. Renowned for its unwavering commitment to excellence, our

@@ -41,7 +41,7 @@ export default function OurWorkingProcess() {
             Certainly! Here's an overview of the working process of our
             construction company in Brooklyn:
           </p>
-          <div className="w-full md:col-span-4">
+          <div className="w-full md:col-span-4 mt-4">
             <ul className="list-disc list-inside marker:text-primary marker:font-extrabold marker:text-2xl">
               {workingProcessLists.map(({ id, title, desc }) => (
                 <div key={id} className="mb-2">

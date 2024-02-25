@@ -14,9 +14,9 @@ import { BsTelephoneForwardFill } from "react-icons/bs";
 import { SwiperSlide } from "swiper/react";
 import useSwr from "swr";
 import "./styles/Home.css";
-import OurCommitment from "@/components/__home_components/OurCommitment";
+// import OurCommitment from "@/components/__home_components/OurCommitment";
 import OurWorkingProcess from "@/components/__home_components/OurWorkingProcess";
-import GeneralContractor from "@/components/__home_components/GeneralContractor";
+// import GeneralContractor from "@/components/__home_components/GeneralContractor";
 import YourConstructionProjects from "@/components/__home_components/YourConstructionProjects";
 
 // Slider info
@@ -208,7 +208,7 @@ const Home = () => {
       </section>
       {/* CALL TO ACTIONS */}
       <section
-        className="bg-cover bg-right md:bg-cetner bg-primary"
+        className="bg-cover bg-right md:bg-cetner bg-primary my-6"
         style={{
           backgroundImage: "url(/assets/images/call-to-action-bg.webp)",
         }}
@@ -264,7 +264,7 @@ const Home = () => {
       </section> */}
 
       {/* OUR SERVICE */}
-      <section>
+      <section className="">
         <div className="container py-20">
           <div className="grid grid-cols-1 mg:grid-cols-4 lg:grid-cols-6 gap-2">
             <div className="col-span-1 md:col-span-3 lg:col-span-4">
@@ -454,7 +454,7 @@ const Home = () => {
       {/* Choosing The Right Contractor Start*/}
 
       {/* Our working process */}
-      <section className="container my-10">
+      <section className="container py-20">
         <OurWorkingProcess />
       </section>
 
@@ -464,15 +464,15 @@ const Home = () => {
       </section> */}
 
       {/* Your Construction Project */}
-      <section className="my-10 container">
+      <section className="py-20 container">
         <YourConstructionProjects />
       </section>
 
       {/* Construction Project Section Starts */}
       <section>
         <div className="container grid grid-cols-1 md:grid-cols-2 py-10 pb-0">
-          <div className=" py-10 pt-20">
-            <h1 className="mb-2 font-bold">
+          <div>
+            <h1 className="mb-2 font-bold text-[2rem]">
               What To Consider First When You Hire the
               <span className="text-primary ml-2">Best Contractors</span>
             </h1>
@@ -530,7 +530,7 @@ const Home = () => {
           <img
             src="/assets/images/man-like-smile.webp"
             alt="man-like-smile"
-            className="h-full mx-auto md:mt-20 -z-10"
+            className="h-full mx-auto md:mt-12 -z-10"
           />
         </div>
       </section>

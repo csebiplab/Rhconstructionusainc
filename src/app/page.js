@@ -21,7 +21,7 @@ export async function generateMetadata() {
   } catch (error) {
     console.log(error.message);
     return {
-      title: "Home | RH Construction USA",
+      title: "Construction Company in Brooklyn | RH Construction USA Inc.",
       keywords: "Home, RH Construction USA",
       description: "As one of the leading construction companies in Brooklyn, RH Construction USA Inc. offers top-notch general contractor services in Brooklyn."
     };
