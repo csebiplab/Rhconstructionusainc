@@ -32,24 +32,21 @@ const workingProcessLists = [
 export default function OurWorkingProcess() {
   return (
     <div>
-      <div className="flex flex-col md:flex-row gap-x-8">
+      <div className="flex flex-col md:flex-row gap-x-2">
         <div>
           <h1 className="font-bold mb-2">
-            Working Process of Our
-            <span className="text-primary mx-2">
-              Construction <br /> Company
-            </span>
-            in Brooklyn
+            Working Process of Our Construction Company in Brooklyn
           </h1>
           <p className="font-semibold">
             Certainly! Here's an overview of the working process of our
             construction company in Brooklyn:
           </p>
         </div>
-        <p className="w-full max-w-md font-medium mt-2 md:mt-8">
-          * By following this comprehensive working process, we aim to deliver
-          exceptional construction projects that exceed our client’s
-          expectations while contributing positively to the Brooklyn community.
+        <p className="w-full max-w-md font-medium mt-2 md:mt-4">
+          <span className="text-primary text-xl">*</span> By following this
+          comprehensive working process, we aim to deliver exceptional
+          construction projects that exceed our client’s expectations while
+          contributing positively to the Brooklyn community.
         </p>
       </div>
       <div className="mt-2">
