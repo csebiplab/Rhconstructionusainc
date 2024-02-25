@@ -14,6 +14,40 @@ import { BsTelephoneForwardFill } from "react-icons/bs";
 import { SwiperSlide } from "swiper/react";
 import useSwr from "swr";
 import "./styles/Home.css";
+// import OurCommitment from "@/components/__home_components/OurCommitment";
+import OurWorkingProcess from "@/components/__home_components/OurWorkingProcess";
+// import GeneralContractor from "@/components/__home_components/GeneralContractor";
+import YourConstructionProjects from "@/components/__home_components/YourConstructionProjects";
+
+// Slider info
+const slidersInfo = [
+  {
+    bg: "/assets/images/slider-bg-one.webp",
+    img: "/assets/images/slider-img-one.webp",
+    title: `#1 Construction Companies
+    in Brooklyn`,
+    subtitle:
+      "RH Construction USA Inc. stands as a beacon of excellence among construction companies in Brooklyn, earning its reputation as one of the best in the industry.",
+    route: "/",
+  },
+  {
+    bg: "/assets/images/slider-bg-two.webp",
+    img: "/assets/images/slider-img-two.webp",
+    title: "Industrial Contractor",
+    subtitle:
+      "With a reputation for delivering innovative solutions and unmatched expertise, our industrial contractor seamlessly transforms visions into reality, setting new standards of excellence in every project.",
+    route: "/",
+  },
+  {
+    bg: "/assets/images/slider-bg-three.webp",
+    img: "/assets/images/slider-img-three.webp",
+    title: "All Construction Services",
+    subtitle:
+      "From construction groundbreaking to construction cleaning services, our construction services company brings your vision to life with precision and expertise.",
+    route: "/",
+  },
+];
+
 const HomeBlogs = () => {
   const {
     data: blogs,
@@ -64,36 +98,11 @@ const Home = () => {
         className="max-h-[600px] overflow-hidden"
         id="home-banner-slider"
         style={{
-          "--swiper-navigation-size": "22px",
-          "--swiper-theme-color": "white",
+          "--swiper-navigation-size": "48px",
+          "--swiper-theme-color": "blue",
         }}
       >
-        {[
-          {
-            bg: "/assets/images/slider-bg-one.webp",
-            img: "/assets/images/slider-img-one.webp",
-            title: "General Contractor Brooklyn",
-            subtitle:
-              "Our experienced general contractor services in Brooklyn encompass everything from project planning and management to skilled craftsmanship, ensuring a seamless and successful construction experience for our clients.",
-            route: "/",
-          },
-          {
-            bg: "/assets/images/slider-bg-two.webp",
-            img: "/assets/images/slider-img-two.webp",
-            title: "Industrial Contractor",
-            subtitle:
-              "With a reputation for delivering innovative solutions and unmatched expertise, our industrial contractor seamlessly transforms visions into reality, setting new standards of excellence in every project.",
-            route: "/",
-          },
-          {
-            bg: "/assets/images/slider-bg-three.webp",
-            img: "/assets/images/slider-img-three.webp",
-            title: "All Construction Services",
-            subtitle:
-              "From construction groundbreaking to construction cleaning services, our construction services company brings your vision to life with precision and expertise.",
-            route: "/",
-          },
-        ].map((item, key) => (
+        {slidersInfo.map((item, key) => (
           <SwiperSlide key={key} className=" h-full">
             {({ isActive }) => (
               <div
@@ -103,12 +112,23 @@ const Home = () => {
                 }}
                 className="bg-cover bg-center text-white"
               >
-                <div className="container grid grid-cols-1 md:grid-cols-2 items-end">
-                  <div className="h-full w-full flex flex-col justify-center items-center text-center md:text-left">
-                    <h1 className="mb-3 font-bold lg:text-6xl">
-                      {item?.title}
+                <div className="container grid grid-cols-1 md:grid-cols-5 items-end">
+                  <div className="z-50 h-full w-full md:col-span-3 flex flex-col justify-center items-center md:text-left mt-52 md:mt-0">
+                    <h1 className="w-full font-bold text-[33px] lg:text-[43px] leading-tight md:text-left">
+                      <>
+                        {" "}
+                        {key !== 0 ? (
+                          <> {item?.title}</>
+                        ) : (
+                          <>
+                            {item?.title?.split(" in ")[0]}
+                            <br />
+                            {"in " + item?.title?.split(" in ")[1]}
+                          </>
+                        )}
+                      </>
                     </h1>
-                    <h3 className="mb-8">{item?.subtitle}</h3>
+                    <h3 className="my-10">{item?.subtitle}</h3>
                     <div className="w-full">
                       <Button
                         size="lg"
@@ -121,7 +141,7 @@ const Home = () => {
                   <img
                     src={item.img}
                     alt=""
-                    className="w-full hidden md:block"
+                    className="w-full -mt-64 md:mt-0 block md:col-span-2"
                   />
                 </div>
               </div>
@@ -135,34 +155,20 @@ const Home = () => {
           className="w-40 h-40 object-contain object-center mx-auto -mt-20"
         />
       </div>
-      <section className="py-10 pt-32">
+      <section className="py-10 pt-32 bg-[#FCFCFB]">
         <div className="container">
           <div className="text-center mb-3">
-            <h1 class="leading-10 mb-4 sm:mb-4">
+            <h1 className="leading-10 mb-1">
               <span className="text-primary">R H</span> Construction USA, Inc.
-              Best <br /> Brooklyn Contractors
             </h1>
-            <p className="max-w-lg xl:max-w-5xl mx-auto text-secondary">
-              RH Construction USA, Inc. stands as a beacon of excellence among
-              general contractors in Brooklyn. With a reputation built on
-              unwavering dedication to quality and precision, this company has
-              established itself as a cornerstone of the construction industry
-              in the borough. Their team of skilled professionals brings a
-              wealth of experience to every project, ensuring that each endeavor
-              is met with the highest standards of craftsmanship. From
-              residential renovations to commercial builds, RH Construction USA,
-              Inc. approaches every undertaking with meticulous attention to
-              detail, ensuring that every client's vision is brought to life.
-              What sets them apart is their commitment to open communication,
-              fostering a collaborative environment that nurtures creativity and
-              innovation. This company understands the unique challenges that
-              come with Brooklyn's diverse architectural landscape, and they
-              have honed their expertise to seamlessly integrate modern design
-              with the area's rich historical character. With a track record of
-              successful projects and a portfolio that showcases their
-              versatility, RH Construction USA, Inc. continues to be a trusted
-              name in the industry, delivering exceptional results that exceed
-              expectations time and time again.
+            <h3>Welcome to The Leading Construction Companies in Brooklyn</h3>
+            <p className="max-w-lg xl:max-w-5xl mx-auto text-secondary mt-4">
+              RH Construction USA Inc. stands out as one of the leading
+              construction companies in Brooklyn, embodying a commitment to
+              excellence and innovation in the industry. With a proven track
+              record of successfully delivering a diverse range of construction
+              projects, our construction company has earned a stellar reputation
+              for its dedication to quality craftsmanship and timely completion.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center">
@@ -202,7 +208,7 @@ const Home = () => {
       </section>
       {/* CALL TO ACTIONS */}
       <section
-        className="bg-cover bg-right md:bg-cetner bg-primary"
+        className="bg-cover bg-right md:bg-cetner bg-primary my-6"
         style={{
           backgroundImage: "url(/assets/images/call-to-action-bg.webp)",
         }}
@@ -211,12 +217,27 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
             <div className="lg:col-span-2" />
             <div className="lg:col-span-3">
-              <h2 className="text-base mb-5 leading-6 ">
-                RH Construction USA, Inc. stands out as one of the best trusted
-                and reputable construction companies in Brooklyn, known for
-                their impeccable craftsmanship and dedication to excellence in
-                every project they undertake.
-              </h2>
+              <h1 className="leading-10 text-[2rem]">
+                Discover Excellence in Construction
+                <br />
+                with
+                <span className="text-white ml-2">
+                  R H Construction USA Inc
+                </span>
+              </h1>
+              <p className="text-base mb-5 leading-6 font-medium mt-4 text-white">
+                RH Construction USA Inc. is your gateway to discovering
+                excellence in construction services. With a commitment to
+                quality craftsmanship, innovation, and client satisfaction, we
+                bring a wealth of experience to every project. Whether it's
+                residential, commercial, or industrial construction, our skilled
+                team strives for perfection in every detail. From the initial
+                concept to the final touches, we prioritize efficiency and
+                precision, ensuring that your vision becomes a reality. At our
+                company, we believe in building more than structures; we build
+                lasting relationships with our clients through trust and
+                reliability from all construction companies in Brooklyn.
+              </p>
               <div className="flex gap-3  items-center flex-wrap">
                 <Button className="rounded-full bg-white hover:bg-gray-900 text-black hover:text-white text-lg font-semibold tracking-wider">
                   Request a Quote
@@ -225,15 +246,25 @@ const Home = () => {
                   href={`tel:${constant.hotline}`}
                   className="flex justify-center items-center gap-4 rounded-full hover:bg-white/10 text-lg py-3 px-4"
                 >
-                  <BsTelephoneForwardFill /> {constant.hotline}
+                  <BsTelephoneForwardFill />
+                  {/* {constant.hotline} */}
+                  <span className="text-sm font-bold font-serif">
+                    {constant.hotline}
+                  </span>
                 </a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/* OUT SERVICE */}
-      <section>
+
+      {/* OUR COMMITMENT SECTION */}
+      {/* <section className="py-10">
+        <OurCommitment />
+      </section> */}
+
+      {/* OUR SERVICE */}
+      <section className="">
         <div className="container py-20">
           <div className="grid grid-cols-1 mg:grid-cols-4 lg:grid-cols-6 gap-2">
             <div className="col-span-1 md:col-span-3 lg:col-span-4">
@@ -245,25 +276,20 @@ const Home = () => {
                   <Link href="/" className="text-primary text-lg font-semibold">
                     RH Construction USA,
                   </Link>{" "}
-                  Inc. stands as a beacon of excellence in the realm of Brooklyn
-                  construction services. With a proven track record of
-                  delivering top-notch projects, we have earned a stellar
-                  reputation for our commitment to quality and customer
-                  satisfaction. This dynamic company brings a wealth of
-                  expertise to every endeavor, ensuring that each project is
-                  executed with precision and finesse. From residential
-                  construction services, industrial construction services to
-                  commercial construction services, RH Construction USA, Inc.
-                  exhibits a versatile skill set that caters to a diverse
-                  clientele. Our team of highly skilled professionals is
-                  equipped with the latest industry knowledge and technology,
-                  guaranteeing that every project is completed to the highest
-                  standards. Moreover, their dedication to transparency and open
-                  communication fosters a collaborative approach, allowing
-                  clients to be actively involved in every stage of the
-                  construction process. With a keen eye for detail and a passion
-                  for innovation, RH Construction USA, Inc. continues to set the
-                  benchmark for excellence in general contractor in Brooklyn.
+                  is your trusted partner for top-notch construction services,
+                  dedicated to bringing your dream project to life. From
+                  conceptualization to completion, we prioritize quality
+                  craftsmanship, timely delivery, and cost-effective solutions
+                  to meet and exceed your expectations.
+                </p>
+                <p className="text-secondary leading-7 mt-2">
+                  At our company, we understand that your dream project is a
+                  significant investment, and we take pride in delivering
+                  unparalleled construction service that reflects our unwavering
+                  commitment to customer satisfaction. Whether you're
+                  envisioning a residential masterpiece or a commercial
+                  endeavor, our experienced team is equipped to handle a diverse
+                  range of projects.
                 </p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
@@ -276,7 +302,8 @@ const Home = () => {
                       "Painting",
                       "Sheetrock",
                       "Plastering",
-                      "Electrical and Plumbing",
+                      "Electrical",
+                      "Plumbing",
                     ].map((item, key) => (
                       <li key={key}>
                         <Link
@@ -291,15 +318,17 @@ const Home = () => {
                   </ul>
                 </figure>
                 <figure>
-                  <h3 className="mb-2">Interior</h3>
+                  <h3 className="mb-2">Exterior</h3>
                   <ul>
                     {[
-                      "Bathroom Remodeling",
-                      "Kitchen Remodeling",
-                      "Painting",
-                      "Sheetrock",
-                      "Plastering",
-                      "Electrical and Plumbing",
+                      "Roofing",
+                      "Pointing",
+                      "Water Proofing",
+                      "Sidewalk Repair and Replace",
+                      "Brown Stone Repair",
+                      "Brick Works",
+                      "Power Wash",
+                      "Siding and all kinds of masonry work",
                     ].map((item, key) => (
                       <li key={key}>
                         <Link
@@ -313,7 +342,7 @@ const Home = () => {
                     ))}
                   </ul>
                 </figure>
-                <figure>
+                {/* <figure>
                   <ul className="lg:mt-10">
                     {[
                       "Bathroom Remodeling",
@@ -334,21 +363,21 @@ const Home = () => {
                       </li>
                     ))}
                   </ul>
-                </figure>
+                </figure> */}
               </div>
             </div>
             <img
               src="/assets/images/our-service-home-man.webp"
               alt="ourservice man"
-              className="col-span-2 mx-auto h-full"
+              className="col-span-2 mx-auto h-full mt-16"
             />
           </div>
         </div>
       </section>
       <HomeBlogs />
-      {/* OUR COMMITMENT */}
+      {/* OUR COMMITMENT Start*/}
       <section
-        className="consideringPlan__arrea bg-cover bg-right bg-fixed"
+        className="bg-cover bg-right bg-fixed"
         style={{
           backgroundImage:
             "linear-gradient(to left, white 50%, transparent 60%), url(/assets/images/house-bg.webp)",
@@ -358,37 +387,102 @@ const Home = () => {
           <div />
           <div className="py-10">
             <h1 className="mb-4 font-bold">
-              <span className="text-primary">OUR Commitment </span>
-              as Best Contractors Brooklyn
+              Dependable Construction Companies{" "}
+              <span className="text-primary">in Brooklyn</span>
             </h1>
             <p className="text-secondary mb-2 leading-relaxed font-medium">
-              RH Construction USA, Inc. stands out as one of the best
-              contractors in Brooklyn, setting a benchmark for excellence in the
-              industry. With a sterling reputation built on years of dedicated
-              service, we have consistently delivered exceptional craftsmanship
-              and superior results. Our team of skilled professionals brings a
-              wealth of experience to every project, ensuring meticulous
-              attention to detail and a commitment to exceeding client
-              expectations. From residential renovations to commercial builds,
-              RH Construction USA, Inc.
-              <br /> <br /> showcases a diverse portfolio that reflects our
-              versatility and expertise. With a client-centric approach and a
-              passion for quality, our general contractor in Brooklyn truly
-              exemplifies the pinnacle of construction excellence in Brooklyn.
-              Since 2009, we have been delivering the best home remodeling and
-              roof repair services.
+              When it comes to dependable construction companies in Brooklyn, a
+              few names stand out for their consistent quality and reliability.
+              One such company is RH Construction USA Inc., known for its
+              commitment to excellence and attention to detail. With a track
+              record of successful projects across the borough, our construction
+              company has earned a reputation for delivering projects on time
+              and within budget, making them a top choice for clients seeking
+              reliability and professionalism.
+              <br /> <br /> Our construction company in Brooklyn is renowned for
+              its expertise in both residential and commercial projects. With a
+              team of skilled professionals and a dedication to client
+              satisfaction, our builders have built a strong presence in the
+              local construction industry. Our emphasis on transparency and
+              clear communication ensures that clients are kept informed every
+              step of the way, fostering trust and confidence in our abilities
+              to deliver exceptional results.
             </p>
           </div>
         </div>
       </section>
-      {/* OUR COMMITMENT */}
+      {/* OUR COMMITMENT End*/}
+      {/* Choosing The Right Contractor Start*/}
+      <section
+        className="bg-cover bg-right bg-fixed w-full min-h-screen"
+        style={{
+          backgroundImage: "url(/assets/images/house-bg.webp)",
+        }}
+      >
+        <div className="container grid grid-cols-1 md:grid-cols-2 py-20">
+          <div />
+
+          <div className="py-10">
+            <h1 className="mb-4 font-bold">
+              Choosing the Right General Contractor{" "}
+              <span className="text-primary">in Brooklyn</span>
+            </h1>
+            <p className="text-secondary mb-2 leading-relaxed font-medium">
+              Choosing the right general contractor from all construction
+              companies in Brooklyn is a crucial step in ensuring the success of
+              your construction project. RH Construction USA Inc., a prominent
+              player in the industry, stands out as a reliable choice for
+              discerning clients. With a proven track record of delivering
+              high-quality construction services in Brooklyn, we bring a wealth
+              of experience and expertise to the table. Our commitment to
+              excellence is evident in our attention to detail, timely project
+              completion, and customer satisfaction.
+              <br /> <br />
+              RH Construction USA Inc.'s reputation is built on a foundation of
+              transparency, communication, and craftsmanship. As a trusted
+              general contractor in Brooklyn, we prioritize clear and open
+              communication with clients, keeping us informed at every stage of
+              the construction process. Our skilled professionals bring
+              innovative solutions to the table, ensuring that your vision is
+              not only realized but surpassed. When searching for a general
+              contractor in Brooklyn, our company emerges as a reliable partner
+              dedicated to turning your construction dreams into reality.
+            </p>
+          </div>
+        </div>
+      </section>
+      {/* Choosing The Right Contractor Start*/}
+
+      {/* Our working process */}
+      <section className="container py-20">
+        <OurWorkingProcess />
+      </section>
+
+      {/* General Contractor section */}
+      {/* <section className="my-10">
+        <GeneralContractor />
+      </section> */}
+
+      {/* Your Construction Project */}
+      <section className="py-20 container">
+        <YourConstructionProjects />
+      </section>
+
+      {/* Construction Project Section Starts */}
       <section>
         <div className="container grid grid-cols-1 md:grid-cols-2 py-10 pb-0">
-          <div className=" py-10 pt-20">
-            <h1 className="mb-4 font-bold">
-              What To Consider First When You Start Planning for Your{" "}
-              <span className="text-primary">Construction Project</span>
+          <div>
+            <h1 className="mb-2 font-bold text-[2rem]">
+              What To Consider First When You Hire the
+              <span className="text-primary ml-2">Best Contractors</span>
             </h1>
+            <p className="font-medium mb-4">
+              When selecting the best contractors from all construction
+              companies in Brooklyn for your project, it's crucial to consider
+              several key factors to ensure a successful and satisfactory
+              outcome. Here are the top considerations to prioritize, listed in
+              order of importance:
+            </p>
             <Slider
               className="max-h-[600px] overflow-hidden slider-area"
               id="home-banner-slider"
@@ -409,10 +503,13 @@ const Home = () => {
                       className="bg-cover bg-center text-white"
                     >
                       <div className="content-areea">
-                        <ul className="planning__more-content-list">
+                        <ul className="list-inside list-disc planning__more-content-list">
                           {item?.part?.data?.map((item, key) => (
-                            <li className="flex gap-2 items-center py-1 px-2 text-lg text-secondary font-medium mb-2">
-                              <span className="inline-block h-2 w-2 rounded-full bg-primary" />
+                            <li
+                              key={key}
+                              className="flex gap-2 items-center py-1 px-2 text-lg text-secondary font-medium mb-2"
+                            >
+                              <span className="h-4 w-4 rounded-full bg-primary" />
                               <span>{item}</span>
                             </li>
                           ))}
@@ -423,14 +520,21 @@ const Home = () => {
                 </SwiperSlide>
               ))}
             </Slider>
+            <p>
+              By systematically evaluating these factors, you'll be better
+              equipped to choose the best contractor for your project, ensuring
+              a successful and stress-free construction or renovation
+              experience.
+            </p>
           </div>
           <img
             src="/assets/images/man-like-smile.webp"
             alt="man-like-smile"
-            className="h-full mx-auto"
+            className="h-full mx-auto md:mt-12 -z-10"
           />
         </div>
       </section>
+      {/* Construction Project Section Ends */}
     </main>
   );
 };

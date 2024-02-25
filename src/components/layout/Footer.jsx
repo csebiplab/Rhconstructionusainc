@@ -10,7 +10,7 @@ const Footer = () => {
   const pathname = usePathname();
   if (pathname.startsWith("/admin")) return null;
   return (
-    <footer className="bg-gray-900 text-white" style={{backgroundImage:'url(https://www.rhconstructionusa.com/wp-content/uploads/2022/09/footer-bg.jpg)'}}>
+    <footer className="z-50 bg-gray-900 text-white" style={{backgroundImage:'url(https://www.rhconstructionusa.com/wp-content/uploads/2022/09/footer-bg.jpg)'}}>
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10">
           <div>
