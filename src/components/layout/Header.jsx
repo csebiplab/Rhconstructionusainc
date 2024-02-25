@@ -285,7 +285,7 @@ export function Header() {
         <div className="">
           <div className="container flex justify-between items-center py-1 flex-wrap gap-2">
             <a href="/" className="text-dark font-medium hidden md:block">
-              Best construction company brooklyn
+              Best Construction Company Brooklyn
             </a>
             <div className="flex gap-2 items-center">
               <a
@@ -296,7 +296,7 @@ export function Header() {
               </a>
               <a
                 href={`tel:${constants.hotline}`}
-                className="flex gap-2 items-center p-1 rounded-md hover:bg-primary/10 hover:text-blue-700"
+                className="flex gap-2 items-center p-1 rounded-md hover:bg-primary/10 hover:text-blue-700 font-serif"
               >
                 <HiPhone className="text-primary" /> {constants.hotline}
               </a>
