@@ -54,7 +54,7 @@ export default function OurWorkingProcess() {
           <div className="w-full md:col-span-4">
             <ul className="list-disc list-inside marker:text-primary marker:font-extrabold marker:text-2xl">
               {workingProcessLists.map(({ id, title, desc }) => (
-                <div key={id}>
+                <div key={id} className="mb-2">
                   <h5 className="font-bold -mb-2">{title}</h5>
                   <li className="ml-8 font-medium">{desc}</li>
                 </div>
