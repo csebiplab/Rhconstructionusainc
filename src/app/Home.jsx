@@ -98,8 +98,8 @@ const Home = () => {
         className="max-h-[600px] overflow-hidden"
         id="home-banner-slider"
         style={{
-          "--swiper-navigation-size": "22px",
-          "--swiper-theme-color": "white",
+          "--swiper-navigation-size": "48px",
+          "--swiper-theme-color": "blue",
         }}
       >
         {slidersInfo.map((item, key) => (
@@ -113,8 +113,8 @@ const Home = () => {
                 className="bg-cover bg-center text-white"
               >
                 <div className="container grid grid-cols-1 md:grid-cols-5 items-end">
-                  <div className="z-50 h-full w-full md:col-span-3 flex flex-col justify-center items-center text-center md:text-left">
-                    <h1 className="mb-3 font-bold lg:text-[43px] leading-tight md:text-left">
+                  <div className="z-50 h-full w-full md:col-span-3 flex flex-col justify-center items-center md:text-left mt-52 md:mt-0">
+                    <h1 className="w-full font-bold text-[33px] lg:text-[43px] leading-tight md:text-left">
                       <>
                         {" "}
                         {key !== 0 ? (
@@ -128,7 +128,7 @@ const Home = () => {
                         )}
                       </>
                     </h1>
-                    <h3 className="mb-8">{item?.subtitle}</h3>
+                    <h3 className="my-10">{item?.subtitle}</h3>
                     <div className="w-full">
                       <Button
                         size="lg"
@@ -141,7 +141,7 @@ const Home = () => {
                   <img
                     src={item.img}
                     alt=""
-                    className="w-full -mt-32 md:mt-0 block md:col-span-2"
+                    className="w-full -mt-64 md:mt-0 block md:col-span-2"
                   />
                 </div>
               </div>
