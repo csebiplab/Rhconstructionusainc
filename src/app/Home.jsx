@@ -113,7 +113,7 @@ const Home = () => {
                 className="bg-cover bg-center text-white"
               >
                 <div className="container grid grid-cols-1 md:grid-cols-5 items-end">
-                  <div className="h-full w-full md:col-span-3 flex flex-col justify-center items-center text-center md:text-left">
+                  <div className="z-50 h-full w-full md:col-span-3 flex flex-col justify-center items-center text-center md:text-left">
                     <h1 className="mb-3 font-bold lg:text-[43px] leading-tight md:text-left">
                       <>
                         {" "}
@@ -141,7 +141,7 @@ const Home = () => {
                   <img
                     src={item.img}
                     alt=""
-                    className="w-full hidden md:block md:col-span-2"
+                    className="w-full -mt-32 md:mt-0 block md:col-span-2"
                   />
                 </div>
               </div>
