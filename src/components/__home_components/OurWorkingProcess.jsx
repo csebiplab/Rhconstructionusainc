@@ -32,25 +32,15 @@ const workingProcessLists = [
 export default function OurWorkingProcess() {
   return (
     <div>
-      <div className="flex flex-col md:flex-row gap-x-2">
+      <div className="flex flex-col md:flex-row gap-x-6">
         <div>
-          <h1 className="font-bold mb-2">
-            Working Process of Our Construction Company in Brooklyn
+          <h1 className="font-bold mb-2 text-3xl">
+            Working Process of Our Construction Company <span className="text-primary">in Brooklyn</span>
           </h1>
           <p className="font-semibold">
             Certainly! Here's an overview of the working process of our
             construction company in Brooklyn:
           </p>
-        </div>
-        <p className="w-full max-w-md font-medium mt-2 md:mt-4">
-          <span className="text-primary text-xl">*</span> By following this
-          comprehensive working process, we aim to deliver exceptional
-          construction projects that exceed our client’s expectations while
-          contributing positively to the Brooklyn community.
-        </p>
-      </div>
-      <div className="mt-2">
-        <div className="grid grid-cols-1 md:grid-cols-7">
           <div className="w-full md:col-span-4">
             <ul className="list-disc list-inside marker:text-primary marker:font-extrabold marker:text-2xl">
               {workingProcessLists.map(({ id, title, desc }) => (
@@ -61,17 +51,23 @@ export default function OurWorkingProcess() {
               ))}
             </ul>
           </div>
-          <div className="w-full md:col-span-3">
+          <p className="w-full font-medium">
+            <span className="text-primary text-xl">*</span> By following this
+            comprehensive working process, we aim to deliver exceptional
+            construction projects that exceed our client’s expectations while
+            contributing positively to the Brooklyn community.
+          </p>
+        </div>
+          <div className="w-full">
             <Image
               src={WorkingProcessImg}
               alt="Working process"
-              width={400}
+              width={600}
               height={300}
               priority={1}
-              className="w-auto h-auto"
+              className="w-full h-full rounded-lg"
             />
           </div>
-        </div>
       </div>
     </div>
   );
