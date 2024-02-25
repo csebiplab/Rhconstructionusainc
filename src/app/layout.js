@@ -5,12 +5,15 @@ import { Raleway } from "next/font/google";
 import 'sweetalert2/src/sweetalert2.scss';
 import "./globals.css";
 
-const raleway = Raleway({ subsets: ["latin"],variable:'--font-raleway' });
+const raleway = Raleway({ subsets: ["latin"], variable: '--font-raleway' });
 
 export const metadata = {
   title: {
     template: '%s | RH Construction',
     default: 'RH Construction',
+  },
+  verification: {
+    google: "GhdpcbTz9PD3TM20eoz_cOUoVwWvppJvZPCojn4tNdY",
   },
 };
 
@@ -22,7 +25,7 @@ export default function RootLayout({ children }) {
         <ProgressBar />
         <Header />
         <main className="min-h-[60vh]">
-        {children}
+          {children}
         </main>
         <Footer />
       </body>
