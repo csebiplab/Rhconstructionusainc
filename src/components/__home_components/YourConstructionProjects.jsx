@@ -4,8 +4,16 @@ import Image from "next/image";
 export default function YourConstructionProjects() {
   return (
     <div>
-      <div className="flex flex-wrap md:flex-nowrap gap-x-10 gap-y-3">
-        <div>
+      <div className="grid grid-cols-1 md:grid-cols-9 gap-x-10 gap-y-3">
+        <Image
+          src={EleveteProjectImg}
+          alt="Elevete Your Construction Projects"
+          width={400}
+          height={300}
+          priority={1}
+          className="w-auto h-full md:col-span-4 order-2 md:order-1"
+        />
+        <div className="w-full md:col-span-5 order-1 md:order-2">
           <h1 className="font-bold">
             Elevate Your Construction Projects with
             <br />
@@ -25,14 +33,6 @@ export default function YourConstructionProjects() {
             to elevate the standard of their construction endeavors.
           </p>
         </div>
-        <Image
-          src={EleveteProjectImg}
-          alt=""
-          width={400}
-          height={300}
-          priority={1}
-          className="w-full h-full"
-        />
       </div>
     </div>
   );
