@@ -517,7 +517,7 @@ const Home = () => {
           <img
             src="/assets/images/man-like-smile.webp"
             alt="man-like-smile"
-            className="h-full mx-auto"
+            className="h-full mx-auto md:mt-20 -z-10"
           />
         </div>
       </section>
