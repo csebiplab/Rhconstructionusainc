@@ -369,7 +369,7 @@ const Home = () => {
       <HomeBlogs />
       {/* OUR COMMITMENT Start*/}
       <section
-        className="consideringPlan__arrea bg-cover bg-right bg-fixed"
+        className="bg-cover bg-right bg-fixed"
         style={{
           backgroundImage:
             "linear-gradient(to left, white 50%, transparent 60%), url(/assets/images/house-bg.webp)",
@@ -403,6 +403,42 @@ const Home = () => {
         </div>
       </section>
       {/* OUR COMMITMENT End*/}
+      {/* Choosing The Right Contractor Start*/}
+      <section
+        className="bg-cover bg-right bg-fixed w-full min-h-screen"
+        style={{
+          backgroundImage: "url(/assets/images/house-bg.webp)",
+        }}
+      >
+        <div className="container grid grid-cols-1 md:grid-cols-2 py-20">
+          <div />
+
+          <div className="py-10">
+            <h1 className="mb-4 font-bold">
+              Choosing the Right General Contractor in Brooklyn
+            </h1>
+            <p className="text-secondary mb-2 leading-relaxed font-medium">
+              When it comes to dependable construction companies in Brooklyn, a
+              few names stand out for their consistent quality and reliability.
+              One such company is RH Construction USA Inc., known for its
+              commitment to excellence and attention to detail. With a track
+              record of successful projects across the borough, our construction
+              company has earned a reputation for delivering projects on time
+              and within budget, making them a top choice for clients seeking
+              reliability and professionalism.
+              <br /> <br /> Our construction company in Brooklyn is renowned for
+              its expertise in both residential and commercial projects. With a
+              team of skilled professionals and a dedication to client
+              satisfaction, our builders have built a strong presence in the
+              local construction industry. Our emphasis on transparency and
+              clear communication ensures that clients are kept informed every
+              step of the way, fostering trust and confidence in our abilities
+              to deliver exceptional results.
+            </p>
+          </div>
+        </div>
+      </section>
+      {/* Choosing The Right Contractor Start*/}
 
       {/* Our working process */}
       <section className="container my-10">
@@ -410,9 +446,9 @@ const Home = () => {
       </section>
 
       {/* General Contractor section */}
-      <section className="my-10">
+      {/* <section className="my-10">
         <GeneralContractor />
-      </section>
+      </section> */}
 
       {/* Your Construction Project */}
       <section className="my-10 container">
