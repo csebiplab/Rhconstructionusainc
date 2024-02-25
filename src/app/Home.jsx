@@ -113,12 +113,20 @@ const Home = () => {
                 className="bg-cover bg-center text-white"
               >
                 <div className="container grid grid-cols-1 md:grid-cols-5 items-end">
-                  <div className="h-full w-full md:col-span-3 flex flex-col justify-center items-center text-start md:text-left">
-                    <h1 className="mb-3 font-bold lg:text-[43px] leading-tight">
-                      {/* {item?.title} */}
-                      {item?.title?.split(" in ")[0]}
-                      <br />
-                      {"in " + item?.title?.split(" in ")[1]}
+                  <div className="h-full w-full md:col-span-3 flex flex-col justify-center items-center text-center md:text-left">
+                    <h1 className="mb-3 font-bold lg:text-[43px] leading-tight md:text-left">
+                      <>
+                        {" "}
+                        {key !== 0 ? (
+                          <> {item?.title}</>
+                        ) : (
+                          <>
+                            {item?.title?.split(" in ")[0]}
+                            <br />
+                            {"in " + item?.title?.split(" in ")[1]}
+                          </>
+                        )}
+                      </>
                     </h1>
                     <h3 className="mb-8">{item?.subtitle}</h3>
                     <div className="w-full">
@@ -213,7 +221,7 @@ const Home = () => {
                 Discover Excellence in Construction with{" "}
                 <span className="text-gray-900">R H</span> Construction USA Inc
               </h1>
-              <p className="text-base mb-5 leading-6 font-bold mt-4">
+              <p className="text-base mb-5 leading-6 font-medium mt-4 text-white">
                 RH Construction USA Inc. is your gateway to discovering
                 excellence in construction services. With a commitment to
                 quality craftsmanship, innovation, and client satisfaction, we
