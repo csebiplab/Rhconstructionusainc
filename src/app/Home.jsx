@@ -217,9 +217,10 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
             <div className="lg:col-span-2" />
             <div className="lg:col-span-3">
-              <h1 className="leading-10">
-                Discover Excellence in Construction with{" "}
-                <span className="text-gray-900">R H</span> Construction USA Inc
+              <h1 className="leading-10 text-[2rem]">
+                Discover Excellence in Construction
+                <br />
+                with R H Construction USA Inc
               </h1>
               <p className="text-base mb-5 leading-6 font-medium mt-4 text-white">
                 RH Construction USA Inc. is your gateway to discovering
@@ -242,7 +243,11 @@ const Home = () => {
                   href={`tel:${constant.hotline}`}
                   className="flex justify-center items-center gap-4 rounded-full hover:bg-white/10 text-lg py-3 px-4"
                 >
-                  <BsTelephoneForwardFill /> {constant.hotline}
+                  <BsTelephoneForwardFill />
+                  {/* {constant.hotline} */}
+                  <span className="text-sm font-bold font-serif">
+                    {constant.hotline}
+                  </span>
                 </a>
               </div>
             </div>
