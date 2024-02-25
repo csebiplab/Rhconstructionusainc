@@ -155,7 +155,7 @@ const Home = () => {
           className="w-40 h-40 object-contain object-center mx-auto -mt-20"
         />
       </div>
-      <section className="py-10 pt-32">
+      <section className="py-10 pt-32 bg-[#FCFCFB]">
         <div className="container">
           <div className="text-center mb-3">
             <h1 className="leading-10 mb-1">
