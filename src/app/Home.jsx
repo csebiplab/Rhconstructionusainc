@@ -18,6 +18,7 @@ import "./styles/Home.css";
 import OurWorkingProcess from "@/components/__home_components/OurWorkingProcess";
 // import GeneralContractor from "@/components/__home_components/GeneralContractor";
 import YourConstructionProjects from "@/components/__home_components/YourConstructionProjects";
+import { FaqAccordion } from "@/components/__home_components/FaqAccordion";
 
 // Slider info
 const slidersInfo = [
@@ -467,6 +468,10 @@ const Home = () => {
       <section className="py-20 container">
         <YourConstructionProjects />
       </section>
+
+      {/* FAQ ACCORDION starts */}
+      <FaqAccordion />
+      {/* FAQ ACCORDION ends */}
 
       {/* Construction Project Section Starts */}
       <section>
