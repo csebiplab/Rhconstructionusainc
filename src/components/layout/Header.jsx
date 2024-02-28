@@ -228,7 +228,7 @@ function NavList() {
       <Typography
         as={Link}
         href="/contact"
-        variant="normal"
+        variant="small"
         color="blue-gray"
         className="font-medium rounded-full text-[17px]"
       >

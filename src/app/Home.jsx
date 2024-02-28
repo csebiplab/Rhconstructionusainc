@@ -24,10 +24,9 @@ const slidersInfo = [
   {
     bg: "/assets/images/slider-bg-one.webp",
     img: "/assets/images/slider-img-one.webp",
-    title: `#1 Construction Companies
-    in Brooklyn`,
+    title: `General Contractor Brooklyn`,
     subtitle:
-      "RH Construction USA Inc. stands as a beacon of excellence among construction companies in Brooklyn, earning its reputation as one of the best in the industry.",
+      "Top-rated general contractor in Brooklyn, delivering exceptional construction and renovation services with expertise and integrity.",
     route: "/",
   },
   {
@@ -112,12 +111,12 @@ const Home = () => {
                 }}
                 className="bg-cover bg-center text-white"
               >
-                <div className="container grid grid-cols-1 md:grid-cols-5 items-end">
-                  <div className="z-50 h-full w-full md:col-span-3 flex flex-col justify-center items-center md:text-left mt-52 md:mt-0">
-                    <h1 className="w-full font-bold text-[33px] lg:text-[43px] leading-tight md:text-left">
+                <div className="container grid grid-cols-1 md:grid-cols-9 items-end">
+                  <div className="z-50 h-full w-full md:col-span-6 flex flex-col justify-center items-center md:text-left mt-52 md:mt-0">
+                    <h1 className="w-full font-bold text-4xl lg:text-[43px] leading-tight md:text-left">
                       <>
-                        {" "}
-                        {key !== 0 ? (
+                        {item?.title}
+                        {/* {key !== 0 ? (
                           <> {item?.title}</>
                         ) : (
                           <>
@@ -125,7 +124,7 @@ const Home = () => {
                             <br />
                             {"in " + item?.title?.split(" in ")[1]}
                           </>
-                        )}
+                        )} */}
                       </>
                     </h1>
                     <h3 className="my-10">{item?.subtitle}</h3>
@@ -141,7 +140,7 @@ const Home = () => {
                   <img
                     src={item.img}
                     alt=""
-                    className="w-full -mt-64 md:mt-0 block md:col-span-2"
+                    className="w-full -mt-64 md:mt-0 block md:col-span-3"
                   />
                 </div>
               </div>
