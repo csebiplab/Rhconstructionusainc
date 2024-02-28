@@ -273,6 +273,10 @@ const Home = () => {
                 <h1 className="mb-3 font-bold">
                   OUR <span className="text-primary">SERVICES</span>
                 </h1>
+                <h5 className="mb-3 font-semibold">
+                  Enjoy a stress-free construction service with our unique build
+                  process.
+                </h5>
                 <p className="text-secondary leading-7">
                   <Link href="/" className="text-primary text-lg font-semibold">
                     RH Construction USA,
@@ -470,7 +474,9 @@ const Home = () => {
       </section>
 
       {/* FAQ ACCORDION starts */}
-      <FaqAccordion />
+      <section className="py-20 container">
+        <FaqAccordion />
+      </section>
       {/* FAQ ACCORDION ends */}
 
       {/* Construction Project Section Starts */}
