@@ -19,6 +19,7 @@ import OurWorkingProcess from "@/components/__home_components/OurWorkingProcess"
 // import GeneralContractor from "@/components/__home_components/GeneralContractor";
 import YourConstructionProjects from "@/components/__home_components/YourConstructionProjects";
 import { FaqAccordion } from "@/components/__home_components/FaqAccordion";
+import TrustedGeneralContractor from "@/components/__home_components/TrustedGeneralContractor";
 
 // Slider info
 const slidersInfo = [
@@ -219,25 +220,27 @@ const Home = () => {
             <div className="lg:col-span-2" />
             <div className="lg:col-span-3">
               <h1 className="leading-10 text-[2rem]">
-                Discover Excellence in Construction
-                <br />
+                About Our General Contractor Company
+                {/* <br />
                 with
                 <span className="text-white ml-2">
                   R H Construction USA Inc
-                </span>
+                </span> */}
               </h1>
               <p className="text-base mb-5 leading-6 font-medium mt-4 text-white">
-                RH Construction USA Inc. is your gateway to discovering
-                excellence in construction services. With a commitment to
-                quality craftsmanship, innovation, and client satisfaction, we
-                bring a wealth of experience to every project. Whether it's
-                residential, commercial, or industrial construction, our skilled
-                team strives for perfection in every detail. From the initial
-                concept to the final touches, we prioritize efficiency and
-                precision, ensuring that your vision becomes a reality. At our
-                company, we believe in building more than structures; we build
-                lasting relationships with our clients through trust and
-                reliability from all construction companies in Brooklyn.
+                Since 2009, RH Construction USA Inc. has been dedicated to
+                delivering excellence in construction services, boasting over 15
+                years of expertise in home renovations, bathroom and kitchen
+                remodeling, roofing repair, and various construction projects.
+                As a locally owned and operated company based in Brooklyn, our
+                commitment to quality craftsmanship, innovation, and client
+                satisfaction sets us apart. With a skilled team prioritizing
+                efficiency and precision, we transform visions into realities,
+                ensuring every detail is perfected. Whether it's residential,
+                commercial, or industrial construction, RH Construction USA Inc.
+                is poised to exceed expectations with our quick, reliable, and
+                professional touch, leaving our clients as our next happy
+                customers.
               </p>
               <div className="flex gap-3  items-center flex-wrap">
                 <Button className="rounded-full bg-white hover:bg-gray-900 text-black hover:text-white text-lg font-semibold tracking-wider">
@@ -263,6 +266,9 @@ const Home = () => {
       {/* <section className="py-10">
         <OurCommitment />
       </section> */}
+      <section className="container pt-20">
+        <TrustedGeneralContractor />
+      </section>
 
       {/* OUR SERVICE */}
       <section className="">
@@ -392,26 +398,29 @@ const Home = () => {
           <div />
           <div className="py-10">
             <h1 className="mb-4 font-bold">
-              Dependable Construction Companies{" "}
-              <span className="text-primary">in Brooklyn</span>
+              Experienced Brooklyn General Contractor
+              {/* <span className="text-primary">in Brooklyn</span> */}
             </h1>
             <p className="text-secondary mb-2 leading-relaxed font-medium">
-              When it comes to dependable construction companies in Brooklyn, a
-              few names stand out for their consistent quality and reliability.
-              One such company is RH Construction USA Inc., known for its
-              commitment to excellence and attention to detail. With a track
-              record of successful projects across the borough, our construction
-              company has earned a reputation for delivering projects on time
-              and within budget, making them a top choice for clients seeking
-              reliability and professionalism.
-              <br /> <br /> Our construction company in Brooklyn is renowned for
-              its expertise in both residential and commercial projects. With a
-              team of skilled professionals and a dedication to client
-              satisfaction, our builders have built a strong presence in the
-              local construction industry. Our emphasis on transparency and
-              clear communication ensures that clients are kept informed every
-              step of the way, fostering trust and confidence in our abilities
-              to deliver exceptional results.
+              With years of expertise and a solid educational background, our
+              Brooklyn-based general contracting firm stands out as a reliable
+              partner for your construction projects. Our team comprises
+              seasoned professionals who bring a wealth of knowledge and
+              hands-on experience to every job site. From residential
+              renovations to commercial builds, we have successfully delivered
+              projects of varying scales, earning a reputation for excellence
+              and integrity within the community.
+              <br />
+              <br />
+              At our core, we prioritize client satisfaction by combining our
+              technical prowess with clear communication and meticulous
+              attention to detail. Our commitment to staying abreast of industry
+              advancements ensures that we employ the latest techniques and
+              technologies to optimize project efficiency and quality. Whether
+              you're envisioning a modern urban renovation or a timeless
+              architectural masterpiece, our well-experienced and educated team
+              is dedicated to bringing your vision to life with precision and
+              professionalism.
             </p>
           </div>
         </div>
@@ -441,17 +450,10 @@ const Home = () => {
               high-quality construction services in Brooklyn, we bring a wealth
               of experience and expertise to the table. Our commitment to
               excellence is evident in our attention to detail, timely project
-              completion, and customer satisfaction.
-              <br /> <br />
-              RH Construction USA Inc.'s reputation is built on a foundation of
-              transparency, communication, and craftsmanship. As a trusted
-              general contractor in Brooklyn, we prioritize clear and open
-              communication with clients, keeping us informed at every stage of
-              the construction process. Our skilled professionals bring
-              innovative solutions to the table, ensuring that your vision is
-              not only realized but surpassed. When searching for a general
-              contractor in Brooklyn, our company emerges as a reliable partner
-              dedicated to turning your construction dreams into reality.
+              completion, and customer satisfaction. When searching for a
+              general contractor in Brooklyn, our company emerges as a reliable
+              partner dedicated to turning your construction dreams into
+              reality.
             </p>
           </div>
         </div>
