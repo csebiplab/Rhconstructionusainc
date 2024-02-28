@@ -160,14 +160,15 @@ const Home = () => {
             <h1 className="leading-10 mb-1">
               <span className="text-primary">R H</span> Construction USA, Inc.
             </h1>
-            <h3>Welcome to The Leading Construction Companies in Brooklyn</h3>
+            <h3>Leading Construction Company in Brooklyn</h3>
             <p className="max-w-lg xl:max-w-5xl mx-auto text-secondary mt-4">
               RH Construction USA Inc. stands out as one of the leading
               construction companies in Brooklyn, embodying a commitment to
               excellence and innovation in the industry. With a proven track
               record of successfully delivering a diverse range of construction
-              projects, our construction company has earned a stellar reputation
-              for its dedication to quality craftsmanship and timely completion.
+              projects, the general contractor of our construction company has
+              earned a stellar reputation for its dedication to quality
+              craftsmanship and timely completion.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center">
