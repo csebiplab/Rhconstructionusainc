@@ -21,6 +21,7 @@ import ElevateYourConstructionProjects from "@/components/__home_components/Elev
 import { FaqAccordion } from "@/components/__home_components/FaqAccordion";
 import TrustedGeneralContractor from "@/components/__home_components/TrustedGeneralContractor";
 import ConstructionsToolsNEquepments from "@/components/__home_components/ConstructionsToolsNEquepments";
+import CostOfConstructions from "@/components/__home_components/CostOfConstructions";
 
 // Slider info
 const slidersInfo = [
@@ -476,10 +477,14 @@ const Home = () => {
         <ElevateYourConstructionProjects />
       </section>
 
-
       {/* ConstructionsToolsNEquepments */}
       <section className="pt-20 container">
         <ConstructionsToolsNEquepments />
+      </section>
+
+      {/* Cost of constructions */}
+      <section className="pt-20 container">
+        <CostOfConstructions />
       </section>
 
       {/* FAQ ACCORDION starts */}
