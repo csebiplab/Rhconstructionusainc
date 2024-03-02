@@ -17,9 +17,10 @@ import "./styles/Home.css";
 // import OurCommitment from "@/components/__home_components/OurCommitment";
 import OurWorkingProcess from "@/components/__home_components/OurWorkingProcess";
 // import GeneralContractor from "@/components/__home_components/GeneralContractor";
-import YourConstructionProjects from "@/components/__home_components/YourConstructionProjects";
+import ElevateYourConstructionProjects from "@/components/__home_components/ElevateYourConstructionProjects";
 import { FaqAccordion } from "@/components/__home_components/FaqAccordion";
 import TrustedGeneralContractor from "@/components/__home_components/TrustedGeneralContractor";
+import ConstructionsToolsNEquepments from "@/components/__home_components/ConstructionsToolsNEquepments";
 
 // Slider info
 const slidersInfo = [
@@ -472,7 +473,13 @@ const Home = () => {
 
       {/* Your Construction Project */}
       <section className="py-20 container">
-        <YourConstructionProjects />
+        <ElevateYourConstructionProjects />
+      </section>
+
+
+      {/* ConstructionsToolsNEquepments */}
+      <section className="pt-20 container">
+        <ConstructionsToolsNEquepments />
       </section>
 
       {/* FAQ ACCORDION starts */}
