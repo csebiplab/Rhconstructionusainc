@@ -22,26 +22,27 @@ const workingProcessLists = [
     title: "Client Communication and Updates:",
     desc: "We maintain open lines of communication with clients, providing regular updates on the progress of their projects and addressing any concerns or queries they may have.",
   },
-  {
-    id: 5,
-    title: "Completion and Handover:",
-    desc: "We maintain open lines of communication with clients, providing regular updates on the progress of their projects and addressing any concerns or queries they may have.",
-  },
+  // {
+  //   id: 5,
+  //   title: "Completion and Handover:",
+  //   desc: "We maintain open lines of communication with clients, providing regular updates on the progress of their projects and addressing any concerns or queries they may have.",
+  // },
 ];
 
 export default function OurWorkingProcess() {
   return (
     <div>
-      <div className="flex flex-col md:flex-row gap-x-6">
-        <div>
+      <div className="grid grid-cols-1 md:grid-cols-11 gap-x-6">
+        <div className="w-full md:col-span-7">
           <h1 className="font-bold mb-2 text-3xl">
-            Working Process of Our Construction Company <span className="text-primary">in Brooklyn</span>
+            Working Process of Our Construction Company{" "}
+            <span className="text-primary">in Brooklyn</span>
           </h1>
           <p className="font-semibold">
             Certainly! Here's an overview of the working process of our
             construction company in Brooklyn:
           </p>
-          <div className="w-full md:col-span-4 mt-4">
+          <div className="w-full mt-4">
             <ul className="list-disc list-inside marker:text-primary marker:font-extrabold marker:text-2xl">
               {workingProcessLists.map(({ id, title, desc }) => (
                 <div key={id} className="mb-2">
@@ -58,16 +59,16 @@ export default function OurWorkingProcess() {
             contributing positively to the Brooklyn community.
           </p>
         </div>
-          <div className="w-full">
-            <Image
-              src={WorkingProcessImg}
-              alt="Working process"
-              width={600}
-              height={300}
-              priority={1}
-              className="w-full h-full rounded-lg"
-            />
-          </div>
+        <div className="w-full md:col-span-4 h-3/4 md:h-full">
+          <Image
+            src={WorkingProcessImg}
+            alt="Working process"
+            width={600}
+            height={300}
+            priority={1}
+            className="w-full h-full rounded-lg"
+          />
+        </div>
       </div>
     </div>
   );

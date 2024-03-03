@@ -71,3 +71,23 @@ img {
     @apply flex gap-2 mb-2 text-lg;
   }
 }
+
+/* Animated gallery (This design could be change) */
+.sample-slider {
+  /* width: 70%; */
+}
+.sample-slider img {
+  width: 100%;
+}
+.sample-slider .swiper-wrapper {
+  transition-timing-function: linear;
+}
+
+
+@media only screen and (min-width: 1536px) {
+  .custom-container {
+    max-width: 1536px;
+    margin: 0 auto;
+  }
+}
+
