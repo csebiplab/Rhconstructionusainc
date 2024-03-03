@@ -22,6 +22,8 @@ import { FaqAccordion } from "@/components/__home_components/FaqAccordion";
 import TrustedGeneralContractor from "@/components/__home_components/TrustedGeneralContractor";
 import ConstructionsToolsNEquepments from "@/components/__home_components/ConstructionsToolsNEquepments";
 import CostOfConstructions from "@/components/__home_components/CostOfConstructions";
+import LocationMap from "@/components/__home_components/LocationMap";
+import UserReviewSection from "@/components/__home_components/Reviews/UsersReview";
 
 // Slider info
 const slidersInfo = [
@@ -560,6 +562,15 @@ const Home = () => {
         </div>
       </section>
       {/* Construction Project Section Ends */}
+
+      {/* Our Location Section starts */}
+      <section className="container py-20">
+        <UserReviewSection />
+      </section>
+      <div className="py-20">
+        <LocationMap />
+      </div>
+      {/* Our Location Section ends */}
     </main>
   );
 };
