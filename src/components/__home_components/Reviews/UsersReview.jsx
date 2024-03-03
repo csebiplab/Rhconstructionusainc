@@ -1,3 +1,5 @@
+"use client";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -35,7 +37,7 @@ const breakpoints = {
 const UserReviewSection = () => {
   return (
     <div>
-      <h1 className={`font-bold textPrimary`}>Reviews</h1>
+      <h1>Reviews</h1>
       <div className="">
         <Swiper
           // navigation={true}

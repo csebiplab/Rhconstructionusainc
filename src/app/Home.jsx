@@ -24,6 +24,7 @@ import ConstructionsToolsNEquepments from "@/components/__home_components/Constr
 import CostOfConstructions from "@/components/__home_components/CostOfConstructions";
 import LocationMap from "@/components/__home_components/LocationMap";
 import UserReviewSection from "@/components/__home_components/Reviews/UsersReview";
+import GallerySection from "@/components/__home_components/GallerySection";
 
 // Slider info
 const slidersInfo = [
@@ -488,6 +489,11 @@ const Home = () => {
       <section className="pt-20 container">
         <CostOfConstructions />
       </section>
+
+      {/* Our Past Projects Gallery */}
+      <div className="pt-20 custom-container">
+        <GallerySection />
+      </div>
 
       {/* FAQ ACCORDION starts */}
       <section className="py-20 container">
