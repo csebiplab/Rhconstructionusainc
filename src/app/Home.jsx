@@ -569,10 +569,11 @@ const Home = () => {
       </section>
       {/* Construction Project Section Ends */}
 
-      {/* Our Location Section starts */}
       <section className="container py-20">
         <UserReviewSection />
       </section>
+
+      {/* Our Location Section starts */}
       <div className="py-20">
         <LocationMap />
       </div>
