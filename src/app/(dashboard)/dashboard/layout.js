@@ -2,6 +2,7 @@
 import DashboardNav from "@/components/__admin_dashboard_components/DashboardNav";
 import ThemeProvider from "@/components/ui/ThemeProvider";
 // import DashboardShell from "@/components/__admin_dashboard_components/DashboardShell";
+import "../../globals.css";
 
 export default function DashboardLayout({ children }) {
   return (
@@ -28,3 +29,5 @@ export default function DashboardLayout({ children }) {
     </html>
   );
 }
+
+

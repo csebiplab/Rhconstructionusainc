@@ -17,7 +17,6 @@
     "clsx": "^2.1.0",
     "eslint": "8.46.0",
     "eslint-config-next": "13.4.13",
-    "firebase": "^10.2.0",
     "grapesjs": "^0.21.4",
     "grapesjs-blocks-basic": "^1.0.2",
     "grapesjs-preset-webpage": "^1.0.3",
