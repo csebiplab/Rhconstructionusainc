@@ -3,7 +3,7 @@ import Footer from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { Raleway } from "next/font/google";
 import 'sweetalert2/src/sweetalert2.scss';
-import "./globals.css";
+import "../globals.css";
 
 const raleway = Raleway({ subsets: ["latin"], variable: '--font-raleway' });
 

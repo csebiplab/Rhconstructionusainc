@@ -1,7 +1,7 @@
 "use client";
 import PageHeader from "@/components/common/PageHeader";
 import API from "@/config/API.config";
-import { errorMessage } from "@/libs/utils";
+import { errorMessage } from "@/lib/utils";
 import {
   Button,
   Input,

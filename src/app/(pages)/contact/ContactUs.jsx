@@ -2,7 +2,7 @@
 
 import PageHeader from "@/components/common/PageHeader";
 import API from "@/config/API.config";
-import { errorMessage } from "@/libs/utils";
+import { errorMessage } from "@/lib/utils";
 import { Button, Input, Textarea } from "@material-tailwind/react";
 import { useState } from "react";
 import { useForm } from "react-hook-form";

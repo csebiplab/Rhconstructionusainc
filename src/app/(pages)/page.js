@@ -3,6 +3,8 @@ import Home from "./Home";
 
 import API from "@/config/API.config";
 import { headers } from "next/headers";
+
+
 export async function generateMetadata() {
   const headersList = headers();
   const pathname = headersList.get("x-invoke-path") || "";

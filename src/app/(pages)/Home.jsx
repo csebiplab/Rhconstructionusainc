@@ -5,15 +5,15 @@ import { BlogCard } from "@/components/cards/Blog.Card";
 import API from "@/config/API.config";
 import constant, {
   partOfconstructionProjectConsiderations,
-} from "@/libs/constant";
+} from "@/lib/constant";
 
-import { errorMessage } from "@/libs/utils";
+import { errorMessage } from "@/lib/utils";
 import { Button, Spinner } from "@material-tailwind/react";
 import Link from "next/link";
 import { BsTelephoneForwardFill } from "react-icons/bs";
 import { SwiperSlide } from "swiper/react";
 import useSwr from "swr";
-import "./styles/Home.css";
+import "../styles/Home.css";
 // import OurCommitment from "@/components/__home_components/OurCommitment";
 import OurWorkingProcess from "@/components/__home_components/OurWorkingProcess";
 // import GeneralContractor from "@/components/__home_components/GeneralContractor";

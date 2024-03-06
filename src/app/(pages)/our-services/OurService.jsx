@@ -1,6 +1,6 @@
 "use client";
 import PageHeader from "@/components/common/PageHeader";
-import constants from "@/libs/constant";
+import constants from "@/lib/constant";
 import { Button, Typography } from "@material-tailwind/react";
 import Link from "next/link";
 import { BsTelephoneForwardFill } from "react-icons/bs";

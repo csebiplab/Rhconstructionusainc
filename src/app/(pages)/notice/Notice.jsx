@@ -1,6 +1,6 @@
 "use client";
 import API from "@/config/API.config";
-import { errorMessage } from "@/libs/utils";
+import { errorMessage } from "@/lib/utils";
 import {
     BellIcon
 } from "@heroicons/react/24/solid";
