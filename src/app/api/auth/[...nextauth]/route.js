@@ -1,6 +1,5 @@
+import authOptions from "@/lib/auth";
 import NextAuth from "next-auth/next";
-// import GithubProvider from "next-auth/providers/github";
-import authOptions from "../../../../lib/auth";
 
 const handler = NextAuth(authOptions);
 

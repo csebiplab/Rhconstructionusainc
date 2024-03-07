@@ -1,50 +1,50 @@
 import bcrypt from "bcrypt";
 import { NextResponse } from "next/server";
-import connectMongoDB from "../../../lib/mongodb";
 import Admin from "@/models/admin";
 import mongoose from "mongoose";
+import connectMongoDB from "@/lib/db";
 
 // Temp api for create one time admin profile
-// export async function POST(request) {
-//     try {
-//         // Parse the incoming JSON data containing username and password
-//         const { username, password } = await request.json();
+/*
+export async function POST(request) {
+    try {
+        // Parse the incoming JSON data containing username and password
+        const { username, password } = await request.json();
 
-//         // Connect to MongoDB
-//         await connectMongoDB();
+        // Connect to MongoDB
+        await connectMongoDB();
 
-//         // Check if admin with the same username already exists
-//         const existingAdmin = await Admin.findOne({ username });
-//         if (existingAdmin) {
-//             return NextResponse.json(
-//                 { error: "Admin with this username already exists" },
-//                 { status: 400 } // Bad Request status code
-//             );
-//         }
+        // Check if admin with the same username already exists
+        const existingAdmin = await Admin.findOne({ username });
+        if (existingAdmin) {
+            return NextResponse.json(
+                { error: "Admin with this username already exists" },
+                { status: 400 } // Bad Request status code
+            );
+        }
 
-//         // Hash the password
-//         const saltRounds = 10;
-//         const hashedPassword = await bcrypt.hash(password, saltRounds);
+        // Hash the password
+        const saltRounds = 10;
+        const hashedPassword = await bcrypt.hash(password, saltRounds);
 
-//         // Create a new admin
-//         await Admin.create({ username, password: hashedPassword });
+        // Create a new admin
+        await Admin.create({ username, password: hashedPassword });
 
-//         return NextResponse.json(
-//             { message: "Admin created successfully" },
-//             { status: 201 } // Created status code
-//         );
-//     } catch (error) {
-//         console.error("Error creating admin:", error);
-//         return NextResponse.json(
-//             { error: "Internal Server Error" },
-//             { status: 500 } // Internal Server Error status code
-//         );
-//     }
-// }
+        return NextResponse.json(
+            { message: "Admin created successfully" },
+            { status: 201 } // Created status code
+        );
+    } catch (error) {
+        console.error("Error creating admin:", error);
+        return NextResponse.json(
+            { error: "Internal Server Error" },
+            { status: 500 } // Internal Server Error status code
+        );
+    }
+}
+*/
 
 // Update admin profile
-
-
 export async function PUT(request) {
     // Connect to MongoDB
     await connectMongoDB();
