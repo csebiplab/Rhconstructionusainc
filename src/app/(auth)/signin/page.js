@@ -4,26 +4,52 @@ import { Button, Card, Input, Typography } from "@material-tailwind/react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import Swal from "sweetalert2";
+import { signIn } from "next-auth/react";
+import { toast } from "react-toastify";
+
+const providers = {
+  CREDENTIALS: "credentials"
+}
 
 export default function () {
-  const [loading, setLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const { register, handleSubmit, reset } = useForm();
   const router = useRouter();
+
+
   async function onSubmit(data) {
+    const { username, password } = data ?? {};
+
     try {
-      setLoading(true);
-      // Removed Firebase authentication code
-      reset();
-      router.push("/admin");
-    } catch (error) {
-      Swal.fire({
-        title: "Failed",
-        text: errorMessage(error),
-        icon: "error",
+      setIsLoading(true);
+      const res = await signIn(providers.CREDENTIALS, {
+        username,
+        password,
+        redirect: false,
       });
+
+      reset();
+
+      if (res?.error) {
+        toast.error(res?.error);
+      }
+
+      if (!res?.error) {
+        setIsLoading(false);
+        toast.success("Login success");
+      }
+
+      if (res.ok && res?.error == null) {
+        router.push("/dashboard/profile");
+      }
+
+
+    } catch (error) {
+      console.log(error)
+      toast.error('Something went wrong! Please try again later.');
     } finally {
-      setLoading(false);
+      setIsLoading(false);
+
     }
   }
   return (
@@ -55,8 +81,8 @@ export default function () {
               name="password"
             />
           </div>
-          <Button className="mt-6" type="submit" disabled={loading} fullWidth>
-            {loading ? `Loading...` : `Sing In`}
+          <Button className="mt-6" type="submit" disabled={isLoading} fullWidth>
+            {isLoading ? `Loading...` : `Sing In`}
           </Button>
         </form>
       </Card>
