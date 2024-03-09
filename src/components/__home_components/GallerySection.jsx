@@ -3,19 +3,18 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 // import SwiperCore from "swiper";
 
-import GalImg1 from "../../../public/assets/images/img1.jpg";
-import GalImg2 from "../../../public/assets/images/img2.jpg";
-import GalImg3 from "../../../public/assets/images/img3.jpg";
-import GalImg4 from "../../../public/assets/images/img4.jpg";
-import GalImg5 from "../../../public/assets/images/img5.jpg";
-import GalImg6 from "../../../public/assets/images/img6.jpg";
-import GalImg7 from "../../../public/assets/images/img7.jpg";
-import GalImg8 from "../../../public/assets/images/img8.jpg";
-import GalImg9 from "../../../public/assets/images/img9.jpg";
+import GalImg1 from "../../../public/assets/galleries/gl1.jpg";
+import GalImg2 from "../../../public/assets/galleries/gl2.jpg";
+import GalImg3 from "../../../public/assets/galleries/gl3.jpg";
+import GalImg4 from "../../../public/assets/galleries/gl4.jpg";
+import GalImg5 from "../../../public/assets/galleries/gl5.jpg";
+import GalImg6 from "../../../public/assets/galleries/gl6.jpg";
+import GalImg7 from "../../../public/assets/galleries/gl7.jpg";
+import GalImg8 from "../../../public/assets/galleries/gl8.jpg";
+import GalImg9 from "../../../public/assets/galleries/gl9.jpg";
 
 // import required modules
 import { Autoplay, Grid } from "swiper/modules";
-
 
 // Import Swiper styles
 import "swiper/css";
@@ -36,15 +35,11 @@ const galImgs = [
   GalImg9,
 ];
 
-
-
-
 export default function GallerySection() {
-
   return (
     <div>
       <h1 className={`mb-4 container font-bold`}>
-        Construction Services Gallary 
+        Construction Services Gallary
         <br />
         of Our Past Projects
       </h1>
