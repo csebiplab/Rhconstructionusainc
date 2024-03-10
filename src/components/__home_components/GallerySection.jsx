@@ -136,7 +136,9 @@ export default function GallerySection() {
               <Image
                 // width={400}
                 // height={400}
-                className="w-auto h-52 mx-8 select-none"
+
+                // className="w-auto h-52 mx-8 select-none"
+                className="object-contain w-auto h-auto mx-auto"
                 src={imgUrl}
                 alt="gallery"
               />
@@ -152,7 +154,7 @@ export default function GallerySection() {
             pauseOnMouseEnter: false,
             disableOnInteraction: false,
             stopOnLastSlide: false,
-            reverseDirection: true,
+            reverseDirection: false,
           }}
           // slidesPerView={5}
           speed={4000}
@@ -177,11 +179,12 @@ export default function GallerySection() {
           }}
         >
           {galImgs2.map((imgUrl, i) => (
-            <SwiperSlide key={i} className="m-2">
+            <SwiperSlide key={i} className="m-2 ">
               <Image
                 // width={400}
                 // height={400}
-                className="w-auto h-52 mx-8 select-none"
+                // className="w-auto h-52 mx-8 select-none"
+                className="object-contain w-auto h-auto mx-auto "
                 src={imgUrl}
                 alt="gallery"
               />
