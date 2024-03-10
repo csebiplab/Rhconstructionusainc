@@ -1,6 +1,6 @@
-import { NextResponse } from "next/server";
 import connectMongoDB from "@/lib/db";
 import homeRouteMetaData from "@/models/homeMetaDataFile";
+import { NextResponse } from "next/server";
 
 export async function POST(request) {
   try {

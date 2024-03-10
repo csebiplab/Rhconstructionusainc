@@ -1,5 +1,6 @@
-import connectMongoDB from "../../../../lib/mongodb";
-import contactRouteMetaData from "../../../../models/contactMetaDataFile";
+
+import connectMongoDB from "@/lib/db";
+import contactRouteMetaData from "@/models/contactMetaDataFile";
 import { NextResponse } from "next/server";
 
 export async function PUT(request, { params }) {

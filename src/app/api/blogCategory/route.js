@@ -1,6 +1,7 @@
+import connectMongoDB from "@/lib/db";
+import blogCategory from "@/models/blogCategory";
 import { NextResponse } from "next/server";
-import connectMongoDB from "../../../lib/mongodb";
-import blogCategory from "../../../models/blogCategory";
+
 
 export async function POST(request) {
   try {

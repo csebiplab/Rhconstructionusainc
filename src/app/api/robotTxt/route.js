@@ -1,6 +1,8 @@
+import connectMongoDB from "@/lib/db";
+import robottxts from "@/models/robots";
 import { NextResponse } from "next/server";
-import connectMongoDB from "../../../lib/mongodb";
-import robottxts from "../../../models/robots";
+// import connectMongoDB from "../../../lib/mongodb";
+// import robottxts from "../../../models/robots";
 
 
 export async function GET() {

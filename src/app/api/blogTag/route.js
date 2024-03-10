@@ -1,6 +1,7 @@
+import connectMongoDB from "@/lib/db";
+import blogTag from "@/models/blogTag";
 import { NextResponse } from "next/server";
-import connectMongoDB from "../../../lib/mongodb";
-import blogTag from "../../../models/blogTag";
+
 
 export async function POST(request) {
   try {
