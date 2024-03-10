@@ -1,6 +1,6 @@
-import connectMongoDB from "../../../../lib/mongodb";
+import connectMongoDB from "@/lib/db";
+import blogCategory from "@/models/blogCategory";
 import { NextResponse } from "next/server";
-import blogCategory from "../../../../models/blogCategory";
 
 export async function PUT(request, { params }) {
   const { id } = params;

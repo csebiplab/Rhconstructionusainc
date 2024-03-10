@@ -1,6 +1,7 @@
-import connectMongoDB from "../../../../lib/mongodb";
+
+import connectMongoDB from "@/lib/db";
+import blogTag from "@/models/blogTag";
 import { NextResponse } from "next/server";
-import blogTag from "../../../../models/blogTag";
 
 export async function PUT(request, { params }) {
   const { id } = params;

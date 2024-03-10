@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
-import connectMongoDB from "../../../lib/mongodb";
-import blogContent from "../../../models/blogContentFile";
 import convertToLink from "@/helpers/trimSpace";
+import connectMongoDB from "@/lib/db";
+import blogContent from "@/models/blogContentFile";
 
 export async function POST(request) {
   try {

@@ -1,6 +1,8 @@
-import connectMongoDB from "../../../../lib/mongodb";
+
+import connectMongoDB from "@/lib/db";
+import siteMap from "@/models/siteMap";
 import { NextResponse } from "next/server";
-import siteMap from "../../../../models/siteMap";
+
 export async function PUT(request, { params }) {
   const { id } = params;
   const { title, url } = await request.json();

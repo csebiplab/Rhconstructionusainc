@@ -1,8 +1,9 @@
-import connectMongoDB from "../../../../lib/mongodb";
+
 import { NextResponse } from "next/server";
-import blogContent from "../../../../models/blogContentFile";
 import { ObjectId } from 'mongodb';
 import convertToLink from "@/helpers/trimSpace";
+import blogContent from "@/models/blogContentFile";
+import connectMongoDB from "@/lib/db";
 
 
 export async function PUT(request, { params }) {

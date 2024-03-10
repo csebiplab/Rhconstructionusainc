@@ -1,6 +1,7 @@
+import connectMongoDB from "@/lib/db";
+import testimonialRouteMetaData from "@/models/testimonialMetaDataFile";
 import { NextResponse } from "next/server";
-import connectMongoDB from "../../../lib/mongodb";
-import testimonialRouteMetaData from "../../../models/testimonialMetaDataFile";
+
 
 export async function POST(request) {
   try {
