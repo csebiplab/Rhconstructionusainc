@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import BlogList from "../../../../components/blogsComponent/BlogList/BlogList";
 import useFetchData from "@/hooks/useFetchData";
+import BlogList from "@/components/BlogComponents/BlogList";
 export default function page() {
 
   const baseAPIUrl = process.env.NEXT_PUBLIC_API_URL + `/api/blogContent`;
