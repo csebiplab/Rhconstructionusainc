@@ -2,11 +2,11 @@
 
 import React from "react";
 import BlogList from "../../../../components/blogsComponent/BlogList/BlogList";
-import useFetchMetaData from "@/hooks/useFetchMetaData";
+import useFetchData from "@/hooks/useFetchData";
 export default function page() {
 
   const baseAPIUrl = process.env.NEXT_PUBLIC_API_URL + `/api/blogContent`;
-  const { data, loading, error } = useFetchMetaData(baseAPIUrl)
+  const { data, loading, error } = useFetchData(baseAPIUrl)
 
 
   if (loading) {
