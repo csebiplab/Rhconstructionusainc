@@ -2,7 +2,7 @@ export const dashboardConfig = {
   sidebarNav: [
     {
       title: "Home",
-      href: "/dashboard",
+      href: "/dashboard/admin/profile",
       icon: "home",
     },
     {
