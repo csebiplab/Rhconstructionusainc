@@ -1,6 +1,7 @@
+import connectMongoDB from "@/lib/db";
+import siteMap from "@/models/siteMap";
 import { NextResponse } from "next/server";
-import connectMongoDB from "../../../lib/mongodb";
-import siteMap from "../../../models/siteMap";
+
 
 
 export async function POST(request) {

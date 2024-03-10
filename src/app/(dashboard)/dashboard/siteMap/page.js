@@ -1,15 +1,14 @@
 "use client";
 
 import SiteMapComponent from "@/components/siteMapComponent/SiteMapComponent";
-// import SiteMapComponent from "@/components/siteMapComponent/SiteMapComponent";
-import useFetchMetaData from "../../../../hooks/useFetchMetaData";
+import useFetchData from "@/hooks/useFetchData";
 
 
 export default function siteMap() {
   // const { sitemap } = await getSitemapData() ?? {};
 
   const baseAPIUrl = process.env.NEXT_PUBLIC_API_URL + `/api/siteMap`;
-  const { data, loading, error } = useFetchMetaData(baseAPIUrl)
+  const { data, loading, error } = useFetchData(baseAPIUrl)
 
   // console.log(data, loading, error, id)
 

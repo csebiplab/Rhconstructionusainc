@@ -1,7 +1,8 @@
-import connectMongoDB from "../../../../lib/mongodb";
-// import concreteDeliveryRouteMetaData from "../../../../models/concreteDeliveryMetaDataFile";
+
+import connectMongoDB from "@/lib/db";
+import concreteDeliveryRouteMetaData from "@/models/concreteDeliveryMetaDataFile";
 import { NextResponse } from "next/server";
-import concreteDeliveryRouteMetaData from "../../../../models/concreteDeliveryMetaDataFile";
+// import concreteDeliveryRouteMetaData from "../../../../models/concreteDeliveryMetaDataFile";
 
 export async function PUT(request, { params }) {
   const { id } = params;

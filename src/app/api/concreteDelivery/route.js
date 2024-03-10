@@ -1,6 +1,7 @@
+import connectMongoDB from "@/lib/db";
+import concreteDeliveryRouteMetaData from "@/models/concreteDeliveryMetaDataFile";
 import { NextResponse } from "next/server";
-import connectMongoDB from "../../../lib/mongodb";
-import concreteDeliveryRouteMetaData from "../../../models/concreteDeliveryMetaDataFile";
+
 // import blogRouteMetaData from "../../../../models/blogMetaDataFile";
 export async function POST(request) {
   try {

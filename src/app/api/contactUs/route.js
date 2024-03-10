@@ -1,6 +1,7 @@
+import connectMongoDB from "@/lib/db";
+import contactRouteMetaData from "@/models/contactMetaDataFile";
 import { NextResponse } from "next/server";
-import connectMongoDB from "../../../lib/mongodb";
-import contactRouteMetaData from "../../../models/contactMetaDataFile";
+
 
 export async function POST(request) {
   try {

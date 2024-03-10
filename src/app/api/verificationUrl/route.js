@@ -1,6 +1,8 @@
+import connectMongoDB from "@/lib/db";
+import verificationSite from "@/models/siteVerification";
 import { NextResponse } from "next/server";
-import connectMongoDB from "../../../lib/mongodb";
-import verificationSite from "../../../models/siteVerification";
+
+
 export async function POST(request) {
   const { title, url } = await request.json();
   await connectMongoDB();
