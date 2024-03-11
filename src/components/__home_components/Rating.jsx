@@ -23,13 +23,11 @@ const Rating = () => {
     <div>
       <div className="border-2 md:w-8/12 w-full mx-auto p-6 rounded-md ">
         <h3 className="py-4 font-bold text-2xl">Rating </h3>
-        <div className="grid md:grid-cols-3 grid-cols-1">
+        <div className="grid md:grid-cols-3 grid-cols-1 px-8">
           {/* ============ fixed rating ========== */}
           <div>
             <div className="w-[60px] h-[60px] border-gray-300 border-2 rounded-full mb-2">
-              <h3 className="text-sm text-orange-600 mx-auto leading-12">
-                4.9
-              </h3>
+              <h3 className="text-sm text-orange-600 mx-auto">4.9</h3>
             </div>
             <div className="flex items-center gap-1">{ratingStar}</div>
             <h3 className="font-semibold text-sm py-1">61 Verified Reviews*</h3>
@@ -43,14 +41,25 @@ const Rating = () => {
           {/* ============= Highly Rated ============ */}
           <div>
             <div>
-              <h4 className="text-[#000] font-bold">Highly rated for</h4>
-              <div className="flex">
-                <h5>Quality</h5>
-                <h5>Value</h5>
+              <h4 className="text-[#000] font-bold mb-3">Highly rated for</h4>
+              <div className="flex justify-center">
+                <h5 className="me-4 border-2 bg-[#EAEAEA] font-semibold text-[#000] text-sm px-2">
+                  Quality
+                </h5>
+                <h5 className="border-2 bg-[#EAEAEA] font-semibold text-[#000] text-sm px-2">
+                  Value
+                </h5>
               </div>
+              <h5 className="border-2 bg-[#EAEAEA] text-[#000] font-semibold text-sm px-2 text-center mt-2 w-8/12 mx-auto">
+                Customer Service
+              </h5>
             </div>
           </div>
         </div>
+        <p className="py-6">
+          *Reviews imported from Google have not been individually verified by
+          HomeAdvisor.
+        </p>
       </div>
     </div>
   );
