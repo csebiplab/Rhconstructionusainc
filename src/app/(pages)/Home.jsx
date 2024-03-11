@@ -161,12 +161,12 @@ const Home = () => {
 
       <Rating />
 
-      <div className="container flex justify-center items-center absolute left-1/2 -translate-x-1/2 z-50">
+      {/* <div className="container flex justify-center items-center absolute left-1/2 -translate-x-1/2 z-50">
         <img
           src="/assets/images/hat.png"
           className="w-40 h-40 object-contain object-center mx-auto -mt-20"
         />
-      </div>
+      </div> */}
       <section className="py-10 pt-32 bg-[#FCFCFB]">
         <div className="container">
           <div className="text-center mb-3">
