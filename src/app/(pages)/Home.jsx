@@ -25,6 +25,7 @@ import CostOfConstructions from "@/components/__home_components/CostOfConstructi
 import LocationMap from "@/components/__home_components/LocationMap";
 import UserReviewSection from "@/components/__home_components/Reviews/UsersReview";
 import GallerySection from "@/components/__home_components/GallerySection";
+import Rating from "@/components/__home_components/Rating";
 
 // Slider info
 const slidersInfo = [
@@ -155,6 +156,11 @@ const Home = () => {
           </SwiperSlide>
         ))}
       </Slider>
+
+      {/* ======================== Rating =============== */}
+
+      <Rating />
+
       <div className="container flex justify-center items-center absolute left-1/2 -translate-x-1/2 z-50">
         <img
           src="/assets/images/hat.png"
