@@ -2,8 +2,8 @@ import React from "react";
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
 import { AiOutlineStar } from "react-icons/ai";
 import vector from "@/components/__home_components/Images/Vector.png";
-import Progress from "@/components/__home_components/Images/Section.png";
 import Achieve from "@/components/__home_components/Images/Achieve.png";
+import RatingProgressBar from "./RatingProgressBar";
 
 const Rating = () => {
   let stars = 5;
@@ -38,7 +38,7 @@ const Rating = () => {
 
           {/* =================== Rating Progress bar ================ */}
           <div>
-            <img src={Progress.src} />
+            <RatingProgressBar />
           </div>
 
           {/* ============= Highly Rated ============ */}
@@ -69,20 +69,19 @@ const Rating = () => {
       </div>
       <div>
         {/* ================== AchieveMent =============== */}
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-4 md:w-10/12 w-full mx-auto py-8 justify-center items-center">
-          <div className="w-4/12">
-            <div className="border-2 rounded-md p-4 text-center">
-              <h3 className="text-2xl">98%</h3>
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-2 md:w-10/12 w-full mx-auto py-8 justify-center items-center">
+          <div className="w-4/12 flex">
+            <div className="border-2 rounded-md p-4 text-center w-4/12">
+              <h3 className="text-2xl py-2">98%</h3>
               <p>Recommended</p>
             </div>
-            <div className="border-2 rounded-md p-4 text-center w-3/12">
+            <div className="border-2 rounded-md p-4 text-center w-4/12">
               <h3 className="text-2xl">4</h3>
               <p>Years In Business</p>
             </div>
           </div>
-          <div className="w-8/12">
-            <img src={Achieve.src} />
-          </div>
+
+          <img src={Achieve.src} className="w-full" />
         </div>
       </div>
     </div>
