@@ -26,8 +26,10 @@ const Rating = () => {
         <div className="grid md:grid-cols-3 grid-cols-1 px-8">
           {/* ============ fixed rating ========== */}
           <div>
-            <div className="w-[60px] h-[60px] border-gray-300 border-2 rounded-full mb-2">
-              <h3 className="text-sm text-orange-600 mx-auto">4.9</h3>
+            <div className="w-[60px] h-[60px] border-gray-300 border-2 rounded-full mb-2 ">
+              <h3 className="text-base text-orange-600 mx-auto flex items-center justify-center">
+                4.9
+              </h3>
             </div>
             <div className="flex items-center gap-1">{ratingStar}</div>
             <h3 className="font-semibold text-sm py-1">61 Verified Reviews*</h3>
