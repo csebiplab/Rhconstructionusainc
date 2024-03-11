@@ -10,21 +10,23 @@ const Rating = () => {
     return (
       <span key={i}>
         {stars >= i + 1 ? (
-          <FaStar className="text-yellow-500"></FaStar>
+          <FaStar className="text-orange-700" />
         ) : stars >= number ? (
-          <FaStarHalfAlt className="text-yellow-500"></FaStarHalfAlt>
+          <FaStarHalfAlt className="text-orange-700"></FaStarHalfAlt>
         ) : (
-          <AiOutlineStar className="text-yellow-500"></AiOutlineStar>
+          <AiOutlineStar className="text-orange-700"></AiOutlineStar>
         )}
       </span>
     );
   });
   return (
     <div>
-      <div className="border-2 md:w-8/12 w-full mx-auto py-6">
-        <h3>Rating </h3>
+      <div className="border-2 md:w-8/12 w-full mx-auto p-6 rounded-md ">
+        <h3 className="py-4">Rating </h3>
         <div>
-          <h3 className="">4.9</h3>
+          <h3 className="text-md text-orange-600 mb-2 w-20 h-20 border-gray-300 border-2 rounded-full mx-auto leading-20 text-center">
+            4.9
+          </h3>
           <div className="flex items-center gap-1">{ratingStar}</div>
         </div>
       </div>
