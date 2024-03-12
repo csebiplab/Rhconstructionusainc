@@ -27,7 +27,11 @@ import UserReviewSection from "@/components/__home_components/Reviews/UsersRevie
 import GallerySection from "@/components/__home_components/GallerySection";
 import Rating from "@/components/__home_components/Rating";
 import work from "@/components/__home_components/Images/work.png";
+import work1 from "@/components/__home_components/Images/work1.png";
+import work2 from "@/components/__home_components/Images/work2.png";
+import work3 from "@/components/__home_components/Images/work3.png";
 import Image from "next/image";
+import Brand from "@/components/__home_components/Brand";
 
 // Slider info
 const slidersInfo = [
@@ -163,6 +167,9 @@ const Home = () => {
 
       <Rating />
 
+      {/* ============================  Band ============= */}
+      <Brand />
+
       {/* <div className="container flex justify-center items-center absolute left-1/2 -translate-x-1/2 z-50">
         <img
           src="/assets/images/hat.png"
@@ -240,13 +247,57 @@ const Home = () => {
               earned a stellar reputation for its dedication to quality
               craftsmanship and timely completion.
             </p>
-            <div></div>
+
+            {/* ============== Image Card =============== */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 text-center py-10">
+              <div className="w-[321px] h-[278px] ">
+                <Image
+                  src={work1}
+                  width={221}
+                  height={148}
+                  alt=""
+                  className="rounded-md mx-auto"
+                />
+                <h4>Highly trained Staff</h4>
+                <p>
+                  We hire only highly trained staff <br /> for best results.
+                </p>
+              </div>
+              <div className="w-[321px] h-[278px]">
+                <Image
+                  src={work1}
+                  width={221}
+                  height={148}
+                  alt=""
+                  className="rounded-md mx-auto"
+                />
+                <h4>Competitive Pricing</h4>
+                <p>
+                  We quote the best price possible <br /> in the industry..
+                </p>
+              </div>
+              <div className="w-[321px]">
+                <div className="border-2 rounded-md">
+                  <Image
+                    src={work1}
+                    width={221}
+                    height={148}
+                    alt=""
+                    className="rounded-md mx-auto"
+                  />
+                  <h4>Satisfaction Guaranteed</h4>
+                  <p>
+                    100% Customer satisfaction is <br /> our sole motto.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       <section
-        className="bg-cover bg-right md:bg-cetner bg-primary my-6"
+        className="bg-cover bg-right md:bg-center bg-primary my-6"
         style={{
           backgroundImage: "url(/assets/images/call-to-action-bg.webp)",
         }}

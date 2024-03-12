@@ -3,13 +3,6 @@ import { FaStar, FaStarHalfAlt } from "react-icons/fa";
 import { AiOutlineStar } from "react-icons/ai";
 import vector from "@/components/__home_components/Images/Vector.png";
 import Achieve from "@/components/__home_components/Images/Achieve.png";
-import img1 from "@/components/__home_components/Images/img1.png";
-import img2 from "@/components/__home_components/Images/img2.png";
-import img3 from "@/components/__home_components/Images/img3.png";
-import img4 from "@/components/__home_components/Images/img4.png";
-import img5 from "@/components/__home_components/Images/img5.png";
-import img6 from "@/components/__home_components/Images/img6.png";
-import img7 from "@/components/__home_components/Images/img7.png";
 import RatingProgressBar from "./RatingProgressBar";
 import Image from "next/image";
 
@@ -97,80 +90,6 @@ const Rating = () => {
               Achievements
             </h3>
             <Image src={Achieve} width={559} height={82.98} alt="" />
-          </div>
-        </div>
-      </div>
-
-      {/* ================== Company Section ============= */}
-      <div className="w-[1684px] mx-auto px-4">
-        <div className="flex mt-4 gap-2">
-          <div className="w-[215px] h-[174px]">
-            <Image
-              src={img1}
-              width={190}
-              height={147}
-              className="rounded-[15px]  border-[1px] pb-2"
-              alt=""
-            />
-          </div>
-
-          <div className="w-[215px] h-[174px]">
-            <Image
-              src={img2}
-              width={190}
-              height={147}
-              className="rounded-[15px]  border-[1px] pb-2"
-              alt=""
-            />
-          </div>
-          <div className="w-[215px] h-[174px]">
-            <Image
-              src={img3}
-              width={190}
-              height={147}
-              className="rounded-[15px]  border-[1px] pb-2"
-              alt=""
-            />
-          </div>
-          <div className="w-[215px] h-[174px]">
-            <Image
-              src={img4}
-              width={190}
-              height={147}
-              className="rounded-[15px]  border-[1px] pb-2"
-              alt=""
-            />
-          </div>
-          <div className="w-[215px] h-[174px]">
-            <Image
-              src={img5}
-              width={190}
-              height={147}
-              className="rounded-[15px]  border-[1px] pb-2"
-              alt=""
-            />
-          </div>
-          <div className="w-[190px] h-[147px] rounded-[15px]  border-[1px]">
-            <Image
-              src={img6}
-              width={100}
-              height={85}
-              className="mx-auto"
-              alt=""
-            />
-            <p className="text-center">
-              What a pleasure it was working with Maricelaâ s
-            </p>
-          </div>
-          <div className="w-[190px] h-[147px] rounded-[15px]  border-[1px]">
-            <Image
-              src={img7}
-              width={60}
-              height={40}
-              className="mx-auto mt-3"
-              alt=""
-            />
-            <p className="text-center">I always receive excellent service.</p>
           </div>
         </div>
       </div>
