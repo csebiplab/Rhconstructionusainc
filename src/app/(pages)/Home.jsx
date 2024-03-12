@@ -6,7 +6,7 @@ import API from "@/config/API.config";
 import constant, {
   partOfconstructionProjectConsiderations,
 } from "@/lib/constant";
-
+import vector from "@/components/__home_components/Images/Vector.png";
 import { errorMessage } from "@/lib/utils";
 import { Button, Spinner } from "@material-tailwind/react";
 import Link from "next/link";
@@ -169,8 +169,8 @@ const Home = () => {
       </Slider>
 
       <div className="py-[50px]">
-        <div className="w-[1684px] mx-auto">
-          <div className="md:w-[980px] mx-auto">
+        <div className="md:w-[87.95%] w-full mx-auto">
+          <div className="md:w-[980px] w-full mx-auto">
             <div className="rating p-6 rounded-[8px]">
               <h2 className="text-2xl leading-[36px] mb-3">Ratings</h2>
               <div className="flex justify-between gap-5">
@@ -186,7 +186,7 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="relative">
-                  <span className="absolute top-[17px] h-[72px] w-[2px] bg-[#DBDBDB]"></span>
+                  <span className="absolute top-[17px] h-[72px] w-[2px] bg-[#DBDBDB] mr-3"></span>
                 </div>
                 <div className="w-[390px]">
                   <RatingProgressBar />
@@ -195,7 +195,28 @@ const Home = () => {
                   <span className="absolute top-[17px] h-[72px] w-[2px] bg-[#DBDBDB]"></span>
                 </div>
                 <div className="w-[260px]">
-                  <h3>Highly rated for</h3>
+                  <div>
+                    <div className="flex">
+                      <h4 className="text-[#000] font-bold mb-5">
+                        Highly rated for
+                      </h4>
+                      <img
+                        src={vector.src}
+                        className="w-[22px] h-[24px] ms-3"
+                      />
+                    </div>
+                    <div className="flex justify-center">
+                      <h5 className="me-4 border-2 bg-[#EAEAEA] font-semibold text-[#000] text-sm px-2">
+                        Quality
+                      </h5>
+                      <h5 className="border-2 bg-[#EAEAEA] font-semibold text-[#000] text-sm px-2">
+                        Value
+                      </h5>
+                    </div>
+                    <h5 className="border-2 bg-[#EAEAEA] text-[#000] font-semibold text-sm px-2 text-center mt-2 w-8/12 mx-auto">
+                      Customer Service
+                    </h5>
+                  </div>
                 </div>
               </div>
               <p className="text-[12px] font-medium leading-[16px] text-[#666666] mt-[15px]">
@@ -291,7 +312,7 @@ const Home = () => {
 
             {/* ============== Image Card =============== */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3 text-center py-10">
-              <div className="w-[321px] h-[278px] ">
+              <div className="w-[321px] h-[278px]">
                 <Image
                   src={work1}
                   width={221}
@@ -317,7 +338,7 @@ const Home = () => {
                   We quote the best price possible <br /> in the industry..
                 </p>
               </div>
-              <div className="w-[321px]">
+              <div className="w-[321px] h-[278px]">
                 <div className="rounded-md">
                   <Image
                     src={work3}

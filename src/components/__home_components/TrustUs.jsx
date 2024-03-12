@@ -5,13 +5,13 @@ import Image from "next/image";
 const TrustUs = () => {
   return (
     <div>
-      <div className="flex px-8 py-16">
+      <div className="flex px-8">
         <div>
           <Image src={inspector} width={1012} height={772} alt="inspector" />
         </div>
         <div>
-          <div className="flex flex-col items-center">
-            <div className="mx-auto border-2 p-3">
+          <div className="flex flex-col">
+            <div className="items-center border-2 p-3 rounded-md">
               <Image
                 src={trust}
                 width={96}

@@ -9,7 +9,7 @@ const RatingProgressBar = () => {
     const percentage = (ratingCount / totalRatings) * 100;
 
     return (
-      <div key={index} className="flex items-center gap-2 mb-2">
+      <div key={index} className="flex items-center gap-2">
         <div>{index + 1}</div>
         <div className="">
           <img
@@ -18,9 +18,9 @@ const RatingProgressBar = () => {
             alt=""
           />
         </div>
-        <div className="w-6/12 bg-gray-200 rounded-full ">
+        <div className="w-6/12 bg-gray-200 rounded-[4px] ">
           <div
-            className={`h-[6px] bg-[#FFC700] rounded-full`}
+            className={`h-4 bg-[#FFC700] rounded-[4px]`}
             style={{ width: `${percentage}%` }}
           ></div>
         </div>

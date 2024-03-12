@@ -10,20 +10,20 @@ import band7 from "@/components/__home_components/Images/band7.png";
 
 const Brand = () => {
   return (
-    <div className="brands pt-10 grid grid-cols-7">
-      <div className="brand w-[220px] h-[174px] border-[1px] border-[#EAEAEA] rounded-[15px] px-2 py-[14px] text-center">
+    <div className="brands pt-4 grid grid-cols-3 md:grid-cols-7 gap-3">
+      <div className="brand w-full h-[174px] border-[1px] border-[#EAEAEA] rounded-[15px] px-2 py-[14px] text-center">
         <Image
           src={band1}
-          width={170}
-          height={95}
+          width={110}
+          height={100}
           alt=""
-          className="mb-[10px] mx-auto"
+          className="mb-[10px] mt-4 mx-auto"
         />
-        <h3 className="text-center  text-base leading-[21.1px]">
+        <p className="text-center  text-sm leading-[21.1px] mt-8">
           R H CONSTRUCTION responds to texts.
-        </h3>
+        </p>
       </div>
-      <div className="brand w-[220px] h-[174px] border-[1px] border-[#EAEAEA] rounded-[15px] px-2 py-[14px] text-center">
+      <div className="brand w-full h-[174px] border-[1px] border-[#EAEAEA] rounded-[15px] px-2 py-[14px] text-center">
         <Image
           src={band2}
           width={95}
@@ -31,11 +31,11 @@ const Brand = () => {
           alt=""
           className="mb-[10px] mx-auto"
         />
-        <h3 className="text-center  text-base leading-[21.1px]">
-          The Construction company I have ever seen.
-        </h3>
+        <p className="text-center  text-sm leading-[21.1px] ">
+          The Construction company I ever seen.
+        </p>
       </div>
-      <div className="brand w-[220px] h-[174px] border-[1px] border-[#EAEAEA] rounded-[15px] px-2 py-[14px] text-center">
+      <div className="brand w-full h-[174px] border-[1px] border-[#EAEAEA] rounded-[15px] px-2 py-[14px] text-center">
         <Image
           src={band3}
           width={95}
@@ -43,35 +43,35 @@ const Brand = () => {
           alt=""
           className="mb-[10px] mx-auto"
         />
-        <h3 className="text-center  text-base leading-[21.1px]">
+        <p className="text-center  text-sm leading-[21.1px]">
           We hired R H CONSTRUCTION
-        </h3>
+        </p>
       </div>
-      <div className="brand w-[220px] h-[174px] border-[1px] border-[#EAEAEA] rounded-[15px] px-2 py-[14px] text-center">
+      <div className="brand w-full h-[174px] border-[1px] border-[#EAEAEA] rounded-[15px] px-2 py-[14px] text-center">
         <Image
           src={band4}
-          width={95}
-          height={95}
+          width={80}
+          height={80}
           alt=""
           className="mb-[10px] mx-auto"
         />
-        <h3 className="text-center  text-base leading-[21.1px]">
+        <p className="text-center mt-6 text-sm leading-[21.1px]">
           Maricelas R H CONSTRUCTION
-        </h3>
+        </p>
       </div>
-      <div className="brand w-[220px] h-[174px] border-[1px] border-[#EAEAEA] rounded-[15px] px-2 py-[14px] text-center">
+      <div className="brand w-full h-[174px] border-[1px] border-[#EAEAEA] rounded-[15px] px-2 py-[14px] text-center">
         <Image
           src={band5}
-          width={95}
-          height={95}
+          width={80}
+          height={80}
           alt=""
           className="mb-[10px] mx-auto"
         />
-        <h3 className="text-center  text-base leading-[21.1px]">
+        <p className="text-center mt-6 text-sm leading-[21.1px]">
           We never used a Construction service
-        </h3>
+        </p>
       </div>
-      <div className="brand w-[220px] h-[174px] border-[1px] border-[#EAEAEA] rounded-[15px] px-2 py-[14px] text-center">
+      <div className="brand w-full h-[174px] border-[1px] border-[#EAEAEA] rounded-[15px] px-2 py-[14px] text-center">
         <Image
           src={band6}
           width={143}
@@ -79,11 +79,11 @@ const Brand = () => {
           alt=""
           className="mb-[10px] mx-auto"
         />
-        <h3 className="text-center  text-base leading-[21.1px]">
+        <p className="text-center  text-sm leading-[21.1px]">
           What a pleasure it was working with R H
-        </h3>
+        </p>
       </div>
-      <div className="brand w-[220px] h-[174px] border-[1px] border-[#EAEAEA] rounded-[15px] px-2 py-[14px] text-center">
+      <div className="brand w-full h-[174px] border-[1px] border-[#EAEAEA] rounded-[15px] px-2 py-[14px] text-center">
         <Image
           src={band7}
           width={79}
@@ -91,9 +91,9 @@ const Brand = () => {
           alt=""
           className="mb-[10px] mx-auto py-6"
         />
-        <h3 className="text-center  text-base leading-[21.1px]">
+        <p className="text-center  text-base leading-[21.1px]">
           I always receive excellent service.
-        </h3>
+        </p>
       </div>
     </div>
   );
