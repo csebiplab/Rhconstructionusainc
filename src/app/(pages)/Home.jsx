@@ -32,6 +32,8 @@ import work2 from "@/components/__home_components/Images/work2.png";
 import work3 from "@/components/__home_components/Images/work3.png";
 import Image from "next/image";
 import Brand from "@/components/__home_components/Brand";
+import RatingProgressBar from "@/components/__home_components/RatingProgressBar";
+import Achievement from "@/components/__home_components/Achievement";
 
 // Slider info
 const slidersInfo = [
@@ -163,12 +165,47 @@ const Home = () => {
         ))}
       </Slider>
 
-      {/* ======================== Rating =============== */}
-
-      <Rating />
-
-      {/* ============================  Band ============= */}
-      <Brand />
+      <div className="py-[50px]">
+        <div className="w-[1684px] mx-auto">
+          <div className="md:w-[980px] mx-auto">
+            <div className="rating p-6 rounded-[8px]">
+              <h2 className="text-2xl leading-[36px] mb-3">Ratings</h2>
+              <div className="flex justify-between gap-5">
+                <div className="w-[260px]">
+                  <div>
+                    <div className="w-[60px] h-[60px] mx-auto text-[#FAA500] text-lg font-bold text-center leading-[60px] border-[2px] border-[#DBDBDB] rounded-full">
+                      4.9
+                    </div>
+                    <Rating />
+                    <p className="text-sm font-bold leading-[21px] text-[#1B1B1B] mt-1 text-center">
+                      61 Verified Reviews*
+                    </p>
+                  </div>
+                </div>
+                <div className="relative">
+                  <span className="absolute top-[17px] h-[72px] w-[2px] bg-[#DBDBDB]"></span>
+                </div>
+                <div className="w-[390px]">
+                  <RatingProgressBar />
+                </div>
+                <div className="relative">
+                  <span className="absolute top-[17px] h-[72px] w-[2px] bg-[#DBDBDB]"></span>
+                </div>
+                <div className="w-[260px]">
+                  <h3>Highly rated for</h3>
+                </div>
+              </div>
+              <p className="text-[12px] font-medium leading-[16px] text-[#666666] mt-[15px]">
+                *Reviews imported from Google have not been individually
+                verified by HomeAdvisor.
+              </p>
+            </div>
+            Hello
+            <Achievement />
+          </div>
+          <Brand />
+        </div>
+      </div>
 
       {/* <div className="container flex justify-center items-center absolute left-1/2 -translate-x-1/2 z-50">
         <img
@@ -258,35 +295,35 @@ const Home = () => {
                   alt=""
                   className="rounded-md mx-auto"
                 />
-                <h4>Highly trained Staff</h4>
-                <p>
+                <h4 className="text-base py-2">Highly trained Staff</h4>
+                <p className="text-sm text-secondary">
                   We hire only highly trained staff <br /> for best results.
                 </p>
               </div>
               <div className="w-[321px] h-[278px]">
                 <Image
-                  src={work1}
+                  src={work2}
                   width={221}
                   height={148}
                   alt=""
                   className="rounded-md mx-auto"
                 />
-                <h4>Competitive Pricing</h4>
-                <p>
+                <h4 className="text-base py-2">Competitive Pricing</h4>
+                <p className="text-sm text-secondary">
                   We quote the best price possible <br /> in the industry..
                 </p>
               </div>
               <div className="w-[321px]">
-                <div className="border-2 rounded-md">
+                <div className="rounded-md">
                   <Image
-                    src={work1}
+                    src={work3}
                     width={221}
                     height={148}
                     alt=""
                     className="rounded-md mx-auto"
                   />
-                  <h4>Satisfaction Guaranteed</h4>
-                  <p>
+                  <h4 className="text-base py-2">Satisfaction Guaranteed</h4>
+                  <p className="text-sm text-secondary">
                     100% Customer satisfaction is <br /> our sole motto.
                   </p>
                 </div>
