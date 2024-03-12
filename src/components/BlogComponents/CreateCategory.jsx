@@ -91,7 +91,7 @@ function CreateCategory({ id, data }) {
               Name
             </label>
             <div className="mt-2">
-              <input
+              <input required
                 type="text"
                 name="name"
                 id="name"
@@ -110,7 +110,7 @@ function CreateCategory({ id, data }) {
               Slug
             </label>
             <div className="mt-2">
-              <input
+              <input required
                 type="text"
                 name="slug"
                 id="slug"

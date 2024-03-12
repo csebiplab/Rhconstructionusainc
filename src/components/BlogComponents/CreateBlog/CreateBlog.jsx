@@ -104,7 +104,7 @@ function CreateBlog({ id, data }) {
               Blog Title
             </label>
             <div className="mt-2">
-              <input
+              <input required
                 type="text"
                 name="blogTitle"
                 id="blogTitle"
@@ -123,7 +123,7 @@ function CreateBlog({ id, data }) {
               Meta Title
             </label>
             <div className="mt-2">
-              <input
+              <input required
                 type="text"
                 name="metaTitle"
                 id="metaTitle"
@@ -142,7 +142,7 @@ function CreateBlog({ id, data }) {
               Custom Link
             </label>
             <div className="mt-2">
-              <input
+              <input required
                 type="text"
                 name="customLink"
                 id="customLink"
@@ -161,7 +161,7 @@ function CreateBlog({ id, data }) {
               Meta Description
             </label>
             <div className="mt-2">
-              <input
+              <input required
                 type="text"
                 name="metaDescription"
                 id="metaDescription"
@@ -180,7 +180,7 @@ function CreateBlog({ id, data }) {
               Meta Keywords
             </label>
             <div className="mt-2">
-              <input
+              <input required
                 type="text"
                 name="metaKeywords"
                 id="metaKeywords"
