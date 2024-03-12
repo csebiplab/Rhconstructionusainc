@@ -10,7 +10,7 @@ import band7 from "@/components/__home_components/Images/band7.png";
 
 const Brand = () => {
   return (
-    <div className="brands pt-4 grid grid-cols-3 md:grid-cols-7 gap-3">
+    <div className="brands pt-4 grid grid-cols-2 md:grid-cols-7 gap-3">
       <div className="brand w-full h-[174px] border-[1px] border-[#EAEAEA] rounded-[15px] px-2 py-[14px] text-center">
         <Image
           src={band1}

@@ -311,47 +311,51 @@ const Home = () => {
             </p>
 
             {/* ============== Image Card =============== */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 text-center py-10">
-              <div className="w-[321px] h-[278px]">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 text-center py-10">
+              <div className="w-full shadow-md p-0 rounded-sm">
                 <Image
                   src={work1}
                   width={221}
                   height={148}
                   alt=""
-                  className="rounded-md mx-auto"
+                  className="w-full"
                 />
+                <div className="text-center py-3">
                 <h4 className="text-base py-2">Highly trained Staff</h4>
                 <p className="text-sm text-secondary">
                   We hire only highly trained staff <br /> for best results.
                 </p>
+                </div>
               </div>
-              <div className="w-[321px] h-[278px]">
+              <div className="w-full shadow-md p-0 rounded-sm">
                 <Image
                   src={work2}
                   width={221}
                   height={148}
                   alt=""
-                  className="rounded-md mx-auto"
+                  className="w-full"
                 />
+                <div className="text-center py-3">
                 <h4 className="text-base py-2">Competitive Pricing</h4>
                 <p className="text-sm text-secondary">
                   We quote the best price possible <br /> in the industry..
                 </p>
+                </div>
               </div>
-              <div className="w-[321px] h-[278px]">
-                <div className="rounded-md">
+              <div className="w-full shadow-md p-0 rounded-sm">
                   <Image
                     src={work3}
                     width={221}
                     height={148}
                     alt=""
-                    className="rounded-md mx-auto"
+                    className="w-full"
                   />
-                  <h4 className="text-base py-2">Satisfaction Guaranteed</h4>
+                 <div className="text-center py-3">
+                 <h4 className="text-base py-2">Satisfaction Guaranteed</h4>
                   <p className="text-sm text-secondary">
                     100% Customer satisfaction is <br /> our sole motto.
                   </p>
-                </div>
+                 </div>
               </div>
             </div>
           </div>

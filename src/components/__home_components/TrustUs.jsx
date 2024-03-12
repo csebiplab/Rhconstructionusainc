@@ -5,13 +5,13 @@ import Image from "next/image";
 const TrustUs = () => {
   return (
     <div>
-      <div className="flex px-8">
+      <div className="md:flex items-center px-8">
         <div>
-          <Image src={inspector} width={1012} height={772} alt="inspector" />
+          <Image src={inspector} width={1012} height={772} layout="responsive" alt="inspector" />
         </div>
         <div>
           <div className="flex flex-col">
-            <div className="items-center border-2 p-3 rounded-md">
+            <div className="items-center md:-ml-[88px] rounded-[15px] bg-white p-4 my-class">
               <Image
                 src={trust}
                 width={96}
