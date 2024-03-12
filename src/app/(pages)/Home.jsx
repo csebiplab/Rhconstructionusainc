@@ -36,6 +36,7 @@ import Brand from "@/components/__home_components/Brand";
 import RatingProgressBar from "@/components/__home_components/RatingProgressBar";
 import Achievement from "@/components/__home_components/Achievement";
 import AboutUs from "@/components/__home_components/AboutUs";
+import TrustUs from "@/components/__home_components/TrustUs";
 
 // Slider info
 const slidersInfo = [
@@ -338,6 +339,8 @@ const Home = () => {
 
       {/* ================ about us ============== */}
       <AboutUs />
+      {/* =================== Trust Us ============== */}
+      <TrustUs />
 
       <section
         className="bg-cover bg-right md:bg-center bg-primary my-6"
