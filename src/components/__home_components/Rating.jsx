@@ -103,13 +103,13 @@ const Rating = () => {
 
       {/* ================== Company Section ============= */}
       <div className="w-[1684px] mx-auto px-4">
-        <div className="grid md:grid-cols-7 grid-cols-3 mt-4 gap-0">
+        <div className="flex mt-4 gap-2">
           <div className="w-[215px] h-[174px]">
             <Image
               src={img1}
               width={190}
               height={147}
-              className="rounded-[15px]  border-[1px] pb-3"
+              className="rounded-[15px]  border-[1px] pb-2"
               alt=""
             />
           </div>
@@ -119,7 +119,7 @@ const Rating = () => {
               src={img2}
               width={190}
               height={147}
-              className="rounded-[15px]  border-[1px] pb-3"
+              className="rounded-[15px]  border-[1px] pb-2"
               alt=""
             />
           </div>
@@ -128,7 +128,7 @@ const Rating = () => {
               src={img3}
               width={190}
               height={147}
-              className="rounded-[15px]  border-[1px] pb-3"
+              className="rounded-[15px]  border-[1px] pb-2"
               alt=""
             />
           </div>
@@ -137,7 +137,7 @@ const Rating = () => {
               src={img4}
               width={190}
               height={147}
-              className="rounded-[15px]  border-[1px] pb-3"
+              className="rounded-[15px]  border-[1px] pb-2"
               alt=""
             />
           </div>
@@ -146,7 +146,7 @@ const Rating = () => {
               src={img5}
               width={190}
               height={147}
-              className="rounded-[15px]  border-[1px] pb-3"
+              className="rounded-[15px]  border-[1px] pb-2"
               alt=""
             />
           </div>
