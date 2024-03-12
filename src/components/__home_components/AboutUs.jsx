@@ -3,11 +3,18 @@ import company from "@/components/__home_components/Images/company.png";
 import Image from "next/image";
 import { Button } from "@material-tailwind/react";
 import { BsTelephoneForwardFill } from "react-icons/bs";
-
+import about from "@/components/__home_components/Images/about.png";
 const AboutUs = () => {
   return (
     <div className="flex px-8 justify-between py-16 gap-10">
       <div>
+        <Image
+          src={about}
+          width={101}
+          height={18.02}
+          alt="about"
+          className="my-2"
+        />
         <h2 className="leading-10 mb-1 py-4">
           ABOUT OUR GENERAL CONTRACTOR COMPANY
         </h2>
@@ -27,7 +34,7 @@ const AboutUs = () => {
         </p>
         <div className="flex py-8 items-center flex-wrap mt-4 gap-8">
           <div>
-            <Button className="rounded-md bg-primary hover:bg-gray-900 text-black hover:text-white text-lg font-semibold tracking-wider uppercase">
+            <Button className="rounded-md bg-primary hover:bg-gray-900 text-black hover:text-white text-lg font-semibold tracking-wider capitalize">
               Request A Quote
             </Button>
           </div>
