@@ -30,10 +30,12 @@ import work from "@/components/__home_components/Images/work.png";
 import work1 from "@/components/__home_components/Images/work1.png";
 import work2 from "@/components/__home_components/Images/work2.png";
 import work3 from "@/components/__home_components/Images/work3.png";
+import title from "@/components/__home_components/Images/title.png";
 import Image from "next/image";
 import Brand from "@/components/__home_components/Brand";
 import RatingProgressBar from "@/components/__home_components/RatingProgressBar";
 import Achievement from "@/components/__home_components/Achievement";
+import AboutUs from "@/components/__home_components/AboutUs";
 
 // Slider info
 const slidersInfo = [
@@ -200,7 +202,7 @@ const Home = () => {
                 verified by HomeAdvisor.
               </p>
             </div>
-            Hello
+
             <Achievement />
           </div>
           <Brand />
@@ -268,13 +270,14 @@ const Home = () => {
       {/* CALL TO ACTIONS */}
 
       {/* ================== R H CONSTRUCTION Section ===== */}
-      <div>
+      <div className="py-12">
         <div className="flex px-8 justify-between gap-10">
           <div>
             <Image src={work} width={608} height={608} alt="" />
           </div>
           <div>
-            <h1 className="leading-10 mb-1">R H Construction USA, Inc.</h1>
+            <Image src={title} width={298} height={18} alt="" />
+            <h1 className="leading-10 mb-1 py-4">R H Construction USA, Inc.</h1>
             <p className="max-w-lg xl:max-w-5xl mx-auto text-secondary mt-4">
               RH Construction USA Inc. stands out as one of the leading
               construction companies in Brooklyn, embodying a commitment to
@@ -332,6 +335,9 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      {/* ================ about us ============== */}
+      <AboutUs />
 
       <section
         className="bg-cover bg-right md:bg-center bg-primary my-6"
