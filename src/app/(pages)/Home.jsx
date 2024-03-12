@@ -26,6 +26,8 @@ import LocationMap from "@/components/__home_components/LocationMap";
 import UserReviewSection from "@/components/__home_components/Reviews/UsersReview";
 import GallerySection from "@/components/__home_components/GallerySection";
 import Rating from "@/components/__home_components/Rating";
+import work from "@/components/__home_components/Images/work.png";
+import Image from "next/image";
 
 // Slider info
 const slidersInfo = [
@@ -167,7 +169,7 @@ const Home = () => {
           className="w-40 h-40 object-contain object-center mx-auto -mt-20"
         />
       </div> */}
-      <section className="py-10 pt-32 bg-[#FCFCFB]">
+      {/* <section className="py-10 pt-32 bg-[#FCFCFB]">
         <div className="container">
           <div className="text-center mb-3">
             <h1 className="leading-10 mb-1">
@@ -218,8 +220,31 @@ const Home = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
       {/* CALL TO ACTIONS */}
+
+      {/* ================== R H CONSTRUCTION Section ===== */}
+      <div>
+        <div className="flex px-8 justify-between gap-10">
+          <div>
+            <Image src={work} width={608} height={608} alt="" />
+          </div>
+          <div>
+            <h1 className="leading-10 mb-1">R H Construction USA, Inc.</h1>
+            <p className="max-w-lg xl:max-w-5xl mx-auto text-secondary mt-4">
+              RH Construction USA Inc. stands out as one of the leading
+              construction companies in Brooklyn, embodying a commitment to
+              excellence and innovation in the industry. With a proven track
+              record of successfully delivering a diverse range of construction
+              projects, the general contractor of our construction company has
+              earned a stellar reputation for its dedication to quality
+              craftsmanship and timely completion.
+            </p>
+            <div></div>
+          </div>
+        </div>
+      </div>
+
       <section
         className="bg-cover bg-right md:bg-cetner bg-primary my-6"
         style={{
