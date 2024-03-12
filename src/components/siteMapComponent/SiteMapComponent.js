@@ -144,7 +144,7 @@ function SiteVerificationComponent({ sitemap, id, titleValue, urlValue }) {
                   Meta Title
                 </label>
                 <div className="mt-2">
-                  <input
+                  <input required
                     type="text"
                     name="title"
                     id="title"
@@ -164,7 +164,7 @@ function SiteVerificationComponent({ sitemap, id, titleValue, urlValue }) {
                   Sitemap Url Url
                 </label>
                 <div className="mt-2">
-                  <input
+                  <input required
                     type="text"
                     name="description"
                     id="description"
