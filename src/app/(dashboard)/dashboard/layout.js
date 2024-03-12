@@ -1,9 +1,11 @@
-// import DashboardHeader from "@/components/__admin_dashboard_components/DashboardHeader";
 import DashboardNav from "@/components/__admin_dashboard_components/DashboardNav";
 import ThemeProvider from "@/components/ui/ThemeProvider";
 import DashboardShell from "@/components/__admin_dashboard_components/DashboardShell";
 import "../../globals.css";
 import DashboardHeader from "@/components/__admin_dashboard_components/DashboardHeader";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 export default function DashboardLayout({ children }) {
   return (
@@ -24,7 +26,7 @@ export default function DashboardLayout({ children }) {
               </DashboardShell>
             </main>
           </ThemeProvider>
-
+          <ToastContainer />
         </div>
       </body>
     </html>
