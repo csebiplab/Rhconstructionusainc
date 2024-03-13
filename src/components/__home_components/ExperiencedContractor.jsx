@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const ExperiencedContractor = () => {
     return (
-        <div className="flex px-8 md:justify-between py-12 gap-10">
+        <div className="md:flex px-8 justify-between py-12 gap-10">
             <div>
         <Image src={constructor} width={900} height={880} alt="constructor" />
       </div>

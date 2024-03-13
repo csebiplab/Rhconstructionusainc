@@ -38,6 +38,7 @@ import Rating from "@/components/__home_components/Rating";
 import RatingProgressBar from "@/components/__home_components/RatingProgressBar";
 import UserReviewSection from "@/components/__home_components/Reviews/UsersReview";
 import Right from "@/components/__home_components/Right";
+import Tools from "@/components/__home_components/Tools";
 import TrustUs from "@/components/__home_components/TrustUs";
 import TrustedGeneralContractor from "@/components/__home_components/TrustedGeneralContractor";
 import WorkingProcess from "@/components/__home_components/WorkingProcess";
@@ -388,6 +389,9 @@ const Home = () => {
 
       {/* =============== Project Elevate ============= */}
       <ProjectElevate/>
+
+      {/* =============== Equip & Tools ============== */}
+      <Tools/>
 
       <section
         className="bg-cover bg-right md:bg-center bg-primary my-6"
