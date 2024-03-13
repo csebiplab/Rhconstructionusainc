@@ -7,7 +7,7 @@ import about from "@/components/__home_components/Images/about.png";
 const AboutUs = () => {
   return (
     <div className="flex px-8 justify-between py-16 gap-10">
-      <div className="md:col-span-5 order-1">
+      <div className="">
         <Image
           src={about}
           width={101}
