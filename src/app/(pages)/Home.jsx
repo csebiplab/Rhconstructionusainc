@@ -1,12 +1,12 @@
 "use client";
 
 import Slider from "@/components/Slider";
+import vector from "@/components/__home_components/Images/Vector.png";
 import { BlogCard } from "@/components/cards/Blog.Card";
 import API from "@/config/API.config";
 import constant, {
   partOfconstructionProjectConsiderations,
 } from "@/lib/constant";
-
 import { errorMessage } from "@/lib/utils";
 import { Button, Spinner } from "@material-tailwind/react";
 import Link from "next/link";
@@ -17,14 +17,31 @@ import "../styles/Home.css";
 // import OurCommitment from "@/components/__home_components/OurCommitment";
 import OurWorkingProcess from "@/components/__home_components/OurWorkingProcess";
 // import GeneralContractor from "@/components/__home_components/GeneralContractor";
-import ElevateYourConstructionProjects from "@/components/__home_components/ElevateYourConstructionProjects";
-import { FaqAccordion } from "@/components/__home_components/FaqAccordion";
-import TrustedGeneralContractor from "@/components/__home_components/TrustedGeneralContractor";
+import AboutUs from "@/components/__home_components/AboutUs";
+import Achievement from "@/components/__home_components/Achievement";
+import Brand from "@/components/__home_components/Brand";
 import ConstructionsToolsNEquepments from "@/components/__home_components/ConstructionsToolsNEquepments";
 import CostOfConstructions from "@/components/__home_components/CostOfConstructions";
-import LocationMap from "@/components/__home_components/LocationMap";
-import UserReviewSection from "@/components/__home_components/Reviews/UsersReview";
+import ElevateYourConstructionProjects from "@/components/__home_components/ElevateYourConstructionProjects";
+import ExperiencedContractor from "@/components/__home_components/ExperiencedContractor";
+import { FaqAccordion } from "@/components/__home_components/FaqAccordion";
 import GallerySection from "@/components/__home_components/GallerySection";
+import Hero from "@/components/__home_components/Hero";
+import title from "@/components/__home_components/Images/title.png";
+import work from "@/components/__home_components/Images/work.png";
+import work1 from "@/components/__home_components/Images/work1.png";
+import work2 from "@/components/__home_components/Images/work2.png";
+import work3 from "@/components/__home_components/Images/work3.png";
+import LocationMap from "@/components/__home_components/LocationMap";
+import ProjectElevate from "@/components/__home_components/ProjectElevate";
+import Rating from "@/components/__home_components/Rating";
+import RatingProgressBar from "@/components/__home_components/RatingProgressBar";
+import UserReviewSection from "@/components/__home_components/Reviews/UsersReview";
+import Right from "@/components/__home_components/Right";
+import TrustUs from "@/components/__home_components/TrustUs";
+import TrustedGeneralContractor from "@/components/__home_components/TrustedGeneralContractor";
+import WorkingProcess from "@/components/__home_components/WorkingProcess";
+import Image from "next/image";
 
 // Slider info
 const slidersInfo = [
@@ -155,13 +172,82 @@ const Home = () => {
           </SwiperSlide>
         ))}
       </Slider>
-      <div className="container flex justify-center items-center absolute left-1/2 -translate-x-1/2 z-50">
+
+
+      <Hero/>
+
+      {/* =============== Rating ================= */}
+
+      <div className="py-[50px]">
+        <div className="md:w-[87.95%] w-full mx-auto">
+          <div className="md:w-[980px] w-full mx-auto">
+            <div className="rating p-6 rounded-[8px]">
+              <h2 className="text-2xl leading-[36px] mb-3">Ratings</h2>
+              <div className="flex justify-between gap-5">
+                <div className="w-[260px]">
+                  <div>
+                    <div className="w-[60px] h-[60px] mx-auto text-[#FAA500] text-lg font-bold text-center leading-[60px] border-[2px] border-[#DBDBDB] rounded-full">
+                      4.9
+                    </div>
+                    <Rating />
+                    <p className="text-sm font-bold leading-[21px] text-[#1B1B1B] mt-1 text-center">
+                      61 Verified Reviews*
+                    </p>
+                  </div>
+                </div>
+                <div className="relative">
+                  <span className="absolute top-[17px] h-[72px] w-[2px] bg-[#DBDBDB] mr-3"></span>
+                </div>
+                <div className="w-[390px]">
+                  <RatingProgressBar />
+                </div>
+                <div className="relative">
+                  <span className="absolute top-[17px] h-[72px] w-[2px] bg-[#DBDBDB]"></span>
+                </div>
+                <div className="w-[260px]">
+                  <div>
+                    <div className="flex">
+                      <h4 className="text-[#000] font-bold mb-5">
+                        Highly rated for
+                      </h4>
+                      <img
+                        src={vector.src}
+                        className="w-[22px] h-[24px] ms-3"
+                      />
+                    </div>
+                    <div className="flex justify-center">
+                      <h5 className="me-4 border-2 bg-[#EAEAEA] font-semibold text-[#000] text-sm px-2">
+                        Quality
+                      </h5>
+                      <h5 className="border-2 bg-[#EAEAEA] font-semibold text-[#000] text-sm px-2">
+                        Value
+                      </h5>
+                    </div>
+                    <h5 className="border-2 bg-[#EAEAEA] text-[#000] font-semibold text-sm px-2 text-center mt-2 w-8/12 mx-auto">
+                      Customer Service
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <p className="text-[12px] font-medium leading-[16px] text-[#666666] mt-[15px]">
+                *Reviews imported from Google have not been individually
+                verified by HomeAdvisor.
+              </p>
+            </div>
+
+            <Achievement />
+          </div>
+          <Brand />
+        </div>
+      </div>
+
+      {/* <div className="container flex justify-center items-center absolute left-1/2 -translate-x-1/2 z-50">
         <img
           src="/assets/images/hat.png"
           className="w-40 h-40 object-contain object-center mx-auto -mt-20"
         />
-      </div>
-      <section className="py-10 pt-32 bg-[#FCFCFB]">
+      </div> */}
+      {/* <section className="py-10 pt-32 bg-[#FCFCFB]">
         <div className="container">
           <div className="text-center mb-3">
             <h1 className="leading-10 mb-1">
@@ -212,10 +298,99 @@ const Home = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
       {/* CALL TO ACTIONS */}
+
+      {/* ================== R H CONSTRUCTION Section ===== */}
+      <div className="py-12">
+        <div className="flex px-8 justify-between gap-10">
+          <div>
+            <Image src={work} width={608} height={608} alt="" />
+          </div>
+          <div>
+            <Image src={title} width={298} height={18} alt="" />
+            <h1 className="leading-10 mb-1 py-4">R H Construction USA, Inc.</h1>
+            <p className="max-w-lg xl:max-w-5xl mx-auto text-secondary mt-4">
+              RH Construction USA Inc. stands out as one of the leading
+              construction companies in Brooklyn, embodying a commitment to
+              excellence and innovation in the industry. With a proven track
+              record of successfully delivering a diverse range of construction
+              projects, the general contractor of our construction company has
+              earned a stellar reputation for its dedication to quality
+              craftsmanship and timely completion.
+            </p>
+
+            {/* ============== Image Card =============== */}
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 text-center py-10">
+              <div className="w-full shadow-md p-0 rounded-sm">
+                <Image
+                  src={work1}
+                  width={221}
+                  height={148}
+                  alt=""
+                  className="w-full"
+                />
+                <div className="text-center py-3">
+                  <h4 className="text-base py-2">Highly trained Staff</h4>
+                  <p className="text-sm text-secondary">
+                    We hire only highly trained staff <br /> for best results.
+                  </p>
+                </div>
+              </div>
+              <div className="w-full shadow-md p-0 rounded-sm">
+                <Image
+                  src={work2}
+                  width={221}
+                  height={148}
+                  alt=""
+                  className="w-full"
+                />
+                <div className="text-center py-3">
+                  <h4 className="text-base py-2">Competitive Pricing</h4>
+                  <p className="text-sm text-secondary">
+                    We quote the best price possible <br /> in the industry..
+                  </p>
+                </div>
+              </div>
+              <div className="w-full shadow-md p-0 rounded-sm">
+                <Image
+                  src={work3}
+                  width={221}
+                  height={148}
+                  alt=""
+                  className="w-full"
+                />
+                <div className="text-center py-3">
+                  <h4 className="text-base py-2">Satisfaction Guaranteed</h4>
+                  <p className="text-sm text-secondary">
+                    100% Customer satisfaction is <br /> our sole motto.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ================ about us ============== */}
+      <AboutUs />
+      {/* =================== Trust Us ============== */}
+      <TrustUs />
+
+      {/* =================== Working Process ============== */}
+      <WorkingProcess />
+
+      {/* ============= EXPERIENCED CONTRACTOR =============== */}
+      <ExperiencedContractor/>
+      
+      {/* ========== Right General Section ============== */}
+      <Right/>
+
+      {/* =============== Project Elevate ============= */}
+      <ProjectElevate/>
+
       <section
-        className="bg-cover bg-right md:bg-cetner bg-primary my-6"
+        className="bg-cover bg-right md:bg-center bg-primary my-6"
         style={{
           backgroundImage: "url(/assets/images/call-to-action-bg.webp)",
         }}
