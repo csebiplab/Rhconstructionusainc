@@ -6,6 +6,12 @@ export async function generateMetadata() {
   try {
     const metaData = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/blogs`).then((res) => res.json())
 
+    if (metaData.blogRouteAllMetaData?.length === 0) {
+      return {
+        title: "Blogs | RH Construction USA",
+        keywords: "Blogs, RH Construction USA",
+      };
+    }
     return {
       title: metaData?.blogRouteAllMetaData[0]?.title,
       description: metaData?.blogRouteAllMetaData[0]?.description,
