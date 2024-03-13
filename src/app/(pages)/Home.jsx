@@ -37,6 +37,7 @@ import RatingProgressBar from "@/components/__home_components/RatingProgressBar"
 import Achievement from "@/components/__home_components/Achievement";
 import AboutUs from "@/components/__home_components/AboutUs";
 import TrustUs from "@/components/__home_components/TrustUs";
+import WorkingProcess from "@/components/__home_components/WorkingProcess";
 
 // Slider info
 const slidersInfo = [
@@ -321,10 +322,10 @@ const Home = () => {
                   className="w-full"
                 />
                 <div className="text-center py-3">
-                <h4 className="text-base py-2">Highly trained Staff</h4>
-                <p className="text-sm text-secondary">
-                  We hire only highly trained staff <br /> for best results.
-                </p>
+                  <h4 className="text-base py-2">Highly trained Staff</h4>
+                  <p className="text-sm text-secondary">
+                    We hire only highly trained staff <br /> for best results.
+                  </p>
                 </div>
               </div>
               <div className="w-full shadow-md p-0 rounded-sm">
@@ -336,26 +337,26 @@ const Home = () => {
                   className="w-full"
                 />
                 <div className="text-center py-3">
-                <h4 className="text-base py-2">Competitive Pricing</h4>
-                <p className="text-sm text-secondary">
-                  We quote the best price possible <br /> in the industry..
-                </p>
+                  <h4 className="text-base py-2">Competitive Pricing</h4>
+                  <p className="text-sm text-secondary">
+                    We quote the best price possible <br /> in the industry..
+                  </p>
                 </div>
               </div>
               <div className="w-full shadow-md p-0 rounded-sm">
-                  <Image
-                    src={work3}
-                    width={221}
-                    height={148}
-                    alt=""
-                    className="w-full"
-                  />
-                 <div className="text-center py-3">
-                 <h4 className="text-base py-2">Satisfaction Guaranteed</h4>
+                <Image
+                  src={work3}
+                  width={221}
+                  height={148}
+                  alt=""
+                  className="w-full"
+                />
+                <div className="text-center py-3">
+                  <h4 className="text-base py-2">Satisfaction Guaranteed</h4>
                   <p className="text-sm text-secondary">
                     100% Customer satisfaction is <br /> our sole motto.
                   </p>
-                 </div>
+                </div>
               </div>
             </div>
           </div>
@@ -366,6 +367,9 @@ const Home = () => {
       <AboutUs />
       {/* =================== Trust Us ============== */}
       <TrustUs />
+
+      {/* =================== Working Process ============== */}
+      <WorkingProcess />
 
       <section
         className="bg-cover bg-right md:bg-center bg-primary my-6"

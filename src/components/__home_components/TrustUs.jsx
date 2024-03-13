@@ -7,11 +7,17 @@ const TrustUs = () => {
     <div>
       <div className="md:flex items-center px-8">
         <div>
-          <Image src={inspector} width={1012} height={772} layout="responsive" alt="inspector" />
+          <Image
+            src={inspector}
+            width={1016}
+            height={772}
+            layout="responsive"
+            alt="inspector"
+          />
         </div>
         <div>
           <div className="flex flex-col">
-            <div className="items-center md:-ml-[88px] rounded-[15px] bg-white p-4 my-class">
+            <div className="items-center md:-ml-[80px] rounded-[15px] bg-white p-4 my-class">
               <Image
                 src={trust}
                 width={96}
