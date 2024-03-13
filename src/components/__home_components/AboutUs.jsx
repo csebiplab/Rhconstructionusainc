@@ -1,9 +1,8 @@
-import React from "react";
-import company from "@/components/__home_components/Images/company.png";
-import Image from "next/image";
-import { Button } from "@material-tailwind/react";
-import { BsTelephoneForwardFill } from "react-icons/bs";
 import about from "@/components/__home_components/Images/about.png";
+import company from "@/components/__home_components/Images/company.png";
+import { Button } from "@material-tailwind/react";
+import Image from "next/image";
+import { BsTelephoneForwardFill } from "react-icons/bs";
 const AboutUs = () => {
   return (
     <div className="flex px-8 justify-between py-16 gap-10">

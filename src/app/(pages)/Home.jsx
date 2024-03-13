@@ -1,12 +1,12 @@
 "use client";
 
 import Slider from "@/components/Slider";
+import vector from "@/components/__home_components/Images/Vector.png";
 import { BlogCard } from "@/components/cards/Blog.Card";
 import API from "@/config/API.config";
 import constant, {
   partOfconstructionProjectConsiderations,
 } from "@/lib/constant";
-import vector from "@/components/__home_components/Images/Vector.png";
 import { errorMessage } from "@/lib/utils";
 import { Button, Spinner } from "@material-tailwind/react";
 import Link from "next/link";
@@ -17,28 +17,29 @@ import "../styles/Home.css";
 // import OurCommitment from "@/components/__home_components/OurCommitment";
 import OurWorkingProcess from "@/components/__home_components/OurWorkingProcess";
 // import GeneralContractor from "@/components/__home_components/GeneralContractor";
-import ElevateYourConstructionProjects from "@/components/__home_components/ElevateYourConstructionProjects";
-import { FaqAccordion } from "@/components/__home_components/FaqAccordion";
-import TrustedGeneralContractor from "@/components/__home_components/TrustedGeneralContractor";
+import AboutUs from "@/components/__home_components/AboutUs";
+import Achievement from "@/components/__home_components/Achievement";
+import Brand from "@/components/__home_components/Brand";
 import ConstructionsToolsNEquepments from "@/components/__home_components/ConstructionsToolsNEquepments";
 import CostOfConstructions from "@/components/__home_components/CostOfConstructions";
-import LocationMap from "@/components/__home_components/LocationMap";
-import UserReviewSection from "@/components/__home_components/Reviews/UsersReview";
+import ElevateYourConstructionProjects from "@/components/__home_components/ElevateYourConstructionProjects";
+import ExperiencedContractor from "@/components/__home_components/ExperiencedContractor";
+import { FaqAccordion } from "@/components/__home_components/FaqAccordion";
 import GallerySection from "@/components/__home_components/GallerySection";
-import Rating from "@/components/__home_components/Rating";
+import Hero from "@/components/__home_components/Hero";
+import title from "@/components/__home_components/Images/title.png";
 import work from "@/components/__home_components/Images/work.png";
 import work1 from "@/components/__home_components/Images/work1.png";
 import work2 from "@/components/__home_components/Images/work2.png";
 import work3 from "@/components/__home_components/Images/work3.png";
-import title from "@/components/__home_components/Images/title.png";
-import Image from "next/image";
-import Brand from "@/components/__home_components/Brand";
+import LocationMap from "@/components/__home_components/LocationMap";
+import Rating from "@/components/__home_components/Rating";
 import RatingProgressBar from "@/components/__home_components/RatingProgressBar";
-import Achievement from "@/components/__home_components/Achievement";
-import AboutUs from "@/components/__home_components/AboutUs";
+import UserReviewSection from "@/components/__home_components/Reviews/UsersReview";
 import TrustUs from "@/components/__home_components/TrustUs";
+import TrustedGeneralContractor from "@/components/__home_components/TrustedGeneralContractor";
 import WorkingProcess from "@/components/__home_components/WorkingProcess";
-import Hero from "@/components/__home_components/Hero";
+import Image from "next/image";
 
 // Slider info
 const slidersInfo = [
@@ -376,6 +377,9 @@ const Home = () => {
 
       {/* =================== Working Process ============== */}
       <WorkingProcess />
+
+      {/* ============= EXPERIENCED CONTRACTOR =============== */}
+      <ExperiencedContractor/>
 
       <section
         className="bg-cover bg-right md:bg-center bg-primary my-6"

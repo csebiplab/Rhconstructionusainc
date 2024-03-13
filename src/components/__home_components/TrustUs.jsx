@@ -25,8 +25,8 @@ const TrustUs = () => {
                 alt="trust"
                 className="my-2"
               />
-              <h2 className="leading-10 mb-1 py-4">
-                TRUSTED GENERAL CONTRACTOR IN BROOKLYN
+              <h2 className="leading-10 mb-1 py-3">
+                TRUSTED GENERAL CONTRACTOR <br/> IN BROOKLYN
               </h2>
               <p className="max-w-lg xl:max-w-5xl mx-auto text-secondary mt-4">
                 Since 2009, RH Construction USA Inc. has been dedicated to
