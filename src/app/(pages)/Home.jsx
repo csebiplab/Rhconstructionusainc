@@ -36,6 +36,7 @@ import LocationMap from "@/components/__home_components/LocationMap";
 import Rating from "@/components/__home_components/Rating";
 import RatingProgressBar from "@/components/__home_components/RatingProgressBar";
 import UserReviewSection from "@/components/__home_components/Reviews/UsersReview";
+import Right from "@/components/__home_components/Right";
 import TrustUs from "@/components/__home_components/TrustUs";
 import TrustedGeneralContractor from "@/components/__home_components/TrustedGeneralContractor";
 import WorkingProcess from "@/components/__home_components/WorkingProcess";
@@ -380,6 +381,9 @@ const Home = () => {
 
       {/* ============= EXPERIENCED CONTRACTOR =============== */}
       <ExperiencedContractor/>
+      
+      {/* ========== Right General Section ============== */}
+      <Right/>
 
       <section
         className="bg-cover bg-right md:bg-center bg-primary my-6"

@@ -1,4 +1,3 @@
-import React from "react";
 import inspector from "@/components/__home_components/Images/inspectors.png";
 import trust from "@/components/__home_components/Images/trust.png";
 import Image from "next/image";
@@ -25,10 +24,10 @@ const TrustUs = () => {
                 alt="trust"
                 className="my-2"
               />
-              <h2 className="leading-10 mb-1 py-3">
+              <h2 className="leading-10 mb-1 py-2">
                 TRUSTED GENERAL CONTRACTOR <br/> IN BROOKLYN
               </h2>
-              <p className="max-w-lg xl:max-w-5xl mx-auto text-secondary mt-4">
+              <p className="max-w-lg xl:max-w-5xl mx-auto text-black mt-3 mb-2">
                 Since 2009, RH Construction USA Inc. has been dedicated to
                 delivering excellence in construction services, boasting over 15
                 years of expertise in home renovations, bathroom and kitchen

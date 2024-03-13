@@ -1,0 +1,30 @@
+import right from "@/components/__home_components/Images/right.png";
+import worker from "@/components/__home_components/Images/worker.png";
+import Image from "next/image";
+const Right = () => {
+    return (
+        <div className="flex px-8 md:justify-between py-8 md:py-16 gap-10">
+      <div className="">
+        <Image
+          src={right}
+          width={199}
+          height={18.02}
+          alt="right"
+          className="my-2"
+        />
+        <h2 className="leading-10 mb-1 py-4">
+        CHOOSING THE RIGHT GENERAL CONTRACTOR <br/> IN BROOKLYN
+        </h2>
+        <p className="max-w-lg xl:max-w-5xl mx-auto text-black mt-4">
+        Choosing the right general contractor from all construction companies in Brooklyn is a crucial step in ensuring the success of your construction project. RH Construction USA Inc., a prominent player in the industry, stands out as a reliable choice for discerning clients. With a proven track record of delivering high-quality construction services in Brooklyn, we bring a wealth of experience and expertise to the table. Our commitment to excellence is evident in our attention to detail, timely project completion, and customer satisfaction. When searching for a general contractor in Brooklyn, our company emerges as a reliable partner dedicated to turning your construction dreams into reality.
+        </p>
+        
+      </div>
+      <div>
+        <Image src={worker} width={608} height={550} alt="worker" />
+      </div>
+    </div>
+    );
+};
+
+export default Right;
