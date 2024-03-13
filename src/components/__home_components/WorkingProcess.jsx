@@ -17,7 +17,7 @@ const WorkingProcess = () => {
           className="my-2"
         />
         <h2 className="leading-10 mb-1 py-4">
-          WORKING PROCESS OF OUR CONSTRUCTION COMPANY IN BROOKLYN
+          WORKING PROCESS OF OUR CONSTRUCTION <br /> COMPANY IN BROOKLYN
         </h2>
         <p className="font-semibold">
           Certainly! Here's an overview of the working process of our
@@ -27,63 +27,69 @@ const WorkingProcess = () => {
 
       {/* =============== Image card ============== */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center py-10">
-        <div className="w-full shadow-md p-0 rounded-sm">
+        <div className="w-full shadow-md p-0 rounded-md">
           <Image
             src={mask1}
-            width={400}
-            height={240}
+            width={221}
+            height={148}
             alt=""
             className="w-full"
           />
           <div className="text-center py-3">
-            <h4 className="text-base py-2">Highly trained Staff</h4>
-            <p className="text-sm text-secondary">
-              We hire only highly trained staff <br /> for best results.
+            <h4 className="text-base py-2">Project Planning and Design</h4>
+            <p className="text-sm text-">
+              We begin by meeting with clients to understand their needs, goals,
+              and budget constraints.
             </p>
           </div>
         </div>
-        <div className="w-full shadow-md p-0 rounded-sm">
+        <div className="w-full shadow-md p-0 rounded-md">
           <Image
             src={mask2}
             width={221}
             height={148}
             alt=""
-            className="w-full"
+            className="w-full rounded-md"
           />
           <div className="text-center py-3">
-            <h4 className="text-base py-2">Competitive Pricing</h4>
-            <p className="text-sm text-secondary">
-              We quote the best price possible <br /> in the industry..
+            <h4 className="text-base py-2">
+              Procurement of Materials & Resources
+            </h4>
+            <p className="text-sm text-black">
+              We source high-quality materials and engage skilled laborers and
+              subcontractors necessary for the project.
             </p>
           </div>
         </div>
-        <div className="w-full shadow-md p-0 rounded-sm">
+        <div className="w-full shadow-md p-0 rounded-md">
           <Image
             src={mask3}
             width={221}
             height={148}
             alt=""
-            className="w-full"
+            className="w-full rounded-md"
           />
           <div className="text-center py-3">
-            <h4 className="text-base py-2">Satisfaction Guaranteed</h4>
-            <p className="text-sm text-secondary">
-              100% Customer satisfaction is <br /> our sole motto.
+            <h4 className="text-base py-2">Quality Control and Assurance</h4>
+            <p className="text-sm text-black">
+              Throughout the construction phase, we conduct regular inspections
+              and quality control checks to ensure.
             </p>
           </div>
         </div>
-        <div className="w-full shadow-md p-0 rounded-sm">
+        <div className="w-full shadow-md p-0 rounded-md">
           <Image
             src={mask4}
             width={221}
             height={148}
             alt=""
-            className="w-full"
+            className="w-full rounded-md"
           />
           <div className="text-center py-3">
-            <h4 className="text-base py-2">Satisfaction Guaranteed</h4>
-            <p className="text-sm text-secondary">
-              100% Customer satisfaction is <br /> our sole motto.
+            <h4 className="text-base py-2">Client Communication and Updates</h4>
+            <p className="text-sm text-black">
+              We maintain open lines of communication with clients, providing
+              regular updates on the progress of their projects.
             </p>
           </div>
         </div>

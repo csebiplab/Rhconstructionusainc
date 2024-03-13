@@ -38,6 +38,7 @@ import Achievement from "@/components/__home_components/Achievement";
 import AboutUs from "@/components/__home_components/AboutUs";
 import TrustUs from "@/components/__home_components/TrustUs";
 import WorkingProcess from "@/components/__home_components/WorkingProcess";
+import Hero from "@/components/__home_components/Hero";
 
 // Slider info
 const slidersInfo = [
@@ -168,6 +169,11 @@ const Home = () => {
           </SwiperSlide>
         ))}
       </Slider>
+
+
+      <Hero/>
+
+      {/* =============== Rating ================= */}
 
       <div className="py-[50px]">
         <div className="md:w-[87.95%] w-full mx-auto">
