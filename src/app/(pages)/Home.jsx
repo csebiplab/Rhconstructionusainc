@@ -20,7 +20,7 @@ import AboutUs from "@/components/__home_components/AboutUs";
 import Achievement from "@/components/__home_components/Achievement";
 import Brand from "@/components/__home_components/Brand";
 import ExperiencedContractor from "@/components/__home_components/ExperiencedContractor";
-import { FaqAccordion } from "@/components/__home_components/FaqAccordion";
+import { FAQ } from "@/components/__home_components/FAQ";
 import GallerySection from "@/components/__home_components/GallerySection";
 import Hero from "@/components/__home_components/Hero";
 import title from "@/components/__home_components/Images/title.png";
@@ -301,7 +301,7 @@ const Home = () => {
 
       {/* ================== R H CONSTRUCTION Section ===== */}
       <div className="py-12">
-        <div className="flex px-8 justify-between gap-10">
+        <div className="md:flex px-8 justify-between gap-10">
           <div>
             <Image src={work} width={608} height={608} alt="" />
           </div>
@@ -392,6 +392,9 @@ const Home = () => {
 
       {/* ===================== Project Cost =========== */}
       <ProjectCost/>
+
+      {/* ==================== FAQ Section ======================= */}
+      <FAQ/>
 
       <section
         className="bg-cover bg-right md:bg-center bg-primary my-6"
@@ -675,9 +678,9 @@ const Home = () => {
       </div>
 
       {/* FAQ ACCORDION starts */}
-      <section className="py-20 container">
+      {/* <section className="py-20 container">
         <FaqAccordion />
-      </section>
+      </section> */}
       {/* FAQ ACCORDION ends */}
 
       {/* Construction Project Section Starts */}
