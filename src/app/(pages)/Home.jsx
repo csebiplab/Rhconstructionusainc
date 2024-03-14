@@ -40,33 +40,7 @@ import TrustUs from "@/components/__home_components/TrustUs";
 import WorkingProcess from "@/components/__home_components/WorkingProcess";
 import Image from "next/image";
 
-// Slider info
-const slidersInfo = [
-  {
-    bg: "/assets/images/slider-bg-one.webp",
-    img: "/assets/images/slider-img-one.webp",
-    title: `General Contractor Brooklyn`,
-    subtitle:
-      "Top-rated general contractor in Brooklyn, delivering exceptional construction and renovation services with expertise and integrity.",
-    route: "/",
-  },
-  {
-    bg: "/assets/images/slider-bg-two.webp",
-    img: "/assets/images/slider-img-two.webp",
-    title: "Industrial Contractor",
-    subtitle:
-      "With a reputation for delivering innovative solutions and unmatched expertise, our industrial contractor seamlessly transforms visions into reality, setting new standards of excellence in every project.",
-    route: "/",
-  },
-  {
-    bg: "/assets/images/slider-bg-three.webp",
-    img: "/assets/images/slider-img-three.webp",
-    title: "All Construction Services",
-    subtitle:
-      "From construction groundbreaking to construction cleaning services, our construction services company brings your vision to life with precision and expertise.",
-    route: "/",
-  },
-];
+
 
 const HomeBlogs = () => {
   const {
@@ -114,61 +88,7 @@ const HomeBlogs = () => {
 const Home = () => {
   return (
     <main>
-      <Slider
-        className="max-h-[600px] overflow-hidden"
-        id="home-banner-slider"
-        style={{
-          "--swiper-navigation-size": "48px",
-          "--swiper-theme-color": "blue",
-        }}
-      >
-        {slidersInfo.map((item, key) => (
-          <SwiperSlide key={key} className=" h-full">
-            {({ isActive }) => (
-              <div
-                style={{
-                  backgroundImage: `url(${item.bg})`,
-                  opacity: isActive ? 1 : 0,
-                }}
-                className="bg-cover bg-center text-white"
-              >
-                <div className="container grid grid-cols-1 md:grid-cols-9 items-end">
-                  <div className="z-50 h-full w-full md:col-span-6 flex flex-col justify-center items-center md:text-left mt-52 md:mt-0">
-                    <h1 className="w-full font-bold text-4xl lg:text-[43px] leading-tight md:text-left">
-                      <>
-                        {item?.title}
-                        {/* {key !== 0 ? (
-                          <> {item?.title}</>
-                        ) : (
-                          <>
-                            {item?.title?.split(" in ")[0]}
-                            <br />
-                            {"in " + item?.title?.split(" in ")[1]}
-                          </>
-                        )} */}
-                      </>
-                    </h1>
-                    <h3 className="my-10">{item?.subtitle}</h3>
-                    <div className="w-full">
-                      <Button
-                        size="lg"
-                        className="tracking-wider text-lg bg-primary text-black rounded-full"
-                      >
-                        Free Estimate
-                      </Button>
-                    </div>
-                  </div>
-                  <img
-                    src={item.img}
-                    alt=""
-                    className="w-full -mt-64 md:mt-0 block md:col-span-3"
-                  />
-                </div>
-              </div>
-            )}
-          </SwiperSlide>
-        ))}
-      </Slider>
+     
 
 {/* =============================== Hero Banner =========================== */}
       <Hero/>
