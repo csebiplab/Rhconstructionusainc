@@ -1,5 +1,6 @@
 import connectMongoDB from "@/lib/db";
 import projects from "@/models/projects.model";
+import { NextResponse } from "next/server";
 
 export async function POST(request) {
     try {
