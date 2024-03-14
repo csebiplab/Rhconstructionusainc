@@ -15,14 +15,10 @@ import { SwiperSlide } from "swiper/react";
 import useSwr from "swr";
 import "../styles/Home.css";
 // import OurCommitment from "@/components/__home_components/OurCommitment";
-import OurWorkingProcess from "@/components/__home_components/OurWorkingProcess";
 // import GeneralContractor from "@/components/__home_components/GeneralContractor";
 import AboutUs from "@/components/__home_components/AboutUs";
 import Achievement from "@/components/__home_components/Achievement";
 import Brand from "@/components/__home_components/Brand";
-import ConstructionsToolsNEquepments from "@/components/__home_components/ConstructionsToolsNEquepments";
-import CostOfConstructions from "@/components/__home_components/CostOfConstructions";
-import ElevateYourConstructionProjects from "@/components/__home_components/ElevateYourConstructionProjects";
 import ExperiencedContractor from "@/components/__home_components/ExperiencedContractor";
 import { FaqAccordion } from "@/components/__home_components/FaqAccordion";
 import GallerySection from "@/components/__home_components/GallerySection";
@@ -649,9 +645,9 @@ const Home = () => {
       {/* Choosing The Right Contractor Start*/}
 
       {/* Our working process */}
-      <section className="container py-20">
+      {/* <section className="container py-20">
         <OurWorkingProcess />
-      </section>
+      </section> */}
 
       {/* General Contractor section */}
       {/* <section className="my-10">
@@ -659,19 +655,19 @@ const Home = () => {
       </section> */}
 
       {/* Your Construction Project */}
-      <section className="py-20 container">
+      {/* <section className="py-20 container">
         <ElevateYourConstructionProjects />
-      </section>
+      </section> */}
 
       {/* ConstructionsToolsNEquepments */}
-      <section className="pt-20 container">
+      {/* <section className="pt-20 container">
         <ConstructionsToolsNEquepments />
-      </section>
+      </section> */}
 
       {/* Cost of constructions */}
-      <section className="pt-20 container">
+      {/* <section className="pt-20 container">
         <CostOfConstructions />
-      </section>
+      </section> */}
 
       {/* Our Past Projects Gallery */}
       <div className="pt-20 custom-container">
