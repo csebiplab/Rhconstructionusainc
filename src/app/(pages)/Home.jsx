@@ -4,13 +4,12 @@ import Slider from "@/components/Slider";
 import vector from "@/components/__home_components/Images/Vector.png";
 import { BlogCard } from "@/components/cards/Blog.Card";
 import API from "@/config/API.config";
-import constant, {
+import {
   partOfconstructionProjectConsiderations,
 } from "@/lib/constant";
 import { errorMessage } from "@/lib/utils";
 import { Button, Spinner } from "@material-tailwind/react";
 import Link from "next/link";
-import { BsTelephoneForwardFill } from "react-icons/bs";
 import { SwiperSlide } from "swiper/react";
 import useSwr from "swr";
 import "../styles/Home.css";
@@ -38,7 +37,6 @@ import UserReviewSection from "@/components/__home_components/Reviews/UsersRevie
 import Right from "@/components/__home_components/Right";
 import Tools from "@/components/__home_components/Tools";
 import TrustUs from "@/components/__home_components/TrustUs";
-import TrustedGeneralContractor from "@/components/__home_components/TrustedGeneralContractor";
 import WorkingProcess from "@/components/__home_components/WorkingProcess";
 import Image from "next/image";
 
@@ -300,6 +298,7 @@ const Home = () => {
       </section> */}
       {/* CALL TO ACTIONS */}
 
+
       {/* ================== R H CONSTRUCTION Section ===== */}
       <div className="py-12">
         <div className="md:flex px-8 justify-between gap-10">
@@ -400,7 +399,7 @@ const Home = () => {
       {/* ============= Constructor Section ================= */}
       <Constructor/>
 
-      <section
+      {/* <section
         className="bg-cover bg-right md:bg-center bg-primary my-6"
         style={{
           backgroundImage: "url(/assets/images/call-to-action-bg.webp)",
@@ -412,11 +411,11 @@ const Home = () => {
             <div className="lg:col-span-3">
               <h1 className="leading-10 text-[2rem]">
                 About Our General Contractor Company
-                {/* <br />
+                <br />
                 with
                 <span className="text-white ml-2">
                   R H Construction USA Inc
-                </span> */}
+                </span>
               </h1>
               <p className="text-base mb-5 leading-6 font-medium mt-4 text-white">
                 Since 2009, RH Construction USA Inc. has been dedicated to
@@ -442,7 +441,7 @@ const Home = () => {
                   className="flex justify-center items-center gap-4 rounded-full hover:bg-white/10 text-lg py-3 px-4"
                 >
                   <BsTelephoneForwardFill />
-                  {/* {constant.hotline} */}
+                  {constant.hotline}
                   <span className="text-sm font-bold font-serif">
                     {constant.hotline}
                   </span>
@@ -451,15 +450,15 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* OUR COMMITMENT SECTION */}
       {/* <section className="py-10">
         <OurCommitment />
       </section> */}
-      <section className="container pt-20">
+      {/* <section className="container pt-20">
         <TrustedGeneralContractor />
-      </section>
+      </section> */}
 
       {/* OUR SERVICE */}
       <section className="">
@@ -576,7 +575,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <HomeBlogs />
+      {/* <HomeBlogs /> */}
       {/* OUR COMMITMENT Start*/}
       <section
         className="bg-cover bg-right bg-fixed"

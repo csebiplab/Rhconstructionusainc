@@ -5,6 +5,7 @@ import cost3 from "@/components/__home_components/Images/cost3.png";
 import cost4 from "@/components/__home_components/Images/cost4.png";
 import cost5 from "@/components/__home_components/Images/cost5.png";
 import Image from "next/image";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 const ProjectCost = () => {
     return (
         <div>
@@ -115,7 +116,23 @@ const ProjectCost = () => {
               
               
             </div>
+      {/* ======================== Button ================= */}
+      <div className="flex gap-8 items-center justify-center py-5">
+                {/* ========= first line ======== */}
+                <div className="w-[330px] h-0.5 bg-black hidden md:block">
 
+                </div>
+                <div className="flex gap-5">
+
+                    <button className="p-3 rounded-full border-2 hover:text-white hover:bg-black"><FaChevronLeft /></button>
+                    <button className="text-white hover:text-black hover:bg-white border-2 p-3 bg-black rounded-full"><FaChevronRight /></button>
+
+                </div>
+                {/* =============== second line ============= */}
+                <div className="w-[330px] h-0.5 bg-black hidden md:block">
+
+                </div>
+            </div>
 
         </div>
     );

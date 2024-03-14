@@ -40,7 +40,7 @@ const AboutUs = () => {
           <h3>Or</h3>
           <div className="flex items-center gap-3">
             <BsTelephoneForwardFill />
-            <span className="text-lg font-semibold text-black">
+            <span className="text-xl font-semibold text-black">
               +1 (646) 683-4612
             </span>
           </div>
