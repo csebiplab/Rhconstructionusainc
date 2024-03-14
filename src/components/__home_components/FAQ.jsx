@@ -1,6 +1,6 @@
 "use client";
-import build from "@/components/__home_components/Images/faqBuild.png";
 import faq from "@/components/__home_components/Images/FAQ.png";
+import build from "@/components/__home_components/Images/faqBuild.png";
 import {
     Accordion,
     AccordionBody,
@@ -58,12 +58,12 @@ export function FAQ() {
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
   return (
-   <div className="md:flex items-center">
+   <div className="md:flex justify-between items-center py-6 md:py-12 gap-10 px-8">
     <div>
     <Image
             src={build}
             width={572}
-            height={858}
+            height={1098}
             alt="build"
             className="my-2"
           />
@@ -72,12 +72,12 @@ export function FAQ() {
       <div className="text-center mb-4">
       <Image
             src={faq}
-            width={85}
+            width={70}
             height={18.02}
             alt="faq"
             className="my-2"
           />
-        <h1 className="text-3xl font-semibold">
+        <h1 className="text-3xl py-4 text-start font-semibold">
         FAQ FOR RH CONSTRUCTION USA INC
         </h1>
       </div>
