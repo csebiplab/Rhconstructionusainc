@@ -170,12 +170,12 @@ const Home = () => {
         ))}
       </Slider>
 
-
+{/* =============================== Hero Banner =========================== */}
       <Hero/>
 
       {/* =============== Rating ================= */}
 
-      <div className="py-[50px]">
+      <div className="md:py-[15px] py-10">
         <div className="md:w-[87.95%] w-full mx-auto">
           <div className="md:w-[980px] w-full mx-auto">
             <div className="rating p-6 rounded-[8px]">

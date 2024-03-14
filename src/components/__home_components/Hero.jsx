@@ -8,7 +8,7 @@ const Hero = () => {
       >
         <div className="md:flex items-center relative">
           <div className="w-full md:w-7/12">
-            <div className="md:px-8">
+            <div className="md:ml-20">
             <h1 className="leading-10 text-[2rem]">
             General Constructor
                 <br />
@@ -18,7 +18,7 @@ const Hero = () => {
               <p className="text-sm mb-5 leading-6 mt-4 text-black">
               Top-Rated general constructor in Brooklyn, delivering exceptional <br/> construction & renovation services with expertise and integrity
               </p>
-              <div>
+              <div className="mb-4 md:mb-0">
               <Button className="rounded-md bg-primary hover:bg-gray-900 text-black hover:text-white text-lg font-semibold tracking-wider capitalize flex items-center gap-2">
                 <span>Get an Estimate </span><span><FaChevronRight /></span>
             </Button>
