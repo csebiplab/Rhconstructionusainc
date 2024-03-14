@@ -33,6 +33,7 @@ import work1 from "@/components/__home_components/Images/work1.png";
 import work2 from "@/components/__home_components/Images/work2.png";
 import work3 from "@/components/__home_components/Images/work3.png";
 import LocationMap from "@/components/__home_components/LocationMap";
+import ProjectCost from "@/components/__home_components/ProjectCost";
 import ProjectElevate from "@/components/__home_components/ProjectElevate";
 import Rating from "@/components/__home_components/Rating";
 import RatingProgressBar from "@/components/__home_components/RatingProgressBar";
@@ -392,6 +393,9 @@ const Home = () => {
 
       {/* =============== Equip & Tools ============== */}
       <Tools/>
+
+      {/* ===================== Project Cost =========== */}
+      <ProjectCost/>
 
       <section
         className="bg-cover bg-right md:bg-center bg-primary my-6"
