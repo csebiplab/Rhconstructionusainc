@@ -2,6 +2,8 @@ import cons from "@/components/__home_components/Images/const.png";
 import pp1 from "@/components/__home_components/Images/pp1.png";
 import pp2 from "@/components/__home_components/Images/pp2.png";
 import pp3 from "@/components/__home_components/Images/pp3.png";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
+
 import Image from "next/image";
 const Constructor = () => {
     return (
@@ -70,6 +72,24 @@ const Constructor = () => {
                 </div>
               </div>
             </div>
+            </div>
+
+            {/* ======================== Button ================= */}
+            <div className="flex gap-8 items-center justify-center py-5">
+                {/* ========= first line ======== */}
+                <div className="w-[330px] h-0.5 bg-black hidden md:block">
+
+                </div>
+                <div className="flex gap-5">
+
+                    <button className="p-3 rounded-full border-2 hover:text-white hover:bg-black"><FaChevronLeft /></button>
+                    <button className="text-white hover:text-black hover:bg-white border-2 p-3 bg-black rounded-full"><FaChevronRight /></button>
+
+                </div>
+                {/* =============== second line ============= */}
+                <div className="w-[330px] h-0.5 bg-black hidden md:block">
+
+                </div>
             </div>
         </div>
     );
