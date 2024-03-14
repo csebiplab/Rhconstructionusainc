@@ -86,20 +86,20 @@ export function FAQ() {
           <Accordion
             key={id}
             open={open === id}
-            className="mb-2 rounded-lg border border-blue-gray-100 px-4"
+            className="mb-2 border text-white bg-black border-blue-gray-100 px-4"
           >
             <AccordionHeader onClick={() => handleOpen(id)}>
               <div
                 className={`border-b-0 transition-colors ${
                   open === idx + 1
-                    ? "text-primary hover:!text-secondary"
+                    ? "hover:!text-primary text-white"
                     : ""
                 }`}
               >
                 <b>Q{id}</b> {question}
               </div>
             </AccordionHeader>
-            <AccordionBody className="pt-0 text-base font-normal">
+            <AccordionBody className="pt-0 p-1 text-base font-normal bg-white">
               {answer}
             </AccordionBody>
           </Accordion>
