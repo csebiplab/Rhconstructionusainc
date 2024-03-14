@@ -34,7 +34,7 @@ const AboutUs = () => {
         <div className="flex py-8 items-center flex-wrap mt-4 gap-8">
           <div>
             <Button className="rounded-md bg-primary hover:bg-gray-900 text-black hover:text-white text-lg font-semibold tracking-wider capitalize">
-              Request A Quote
+              Request A Quote <span></span>
             </Button>
           </div>
           <h3>Or</h3>

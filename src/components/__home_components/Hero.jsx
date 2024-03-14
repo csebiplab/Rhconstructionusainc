@@ -1,4 +1,5 @@
-
+import { Button } from "@material-tailwind/react";
+import { FaChevronRight } from "react-icons/fa6";
 const Hero = () => {
   return (
     <>
@@ -7,20 +8,22 @@ const Hero = () => {
       >
         <div className="md:flex items-center relative">
           <div className="w-full md:w-7/12">
-            <div className="">
+            <div className="md:px-8">
             <h1 className="leading-10 text-[2rem]">
-                About Our General Contractor Company
+            General Constructor
                 <br />
-                with
-                <span className="text-white ml-2">
-                  R H Construction USA Inc
-                </span>
+                Brooklyn
+        
               </h1>
-              <p className="text-base mb-5 leading-6 font-medium mt-4 text-white">
-                Since 2009, RH Construction USA Inc. has been dedicated to
-                delivering excellence in construction services, boasting over 15
-                years of expertise in home renovations.
+              <p className="text-sm mb-5 leading-6 mt-4 text-black">
+              Top-Rated general constructor in Brooklyn, delivering exceptional <br/> construction & renovation services with expertise and integrity
               </p>
+              <div>
+              <Button className="rounded-md bg-primary hover:bg-gray-900 text-black hover:text-white text-lg font-semibold tracking-wider capitalize flex items-center gap-2">
+                <span>Get an Estimate </span><span><FaChevronRight /></span>
+            </Button>
+            
+              </div>
             </div>
           </div>
           <img src="/assets/images/Group 73.png"
