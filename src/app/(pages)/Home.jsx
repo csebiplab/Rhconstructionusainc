@@ -19,6 +19,7 @@ import "../styles/Home.css";
 import AboutUs from "@/components/__home_components/AboutUs";
 import Achievement from "@/components/__home_components/Achievement";
 import Brand from "@/components/__home_components/Brand";
+import Constructor from "@/components/__home_components/Constructor";
 import ExperiencedContractor from "@/components/__home_components/ExperiencedContractor";
 import { FAQ } from "@/components/__home_components/FAQ";
 import GallerySection from "@/components/__home_components/GallerySection";
@@ -395,6 +396,9 @@ const Home = () => {
 
       {/* ==================== FAQ Section ======================= */}
       <FAQ/>
+
+      {/* ============= Constructor Section ================= */}
+      <Constructor/>
 
       <section
         className="bg-cover bg-right md:bg-center bg-primary my-6"
