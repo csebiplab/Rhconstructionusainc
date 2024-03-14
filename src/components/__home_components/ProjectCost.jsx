@@ -1,4 +1,9 @@
 import cost from "@/components/__home_components/Images/cost.png";
+import cost1 from "@/components/__home_components/Images/cost1.png";
+import cost2 from "@/components/__home_components/Images/cost2.png";
+import cost3 from "@/components/__home_components/Images/cost3.png";
+import cost4 from "@/components/__home_components/Images/cost4.png";
+import cost5 from "@/components/__home_components/Images/cost5.png";
 import Image from "next/image";
 const ProjectCost = () => {
     return (
@@ -22,13 +27,96 @@ const ProjectCost = () => {
         </div>
         <div>
         <p className="max-w-lg xl:max-w-5xl mx-auto text-black mt-4 md:mt-12">
-        The cost of a construction project can vary widely depending on <br/> various factors such as the size, complexity, <br/> location, materials used, labor costs, and any additional <br/> requirements or unforeseen circumstances. <br/>Here are some key points to consider when estimating<br/> the cost of a construction project:
+        The cost of a construction project can vary widely depending on <br/> various factors such as the size, complexity, location, materials used,<br/>labor costs, and any additional requirements or unforeseen circumstances. <br/>Here are some key points to consider when estimating<br/> the cost of a construction project:
       
           </p>
         </div>
       </div>
 
-    //   ======================= Images Card ==================//
+    {/* //   ======================= Images Card ==================// */}
+    <div className="grid grid-cols-2 md:grid-cols-5 py-4 gap-3 px-4 text-center md:py-10">
+              <div className="md:-mt-10">
+              <div className="w-full shadow-md p-0 rounded-sm">
+                <Image
+                  src={cost1}
+                  width={318}
+                  height={238}
+                  alt=""
+                  className="w-full"
+                />
+                
+                  <h5 className="text-base py-2">Scope of Work</h5>
+                  
+                
+              </div>
+              </div>
+              <div>
+              <div className="w-full shadow-md p-0 rounded-sm">
+                <Image
+                  src={cost2}
+                  width={318}
+                  height={238}
+                  alt=""
+                  className="w-full"
+                />
+                
+                  <h5 className="text-base py-2">Materials</h5>
+                  
+                
+              </div>
+              </div>
+              <div className="md:-mt-10">
+              <div className="w-full shadow-md p-0 rounded-sm">
+                <Image
+                  src={cost3}
+                  width={318}
+                  height={238}
+                  alt=""
+                  className="w-full"
+                />
+                
+                  <h5 className="text-base py-2">Labor Costs</h5>
+                  
+                
+              </div>
+              </div>
+              <div >
+              <div className="w-full shadow-md p-0 rounded-sm">
+                <Image
+                  src={cost4}
+                  width={318}
+                  height={238}
+                  alt=""
+                  className="w-full"
+                />
+                
+                  <h5 className="text-base py-2">Equipment and Machinery</h5>
+                  
+                
+              </div>
+              </div>
+              <div className="md:-mt-10">
+              <div className="w-full shadow-md p-0 rounded-sm">
+                <Image
+                  src={cost5}
+                  width={318}
+                  height={238}
+                  alt=""
+                  className="w-full"
+                />
+                
+                  <h5 className="text-base py-2">Permits and Regulations</h5>
+                  
+                
+              </div>
+              </div>
+              
+              
+              
+              
+            </div>
+
+
         </div>
     );
 };
