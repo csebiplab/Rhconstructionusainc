@@ -1,11 +1,11 @@
 import connectMongoDB from "@/lib/db";
-import customerReveiws from "@/models/customerReviewsMetadata";
+import projects from "@/models/projects.model";
 
 export async function POST(request) {
     try {
         const { title, description, keywords } = await request.json();
         await connectMongoDB();
-        await customerReveiws.create({
+        await projects.create({
             title,
             description,
             keywords,
@@ -25,14 +25,14 @@ export async function POST(request) {
 
 export async function GET() {
     await connectMongoDB();
-    const metaData = await customerReveiws.find();
+    const metaData = await projects.find();
     return NextResponse.json({ metaData });
 }
 
 export async function DELETE(request) {
     const id = request.nextUrl.searchParams.get("id");
     await connectMongoDB();
-    await customerReveiws.findByIdAndDelete(id);
+    await projects.findByIdAndDelete(id);
     return NextResponse.json(
         { message: "Metadata deleted" },
         { status: 200 }
