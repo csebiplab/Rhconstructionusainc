@@ -22,7 +22,6 @@ import work from "@/components/__home_components/Images/work.png";
 import work1 from "@/components/__home_components/Images/work1.png";
 import work2 from "@/components/__home_components/Images/work2.png";
 import work3 from "@/components/__home_components/Images/work3.png";
-import LocationMap from "@/components/__home_components/LocationMap";
 import ProjectCost from "@/components/__home_components/ProjectCost";
 import ProjectElevate from "@/components/__home_components/ProjectElevate";
 import Rating from "@/components/__home_components/Rating";
@@ -33,6 +32,7 @@ import TrustUs from "@/components/__home_components/TrustUs";
 import WorkingProcess from "@/components/__home_components/WorkingProcess";
 import ContactHome from "@/components/__home_components/contactHome/ContactHome";
 import OurServices from "@/components/__home_components/ourServices/OurServices";
+import UsersReview from "@/components/__home_components/Reviews/UsersReview";
 import Image from "next/image";
 
 
@@ -153,64 +153,8 @@ const Home = () => {
         </div>
       </div>
 
-      {/* <div className="container flex justify-center items-center absolute left-1/2 -translate-x-1/2 z-50">
-        <img
-          src="/assets/images/hat.png"
-          className="w-40 h-40 object-contain object-center mx-auto -mt-20"
-        />
-      </div> */}
-      {/* <section className="py-10 pt-32 bg-[#FCFCFB]">
-        <div className="container">
-          <div className="text-center mb-3">
-            <h1 className="leading-10 mb-1">
-              <span className="text-primary">R H</span> Construction USA, Inc.
-            </h1>
-            <h3>Leading Construction Company in Brooklyn</h3>
-            <p className="max-w-lg xl:max-w-5xl mx-auto text-secondary mt-4">
-              RH Construction USA Inc. stands out as one of the leading
-              construction companies in Brooklyn, embodying a commitment to
-              excellence and innovation in the industry. With a proven track
-              record of successfully delivering a diverse range of construction
-              projects, the general contractor of our construction company has
-              earned a stellar reputation for its dedication to quality
-              craftsmanship and timely completion.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center">
-            {[
-              {
-                icon: "/assets/images/construction-icon.png",
-                title: "Highly trained Staff",
-                desc: "We hire only highly trained staff for best results.",
-              },
-              {
-                icon: "/assets/images/construction-icon-2.png",
-                title: "Competitive Pricing",
-                desc: "We quote the best price possible in the industry.",
-              },
-              {
-                icon: "/assets/images/construction-icon-3.png",
-                title: "Satisfaction Guaranteed",
-                desc: "100% Customer satisfaction is our sole motto.",
-              },
-            ].map((item, key) => (
-              <figure
-                key={key}
-                className="flex flex-col justify-center items-center p-3 max-w-[320px] text-center mx-auto"
-              >
-                <img
-                  src={item.icon}
-                  alt={item.title}
-                  loading="lazy"
-                  className="h-24 w-24 object-contain mb-3"
-                />
-                <h3 className="text-gray-700">{item.title}</h3>
-                <p className="text-gray-600">{item.desc}</p>
-              </figure>
-            ))}
-          </div>
-        </div>
-      </section> */}
+      
+      
       {/* CALL TO ACTIONS */}
 
 
@@ -323,59 +267,6 @@ const Home = () => {
       {/* ============= Constructor Section ================= */}
       <Constructor />
 
-      {/* <section
-        className="bg-cover bg-right md:bg-center bg-primary my-6"
-        style={{
-          backgroundImage: "url(/assets/images/call-to-action-bg.webp)",
-        }}
-      >
-        <div className="container py-20">
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
-            <div className="lg:col-span-2" />
-            <div className="lg:col-span-3">
-              <h1 className="leading-10 text-[2rem]">
-                About Our General Contractor Company
-                <br />
-                with
-                <span className="text-white ml-2">
-                  R H Construction USA Inc
-                </span>
-              </h1>
-              <p className="text-base mb-5 leading-6 font-medium mt-4 text-white">
-                Since 2009, RH Construction USA Inc. has been dedicated to
-                delivering excellence in construction services, boasting over 15
-                years of expertise in home renovations, bathroom and kitchen
-                remodeling, roofing repair, and various construction projects.
-                As a locally owned and operated company based in Brooklyn, our
-                commitment to quality craftsmanship, innovation, and client
-                satisfaction sets us apart. With a skilled team prioritizing
-                efficiency and precision, we transform visions into realities,
-                ensuring every detail is perfected. Whether it's residential,
-                commercial, or industrial construction, RH Construction USA Inc.
-                is poised to exceed expectations with our quick, reliable, and
-                professional touch, leaving our clients as our next happy
-                customers.
-              </p>
-              <div className="flex gap-3  items-center flex-wrap">
-                <Button className="rounded-full bg-white hover:bg-gray-900 text-black hover:text-white text-lg font-semibold tracking-wider">
-                  Request a Quote
-                </Button>
-                <a
-                  href={`tel:${constant.hotline}`}
-                  className="flex justify-center items-center gap-4 rounded-full hover:bg-white/10 text-lg py-3 px-4"
-                >
-                  <BsTelephoneForwardFill />
-                  {constant.hotline}
-                  <span className="text-sm font-bold font-serif">
-                    {constant.hotline}
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
       {/* OUR COMMITMENT SECTION */}
       {/* <section className="py-10">
         <OurCommitment />
@@ -434,9 +325,9 @@ const Home = () => {
    
       {/* Construction Project Section Ends */}
 
-      {/* <section className="container py-20">
-        <UserReviewSection />
-      </section> */}
+      <section className="container py-20">
+      <UsersReview/>
+      </section>
 
       {/* Our Location Section starts */}
       {/* <div className="py-20">
