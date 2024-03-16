@@ -1,19 +1,18 @@
 import connectMongoDB from "@/lib/db";
-import concreteDeliveryRouteMetaData from "@/models/concreteDeliveryMetaDataFile";
+import ourServiceRouteMetaData from "@/models/ourServiceMetaDataFile";
 import { NextResponse } from "next/server";
 
-// import blogRouteMetaData from "../../../../models/blogMetaDataFile";
 export async function POST(request) {
   try {
     const { title, description, keywords } = await request.json();
     await connectMongoDB();
-    await concreteDeliveryRouteMetaData.create({
+    await ourServiceRouteMetaData.create({
       title,
       description,
       keywords,
     });
     return NextResponse.json(
-      { message: "Concrete Delivery MetaData generated" },
+      { message: "MetaData generated successfull." },
       { status: 201 }
     );
   } catch (error) {
@@ -26,17 +25,17 @@ export async function POST(request) {
 
 export async function GET() {
   await connectMongoDB();
-  const concreteDeliveryRouteAllMetaData =
-    await concreteDeliveryRouteMetaData.find();
-  return NextResponse.json({ concreteDeliveryRouteAllMetaData });
+  const ourServiceRouteMetadata =
+    await ourServiceRouteMetaData.find();
+  return NextResponse.json({ ourServiceRouteMetadata });
 }
 
 export async function DELETE(request) {
   const id = request.nextUrl.searchParams.get("id");
   await connectMongoDB();
-  await concreteDeliveryRouteMetaData.findByIdAndDelete(id);
+  await ourServiceRouteMetaData.findByIdAndDelete(id);
   return NextResponse.json(
-    { message: "Blog route meta deleted" },
+    { message: "Metadata deleted successfully" },
     { status: 200 }
   );
 }
