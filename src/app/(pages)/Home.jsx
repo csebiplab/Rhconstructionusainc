@@ -4,27 +4,23 @@ import Slider from "@/components/Slider";
 import vector from "@/components/__home_components/Images/Vector.png";
 import { BlogCard } from "@/components/cards/Blog.Card";
 import API from "@/config/API.config";
-import constant, {
+import {
   partOfconstructionProjectConsiderations,
 } from "@/lib/constant";
 import { errorMessage } from "@/lib/utils";
 import { Button, Spinner } from "@material-tailwind/react";
 import Link from "next/link";
-import { BsTelephoneForwardFill } from "react-icons/bs";
 import { SwiperSlide } from "swiper/react";
 import useSwr from "swr";
 import "../styles/Home.css";
 // import OurCommitment from "@/components/__home_components/OurCommitment";
-import OurWorkingProcess from "@/components/__home_components/OurWorkingProcess";
 // import GeneralContractor from "@/components/__home_components/GeneralContractor";
 import AboutUs from "@/components/__home_components/AboutUs";
 import Achievement from "@/components/__home_components/Achievement";
 import Brand from "@/components/__home_components/Brand";
-import ConstructionsToolsNEquepments from "@/components/__home_components/ConstructionsToolsNEquepments";
-import CostOfConstructions from "@/components/__home_components/CostOfConstructions";
-import ElevateYourConstructionProjects from "@/components/__home_components/ElevateYourConstructionProjects";
+import Constructor from "@/components/__home_components/Constructor";
 import ExperiencedContractor from "@/components/__home_components/ExperiencedContractor";
-import { FaqAccordion } from "@/components/__home_components/FaqAccordion";
+import { FAQ } from "@/components/__home_components/FAQ";
 import GallerySection from "@/components/__home_components/GallerySection";
 import Hero from "@/components/__home_components/Hero";
 import title from "@/components/__home_components/Images/title.png";
@@ -33,43 +29,18 @@ import work1 from "@/components/__home_components/Images/work1.png";
 import work2 from "@/components/__home_components/Images/work2.png";
 import work3 from "@/components/__home_components/Images/work3.png";
 import LocationMap from "@/components/__home_components/LocationMap";
+import ProjectCost from "@/components/__home_components/ProjectCost";
 import ProjectElevate from "@/components/__home_components/ProjectElevate";
 import Rating from "@/components/__home_components/Rating";
 import RatingProgressBar from "@/components/__home_components/RatingProgressBar";
 import UserReviewSection from "@/components/__home_components/Reviews/UsersReview";
 import Right from "@/components/__home_components/Right";
+import Tools from "@/components/__home_components/Tools";
 import TrustUs from "@/components/__home_components/TrustUs";
-import TrustedGeneralContractor from "@/components/__home_components/TrustedGeneralContractor";
 import WorkingProcess from "@/components/__home_components/WorkingProcess";
 import Image from "next/image";
 
-// Slider info
-const slidersInfo = [
-  {
-    bg: "/assets/images/slider-bg-one.webp",
-    img: "/assets/images/slider-img-one.webp",
-    title: `General Contractor Brooklyn`,
-    subtitle:
-      "Top-rated general contractor in Brooklyn, delivering exceptional construction and renovation services with expertise and integrity.",
-    route: "/",
-  },
-  {
-    bg: "/assets/images/slider-bg-two.webp",
-    img: "/assets/images/slider-img-two.webp",
-    title: "Industrial Contractor",
-    subtitle:
-      "With a reputation for delivering innovative solutions and unmatched expertise, our industrial contractor seamlessly transforms visions into reality, setting new standards of excellence in every project.",
-    route: "/",
-  },
-  {
-    bg: "/assets/images/slider-bg-three.webp",
-    img: "/assets/images/slider-img-three.webp",
-    title: "All Construction Services",
-    subtitle:
-      "From construction groundbreaking to construction cleaning services, our construction services company brings your vision to life with precision and expertise.",
-    route: "/",
-  },
-];
+
 
 const HomeBlogs = () => {
   const {
@@ -117,68 +88,14 @@ const HomeBlogs = () => {
 const Home = () => {
   return (
     <main>
-      <Slider
-        className="max-h-[600px] overflow-hidden"
-        id="home-banner-slider"
-        style={{
-          "--swiper-navigation-size": "48px",
-          "--swiper-theme-color": "blue",
-        }}
-      >
-        {slidersInfo.map((item, key) => (
-          <SwiperSlide key={key} className=" h-full">
-            {({ isActive }) => (
-              <div
-                style={{
-                  backgroundImage: `url(${item.bg})`,
-                  opacity: isActive ? 1 : 0,
-                }}
-                className="bg-cover bg-center text-white"
-              >
-                <div className="container grid grid-cols-1 md:grid-cols-9 items-end">
-                  <div className="z-50 h-full w-full md:col-span-6 flex flex-col justify-center items-center md:text-left mt-52 md:mt-0">
-                    <h1 className="w-full font-bold text-4xl lg:text-[43px] leading-tight md:text-left">
-                      <>
-                        {item?.title}
-                        {/* {key !== 0 ? (
-                          <> {item?.title}</>
-                        ) : (
-                          <>
-                            {item?.title?.split(" in ")[0]}
-                            <br />
-                            {"in " + item?.title?.split(" in ")[1]}
-                          </>
-                        )} */}
-                      </>
-                    </h1>
-                    <h3 className="my-10">{item?.subtitle}</h3>
-                    <div className="w-full">
-                      <Button
-                        size="lg"
-                        className="tracking-wider text-lg bg-primary text-black rounded-full"
-                      >
-                        Free Estimate
-                      </Button>
-                    </div>
-                  </div>
-                  <img
-                    src={item.img}
-                    alt=""
-                    className="w-full -mt-64 md:mt-0 block md:col-span-3"
-                  />
-                </div>
-              </div>
-            )}
-          </SwiperSlide>
-        ))}
-      </Slider>
+     
 
-
+{/* =============================== Hero Banner =========================== */}
       <Hero/>
 
       {/* =============== Rating ================= */}
 
-      <div className="py-[50px]">
+      <div className="md:py-[15px] py-10">
         <div className="md:w-[87.95%] w-full mx-auto">
           <div className="md:w-[980px] w-full mx-auto">
             <div className="rating p-6 rounded-[8px]">
@@ -301,9 +218,10 @@ const Home = () => {
       </section> */}
       {/* CALL TO ACTIONS */}
 
+
       {/* ================== R H CONSTRUCTION Section ===== */}
       <div className="py-12">
-        <div className="flex px-8 justify-between gap-10">
+        <div className="md:flex px-8 justify-between gap-10">
           <div>
             <Image src={work} width={608} height={608} alt="" />
           </div>
@@ -389,7 +307,19 @@ const Home = () => {
       {/* =============== Project Elevate ============= */}
       <ProjectElevate/>
 
-      <section
+      {/* =============== Equip & Tools ============== */}
+      <Tools/>
+
+      {/* ===================== Project Cost =========== */}
+      <ProjectCost/>
+
+      {/* ==================== FAQ Section ======================= */}
+      <FAQ/>
+
+      {/* ============= Constructor Section ================= */}
+      <Constructor/>
+
+      {/* <section
         className="bg-cover bg-right md:bg-center bg-primary my-6"
         style={{
           backgroundImage: "url(/assets/images/call-to-action-bg.webp)",
@@ -401,11 +331,11 @@ const Home = () => {
             <div className="lg:col-span-3">
               <h1 className="leading-10 text-[2rem]">
                 About Our General Contractor Company
-                {/* <br />
+                <br />
                 with
                 <span className="text-white ml-2">
                   R H Construction USA Inc
-                </span> */}
+                </span>
               </h1>
               <p className="text-base mb-5 leading-6 font-medium mt-4 text-white">
                 Since 2009, RH Construction USA Inc. has been dedicated to
@@ -431,7 +361,7 @@ const Home = () => {
                   className="flex justify-center items-center gap-4 rounded-full hover:bg-white/10 text-lg py-3 px-4"
                 >
                   <BsTelephoneForwardFill />
-                  {/* {constant.hotline} */}
+                  {constant.hotline}
                   <span className="text-sm font-bold font-serif">
                     {constant.hotline}
                   </span>
@@ -440,15 +370,15 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* OUR COMMITMENT SECTION */}
       {/* <section className="py-10">
         <OurCommitment />
       </section> */}
-      <section className="container pt-20">
+      {/* <section className="container pt-20">
         <TrustedGeneralContractor />
-      </section>
+      </section> */}
 
       {/* OUR SERVICE */}
       <section className="">
@@ -565,7 +495,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <HomeBlogs />
+      {/* <HomeBlogs /> */}
       {/* OUR COMMITMENT Start*/}
       <section
         className="bg-cover bg-right bg-fixed"
@@ -641,9 +571,9 @@ const Home = () => {
       {/* Choosing The Right Contractor Start*/}
 
       {/* Our working process */}
-      <section className="container py-20">
+      {/* <section className="container py-20">
         <OurWorkingProcess />
-      </section>
+      </section> */}
 
       {/* General Contractor section */}
       {/* <section className="my-10">
@@ -651,19 +581,19 @@ const Home = () => {
       </section> */}
 
       {/* Your Construction Project */}
-      <section className="py-20 container">
+      {/* <section className="py-20 container">
         <ElevateYourConstructionProjects />
-      </section>
+      </section> */}
 
       {/* ConstructionsToolsNEquepments */}
-      <section className="pt-20 container">
+      {/* <section className="pt-20 container">
         <ConstructionsToolsNEquepments />
-      </section>
+      </section> */}
 
       {/* Cost of constructions */}
-      <section className="pt-20 container">
+      {/* <section className="pt-20 container">
         <CostOfConstructions />
-      </section>
+      </section> */}
 
       {/* Our Past Projects Gallery */}
       <div className="pt-20 custom-container">
@@ -671,9 +601,9 @@ const Home = () => {
       </div>
 
       {/* FAQ ACCORDION starts */}
-      <section className="py-20 container">
+      {/* <section className="py-20 container">
         <FaqAccordion />
-      </section>
+      </section> */}
       {/* FAQ ACCORDION ends */}
 
       {/* Construction Project Section Starts */}

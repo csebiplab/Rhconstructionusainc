@@ -3,9 +3,10 @@ import company from "@/components/__home_components/Images/company.png";
 import { Button } from "@material-tailwind/react";
 import Image from "next/image";
 import { BsTelephoneForwardFill } from "react-icons/bs";
+import { FaChevronRight } from "react-icons/fa6";
 const AboutUs = () => {
   return (
-    <div className="flex px-8 justify-between py-16 gap-10">
+    <div className="md:flex px-8 justify-between py-6 md:py-16 gap-10">
       <div className="">
         <Image
           src={about}
@@ -33,14 +34,14 @@ const AboutUs = () => {
         </p>
         <div className="flex py-8 items-center flex-wrap mt-4 gap-8">
           <div>
-            <Button className="rounded-md bg-primary hover:bg-gray-900 text-black hover:text-white text-lg font-semibold tracking-wider capitalize">
-              Request A Quote
+            <Button className="rounded-md bg-primary hover:bg-gray-900 text-black hover:text-white text-lg font-semibold tracking-wider capitalize flex items-center gap-2">
+               <span>Request A Quote</span><span><FaChevronRight /></span>
             </Button>
           </div>
           <h3>Or</h3>
           <div className="flex items-center gap-3">
             <BsTelephoneForwardFill />
-            <span className="text-lg font-semibold text-black">
+            <span className="text-xl font-semibold text-black">
               +1 (646) 683-4612
             </span>
           </div>
