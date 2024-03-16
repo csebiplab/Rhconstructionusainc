@@ -52,10 +52,10 @@ const Footer = () => {
   const pathname = usePathname();
   if (pathname.startsWith("/admin")) return null;
   return (
-    <div className=" custom-container bg-gray-900">
-      <footer className="z-50  py-20 text-white" style={{ backgroundImage: 'url(https://www.rhconstructionusa.com/wp-content/uploads/2022/09/footer-bg.jpg)' }}>
+    <div className="  bg-gray-900">
+      <footer className="z-50 custom-container  py-20 text-white" style={{ backgroundImage: 'url(https://www.rhconstructionusa.com/wp-content/uploads/2022/09/footer-bg.jpg)' }}>
         <div className="custom-container">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-5 lg:mt-36 mt:mb-20 mt-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-5 lg:mt-36 mt:mb-20 mt-10">
 
             <div className=" col-span-2">
 
@@ -75,71 +75,73 @@ const Footer = () => {
 
             </div>
 
-            <div className=" col-span-1">
-              <h3 className="font-semibold text-white  lg:text-[36px] md:text-[25px] lg:mb-10 md:mb-5 mb-3 "> News </h3>
-              <ul className=" ">
-                <li className=" ">
-                  <Link href="#" className="footer-link lg:text-[20px] md:text-sm items-center">
-                    <MdKeyboardDoubleArrowRight />How it work
-                  </Link>
-                </li>
-                <li className=" lg:py-8 md:py-4 py-2">
-                  <Link href="#" className="footer-link lg:text-[20px] md:text-sm items-center ">
-                    <MdKeyboardDoubleArrowRight />Gallery
-                  </Link>
-                </li>
-                <li className=" ">
-                  <Link href="#" className="footer-link lg:text-[20px] md:text-sm items-center">
-                    <MdKeyboardDoubleArrowRight />Testimonils
-                  </Link>
-                </li>
-                <li className="lg:py-8 md:py-4 py-2 ">
-                  <Link href="#" className="footer-link lg:text-[20px] md:text-sm items-center ">
-                    <MdKeyboardDoubleArrowRight />Carrer
-                  </Link>
-                </li>
-                <li className=" ">
-                  <Link href="#" className="footer-link lg:text-[20px] md:text-sm items-center">
-                    <MdKeyboardDoubleArrowRight />Sitmap
-                  </Link>
-                </li>
-              </ul>
-            </div>
+            <div className=" col-span-3 flex justify-around">
+              <div className=" col-span-1">
+                <h3 className="font-semibold text-white  lg:text-[36px] md:text-[25px] lg:mb-10 md:mb-5 mb-3 "> News </h3>
+                <ul className=" ">
+                  <li className=" ">
+                    <Link href="#" className="footer-link lg:text-[20px] md:text-sm items-center">
+                      <MdKeyboardDoubleArrowRight />How it work
+                    </Link>
+                  </li>
+                  <li className=" lg:py-8 md:py-4 py-2">
+                    <Link href="#" className="footer-link lg:text-[20px] md:text-sm items-center ">
+                      <MdKeyboardDoubleArrowRight />Gallery
+                    </Link>
+                  </li>
+                  <li className=" ">
+                    <Link href="#" className="footer-link lg:text-[20px] md:text-sm items-center">
+                      <MdKeyboardDoubleArrowRight />Testimonils
+                    </Link>
+                  </li>
+                  <li className="lg:py-8 md:py-4 py-2 ">
+                    <Link href="#" className="footer-link lg:text-[20px] md:text-sm items-center ">
+                      <MdKeyboardDoubleArrowRight />Carrer
+                    </Link>
+                  </li>
+                  <li className=" ">
+                    <Link href="#" className="footer-link lg:text-[20px] md:text-sm items-center">
+                      <MdKeyboardDoubleArrowRight />Sitmap
+                    </Link>
+                  </li>
+                </ul>
+              </div>
 
-            <div className=" col-span-1">
-              <h3 className="font-semibold text-white lg:text-[36px] md:text-[25px] lg:mb-10 md:mb-5 mb-3">Ours Services</h3>
-              <ul className="">
-                <li className=" ">
-                  <Link href="#" className="footer-link lg:text-[20px] md:text-sm items-center">
-                    <MdKeyboardDoubleArrowRight />Kitchen Remodeling
-                  </Link>
-                </li>
-                <li className="  lg:py-8 md:py-4 py-2">
-                  <Link href="#" className="footer-link lg:text-[20px] md:text-sm items-center">
-                    <MdKeyboardDoubleArrowRight />Bathroom Remodeling
-                  </Link>
-                </li>
-                <li className=" ">
-                  <Link href="#" className="footer-link lg:text-[20px] md:text-sm items-center">
-                    <MdKeyboardDoubleArrowRight />Painting
-                  </Link>
-                </li>
-                <li className=" lg:py-8 md:py-4 py-2">
-                  <Link href="#" className="footer-link lg:text-[20px] md:text-sm items-center ">
-                    <MdKeyboardDoubleArrowRight />Roofing
-                  </Link>
-                </li>
-                <li className=" ">
-                  <Link href="#" className="footer-link lg:text-[20px] md:text-sm items-center">
-                    <MdKeyboardDoubleArrowRight />Brown Stone Repair
-                  </Link>
-                </li>
-                <li className=" lg:py-8 md:py-4 py-2">
-                  <Link href="#" className="footer-link lg:text-[20px] md:text-sm items-center ">
-                    <MdKeyboardDoubleArrowRight />Brick Works
-                  </Link>
-                </li>
-              </ul>
+              <div className=" col-span-1">
+                <h3 className="font-semibold text-white lg:text-[36px] md:text-[25px] lg:mb-10 md:mb-5 mb-3">Ours Services</h3>
+                <ul className="">
+                  <li className=" ">
+                    <Link href="#" className="footer-link lg:text-[20px] md:text-sm items-center">
+                      <MdKeyboardDoubleArrowRight />Kitchen Remodeling
+                    </Link>
+                  </li>
+                  <li className="  lg:py-8 md:py-4 py-2">
+                    <Link href="#" className="footer-link lg:text-[20px] md:text-sm items-center">
+                      <MdKeyboardDoubleArrowRight />Bathroom Remodeling
+                    </Link>
+                  </li>
+                  <li className=" ">
+                    <Link href="#" className="footer-link lg:text-[20px] md:text-sm items-center">
+                      <MdKeyboardDoubleArrowRight />Painting
+                    </Link>
+                  </li>
+                  <li className=" lg:py-8 md:py-4 py-2">
+                    <Link href="#" className="footer-link lg:text-[20px] md:text-sm items-center ">
+                      <MdKeyboardDoubleArrowRight />Roofing
+                    </Link>
+                  </li>
+                  <li className=" ">
+                    <Link href="#" className="footer-link lg:text-[20px] md:text-sm items-center">
+                      <MdKeyboardDoubleArrowRight />Brown Stone Repair
+                    </Link>
+                  </li>
+                  <li className=" lg:py-8 md:py-4 py-2">
+                    <Link href="#" className="footer-link lg:text-[20px] md:text-sm items-center ">
+                      <MdKeyboardDoubleArrowRight />Brick Works
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
 
 
