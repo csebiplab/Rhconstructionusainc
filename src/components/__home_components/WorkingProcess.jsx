@@ -1,10 +1,9 @@
-import Image from "next/image";
-import React from "react";
-import working from "@/components/__home_components/Images/Working.png";
 import mask1 from "@/components/__home_components/Images/Mask1.png";
 import mask2 from "@/components/__home_components/Images/Mask2.png";
 import mask3 from "@/components/__home_components/Images/Mask3.png";
 import mask4 from "@/components/__home_components/Images/Mask4.png";
+import working from "@/components/__home_components/Images/Working.png";
+import Image from "next/image";
 const WorkingProcess = () => {
   return (
     <div className="md:py-16 py-8 px-8">
@@ -27,7 +26,7 @@ const WorkingProcess = () => {
 
       {/* =============== Image card ============== */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center py-10">
-        <div className="w-full shadow-md p-0 rounded-md">
+        <div className="w-full card-sd section-bg rounded-md">
           <Image
             src={mask1}
             width={221}
@@ -43,7 +42,7 @@ const WorkingProcess = () => {
             </p>
           </div>
         </div>
-        <div className="w-full shadow-md p-0 rounded-md">
+        <div className="w-full card-sd section-bg rounded-md">
           <Image
             src={mask2}
             width={221}
@@ -61,7 +60,7 @@ const WorkingProcess = () => {
             </p>
           </div>
         </div>
-        <div className="w-full shadow-md p-0 rounded-md">
+        <div className="w-full card-sd section-bg rounded-md">
           <Image
             src={mask3}
             width={221}
@@ -77,7 +76,7 @@ const WorkingProcess = () => {
             </p>
           </div>
         </div>
-        <div className="w-full shadow-md p-0 rounded-md">
+        <div className="w-full card-sd section-bg rounded-md">
           <Image
             src={mask4}
             width={221}
