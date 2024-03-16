@@ -98,11 +98,15 @@ img {
 }
 
 /* Hero section */
-.hero-section{
+.hero-section {
   width: 100%;
   height: 570px;
   background-image: url("/assets/images/bg.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.section-bg {
+  background: rgba(255, 183, 3, 0.1);
 }

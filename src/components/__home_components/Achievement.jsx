@@ -1,6 +1,5 @@
-import Image from "next/image";
-import React from "react";
 import achievement from "@/components/__home_components/Images/Achieve.png";
+import Image from "next/image";
 
 const Achievement = () => {
   return (
@@ -8,13 +7,13 @@ const Achievement = () => {
       <div className="flex gap-2 mt-4">
         <div className="w-[180px] h-[147.98px] my-class rounded-[8px] pt-[31.25px] text-center">
           <h2 className="text-[38px] font-bold leading-[47.25px] mb-[5px]">
-            98%
+            96%
           </h2>
           <p className="text-lg font-bold leading-[22.5px]">Recommended</p>
         </div>
         <div className="w-[180px] h-[147.98px] my-class rounded-[8px] pt-[31.25px] text-center">
           <h2 className="text-[38px] font-bold leading-[47.25px] mb-[5px]">
-            4
+            15
           </h2>
           <p className="text-lg font-bold leading-[22.5px]">
             Years In Business
