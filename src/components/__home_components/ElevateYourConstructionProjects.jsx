@@ -1,10 +1,10 @@
-import EleveteProjectImg from "../../../public/assets/images/elevet-project.jpg";
 import Image from "next/image";
+import EleveteProjectImg from "../../../public/assets/images/elevet-project.jpg";
 
 export default function ElevateYourConstructionProjects() {
   return (
     <div>
-      <div className="grid grid-cols-1 md:grid-cols-9 gap-x-10 gap-y-3">
+      <div className="grid grid-cols-1 section-bg md:grid-cols-9 gap-x-10 gap-y-3">
         <Image
           src={EleveteProjectImg}
           alt="Elevete Your Construction Projects"

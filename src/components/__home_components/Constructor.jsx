@@ -7,7 +7,7 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 import Image from "next/image";
 const Constructor = () => {
     return (
-        <div className="md:py-16 py-6 px-8">
+        <div className="md:py-16 py-6 px-8 section-bg">
             <div className="text-center">
             <Image
             src={cons}
@@ -23,13 +23,13 @@ const Constructor = () => {
             {/* =================== Card Section =============== */}
             <div>
             <div className="grid grid-cols-1 px-6 md:grid-cols-3 gap-20 text-center py-10">
-              <div className="w-full shadow-md p-0 rounded-sm">
+              <div className="w-full card-sd rounded-sm bg-white">
                 <Image
                   src={pp1}
                   width={100}
                   height={95}
                   alt=""
-                  className="mx-auto"
+                  className="mx-auto mt-6"
                   
                 />
                 <div className="text-center">
@@ -39,13 +39,13 @@ const Constructor = () => {
                   </p>
                 </div>
               </div>
-              <div className="w-full shadow-md p-0 rounded-sm">
+              <div className="w-full card-sd rounded-sm bg-white">
                 <Image
                   src={pp2}
                   width={100}
                   height={95}
                   alt=""
-                  className="mx-auto"
+                  className="mx-auto mt-6"
                   
                 />
                 <div className="text-center">
@@ -55,13 +55,13 @@ const Constructor = () => {
                   </p>
                 </div>
               </div>
-              <div className="w-full shadow-md p-0 rounded-sm mx-auto">
+              <div className="w-full card-sd rounded-sm bg-white">
                 <Image
                  src={pp3}
                  width={100}
                  height={95}
                  alt=""
-                 className="mx-auto"
+                 className="mx-auto mt-6"
                 
                 />
                 <div className="text-center py-3">

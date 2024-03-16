@@ -4,7 +4,7 @@ import Image from "next/image";
 const ProjectElevate = () => {
     return (
         <div>
-      <div className="md:flex items-center px-8">
+      <div className="md:flex section-bg items-center px-8">
         <div>
           <Image
             src={elevate}
