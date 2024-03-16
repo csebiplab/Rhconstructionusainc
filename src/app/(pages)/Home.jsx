@@ -39,6 +39,8 @@ import Tools from "@/components/__home_components/Tools";
 import TrustUs from "@/components/__home_components/TrustUs";
 import WorkingProcess from "@/components/__home_components/WorkingProcess";
 import Image from "next/image";
+import ContactHome from "@/components/__home_components/contactHome/ContactHome";
+import OurServices from "@/components/__home_components/ourServices/OurServices";
 
 
 
@@ -88,10 +90,10 @@ const HomeBlogs = () => {
 const Home = () => {
   return (
     <main>
-     
 
-{/* =============================== Hero Banner =========================== */}
-      <Hero/>
+
+      {/* =============================== Hero Banner =========================== */}
+      <Hero />
 
       {/* =============== Rating ================= */}
 
@@ -293,31 +295,40 @@ const Home = () => {
       {/* ================ about us ============== */}
       <AboutUs />
       {/* =================== Trust Us ============== */}
+
       <TrustUs />
+
+
+      {/* =================== Working Process ============== */}
+      <div>
+        <OurServices></OurServices>
+      </div>
+      {/* =================== Working Process ============== */}
+
 
       {/* =================== Working Process ============== */}
       <WorkingProcess />
 
       {/* ============= EXPERIENCED CONTRACTOR =============== */}
-      <ExperiencedContractor/>
-      
+      <ExperiencedContractor />
+
       {/* ========== Right General Section ============== */}
-      <Right/>
+      <Right />
 
       {/* =============== Project Elevate ============= */}
-      <ProjectElevate/>
+      <ProjectElevate />
 
       {/* =============== Equip & Tools ============== */}
-      <Tools/>
+      <Tools />
 
       {/* ===================== Project Cost =========== */}
-      <ProjectCost/>
+      <ProjectCost />
 
       {/* ==================== FAQ Section ======================= */}
-      <FAQ/>
+      <FAQ />
 
       {/* ============= Constructor Section ================= */}
-      <Constructor/>
+      <Constructor />
 
       {/* <section
         className="bg-cover bg-right md:bg-center bg-primary my-6"
@@ -683,6 +694,9 @@ const Home = () => {
         <LocationMap />
       </div>
       {/* Our Location Section ends */}
+      <div>
+        <ContactHome></ContactHome>
+      </div>
     </main>
   );
 };
