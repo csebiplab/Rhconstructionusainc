@@ -29,7 +29,7 @@ const Hero = () => {
           <img src="/assets/images/Group 73.png"
             alt="" 
             className="w-[224] h-[152px] absolute -bottom-[48px] left-0 rotate-0"/>
-          <div className="w-full md:w-5/12 relative">
+          <div className="w-full lg:w-[820px] lg:h-[825px] relative">
             <img
             src="/assets/images/Group 21.png"
             alt="" 
