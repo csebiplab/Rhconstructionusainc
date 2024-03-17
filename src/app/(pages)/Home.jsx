@@ -94,7 +94,7 @@ const Home = () => {
         <div className="md:w-[87.95%] w-full mx-auto">
           <div className="md:w-[980px] w-full mx-auto">
             <div className="rating p-6 rounded-[8px]">
-              <h2 className="text-2xl leading-[36px] mb-3">Ratings</h2>
+              <h2 className="lg:text-2xl text-lg leading-[36px] mb-3">Ratings</h2>
               <div className="flex justify-between gap-5">
                 <div className="w-[260px]">
                   <div>
@@ -119,7 +119,7 @@ const Home = () => {
                 <div className="w-[260px]">
                   <div>
                     <div className="flex">
-                      <h4 className="text-[#000] font-bold mb-5">
+                      <h4 className="text-[#000] lg:text-lg font-bold mb-5">
                         Highly rated for
                       </h4>
                       <img
