@@ -34,6 +34,7 @@ import ContactHome from "@/components/__home_components/contactHome/ContactHome"
 import OurServices from "@/components/__home_components/ourServices/OurServices";
 import UsersReview from "@/components/__home_components/Reviews/UsersReview";
 import Image from "next/image";
+import Review from "@/components/__home_components/Review";
 
 
 
@@ -246,6 +247,10 @@ const Home = () => {
       {/* =================== Working Process ============== */}
       <WorkingProcess />
 
+      {/* =================== Review Section ============== */}
+      <Review/>
+
+
       {/* ============= EXPERIENCED CONTRACTOR =============== */}
       <ExperiencedContractor />
 
@@ -325,9 +330,9 @@ const Home = () => {
    
       {/* Construction Project Section Ends */}
 
-      <section className="container py-20">
+      {/* <section className="container py-20">
       <UsersReview/>
-      </section>
+      </section> */}
 
       {/* Our Location Section starts */}
       {/* <div className="py-20">
