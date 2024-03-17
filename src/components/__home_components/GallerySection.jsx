@@ -2,7 +2,8 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 // import SwiperCore from "swiper";
-
+import gallery from "@/components/__home_components/Images/gallery.png";
+import Image from "next/image";
 import GalImg1 from "../../../public/assets/galleries/gl1.jpg";
 import GalImg10 from "../../../public/assets/galleries/gl10.jpg";
 import GalImg11 from "../../../public/assets/galleries/gl11.jpg";
@@ -42,7 +43,6 @@ import GalImg9 from "../../../public/assets/galleries/gl9.jpg";
 import { Autoplay } from "swiper/modules";
 
 // Import Swiper styles
-import Image from "next/image";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/effect-coverflow";
@@ -93,10 +93,15 @@ const galImgs2 = [
 export default function GallerySection() {
     return (
       <div>
-        <h1 className={`mb-4 container font-bold`}>
-          Construction Services Gallary
-          <br />
-          of Our Past Projects
+        <Image
+                src={gallery}
+                width={90}
+                height={18.02}
+                alt="trust"
+                className="my-2 mx-auto"
+              />
+        <h1 className="leading-10 mb-1 py-4 lg:text-4xl text-lg text-center">
+        CONSTRUCTION SERVICES GALLERY OF OUR PAST PROJECTS
         </h1>
         <Swiper
           className="sample-slider w-full"
