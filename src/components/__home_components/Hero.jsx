@@ -8,7 +8,7 @@ const Hero = () => {
       >
         <div className="md:flex items-center relative">
           <div className="w-full md:w-7/12">
-            <div className="md:ml-20">
+            <div className="md:ml-[122px]">
             <h1 className="leading-10 text-[2rem] lg:text-6xl">
             General Constructor
                 <br />

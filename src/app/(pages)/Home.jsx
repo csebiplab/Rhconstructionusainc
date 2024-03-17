@@ -156,7 +156,7 @@ const Home = () => {
 
       {/* ================== R H CONSTRUCTION Section ===== */}
       <div className="lg:py-16 py-6 custom-container">
-        <div className="md:flex px-8 justify-between gap-10">
+        <div className="lg:flex lg:px-[61px] justify-between gap-10">
           <div>
             <Image src={work} width={608} height={608} alt="" />
           </div>

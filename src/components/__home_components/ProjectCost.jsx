@@ -11,7 +11,7 @@ const ProjectCost = () => {
         <div className="section-bg">
           <div className="custom-container">
             
-            <div className="md:flex px-8 justify-between py-8 md:py-16 md:gap-16">
+            <div className="md:flex lg:px-[61px] justify-between py-8 md:py-16 md:gap-16">
             
             <div>
             <Image

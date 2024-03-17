@@ -4,19 +4,19 @@ import Image from "next/image";
 const TrustUs = () => {
   return (
     <div className="custom-container">
-      <div className="md:flex items-center px-8">
+      <div className="lg:flex items-center">
         <div>
           <Image
             src={inspector}
-            width={1016}
+            width={1012}
             height={772}
             layout="responsive"
             alt="inspector"
           />
         </div>
-        <div>
-          <div className="flex flex-col">
-            <div className="items-center md:-ml-[80px] rounded-[15px] bg-white p-4 my-class">
+        <div className="">
+          <div className="flex flex-col lg:my-2">
+            <div className="items-center md:-ml-[60px] rounded-[15px] bg-white p-4 my-class lg:mr-[65px]">
               <Image
                 src={trust}
                 width={96}
@@ -24,7 +24,7 @@ const TrustUs = () => {
                 alt="trust"
                 className="my-2"
               />
-              <h2 className="leading-10 mb-1 py-2 lg:text-4xl text-lg">
+              <h2 className="leading-10 mb-1 py-1 lg:text-4xl text-lg">
                 TRUSTED GENERAL CONTRACTOR <br/> IN BROOKLYN
               </h2>
               <p className="max-w-lg xl:max-w-5xl mx-auto text-black mt-3 mb-2">

@@ -4,7 +4,7 @@ import Image from "next/image";
 const Right = () => {
     return (
      <div className="custom-container">
-         <div className="md:flex px-8 md:justify-between py-6 md:py-16 gap-10">
+         <div className="lg:flex lg:px-[61px] md:justify-between py-6 md:py-16 gap-10">
       <div className="">
         <Image
           src={right}

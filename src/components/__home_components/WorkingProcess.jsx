@@ -7,7 +7,7 @@ import Image from "next/image";
 const WorkingProcess = () => {
   return (
     <div className="custom-container">
-    <div className="md:py-16 py-8 px-8">
+    <div className="md:py-16 py-8 lg:px-[61px]">
       <div>
         <Image
           src={working}

@@ -59,7 +59,7 @@ export function FAQ() {
 
   return (
    <div className="custom-container">
-    <div className="md:flex justify-between items-center py-6 md:py-12 gap-10 px-8">
+    <div className="md:flex justify-between items-center py-6 md:py-12 gap-10 lg:px-[61px]">
     <div>
     <Image
             src={build}

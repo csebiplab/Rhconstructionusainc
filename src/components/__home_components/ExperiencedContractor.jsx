@@ -6,7 +6,7 @@ const ExperiencedContractor = () => {
     return (
    <div className="section-bg">
     <div className="custom-container">
-         <div className="md:flex px-8 justify-between py-6 md:py-12 gap-10">
+         <div className="lg:flex lg:px-[61px] justify-between py-6 md:py-12 gap-10">
             <div>
         <Image src={constructor} width={900} height={880} alt="constructor" />
       </div>

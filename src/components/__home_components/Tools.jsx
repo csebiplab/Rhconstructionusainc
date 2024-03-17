@@ -4,7 +4,7 @@ import Image from "next/image";
 const Tools = () => {
     return (
    <div className="custom-container">
-         <div className="md:flex px-8 justify-between py-12 gap-10">
+         <div className="md:flex lg:px-[61px] justify-between py-12 gap-10">
         
         <div className="">
           <Image
