@@ -1,15 +1,9 @@
 "use client";
-import Slider from "@/components/Slider";
 import vector from "@/components/__home_components/Images/Vector.png";
 import { BlogCard } from "@/components/cards/Blog.Card";
 import API from "@/config/API.config";
-import {
-  partOfconstructionProjectConsiderations,
-} from "@/lib/constant";
 import { errorMessage } from "@/lib/utils";
 import { Button, Spinner } from "@material-tailwind/react";
-import Link from "next/link";
-import { SwiperSlide } from "swiper/react";
 import useSwr from "swr";
 import "../styles/Home.css";
 // import OurCommitment from "@/components/__home_components/OurCommitment";
@@ -33,7 +27,6 @@ import ProjectElevate from "@/components/__home_components/ProjectElevate";
 import Rating from "@/components/__home_components/Rating";
 import RatingProgressBar from "@/components/__home_components/RatingProgressBar";
 import Review from "@/components/__home_components/Review";
-import UsersReview from "@/components/__home_components/Reviews/UsersReview";
 import Right from "@/components/__home_components/Right";
 import Tools from "@/components/__home_components/Tools";
 import TrustUs from "@/components/__home_components/TrustUs";
@@ -400,193 +393,13 @@ const Home = () => {
       </section> */}
 
       {/* OUR SERVICE */}
-      <section className="">
-        <div className="container py-20">
-          <div className="grid grid-cols-1 mg:grid-cols-4 lg:grid-cols-6 gap-2">
-            <div className="col-span-1 md:col-span-3 lg:col-span-4">
-              <div className="mb-20">
-                <h1 className="mb-3 font-bold">
-                  OUR <span className="text-primary">SERVICES</span>
-                </h1>
-                <h5 className="mb-3 font-semibold">
-                  Enjoy a stress-free construction service with our unique build
-                  process.
-                </h5>
-                <p className="text-secondary leading-7">
-                  <Link href="/" className="text-primary text-lg font-semibold">
-                    RH Construction USA,
-                  </Link>{" "}
-                  is your trusted partner for top-notch construction services,
-                  dedicated to bringing your dream project to life. From
-                  conceptualization to completion, we prioritize quality
-                  craftsmanship, timely delivery, and cost-effective solutions
-                  to meet and exceed your expectations.
-                </p>
-                <p className="text-secondary leading-7 mt-2">
-                  At our company, we understand that your dream project is a
-                  significant investment, and we take pride in delivering
-                  unparalleled construction service that reflects our unwavering
-                  commitment to customer satisfaction. Whether you're
-                  envisioning a residential masterpiece or a commercial
-                  endeavor, our experienced team is equipped to handle a diverse
-                  range of projects.
-                </p>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                <figure>
-                  <h3 className="mb-2">Interior</h3>
-                  <ul>
-                    {[
-                      "Bathroom Remodeling",
-                      "Kitchen Remodeling",
-                      "Painting",
-                      "Sheetrock",
-                      "Plastering",
-                      "Electrical",
-                      "Plumbing",
-                    ].map((item, key) => (
-                      <li key={key}>
-                        <Link
-                          href="/"
-                          className="p-1 rounded-md flex gap-2 items-center duration-200 hover:bg-black hover:text-white border border-transparent hover:border-black/10"
-                        >
-                          <span className="h-2 w-2 rounded-full bg-primary inline-block" />{" "}
-                          {item}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </figure>
-                <figure>
-                  <h3 className="mb-2">Exterior</h3>
-                  <ul>
-                    {[
-                      "Roofing",
-                      "Pointing",
-                      "Water Proofing",
-                      "Sidewalk Repair and Replace",
-                      "Brown Stone Repair",
-                      "Brick Works",
-                      "Power Wash",
-                      "Siding and all kinds of masonry work",
-                    ].map((item, key) => (
-                      <li key={key}>
-                        <Link
-                          href="/"
-                          className="p-1 rounded-md flex gap-2 items-center duration-200 hover:bg-black hover:text-white border border-transparent hover:border-black/10"
-                        >
-                          <span className="h-2 w-2 rounded-full bg-primary inline-block" />{" "}
-                          {item}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </figure>
-                {/* <figure>
-                  <ul className="lg:mt-10">
-                    {[
-                      "Bathroom Remodeling",
-                      "Kitchen Remodeling",
-                      "Painting",
-                      "Sheetrock",
-                      "Plastering",
-                      "Electrical and Plumbing",
-                    ].map((item, key) => (
-                      <li key={key}>
-                        <Link
-                          href="/"
-                          className="p-1 rounded-md flex gap-2 items-center duration-200 hover:bg-black hover:text-white border border-transparent hover:border-black/10"
-                        >
-                          <span className="h-2 w-2 rounded-full bg-primary inline-block" />{" "}
-                          {item}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </figure> */}
-              </div>
-            </div>
-            <img
-              src="/assets/images/our-service-home-man.webp"
-              alt="ourservice man"
-              className="col-span-2 mx-auto h-full mt-16"
-            />
-          </div>
-        </div>
-      </section>
+    
       {/* <HomeBlogs /> */}
       {/* OUR COMMITMENT Start*/}
-      <section
-        className="bg-cover bg-right bg-fixed"
-        style={{
-          backgroundImage:
-            "linear-gradient(to left, white 50%, transparent 60%), url(/assets/images/house-bg.webp)",
-        }}
-      >
-        <div className="container grid grid-cols-1 md:grid-cols-2 py-20">
-          <div />
-          <div className="py-10">
-            <h1 className="mb-4 font-bold">
-              Experienced Brooklyn General Contractor
-              {/* <span className="text-primary">in Brooklyn</span> */}
-            </h1>
-            <p className="text-secondary mb-2 leading-relaxed font-medium">
-              With years of expertise and a solid educational background, our
-              Brooklyn-based general contracting firm stands out as a reliable
-              partner for your construction projects. Our team comprises
-              seasoned professionals who bring a wealth of knowledge and
-              hands-on experience to every job site. From residential
-              renovations to commercial builds, we have successfully delivered
-              projects of varying scales, earning a reputation for excellence
-              and integrity within the community.
-              <br />
-              <br />
-              At our core, we prioritize client satisfaction by combining our
-              technical prowess with clear communication and meticulous
-              attention to detail. Our commitment to staying abreast of industry
-              advancements ensures that we employ the latest techniques and
-              technologies to optimize project efficiency and quality. Whether
-              you're envisioning a modern urban renovation or a timeless
-              architectural masterpiece, our well-experienced and educated team
-              is dedicated to bringing your vision to life with precision and
-              professionalism.
-            </p>
-          </div>
-        </div>
-      </section>
+   
       {/* OUR COMMITMENT End*/}
       {/* Choosing The Right Contractor Start*/}
-      <section
-        className="bg-cover bg-right bg-fixed w-full min-h-screen"
-        style={{
-          backgroundImage: "url(/assets/images/house-bg.webp)",
-        }}
-      >
-        <div className="container grid grid-cols-1 md:grid-cols-2 py-20">
-          <div />
-
-          <div className="py-10">
-            <h1 className="mb-4 font-bold">
-              Choosing the Right General Contractor{" "}
-              <span className="text-primary">in Brooklyn</span>
-            </h1>
-            <p className="text-secondary mb-2 leading-relaxed font-medium">
-              Choosing the right general contractor from all construction
-              companies in Brooklyn is a crucial step in ensuring the success of
-              your construction project. RH Construction USA Inc., a prominent
-              player in the industry, stands out as a reliable choice for
-              discerning clients. With a proven track record of delivering
-              high-quality construction services in Brooklyn, we bring a wealth
-              of experience and expertise to the table. Our commitment to
-              excellence is evident in our attention to detail, timely project
-              completion, and customer satisfaction. When searching for a
-              general contractor in Brooklyn, our company emerges as a reliable
-              partner dedicated to turning your construction dreams into
-              reality.
-            </p>
-          </div>
-        </div>
-      </section>
+     
       {/* Choosing The Right Contractor Start*/}
 
       {/* Our working process */}
@@ -624,76 +437,10 @@ const Home = () => {
       {/* FAQ ACCORDION ends */}
 
       {/* Construction Project Section Starts */}
-      <section>
-        <div className="container grid grid-cols-1 md:grid-cols-2 py-10 pb-0">
-          <div>
-            <h1 className="mb-2 font-bold text-[2rem]">
-              What To Consider First When You Hire the
-              <span className="text-primary ml-2">Best Contractors</span>
-            </h1>
-            <p className="font-medium mb-4">
-              When selecting the best contractors from all construction
-              companies in Brooklyn for your project, it's crucial to consider
-              several key factors to ensure a successful and satisfactory
-              outcome. Here are the top considerations to prioritize, listed in
-              order of importance:
-            </p>
-            <Slider
-              className="max-h-[600px] overflow-hidden slider-area"
-              id="home-banner-slider"
-              style={{
-                "--swiper-navigation-size": "22px",
-                "--swiper-theme-color": "black",
-              }}
-            >
-              {partOfconstructionProjectConsiderations?.map((item, key) => (
-                <SwiperSlide key={key} className=" h-full">
-                  {({ isActive }) => (
-                    <div
-                      style={{
-                        // backgroundImage: `url(${item.bg})`,
-                        // background: "#000",
-                        opacity: isActive ? 1 : 0,
-                      }}
-                      className="bg-cover bg-center text-white"
-                    >
-                      <div className="content-areea">
-                        <ul className="list-inside list-disc planning__more-content-list">
-                          {item?.part?.data?.map((item, key) => (
-                            <li
-                              key={key}
-                              className="flex gap-2 items-center py-1 px-2 text-lg text-secondary font-medium mb-2"
-                            >
-                              <span className="h-4 w-4 rounded-full bg-primary" />
-                              <span>{item}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-                  )}
-                </SwiperSlide>
-              ))}
-            </Slider>
-            <p>
-              By systematically evaluating these factors, you'll be better
-              equipped to choose the best contractor for your project, ensuring
-              a successful and stress-free construction or renovation
-              experience.
-            </p>
-          </div>
-          <img
-            src="/assets/images/man-like-smile.webp"
-            alt="man-like-smile"
-            className="h-full mx-auto md:mt-12 -z-10"
-          />
-        </div>
-      </section>
+   
       {/* Construction Project Section Ends */}
 
-      <section className="container py-20">
-      <UsersReview/>
-      </section>
+     
 
       {/* Our Location Section starts */}
       <div className="py-20">
