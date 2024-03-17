@@ -1,5 +1,3 @@
-import Image from "next/image";
-import React from "react";
 import band1 from "@/components/__home_components/Images/band1.png";
 import band2 from "@/components/__home_components/Images/band2.png";
 import band3 from "@/components/__home_components/Images/band3.png";
@@ -7,10 +5,12 @@ import band4 from "@/components/__home_components/Images/band4.png";
 import band5 from "@/components/__home_components/Images/band5.png";
 import band6 from "@/components/__home_components/Images/band6.png";
 import band7 from "@/components/__home_components/Images/band7.png";
+import Image from "next/image";
 
 const Brand = () => {
   return (
-    <div className="brands pt-4 grid grid-cols-2 md:grid-cols-7 gap-3">
+   <div className="custom-container">
+     <div className="brands pt-4 grid grid-cols-2 md:grid-cols-7 gap-3">
       <div className="brand w-full h-[174px] border-[1px] border-[#EAEAEA] rounded-[15px] px-2 py-[14px] text-center">
         <Image
           src={band1}
@@ -96,6 +96,7 @@ const Brand = () => {
         </p>
       </div>
     </div>
+   </div>
   );
 };
 

@@ -153,69 +153,9 @@ const Home = () => {
         </div>
       </div>
 
-      {/* <div className="container flex justify-center items-center absolute left-1/2 -translate-x-1/2 z-50">
-        <img
-          src="/assets/images/hat.png"
-          className="w-40 h-40 object-contain object-center mx-auto -mt-20"
-        />
-      </div> */}
-      {/* <section className="py-10 pt-32 bg-[#FCFCFB]">
-        <div className="container">
-          <div className="text-center mb-3">
-            <h1 className="leading-10 mb-1">
-              <span className="text-primary">R H</span> Construction USA, Inc.
-            </h1>
-            <h3>Leading Construction Company in Brooklyn</h3>
-            <p className="max-w-lg xl:max-w-5xl mx-auto text-secondary mt-4">
-              RH Construction USA Inc. stands out as one of the leading
-              construction companies in Brooklyn, embodying a commitment to
-              excellence and innovation in the industry. With a proven track
-              record of successfully delivering a diverse range of construction
-              projects, the general contractor of our construction company has
-              earned a stellar reputation for its dedication to quality
-              craftsmanship and timely completion.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center">
-            {[
-              {
-                icon: "/assets/images/construction-icon.png",
-                title: "Highly trained Staff",
-                desc: "We hire only highly trained staff for best results.",
-              },
-              {
-                icon: "/assets/images/construction-icon-2.png",
-                title: "Competitive Pricing",
-                desc: "We quote the best price possible in the industry.",
-              },
-              {
-                icon: "/assets/images/construction-icon-3.png",
-                title: "Satisfaction Guaranteed",
-                desc: "100% Customer satisfaction is our sole motto.",
-              },
-            ].map((item, key) => (
-              <figure
-                key={key}
-                className="flex flex-col justify-center items-center p-3 max-w-[320px] text-center mx-auto"
-              >
-                <img
-                  src={item.icon}
-                  alt={item.title}
-                  loading="lazy"
-                  className="h-24 w-24 object-contain mb-3"
-                />
-                <h3 className="text-gray-700">{item.title}</h3>
-                <p className="text-gray-600">{item.desc}</p>
-              </figure>
-            ))}
-          </div>
-        </div>
-      </section> */}
-      {/* CALL TO ACTIONS */}
-
 
       {/* ================== R H CONSTRUCTION Section ===== */}
-      <div className="py-12">
+      <div className="py-12 custom-container">
         <div className="md:flex px-8 justify-between gap-10">
           <div>
             <Image src={work} width={608} height={608} alt="" />

@@ -3,7 +3,8 @@ import worker from "@/components/__home_components/Images/worker.png";
 import Image from "next/image";
 const Right = () => {
     return (
-        <div className="md:flex px-8 md:justify-between py-6 md:py-16 gap-10">
+     <div className="custom-container">
+         <div className="md:flex px-8 md:justify-between py-6 md:py-16 gap-10">
       <div className="">
         <Image
           src={right}
@@ -24,6 +25,7 @@ const Right = () => {
         <Image src={worker} width={608} height={550} alt="worker" />
       </div>
     </div>
+     </div>
     );
 };
 

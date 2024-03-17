@@ -6,6 +6,7 @@ import working from "@/components/__home_components/Images/Working.png";
 import Image from "next/image";
 const WorkingProcess = () => {
   return (
+    <div className="custom-container">
     <div className="md:py-16 py-8 px-8">
       <div>
         <Image
@@ -93,6 +94,7 @@ const WorkingProcess = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

@@ -5,7 +5,8 @@ import Image from "next/image";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 const Review = () => {
     return (
-        <div className="md:py-16 py-6 px-8 section-bg">
+       <div className="custom-container">
+         <div className="md:py-16 py-6 px-8 section-bg">
             <div className="text-center">
             <Image
             src={reviewLogo}
@@ -137,6 +138,7 @@ const Review = () => {
                 </div>
             </div>
         </div>
+       </div>
     );
 };
 

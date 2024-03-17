@@ -3,7 +3,7 @@ import trust from "@/components/__home_components/Images/trust.png";
 import Image from "next/image";
 const TrustUs = () => {
   return (
-    <div>
+    <div className="custom-container">
       <div className="md:flex items-center px-8">
         <div>
           <Image

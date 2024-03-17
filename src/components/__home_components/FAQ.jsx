@@ -2,9 +2,9 @@
 import faq from "@/components/__home_components/Images/FAQ.png";
 import build from "@/components/__home_components/Images/faqBuild.png";
 import {
-    Accordion,
-    AccordionBody,
-    AccordionHeader,
+  Accordion,
+  AccordionBody,
+  AccordionHeader,
 } from "@material-tailwind/react";
 import Image from "next/image";
 import React from "react";
@@ -58,7 +58,8 @@ export function FAQ() {
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
   return (
-   <div className="md:flex justify-between items-center py-6 md:py-12 gap-10 px-8">
+   <div className="custom-container">
+    <div className="md:flex justify-between items-center py-6 md:py-12 gap-10 px-8">
     <div>
     <Image
             src={build}
@@ -106,6 +107,7 @@ export function FAQ() {
         ))}
       </>
     </div>
+   </div>
    </div>
   );
 }

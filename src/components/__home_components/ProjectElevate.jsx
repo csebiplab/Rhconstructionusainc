@@ -3,7 +3,7 @@ import project from "@/components/__home_components/Images/project.png";
 import Image from "next/image";
 const ProjectElevate = () => {
     return (
-        <div>
+        <div className="custom-container">
       <div className="md:flex section-bg items-center px-8">
         <div>
           <Image

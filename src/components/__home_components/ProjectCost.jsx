@@ -8,7 +8,7 @@ import Image from "next/image";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 const ProjectCost = () => {
     return (
-        <div className="section-bg">
+        <div className="section-bg custom-container">
             
         <div className="md:flex px-8 justify-between py-8 md:py-16 md:gap-16">
         
