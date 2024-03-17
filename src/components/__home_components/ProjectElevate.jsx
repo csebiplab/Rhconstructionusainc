@@ -3,20 +3,21 @@ import project from "@/components/__home_components/Images/project.png";
 import Image from "next/image";
 const ProjectElevate = () => {
     return (
-        <div className="custom-container">
-      <div className="md:flex section-bg items-center">
-        <div>
+        <div className="section-bg">
+          <div className="custom-container">
+      <div className="lg:flex section-bg items-center">
+        <div className="lg:w-[807px]">
           <Image
             src={elevate}
-            width={1012}
+            width={807}
             height={783}
             layout="responsive"
             alt="elevate"
           />
         </div>
-        <div>
-          <div className="flex flex-col">
-            <div className="items-center md:-ml-[80px] rounded-[15px] bg-white p-4 my-class lg:mr-[65px]">
+        <div className="lg:w-[1060px]">
+          <div className="flex">
+            <div className="items-center md:-ml-[80px] rounded-[15px] bg-white p-5 my-class lg:mr-[80px]">
               <Image
                 src={project}
                 width={144}
@@ -24,7 +25,7 @@ const ProjectElevate = () => {
                 alt="trust"
                 className="my-2"
               />
-              <h2 className="leading-10 mb-1 py-2 lg:text-4xl text-lg">
+              <h2 className="lg:leading-[55px] mb-1 py-2 lg:text-4xl text-lg">
               ELEVATE YOUR CONSTRUCTION PROJECTS WITH RH CONSTRUCTION USA INC
               </h2>
               <p className="max-w-lg xl:max-w-5xl lg:text-lg mx-auto text-black my-2">
@@ -35,6 +36,7 @@ const ProjectElevate = () => {
         </div>
       </div>
     </div>
+        </div>
     );
 };
 
