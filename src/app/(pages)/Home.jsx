@@ -32,6 +32,7 @@ import ProjectCost from "@/components/__home_components/ProjectCost";
 import ProjectElevate from "@/components/__home_components/ProjectElevate";
 import Rating from "@/components/__home_components/Rating";
 import RatingProgressBar from "@/components/__home_components/RatingProgressBar";
+import Review from "@/components/__home_components/Review";
 import UsersReview from "@/components/__home_components/Reviews/UsersReview";
 import Right from "@/components/__home_components/Right";
 import Tools from "@/components/__home_components/Tools";
