@@ -1,18 +1,18 @@
-import React, { useState } from 'react'
-import servicesIcon from "../../../../public/assets/icons/services.png"
 import Image from 'next/image'
-import bathroom from '../../../../public/assets/services/bithrom.png'
-import Sheetrock from '../../../../public/assets/services/Sheetrock.png'
-import Plastering from '../../../../public/assets/services/Plastering.png'
-import Plumbing from '../../../../public/assets/services/Plumbing.png'
+import { useState } from 'react'
+import servicesIcon from "../../../../public/assets/icons/services.png"
+import Brick from '../../../../public/assets/services/Brick .png'
+import Brown from '../../../../public/assets/services/Brown.png'
 import Kitchen from '../../../../public/assets/services/Kitchen.png'
 import Painting from '../../../../public/assets/services/Painting.png'
-import Roofing from '../../../../public/assets/services/roofing.png'
-import Pointing2 from '../../../../public/assets/services/painting.png'
-import Water from '../../../../public/assets/services/water.png'
-import Brown from '../../../../public/assets/services/Brown.png'
-import Brick from '../../../../public/assets/services/Brick .png'
+import Plastering from '../../../../public/assets/services/Plastering.png'
+import Plumbing from '../../../../public/assets/services/Plumbing.png'
 import Power from '../../../../public/assets/services/Power.png'
+import Sheetrock from '../../../../public/assets/services/Sheetrock.png'
+import bathroom from '../../../../public/assets/services/bithrom.png'
+import Pointing2 from '../../../../public/assets/services/painting.png'
+import Roofing from '../../../../public/assets/services/roofing.png'
+import Water from '../../../../public/assets/services/water.png'
 
 export default function OurServices() {
 

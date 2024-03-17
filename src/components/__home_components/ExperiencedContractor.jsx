@@ -4,7 +4,9 @@ import Image from "next/image";
 
 const ExperiencedContractor = () => {
     return (
-        <div className="md:flex px-8 section-bg justify-between py-6 md:py-12 gap-10">
+   <div className="section-bg">
+    <div className="custom-container">
+         <div className="lg:flex lg:px-[61px] justify-between py-6 md:py-12 gap-10">
             <div>
         <Image src={constructor} width={900} height={880} alt="constructor" />
       </div>
@@ -16,7 +18,7 @@ const ExperiencedContractor = () => {
           alt="about"
           className="my-2"
         />
-        <h2 className="leading-10 mb-1 py-4">
+        <h2 className="leading-10 mb-1 lg:text-4xl text-lg py-4">
         EXPERIENCED BROOKLYN GENERAL CONTRACTOR
         </h2>
         <p className="max-w-lg xl:max-w-5xl mx-auto text-black mt-4">
@@ -30,6 +32,8 @@ const ExperiencedContractor = () => {
       </div>
       
     </div>
+   </div>
+   </div>
     );
 };
 

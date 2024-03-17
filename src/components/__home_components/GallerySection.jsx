@@ -2,16 +2,9 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 // import SwiperCore from "swiper";
-
+import gallery from "@/components/__home_components/Images/gallery.png";
+import Image from "next/image";
 import GalImg1 from "../../../public/assets/galleries/gl1.jpg";
-import GalImg2 from "../../../public/assets/galleries/gl2.jpg";
-import GalImg3 from "../../../public/assets/galleries/gl3.jpg";
-import GalImg4 from "../../../public/assets/galleries/gl4.jpg";
-import GalImg5 from "../../../public/assets/galleries/gl5.jpg";
-import GalImg6 from "../../../public/assets/galleries/gl6.jpg";
-import GalImg7 from "../../../public/assets/galleries/gl7.jpg";
-import GalImg8 from "../../../public/assets/galleries/gl8.jpg";
-import GalImg9 from "../../../public/assets/galleries/gl9.jpg";
 import GalImg10 from "../../../public/assets/galleries/gl10.jpg";
 import GalImg11 from "../../../public/assets/galleries/gl11.jpg";
 import GalImg12 from "../../../public/assets/galleries/gl12.jpg";
@@ -22,6 +15,7 @@ import GalImg16 from "../../../public/assets/galleries/gl16.jpg";
 import GalImg17 from "../../../public/assets/galleries/gl17.jpg";
 import GalImg18 from "../../../public/assets/galleries/gl18.jpg";
 import GalImg19 from "../../../public/assets/galleries/gl19.jpg";
+import GalImg2 from "../../../public/assets/galleries/gl2.jpg";
 import GalImg20 from "../../../public/assets/galleries/gl20.jpg";
 import GalImg21 from "../../../public/assets/galleries/gl21.jpg";
 import GalImg22 from "../../../public/assets/galleries/gl22.jpg";
@@ -32,21 +26,27 @@ import GalImg26 from "../../../public/assets/galleries/gl26.jpg";
 import GalImg27 from "../../../public/assets/galleries/gl27.jpg";
 import GalImg28 from "../../../public/assets/galleries/gl28.jpg";
 import GalImg29 from "../../../public/assets/galleries/gl29.jpg";
+import GalImg3 from "../../../public/assets/galleries/gl3.jpg";
 import GalImg30 from "../../../public/assets/galleries/gl30.jpg";
 import GalImg31 from "../../../public/assets/galleries/gl31.jpg";
 import GalImg32 from "../../../public/assets/galleries/gl32.jpg";
 import GalImg33 from "../../../public/assets/galleries/gl33.jpg";
 import GalImg34 from "../../../public/assets/galleries/gl34.jpg";
+import GalImg4 from "../../../public/assets/galleries/gl4.jpg";
+import GalImg5 from "../../../public/assets/galleries/gl5.jpg";
+import GalImg6 from "../../../public/assets/galleries/gl6.jpg";
+import GalImg7 from "../../../public/assets/galleries/gl7.jpg";
+import GalImg8 from "../../../public/assets/galleries/gl8.jpg";
+import GalImg9 from "../../../public/assets/galleries/gl9.jpg";
 
 // import required modules
-import { Autoplay, Grid } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/autoplay";
-import "swiper/css/grid";
 import "swiper/css/effect-coverflow";
-import Image from "next/image";
+import "swiper/css/grid";
 
 const galImgs = [
   GalImg1,
@@ -93,10 +93,15 @@ const galImgs2 = [
 export default function GallerySection() {
     return (
       <div>
-        <h1 className={`mb-4 container font-bold`}>
-          Construction Services Gallary
-          <br />
-          of Our Past Projects
+        <Image
+                src={gallery}
+                width={90}
+                height={18.02}
+                alt="trust"
+                className="my-2 mx-auto"
+              />
+        <h1 className="leading-10 mb-1 py-4 lg:text-4xl text-lg text-center">
+        CONSTRUCTION SERVICES GALLERY OF OUR PAST PROJECTS
         </h1>
         <Swiper
           className="sample-slider w-full"

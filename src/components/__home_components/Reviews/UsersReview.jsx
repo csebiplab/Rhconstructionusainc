@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 // import required modules
-import { Autoplay } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import ReviewCard from "./ReviewCard";
 
 // Swiper slider breakpoints Object

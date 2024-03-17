@@ -6,7 +6,9 @@ import { BsTelephoneForwardFill } from "react-icons/bs";
 import { FaChevronRight } from "react-icons/fa6";
 const AboutUs = () => {
   return (
-    <div className="md:flex px-8 justify-between py-6 md:py-16 gap-10 section-bg">
+   <div className="section-bg">
+     <div className="custom-container ">
+      <div className="md:flex lg:px-[61px] justify-between py-6 md:py-16 gap-10">
       <div className="">
         <Image
           src={about}
@@ -15,10 +17,10 @@ const AboutUs = () => {
           alt="about"
           className="my-2"
         />
-        <h2 className="leading-10 mb-1 py-4">
+        <h2 className="leading-10 mb-1 lg:text-4xl text-lg py-4">
           ABOUT OUR GENERAL CONTRACTOR COMPANY
         </h2>
-        <p className="max-w-lg xl:max-w-5xl mx-auto text-secondary mt-4">
+        <p className="max-w-lg xl:max-w-5xl lg:text-xl mx-auto text-black mt-4">
           Since 2009, RH Construction USA Inc. has been dedicated to delivering
           excellence in construction services, boasting over 15 years of
           expertise in home renovations, bathroom and kitchen remodeling,
@@ -53,6 +55,8 @@ const AboutUs = () => {
         <Image src={company} width={608} height={550} alt="company" />
       </div>
     </div>
+    </div>
+   </div>
   );
 };
 
