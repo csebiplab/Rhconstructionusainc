@@ -18,13 +18,13 @@ const Constructor = () => {
             alt="cons"
             className="my-2 mx-auto"
           />
-          <h2 className="leading-10 mb-1 py-4">
+          <h2 className="leading-10 lg:text-4xl text-lg mb-1 py-4">
           WHAT TO CONSIDER FIRST WHEN YOU HIRE THE BEST CONTRACTORS
           </h2>
             </div>
             {/* =================== Card Section =============== */}
             <div>
-            <div className="grid grid-cols-1 px-6 md:grid-cols-3 gap-20 text-center py-10">
+            <div className="grid grid-cols-1 px-6 md:grid-cols-3 gap-5 lg:gap-20 text-center py-10">
               <div className="w-full card-sd rounded-sm bg-white">
                 <Image
                   src={pp1}

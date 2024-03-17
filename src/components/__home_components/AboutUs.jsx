@@ -6,7 +6,8 @@ import { BsTelephoneForwardFill } from "react-icons/bs";
 import { FaChevronRight } from "react-icons/fa6";
 const AboutUs = () => {
   return (
-    <div className="custom-container section-bg">
+   <div className="section-bg">
+     <div className="custom-container ">
       <div className="md:flex px-8 justify-between py-6 md:py-16 gap-10">
       <div className="">
         <Image
@@ -16,7 +17,7 @@ const AboutUs = () => {
           alt="about"
           className="my-2"
         />
-        <h2 className="leading-10 mb-1 py-4">
+        <h2 className="leading-10 mb-1 lg:text-4xl text-lg py-4">
           ABOUT OUR GENERAL CONTRACTOR COMPANY
         </h2>
         <p className="max-w-lg xl:max-w-5xl mx-auto text-secondary mt-4">
@@ -55,6 +56,7 @@ const AboutUs = () => {
       </div>
     </div>
     </div>
+   </div>
   );
 };
 

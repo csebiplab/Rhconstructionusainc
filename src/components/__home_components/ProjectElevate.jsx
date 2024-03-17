@@ -24,7 +24,7 @@ const ProjectElevate = () => {
                 alt="trust"
                 className="my-2"
               />
-              <h2 className="leading-10 mb-1 py-2">
+              <h2 className="leading-10 mb-1 py-2 lg:text-4xl text-lg">
               ELEVATE YOUR CONSTRUCTION PROJECTS WITH RH <br/>CONSTRUCTION USA INC
               </h2>
               <p className="max-w-lg xl:max-w-5xl mx-auto text-black mt-3 mb-2">

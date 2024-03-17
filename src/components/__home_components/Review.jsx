@@ -5,8 +5,9 @@ import Image from "next/image";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 const Review = () => {
     return (
-       <div className="custom-container">
-         <div className="md:py-16 py-6 px-8 section-bg">
+       <div className="section-bg">
+        <div className="custom-container">
+         <div className="md:py-16 py-6 px-8">
             <div className="text-center">
             <Image
             src={reviewLogo}
@@ -15,7 +16,7 @@ const Review = () => {
             alt="reviewLogo"
             className="my-2 mx-auto"
           />
-          <h2 className="leading-10 mb-1 py-4">
+          <h2 className="leading-10 mb-1 py-4 lg:text-4xl text-lg">
           WHAT TO CONSIDER FIRST WHEN YOU HIRE THE BEST CONTRACTORS
           </h2>
             </div>
@@ -138,6 +139,7 @@ const Review = () => {
                 </div>
             </div>
         </div>
+       </div>
        </div>
     );
 };

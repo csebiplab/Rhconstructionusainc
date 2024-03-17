@@ -16,7 +16,7 @@ const WorkingProcess = () => {
           alt="about"
           className="my-2"
         />
-        <h2 className="leading-10 mb-1 py-4">
+        <h2 className="leading-10 lg:text-4xl text-lg mb-1 py-4">
           WORKING PROCESS OF OUR CONSTRUCTION <br /> COMPANY IN BROOKLYN
         </h2>
         <p className="font-semibold">

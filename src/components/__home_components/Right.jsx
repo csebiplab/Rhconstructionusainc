@@ -13,7 +13,7 @@ const Right = () => {
           alt="right"
           className="my-2"
         />
-        <h2 className="leading-10 mb-1 py-4">
+        <h2 className="leading-10 mb-1 py-4 lg:text-4xl text-lg">
         CHOOSING THE RIGHT GENERAL CONTRACTOR <br/> IN BROOKLYN
         </h2>
         <p className="max-w-lg xl:max-w-5xl mx-auto text-black mt-4">

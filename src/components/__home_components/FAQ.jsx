@@ -78,7 +78,7 @@ export function FAQ() {
             alt="faq"
             className="my-2"
           />
-        <h1 className="text-3xl py-4 text-start font-semibold">
+        <h1 className="lg:text-4xl text-lg py-4 text-start font-semibold">
         FAQ FOR RH CONSTRUCTION USA INC
         </h1>
       </div>

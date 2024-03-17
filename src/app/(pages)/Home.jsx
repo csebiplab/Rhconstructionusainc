@@ -155,15 +155,15 @@ const Home = () => {
 
 
       {/* ================== R H CONSTRUCTION Section ===== */}
-      <div className="py-12 custom-container">
+      <div className="lg:py-16 py-6 custom-container">
         <div className="md:flex px-8 justify-between gap-10">
           <div>
             <Image src={work} width={608} height={608} alt="" />
           </div>
           <div>
             <Image src={title} width={298} height={18} alt="" />
-            <h1 className="leading-10 mb-1 py-4">R H Construction USA, Inc.</h1>
-            <p className="max-w-lg xl:max-w-5xl mx-auto text-secondary mt-4">
+            <h1 className="leading-10 mb-1 py-4 text-lg lg:text-4xl">R H Construction USA, Inc.</h1>
+            <p className="max-w-lg xl:max-w-5xl mx-auto text-black mt-4">
               RH Construction USA Inc. stands out as one of the leading
               construction companies in Brooklyn, embodying a commitment to
               excellence and innovation in the industry. With a proven track
