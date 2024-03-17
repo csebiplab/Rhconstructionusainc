@@ -20,7 +20,7 @@ const Review = () => {
             </div>
             {/* =================== Card Section =============== */}
             <div>
-            <div className="grid grid-cols-1 px-6 md:grid-cols-4 gap-10 text-center md:py-10 py-6">
+            <div className="grid grid-cols-1 px-6 md:grid-cols-4 gap-3 text-center md:py-10 py-6">
               
               <div className="w-full card-sd rounded-sm bg-white">
               <Image

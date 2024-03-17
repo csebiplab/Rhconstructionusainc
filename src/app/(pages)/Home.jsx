@@ -26,15 +26,14 @@ import ProjectCost from "@/components/__home_components/ProjectCost";
 import ProjectElevate from "@/components/__home_components/ProjectElevate";
 import Rating from "@/components/__home_components/Rating";
 import RatingProgressBar from "@/components/__home_components/RatingProgressBar";
+import Review from "@/components/__home_components/Review";
 import Right from "@/components/__home_components/Right";
 import Tools from "@/components/__home_components/Tools";
 import TrustUs from "@/components/__home_components/TrustUs";
 import WorkingProcess from "@/components/__home_components/WorkingProcess";
 import ContactHome from "@/components/__home_components/contactHome/ContactHome";
 import OurServices from "@/components/__home_components/ourServices/OurServices";
-import UsersReview from "@/components/__home_components/Reviews/UsersReview";
 import Image from "next/image";
-import Review from "@/components/__home_components/Review";
 
 
 
@@ -250,6 +249,10 @@ const Home = () => {
       {/* =================== Review Section ============== */}
       <Review/>
 
+      {/* ================ Gallery ============== */}
+      <div className="py-16 custom-container">
+        <GallerySection />
+      </div>
 
       {/* ============= EXPERIENCED CONTRACTOR =============== */}
       <ExperiencedContractor />
@@ -316,9 +319,7 @@ const Home = () => {
       </section> */}
 
       {/* Our Past Projects Gallery */}
-      <div className="pt-20 custom-container">
-        <GallerySection />
-      </div>
+     
 
       {/* FAQ ACCORDION starts */}
       {/* <section className="py-20 container">
