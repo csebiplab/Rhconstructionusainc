@@ -90,10 +90,10 @@ const Home = () => {
 
       {/* =============== Rating ================= */}
 
-      <div className="lg:py-[15px] py-5">
+      <div className="lg:py-[15px] py-4">
         <div className="lg:w-[87.95%] w-full mx-auto">
           <div className="lg:w-[980px] w-full mx-auto">
-            <div className="rating p-6 rounded-[8px]">
+            <div className="rating lg:p-6 md:p-4 rounded-[8px]">
               <h2 className="lg:text-2xl md:text-lg lg:leading-[36px] mb-3">Ratings</h2>
               <div className="flex justify-between gap-5">
                 <div className="md:w-[260px]">
