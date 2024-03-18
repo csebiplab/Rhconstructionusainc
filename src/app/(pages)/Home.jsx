@@ -90,15 +90,15 @@ const Home = () => {
 
       {/* =============== Rating ================= */}
 
-      <div className="lg:py-[15px] py-10">
+      <div className="lg:py-[15px] py-5">
         <div className="lg:w-[87.95%] w-full mx-auto">
           <div className="lg:w-[980px] w-full mx-auto">
             <div className="rating p-6 rounded-[8px]">
-              <h2 className="lg:text-2xl text-lg leading-[36px] mb-3">Ratings</h2>
+              <h2 className="lg:text-2xl md:text-lg lg:leading-[36px] mb-3">Ratings</h2>
               <div className="flex justify-between gap-5">
-                <div className="w-[260px]">
+                <div className="md:w-[260px]">
                   <div>
-                    <div className="lg:w-[60px] lg:h-[60px] mx-auto text-[#FAA500] text-lg font-bold text-center leading-[60px] border-[2px] border-[#DBDBDB] rounded-full">
+                    <div className="lg:w-[60px] md:w-[35px] md:h-[35px] lg:h-[60px] mx-auto text-[#FAA500] lg:text-lg md:text-base font-bold text-center lg:leading-[60px] md:leading-[30px] border-[2px] border-[#DBDBDB] rounded-full">
                       4.9
                     </div>
                     <Rating />
@@ -119,7 +119,7 @@ const Home = () => {
                 <div className="w-[260px]">
                   <div>
                     <div className="flex">
-                      <h4 className="text-[#000] lg:text-lg font-bold mb-5">
+                      <h4 className="text-[#000] lg:text-lg md:text-base font-bold lg:mb-5 md:mb-2">
                         Highly rated for
                       </h4>
                       <img
@@ -135,7 +135,7 @@ const Home = () => {
                         Value
                       </h5>
                     </div>
-                    <h5 className="border-2 bg-[#EAEAEA] text-[#000] font-semibold text-sm px-2 text-center mt-2 w-8/12 mx-auto">
+                    <h5 className="border-2 bg-[#EAEAEA] text-[#000] font-semibold text-sm px-2 text-center mt-2 md:w-9/12 lg:w-8/12 mx-auto">
                       Customer Service
                     </h5>
                   </div>
