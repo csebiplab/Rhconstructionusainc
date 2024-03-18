@@ -6,11 +6,11 @@ const Achievement = () => {
     <>
      <div className="custom-container">
      <div className="flex gap-2 md:mt-3 lg:mt-4">
-        <div className="lg:w-[180px] lg:h-[147.98px] my-class rounded-[8px] pt-[31.25px] text-center">
-          <h2 className="lg:text-[38px] md:text-lg font-bold lg:leading-[47.25px] md:leading-[30px] mb-[5px] ">
+        <div className="w-[180px] h-[147.98px] my-class rounded-[8px] pt-[31.25px] text-center">
+          <h2 className="lg:text-[38px] md:text-lg font-bold lg:leading-[47.25px] mb-[5px] ">
             96%
           </h2>
-          <p className="lg:text-lg md:text-sm font-bold md:leading-[18px] lg:leading-[22.5px]">Recommended</p>
+          <p className="lg:text-lg md:text-sm font-bold lg:leading-[22.5px]">Recommended</p>
         </div>
         <div className="w-[180px] h-[147.98px] my-class rounded-[8px] pt-[31.25px] text-center">
           <h2 className="lg:text-[38px] font-bold text-lg lg:leading-[47.25px] mb-[5px]">
@@ -24,7 +24,7 @@ const Achievement = () => {
           <h3 className="text-base lg:text-lg font-bold leading-[27px] mb-[5px]">
             Achievements
           </h3>
-          <Image src={achievement} width={559} height={82.98} alt="" className="md:w-[400px] md:h-[60px]" />
+          <Image src={achievement} width={559} height={82.98} alt="" className=""  />
         </div>
       </div>
      </div>
