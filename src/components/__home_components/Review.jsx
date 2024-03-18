@@ -24,7 +24,7 @@ const Review = () => {
             <div>
             <div className="grid grid-cols-1 px-6 md:grid-cols-4 gap-3 text-center md:py-10 py-6">
               
-              <div className="w-full card-sd rounded-sm bg-white">
+              <div className="w-full card-sd rounded-md bg-white">
               <Image
             src={google}
             width={89.92}
@@ -47,7 +47,7 @@ const Review = () => {
       <p className="text-secondary text-sm">North York</p>
                 </div>
               </div>
-              <div className="w-full card-sd rounded-sm bg-white">
+              <div className="w-full card-sd rounded-md bg-white">
               <Image
             src={google}
             width={89.92}
@@ -70,7 +70,7 @@ const Review = () => {
       <p className="text-secondary text-sm">North York</p>
                 </div>
               </div>
-              <div className="w-full card-sd rounded-sm bg-white">
+              <div className="w-full card-sd rounded-md bg-white">
               <Image
             src={google}
             width={89.92}
@@ -93,7 +93,7 @@ const Review = () => {
       <p className="text-secondary text-sm">North York</p>
                 </div>
               </div>
-              <div className="w-full card-sd rounded-sm bg-white">
+              <div className="w-full card-sd rounded-md bg-white">
               <Image
             src={google}
             width={89.92}
