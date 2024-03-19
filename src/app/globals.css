@@ -90,23 +90,34 @@ img {
   }
 }
 
+.band {
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
 .rating {
   box-shadow: 0px 0px 4px 0px #00000080;
 }
 .my-class {
-  box-shadow: 0px 0px 2px 0px #00000080;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
 }
 
 /* Hero section */
 .hero-section {
-  max-width: 1536px;
-  margin: 0 auto;
-  width: 1920px;
-  height: 825px;
+  width: 100%;
+  height: auto;
   background-image: url("/assets/images/bg.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.hero-right {
+  width: 42%;
+}
+
+.hero-right .hero-main-image {
+  width: 100%;
+  object-fit: cover;
 }
 
 .section-bg {
@@ -123,4 +134,16 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: 40px; /* 200% */
+}
+
+@media screen and (min-width: 960px) and (max-width: 1200px) {
+  .brand p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  .brand {
+    height: auto;
+  }
 }

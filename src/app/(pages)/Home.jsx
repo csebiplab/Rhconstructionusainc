@@ -90,15 +90,15 @@ const Home = () => {
 
       {/* =============== Rating ================= */}
 
-      <div className="lg:py-[15px] py-10">
-        <div className="lg:w-[87.95%] w-full mx-auto">
-          <div className="lg:w-[980px] w-full mx-auto">
-            <div className="rating p-6 rounded-[8px]">
-              <h2 className="lg:text-2xl text-lg leading-[36px] mb-3">Ratings</h2>
-              <div className="flex justify-between gap-5">
-                <div className="w-[260px]">
+      <div className="lg:py-[15px] py-4">
+        <div className="lg:w-[87.95%] md:w-full mx-auto">
+          <div className="lg:w-[980px] md:w-full mx-auto">
+            <div className="rating lg:p-6 md:p-4 rounded-[8px]">
+              <h2 className="lg:text-2xl md:text-lg lg:leading-[36px] mb-3">Ratings</h2>
+              <div className="flex justify-between lg:gap-5 md:gap-3">
+                <div className="md:w-[260px]">
                   <div>
-                    <div className="lg:w-[60px] lg:h-[60px] mx-auto text-[#FAA500] text-lg font-bold text-center leading-[60px] border-[2px] border-[#DBDBDB] rounded-full">
+                    <div className="lg:w-[60px] md:w-[35px] md:h-[35px] lg:h-[60px] mx-auto text-[#FAA500] lg:text-lg md:text-base font-bold text-center lg:leading-[60px] md:leading-[30px] border-[2px] border-[#DBDBDB] rounded-full">
                       4.9
                     </div>
                     <Rating />
@@ -119,7 +119,7 @@ const Home = () => {
                 <div className="w-[260px]">
                   <div>
                     <div className="flex">
-                      <h4 className="text-[#000] lg:text-lg font-bold mb-5">
+                      <h4 className="text-[#000] lg:text-lg md:text-base font-bold lg:mb-5 md:mb-2">
                         Highly rated for
                       </h4>
                       <img
@@ -135,7 +135,7 @@ const Home = () => {
                         Value
                       </h5>
                     </div>
-                    <h5 className="border-2 bg-[#EAEAEA] text-[#000] font-semibold text-sm px-2 text-center mt-2 w-8/12 mx-auto">
+                    <h5 className="border-2 bg-[#EAEAEA] text-[#000] font-semibold text-sm px-2 text-center mt-2 md:w-9/12 lg:w-8/12 mx-auto">
                       Customer Service
                     </h5>
                   </div>
@@ -155,15 +155,15 @@ const Home = () => {
 
 
       {/* ================== R H CONSTRUCTION Section ===== */}
-      <div className="lg:py-16 mt-5 py-6 custom-container">
-        <div className="lg:flex lg:px-[61px] justify-between gap-10">
+      <div className="lg:py-[83px] md:mt-2 md:py-6 custom-container">
+        <div className="md:flex lg:px-[61px] md:[px-2%] justify-between lg:gap-10 md:gap-3">
           <div>
-            <Image src={work} width={608} height={608} alt="" />
+            <Image src={work} width={608} height={608} alt="" layout="responsive" className="" />
           </div>
           <div>
             <Image src={title} width={298} height={18} alt="" />
-            <h1 className="leading-10 mb-1 py-4 text-lg lg:text-4xl">R H Construction USA, Inc.</h1>
-            <p className="max-w-lg xl:max-w-5xl mx-auto text-black mt-4">
+            <h1 className="leading-10 mb-1 md:py-2 lg:py-4 md:text-lg lg:text-4xl">R H Construction USA, Inc.</h1>
+            <p className="max-w-lg xl:max-w-5xl lg:max-w-2xl md:max-w-lg mx-auto text-black md:mt-2 lg:mt-3">
               RH Construction USA Inc. stands out as one of the leading
               construction companies in Brooklyn, embodying a commitment to
               excellence and innovation in the industry. With a proven track
@@ -174,8 +174,8 @@ const Home = () => {
             </p>
 
             {/* ============== Image Card =============== */}
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 text-center py-10">
-              <div className="w-full shadow-md p-0 rounded-sm">
+            <div className="grid grid-cols-2 md:grid-cols-3 md:gap-2 lg:gap-3 text-center md:py-6 lg:py-10">
+              <div className="w-full card-sd rounded-[9x]">
                 <Image
                   src={work1}
                   width={221}
@@ -184,13 +184,13 @@ const Home = () => {
                   className="w-full"
                 />
                 <div className="text-center py-3">
-                  <h4 className="text-base py-2">Highly trained Staff</h4>
-                  <p className="text-sm text-secondary">
+                  <h4 className="lg:text-base md:text-sm py-2">Highly trained Staff</h4>
+                  <p className="lg:text-sm md:text-xs text-black">
                     We hire only highly trained staff <br /> for best results.
                   </p>
                 </div>
               </div>
-              <div className="w-full shadow-md p-0 rounded-sm">
+              <div className="w-full card-sd rounded-[9x]">
                 <Image
                   src={work2}
                   width={221}
@@ -199,13 +199,13 @@ const Home = () => {
                   className="w-full"
                 />
                 <div className="text-center py-3">
-                  <h4 className="text-base py-2">Competitive Pricing</h4>
-                  <p className="text-sm text-secondary">
+                  <h4 className="lg:text-base md:text-sm py-2">Competitive Pricing</h4>
+                  <p className="lg:text-sm md:text-xs text-black">
                     We quote the best price possible <br /> in the industry..
                   </p>
                 </div>
               </div>
-              <div className="w-full shadow-md p-0 rounded-sm">
+              <div className="w-full card-sd rounded-[9x]">
                 <Image
                   src={work3}
                   width={221}
@@ -214,8 +214,8 @@ const Home = () => {
                   className="w-full"
                 />
                 <div className="text-center py-3">
-                  <h4 className="text-base py-2">Satisfaction Guaranteed</h4>
-                  <p className="text-sm text-secondary">
+                  <h4 className="lg:text-base md:text-sm py-2">Satisfaction Guaranteed</h4>
+                  <p className="lg:text-sm md:text-xs text-black">
                     100% Customer satisfaction is <br /> our sole motto.
                   </p>
                 </div>

@@ -1,7 +1,6 @@
-import React from "react";
 
 const RatingProgressBar = () => {
-  const ratings = [0, 0, 0, 4, 57];
+  const ratings = [3,3,1,7,141];
   const totalRatings = ratings.reduce((acc, curr) => acc + curr, 0);
 
   const ratingStar = Array.from({ length: 5 }, (_, index) => {

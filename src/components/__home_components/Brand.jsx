@@ -10,88 +10,88 @@ import Image from "next/image";
 const Brand = () => {
   return (
    <div className="custom-container">
-     <div className="brands pt-4 grid grid-cols-2 md:grid-cols-7 gap-3">
-      <div className="brand w-full h-[174px] border-[1px] border-[#EAEAEA] rounded-[15px] px-2 py-[14px] text-center">
+     <div className="brands pt-4 grid grid-cols-2 md:grid-cols-7 lg:gap-3 md:gap-2">
+      <div className="brand w-full h-[174px] border-[1px] band rounded-[15px] lg:px-2 md:px-1 lg:py-[14px] md:py-[3px] text-center">
         <Image
           src={band1}
           width={110}
-          height={100}
+          height={95}
           alt=""
-          className="mb-[10px] mt-4 mx-auto"
+          className="lg:mb-[10px] md:w-3/4 md:mb-[1px] md:mt-2 mx-auto"
         />
-        <p className="text-center  text-sm leading-[21.1px] mt-8">
+        <p className="text-center md:text-xs lg:text-sm md:leading-relaxed lg:leading-[21.1px] md:mt-0 lg:mt-4 md:mb-1">
           R H CONSTRUCTION responds to texts.
         </p>
       </div>
-      <div className="brand w-full h-[174px] border-[1px] border-[#EAEAEA] rounded-[15px] px-2 py-[14px] text-center">
+      <div className="brand w-full h-[174px] border-[1px] band rounded-[15px] lg:px-2 md:px-1 lg:py-[14px] md:py-[5px]  text-center">
         <Image
           src={band2}
-          width={95}
+          width={110}
           height={95}
           alt=""
-          className="mb-[10px] mx-auto"
+          className="lg:mb-[10px] md:w-3/4 md:mb-[1px] md:mt-3  mx-auto"
         />
-        <p className="text-center  text-sm leading-[21.1px] ">
+        <p className="text-center md:text-xs md:mt-2 lg:mt-4 lg:text-sm leading-[21.1px] ">
           The Construction company I ever seen.
         </p>
       </div>
-      <div className="brand w-full h-[174px] border-[1px] border-[#EAEAEA] rounded-[15px] px-2 py-[14px] text-center">
+      <div className="brand w-full h-[174px] border-[1px] band rounded-[15px] lg:px-2 md:px-1 lg:py-[14px] md:py-[5px] text-center">
         <Image
           src={band3}
-          width={95}
+          width={110}
           height={95}
           alt=""
-          className="mb-[10px] mx-auto"
+          className="lg:mb-[10px] md:mt-3 md:mb-[5px] mx-auto"
         />
-        <p className="text-center  text-sm leading-[21.1px]">
-          We hired R H CONSTRUCTION
+        <p className="text-center md:text-xs lg:mt-3 lg:text-sm leading-[21.1px]">
+          We hired RH CONSTRUCTION
         </p>
       </div>
-      <div className="brand w-full h-[174px] border-[1px] border-[#EAEAEA] rounded-[15px] px-2 py-[14px] text-center">
+      <div className="brand w-full h-[174px] border-[1px] band rounded-[15px] lg:px-2 md:px-1 lg:py-[14px] md:py-[5px] md:text-start text-center">
         <Image
           src={band4}
           width={80}
-          height={80}
+          height={70}
           alt=""
-          className="mb-[10px] mx-auto"
+          className="lg:mb-[10px] md:mb-[2px] mx-auto"
         />
-        <p className="text-center mt-6 text-sm leading-[21.1px]">
+        <p className="text-center lg:mt-2 md:text-xs lg:text-sm leading-relaxed lg:leading-[21.1px] overflow-hidden">
           Maricelas R H CONSTRUCTION
         </p>
       </div>
-      <div className="brand w-full h-[174px] border-[1px] border-[#EAEAEA] rounded-[15px] px-2 py-[14px] text-center">
+      <div className="brand w-full h-[174px] border-[1px] band rounded-[15px] lg:px-2 md:px-1 lg:py-[14px] md:py[5px] text-center">
         <Image
           src={band5}
-          width={80}
-          height={80}
+          width={110}
+          height={90}
           alt=""
-          className="mb-[10px] mx-auto"
+          className="lg:mb-[10px] lg:mt-8 md:mt-6 mx-auto"
         />
-        <p className="text-center mt-6 text-sm leading-[21.1px]">
+        <p className="text-center mt-6 md:text-xs lg:text-sm leading-[21.1px]">
           We never used a Construction service
         </p>
       </div>
-      <div className="brand w-full h-[174px] border-[1px] border-[#EAEAEA] rounded-[15px] px-2 py-[14px] text-center">
+      <div className="brand w-full h-[174px] border-[1px] band rounded-[15px] lg:px-2 md:px-1 lg:py-[14px] md:py-[5px] text-center">
         <Image
           src={band6}
-          width={143}
-          height={95}
+          width={110}
+          height={90}
           alt=""
-          className="mb-[10px] mx-auto"
+          className="lg:mb-[10px] md:mb-[5px] md:mt-3 lg:mt-1 mx-auto"
         />
-        <p className="text-center  text-sm leading-[21.1px]">
+        <p className="text-center md:text-xs  lg:text-sm leading-[21.1px]">
           What a pleasure it was working with R H
         </p>
       </div>
-      <div className="brand w-full h-[174px] border-[1px] border-[#EAEAEA] rounded-[15px] px-2 py-[14px] text-center">
+      <div className="brand w-full h-[174px] border-[1px] band rounded-[15px] lg:px-2 md:px-1 lg:py-[14px] md:py-[5px] text-center">
         <Image
           src={band7}
-          width={79}
+          width={60}
           height={48}
           alt=""
-          className="mb-[10px] mx-auto py-6"
+          className="lg:mb-[10px] md:mb-[5px] mx-auto md:mt-6 md:w-1/2"
         />
-        <p className="text-center  text-base leading-[21.1px]">
+        <p className="text-center lg:mt-4 md:mt-3 md:text-xs lg:text-sm leading-[21.1px]">
           I always receive excellent service.
         </p>
       </div>
