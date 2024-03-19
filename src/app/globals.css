@@ -111,11 +111,11 @@ img {
   background-repeat: no-repeat;
 }
 
-.hero-right{
+.hero-right {
   width: 42%;
 }
 
-.hero-right .hero-main-image{
+.hero-right .hero-main-image {
   width: 100%;
   object-fit: cover;
 }
@@ -137,13 +137,13 @@ img {
 }
 
 @media screen and (min-width: 960px) and (max-width: 1200px) {
-  .brand p{
-    font-size:  12px;
+  .brand p {
+    font-size: 12px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 959px) {
-  .brand{
+  .brand {
     height: auto;
   }
 }
