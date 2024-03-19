@@ -17,10 +17,10 @@ const AboutUs = () => {
           alt="about"
           className="my-2"
         />
-        <h2 className="leading-10 mb-1 lg:text-4xl text-lg py-4">
+        <h2 className="leading-10 mb-1 lg:text-4xl text-lg md:py-2 lg:py-4">
           ABOUT OUR GENERAL CONTRACTOR COMPANY
         </h2>
-        <p className="max-w-lg xl:max-w-5xl lg:text-xl mx-auto text-black mt-4">
+        <p className="max-w-lg xl:max-w-5xl lg:text-xl md:text-sm mx-auto text-black lg:mt-4 md:mt-1">
           Since 2009, RH Construction USA Inc. has been dedicated to delivering
           excellence in construction services, boasting over 15 years of
           expertise in home renovations, bathroom and kitchen remodeling,
@@ -34,16 +34,16 @@ const AboutUs = () => {
           reliable, and professional touch, leaving our clients as our next
           happy customers.
         </p>
-        <div className="flex py-8 items-center flex-wrap mt-4 gap-8">
+        <div className="flex md:py-3 lg:py-8 items-center flex-wrap md:mt-1 lg:mt-4 gap-8">
           <div>
-            <Button className="rounded-md bg-primary hover:bg-gray-900 text-black hover:text-white text-lg font-semibold tracking-wider capitalize flex items-center gap-2">
+            <Button className="rounded-md bg-primary hover:bg-gray-900 text-black hover:text-white md:text-sm lg:text-lg font-semibold tracking-wider capitalize flex items-center gap-2">
                <span>Request A Quote</span><span><FaChevronRight /></span>
             </Button>
           </div>
           <h3>Or</h3>
           <div className="flex items-center gap-3">
             <BsTelephoneForwardFill />
-            <span className="text-xl font-semibold text-black">
+            <span className="lg:text-xl  font-semibold text-black">
               +1 (646) 683-4612
             </span>
           </div>

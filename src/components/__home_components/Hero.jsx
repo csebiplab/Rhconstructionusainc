@@ -1,6 +1,6 @@
 import { Button } from "@material-tailwind/react";
-import { FaChevronRight } from "react-icons/fa6";
 import Image from "next/image";
+import { FaChevronRight } from "react-icons/fa6";
 
 const Hero = () => {
   return (
