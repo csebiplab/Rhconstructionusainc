@@ -1,14 +1,8 @@
-import React from 'react'
-import logo from "../../../../public/assets/images/footer-logo.webp"
-import Image from 'next/image'
-import { FaMapLocationDot } from "react-icons/fa6";
-import { FaPhoneVolume } from "react-icons/fa6";
+import Image from 'next/image';
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaLocationArrow, FaMapLocationDot, FaPhoneVolume, FaXTwitter } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
-import { FaFacebook } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaLocationArrow } from "react-icons/fa6";
+import logo from "../../../../public/assets/images/footer-logo.webp";
 
 export default function ContactHome() {
   return (
@@ -20,11 +14,11 @@ export default function ContactHome() {
 
             <div className="lg:col-span-3 lg:py-20  lg:px-5 px-2 py-2 bg-yellow-700">
 
-              <div className=' lg:py-20 py-10 lg:px-10 px-5'>
+              <div className=' lg:py-20 py-6 lg:px-10 px-4'>
                 <h2 className=" lg:text-[36px] text-[20px]  ">
                   Contact Us
                 </h2>
-                <div className=' flex gap-2 items-center lg:text-[18px] text-[14px] lg:py-8 py-5 '>
+                <div className=' flex gap-2 items-center lg:text-[18px] text-[14px] lg:py-8 py-4 '>
                   <FaMapLocationDot className=' lg:w-5 lg:h-5 w-auto h-auto' />
                   <p> 553 E 2nd St, Brooklyn, NY 11218, United States</p>
                 </div>
@@ -32,24 +26,24 @@ export default function ContactHome() {
                   <FaPhoneVolume className=' lg:w-5 lg:h-5 w-auto h-auto' />
                   <p > +1 (646) 683-4612</p>
                 </div>
-                <div className=' flex gap-2 my-auto items-center lg:text-[18px] text-[14px] lg:py-8 py-5 '>
+                <div className=' flex gap-2 my-auto items-center lg:text-[18px] text-[14px] lg:py-8 py-4 '>
                   <IoIosMail className=' lg:w-5 lg:h-5 w-auto h-auto' />
                   <p>rhconusa@gmail.com</p>
                 </div>
-                <div className=' flex gap-8 my-8'>
+                <div className=' flex lg:gap-8 gap-3 lg:my-8 md:my-3'>
                   <FaFacebook className=' lg:w-6 lg:h-6 w-auto h-auto' />
                   <FaXTwitter className=' lg:w-6  lg:h-6 w-auto h-auto' />
                   <FaInstagram className=' lg:w-6 lg:h-6 w-auto h-auto' />
                   <FaLinkedin className=' lg:w-6 lg:h-6 w-auto h-auto' />
                 </div>
 
-                <h4 className=' lg:text-[32px] text-[20px] lg:py-12 py-8'>Best Construction Company Brooklyn</h4>
+                <h4 className=' lg:text-[32px] text-[20px] lg:py-12 py-5'>Best Construction Company Brooklyn</h4>
                 <Image src={logo} />
-                <h4 className=' lg:text-[32px] text-[20px] lg:py-12 py-8'>R H CONSTRUCTION USA, INC.</h4>
+                <h4 className=' lg:text-[32px] text-[20px] lg:py-12 py-5'>R H CONSTRUCTION USA, INC.</h4>
               </div>
             </div>
 
-            <div className="rounded-lg p-8 lg:col-span-3 lg:p-12 items-center">
+            <div className="rounded-lg p-5 lg:col-span-3 lg:p-12 items-center">
               <h2 className='lg:mb-8 mb-5'> Give Us Feedback </h2>
               <form action="#" className="space-y-4 ">
 

@@ -9,7 +9,7 @@ const Constructor = () => {
     return (
        <div className="section-bg">
         <div className="custom-container">
-         <div className="md:py-16 md:py-6 lg:px-[61]">
+         <div className="lg:py-16 md:py-6 lg:px-[61] md:px-4">
             <div className="text-center">
             <Image
             src={cons}

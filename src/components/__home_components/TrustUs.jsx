@@ -4,7 +4,7 @@ import Image from "next/image";
 const TrustUs = () => {
   return (
     <div className="custom-container">
-      <div className="md:flex items-center">
+      <div className="md:flex items-center lg:px-0 md:px-4">
         <div className="md:w-[55%]">
           <Image
             src={inspector}

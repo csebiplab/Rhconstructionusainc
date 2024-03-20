@@ -18,7 +18,7 @@ const LocationMap = () => {
       <div>
         <div className="custom-container">
 
-          <div className="mx-auto lg:pt-28 pt-12 lg:pb-12 pb-8 flex flex-col items-center justify-center">
+          <div className="mx-auto md:px-4 lg:px-[61px] lg:py-16 md:py-6 flex flex-col items-center justify-center">
 
             <div className='flex items-center pb-2'>
               <Image src={servicesIcon} className='h-5 w-10 mr-2' />
@@ -32,7 +32,7 @@ const LocationMap = () => {
           </div>
 
           {/* //   ======================= map Card ==================// */}
-          <div className="grid grid-cols-2 md:grid-cols-5 py-4 lg:gap-10 px-4 text-center md:py-10">
+          <div className="grid grid-cols-2 md:grid-cols-5 py-4 md:gap-3 lg:gap-10 px-4 text-center md:py-10">
 
             <div className="lg:-mt-10 md:-mt-5">
               <div className="w-full shadow-md p-0 rounded-sm">

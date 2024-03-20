@@ -92,7 +92,7 @@ const galImgs2 = [
 
 export default function GallerySection() {
     return (
-      <div>
+      <div className="lg:px-[61px] md:px-4">
         <Image
                 src={gallery}
                 width={90}
@@ -100,7 +100,7 @@ export default function GallerySection() {
                 alt="trust"
                 className="my-2 mx-auto"
               />
-        <h1 className="leading-10 mb-1 py-4 lg:text-4xl text-lg text-center">
+        <h1 className="lg:leading-10 text-center lg:text-4xl text-lg md:py-3 lg:py-6">
         CONSTRUCTION SERVICES GALLERY OF OUR PAST PROJECTS
         </h1>
         <Swiper
