@@ -6,9 +6,9 @@ const ExperiencedContractor = () => {
     return (
    <div className="section-bg">
     <div className="custom-container">
-         <div className="lg:flex lg:px-[61px] justify-between py-6 md:py-12 gap-10">
+         <div className="md:flex lg:px-[61px] justify-between md:py-6 lg:py-12 lg:gap-10 md:gap-3">
             <div>
-        <Image src={constructor} width={900} height={880} alt="constructor" />
+        <Image src={constructor} width={900} height={880} className="md:w-full lg:w-[900px]" alt="constructor" />
       </div>
       <div className="">
         <Image
@@ -18,14 +18,14 @@ const ExperiencedContractor = () => {
           alt="about"
           className="my-2"
         />
-        <h2 className="leading-10 mb-1 lg:text-4xl text-lg py-4">
+        <h2 className="lg:leading-10 lg:text-4xl text-lg md:py-2 lg:py-4">
         EXPERIENCED BROOKLYN GENERAL CONTRACTOR
         </h2>
-        <p className="max-w-lg xl:max-w-5xl mx-auto text-black mt-4">
+        <p className="max-w-lg xl:max-w-5xl lg:text-xl md:text-sm mx-auto text-black lg:mt-4 md:mt-1">
         With years of expertise and a solid educational background, our Brooklyn-based general contracting firm stands out as a reliable partner for your construction projects. Our team comprises seasoned professionals who bring a wealth of knowledge and hands-on experience to every job site. From residential renovations to commercial builds, we have successfully delivered projects of varying scales, earning a reputation for excellence and integrity within the community 
 
         </p>
-        <p className="max-w-lg xl:max-w-5xl mx-auto text-black mt-4">
+        <p className="max-w-lg xl:max-w-5xl lg:text-xl md:text-sm mx-auto text-black lg:mt-4 md:mt-1">
         At our core, we prioritize client satisfaction by combining our technical prowess with clear communication and meticulous attention to detail. Our commitment to staying abreast of industry advancements ensures that we employ the latest techniques and technologies to optimize project efficiency and quality. Whether you're envisioning a modern urban renovation or a timeless architectural masterpiece, our well-experienced and educated team is dedicated to bringing your vision to life with precision and professionalism.
         </p>
         
