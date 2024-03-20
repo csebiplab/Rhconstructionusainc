@@ -112,7 +112,7 @@ function OurServiceManu() {
             className="font-medium text-lg"
           >
             <ListItem
-              className="flex items-center gap-2 rounded-full py-1  pr-4 text-[17px] font-medium"
+              className="flex items-center gap-2 rounded-full py-1  pr-4 text-[18px] text-black font-medium"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -175,7 +175,7 @@ function NavList() {
         href="/about-rh-constraction"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-[17px]"
+        className="font-medium rounded-full text-[18px] text-black"
       >
         <ListItem className="flex items-center gap-2 py-2 pr-4 rounded-full hover:bg-primary px-4">
           About
@@ -187,7 +187,7 @@ function NavList() {
         href="/customer-reviews"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-[17px]"
+        className="font-medium rounded-full text-[18px] text-black"
       >
         <ListItem className="flex items-center gap-2 py-2 pr-4 rounded-full hover:bg-primary px-4">
           Customer Reviews
@@ -198,7 +198,7 @@ function NavList() {
         href="/blogs"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-[17px]"
+        className="font-medium rounded-full text-[18px] text-black"
       >
         <ListItem className="flex items-center gap-2 py-2 pr-4 rounded-full hover:bg-primary px-4">
           Blogs
@@ -209,7 +209,7 @@ function NavList() {
         href="/our-projects"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-[17px]"
+        className="font-medium rounded-full text-[18px] text-black"
       >
         <ListItem className="flex items-center gap-2 py-2 pr-4 rounded-full hover:bg-primary px-4">
           Projects
@@ -221,7 +221,7 @@ function NavList() {
         href="/contact"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-[17px]"
+        className="font-medium rounded-full text-[18px] text-black"
       >
         <ListItem className="flex items-center gap-2 py-2 pr-4 rounded-full hover:bg-primary px-4">
           Contact
@@ -352,7 +352,7 @@ export function Header() {
               <div className="hidden lg:block">
                 <NavList />
               </div>
-              <div className="hidden md:flex items-center gap-x-8">
+              <div className="hidden md:flex items-center gap-x-4">
                 <Image
                   src="/assets/images/phone-call.png"
                   width={38}
@@ -360,7 +360,9 @@ export function Header() {
                   className="!w-[38px] !h-[38px]"
                 />
                 <div>
-                  <span className="text-[18px] text-dark block">Quick Contact</span>
+                  <span className="text-[18px] text-dark block">
+                    Quick Contact
+                  </span>
                   <Link
                     href={`tel:+1 (646) 683-4612`}
                     className="text-[25px] font-bold text-dark"
