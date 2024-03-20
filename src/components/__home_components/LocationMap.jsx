@@ -1,13 +1,5 @@
-import React from "react";
-import cost from "@/components/__home_components/Images/cost.png";
-import cost1 from "@/components/__home_components/Images/cost1.png";
-import cost2 from "@/components/__home_components/Images/cost2.png";
-import cost3 from "@/components/__home_components/Images/cost3.png";
-import cost4 from "@/components/__home_components/Images/cost4.png";
-import cost5 from "@/components/__home_components/Images/cost5.png";
 import Image from "next/image";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
-import servicesIcon from "../../../public/assets/icons/services.png"
+import servicesIcon from "../../../public/assets/icons/services.png";
 
 const LocationMap = () => {
   return (
@@ -34,7 +26,7 @@ const LocationMap = () => {
             </div>
 
             <div>
-              <h2 className="lg:text-[36px] text-[20px]">SERVICE AREA IN RH CONSTRUCTION USA INC</h2>
+              <h2 className="lg:leading-10 lg:text-4xl text-lg md:py-2 lg:py-4">SERVICE AREA IN RH CONSTRUCTION USA INC</h2>
             </div>
 
           </div>
@@ -42,7 +34,7 @@ const LocationMap = () => {
           {/* //   ======================= map Card ==================// */}
           <div className="grid grid-cols-2 md:grid-cols-5 py-4 lg:gap-10 px-4 text-center md:py-10">
 
-            <div className="md:-mt-10">
+            <div className="lg:-mt-10 md:-mt-5">
               <div className="w-full shadow-md p-0 rounded-sm">
 
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193746.99686626304!2d-74.11015801519653!3d40.645386882912746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24416947c2109%3A0x82765c7404007886!2sBrooklyn%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1710652730916!5m2!1sen!2sbd" height="325"
@@ -52,7 +44,7 @@ const LocationMap = () => {
                   referrerPolicy="no-referrer-when-downgrade"></iframe>
 
 
-                <h5 className="text-base py-4 px-10 bg-yellow-700 lg:text-[18px] ">Brooklyn</h5>
+                <h5 className="lg:text-base md:text-sm py-4 md:px-3 lg:px-10 bg-yellow-700 lg:text-[18px] ">Brooklyn</h5>
               </div>
             </div>
 
@@ -69,12 +61,12 @@ const LocationMap = () => {
                 ></iframe>
 
 
-                <h5 className="text-base py-4 px-10 bg-yellow-700 lg:text-[18px] ">Queens</h5>
+                <h5 className="lg:text-base md:text-sm md:py-2 lg:py-4 md:px-5 lg:px-10 bg-yellow-700 lg:text-[18px] ">Queens</h5>
 
               </div>
             </div>
 
-            <div className="md:-mt-10">
+            <div className="lg:-mt-10 md:-mt-5">
               <div className="w-full shadow-md p-0 rounded-sm">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193296.64126751295!2d-74.08426630631556!3d40.80027958810262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588f046ee661%3A0xa0b3281fcecc08c!2sManhattan%2C%20New%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1710653064960!5m2!1sen!2sbd"
@@ -85,7 +77,7 @@ const LocationMap = () => {
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
-                <h5 className="text-base py-4 px-10 bg-yellow-700 lg:text-[18px] ">Manhattan</h5>
+                <h5 className="lg:text-base md:text-sm lg:py-4 md-py-2 md:px-5 lg:px-10 bg-yellow-700 lg:text-[18px] ">Manhattan</h5>
 
 
               </div>
@@ -102,12 +94,12 @@ const LocationMap = () => {
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
-                <h5 className="text-base py-4 px-10 bg-yellow-700 lg:text-[18px] ">Bronx</h5>
+                <h5 className="lg:text-base md:text-sm md:py-2 lg:py-4 md:px-5 lg:px-10 bg-yellow-700 lg:text-[18px] ">Bronx</h5>
 
               </div>
             </div>
 
-            <div className="md:-mt-10">
+            <div className="lg:-mt-10 md:-mt-5">
               <div className="w-full shadow-md p-0 rounded-sm">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193980.89432907896!2d-74.31197899122276!3d40.564748848637244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c245ef79f4d4e7%3A0x50271f8534babc78!2sStaten%20Island%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1710653173307!5m2!1sen!2sbd"
@@ -120,7 +112,7 @@ const LocationMap = () => {
                 ></iframe>
 
 
-                <h5 className="text-base py-4 px-10 bg-yellow-700 lg:text-[18px] ">Staten Island</h5>
+                <h5 className="lg:text-base md:text-sm md:py-2 lg:py-4 lg:px-10 md:px-5 bg-yellow-700 lg:text-[18px] ">Staten Island</h5>
 
 
               </div>

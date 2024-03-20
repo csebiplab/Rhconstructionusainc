@@ -155,15 +155,15 @@ const Home = () => {
 
 
       {/* ================== R H CONSTRUCTION Section ===== */}
-      <div className="lg:py-[83px] md:mt-2 md:py-6 custom-container">
+      <div className="lg:py-[83px] md:mt-2 md:py-4 custom-container">
         <div className="md:flex lg:px-[61px] md:[px-2%] justify-between lg:gap-10 md:gap-3">
           <div>
-            <Image src={work} width={608} height={608} alt="" layout="responsive" className="" />
+            <Image src={work} width={608} height={608} alt="" layout="responsive" className="md:w-full" />
           </div>
           <div>
             <Image src={title} width={298} height={18} alt="" />
-            <h1 className="leading-10 mb-1 md:py-2 lg:py-4 md:text-lg lg:text-4xl">R H Construction USA, Inc.</h1>
-            <p className="max-w-lg xl:max-w-5xl lg:max-w-2xl md:max-w-lg mx-auto text-black md:mt-2 lg:mt-3">
+            <h1 className="lg:leading-10 mb-1 md:py-1 lg:py-4 md:text-lg lg:text-4xl">R H Construction USA, Inc.</h1>
+            <p className="max-w-lg xl:max-w-5xl lg:text-lg md:text-sm  text-black mx-auto md:mt-2 lg:mt-3">
               RH Construction USA Inc. stands out as one of the leading
               construction companies in Brooklyn, embodying a commitment to
               excellence and innovation in the industry. With a proven track
@@ -174,7 +174,7 @@ const Home = () => {
             </p>
 
             {/* ============== Image Card =============== */}
-            <div className="grid grid-cols-2 md:grid-cols-3 md:gap-2 lg:gap-3 text-center md:py-6 lg:py-10">
+            <div className="grid grid-cols-2 md:grid-cols-3 md:gap-2 lg:gap-3 text-center md:py-5 lg:py-8">
               <div className="w-full card-sd rounded-[9x]">
                 <Image
                   src={work1}
@@ -185,8 +185,8 @@ const Home = () => {
                 />
                 <div className="text-center py-3">
                   <h4 className="lg:text-base md:text-sm py-2">Highly trained Staff</h4>
-                  <p className="lg:text-sm md:text-xs text-black">
-                    We hire only highly trained staff <br /> for best results.
+                  <p className="lg:text-sm md:text-xs md:px-1 text-black">
+                    We hire only highly trained staff for best results.
                   </p>
                 </div>
               </div>
@@ -200,8 +200,8 @@ const Home = () => {
                 />
                 <div className="text-center py-3">
                   <h4 className="lg:text-base md:text-sm py-2">Competitive Pricing</h4>
-                  <p className="lg:text-sm md:text-xs text-black">
-                    We quote the best price possible <br /> in the industry..
+                  <p className="lg:text-sm md:text-xs md:px-1 text-black">
+                    We quote the best price possible in the industry..
                   </p>
                 </div>
               </div>
@@ -215,8 +215,8 @@ const Home = () => {
                 />
                 <div className="text-center py-3">
                   <h4 className="lg:text-base md:text-sm py-2">Satisfaction Guaranteed</h4>
-                  <p className="lg:text-sm md:text-xs text-black">
-                    100% Customer satisfaction is <br /> our sole motto.
+                  <p className="lg:text-sm md:text-xs md:px-1 text-black">
+                    100% Customer satisfaction is our sole motto.
                   </p>
                 </div>
               </div>
@@ -383,7 +383,7 @@ const Home = () => {
      
 
       {/* Our Location Section starts */}
-      <div className="py-20">
+      <div className="lg:py-16 md:py-6">
         <LocationMap />
       </div>
       {/* Our Location Section ends */}

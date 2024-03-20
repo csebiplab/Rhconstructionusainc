@@ -59,7 +59,7 @@ export function FAQ() {
 
   return (
    <div className="custom-container">
-    <div className="md:flex justify-between items-center py-6 md:py-12 gap-10 lg:px-[61px]">
+    <div className="md:flex justify-between items-center md:py-6 lg:py-12 lg:gap-10 md:gap-3 lg:px-[61px]">
     <div>
     <Image
             src={build}
@@ -70,7 +70,7 @@ export function FAQ() {
           />
     </div>
     <div className="mx-auto">
-      <div className="text-center mb-4">
+      <div className="text-center md:mb-2 lg:mb-4">
       <Image
             src={faq}
             width={70}
@@ -78,7 +78,7 @@ export function FAQ() {
             alt="faq"
             className="my-2"
           />
-        <h1 className="lg:text-4xl text-lg py-4 text-start font-semibold">
+        <h1 className="lg:leading-10 lg:text-4xl text-lg md:py-2 lg:py-4">
         FAQ FOR RH CONSTRUCTION USA INC
         </h1>
       </div>
