@@ -5,7 +5,7 @@ const ProjectElevate = () => {
     return (
         <div className="section-bg">
           <div className="custom-container">
-      <div className="md:flex section-bg items-center">
+      <div className="md:flex section-bg items-center lg:px-0 md:px-4">
         <div className="md:w-[55%]">
           <Image
             src={elevate}

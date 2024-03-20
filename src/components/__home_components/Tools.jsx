@@ -4,7 +4,7 @@ import Image from "next/image";
 const Tools = () => {
     return (
    <div className="custom-container">
-         <div className="md:flex lg:px-[61px] justify-between md:py-6 lg:py-16 lg:gap-10 md:gap-3">
+         <div className="md:flex lg:px-[61px] md:px-4 justify-between md:py-6 lg:py-16 lg:gap-10 md:gap-3">
         
         <div className="">
           <Image

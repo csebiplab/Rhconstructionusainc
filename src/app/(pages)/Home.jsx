@@ -156,14 +156,14 @@ const Home = () => {
 
       {/* ================== R H CONSTRUCTION Section ===== */}
       <div className="lg:py-[83px] md:mt-2 md:py-4 custom-container">
-        <div className="md:flex lg:px-[61px] md:[px-2%] justify-between lg:gap-10 md:gap-3">
-          <div>
-            <Image src={work} width={608} height={608} alt="" layout="responsive" className="md:w-full" />
+        <div className="md:flex lg:px-[61px]  md:px-4 lg:gap-10 md:gap-2">
+          <div className="2xl:w-[608px] 2xl:h-[608px]">
+            <Image src={work} width={608} height={608} alt="" layout="responsive" className="w-full h-full 2xl:w-[608px] 2xl:h-[608px] mx-auto" />
           </div>
           <div>
-            <Image src={title} width={298} height={18} alt="" />
-            <h1 className="lg:leading-10 mb-1 md:py-1 lg:py-4 md:text-lg lg:text-4xl">R H Construction USA, Inc.</h1>
-            <p className="max-w-lg xl:max-w-5xl lg:text-lg md:text-sm  text-black mx-auto md:mt-2 lg:mt-3">
+            <Image src={title} width={298} height={18} className="lg:m-0 md:m-auto" alt="" />
+            <h1 className="lg:leading-10 mb-1 md:py-1 lg:py-4 md:text-lg lg:text-4xl lg:text-start md:text-center">R H Construction USA, Inc.</h1>
+            <p className="max-w-lg xl:max-w-5xl lg:text-lg md:text-xs  text-black mx-auto md:mt-2 text-start  lg:mt-3">
               RH Construction USA Inc. stands out as one of the leading
               construction companies in Brooklyn, embodying a commitment to
               excellence and innovation in the industry. With a proven track

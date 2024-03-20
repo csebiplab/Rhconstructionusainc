@@ -7,7 +7,7 @@ const Review = () => {
     return (
        <div className="section-bg">
         <div className="custom-container">
-         <div className="lg:py-16 py-6 lg:px-[61px]">
+         <div className="lg:py-16 py-6 lg:px-[61px] md:px-4">
             <div className="text-center">
             <Image
             src={reviewLogo}

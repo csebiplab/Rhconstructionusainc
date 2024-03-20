@@ -79,21 +79,21 @@ export default function OurServices() {
 
   return (
     <div className=" bg-[#FFB7031A]">
-      <div className='custom-container lg:py-28 py-14'>
-        <div className="grid grid-cols-1  lg:grid-cols-2 lg:gap-40 gap-4  p-5 items-end text-sm ">
+      <div className='custom-container lg:py-28 md:py-6'>
+        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-40 gap-4 lg:p-5 md:p-3 items-end text-sm">
 
           <div className="  ">
             <div className=' flex items-center pb-2'>
               <Image src={servicesIcon} className=' h-5 w-10 mr-2'></Image>
               <p>Services</p>
             </div>
-            <h2 className=' lg:text-[36px] text-[20px]'>Our Services</h2>
-            <p className=' lg:py-8 py-6 lg:text-[20px] text-[14px] leading-10'>
+            <h2 className=' lg:text-[36px] md:text-[20px]'>Our Services</h2>
+            <p className=' lg:py-8 md:py-3 lg:text-[20px] text-[14px] lg:leading-10'>
               <b>Enjoy a stress-free construction service with our unique build process.RH Construction USA,</b> is your trusted partner for top-notch construction services, dedicated to bringing your dream project to life. From conceptualization to completion, we prioritize quality craftsmanship, timely delivery, and cost-effective solutions to meet and exceed your expectations.</p>
           </div>
 
           <div className=" ">
-            <p className=' lg:py-10 py-5 items-center lg:text-[20px] text-[14px] leading-10'>
+            <p className=' lg:py-10 md:py-3 items-center lg:text-[20px] md:text-[14px] lg:leading-10'>
               At our company, we understand that your dream project is a significant investment, and we take pride in delivering unparalleled construction service that reflects our unwavering commitment to customer satisfaction. Whether you're envisioning a residential masterpiece or a commercial endeavor, our experienced team is equipped to handle a diverse range of projects.
             </p>
           </div>
@@ -102,7 +102,7 @@ export default function OurServices() {
 
 
         {/* taggle button */}
-        <div className='flex justify-center items-center py-2 mb-12 mx-2 '>
+        <div className='flex justify-center items-center py-2 md:mb-6 lg:mb-12 mx-2 lg:px-0 md:px-4'>
           {/* <Switcher11></Switcher11> */}
           <label className='themeSwitcherTwo shadow-card relative inline-flex cursor-pointer select-none items-center justify-center rounded-3xl bg-white '>
             <input
