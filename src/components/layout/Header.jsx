@@ -112,7 +112,7 @@ function OurServiceManu() {
             className="font-medium text-lg"
           >
             <ListItem
-              className="flex items-center gap-2 rounded-full py-1  pr-4 text-[18px] text-black font-medium"
+              className="flex items-center gap-2 rounded-full py-1  pr-4 text-sm md:text-[14px] xl:text-base 2xl:text-[18px] text-black font-medium"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -169,27 +169,29 @@ function OurServiceManu() {
 
 function NavList() {
   return (
-    <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1 gap-1 border-0 outline-none">
+    <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row  border-0 outline-none">
       <Typography
         as={Link}
         href="/about-rh-constraction"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-[18px] text-black"
+        className="font-medium rounded-full text-sm lg:text-[14px] xl:text-base 2xl:text-[18px] text-black"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4 rounded-full hover:bg-primary px-4">
+        <ListItem className="flex items-center rounded-full hover:bg-primary px-1 lg:px-2 2xl:px-4">
           About
         </ListItem>
       </Typography>
-      <OurServiceManu />
+      <div className="mt-[6px]">
+        <OurServiceManu />
+      </div>
       <Typography
         as={Link}
         href="/customer-reviews"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-[18px] text-black"
+        className="font-medium rounded-full text-sm md:text-[14px] xl:text-base 2xl:text-[18px] text-black"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4 rounded-full hover:bg-primary px-4">
+        <ListItem className="flex items-center rounded-full hover:bg-primary px-1 lg:px-2 2xl:px-4">
           Customer Reviews
         </ListItem>
       </Typography>
@@ -198,9 +200,9 @@ function NavList() {
         href="/blogs"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-[18px] text-black"
+        className="font-medium rounded-full text-sm md:text-[14px] xl:text-base 2xl:text-[18px] text-black"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4 rounded-full hover:bg-primary px-4">
+        <ListItem className="flex items-center rounded-full hover:bg-primary px-1 lg:px-2 2xl:px-4">
           Blogs
         </ListItem>
       </Typography>
@@ -209,9 +211,9 @@ function NavList() {
         href="/our-projects"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-[18px] text-black"
+        className="font-medium rounded-full text-sm md:text-[14px] xl:text-base 2xl:text-[18px] text-black"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4 rounded-full hover:bg-primary px-4">
+        <ListItem className="flex items-center rounded-full hover:bg-primary px-1 lg:px-2 2xl:px-4">
           Projects
         </ListItem>
       </Typography>
@@ -221,9 +223,9 @@ function NavList() {
         href="/contact"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-[18px] text-black"
+        className="font-medium rounded-full text-sm md:text-[14px] xl:text-base 2xl:text-[18px] text-black"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4 rounded-full hover:bg-primary px-4">
+        <ListItem className="flex items-center rounded-full hover:bg-primary px-1 lg:px-2 2xl:px-4">
           Contact
         </ListItem>
       </Typography>
@@ -264,7 +266,7 @@ export function Header() {
     <>
       <header className="custom-container">
         <div className="bg-dark-400 !text-white">
-          <div className="container flex justify-between items-center py-1 flex-wrap gap-2">
+          <div className="px-5 md:px-12 2xl:px-24 flex justify-between items-center py-1 flex-wrap gap-2">
             <a href="/" className="text-white font-medium hidden md:block">
               Best Construction Company Brooklyn
             </a>
@@ -340,7 +342,7 @@ export function Header() {
         </div>
 
         <div className="bg-gray-300">
-          <Navbar className="mx-auto px-5 md:px-24 rounded-none py-2 shadow-none max-w-full">
+          <Navbar className="mx-auto px-5 md:px-12 2xl:px-24 rounded-none py-2 shadow-none max-w-full">
             <div className="flex items-center justify-between text-blue-gray-900">
               <Link href="/" className="mr-4 cursor-pointer">
                 <img
@@ -357,15 +359,15 @@ export function Header() {
                   src="/assets/images/phone-call.png"
                   width={38}
                   height={38}
-                  className="!w-[38px] !h-[38px]"
+                  className="w-7 h-7 2xl:w-[38px] 2xl:h-[38px]"
                 />
                 <div>
-                  <span className="text-[18px] text-dark block">
+                  <span className="text-sm md:text-[14px] xl:text-base 2xl:text-[18px] text-dark block">
                     Quick Contact
                   </span>
                   <Link
                     href={`tel:+1 (646) 683-4612`}
-                    className="text-[25px] font-bold text-dark"
+                    className="text-xs md:text-sm 2xl:text-[25px] font-bold text-dark"
                   >
                     +1 (646) 683-4612
                   </Link>
