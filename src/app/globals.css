@@ -51,7 +51,7 @@ img {
 
 @layer utilities {
   .container {
-    @apply max-w-6xl px-3 mx-auto;
+    @apply max-w-screen-5xl px-3 md:px-5 lg:px-10 xl:px-20 2xl:px-28 3xl:px-40 4xl:px-52 5xl:px-[285px] mx-auto;
   }
   .container-fluid {
     @apply w-full px-4 mx-auto;
@@ -83,9 +83,9 @@ img {
   transition-timing-function: linear;
 }
 
-@media only screen and (min-width: 1536px) {
+@media only screen and (min-width: 1920px) {
   .custom-container {
-    max-width: 1536px;
+    max-width: 1920px;
     margin: 0 auto;
   }
 }
