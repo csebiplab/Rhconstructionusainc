@@ -9,7 +9,7 @@ import Image from "next/image";
 
 const Brand = () => {
   return (
-   <div className="custom-container">
+   <div className="container">
      <div className="brands pt-4 grid grid-cols-2 md:grid-cols-7 lg:gap-3 md:gap-2">
       <div className="brand w-full h-[174px] border-[1px] band rounded-[15px] lg:px-2 md:px-1 lg:py-[14px] md:py-[3px] text-center">
         <Image

@@ -7,8 +7,8 @@ import { FaChevronRight } from "react-icons/fa6";
 const AboutUs = () => {
   return (
    <div className="section-bg">
-     <div className="custom-container">
-      <div className="md:flex justify-between md:gap-3 lg:gap-10 lg:px-[61px] md:px-4 md:pt-3 lg:pt-10">
+     <div className="container">
+      <div className="md:flex md:gap-2 lg:gap-3 md:pt-3 lg:pt-8">
       <div className="">
         <Image
           src={about}
