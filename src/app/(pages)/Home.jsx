@@ -149,15 +149,16 @@ const Home = () => {
 
             <Achievement />
           </div>
-          <Brand />
+          
         </div>
+        <Brand />
       </div>
 
 
       {/* ================== R H CONSTRUCTION Section ===== */}
-      <div className="lg:py-[60px] md:mt-4 md:py-4 container bg-red-600">
+      <div className="lg:py-[55px] md:py-6 container">
         <div className="md:flex lg:gap-10 md:gap-2">
-          <div className="md:w-[608px] md:h-[608px]">
+          <div className="md:w-[608px]">
             <Image src={work} width={608} height={608} alt="" layout="responsive" className="w-full h-full md:w-[608px] md:h-[608px] mx-auto" />
           </div>
           <div>
@@ -246,7 +247,7 @@ const Home = () => {
       <Review/>
 
       {/* ================ Gallery ============== */}
-      <div className="py-16 custom-container">
+      <div className="md:py-6 lg:py-[55px] custom-container">
         <GallerySection />
       </div>
 
@@ -383,7 +384,7 @@ const Home = () => {
      
 
       {/* Our Location Section starts */}
-      <div className="lg:py-16 md:py-6">
+      <div className="md:py-6 lg:py-[55px]">
         <LocationMap />
       </div>
       {/* Our Location Section ends */}

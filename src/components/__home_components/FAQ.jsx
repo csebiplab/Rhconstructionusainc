@@ -58,8 +58,8 @@ export function FAQ() {
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
   return (
-   <div className="custom-container">
-    <div className="md:flex justify-between items-center md:py-6 lg:py-12 lg:gap-10 md:gap-3 lg:px-[61px] md:px-4">
+   <div className="container">
+    <div className="md:flex items-center md:py-6 lg:py-[55px] lg:gap-10 md:gap-3">
     <div>
     <Image
             src={build}

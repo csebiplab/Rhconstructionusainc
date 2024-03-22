@@ -6,8 +6,8 @@ import working from "@/components/__home_components/Images/Working.png";
 import Image from "next/image";
 const WorkingProcess = () => {
   return (
-    <div className="custom-container">
-    <div className="lg:py-16 md:py-6 lg:px-[61px] md:px-4">
+    <div className="container">
+    <div className="md:py-6 lg:py-[55px]">
       <div>
         <Image
           src={working}

@@ -9,9 +9,9 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 const ProjectCost = () => {
     return (
         <div className="section-bg">
-          <div className="custom-container">
+          <div className="container">
             
-            <div className="md:flex md:px-4 lg:px-[61px] justify-between md:py-6 lg:py-16 lg:gap-16">
+            <div className="md:flex md:py-6 lg:py-[55px] lg:gap-10 md:gap-3">
             
             <div>
             <Image
