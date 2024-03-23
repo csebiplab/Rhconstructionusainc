@@ -8,8 +8,8 @@ import Image from "next/image";
 const Constructor = () => {
     return (
        <div className="section-bg">
-        <div className="custom-container">
-         <div className="lg:py-16 md:py-6 lg:px-[61] md:px-4">
+        <div className="container">
+         <div className="md:py-6 lg:py-[55px]">
             <div className="text-center">
             <Image
             src={cons}

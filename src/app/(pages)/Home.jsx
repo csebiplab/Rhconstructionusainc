@@ -92,7 +92,7 @@ const Home = () => {
 
       <div className="lg:py-[15px] py-4">
         <div className="lg:w-[87.95%] md:w-full mx-auto">
-          <div className="lg:w-[980px] md:w-full mx-auto">
+          <div className="lg:w-[980px] md:w-full mx-auto container">
             <div className="rating lg:p-6 md:p-4 rounded-[8px]">
               <h2 className="lg:text-2xl md:text-lg lg:leading-[36px] mb-3">Ratings</h2>
               <div className="flex justify-between lg:gap-5 md:gap-3">
@@ -149,20 +149,21 @@ const Home = () => {
 
             <Achievement />
           </div>
-          <Brand />
+          
         </div>
+        <Brand />
       </div>
 
 
       {/* ================== R H CONSTRUCTION Section ===== */}
-      <div className="lg:py-[83px] md:mt-2 md:py-4 custom-container">
-        <div className="md:flex lg:px-[61px]  md:px-4 lg:gap-10 md:gap-2">
-          <div className="2xl:w-[608px] 2xl:h-[608px]">
-            <Image src={work} width={608} height={608} alt="" layout="responsive" className="w-full h-full 2xl:w-[608px] 2xl:h-[608px] mx-auto" />
+      <div className="lg:py-[55px] md:py-6 container">
+        <div className="md:flex lg:gap-10 md:gap-2">
+          <div className="md:w-[608px]">
+            <Image src={work} width={608} height={608} alt="" layout="responsive" className="w-full h-full md:w-[608px] md:h-[608px] mx-auto" />
           </div>
           <div>
             <Image src={title} width={298} height={18} className="lg:m-0 md:m-auto" alt="" />
-            <h1 className="lg:leading-10 mb-1 md:py-1 lg:py-4 md:text-lg lg:text-4xl lg:text-start md:text-center">R H Construction USA, Inc.</h1>
+            <h1 className="lg:leading-10 mb-1 lg:py-4 md:text-lg lg:text-4xl lg:text-start md:text-center">R H Construction USA, Inc.</h1>
             <p className="max-w-lg xl:max-w-5xl lg:text-lg md:text-xs  text-black mx-auto md:mt-2 text-start  lg:mt-3">
               RH Construction USA Inc. stands out as one of the leading
               construction companies in Brooklyn, embodying a commitment to
@@ -174,7 +175,7 @@ const Home = () => {
             </p>
 
             {/* ============== Image Card =============== */}
-            <div className="grid grid-cols-2 md:grid-cols-3 md:gap-2 lg:gap-3 text-center md:py-5 lg:py-8">
+            <div className="grid grid-cols-2 md:grid-cols-3 md:gap-2 lg:gap-3 text-center md:pt-4 lg:pt-6">
               <div className="w-full card-sd rounded-[9x]">
                 <Image
                   src={work1}
@@ -246,7 +247,7 @@ const Home = () => {
       <Review/>
 
       {/* ================ Gallery ============== */}
-      <div className="py-16 custom-container">
+      <div className="md:py-6 lg:py-[55px] custom-container">
         <GallerySection />
       </div>
 
@@ -383,7 +384,7 @@ const Home = () => {
      
 
       {/* Our Location Section starts */}
-      <div className="lg:py-16 md:py-6">
+      <div className="md:py-6 lg:py-[55px]">
         <LocationMap />
       </div>
       {/* Our Location Section ends */}

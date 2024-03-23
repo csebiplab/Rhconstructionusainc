@@ -6,8 +6,8 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 const Review = () => {
     return (
        <div className="section-bg">
-        <div className="custom-container">
-         <div className="lg:py-16 py-6 lg:px-[61px] md:px-4">
+        <div className="container">
+         <div className="md:py-6 lg:py-[55px]">
             <div className="text-center">
             <Image
             src={reviewLogo}

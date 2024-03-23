@@ -5,8 +5,8 @@ import Image from "next/image";
 const ExperiencedContractor = () => {
     return (
    <div className="section-bg">
-    <div className="custom-container">
-         <div className="md:flex lg:px-[61px] md:px-4 justify-between md:py-6 lg:py-12 lg:gap-10 md:gap-3">
+    <div className="container">
+         <div className="md:flex  justify-between md:py-6 lg:py-[55px] lg:gap-10 md:gap-3">
             <div>
         <Image src={constructor} width={900} height={880} className="md:w-full lg:w-[900px]" alt="constructor" />
       </div>

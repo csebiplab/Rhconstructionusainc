@@ -5,12 +5,12 @@ const ProjectElevate = () => {
     return (
         <div className="section-bg">
           <div className="custom-container">
-      <div className="md:flex section-bg items-center lg:px-0 md:px-4">
+      <div className="md:flex items-center">
         <div className="md:w-[55%]">
           <Image
             src={elevate}
             width={807}
-            height={783}
+            height={710}
             layout="responsive"
             alt="elevate"
             className="w-full flex-shrink-0"
@@ -24,12 +24,12 @@ const ProjectElevate = () => {
                 width={144}
                 height={18.02}
                 alt="trust"
-                className="my-2"
+                className="my-3"
               />
               <h2 className="lg:leading-10 mb-1 py-2 text-base md:text-lg lg:text-3xl">
               ELEVATE YOUR CONSTRUCTION PROJECTS WITH RH CONSTRUCTION USA INC
               </h2>
-              <p className="max-w-lg xl:max-w-5xl lg:text-lg md:text-sm  text-black my-3">
+              <p className="max-w-lg xl:max-w-5xl lg:text-lg md:text-sm  text-black my-3 lg:pb-3">
               Elevate your construction projects to new heights with RH Construction USA Inc., one of the best construction companies in Brooklyn. Renowned for its unwavering commitment to excellence, our company brings a wealth of experience and expertise to every project undertaken. From residential developments to commercial ventures, the company's dedication to quality craftsmanship and innovative solutions ensures that each endeavor is executed with precision and professionalism. With a team of skilled professionals and a reputation for delivering projects on time and within budget, our construction company stands as a reliable partner for those seeking to elevate the standard of their construction endeavors.
               </p>
             </div>

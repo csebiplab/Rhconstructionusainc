@@ -8,8 +8,8 @@ export default function ContactHome() {
   return (
     <div className="  bg-yellow-50  ">
 
-      <section className='custom-container' >
-        <div className="mx-auto px-4  sm:px-6 lg:px-8">
+      <section className='container' >
+        <div className="mx-auto md:pt-6 lg:pt-[55px]">
           <div className="grid grid-cols-1 gap-x-16 lg:grid-cols-6 items-center ">
 
             <div className="lg:col-span-3 lg:py-20  lg:px-5 px-2 py-2 bg-yellow-700">

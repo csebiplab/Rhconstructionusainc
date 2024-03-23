@@ -92,7 +92,7 @@ const galImgs2 = [
 
 export default function GallerySection() {
     return (
-      <div className="lg:px-[61px] md:px-4">
+      <div className="">
         <Image
                 src={gallery}
                 width={90}

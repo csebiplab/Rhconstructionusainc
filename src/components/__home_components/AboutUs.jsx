@@ -7,8 +7,8 @@ import { FaChevronRight } from "react-icons/fa6";
 const AboutUs = () => {
   return (
    <div className="section-bg">
-     <div className="custom-container">
-      <div className="md:flex justify-between md:gap-3 lg:gap-10 lg:px-[61px] md:px-4 md:pt-3 lg:pt-10">
+     <div className="container">
+      <div className="md:flex md:gap-2 lg:gap-3 md:pt-6 lg:pt-[55px]">
       <div className="">
         <Image
           src={about}
@@ -41,7 +41,7 @@ const AboutUs = () => {
       </div>
     </div>
     {/* ============= */}
-    <div className="md:flex md:py-3 lg:py-4 lg:pb-20 md:pb-8 items-center flex-wrap md:mt-1 lg:mt-4 lg:gap-8 md:gap-3 md:px-4 lg:px-[61px]">
+    <div className="md:flex md:py-3 lg:py-4 lg:pb-16 md:pb-8 items-center flex-wrap md:mt-1 lg:mt-4 lg:gap-8 md:gap-3 md:px-4 lg:px-[61px]">
           <div>
             <Button className="rounded-md bg-primary hover:bg-gray-900 text-black hover:text-white md:text-sm lg:text-lg font-semibold tracking-wider capitalize flex items-center gap-2">
                <span>Request A Quote</span><span><FaChevronRight /></span>
