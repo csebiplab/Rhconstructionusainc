@@ -34,7 +34,7 @@ const Hero = () => {
             alt="arrow left"
             className="md:w-[3%] md:h-[25%] absolute -bottom-[8%] left-0 rotate-0 hidden md:block"
           />
-          <div className="hero-right relative border border-red-500 hidden md:block">
+          <div className="hero-right relative hidden md:block">
             <Image
               width={820}
               height={825}
