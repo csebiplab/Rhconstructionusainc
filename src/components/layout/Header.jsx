@@ -264,9 +264,9 @@ export function Header() {
   if (pathname.startsWith("/admin")) return null;
   return (
     <>
-      <header className="custom-container">
-        <div className="bg-dark-400 !text-white">
-          <div className="px-5 md:px-12 2xl:px-24 flex justify-between items-center py-1 flex-wrap gap-2">
+      <header>
+        <div className="bg-dark-400 !text-white container hidden md:block">
+          <div className="flex justify-between items-center py-1 flex-wrap gap-2">
             <a href="/" className="text-white font-medium hidden md:block">
               Best Construction Company Brooklyn
             </a>
@@ -341,8 +341,8 @@ export function Header() {
           </div>
         </div>
 
-        <div className="bg-gray-300">
-          <Navbar className="mx-auto px-5 md:px-12 2xl:px-24 rounded-none py-2 shadow-none max-w-full">
+        <div className="bg-gray-300 ">
+          <Navbar className="container rounded-none py-2 shadow-none max-w-full">
             <div className="flex items-center justify-between text-blue-gray-900">
               <Link href="/" className="mr-4 cursor-pointer">
                 <img
@@ -354,7 +354,7 @@ export function Header() {
               <div className="hidden lg:block">
                 <NavList />
               </div>
-              <div className="hidden md:flex items-center gap-x-4">
+              <div className="flex items-center gap-x-4">
                 <Image
                   src="/assets/images/phone-call.png"
                   width={38}
