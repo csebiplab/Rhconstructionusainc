@@ -346,8 +346,8 @@ export function Header() {
             <div className="flex items-center justify-between text-blue-gray-900">
               <Link href="/" className="mr-4 cursor-pointer">
                 <img
-                  src="/assets/images/logo.webp"
-                  alt=""
+                  src="/assets/images/brand.png"
+                  alt="Brand RH"
                   className="w-full max-w-[140px] rounded-md "
                 />
               </Link>

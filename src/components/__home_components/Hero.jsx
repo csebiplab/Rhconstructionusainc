@@ -7,9 +7,9 @@ const Hero = () => {
     <>
       <div className="hero-section custom-container">
         <div className="md:flex items-center relative">
-          <div className="w-full md:w-[58%]">
-            <div className="md:ml-[6.3542%]">
-              <h1 className="leading-10 text-[2rem] lg:text-6xl">
+          <div className="w-full md:w-[58%] pl-3 md:pl-5 lg:pl-10 xl:pl-20 2xl:pl-28 3xl:pl-40 4xl:pl-52 5xl:pl-[285px]">
+            <div className="py-14 md:py-0 px-4 md:pl-0">
+              <h1 className="leading-10 text-xl lg:text-3xl 2xl:text-4xl 4xl:text-5xl 5xl:text-6xl">
                 General Constructor
                 <br />
                 Brooklyn
@@ -31,20 +31,20 @@ const Hero = () => {
           </div>
           <img
             src="/assets/images/Group 73.png"
-            alt=""
-            className="md:w-[3%] md:h-[25%] absolute -bottom-[8%] left-0 rotate-0"
+            alt="arrow left"
+            className="md:w-[3%] md:h-[25%] absolute -bottom-[8%] left-0 rotate-0 hidden md:block"
           />
-          <div className="hero-right relative">
+          <div className="hero-right relative border border-red-500 hidden md:block">
             <Image
               width={820}
               height={825}
               src="/assets/images/Group 21.png"
-              alt=""
+              alt="hero small image"
               className="hero-main-image mb-0"
             />
             <img
               src="/assets/images/Group 73.png"
-              alt=""
+              alt="arrow right"
               className="md:w-[7%] md:h-[25%] absolute -bottom-[8%] right-0 rotate-180"
             />
           </div>
