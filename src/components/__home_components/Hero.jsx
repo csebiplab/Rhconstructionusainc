@@ -5,7 +5,7 @@ import { FaChevronRight } from "react-icons/fa6";
 const Hero = () => {
   return (
     <>
-      <div className="hero-section">
+      <div className="hero-section custom-container">
         <div className="md:flex items-center relative">
           <div className="w-full md:w-[58%]">
             <div className="md:ml-[6.3542%]">
@@ -29,9 +29,11 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <img src="/assets/images/Group 73.png"
-            alt="" 
-            className="md:w-[3%] md:h-[25%] absolute -bottom-[8%] left-0 rotate-0"/>
+          <img
+            src="/assets/images/Group 73.png"
+            alt=""
+            className="md:w-[3%] md:h-[25%] absolute -bottom-[8%] left-0 rotate-0"
+          />
           <div className="hero-right relative">
             <Image
               width={820}
