@@ -1,28 +1,23 @@
 "use client";
 import vector from "@/components/__home_components/Images/Vector.png";
+import { Rating } from "@material-tailwind/react";
 import Achievement from "./Achievement";
 import Brand from "./Brand";
-import Rating from "./Rating";
 import RatingProgressBar from "./RatingProgressBar";
-
-
 const RatingComponent = () => {
     return (
-        <div>
         <div className="lg:py-[15px] py-4">
         <div className="lg:w-[87.95%] md:w-full mx-auto">
           <div className="lg:w-[980px] md:w-full mx-auto container">
-            <div className="rating lg:p-6 md:p-4 p-3 rounded-[8px]">
-              <h2 className="lg:text-2xl text-base md:text-lg lg:leading-[36px] mb-3">Ratings</h2>
-              <div className="md:flex justify-between block lg:gap-5 md:gap-3">
+            <div className="rating lg:p-6 md:p-4 rounded-[8px]">
+              <h2 className="lg:text-2xl md:text-lg lg:leading-[36px] mb-3">Ratings</h2>
+              <div className="flex justify-between lg:gap-5 md:gap-3">
                 <div className="md:w-[260px]">
                   <div>
-                   <div className="md:block xs:flex xs:items-center">
-                   <div className="lg:w-[60px] md:w-[35px] md:h-[35px] lg:h-[60px] md:mx-auto text-[#FAA500] lg:text-lg md:text-base font-bold text-center lg:leading-[60px] md:leading-[30px] md:border-[2px] md:border-[#DBDBDB] rounded-full ">
+                    <div className="lg:w-[60px] md:w-[35px] md:h-[35px] lg:h-[60px] mx-auto text-[#FAA500] lg:text-lg md:text-base font-bold text-center lg:leading-[60px] md:leading-[30px] border-[2px] border-[#DBDBDB] rounded-full">
                       4.9
                     </div>
                     <Rating />
-                   </div>
                     <p className="text-sm font-bold leading-[21px] text-[#1B1B1B] mt-1 text-center">
                       61 Verified Reviews*
                     </p>
@@ -39,7 +34,7 @@ const RatingComponent = () => {
                 </div>
                 <div className="w-[260px]">
                   <div>
-                    <div className="flex xs:py-[]">
+                    <div className="flex">
                       <h4 className="text-[#000] lg:text-lg md:text-base font-bold lg:mb-5 md:mb-2">
                         Highly rated for
                       </h4>
@@ -74,7 +69,6 @@ const RatingComponent = () => {
         </div>
         <Brand />
       </div>
-        </div>
     );
 };
 

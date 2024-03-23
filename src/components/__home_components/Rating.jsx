@@ -16,7 +16,7 @@ const Rating = () => {
       </span>
     );
   });
-  return <div className="flex gap-1 justify-center mt-1">{ratingStar}</div>;
+  return <div className="flex gap-1 justify-center md:mt-1">{ratingStar}</div>;
 };
 
 export default Rating;
