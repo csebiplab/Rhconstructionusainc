@@ -1,8 +1,8 @@
 "use client";
 import vector from "@/components/__home_components/Images/Vector.png";
-import { Rating } from "@material-tailwind/react";
 import Achievement from "./Achievement";
 import Brand from "./Brand";
+import Rating from "./Rating";
 import RatingProgressBar from "./RatingProgressBar";
 const RatingComponent = () => {
     return (
@@ -17,7 +17,7 @@ const RatingComponent = () => {
                     <div className="lg:w-[60px] md:w-[35px] md:h-[35px] lg:h-[60px] mx-auto text-[#FAA500] lg:text-lg md:text-base font-bold text-center lg:leading-[60px] md:leading-[30px] border-[2px] border-[#DBDBDB] rounded-full">
                       4.9
                     </div>
-                    <Rating />
+                    <Rating/>
                     <p className="text-sm font-bold leading-[21px] text-[#1B1B1B] mt-1 text-center">
                       61 Verified Reviews*
                     </p>
