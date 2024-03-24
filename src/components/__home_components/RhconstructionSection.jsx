@@ -1,9 +1,9 @@
-import Image from "next/image";
 import title from "@/components/__home_components/Images/title.png";
 import work from "@/components/__home_components/Images/work.png";
 import work1 from "@/components/__home_components/Images/work1.png";
 import work2 from "@/components/__home_components/Images/work2.png";
 import work3 from "@/components/__home_components/Images/work3.png";
+import Image from "next/image";
 
 const RhconstructionSection = () => {
   return (

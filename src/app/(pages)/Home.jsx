@@ -1,16 +1,8 @@
 "use client";
-import vector from "@/components/__home_components/Images/Vector.png";
-import { BlogCard } from "@/components/cards/Blog.Card";
-import API from "@/config/API.config";
-import { errorMessage } from "@/lib/utils";
-import { Button, Spinner } from "@material-tailwind/react";
-import useSwr from "swr";
 import "../styles/Home.css";
 // import OurCommitment from "@/components/__home_components/OurCommitment";
 // import GeneralContractor from "@/components/__home_components/GeneralContractor";
 import AboutUs from "@/components/__home_components/AboutUs";
-import Achievement from "@/components/__home_components/Achievement";
-import Brand from "@/components/__home_components/Brand";
 import Constructor from "@/components/__home_components/Constructor";
 import ExperiencedContractor from "@/components/__home_components/ExperiencedContractor";
 import { FAQ } from "@/components/__home_components/FAQ";
@@ -19,17 +11,15 @@ import Hero from "@/components/__home_components/Hero";
 import LocationMap from "@/components/__home_components/LocationMap";
 import ProjectCost from "@/components/__home_components/ProjectCost";
 import ProjectElevate from "@/components/__home_components/ProjectElevate";
-import Rating from "@/components/__home_components/Rating";
 import RatingComponent from "@/components/__home_components/RatingComponent";
-import RatingProgressBar from "@/components/__home_components/RatingProgressBar";
 import Review from "@/components/__home_components/Review";
+import RhconstructionSection from "@/components/__home_components/RhconstructionSection";
 import Right from "@/components/__home_components/Right";
 import Tools from "@/components/__home_components/Tools";
 import TrustUs from "@/components/__home_components/TrustUs";
 import WorkingProcess from "@/components/__home_components/WorkingProcess";
 import ContactHome from "@/components/__home_components/contactHome/ContactHome";
 import OurServices from "@/components/__home_components/ourServices/OurServices";
-import RhconstructionSection from "@/components/__home_components/RhconstructionSection";
 
 /*
 const HomeBlogs = () => {
