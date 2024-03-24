@@ -13,11 +13,6 @@ import ExperiencedContractor from "@/components/__home_components/ExperiencedCon
 import { FAQ } from "@/components/__home_components/FAQ";
 import GallerySection from "@/components/__home_components/GallerySection";
 import Hero from "@/components/__home_components/Hero";
-import title from "@/components/__home_components/Images/title.png";
-import work from "@/components/__home_components/Images/work.png";
-import work1 from "@/components/__home_components/Images/work1.png";
-import work2 from "@/components/__home_components/Images/work2.png";
-import work3 from "@/components/__home_components/Images/work3.png";
 import LocationMap from "@/components/__home_components/LocationMap";
 import ProjectCost from "@/components/__home_components/ProjectCost";
 import ProjectElevate from "@/components/__home_components/ProjectElevate";
@@ -29,10 +24,9 @@ import TrustUs from "@/components/__home_components/TrustUs";
 import WorkingProcess from "@/components/__home_components/WorkingProcess";
 import ContactHome from "@/components/__home_components/contactHome/ContactHome";
 import OurServices from "@/components/__home_components/ourServices/OurServices";
-import Image from "next/image";
+import RhconstructionSection from "@/components/__home_components/RhconstructionSection";
 
-
-
+/*
 const HomeBlogs = () => {
   const {
     data: blogs,
@@ -75,89 +69,19 @@ const HomeBlogs = () => {
     </section>
   );
 };
+*/
 
 const Home = () => {
   return (
     <main>
-
-
       {/* =============================== Hero Banner =========================== */}
       <Hero />
 
       {/* =============== Rating  Section================= */}
-      <RatingComponent/>
-
+      <RatingComponent />
 
       {/* ================== R H CONSTRUCTION Section ===== */}
-      <div className="lg:py-[55px] md:py-6 container">
-        <div className="md:flex lg:gap-10 md:gap-2">
-          <div className="md:w-[608px]">
-            <Image src={work} width={608} height={608} alt="" layout="responsive" className="w-full h-full md:w-[608px] md:h-[608px] mx-auto" />
-          </div>
-          <div>
-            <Image src={title} width={298} height={18} className="lg:m-0 md:m-auto" alt="" />
-            <h1 className="lg:leading-10 mb-1 lg:py-4 md:text-lg lg:text-4xl lg:text-start md:text-center">R H Construction USA, Inc.</h1>
-            <p className="max-w-lg xl:max-w-5xl lg:text-lg md:text-xs  text-black mx-auto md:mt-2 text-start  lg:mt-3">
-              RH Construction USA Inc. stands out as one of the leading
-              construction companies in Brooklyn, embodying a commitment to
-              excellence and innovation in the industry. With a proven track
-              record of successfully delivering a diverse range of construction
-              projects, the general contractor of our construction company has
-              earned a stellar reputation for its dedication to quality
-              craftsmanship and timely completion.
-            </p>
-
-            {/* ============== Image Card =============== */}
-            <div className="grid grid-cols-2 md:grid-cols-3 md:gap-2 lg:gap-3 text-center md:pt-4 lg:pt-6">
-              <div className="w-full card-sd rounded-[9x]">
-                <Image
-                  src={work1}
-                  width={221}
-                  height={148}
-                  alt=""
-                  className="w-full"
-                />
-                <div className="text-center py-3">
-                  <h4 className="lg:text-base md:text-sm py-2">Highly trained Staff</h4>
-                  <p className="lg:text-sm md:text-xs md:px-1 text-black">
-                    We hire only highly trained staff for best results.
-                  </p>
-                </div>
-              </div>
-              <div className="w-full card-sd rounded-[9x]">
-                <Image
-                  src={work2}
-                  width={221}
-                  height={148}
-                  alt=""
-                  className="w-full"
-                />
-                <div className="text-center py-3">
-                  <h4 className="lg:text-base md:text-sm py-2">Competitive Pricing</h4>
-                  <p className="lg:text-sm md:text-xs md:px-1 text-black">
-                    We quote the best price possible in the industry..
-                  </p>
-                </div>
-              </div>
-              <div className="w-full card-sd rounded-[9x]">
-                <Image
-                  src={work3}
-                  width={221}
-                  height={148}
-                  alt=""
-                  className="w-full"
-                />
-                <div className="text-center py-3">
-                  <h4 className="lg:text-base md:text-sm py-2">Satisfaction Guaranteed</h4>
-                  <p className="lg:text-sm md:text-xs md:px-1 text-black">
-                    100% Customer satisfaction is our sole motto.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <RhconstructionSection />
 
       {/* ================ about us ============== */}
       <AboutUs />
@@ -165,19 +89,17 @@ const Home = () => {
 
       <TrustUs />
 
-
       {/* =================== Working Process ============== */}
       <div>
         <OurServices></OurServices>
       </div>
       {/* =================== Working Process ============== */}
 
-
       {/* =================== Working Process ============== */}
       <WorkingProcess />
 
       {/* =================== Review Section ============== */}
-      <Review/>
+      <Review />
 
       {/* ================ Gallery ============== */}
       <div className="md:py-6 lg:py-[55px] custom-container">
@@ -267,13 +189,13 @@ const Home = () => {
       </section> */}
 
       {/* OUR SERVICE */}
-    
+
       {/* <HomeBlogs /> */}
       {/* OUR COMMITMENT Start*/}
-   
+
       {/* OUR COMMITMENT End*/}
       {/* Choosing The Right Contractor Start*/}
-     
+
       {/* Choosing The Right Contractor Start*/}
 
       {/* Our working process */}
@@ -302,7 +224,6 @@ const Home = () => {
       </section> */}
 
       {/* Our Past Projects Gallery */}
-     
 
       {/* FAQ ACCORDION starts */}
       {/* <section className="py-20 container">
@@ -311,10 +232,8 @@ const Home = () => {
       {/* FAQ ACCORDION ends */}
 
       {/* Construction Project Section Starts */}
-   
-      {/* Construction Project Section Ends */}
 
-     
+      {/* Construction Project Section Ends */}
 
       {/* Our Location Section starts */}
       <div className="md:py-6 lg:py-[55px]">
