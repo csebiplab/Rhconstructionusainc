@@ -77,7 +77,7 @@ const RatingComponent = () => {
                 *Reviews imported from Google have not been individually
                 verified by HomeAdvisor.
               </p>
-              <div className="block md:hidden w-[132px]">
+              <div className="block md:hidden">
                 <div>
                   <div className="flex items-center">
                     <h4 className="text-[#000] text-[12px] md:text-base font-bold lg:mb-5 md:mb-2">
@@ -85,17 +85,21 @@ const RatingComponent = () => {
                     </h4>
                     <img src={vector.src} className="w-[10px] h-[11px] ms-3" />
                   </div>
-                  <div className="flex my-[15px] gap-2">
-                    <h5 className="w-[68px] border-2 bg-[#EAEAEA] font-semibold text-[#000] text-[8px] px-[19px] py-[5px]">
+                  <div className="flex my-[15px] gap-[8px]">
+                    <div className="w-[68px] h-[24px] border-2 bg-[#EAEAEA] py-[5px] px-[19px]">
+                    <h5 className="font-semibold text-[#000] text-[8px]  leading-[12px] text-center">
                       Quality
                     </h5>
-                    <h5 className="w-[56px] border-2 bg-[#EAEAEA] font-semibold text-[#000] text-[8px] px-[15px] py-5px] ">
-                      Value
+                    </div>
+                    <div className="w-[56px] h-[24px] border-2 bg-[#EAEAEA] py-[5px] px-[19px]">
+                    <h5 className="font-semibold text-[#000] text-[8px]  leading-[12px] text-center">
+                    Value
                     </h5>
+                    </div>
                   </div>
-                  <h5 className="w-[132px] border-2 bg-[#EAEAEA] text-[#000] font-semibold text-[8px] px-[31px] py-[5px] ">
-                    Customer Service
-                  </h5>
+                  <div className="w-[132px] h-[24px] border-2 bg-[#EAEAEA] ">
+                   <h5 className="text-[#000] font-semibold text-[8px] py-[5px] px-[32px] text-center leading-[12px]"> Customer Service</h5>
+                  </div>
                 </div>
               </div>
 
