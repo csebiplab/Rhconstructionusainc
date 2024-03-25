@@ -18,7 +18,7 @@ const Constructor = () => {
             alt="cons"
             className="my-2 mx-auto"
           />
-          <h2 className="lg:leading-10 lg:text-4xl md:text-lg md:py-2 lg:py-4">
+          <h2 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-center">
           WHAT TO CONSIDER FIRST WHEN YOU HIRE THE BEST CONTRACTORS
           </h2>
             </div>
