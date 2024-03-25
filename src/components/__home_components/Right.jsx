@@ -12,7 +12,7 @@ const Right = () => {
           width={199}
           height={18.02}
           alt="right"
-          className="md:mt-3 md:mb-2 mb-1 mt-[24px]"
+          className="md:mt-2 md:mb-2 mb-1 mt-[26px]"
         />
         </div>
         <h2 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-center md:text-start">
