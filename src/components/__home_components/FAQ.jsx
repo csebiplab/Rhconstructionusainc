@@ -58,15 +58,15 @@ export function FAQ() {
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
   return (
-   <div className="container">
+   <div className="py-9 md:py-10 lg:py-12 5xl:py-[120px] container">
     <div className="md:flex items-center md:py-6 lg:py-[55px] lg:gap-10 md:gap-3">
     <div>
     <Image
             src={build}
-            width={572}
-            height={1098}
+            width={478}
+            height={717}
             alt="build"
-            className="my-2"
+            className="my-2 w-full h-full md:w-[478px] md:h-[717px]"
           />
     </div>
     <div className="mx-auto">
@@ -76,9 +76,9 @@ export function FAQ() {
             width={70}
             height={18.02}
             alt="faq"
-            className="my-2"
+            className="my-2 md:mt-0 mt-[26px]"
           />
-        <h1 className="lg:leading-10 lg:text-4xl text-start text-lg md:py-2 lg:py-4">
+        <h1 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-start">
         FAQ FOR RH CONSTRUCTION USA INC
         </h1>
       </div>
