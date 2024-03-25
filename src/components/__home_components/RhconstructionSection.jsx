@@ -30,7 +30,7 @@ const RhconstructionSection = () => {
           <h1 className="lg:leading-10 mb-1 mt-2 md:mt-0 lg:py-4 text-lg lg:text-4xl text-start">
             R H Construction USA, Inc.
           </h1>
-          <p className="lg:text-[16px] md:text-xs xs:text-[12px] text-black mx-auto text-start mt-[10px] md:mt-3 lg:mt-3 text-[12px] leading-[208%] lg:leading-[250%]">
+          <p className="md:text-[16px] text-black mx-auto text-start mt-[10px] md:mt-3 text-[12px] leading-[208%] lg:leading-[250%]">
             RH Construction USA Inc. stands out as one of the leading
             construction companies in Brooklyn, embodying a commitment to
             excellence and innovation in the industry. With a proven track
