@@ -1,9 +1,4 @@
 "use client";
-import { BlogCard } from "@/components/cards/Blog.Card";
-import API from "@/config/API.config";
-import { errorMessage } from "@/lib/utils";
-import { Button, Spinner } from "@material-tailwind/react";
-import useSwr from "swr";
 import "../styles/Home.css";
 // import OurCommitment from "@/components/__home_components/OurCommitment";
 // import GeneralContractor from "@/components/__home_components/GeneralContractor";
@@ -18,13 +13,13 @@ import ProjectCost from "@/components/__home_components/ProjectCost";
 import ProjectElevate from "@/components/__home_components/ProjectElevate";
 import RatingComponent from "@/components/__home_components/RatingComponent";
 import Review from "@/components/__home_components/Review";
+import RhconstructionSection from "@/components/__home_components/RhconstructionSection";
 import Right from "@/components/__home_components/Right";
 import Tools from "@/components/__home_components/Tools";
 import TrustUs from "@/components/__home_components/TrustUs";
 import WorkingProcess from "@/components/__home_components/WorkingProcess";
 import ContactHome from "@/components/__home_components/contactHome/ContactHome";
 import OurServices from "@/components/__home_components/ourServices/OurServices";
-import RhconstructionSection from "@/components/__home_components/RhconstructionSection";
 
 /*
 const HomeBlogs = () => {

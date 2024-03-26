@@ -4,7 +4,7 @@ import Image from "next/image";
 const TrustUs = () => {
   return (
     <div className="custom-container">
-      <div className="md:flex items-center md:py-6 lg:py-[55px]">
+      <div className="md:flex items-center py-[9px] md:py-6 lg:py-[55px]">
         <div className="md:w-[55%]">
           <Image
             src={inspector}
@@ -16,7 +16,7 @@ const TrustUs = () => {
           />
         </div>
         <div className="md:w-[45%]">
-          <div className="flex w-full lg:my-2">
+          <div className="flex w-full py-[9px] mt-2 md:mt-0 md:py-0 lg:my-2">
             <div className="w-full md:-ml-[80px] rounded-[15px] bg-white lg:p-4 md:p-2 my-class">
               <Image
                 src={trust}
@@ -25,10 +25,10 @@ const TrustUs = () => {
                 alt="trust"
                 className="my-1"
               />
-              <h2 className="lg:leading-10 py-2 text-base md:text-lg lg:text-3xl">
+              <h2 className="lg:leading-10 py-2 text-[18px] leading-normal md:text-lg lg:text-3xl">
                 TRUSTED GENERAL CONTRACTOR IN BROOKLYN
               </h2>
-              <p className="max-w-lg xl:max-w-5xl lg:text-lg md:text-sm  text-black my-2">
+              <p className="max-w-lg xl:max-w-5xl text-[12px] lg:text-lg md:text-sm  text-black my-2">
                 Since 2009, RH Construction USA Inc. has been dedicated to
                 delivering excellence in construction services, boasting over 15
                 years of expertise in home renovations, bathroom and kitchen

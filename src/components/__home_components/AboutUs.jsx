@@ -22,7 +22,7 @@ const AboutUs = () => {
             <h2 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-center md:text-start">
               ABOUT OUR GENERAL CONTRACTOR COMPANY
             </h2>
-            <p className="text-base leading-[208%] lg:leading-[250%] text-black text-center md:text-start">
+            <p className="md:text-base text-[12px] leading-[208%] lg:leading-[250%] text-black text-center md:text-start">
               Since 2009, RH Construction USA Inc. has been dedicated to
               delivering excellence in construction services, boasting over 15
               years of expertise in home renovations, bathroom and kitchen

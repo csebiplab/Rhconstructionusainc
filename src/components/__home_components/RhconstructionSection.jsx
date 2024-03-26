@@ -1,9 +1,9 @@
-import Image from "next/image";
 import title from "@/components/__home_components/Images/title.png";
 import work from "@/components/__home_components/Images/work.png";
 import work1 from "@/components/__home_components/Images/work1.png";
 import work2 from "@/components/__home_components/Images/work2.png";
 import work3 from "@/components/__home_components/Images/work3.png";
+import Image from "next/image";
 
 const RhconstructionSection = () => {
   return (
@@ -27,10 +27,10 @@ const RhconstructionSection = () => {
             className="lg:m-0 md:m-auto"
             alt="RH Construction"
           />
-          <h1 className="lg:leading-10 mb-1 mt-2 md:mt-0 lg:py-4 md:text-lg lg:text-4xl text-start">
+          <h1 className="lg:leading-10 mb-1 mt-2 md:mt-0 lg:py-4 text-lg lg:text-4xl text-start">
             R H Construction USA, Inc.
           </h1>
-          <p className="lg:text-lg md:text-xs text-black mx-auto text-start mt-[10px] md:mt-3 lg:mt-3">
+          <p className="md:text-[16px] text-black mx-auto text-start mt-[10px] md:mt-3 text-[12px] leading-[208%] lg:leading-[250%]">
             RH Construction USA Inc. stands out as one of the leading
             construction companies in Brooklyn, embodying a commitment to
             excellence and innovation in the industry. With a proven track
@@ -51,10 +51,10 @@ const RhconstructionSection = () => {
                 className="w-full"
               />
               <div className="text-center py-3">
-                <h4 className="lg:text-base md:text-sm py-2">
+                <h4 className="lg:text-base md:text-sm py-1 md:py-2 text-[12px]">
                   Highly trained Staff
                 </h4>
-                <p className="lg:text-sm md:text-xs md:px-1 text-black">
+                <p className="lg:text-sm md:text-xs text-[8px] md:px-1 text-black">
                   We hire only highly trained staff for best results.
                 </p>
               </div>
@@ -68,11 +68,11 @@ const RhconstructionSection = () => {
                 className="w-full"
               />
               <div className="text-center py-3">
-                <h4 className="lg:text-base md:text-sm py-2">
+                <h4 className="lg:text-base md:text-sm py-1 md:py-2 text-[12px]">
                   Competitive Pricing
                 </h4>
-                <p className="lg:text-sm md:text-xs md:px-1 text-black">
-                  We quote the best price possible in the industry..
+                <p className="lg:text-sm md:text-xs text-[8px] md:px-1 text-black">
+                  We quote the best price possible in the industry.
                 </p>
               </div>
             </div>
@@ -85,10 +85,10 @@ const RhconstructionSection = () => {
                 className="w-full"
               />
               <div className="text-center py-3">
-                <h4 className="lg:text-base md:text-sm py-2">
+                <h4 className="lg:text-base md:text-sm py-1 md:py-2 text-[12px]">
                   Satisfaction Guaranteed
                 </h4>
-                <p className="lg:text-sm md:text-xs md:px-1 text-black">
+                <p className="lg:text-sm md:text-xs text-[8px] md:px-1 text-black">
                   100% Customer satisfaction is our sole motto.
                 </p>
               </div>

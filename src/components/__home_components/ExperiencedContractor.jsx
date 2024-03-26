@@ -5,12 +5,12 @@ import Image from "next/image";
 const ExperiencedContractor = () => {
     return (
    <div className="section-bg">
-    <div className="container">
-         <div className="md:flex  justify-between md:py-6 lg:py-[55px] lg:gap-10 md:gap-3">
-            <div>
-        <Image src={constructor} width={900} height={880} className="md:w-full lg:w-[900px]" alt="constructor" />
+    <div className="py-9 md:py-10 lg:py-12 5xl:py-[120px] container">
+         <div className="grid grid-cols-1 md:grid-cols-5 gap-4 md:gap-6 lg:gap-10 xl:gap-12 3xl:gap-x-16 5xl:gap-x-20">
+            <div className="md:col-span-2">
+        <Image src={constructor} width={807} height={608} className="md:w-full lg:w-[807px] lg:h-[608px]" alt="constructor" />
       </div>
-      <div className="">
+      <div className="mt-[26px] md:mt-0 md:col-span-3">
         <Image
           src={exp}
           width={190}
@@ -18,14 +18,14 @@ const ExperiencedContractor = () => {
           alt="about"
           className="my-2"
         />
-        <h2 className="lg:leading-10 lg:text-4xl text-lg md:py-2 lg:py-4">
+        <h1 className="lg:leading-10 mb-1 mt-2 md:mt-0 lg:py-4 text-lg lg:text-4xl text-start">
         EXPERIENCED BROOKLYN GENERAL CONTRACTOR
-        </h2>
-        <p className="max-w-lg xl:max-w-5xl lg:text-xl md:text-sm mx-auto text-black lg:mt-4 md:mt-1">
+        </h1>
+        <p className="md:text-[16px] text-black mx-auto text-start mt-[10px] md:mt-3 text-[12px] leading-[208%] lg:leading-[250%]">
         With years of expertise and a solid educational background, our Brooklyn-based general contracting firm stands out as a reliable partner for your construction projects. Our team comprises seasoned professionals who bring a wealth of knowledge and hands-on experience to every job site. From residential renovations to commercial builds, we have successfully delivered projects of varying scales, earning a reputation for excellence and integrity within the community 
 
         </p>
-        <p className="max-w-lg xl:max-w-5xl lg:text-xl md:text-sm mx-auto text-black lg:mt-4 md:mt-1">
+        <p className="md:text-[16px] text-black mx-auto text-start mt-[10px] md:mt-3 text-[12px] leading-[208%] lg:leading-[250%]">
         At our core, we prioritize client satisfaction by combining our technical prowess with clear communication and meticulous attention to detail. Our commitment to staying abreast of industry advancements ensures that we employ the latest techniques and technologies to optimize project efficiency and quality. Whether you're envisioning a modern urban renovation or a timeless architectural masterpiece, our well-experienced and educated team is dedicated to bringing your vision to life with precision and professionalism.
         </p>
         

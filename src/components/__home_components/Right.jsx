@@ -3,25 +3,27 @@ import worker from "@/components/__home_components/Images/worker.png";
 import Image from "next/image";
 const Right = () => {
     return (
-     <div className="container">
-         <div className="md:flex md:py-6 lg:py-[55px] lg:gap-10 md:gap-3">
-      <div className="">
+     <div className="py-9 md:py-10 lg:py-12 5xl:py-[120px] container">
+         <div className="grid grid-cols-1 md:grid-cols-7 gap-2 lg:gap-3 xl:gap-8 5xl:gap-[78px]">
+      <div className="md:col-span-4 order-2 md:order-1">
+        <div className="flex justify-center md:block">
         <Image
           src={right}
           width={199}
           height={18.02}
           alt="right"
-          className="my-2"
+          className="md:mt-2 md:mb-2 mb-1 mt-[26px]"
         />
-        <h2 className="lg:leading-10 lg:text-4xl text-lg md:py-2 lg:py-4">
+        </div>
+        <h2 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-center md:text-start">
         CHOOSING THE RIGHT GENERAL CONTRACTOR IN BROOKLYN
         </h2>
-        <p className="max-w-lg xl:max-w-5xl lg:text-xl md:text-sm mx-auto text-black lg:mt-4 md:mt-1">
+        <p className="md:text-base text-[12px] leading-[208%] lg:leading-[250%] text-black text-center md:text-start">
         Choosing the right general contractor from all construction companies in Brooklyn is a crucial step in ensuring the success of your construction project. RH Construction USA Inc., a prominent player in the industry, stands out as a reliable choice for discerning clients. With a proven track record of delivering high-quality construction services in Brooklyn, we bring a wealth of experience and expertise to the table. Our commitment to excellence is evident in our attention to detail, timely project completion, and customer satisfaction. When searching for a general contractor in Brooklyn, our company emerges as a reliable partner dedicated to turning your construction dreams into reality.
         </p>
         
       </div>
-      <div>
+      <div className="md:col-span-3 order-1 md:order-2">
         <Image src={worker} width={608} height={550} alt="worker" />
       </div>
     </div>
