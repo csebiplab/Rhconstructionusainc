@@ -10,6 +10,7 @@ const RhconstructionSection = () => {
     <div className="py-9 md:py-10 lg:py-12 5xl:py-[120px] container">
       <div className="grid grid-cols-1 md:grid-cols-5 gap-4 md:gap-6 lg:gap-10 xl:gap-12 3xl:gap-x-16 5xl:gap-x-20">
         <div className="md:col-span-2">
+          
           <Image
             src={work}
             width={608}
@@ -18,15 +19,18 @@ const RhconstructionSection = () => {
             layout="responsive"
             className="w-full h-full lg:w-[608px] lg:h-[608px] mx-auto"
           />
+          
         </div>
         <div className="mt-[26px] md:mt-0 md:col-span-3">
-          <Image
+         <div className="flex justify-center md:block">
+         <Image
             src={title}
             width={298}
             height={18}
             className="lg:m-0 md:m-auto"
             alt="RH Construction"
           />
+         </div>
           <h1 className="lg:leading-10 mb-1 mt-2 md:mt-0 lg:py-4 text-lg lg:text-4xl lg:text-start text-center">
             R H Construction USA, Inc.
           </h1>
