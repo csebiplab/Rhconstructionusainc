@@ -16,7 +16,7 @@ const RhconstructionSection = () => {
             height={608}
             alt="rh"
             layout="responsive"
-            className="w-full h-full md:w-[608px] md:h-[608px] mx-auto"
+            className="w-full h-full lg:w-[608px] lg:h-[608px] mx-auto"
           />
         </div>
         <div className="mt-[26px] md:mt-0 md:col-span-3">
@@ -27,7 +27,7 @@ const RhconstructionSection = () => {
             className="lg:m-0 md:m-auto"
             alt="RH Construction"
           />
-          <h1 className="lg:leading-10 mb-1 mt-2 md:mt-0 lg:py-4 text-lg lg:text-4xl text-start">
+          <h1 className="lg:leading-10 mb-1 mt-2 md:mt-0 lg:py-4 text-lg lg:text-4xl lg:text-start text-center">
             R H Construction USA, Inc.
           </h1>
           <p className="md:text-[16px] text-black mx-auto text-start mt-[10px] md:mt-3 text-[12px] leading-[208%] lg:leading-[250%]">
