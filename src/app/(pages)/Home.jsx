@@ -12,7 +12,7 @@ import LocationMap from "@/components/__home_components/LocationMap";
 import ProjectCost from "@/components/__home_components/ProjectCost";
 import ProjectElevate from "@/components/__home_components/ProjectElevate";
 import RatingComponent from "@/components/__home_components/RatingComponent";
-import Review from "@/components/__home_components/Review";
+import Review from "@/components/__home_components/Review/Review";
 import RhconstructionSection from "@/components/__home_components/RhconstructionSection";
 import Right from "@/components/__home_components/Right";
 import Tools from "@/components/__home_components/Tools";
