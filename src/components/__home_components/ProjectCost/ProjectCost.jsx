@@ -22,33 +22,12 @@ const breakpoints = {
   },
 };
 
-const projects = [
-  {
-    src: "@/components/__home_components/Images/cost1.png",
-    title: "Scope of Work",
-  },
-  {
-    src: "@/components/__home_components/Images/cost2.png",
-    title: "Materials",
-  },
-  {
-    src: "@/components/__home_components/Images/cost3.png",
-    title: "Labor Costs",
-  },
-  {
-    src: "@/components/__home_components/Images/cost4.png",
-    title: "Equipment and Machinery",
-  },
-  {
-    src: "@/components/__home_components/Images/cost5.png",
-    title: "Permits and Regulations",
-  },
-];
+
 const ProjectCost = () => {
   return (
     <div className="section-bg">
       <div className="container">
-        <div className="md:flex py-5 lg:py-[55px] lg:gap-10 md:gap-3">
+        <div className="md:flex py-6 lg:py-[55px] lg:gap-10 md:gap-3">
           <div>
             <div className="flex justify-center md:block">
               <Image
@@ -65,7 +44,7 @@ const ProjectCost = () => {
             </h2>
           </div>
           <div>
-            <p className="md:text-base text-[12px] leading-[208%] lg:leading-[250%] text-black text-center md:text-start lg:mt-4 md:mt-1">
+            <p className="md:text-base text-[12px] leading-[208%] lg:leading-[250%] text-black text-center md:text-start mt-0  md:mt-1 lg:mt-4">
               The cost of a construction project can vary widely depending on{" "}
               <br /> various factors such as the size, complexity, location,
               materials used,
@@ -91,7 +70,7 @@ const ProjectCost = () => {
                 className="w-full"
               />
 
-              <h5 className="lg:text-base md:text-sm py-2">Scope of Work</h5>
+              <h5 className="lg:text-base text-sm py-2">Scope of Work</h5>
             </div>
           </div>
           <div>
@@ -104,7 +83,7 @@ const ProjectCost = () => {
                 className="w-full"
               />
 
-              <h5 className="lg:text-base md:text-sm py-2">Materials</h5>
+              <h5 className="lg:text-base text-sm py-2">Materials</h5>
             </div>
           </div>
           <div className="mt-0 md:-mt-6 lg:-mt-10">
@@ -117,7 +96,7 @@ const ProjectCost = () => {
                 className="w-full"
               />
 
-              <h5 className="lg:text-base md:text-sm py-2">Labor Costs</h5>
+              <h5 className="lg:text-base text-sm py-2">Labor Costs</h5>
             </div>
           </div>
           <div>
@@ -130,7 +109,7 @@ const ProjectCost = () => {
                 className="w-full"
               />
 
-              <h5 className="lg:text-base md:text-sm py-2">
+              <h5 className="lg:text-base text-sm py-2">
                 Equipment and Machinery
               </h5>
             </div>
@@ -145,7 +124,7 @@ const ProjectCost = () => {
                 className="w-full"
               />
 
-              <h5 className="lg:text-base md:text-sm py-2">
+              <h5 className="lg:text-base text-sm py-2">
                 Permits and Regulations
               </h5>
             </div>
@@ -200,7 +179,7 @@ const ProjectCost = () => {
                   className="w-full"
                 />
 
-                <h5 className="lg:text-base md:text-sm py-2">Labor Costs</h5>
+                <h5 className="lg:text-base text-sm py-2">Labor Costs</h5>
               </div>
             </div>
           </SwiperSlide>
@@ -215,7 +194,7 @@ const ProjectCost = () => {
                   className="w-full"
                 />
 
-                <h5 className="lg:text-base md:text-sm py-2">
+                <h5 className="lg:text-base text-sm py-2">
                   Equipment and Machinery
                 </h5>
               </div>
@@ -232,7 +211,7 @@ const ProjectCost = () => {
                   className="w-full"
                 />
 
-                <h5 className="lg:text-base md:text-sm py-2">
+                <h5 className="lg:text-base text-sm py-2">
                   Permits and Regulations
                 </h5>
               </div>

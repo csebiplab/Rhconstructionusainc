@@ -74,7 +74,7 @@ const Review = () => {
             className="my-2 mx-auto"
           />
           <h2 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[12px] xl:mt-[15px] xl:mb-[25px] text-center">
-          WHAT TO CONSIDER FIRST WHEN YOU HIRE THE BEST CONTRACTORS
+          Here’s what to expect when you hire us
           </h2>
             </div>
             {/* =================== Card Section =============== */}
@@ -87,7 +87,7 @@ const Review = () => {
         {reviews.map(({ address, author, reviewText }, i) => (
           <SwiperSlide
             key={i}
-            className={`text-center py-4 lg:py-10 pr-[21px]`}
+            className={`text-center py-4 lg:py-10 md:pr-[21px]`}
           >
             <div className="w-[370px] md:w-full h-[250px] md:h-full card-sd p-[14px] bg-[#fff] md:mx-0 mx-auto">
               <Image
