@@ -1,5 +1,6 @@
 "use client";
 import google from "@/components/__home_components/Images/google.png";
+import review from "@/components/__home_components/Images/review.png";
 import reviewLogo from "@/components/__home_components/Images/reviewLogo.png";
 import Image from "next/image";
 import "swiper/css";
@@ -63,7 +64,7 @@ const Review = () => {
     return (
        <div className="section-bg">
         <div className="container">
-         <div className="md:py-6 lg:py-[55px]">
+         <div className="py-6 lg:py-[55px]">
             <div className="text-center">
             <Image
             src={reviewLogo}
@@ -72,7 +73,7 @@ const Review = () => {
             alt="reviewLogo"
             className="my-2 mx-auto"
           />
-          <h2 className="lg:leading-10 lg:text-4xl text-lg md:py-2 lg:py-4">
+          <h2 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[12px] xl:mt-[15px] xl:mb-[25px] text-center">
           WHAT TO CONSIDER FIRST WHEN YOU HIRE THE BEST CONTRACTORS
           </h2>
             </div>
@@ -96,15 +97,22 @@ const Review = () => {
                 alt="google"
                 className="mb-2"
               />
+               <Image
+                src={review}
+                width={83}
+                height={12}
+                alt="google"
+                className=""
+              />
           
               <div className="text-start">
                 <p className="text-[10px] md:text-[12px] mt-4  text-black leading-[22px] md:leading-6">
                   {reviewText}
                 </p>
-                <h6 className="font-semibold lg:text-sm text-xs mt-2">
+                <h6 className="font-semibold lg:text-sm text-xs mt-3">
                   {author}
                 </h6>
-                <p className="text-[#4A4A4A] text-[8px]">{address}</p>
+                <p className="text-[#4A4A4A] text-[8px] mt-2">{address}</p>
               </div>
             </div>
           </SwiperSlide>
