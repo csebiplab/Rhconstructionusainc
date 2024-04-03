@@ -11,6 +11,7 @@ const ExperiencedContractor = () => {
         <Image src={constructor} width={807} height={608} className="md:w-full lg:w-[807px] lg:h-[608px]" alt="constructor" />
       </div>
       <div className="mt-[26px] md:mt-0 md:col-span-3">
+        <div className="flex justify-center md:block">
         <Image
           src={exp}
           width={190}
@@ -18,7 +19,8 @@ const ExperiencedContractor = () => {
           alt="about"
           className="my-2"
         />
-        <h1 className="lg:leading-10 mb-1 mt-2 md:mt-0 lg:py-4 text-lg lg:text-4xl text-start">
+        </div>
+        <h1 className="lg:leading-10 mb-1 mt-2 md:mt-0 lg:py-4 text-lg lg:text-4xl md:text-start text-center">
         EXPERIENCED BROOKLYN GENERAL CONTRACTOR
         </h1>
         <p className="md:text-[16px] text-black mx-auto text-start mt-[10px] md:mt-3 text-[12px] leading-[208%] lg:leading-[250%]">

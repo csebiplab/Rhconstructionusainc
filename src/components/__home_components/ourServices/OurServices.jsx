@@ -1,19 +1,16 @@
 import Image from 'next/image'
 import { useState } from 'react'
-import servicesIcon from "../../../../public/assets/icons/services.png"
+import bathroom from '../../../../public/assets/services/bithrom.png'
 import Brick from '../../../../public/assets/services/brick .png'
 import Brown from '../../../../public/assets/services/brown.png'
 import Kitchen from '../../../../public/assets/services/kitchen.png'
-import Painting from '../../../../public/assets/services/painting.png'
+import { default as Painting, default as Pointing2 } from '../../../../public/assets/services/painting.png'
 import Plastering from '../../../../public/assets/services/plastering.png'
 import Plumbing from '../../../../public/assets/services/plumbing.png'
 import Power from '../../../../public/assets/services/power.png'
-import Sheetrock from '../../../../public/assets/services/sheetrock.png'
-import bathroom from '../../../../public/assets/services/bithrom.png'
-import Pointing2 from '../../../../public/assets/services/painting.png'
 import Roofing from '../../../../public/assets/services/roofing.png'
+import Sheetrock from '../../../../public/assets/services/sheetrock.png'
 import Water from '../../../../public/assets/services/water.png'
-
 export default function OurServices() {
 
   const services = [
@@ -79,21 +76,27 @@ export default function OurServices() {
 
   return (
     <div className=" bg-[#FFB7031A]">
-      <div className='container md:py-6 lg:py-[55px]'>
+      <div className='container py-6 lg:py-[55px]'>
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-40 gap-4 lg:p-5 md:p-3 items-end text-sm">
 
           <div className="  ">
-            <div className='flex items-center pb-3 lg:justify-start md:justify-center'>
-              <Image src={servicesIcon} className='h-5 w-10 mr-2'></Image>
-              <p>Services</p>
+          <div className="flex justify-center md:block">
+              <Image
+                src={services}
+                width={101}
+                height={18.02}
+                alt="services"
+                className="my-2"
+              />
             </div>
-            <h2 className=' lg:leading-10 lg:text-4xl text-lg md:py-2 lg:py-4 lg:text-start md:text-center'>Our Services</h2>
-            <p className='max-w-lg xl:max-w-5xl lg:text-xl md:text-sm mx-auto text-black lg:mt-4 md:mt-1'>
-              <b>Enjoy a stress-free construction service with our unique build process.RH Construction USA,</b> is your trusted partner for top-notch construction services, dedicated to bringing your dream project to life. From conceptualization to completion, we prioritize quality craftsmanship, timely delivery, and cost-effective solutions to meet and exceed your expectations.</p>
+            <h2 className='lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-center md:text-start'>Our Services</h2>
+            <p className='md:text-base text-[12px] leading-[208%] lg:leading-[250%] text-black text-center md:text-start font-semibold'>Enjoy a stress-free construction service with our unique build process.</p>
+            <p className='md:text-base text-[12px] leading-[208%] lg:leading-[250%] text-black text-center md:text-start'>
+              <span className='font-semibold'>RH Construction USA</span>, is your trusted partner for top-notch construction services, dedicated to bringing your dream project to life. From conceptualization to completion, we prioritize quality craftsmanship, timely delivery, and cost-effective solutions to meet and exceed your expectations.</p>
           </div>
 
           <div className=" ">
-            <p className=' max-w-lg xl:max-w-5xl lg:text-xl md:text-sm mx-auto text-black lg:mt-4 md:mt-1'>
+            <p className='md:text-base text-[12px] leading-[208%] lg:leading-[250%] text-black text-center md:text-start'>
               At our company, we understand that your dream project is a significant investment, and we take pride in delivering unparalleled construction service that reflects our unwavering commitment to customer satisfaction. Whether you're envisioning a residential masterpiece or a commercial endeavor, our experienced team is equipped to handle a diverse range of projects.
             </p>
           </div>
@@ -102,7 +105,7 @@ export default function OurServices() {
 
 
         {/* taggle button */}
-        <div className='flex justify-center items-center lg:py-6 md:py-3 md:mb-6 lg:mb-12 mx-2 lg:px-0 md:px-4'>
+        <div className='flex justify-center items-center lg:py-6 py-4 mb-2 md:mb-6 lg:mb-12 mx-2 lg:px-0 md:px-4'>
           {/* <Switcher11></Switcher11> */}
           <label className='themeSwitcherTwo shadow-card relative inline-flex cursor-pointer select-none items-center justify-center rounded-3xl bg-white '>
             <input
@@ -149,7 +152,7 @@ export default function OurServices() {
           </label>
         </div>
 
-        <div className='lg:py-10 md:py-6'>
+        <div className='lg:py-10 py-7'>
           {!isChecked &&
             <div className='grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 gap-5 gap-y-8'>
               {services.map((service, index) => (
