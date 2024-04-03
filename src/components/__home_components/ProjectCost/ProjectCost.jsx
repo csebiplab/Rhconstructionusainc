@@ -149,7 +149,7 @@ const ProjectCost = () => {
                   className="w-full"
                 />
 
-                <h5 className="lg:text-base md:text-sm py-2">Scope of Work</h5>
+                <h5 className="lg:text-base text-sm py-2">Scope of Work</h5>
               </div>
             </div>
           </SwiperSlide>
@@ -164,7 +164,7 @@ const ProjectCost = () => {
                   className="w-full"
                 />
 
-                <h5 className="lg:text-base md:text-sm py-2">Materials</h5>
+                <h5 className="lg:text-base text-sm py-2">Materials</h5>
               </div>
             </div>
           </SwiperSlide>

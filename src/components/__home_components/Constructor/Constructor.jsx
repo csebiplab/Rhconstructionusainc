@@ -1,9 +1,16 @@
+"use client";
 import cons from "@/components/__home_components/Images/const.png";
 import pp1 from "@/components/__home_components/Images/pp1.png";
 import pp2 from "@/components/__home_components/Images/pp2.png";
 import pp3 from "@/components/__home_components/Images/pp3.png";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
-
+import Image from "next/image";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/virtual";
+import { Navigation } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "./Constructor.css";
+import { SwiperNavButtons } from "./SwiperSliderButton";
 const breakpoints = {
   0: {
     slidesPerView: 1,
@@ -12,13 +19,11 @@ const breakpoints = {
     slidesPerView: 3,
   },
 };
-
-import Image from "next/image";
 const Constructor = () => {
     return (
        <div className="section-bg">
         <div className="container">
-         <div className="md:py-6 lg:py-[55px]">
+         <div className="py-6 lg:py-[55px]">
             <div className="text-center">
             <Image
             src={cons}
@@ -32,79 +37,180 @@ const Constructor = () => {
           </h2>
             </div>
             {/* =================== Card Section =============== */}
-            <div>
+            {/* <div>
             <div className="grid grid-cols-1 md:px-3 lg:px-6 md:grid-cols-3 md:gap-4 lg:gap-20 text-center md:py-4 lg:py-10">
-              <div className="w-full card-sd rounded-sm bg-white">
+              <div className="w-full card-sd rounded-sm bg-white p-[10px]">
                 <Image
                   src={pp1}
                   width={100}
                   height={95}
                   alt=""
-                  className="mx-auto md:mt-3 lg:mt-6"
+                  className="mx-auto mt-[10px] w-[61px] md:w-[75px] lg:w-[100px] h-[61px] md:h-[70px] lg:h-[95px]"
                   
                 />
-                <div className="text-center">
-                  <h4 className="lg:text-base md:text-sm py-2">Reputation and Experience</h4>
-                  <p className="lg:text-sm md:text-xs text-black md:p-1 lg:p-2">
+                <div className="text-center">                  
+                <h4 className="lg:text-[20px] text-sm py-2 mt-2">Reputation and Experience</h4>
+                  <p className="text-[10px] md:text-[16px] mt-4  text-black leading-[20px] md:leading-6">
                   Begin by researching the contractor's reputation and experience in the industry. Look for reviews, testimonials, and examples of past projects. A seasoned contractor with a positive track record is more likely to deliver quality results.
                   </p>
                 </div>
               </div>
-              <div className="w-full card-sd rounded-sm bg-white">
+              <div className="w-full card-sd rounded-sm bg-white p-[10px]">
                 <Image
                   src={pp2}
                   width={100}
                   height={95}
                   alt=""
-                  className="mx-auto md:mt-3 lg:mt-6"
+                  className="mx-auto mt-[10px] w-[61px] md:w-[75px] lg:w-[100px] h-[61px] md:h-[70px] lg:h-[95px]"
                   
                 />
-                <div className="text-center">
-                  <h4 className="lg:text-base md:text-sm py-2">Specialization and Expertise</h4>
-                  <p className="lg:text-sm md:text-xs text-black md:p-1 lg:p-2">
+                <div className="text-center">                  
+                <h4 className="md:text-[20px] text-sm py-2">Specialization and Expertise</h4>
+                  <p className="text-[10px] md:text-[16px] mt-4  text-black leading-[20px] md:leading-6">
                   Assess whether the contractor specializes in the type of work you need. A specialist will likely have more in-depth knowledge and skills in a specific area, leading to better outcomes for your project. Assess whether the contractor specializes.
                   </p>
                 </div>
               </div>
-              <div className="w-full card-sd rounded-sm bg-white">
+              <div className="w-full card-sd rounded-sm bg-white p-[10px]">
                 <Image
                  src={pp3}
                  width={100}
                  height={95}
                  alt=""
-                 className="mx-auto md:mt-3 lg:mt-6"
+                 className="mx-auto mt-[10px] w-[61px] md:w-[75px] lg:w-[100px] h-[61px] md:h-[70px] lg:h-[95px]" 
                 
                 />
-                <div className="text-center py-3">
-                  <h4 className="lg:text-base md:text-sm py-2">Communication and Transparency</h4>
-                  <p className="lg:text-sm md:text-xs text-black md:p-1 lg:p-2">
+                <div className="text-center">
+                  <h4 className="md:text-[20px] text-sm py-2">Communication and Transparency</h4>
+                  <p className="text-[10px] md:text-[16px] mt-4  text-black leading-[20px] md:leading-6">
                   Effective communication is key to any successful project. Ensure the contractor is transparent about timelines, costs, and potential challenges. Regular updates and clear channels of communication will help prevent misunderstandings.
                   </p>
                 </div>
               </div>
             </div>
-            </div>
+            </div> */}
 
-            {/* ================= swiper slider ========== */}
-
-
-            {/* ======================== Button ================= */}
-            <div className="flex lg:gap-8 md:gap-3 items-center justify-center lg:py-6 md:py-3">
-                    {/* ========= first line ======== */}
-                    <div className="lg:w-[330px] md:w-[220px] h-0.5 bg-black hidden md:block">
-    
-                    </div>
-                    <div className="flex lg:gap-5 md:gap-3">
-    
-                        <button className="p-3 rounded-full border-2 hover:text-white hover:bg-black"><FaChevronLeft /></button>
-                        <button className="text-white hover:text-black hover:bg-white border-2 p-3 bg-black rounded-full"><FaChevronRight /></button>
-    
-                    </div>
-                    {/* =============== second line ============= */}
-                    <div className="lg:w-[330px] md:w-[220px] h-0.5 bg-black hidden md:block">
-    
-                    </div>
+            <Swiper
+          // spaceBetween={21}
+          // slidesPerView={3}
+          modules={[Navigation]}
+          breakpoints={breakpoints}
+          
+        >
+          <SwiperSlide className={`text-center py-4 lg:py-10 px-20 md:px-6`}>
+          <div className="w-full card-sd rounded-sm bg-white p-[10px]">
+                <Image
+                  src={pp1}
+                  width={100}
+                  height={95}
+                  alt=""
+                  className="mx-auto mt-[10px] w-[61px] md:w-[75px] lg:w-[100px] h-[61px] md:h-[70px] lg:h-[95px]"
+                  
+                />
+                <div className="text-center">                
+                <h4 className="lg:text-[20px] text-sm py-2">Reputation and Experience</h4>
+                  <p className="text-[10px] md:text-[16px] mt-2 mb-3  text-black leading-[20px] md:leading-6">
+                  Begin by researching the contractor's reputation and experience in the industry. Look for reviews, testimonials, and examples of past projects. A seasoned contractor with a positive track record is more likely to deliver quality results.
+                  </p>
                 </div>
+              </div>
+          </SwiperSlide>
+          <SwiperSlide className={`text-center py-4 lg:py-10 px-20 md:px-6`}>
+           <div className="w-full card-sd rounded-sm bg-white p-[10px]">
+                <Image
+                  src={pp2}
+                  width={100}
+                  height={95}
+                  alt=""
+                  className="mx-auto mt-[10px] w-[61px] md:w-[75px] lg:w-[100px] h-[61px] md:h-[70px] lg:h-[95px]"
+                  
+                />
+                <div className="text-center">                 
+                <h4 className="lg:text-[20px] text-sm py-2">Specialization and Expertise</h4>
+                  <p className="text-[10px] md:text-[16px] mt-2 mb-3  text-black leading-[20px] md:leading-6">
+                  Assess whether the contractor specializes in the type of work you need. A specialist will likely have more in-depth knowledge and skills in a specific area, leading to better outcomes for your project. Assess whether the contractor specializes.
+                  </p>
+                </div>
+              </div>
+          </SwiperSlide>
+          <SwiperSlide className={`text-center py-4 lg:py-10 px-20 md:px-6`}>
+          <div className="w-full card-sd rounded-sm bg-white p-[10px]">
+                <Image
+                 src={pp3}
+                 width={100}
+                 height={95}
+                 alt=""
+                 className="mx-auto mt-[10px] w-[61px] md:w-[75px] lg:w-[100px] h-[61px] md:h-[70px] lg:h-[95px]" 
+                
+                />
+                <div className="text-center">
+                  <h4 className="lg:text-[20px] text-sm py-2">Communication and Transparency</h4>
+                  <p className="text-[10px] md:text-[16px] mt-2 mb-3  text-black leading-[20px] md:leading-6">
+                  Effective communication is key to any successful project. Ensure the contractor is transparent about timelines, costs, and potential challenges. Regular updates and clear channels of communication will help prevent misunderstandings.
+                  </p>
+                </div>
+              </div>
+          </SwiperSlide>
+           <SwiperSlide className={`text-center py-4 lg:py-10 px-20 md:px-6`}>
+          <div className="w-full card-sd rounded-sm bg-white p-[10px]">
+                <Image
+                  src={pp1}
+                  width={100}
+                  height={95}
+                  alt=""
+                  className="mx-auto mt-[10px] w-[61px] md:w-[75px] lg:w-[100px] h-[61px] md:h-[70px] lg:h-[95px]"
+                  
+                />
+                <div className="text-center">                
+                <h4 className="lg:text-[20px] text-sm py-2 mt-2">Reputation and Experience</h4>
+                  <p className="text-[10px] md:text-[16px] mt-2 mb-3  text-black leading-[20px] md:leading-6">
+                  Begin by researching the contractor's reputation and experience in the industry. Look for reviews, testimonials, and examples of past projects. A seasoned contractor with a positive track record is more likely to deliver quality results.
+                  </p>
+                </div>
+              </div>
+          </SwiperSlide>
+          <SwiperSlide className={`text-center py-4 lg:py-10 px-20 md:px-6`}>
+           <div className="w-full card-sd rounded-sm bg-white p-[10px]">
+                <Image
+                  src={pp2}
+                  width={100}
+                  height={95}
+                  alt=""
+                  className="mx-auto mt-[10px] w-[61px] md:w-[75px] lg:w-[100px] h-[61px] md:h-[70px] lg:h-[95px]"
+                  
+                />
+                <div className="text-center">                 
+                <h4 className="lg:text-[20px] text-sm py-2 mt-2">Specialization and Expertise</h4>
+                  <p className="text-[10px] md:text-[16px] mt-2 mb-3  text-black leading-[20px] md:leading-6">
+                  Assess whether the contractor specializes in the type of work you need. A specialist will likely have more in-depth knowledge and skills in a specific area, leading to better outcomes for your project. Assess whether the contractor specializes.
+                  </p>
+                </div>
+              </div>
+          </SwiperSlide>
+          {/* <SwiperSlide className={`text-center py-4 lg:py-10 px-20 md:px-6`}>
+          <div className="w-full card-sd rounded-sm bg-white p-[10px]">
+                <Image
+                 src={pp3}
+                 width={100}
+                 height={95}
+                 alt=""
+                 className="mx-auto mt-[10px] w-[61px] md:w-[75px] lg:w-[100px] h-[61px] md:h-[70px] lg:h-[95px]" 
+                
+                />
+                <div className="text-center">
+                  <h4 className="lg:text-[20px] text-sm py-2 mt-2">Communication and Transparency</h4>
+                  <p className="text-[10px] md:text-[16px] mt-2 mb-3  text-black leading-[20px] md:leading-6">
+                  Effective communication is key to any successful project. Ensure the contractor is transparent about timelines, costs, and potential challenges. Regular updates and clear channels of communication will help prevent misunderstandings.
+                  </p>
+                </div>
+              </div>
+          </SwiperSlide> */}
+          
+          
+          
+
+          <SwiperNavButtons />
+        </Swiper>
         </div>
        </div>
        </div>
