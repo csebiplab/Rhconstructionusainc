@@ -138,7 +138,7 @@ const ProjectCost = () => {
           breakpoints={breakpoints}
           
         >
-          <SwiperSlide className={`text-center py-4 lg:py-10 px-16 !md:px-0`}>
+          <SwiperSlide className={`text-center py-4 lg:py-10 px-16 md:px-4`}>
             <div className="mt-0 md:-mt-6 lg:-mt-10">
               <div className="w-full card-sd rounded-md">
                 <Image
@@ -153,7 +153,7 @@ const ProjectCost = () => {
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide className={`text-center py-4 lg:py-10 px-16 !md:px-0`}>
+          <SwiperSlide className={`text-center py-4 lg:py-10 px-16 md:px-4`}>
             <div>
               <div className="w-full card-sd rounded-md">
                 <Image
@@ -168,7 +168,7 @@ const ProjectCost = () => {
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide className={`text-center py-4 lg:py-10 px-16 !md:px-0`}>
+          <SwiperSlide className={`text-center py-4 lg:py-10 px-16 md:px-4`}>
             <div className="mt-0 md:-mt-6 lg:-mt-10">
               <div className="w-full card-sd rounded-md">
                 <Image
@@ -183,7 +183,7 @@ const ProjectCost = () => {
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide className={`text-center py-4 lg:py-10 px-16 !md:px-0`}>
+          <SwiperSlide className={`text-center py-4 lg:py-10 px-16 md:px-4`}>
             <div>
               <div className="w-full card-sd rounded-md">
                 <Image
@@ -200,7 +200,7 @@ const ProjectCost = () => {
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide className={`text-center py-4 lg:py-10 px-16 !md:px-0`}>
+          <SwiperSlide className={`text-center py-4 lg:py-10 px-16 md:px-4`}>
             <div className="mt-0 md:-mt-6 lg:-mt-10">
               <div className="w-full card-sd rounded-md">
                 <Image

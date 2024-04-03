@@ -187,24 +187,7 @@ const Constructor = () => {
                 </div>
               </div>
           </SwiperSlide>
-          {/* <SwiperSlide className={`text-center py-4 lg:py-10 px-20 md:px-6`}>
-          <div className="w-full card-sd rounded-sm bg-white p-[10px]">
-                <Image
-                 src={pp3}
-                 width={100}
-                 height={95}
-                 alt=""
-                 className="mx-auto mt-[10px] w-[61px] md:w-[75px] lg:w-[100px] h-[61px] md:h-[70px] lg:h-[95px]" 
-                
-                />
-                <div className="text-center">
-                  <h4 className="lg:text-[20px] text-sm py-2 mt-2">Communication and Transparency</h4>
-                  <p className="text-[10px] md:text-[16px] mt-2 mb-3  text-black leading-[20px] md:leading-6">
-                  Effective communication is key to any successful project. Ensure the contractor is transparent about timelines, costs, and potential challenges. Regular updates and clear channels of communication will help prevent misunderstandings.
-                  </p>
-                </div>
-              </div>
-          </SwiperSlide> */}
+          
           
           
           
