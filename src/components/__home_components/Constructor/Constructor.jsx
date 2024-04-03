@@ -4,6 +4,15 @@ import pp2 from "@/components/__home_components/Images/pp2.png";
 import pp3 from "@/components/__home_components/Images/pp3.png";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 
+const breakpoints = {
+  0: {
+    slidesPerView: 1,
+  },
+  768: {
+    slidesPerView: 3,
+  },
+};
+
 import Image from "next/image";
 const Constructor = () => {
     return (
@@ -75,6 +84,9 @@ const Constructor = () => {
               </div>
             </div>
             </div>
+
+            {/* ================= swiper slider ========== */}
+
 
             {/* ======================== Button ================= */}
             <div className="flex lg:gap-8 md:gap-3 items-center justify-center lg:py-6 md:py-3">
