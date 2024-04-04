@@ -22,11 +22,11 @@ export default function ContactHome() {
                   <FaMapLocationDot className=' lg:w-5 lg:h-5 w-auto h-auto' />
                   <p> 553 E 2nd St, Brooklyn, NY 11218, United States</p>
                 </div>
-                <div className='my-3 flex gap-2 items-center lg:text-[18px] text-[14px]  '>
+                <div className='my-3 flex gap-2 items-center lg:text-[18px] text-[14px] justify-center md:justify-start'>
                   <FaPhoneVolume className=' lg:w-5 lg:h-5 w-auto h-auto' />
                   <p > +1 (646) 683-4612</p>
                 </div>
-                <div className=' flex gap-2 my-auto items-center lg:text-[18px] text-[14px] lg:py-8 py-4 '>
+                <div className=' flex gap-2 my-auto items-center lg:text-[18px] text-[14px] lg:py-8 py-4 justify-center md:justify-start'>
                   <IoIosMail className=' lg:w-5 lg:h-5 w-auto h-auto' />
                   <p>rhconusa@gmail.com</p>
                 </div>
@@ -38,7 +38,9 @@ export default function ContactHome() {
                 </div>
 
                 <h4 className=' lg:text-[32px] text-[20px] lg:py-12 py-5'>Best Construction Company Brooklyn</h4>
+                <div className='flex justify-center md:justify-start'>
                 <Image src={logo} />
+                </div>
                 <h4 className=' lg:text-[32px] text-[20px] lg:py-12 py-5'>R H CONSTRUCTION USA, INC.</h4>
               </div>
             </div>
@@ -49,7 +51,7 @@ export default function ContactHome() {
 
                 <div >
 
-                  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:mb-8 mb-4">
+                  <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:mb-8 mb-4">
                     <div> <h5 className='mb-2'>Your name *</h5>
                       <label className="sr-only" htmlFor="email">name</label>
                       <input
@@ -73,7 +75,7 @@ export default function ContactHome() {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:mb-8 mb-4  ">
+                <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:mb-8 mb-4  ">
                   <div>
                     <h5 className='mb-2'>Subjects *</h5>
                     <label className="sr-only" htmlFor="email">Email</label>
@@ -108,12 +110,12 @@ export default function ContactHome() {
                   ></textarea>
                 </div>
 
-                <div >
+                <div className='flex justify-center md:justify-start'>
                   <button
                     type="submit"
-                    className=" w-full rounded-md bg-[#FBCC21E4] px-10 py-4 lg:px-20  font-semibold  sm:w-auto text-black items-center flex lg:mt-13 mt-8 "
+                    className=" w-full rounded-md bg-[#FBCC21E4] px-10 py-4 lg:px-20  font-semibold  sm:w-auto text-black items-center flex lg:mt-13 mt-8"
                   >
-                    Submit <FaLocationArrow className=' ml-2 ' />
+                    Submit <FaLocationArrow className='ml-2' />
                   </button>
                 </div>
               </form>
