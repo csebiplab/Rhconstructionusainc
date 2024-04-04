@@ -23,25 +23,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
-import { FaFacebookF, FaTwitter } from "react-icons/fa";
 import {
-  HiMailOpen,
   HiOutlineHome,
   HiOutlineMailOpen,
-  HiPhone,
   HiPhoneIncoming,
 } from "react-icons/hi";
-
-const colors = {
-  blue: "bg-blue-50 text-blue-500",
-  orange: "bg-orange-50 text-orange-500",
-  green: "bg-green-50 text-green-500",
-  "blue-gray": "bg-blue-gray-50 text-blue-gray-500",
-  purple: "bg-purple-50 text-purple-500",
-  teal: "bg-teal-50 text-teal-500",
-  cyan: "bg-cyan-50 text-cyan-500",
-  pink: "bg-pink-50 text-pink-500",
-};
 
 const our_service_menu_items = {
   interior: [
@@ -233,24 +219,6 @@ function NavList() {
   );
 }
 
-function BottomMenu() {
-  return (
-    <figure className=" bg-primary py-2 text-4xl text-white md:hidden fixed bottom-0 left-0 z-[1000000] w-full px-5 flex gap-2 justify-between items-center">
-      <Link href="/">
-        <HiOutlineHome />
-      </Link>
-      <a href={`tel:+1 (646) 683-4612`}>
-        <div className="bg-white rounded-full text-primary inline-book -mt-8 shadow-xl h-16 w-16 flex justify-center items-center">
-          <HiPhoneIncoming />
-        </div>
-      </a>
-      <a href="mailto:rhconusa@gmail.com">
-        <HiOutlineMailOpen />
-      </a>
-    </figure>
-  );
-}
-
 export function Header() {
   const pathname = usePathname();
   const [openNav, setOpenNav] = React.useState(false);
@@ -267,75 +235,62 @@ export function Header() {
       <header>
         <div className="bg-dark-400 !text-white container hidden md:block">
           <div className="flex justify-between items-center py-1 flex-wrap gap-2">
-            <a href="/" className="text-white font-medium hidden md:block">
+            <a
+              href="/"
+              className="text-white text-sm font-medium hidden md:block"
+            >
               Best Construction Company Brooklyn
             </a>
-            <div className="flex items-center">
+            <div className="flex items-center gap-x-3 lg:gap-x-9">
               <a
                 href={`mailto:${constants.mail}`}
-                className="flex gap-2 items-center p-1 rounded-md hover:bg-primary/10 hover:text-blue-700"
+                className="text-sm flex gap-2 items-center p-1 rounded-md hover:bg-primary/10 hover:text-blue-700"
               >
                 <Image
                   src="/assets/images/mail.png"
-                  width={36}
-                  height={29}
-                  className="w-[36px] h-[29px]"
+                  width={22}
+                  height={17}
+                  className="w-[22px] h-[17px]"
                 />
                 {constants.mail}
               </a>
-              <div className="flex gap-x-[45px] items-center pl-[75px]">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="29"
-                  height="29"
-                  viewBox="0 0 29 29"
-                  fill="none"
-                >
-                  <g clipPath="url(#clip0_3_400)">
-                    <path
-                      d="M14.5 0C6.49194 0 0 6.49194 0 14.5C0 21.2999 4.68176 27.006 10.9974 28.5731V18.9312H8.00748V14.5H10.9974V12.5906C10.9974 7.65542 13.231 5.3679 18.0763 5.3679C18.995 5.3679 20.5801 5.54828 21.2286 5.72808V9.74458C20.8864 9.70862 20.2919 9.69064 19.5535 9.69064C17.1761 9.69064 16.2574 10.5914 16.2574 12.9328V14.5H20.9937L20.1799 18.9312H16.2574V28.8939C23.4372 28.0268 29.0006 21.9136 29.0006 14.5C29 6.49194 22.5081 0 14.5 0Z"
-                      fill="white"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_3_400">
-                      <rect width="29" height="29" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
 
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="29"
-                  height="29"
-                  viewBox="0 0 29 29"
-                  fill="none"
-                >
-                  <g clipPath="url(#clip0_3_402)">
-                    <path
-                      d="M26.8533 0H2.14102C0.957227 0 0 0.93457 0 2.09004V26.9043C0 28.0598 0.957227 29 2.14102 29H26.8533C28.0371 29 29 28.0598 29 26.91V2.09004C29 0.93457 28.0371 0 26.8533 0ZM8.60371 24.7123H4.29902V10.8693H8.60371V24.7123ZM6.45137 8.9832C5.06934 8.9832 3.95352 7.86738 3.95352 6.49102C3.95352 5.11465 5.06934 3.99883 6.45137 3.99883C7.82773 3.99883 8.94355 5.11465 8.94355 6.49102C8.94355 7.86172 7.82773 8.9832 6.45137 8.9832ZM24.7123 24.7123H20.4133V17.9834C20.4133 16.3805 20.385 14.3131 18.176 14.3131C15.9387 14.3131 15.5988 16.0633 15.5988 17.8701V24.7123H11.3055V10.8693H15.4289V12.7611H15.4855C16.0576 11.6736 17.4623 10.5238 19.5523 10.5238C23.908 10.5238 24.7123 13.3898 24.7123 17.1168V24.7123Z"
-                      fill="white"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_3_402">
-                      <rect width="29" height="29" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="29"
-                  height="29"
-                  viewBox="0 0 29 29"
-                  fill="none"
-                >
-                  <path
-                    d="M22.1442 2.30078H26.2205L17.3151 12.4792L27.7916 26.3297H19.5886L13.1636 17.9294L5.812 26.3297H1.73325L11.2585 15.4427L1.20831 2.30078H9.61965L15.4272 9.97893L22.1442 2.30078ZM20.7136 23.8898H22.9723L8.39233 4.61248H5.9685L20.7136 23.8898Z"
-                    fill="white"
-                  />
-                </svg>
+              <div className="flex items-center gap-x-4 md:gap-x-6 xl:gap-x-9">
+                <Image
+                  src="/assets/socials/facebook.png"
+                  width={16}
+                  height={16}
+                  className="w-[16px] h-[16px]"
+                  alt="facebook"
+                />
+                <Image
+                  src="/assets/socials/x.png"
+                  width={16}
+                  height={16}
+                  className="w-[16px] h-[16px]"
+                  alt="x"
+                />
+                <Image
+                  src="/assets/socials/insta.png"
+                  width={16}
+                  height={16}
+                  className="w-[16px] h-[16px]"
+                  alt="instagram"
+                />
+                <Image
+                  src="/assets/socials/in.png"
+                  width={16}
+                  height={16}
+                  className="w-[16px] h-[16px]"
+                  alt="linkedin"
+                />
+                <Image
+                  src="/assets/socials/google.png"
+                  width={16}
+                  height={16}
+                  className="w-[16px] h-[16px]"
+                  alt="google"
+                />
               </div>
             </div>
           </div>
@@ -345,9 +300,11 @@ export function Header() {
           <Navbar className="container rounded-none py-2 shadow-none max-w-full">
             <div className="flex items-center justify-between text-blue-gray-900">
               <Link href="/" className="mr-4 cursor-pointer">
-                <img
+                <Image
                   src="/assets/images/brand.png"
                   alt="Brand RH"
+                  width={157}
+                  height={68}
                   className="w-full max-w-[140px] rounded-md "
                 />
               </Link>
@@ -357,17 +314,17 @@ export function Header() {
               <div className="flex items-center gap-x-4">
                 <Image
                   src="/assets/images/phone-call.png"
-                  width={38}
-                  height={38}
-                  className="w-7 h-7 2xl:w-[38px] 2xl:h-[38px]"
+                  width={37}
+                  height={37}
+                  className="w-7 h-7 2xl:w-[37px] 2xl:h-[37px]"
                 />
                 <div>
-                  <span className="text-sm md:text-[14px] xl:text-base 2xl:text-[18px] text-dark block">
+                  <span className="text-sm md:text-[14px] xl:text-base 2xl:text-[17px] text-dark block">
                     Quick Contact
                   </span>
                   <Link
                     href={`tel:+1 (646) 683-4612`}
-                    className="text-xs md:text-sm 2xl:text-[25px] font-bold text-dark"
+                    className="text-xs md:text-sm 2xl:text-xl font-bold text-dark"
                   >
                     +1 (646) 683-4612
                   </Link>
