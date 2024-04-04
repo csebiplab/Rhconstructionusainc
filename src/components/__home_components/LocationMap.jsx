@@ -15,10 +15,10 @@ const LocationMap = () => {
       ></iframe> */}
 
 
-      <div>
-        <div className="custom-container">
+      <div className="custom-container">
+        <div className="py-[30px] lg:py-[120px] 5xl:py-[168px]">
 
-          <div className="mx-auto flex flex-col items-center justify-center">
+          <div className="mx-auto flex flex-col items-center justify-center ">
 
             <div className='flex items-center pb-2'>
               <Image src={servicesIcon} className='h-5 w-10 mr-2' />
@@ -26,7 +26,7 @@ const LocationMap = () => {
             </div>
 
             <div>
-              <h2 className="lg:leading-10 lg:text-4xl text-lg md:py-2 lg:py-4">SERVICE AREA IN RH CONSTRUCTION USA INC</h2>
+              <h2 className="lg:leading-10 lg:text-4xl text-lg py-2 lg:py-4">SERVICE AREA IN RH CONSTRUCTION USA INC</h2>
             </div>
 
           </div>  
@@ -34,7 +34,7 @@ const LocationMap = () => {
           {/* ============== For Mobile View ============ */}
           <div className="md:hidden block">
           <div className="w-[261px] h-[313px] mx-auto">
-              <div className="shadow-md p-0 rounded-sm ">
+              <div className="shadow-md p-0 rounded-[10px]">
 
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193746.99686626304!2d-74.11015801519653!3d40.645386882912746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24416947c2109%3A0x82765c7404007886!2sBrooklyn%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1710652730916!5m2!1sen!2sbd" height="271" width="261"
                   
@@ -43,13 +43,13 @@ const LocationMap = () => {
                   referrerPolicy="no-referrer-when-downgrade"></iframe>
 
 
-                <h5 className="lg:text-base text-sm py-4 px-3 lg:px-10 bg-yellow-700 lg:text-[18px] ">Brooklyn</h5>
+                <h5 className="text-sm py-4 px-3 lg:px-10 bg-yellow-700 ">Brooklyn</h5>
               </div>
             </div>
           </div>
 
           {/* //   ======================= map Card ==================// */}
-        <div className="hidden md:block">
+        <div className="hidden md:block mt-[40px] lg:mt-[55px]">
         <div className="grid grid-cols-5 py-4 md:gap-3 lg:gap-10 text-center md:py-10">
 
 <div className="lg:-mt-10 md:-mt-5">
@@ -62,7 +62,7 @@ const LocationMap = () => {
       referrerPolicy="no-referrer-when-downgrade"></iframe>
 
 
-    <h5 className="lg:text-base text-sm py-4 px-3 lg:px-10 bg-yellow-700 lg:text-[18px] ">Brooklyn</h5>
+    <h5 className="lg:text-base text-sm py-4 px-3 lg:px-10 bg-yellow-700 ">Brooklyn</h5>
   </div>
 </div>
 
@@ -79,7 +79,7 @@ const LocationMap = () => {
     ></iframe>
 
 
-    <h5 className="lg:text-base md:text-sm md:py-2 lg:py-4 md:px-5 lg:px-10 bg-yellow-700 lg:text-[18px] ">Queens</h5>
+    <h5 className="lg:text-base md:text-sm md:py-2 lg:py-4 md:px-5 lg:px-10 bg-yellow-700 ">Queens</h5>
 
   </div>
 </div>
@@ -95,7 +95,7 @@ const LocationMap = () => {
       loading="lazy"
       referrerPolicy="no-referrer-when-downgrade"
     ></iframe>
-    <h5 className="lg:text-base md:text-sm lg:py-4 md-py-2 md:px-5 lg:px-10 bg-yellow-700 lg:text-[18px] ">Manhattan</h5>
+    <h5 className="lg:text-base md:text-sm lg:py-4 md-py-2 md:px-5 lg:px-10 bg-yellow-700 ">Manhattan</h5>
 
 
   </div>
@@ -112,7 +112,7 @@ const LocationMap = () => {
       loading="lazy"
       referrerPolicy="no-referrer-when-downgrade"
     ></iframe>
-    <h5 className="lg:text-base md:text-sm md:py-2 lg:py-4 md:px-5 lg:px-10 bg-yellow-700 lg:text-[18px] ">Bronx</h5>
+    <h5 className="lg:text-base md:text-sm md:py-2 lg:py-4 md:px-5 lg:px-10 bg-yellow-700 ">Bronx</h5>
 
   </div>
 </div>
@@ -130,7 +130,7 @@ const LocationMap = () => {
     ></iframe>
 
 
-    <h5 className="lg:text-base md:text-sm md:py-2 lg:py-4 lg:px-10 md:px-5 bg-yellow-700 lg:text-[18px] ">Staten Island</h5>
+    <h5 className="lg:text-base md:text-sm md:py-2 lg:py-4 lg:px-10 md:px-5 bg-yellow-700 ">Staten Island</h5>
 
 
   </div>

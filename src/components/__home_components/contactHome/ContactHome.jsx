@@ -6,7 +6,7 @@ import logo from "../../../../public/assets/images/footer-logo.webp";
 
 export default function ContactHome() {
   return (
-    <div className="  bg-yellow-50  ">
+    <div className="bg-yellow-50">
 
       <section className='container' >
         <div className="mx-auto md:pt-6 lg:pt-[55px]">
@@ -14,11 +14,11 @@ export default function ContactHome() {
 
             <div className="lg:col-span-3 lg:py-20  lg:px-5 px-2 py-2 bg-yellow-700">
 
-              <div className=' lg:py-20 py-6 lg:px-10 px-4'>
-                <h2 className=" lg:text-[36px] text-[20px]  ">
+              <div className=' lg:py-20 py-6 lg:px-10 px-4 text-center md:text-start'>
+                <h2 className=" lg:text-[36px] text-[20px] ">
                   Contact Us
                 </h2>
-                <div className=' flex gap-2 items-center lg:text-[18px] text-[14px] lg:py-8 py-4 '>
+                <div className=' flex gap-2 items-center lg:text-[18px] text-[14px] lg:py-8 py-4 justify-center md:justify-start'>
                   <FaMapLocationDot className=' lg:w-5 lg:h-5 w-auto h-auto' />
                   <p> 553 E 2nd St, Brooklyn, NY 11218, United States</p>
                 </div>
@@ -30,7 +30,7 @@ export default function ContactHome() {
                   <IoIosMail className=' lg:w-5 lg:h-5 w-auto h-auto' />
                   <p>rhconusa@gmail.com</p>
                 </div>
-                <div className=' flex lg:gap-8 gap-3 lg:my-8 md:my-3'>
+                <div className='flex lg:gap-8 gap-3 lg:my-8 md:my-3 justify-center md:justify-start'>
                   <FaFacebook className=' lg:w-6 lg:h-6 w-auto h-auto' />
                   <FaXTwitter className=' lg:w-6  lg:h-6 w-auto h-auto' />
                   <FaInstagram className=' lg:w-6 lg:h-6 w-auto h-auto' />
