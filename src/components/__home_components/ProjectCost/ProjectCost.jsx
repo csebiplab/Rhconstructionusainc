@@ -7,9 +7,10 @@ import cost4 from "@/components/__home_components/Images/cost4.png";
 import cost5 from "@/components/__home_components/Images/cost5.png";
 import Image from "next/image";
 import "swiper/css";
+import "swiper/css/autoplay";
 import "swiper/css/navigation";
 import "swiper/css/virtual";
-import { Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { SwiperNavButtons } from "./SwiperSliderButton";
 
@@ -134,7 +135,16 @@ const ProjectCost = () => {
         <Swiper
           // spaceBetween={21}
           // slidesPerView={3}
-          modules={[Navigation]}
+          modules={[Autoplay,Navigation]}
+          loop={true}
+          autoplay={{
+            delay: 3000,
+            pauseOnMouseEnter: false,
+            disableOnInteraction: false,
+            stopOnLastSlide: false,
+          }}
+          speed={3000}
+          allowTouchMove={false}
           breakpoints={breakpoints}
           
         >

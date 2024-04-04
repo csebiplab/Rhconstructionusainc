@@ -4,13 +4,14 @@ import review from "@/components/__home_components/Images/review.png";
 import reviewLogo from "@/components/__home_components/Images/reviewLogo.png";
 import Image from "next/image";
 import "swiper/css";
+import "swiper/css/autoplay";
 import "swiper/css/navigation";
+import 'swiper/css/scrollbar';
 import "swiper/css/virtual";
-import { Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from "swiper/react";
-import { SwiperNavButtons } from "./SwiperSliderButton";
-
 import "./ReviewSlider.css";
+import { SwiperNavButtons } from "./SwiperSliderButton";
 
 const breakpoints = {
   0: {
@@ -81,8 +82,21 @@ const Review = () => {
             <Swiper
         // spaceBetween={21}
         // slidesPerView={3}
-        modules={[Navigation]}
+        // modules={[Navigation]}
+        modules={[Autoplay,Navigation]}
+          loop={true}
+          autoplay={{
+            delay: 3000,
+            pauseOnMouseEnter: false,
+            disableOnInteraction: false,
+            stopOnLastSlide: false,
+          }}
+          // slidesPerView={5}
+          speed={3000}
+          allowTouchMove={false}
+        // modules={[Autoplay,Navigation, Scrollbar]}
         breakpoints={breakpoints}
+        scrollbar={{ draggable: true }}
       >
         {reviews.map(({ address, author, reviewText }, i) => (
           <SwiperSlide
