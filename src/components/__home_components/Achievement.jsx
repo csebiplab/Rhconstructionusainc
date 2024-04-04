@@ -4,10 +4,11 @@ import Image from "next/image";
 const Achievement = () => {
   return (
     <>
-      <div className="custom-container">
-     <div className="flex flex-col md:flex-row gap-5 md:gap-2 mt-5 md:mt-3 lg:mt-4">
-     <div className="flex gap-2 xs:mt-5 md:mt-3 lg:mt-4">
-          <div className="md:w-[180px] md:h-[147.98px] md:flex-0 my-class rounded-[8px] pt-[31.25px] text-center">
+     
+        
+     <div className="flex flex-col md:flex-row gap-5 md:gap-2">
+     <div className="flex gap-2">
+          <div className="w-full h-auto md:w-[180px] md:h-[147.98px] md:flex-0  my-class rounded-[8px] px-11 py-5 md:py-0 md:px-0 md:pt-[31.25px] text-center">
             <h2 className="lg:text-[38px] text-lg font-bold lg:leading-[47.25px] md:mb-[5px] xs:mb-0 ">
               96%
             </h2>
@@ -15,15 +16,16 @@ const Achievement = () => {
               Recommended
             </p>
           </div>
-          <div className="md:w-[180px] md:h-[147.98px] md:flex-0 my-class rounded-[8px] pt-[31.25px] text-center">
+          <div className="w-full h-auto md:w-[180px] md:h-[147.98px] md:flex-0  my-class rounded-[8px] px-11 py-5 md:py-0 md:px-0 md:pt-[31.25px] text-center">
             <h2 className="lg:text-[38px] font-bold text-lg lg:leading-[47.25px] xs:mb-0 md:mb-[5px]">
               15
             </h2>
-            <p className="lg:text-lg text-base font-bold lg:leading-[22.5px]">
+            <p className="lg:text-lg text-base font-semibold lg:leading-[22.5px]">
               Years In Business
             </p>
           </div>
-          <div className="md:w-[604px] md:h-[147.98px] my-class rounded-[8px] px-[22.5px] md:pt-2 xs:pt-5">
+        </div>
+        <div className="md:w-[604px] md:h-[147.98px]  my-class rounded-[8px] px-[22.5px] pt-2">
             <h3 className="text-base lg:text-lg font-bold lg:leading-[27px] mb-[5px]">
               Achievements
             </h3>
@@ -31,13 +33,13 @@ const Achievement = () => {
               src={achievement}
               width={559}
               height={82.98}
-              alt=""
+              alt="achievement"
               className=""
             />
           </div>
-        </div>
      </div>
-      </div>
+     
+      
     </>
   );
 };
