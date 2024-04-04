@@ -58,15 +58,15 @@ export function FAQ() {
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
   return (
-   <div className="py-9 md:py-10 lg:py-12 5xl:py-[120px] container">
-    <div className="md:flex items-center md:py-6 lg:py-[55px] lg:gap-10 md:gap-3">
+   <div className="py-0 md:py-10 lg:py-12 5xl:py-[120px] container">
+    <div className="md:flex items-center lg:gap-10 md:gap-3">
     <div>
     <Image
             src={build}
             width={478}
             height={717}
             alt="build"
-            className="my-2 w-full h-full md:w-[478px] md:h-[717px]"
+            className="my-0 md:my-2 w-full h-full md:w-[478px] md:h-[717px]"
           />
     </div>
     <div className="mx-auto">
