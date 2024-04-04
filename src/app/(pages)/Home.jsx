@@ -3,7 +3,7 @@ import "../styles/Home.css";
 // import OurCommitment from "@/components/__home_components/OurCommitment";
 // import GeneralContractor from "@/components/__home_components/GeneralContractor";
 import AboutUs from "@/components/__home_components/AboutUs";
-import Constructor from "@/components/__home_components/Constructor";
+import Constructor from "@/components/__home_components/Constructor/Constructor";
 import ExperiencedContractor from "@/components/__home_components/ExperiencedContractor";
 import { FAQ } from "@/components/__home_components/FAQ";
 import GallerySection from "@/components/__home_components/GallerySection";
