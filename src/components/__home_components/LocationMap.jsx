@@ -43,7 +43,7 @@ const LocationMap = () => {
                   referrerPolicy="no-referrer-when-downgrade"></iframe>
 
 
-                <h5 className="text-sm py-4 px-3 lg:px-10 bg-yellow-700 ">Brooklyn</h5>
+                <h5 className="text-sm py-4 px-3 lg:px-10 bg-yellow-700 text-center">Brooklyn</h5>
               </div>
             </div>
           </div>

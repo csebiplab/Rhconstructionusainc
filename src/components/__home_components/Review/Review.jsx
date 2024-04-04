@@ -96,7 +96,7 @@ const Review = () => {
           allowTouchMove={false}
         // modules={[Autoplay,Navigation, Scrollbar]}
         breakpoints={breakpoints}
-        scrollbar={{ draggable: true }}
+        
       >
         {reviews.map(({ address, author, reviewText }, i) => (
           <SwiperSlide
