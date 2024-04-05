@@ -4,11 +4,13 @@ import Achievement from "./Achievement";
 import Brand from "./Brand";
 import Rating from "./Rating";
 import RatingProgressBar from "./RatingProgressBar";
+import BrandSwiper from "./BrandSwiper";
+
 const RatingComponent = () => {
   return (
-    <div className="lg:py-[15px] py-4">
-      <div className="lg:w-[87.95%] md:w-full mx-auto">
-        <div className="lg:w-[980px] md:w-full mx-auto container">
+    <div className="py-4 lg:py-[15px] container border-2 border-red-500">
+      <div className="w-full mx-auto border-4 border-red-500">
+        <div className="w-full max-w-[980px] mx-auto">
           <div className="rating p-6 rounded-[8px]">
             <h2 className="lg:text-2xl md:text-lg lg:leading-[36px] mb-3">
               Ratings
@@ -87,18 +89,21 @@ const RatingComponent = () => {
                   </div>
                   <div className="flex my-[15px] gap-[8px]">
                     <div className="w-[68px] h-[24px] border-2 bg-[#EAEAEA] py-[5px] px-[19px]">
-                    <h5 className="font-semibold text-[#000] text-[8px]  leading-[12px] text-center">
-                      Quality
-                    </h5>
+                      <h5 className="font-semibold text-[#000] text-[8px]  leading-[12px] text-center">
+                        Quality
+                      </h5>
                     </div>
                     <div className="w-[56px] h-[24px] border-2 bg-[#EAEAEA] py-[5px] px-[19px]">
-                    <h5 className="font-semibold text-[#000] text-[8px]  leading-[12px] text-center">
-                    Value
-                    </h5>
+                      <h5 className="font-semibold text-[#000] text-[8px]  leading-[12px] text-center">
+                        Value
+                      </h5>
                     </div>
                   </div>
                   <div className="w-[132px] h-[24px] border-2 bg-[#EAEAEA] ">
-                   <h5 className="text-[#000] font-semibold text-[8px] py-[5px] px-[32px] text-center leading-[12px]"> Customer Service</h5>
+                    <h5 className="text-[#000] font-semibold text-[8px] py-[5px] px-[32px] text-center leading-[12px]">
+                      {" "}
+                      Customer Service
+                    </h5>
                   </div>
                 </div>
               </div>
@@ -112,12 +117,16 @@ const RatingComponent = () => {
           </div>
 
           <div className="mt-[20px] md:mt-[25px]">
-        <Achievement />
+            <Achievement />
+          </div>
         </div>
-        </div>
-        
       </div>
-      <Brand />
+      <div className="hidden lg:block w-full border border-red-500">
+        <Brand />
+      </div>
+      <div className="block lg:hidden w-full border border-red-500">
+        <BrandSwiper />
+      </div>
     </div>
   );
 };
