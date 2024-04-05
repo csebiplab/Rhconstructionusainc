@@ -26,7 +26,7 @@ const LocationMap = () => {
             </div>
 
             <div>
-              <h2 className="lg:leading-10 lg:text-4xl text-lg py-2 lg:py-4">SERVICE AREA IN RH CONSTRUCTION USA INC</h2>
+              <h1 className="lg:leading-10 lg:text-4xl text-lg py-2 lg:py-4">SERVICE AREA IN RH CONSTRUCTION USA INC</h1>
             </div>
 
           </div>  

@@ -23,11 +23,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
-import {
-  HiOutlineHome,
-  HiOutlineMailOpen,
-  HiPhoneIncoming,
-} from "react-icons/hi";
 
 const our_service_menu_items = {
   interior: [

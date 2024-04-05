@@ -89,7 +89,7 @@ export default function OurServices() {
                 className="my-2"
               />
             </div>
-            <h2 className='lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-center md:text-start'>Our Services</h2>
+            <h1 className='lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-center md:text-start'>Our Services</h1>
             <p className='md:text-base text-[12px] leading-[208%] lg:leading-[250%] text-black text-center md:text-start font-semibold'>Enjoy a stress-free construction service with our unique build process.</p>
             <p className='md:text-base text-[12px] leading-[208%] lg:leading-[250%] text-black text-center md:text-start'>
               <span className='font-semibold'>RH Construction USA</span>, is your trusted partner for top-notch construction services, dedicated to bringing your dream project to life. From conceptualization to completion, we prioritize quality craftsmanship, timely delivery, and cost-effective solutions to meet and exceed your expectations.</p>
