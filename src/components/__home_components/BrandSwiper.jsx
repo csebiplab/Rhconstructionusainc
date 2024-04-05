@@ -69,7 +69,7 @@ const BrandSwiper = () => {
           <div className="brand w-full h-[130px] border-[1px] band rounded-[15px] text-center">
           <Image
             src={band3}
-            width={55}
+            width={62}
             height={37}
             alt=""
             className="mt-[15px] mx-auto"
