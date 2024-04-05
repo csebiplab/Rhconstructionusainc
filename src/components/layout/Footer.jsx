@@ -1,23 +1,21 @@
 "use client";
 import { StarIcon } from "@heroicons/react/24/solid";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FaMapMarkedAlt } from "react-icons/fa";
-import { HiMailOpen } from "react-icons/hi";
-import { MdOutlineAddIcCall } from "react-icons/md";
-import homeAdv from "../../../public/assets/footer/homeadvisor.png";
-import topRate from "../../../public/assets/footer/toprated.png.png";
-import elite from "../../../public/assets/footer/elite.png.png";
-import house from "../../../public/assets/footer/ssa-2023.png.png";
+import { FaPhoneVolume } from "react-icons/fa6";
+import { IoIosMail } from "react-icons/io";
+import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import review from "../../../public/assets/footer/100reviews.png.png";
 import years from "../../../public/assets/footer/10year.png.png";
 import brace from "../../../public/assets/footer/Bark-Reviews-Logo.png";
-import facebook from "../../../public/assets/footer/facebook-reviews-logo.png";
-import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-import { FaPhoneVolume } from "react-icons/fa6";
-import { IoIosMail } from "react-icons/io";
 import gokundo from "../../../public/assets/footer/Gokundu-logo(white and green) 1.png";
-import Image from "next/image";
+import elite from "../../../public/assets/footer/elite.png.png";
+import facebook from "../../../public/assets/footer/facebook-reviews-logo.png";
+import homeAdv from "../../../public/assets/footer/homeadvisor.png";
+import house from "../../../public/assets/footer/ssa-2023.png.png";
+import topRate from "../../../public/assets/footer/toprated.png.png";
 
 const footerIcon = [
   {

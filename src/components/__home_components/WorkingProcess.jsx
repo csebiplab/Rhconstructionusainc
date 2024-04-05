@@ -60,9 +60,9 @@ const WorkingProcess = () => {
           alt="about"
           className="my-2"
         />
-        <h2 className="lg:leading-10 lg:text-4xl text-lg md:py-2 lg:py-4">
+        <h1 className="lg:leading-10 lg:text-4xl text-lg md:py-2 lg:py-4">
           WORKING PROCESS OF OUR CONSTRUCTION COMPANY IN BROOKLYN
-        </h2>
+        </h1>
         <p className="font-semibold lg:text-base md:text-sm">
           Certainly! Here's an overview of the working process of our
           construction company in Brooklyn:

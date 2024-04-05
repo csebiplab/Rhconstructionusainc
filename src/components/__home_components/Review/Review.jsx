@@ -74,9 +74,9 @@ const Review = () => {
             alt="reviewLogo"
             className="my-2 mx-auto"
           />
-          <h2 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[12px] xl:mt-[15px] xl:mb-[25px] text-center">
+          <h1 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[12px] xl:mt-[15px] xl:mb-[25px] text-center">
           Here’s what to expect when you hire us
-          </h2>
+          </h1>
             </div>
             {/* =================== Card Section =============== */}
             <Swiper
