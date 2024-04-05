@@ -16,9 +16,9 @@ const Tools = () => {
             className="md:mt-0 mt-[26px]"
           />
           </div>
-          <h2 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-center md:text-start">
+          <h1 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-center md:text-start">
           HEAVING ALL KINDS OF BUILDING TOOLS & EQUIPMENTS
-          </h2>
+          </h1>
           <p className="md:text-base text-[12px] leading-[208%] lg:leading-[250%] text-black text-center md:text-start">
           RH Construction USA Inc. offers a comprehensive range of building tools and equipment tailored to meet the diverse needs of your project. Whether you're embarking on a small-scale renovation or overseeing a large construction endeavor, we have you covered with top-of-the-line tools and machinery. Our inventory encompasses everything from power drills and saws to heavy-duty excavators and cranes, ensuring that you have access to the right equipment to get the job done efficiently and effectively
       
