@@ -2,9 +2,9 @@
 import vector from "@/components/__home_components/Images/Vector.png";
 import Achievement from "./Achievement";
 import Brand from "./Brand";
+import BrandSwiper from "./BrandSwiper";
 import Rating from "./Rating";
 import RatingProgressBar from "./RatingProgressBar";
-import BrandSwiper from "./BrandSwiper";
 
 const RatingComponent = () => {
   return (
@@ -127,7 +127,7 @@ const RatingComponent = () => {
       <div className="block lg:hidden w-full border border-red-500">
         <BrandSwiper />
       </div>
-    </div>
+    </div> 
   );
 };
 
