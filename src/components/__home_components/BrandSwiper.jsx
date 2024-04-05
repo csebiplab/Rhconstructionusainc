@@ -16,9 +16,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 const BrandSwiper = () => {
   return (
-    <div>
+    <div >
       <Swiper
-          // spaceBetween={21}
+          spaceBetween={13}
           // slidesPerView={3}
           slidesPerView={3}
           modules={[Autoplay, Scrollbar]}
@@ -35,102 +35,102 @@ const BrandSwiper = () => {
           scrollbar={{ draggable: true }}
           
         >
-          <SwiperSlide className={`text-center py-4 px-4`}>
-          <div className="brand w-[115px] h-[95px]  border-[1px] band rounded-[15px] px-1 text-center">
+          <SwiperSlide className={`text-center py-4`}>
+          <div className="brand w-full h-[130px] border-[1px] band rounded-[15px] text-center">
             <div>
               <Image
-                src={band1}
-                width={110}
-                height={95}
+               src={band1}
+                width={66}
+                height={37}
                 alt=""
-                className="md:w-3/4 mt-2 mx-auto"
+                className="mt-[15px] mx-auto"
               />
             </div>
-            <p className="text-center text-xs">
+            <p className="text-center text-[10px] leading-[16px] py-3 px-2">
               R H CONSTRUCTION responds to texts.
             </p>
           </div>
           </SwiperSlide>
-          <SwiperSlide className={`text-center py-4 px-4`}>
-          <div className="brand w-[115px] h-[95px]  border-[1px] band rounded-[15px] px-1 text-center">
+          <SwiperSlide className={`text-center py-4`}>
+          <div className="brand w-full h-[130px] border-[1px] band rounded-[15px] text-center">
             <Image
               src={band2}
-              width={110}
-              height={95}
+              width={64}
+              height={33}
               alt=""
-              className="lg:mb-[10px] md:w-3/4 md:mb-[1px] mt-3  mx-auto"
+              className="mx-auto mt-[10px]"
             />
-            <p className="text-center text-xs md:mt-2 lg:mt-4 lg:text-sm md:leading-[21.1px] ">
+            <p className="text-center text-[10px] leading-[16px] py-3 px-2">
               The Construction company I ever seen.
             </p>
           </div>
           </SwiperSlide>
-          <SwiperSlide className={`text-center py-4 px-4`}>
-          <div className="brand w-[115px] h-[95px]  border-[1px] band rounded-[15px] px-1 text-center">
+          <SwiperSlide className={`text-center py-4`}>
+          <div className="brand w-full h-[130px] border-[1px] band rounded-[15px] text-center">
           <Image
             src={band3}
-            width={110}
-            height={95}
+            width={55}
+            height={37}
             alt=""
-            className="lg:mb-[10px] md:mt-3 md:mb-[5px] mx-auto"
+            className="mt-[15px] mx-auto"
           />
-          <p className="text-center text-xs lg:mt-3 lg:text-sm leading-[21.1px]">
+          <p className="text-center text-[10px] leading-[16px] py-3 px-2">
             We hired RH CONSTRUCTION
           </p>
         </div>
           </SwiperSlide>
-          <SwiperSlide className={`text-center py-4 px-4`}>
-          <div className="brand w-[115px] h-[95px]  border-[1px] band rounded-[15px] px-1 text-center">
+          <SwiperSlide className={`text-center py-4`}>
+          <div className="brand w-full h-[130px] border-[1px] band rounded-[15px] text-center">
           <Image
             src={band4}
-            width={80}
-            height={70}
+            width={40}
+            height={35}
             alt=""
-            className="lg:mb-[10px] md:mb-[2px] mx-auto"
+            className="mt-[15px] mx-auto"
           />
-          <p className="text-center lg:mt-2 text-xs lg:text-sm  leading-[21.1px] overflow-hidden">
-            Maricelas R H CONSTRUCTION
+          <p className="text-center text-[10px] leading-[16px] py-3 px-2">
+            Maricelas R H CONSTRUCTION
           </p>
         </div>
           </SwiperSlide>
-          <SwiperSlide className={`text-center py-4 px-4`}>
-          <div className="brand w-[115px] h-[95px]  border-[1px] band rounded-[15px] px-1 text-center">
+          <SwiperSlide className={`text-center py-4`}>
+          <div className="brand w-full h-[130px] border-[1px] band rounded-[15px] text-center">
           <Image
             src={band5}
-            width={110}
-            height={90}
+            width={80}
+            height={70}
             alt=""
-            className="lg:mb-[10px] lg:mt-8 md:mt-6 mt-5 mx-auto"
+            className="mt-[18px] mx-auto"
           />
-          <p className="text-center md:mt-6  mt-2 text-xs lg:text-sm leading-[21.1px]">
+          <p className="text-center text-[10px] leading-[16px] py-3 px-2">
             We never used a Construction service
           </p>
         </div>
           </SwiperSlide>
-          <SwiperSlide className={`text-center py-4 px-4`}>
-          <div className="brand w-[115px] h-[95px]  border-[1px] band rounded-[15px] px-1 text-center">
+          <SwiperSlide className={`text-center py-4`}>
+          <div className="brand w-full h-[130px] border-[1px] band rounded-[15px] text-center">
           <Image
             src={band6}
-            width={110}
-            height={90}
+            width={65}
+            height={37}
             alt=""
-            className="lg:mb-[10px] md:mb-[5px] md:mt-3 lg:mt-1 mx-auto"
+            className="mt-[15px] mx-auto"
           />
-          <p className="text-center text-xs  lg:text-sm leading-[21.1px]">
+          <p className="text-center text-[10px] leading-[16px] py-3 px-2">
             What a pleasure it was working with R H
           </p>
         </div> 
           </SwiperSlide>
           <SwiperSlide className={`text-center py-4`}>
-          <div className="brand w-[115px] h-[95px] border-[1px] band rounded-[15px] px-1 text-center">
+          <div className="brand w-full h-[130px] border-[1px] band rounded-[15px] text-center">
           <Image
             src={band7}
-            width={60}
-            height={48}
+            width={56}
+            height={35}
             alt=""
-            className="mt-3 md:w-1/2"
+            className="mt-[15px] mx-auto"
           />
-          <p className="text-center lg:mt-4 md:mt-3 text-xs lg:text-sm leading-[21.1px]">
+          <p className="text-center text-[10px] leading-[16px] py-3 px-2">
             I always receive excellent service.
           </p>
         </div>
