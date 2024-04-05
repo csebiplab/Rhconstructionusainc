@@ -231,7 +231,7 @@ const Home = () => {
       {/* Construction Project Section Ends */}
 
       {/* Our Location Section starts */}
-      <div className="md:py-6 lg:py-[55px]">
+      <div>
         <LocationMap />
       </div>
       {/* Our Location Section ends */}

@@ -38,7 +38,7 @@ const AboutUs = () => {
               customers.
             </p>
 
-            <div className="w-full flex justify-center md:block border border-red-500">
+            <div className="w-full flex justify-center md:block">
               <div className="flex items-center text-center mt-5 mb-[33px] gap-3 sm:gap-6 lg:gap-8">
                 <div>
                   <Button className="rounded-md bg-primary hover:bg-gray-900 text-black hover:text-white md:text-sm lg:text-lg font-semibold tracking-wider capitalize flex items-center gap-2">

@@ -10,9 +10,9 @@ import Image from "next/image";
 const Brand = () => {
   return (
    <div className="container">
-     <div className="brands pt-4 grid grid-cols-3 md:grid-cols-7 lg:gap-3 gap-2">
+     <div className="brands mt-5 md:mt-6 grid grid-cols-3 md:grid-cols-7 lg:gap-3 gap-2">
      <div className="flex items-center justify-center">
-     <div className="brand w-full md:h-[174px] border-[1px] band rounded-[15px] px-1 md:py-[3px] py-1 text-center ">
+     <div className="brand w-full md:h-[174px] border-[1px] band rounded-[15px] px-1 md:py-[3px] py-1 text-center">
         <div>
         <Image
           src={band1}

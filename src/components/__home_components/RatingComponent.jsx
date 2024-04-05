@@ -111,8 +111,11 @@ const RatingComponent = () => {
             </p>
           </div>
 
-          <Achievement />
+          <div className="mt-[20px] md:mt-[25px]">
+        <Achievement />
         </div>
+        </div>
+        
       </div>
       <Brand />
     </div>
