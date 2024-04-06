@@ -27,7 +27,7 @@ const Brand = () => {
             </p>
           </div>
         </div>
-        <div>
+       
           <div className="brand w-full md:h-[174px] border-[1px] band rounded-[15px] lg:px-2 md:px-1 lg:py-[14px] md:py-[5px]  text-center p-2 md:p-0">
             <Image
               src={band2}
@@ -40,7 +40,7 @@ const Brand = () => {
               The Construction company I ever seen.
             </p>
           </div>
-        </div>
+        
         <div className="brand w-full md:h-[174px] border-[1px] band rounded-[15px] lg:px-2 md:px-1 lg:py-[14px] py-[5px] text-center">
           <Image
             src={band3}

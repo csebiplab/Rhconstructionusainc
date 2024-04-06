@@ -2,14 +2,14 @@
 import vector from "@/components/__home_components/Images/Vector.png";
 import Achievement from "./Achievement";
 import Brand from "./Brand";
+import BrandSwiper from "./BrandSwiper";
 import Rating from "./Rating";
 import RatingProgressBar from "./RatingProgressBar";
-import BrandSwiper from "./BrandSwiper";
 
 const RatingComponent = () => {
   return (
-    <div className="py-4 lg:py-[15px] container border-2 border-red-500">
-      <div className="w-full mx-auto border-4 border-red-500">
+    <div className="py-4 lg:py-[15px] container">
+      <div className="w-full mx-auto">
         <div className="w-full max-w-[980px] mx-auto">
           <div className="rating p-6 rounded-[8px]">
             <h2 className="lg:text-2xl md:text-lg lg:leading-[36px] mb-3">
@@ -121,13 +121,13 @@ const RatingComponent = () => {
           </div>
         </div>
       </div>
-      <div className="hidden lg:block w-full border border-red-500">
+      <div className="hidden lg:block w-full">
         <Brand />
       </div>
-      <div className="block lg:hidden w-full border border-red-500">
+      <div className="block lg:hidden w-full">
         <BrandSwiper />
       </div>
-    </div>
+    </div> 
   );
 };
 
