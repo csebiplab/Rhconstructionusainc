@@ -4,14 +4,14 @@ import Image from "next/image";
 import { useState } from "react";
 import bathroom from "../../../../public/assets/services/bithrom.png";
 import Brick from "../../../../public/assets/services/brick.png";
-import Brown from "../../../../public/assets/services/brown.png";
-import Kitchen from "../../../../public/assets/services/kitchen.png";
-import {
-  default as Painting,
-  default as Pointing2,
-} from "../../../../public/assets/services/painting.png";
-import Plastering from "../../../../public/assets/services/plastering.png";
-import Plumbing from "../../../../public/assets/services/plumbing.png";
+// import Brown from "../../../../public/assets/services/brown.png";
+// import Kitchen from "../../../../public/assets/services/kitchen.png";
+// import {
+//   default as Painting,
+//   default as Pointing2,
+// } from "../../../../public/assets/services/painting.png";
+// import Plastering from "../../../../public/assets/services/plastering.png";
+// import Plumbing from "../../../../public/assets/services/plumbing.png";
 import Power from "../../../../public/assets/services/power.png";
 import Roofing from "../../../../public/assets/services/roofing.png";
 import Sheetrock from "../../../../public/assets/services/sheetrock.png";
@@ -38,19 +38,23 @@ const interior = [
   },
   {
     title: "Plastering",
-    img: Plastering,
+    // img: Plastering,
+    img: Sheetrock,
   },
   {
     title: "Plumbing",
-    img: Plumbing,
+    // img: Plumbing,
+    img: bathroom,
   },
   {
     title: "Kitchen Remodeling",
-    img: Kitchen,
+    // img: Kitchen,
+    img: bathroom,
   },
   {
     title: " Painting",
-    img: Painting,
+    // img: Painting,
+    img: bathroom,
   },
 ];
 const exterior = [
@@ -60,7 +64,8 @@ const exterior = [
   },
   {
     title: "Pointing",
-    img: Pointing2,
+    // img: Pointing2,
+    img: Roofing,
   },
   {
     title: "Water Proofing",
@@ -68,7 +73,8 @@ const exterior = [
   },
   {
     title: "Brown Stone Repair",
-    img: Brown,
+    // img: Brown,
+    img: Water,
   },
   {
     title: "Brick Works",
