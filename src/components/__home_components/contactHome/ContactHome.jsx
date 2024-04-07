@@ -9,13 +9,13 @@ export default function ContactHome() {
     <div className="bg-yellow-50">
 
       <section className='container' >
-        <div className="mx-auto md:pt-6 lg:pt-[55px]">
+        <div className="mx-auto md:pt-6 lg:pt-[55px] mb-5 md:mb-0">
           <div className="grid grid-cols-1 gap-x-16 lg:grid-cols-6 items-center ">
 
             <div className="lg:col-span-3 lg:py-20  lg:px-5 px-2 py-2 bg-yellow-700">
 
               <div className=' lg:py-20 py-6 lg:px-10 px-4 text-center md:text-start'>
-                <h2 className=" lg:text-[36px] text-[20px] ">
+                <h2 className=" lg:text-[36px] text-lg ">
                   Contact Us
                 </h2>
                 <div className=' flex gap-2 items-center lg:text-[18px] text-[14px] lg:py-8 py-4 justify-center md:justify-start'>
@@ -46,13 +46,13 @@ export default function ContactHome() {
             </div>
 
             <div className="rounded-lg p-5 lg:col-span-3 lg:p-12 items-center">
-              <h2 className='lg:mb-8 mb-5'> Give Us Feedback </h2>
+              <h2 className='lg:mb-8 mb-5 lg:text-[36px] text-lg'> Give Us Feedback </h2>
               <form action="#" className="space-y-4 ">
 
                 <div >
 
                   <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:mb-8 mb-4">
-                    <div> <h5 className='mb-2'>Your name *</h5>
+                    <div> <h5 className='mb-2 text-xs md:text-base'>Your name *</h5>
                       <label className="sr-only" htmlFor="email">name</label>
                       <input
                         className="w-full rounded-lg bg-[#FFB70326] shadow-sm shadow-black p-3 text-sm"
@@ -63,7 +63,7 @@ export default function ContactHome() {
                     </div>
 
                     <div>
-                      <h5 className='mb-2'>Email *</h5>
+                      <h5 className='mb-2 text-xs md:text-base'>Email *</h5>
                       <label className="sr-only" htmlFor="phone">Phone</label>
                       <input
                         className="w-full rounded-lg bg-[#FFB70326] shadow-sm shadow-black p-3 text-sm"
@@ -77,7 +77,7 @@ export default function ContactHome() {
 
                 <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:mb-8 mb-4  ">
                   <div>
-                    <h5 className='mb-2'>Subjects *</h5>
+                    <h5 className='mb-2 text-xs md:text-base'>Subjects *</h5>
                     <label className="sr-only" htmlFor="email">Email</label>
                     <input
                       className="w-full rounded-lg bg-[#FFB70326] shadow-sm shadow-black p-3 text-sm"
@@ -88,7 +88,7 @@ export default function ContactHome() {
                   </div>
 
                   <div>
-                    <h5 className='mb-2'>Your Phone *</h5>
+                    <h5 className='mb-2 text-xs md:text-base'>Your Phone *</h5>
                     <label className="sr-only" htmlFor="phone">Phone</label>
                     <input
                       className="w-full rounded-lg bg-[#FFB70326] shadow-sm shadow-black p-3 text-sm"
@@ -101,7 +101,7 @@ export default function ContactHome() {
 
                 <div >
                   <label className="sr-only" htmlFor="message">Message</label>
-                  <h5 className='mb-2'>Message *</h5>
+                  <h5 className='mb-2 text-xs md:text-base'>Message *</h5>
                   <textarea
                     className="w-full rounded-lg bg-[#FFB70326] shadow-sm shadow-black p-4 text-sm"
                     placeholder="Write Message"
@@ -113,7 +113,7 @@ export default function ContactHome() {
                 <div className='flex justify-center md:justify-start'>
                   <button
                     type="submit"
-                    className=" w-full rounded-md bg-[#FBCC21E4] px-10 py-4 lg:px-20  font-semibold  sm:w-auto text-black items-center flex lg:mt-13 mt-8"
+                    className="w-1/2 md:w-full rounded-md bg-[#FBCC21E4] px-10 py-2 md:py-4 lg:px-20  font-semibold  sm:w-auto text-black items-center flex lg:mt-13 mt-2"
                   >
                     Submit <FaLocationArrow className='ml-2' />
                   </button>
