@@ -61,7 +61,7 @@ const Footer = () => {
             <div className="col-span-2">
               <img src="/assets/images/footer-logo.webp" alt="" className="" />
               <p className="text-white pt-6 mb-3 ml-2 lg:text-[36px] md:text-md ">
-                RH Construction USA, Inc. <br /> General Cronstruction.
+                RH Construction USA, Inc. <br /> General Construction.
               </p>
               {/* <h5 className="text-gray-500">Customer Reviews</h5> */}
               <div className="flex items-center text-lg lg:gap-4 gap-2 lg:my-10 my-2 ml-2">
@@ -76,7 +76,7 @@ const Footer = () => {
 
             <div className="col-span-3 flex justify-around">
               <div className=" col-span-1">
-                <h3 className="font-semibold text-white  lg:text-[36px] md:text-[25px] lg:mb-10 md:mb-5 mb-3 ">
+                <h3 className="font-semibold text-white text-lg lg:text-[36px] md:text-[25px] lg:mb-10 md:mb-5 mb-3 ">
                   {" "}
                   News{" "}
                 </h3>
@@ -84,16 +84,16 @@ const Footer = () => {
                   <li className=" ">
                     <Link
                       href="#"
-                      className="footer-link lg:text-[20px] md:text-sm items-center"
+                      className="footer-link text-xs lg:text-[20px] lg:leading-[28px] items-center"
                     >
                       <MdKeyboardDoubleArrowRight />
-                      How it work
+                      How it works
                     </Link>
                   </li>
                   <li className=" lg:py-8 md:py-4 py-2">
                     <Link
                       href="#"
-                      className="footer-link lg:text-[20px] md:text-sm items-center "
+                      className="footer-link text-xs lg:text-[20px] lg:leading-[28px] items-center "
                     >
                       <MdKeyboardDoubleArrowRight />
                       Gallery
@@ -102,42 +102,42 @@ const Footer = () => {
                   <li className=" ">
                     <Link
                       href="#"
-                      className="footer-link lg:text-[20px] md:text-sm items-center"
+                      className="footer-link text-xs lg:text-[20px] lg:leading-[28px] items-center"
                     >
                       <MdKeyboardDoubleArrowRight />
-                      Testimonils
+                     Testimonials
                     </Link>
                   </li>
                   <li className="lg:py-8 md:py-4 py-2 ">
                     <Link
                       href="#"
-                      className="footer-link lg:text-[20px] md:text-sm items-center "
+                      className="footer-link text-xs lg:text-[20px] lg:leading-[28px] items-center "
                     >
                       <MdKeyboardDoubleArrowRight />
-                      Career
+                      Careers
                     </Link>
                   </li>
                   <li className=" ">
                     <Link
                       href="#"
-                      className="footer-link lg:text-[20px] md:text-sm items-center"
+                      className="footer-link text-xs lg:text-[20px] lg:leading-[28px] items-center"
                     >
                       <MdKeyboardDoubleArrowRight />
-                      Sitmap
+                      Sitemap
                     </Link>
                   </li>
                 </ul>
               </div>
 
               <div className=" col-span-1">
-                <h3 className="font-semibold text-white lg:text-[36px] md:text-[25px] lg:mb-10 md:mb-5 mb-3">
+                <h3 className="font-semibold text-white text-lg lg:text-[36px] md:text-[25px] lg:mb-10 md:mb-5 mb-3">
                   Ours Services
                 </h3>
                 <ul className="">
                   <li className=" ">
                     <Link
                       href="#"
-                      className="footer-link lg:text-[20px] md:text-sm items-center"
+                      className="footer-link lg:text-[20px] lg:leading-[28px] text-xs items-center"
                     >
                       <MdKeyboardDoubleArrowRight />
                       Kitchen Remodeling
@@ -146,7 +146,7 @@ const Footer = () => {
                   <li className="  lg:py-8 md:py-4 py-2">
                     <Link
                       href="#"
-                      className="footer-link lg:text-[20px] md:text-sm items-center"
+                      className="footer-link lg:text-[20px] lg:leading-[28px] text-xs items-center"
                     >
                       <MdKeyboardDoubleArrowRight />
                       Bathroom Remodeling
@@ -155,7 +155,7 @@ const Footer = () => {
                   <li className=" ">
                     <Link
                       href="#"
-                      className="footer-link lg:text-[20px] md:text-sm items-center"
+                      className="footer-link lg:text-[20px] lg:leading-[28px] text-xs items-center"
                     >
                       <MdKeyboardDoubleArrowRight />
                       Painting
@@ -164,7 +164,7 @@ const Footer = () => {
                   <li className=" lg:py-8 md:py-4 py-2">
                     <Link
                       href="#"
-                      className="footer-link lg:text-[20px] md:text-sm items-center "
+                      className="footer-link lg:text-[20px] lg:leading-[28px] text-xs items-center "
                     >
                       <MdKeyboardDoubleArrowRight />
                       Roofing
@@ -173,7 +173,7 @@ const Footer = () => {
                   <li className=" ">
                     <Link
                       href="#"
-                      className="footer-link lg:text-[20px] md:text-sm items-center"
+                      className="footer-link lg:text-[20px] lg:leading-[28px] text-xs items-center"
                     >
                       <MdKeyboardDoubleArrowRight />
                       Brown Stone Repair
@@ -182,7 +182,7 @@ const Footer = () => {
                   <li className=" lg:py-8 md:py-4 py-2">
                     <Link
                       href="#"
-                      className="footer-link lg:text-[20px] md:text-sm items-center "
+                      className="footer-link lg:text-[20px] lg:leading-[28px] text-xs items-center "
                     >
                       <MdKeyboardDoubleArrowRight />
                       Brick Works
@@ -193,41 +193,47 @@ const Footer = () => {
             </div>
 
             <div className="col-span-2">
-              <h3 className="font-semibold text-white   lg:text-[36px] md:text-[25px] lg:mb-10 md:mb-5 mb-3">
+              <h3 className="font-semibold text-white text-lg lg:text-[36px] md:text-[25px] lg:mb-10 md:mb-5 mb-3 text-center md:text-start">
                 Contact Us
               </h3>
-              <ul className=" ">
+              <ul className="">
+                <div className="flex justify-center md:justify-start">
                 <li>
                   <a
                     href=""
-                    className="footer-link items-center lg:text-[20px] md:text-sm"
+                    className="footer-link items-center lg:text-[20px] lg:leading-[28px] text-xs"
                   >
-                    <FaMapMarkedAlt className=" lg:h-7 lg:w-7  h-4 w-4" /> 553
+                    <FaMapMarkedAlt className=" lg:h-7 lg:w-7 h-4 w-4" /> 553
                     East 2nd Street Brooklyn, NY 11218
                   </a>
                 </li>
-                <li className=" lg:py-8 md:py-4 py-2">
+                </div>
+               <div className="flex justify-center md:justify-start">
+               <li className=" lg:py-8 md:py-4 py-2">
                   <a
                     href="tel:+1 (646) 683-4612"
-                    className="footer-link items-center lg:text-[20px] md:text-sm"
+                    className="footer-link items-center lg:text-[20px] lg:leading-[28px] text-xs"
                   >
                     <FaPhoneVolume className=" lg:h-7 lg:w-7 h-4 w-4" /> +1
                     (646) 683-4612
                   </a>
                 </li>
-                <li>
+               </div>
+               <div className="flex justify-center md:justify-start">
+               <li>
                   <a
                     href="mailto:rhconusa@gmail.com"
-                    className="footer-link items-center lg:text-[20px] md:text-sm"
+                    className="footer-link items-center lg:text-[20px] lg:leading-[28px] text-xs"
                   >
                     <IoIosMail className=" lg:h-7 lg:w-7 h-4 w-4" />{" "}
                     rhconusa@gmail.com
                   </a>
                 </li>
+               </div>
                 <div>
                   <div className="grid grid-cols-4 lg:gap-8 gap-5 lg:my-12 md:my-8 my-5">
                     {footerIcon.map((fIcon, i) => (
-                      <div key={i} className=" col-span-1">
+                      <div key={i} className="flex justify-center md:justify-start col-span-1">
                         <img
                           src={fIcon.img.src}
                           className=" lg:h-auto lg:w-auto w-10 h-10"
@@ -242,20 +248,20 @@ const Footer = () => {
 
           <div className="grid lg:grid-cols-9 gap-5 pt-20 items-center">
             <div className=" col-span-3 flex items-center gap-2">
-              <p className=" lg:text-[18px] md:text-sm ">
+              <p className=" lg:text-[18px] text-xs">
                 {" "}
                 <b>WEBSITE DESIGN AND SEO BY:-</b>{" "}
               </p>
               <Image src={gokundo} alt="gokundo" className=" ml-2 " />
             </div>
             <div className=" col-span-4">
-              <p className=" lg:text-[18px] md:text-sm  ">
+              <p className=" lg:text-[18px] text-xs  ">
                 © All Copyright 2024 by RH Construction USA, Inc. General
                 Cronstruction.
               </p>
             </div>
             <div className=" col-span-2">
-              <ul className=" lg:text-[18px] md:text-sm  flex justify-between ">
+              <ul className=" lg:text-[18px] text-xs  flex justify-between ">
                 <li> Terms & Condition </li>
                 <li> Privacy Policy </li>
               </ul>
