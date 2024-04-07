@@ -113,7 +113,7 @@ export default function ContactHome() {
                 <div className='flex justify-center md:justify-start'>
                   <button
                     type="submit"
-                    className="w-1/2 md:w-full rounded-md bg-[#FBCC21E4] px-10 py-2 md:py-4 lg:px-20  font-semibold  sm:w-auto text-black items-center flex lg:mt-13 mt-2"
+                    className="w-1/2 rounded-md bg-[#FBCC21E4] px-10 py-2 md:py-4 lg:px-20  font-semibold  sm:w-auto text-black items-center flex lg:mt-13 mt-2"
                   >
                     Submit <FaLocationArrow className='ml-2' />
                   </button>
