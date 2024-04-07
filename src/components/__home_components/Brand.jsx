@@ -12,7 +12,7 @@ const Brand = () => {
     <div className="">
       <div className="brands mt-6 grid grid-cols-7 gap-3 2xl:gap-4 4xl:gap-6">
         <div className="flex items-center justify-center">
-          <div className="brand w-full md:h-[174px] border-[1px] band rounded-[15px] px-1 md:py-[3px] py-1 text-center">
+          <div className="brand w-full md:h-[174px] rounded-[15px] px-1 md:py-[3px] py-1 text-center">
             <div>
               <Image
                 src={band1}
@@ -28,7 +28,7 @@ const Brand = () => {
           </div>
         </div>
        
-          <div className="brand w-full md:h-[174px] border-[1px] band rounded-[15px] lg:px-2 md:px-1 lg:py-[14px] md:py-[5px]  text-center p-2 md:p-0">
+          <div className="brand w-full md:h-[174px] rounded-[15px] lg:px-2 md:px-1 lg:py-[14px] md:py-[5px]  text-center p-2 md:p-0">
             <Image
               src={band2}
               width={110}
@@ -41,7 +41,7 @@ const Brand = () => {
             </p>
           </div>
         
-        <div className="brand w-full md:h-[174px] border-[1px] band rounded-[15px] lg:px-2 md:px-1 lg:py-[14px] py-[5px] text-center">
+        <div className="brand w-full md:h-[174px] rounded-[15px] lg:px-2 md:px-1 lg:py-[14px] py-[5px] text-center">
           <Image
             src={band3}
             width={110}
@@ -53,7 +53,7 @@ const Brand = () => {
             We hired RH CONSTRUCTION
           </p>
         </div>
-        <div className="brand w-full md:h-[174px] border-[1px] band rounded-[15px] lg:px-2 md:px-1 lg:py-[14px] py-[5px] md:text-start text-center">
+        <div className="brand w-full md:h-[174px] rounded-[15px] lg:px-2 md:px-1 lg:py-[14px] py-[5px] md:text-start text-center">
           <Image
             src={band4}
             width={80}
@@ -65,7 +65,7 @@ const Brand = () => {
             Maricelas R H CONSTRUCTION
           </p>
         </div>
-        <div className="brand w-full md:h-[174px] border-[1px] band rounded-[15px] lg:px-2 md:px-1 lg:py-[14px] md:py[5px] text-center">
+        <div className="brand w-full md:h-[174px] rounded-[15px] lg:px-2 md:px-1 lg:py-[14px] md:py[5px] text-center">
           <Image
             src={band5}
             width={110}
@@ -77,7 +77,7 @@ const Brand = () => {
             We never used a Construction service
           </p>
         </div>
-        <div className="brand w-full md:h-[174px] border-[1px] band rounded-[15px] lg:px-2 px-1 lg:py-[14px] md:py-[5px] text-center">
+        <div className="brand w-full md:h-[174px] rounded-[15px] lg:px-2 px-1 lg:py-[14px] md:py-[5px] text-center">
           <Image
             src={band6}
             width={110}
@@ -90,7 +90,7 @@ const Brand = () => {
           </p>
         </div>
 
-        <div className="brand band-card w-full md:h-[174px] border-[1px] band rounded-[15px] lg:px-2 px-1 lg:py-[14px] md:py-[5px] py-3 text-center xs:mx-auto mx-0">
+        <div className="brand band-card w-full md:h-[174px] rounded-[15px] lg:px-2 px-1 lg:py-[14px] md:py-[5px] py-3 text-center xs:mx-auto mx-0">
           <Image
             src={band7}
             width={60}

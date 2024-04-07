@@ -143,101 +143,8 @@ const WorkingProcess = () => {
 
       {/* ================= Mobile View Swiper =========== */}
       <div className="block md:hidden mt-4">
-      {/* <Swiper
-          // spaceBetween={10}
-          // slidesPerView={3}
-          modules={[ Scrollbar]}
-          loop={true}
-          autoplay={{
-            delay: 3000,
-            pauseOnMouseEnter: false,
-            disableOnInteraction: false,
-            stopOnLastSlide: false,
-          }}
-          speed={3000}
-          allowTouchMove={false}
-          breakpoints={breakpoints}
-          scrollbar={{ draggable: true }}
-          
-        >
-          <SwiperSlide className={`text-center !mr-0 py-4 lg:py-10 shrink-0`}>
-          <div className="w-[176px] h-[300px] card-sd section-bg rounded-md mb-2 ">
-          <Image
-            src={mask1}
-            width={175}
-            height={118}
-            alt=""
-            className="w-full mb-[6px] rounded-md"
-          />
-          <div className="text-center py-2">
-            <h4 className="text-xs">Project Planning and Design</h4>
-            <p className="text-[9px] my-[8px] text-black">
-              We begin by meeting with clients to understand their needs, goals,
-              and budget constraints.
-            </p>
-          </div>
-        </div>
-          </SwiperSlide>
-          <SwiperSlide className={`text-center !mr-0 py-4 shrink-0`}>
-          <div className="w-[176px] h-[300px] card-sd section-bg rounded-md mb-2">
-          <Image
-            src={mask2}
-            width={175}
-            height={118}
-            alt=""
-            className="w-full rounded-md mb-[6px]"
-          />
-          <div className="text-center py-2">
-            <h4 className="text-xs">
-              Procurement of Materials & Resources
-            </h4>
-            <p className="text-[9px] my-[8px] text-black">
-              We source high-quality materials and engage skilled laborers and
-              subcontractors necessary for the project.
-            </p>
-          </div>
-        </div>
-          </SwiperSlide>
-          <SwiperSlide className={`text-center !mr-0 py-4 shrink-0`}>
-          <div className="w-[176px] h-[300px] card-sd section-bg rounded-md mb-2">
-          <Image
-            src={mask3}
-            width={175}
-            height={118}
-            alt=""
-            className="w-full rounded-md mb-[6px]"
-          />
-          <div className="text-center py-2">
-            <h4 className="text-xs">Quality Control and Assurance</h4>
-            <p className="text-[9px] my-[8px] text-black">
-              Throughout the construction phase, we conduct regular inspections
-              and quality control checks to ensure.
-            </p>
-          </div>
-        </div>
-          </SwiperSlide>
-          <SwiperSlide className={`text-center !mr-0 py-4 lg:py-10 shrink-0`}>
-          <div className="w-[176px] h-[300px] card-sd section-bg rounded-md mb-2 ">
-          <Image
-            src={mask4}
-            width={175}
-            height={118}
-            alt=""
-            className="w-full rounded-md mb-[6px]"
-          />
-          <div className="text-center py-2 lg:py-3">
-            <h4 className="text-xs">Client Communication and Updates</h4>
-            <p className="text-[9px] my-[8px] text-black">
-              We maintain open lines of communication with clients, providing
-              regular updates on the progress of their projects.
-            </p>
-          </div>
-        </div>
-          </SwiperSlide>
-          
-        </Swiper> */}
-
         <Swiper
+        spaceBetween={17}
         slidesPerView={2}
          modules={[ Scrollbar]}
          loop={true}
@@ -255,18 +162,18 @@ const WorkingProcess = () => {
   // Add your Swiper props here
 >
   {slideContents.map((slide, index) => (
-    <SwiperSlide key={index} className={`text-center !mr-0 py-4 lg:py-10 !flex-shrink-[inherit]`}>
-      <div className="w-[176px] h-[300px] card-sd section-bg rounded-md mb-2 ">
+    <SwiperSlide key={index} className={`text-center py-4`}>
+      <div className="w-full h-[290px] card-sd section-bg rounded-md mb-2">
         <Image
           src={slide.imageSrc}
           width={175}
           height={118}
           alt=""
-          className="w-full mb-[6px] rounded-md"
+          className="w-full h-1/2 mb-[6px] rounded-md"
         />
-        <div className="text-center py-2">
+        <div className="text-center py-2 px-1">
           <h4 className="text-xs">{slide.title}</h4>
-          <p className="text-[9px] my-[8px] text-black">{slide.description}</p>
+          <p className="text-[9px] leading-[16px] my-[8px] text-black">{slide.description}</p>
         </div>
       </div>
     </SwiperSlide>
