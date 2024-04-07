@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { useState } from "react";
 import bathroom from "../../../../public/assets/services/bithrom.png";
