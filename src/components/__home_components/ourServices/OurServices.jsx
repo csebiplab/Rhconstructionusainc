@@ -79,8 +79,8 @@ export default function OurServices() {
       <div className='container py-6 lg:py-[55px]'>
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-40 gap-4 lg:p-5 md:p-3 items-end text-sm">
 
-          <div className="  ">
-          <div className="flex justify-center md:block">
+          <div>
+          <div className="flex justify-center">
               <Image
                 src={services}
                 width={101}
