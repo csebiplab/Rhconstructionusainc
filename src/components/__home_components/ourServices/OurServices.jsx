@@ -194,10 +194,12 @@ export default function OurServices() {
                       </p>
                     </div>
                     <div className="absolute  top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                      <img
+                      <Image
                         className=" lg:w-20 lg:h-20 w-14 h-14 bg-white rounded-full border-black"
-                        src={service.img.src}
+                        src={service?.img}
                         alt="Profile"
+                        width={20}
+                        height={20}
                       />
                     </div>
                   </div>
@@ -219,9 +221,11 @@ export default function OurServices() {
                       </p>
                     </div>
                     <div className="absolute  top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                      <img
+                      <Image
                         className="lg:w-20 lg:h-20 w-14 h-14 bg-white rounded-full  border-black"
-                        src={service.img.src}
+                        src={service?.img}
+                        width={20}
+                        height={20}
                         alt="Profile"
                       />
                     </div>
@@ -232,7 +236,7 @@ export default function OurServices() {
           )}
 
           {/* PHONE VIEW SWIPER SLIDER STARTS */}
-          <div className="hidden mb-5">
+          {/* <div className="hidden mb-5">
             <Swiper
               slidesPerView={1}
               modules={[Autoplay, Navigation]}
@@ -269,7 +273,7 @@ export default function OurServices() {
 
               <SwiperNavButtons />
             </Swiper>
-          </div>
+          </div> */}
           {/* PHONE VIEW SWIPER SLIDER ENDS */}
 
           <div className="block md:hidden">
