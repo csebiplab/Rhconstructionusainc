@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import bathroom from "../../../../public/assets/services/bithrom.png";
-import Brick from "../../../../public/assets/services/brick.png";
+// import bathroom from "../../../../public/assets/services/bithrom.png";
+// import Brick from "../../../../public/assets/services/brick.png";
 // import Brown from "../../../../public/assets/services/brown.png";
 // import Kitchen from "../../../../public/assets/services/kitchen.png";
 // import {
@@ -12,10 +12,10 @@ import Brick from "../../../../public/assets/services/brick.png";
 // } from "../../../../public/assets/services/painting.png";
 // import Plastering from "../../../../public/assets/services/plastering.png";
 // import Plumbing from "../../../../public/assets/services/plumbing.png";
-import Power from "../../../../public/assets/services/power.png";
-import Roofing from "../../../../public/assets/services/roofing.png";
-import Sheetrock from "../../../../public/assets/services/sheetrock.png";
-import Water from "../../../../public/assets/services/water.png";
+// import Power from "../../../../public/assets/services/power.png";
+// import Roofing from "../../../../public/assets/services/roofing.png";
+// import Sheetrock from "../../../../public/assets/services/sheetrock.png";
+// import Water from "../../../../public/assets/services/water.png";
 
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -30,59 +30,53 @@ import "swiper/css/virtual";
 const interior = [
   {
     title: "Bathroom Remodeling",
-    img: bathroom,
+    img: "/assets/services/bithrom.png",
   },
   {
     title: "Sheetrock",
-    img: Sheetrock,
+    img: "/assets/services/sheetrock.png",
   },
   {
     title: "Plastering",
-    // img: Plastering,
-    img: Sheetrock,
+    img: "/assets/services/plastering.png",
   },
   {
     title: "Plumbing",
-    // img: Plumbing,
-    img: bathroom,
+    img: "/assets/services/plumbing.png",
   },
   {
     title: "Kitchen Remodeling",
-    // img: Kitchen,
-    img: bathroom,
+    img: "/assets/services/kitchen.png",
   },
   {
     title: " Painting",
-    // img: Painting,
-    img: bathroom,
+    img: "/assets/services/painting.png",
   },
 ];
 const exterior = [
   {
     title: "Roofing",
-    img: Roofing,
+    img: "/assets/services/roofing.png",
   },
   {
     title: "Pointing",
-    // img: Pointing2,
-    img: Roofing,
+    img: "/assets/services/pointing.png",
   },
   {
     title: "Water Proofing",
-    img: Water,
+    img: "/assets/services/water.png",
   },
   {
     title: "Brown Stone Repair",
-    // img: Brown,
-    img: Water,
+    img: "/assets/services/brown.png",
   },
   {
     title: "Brick Works",
-    img: Brick,
+    img: "/assets/services/brick.png",
   },
   {
     title: " Power Wash",
-    img: Power,
+    img: "/assets/services/power.png",
   },
 ];
 
