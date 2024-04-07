@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import 'swiper/css/scrollbar';
 import "swiper/css/virtual";
-import { Scrollbar } from 'swiper/modules';
+import { Autoplay, Scrollbar } from 'swiper/modules';
 import { Swiper, SwiperSlide } from "swiper/react";
 
 
@@ -146,7 +146,7 @@ const WorkingProcess = () => {
         <Swiper
         spaceBetween={17}
         slidesPerView={2}
-         modules={[ Scrollbar]}
+         modules={[Autoplay, Scrollbar]}
          loop={true}
          autoplay={{
            delay: 3000,
@@ -178,7 +178,7 @@ const WorkingProcess = () => {
       </div>
     </SwiperSlide>
   ))}
-</Swiper>;
+</Swiper>
       </div>
 
     </div>
