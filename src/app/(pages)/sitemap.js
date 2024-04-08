@@ -3,7 +3,7 @@ import axios from "axios";
 
 export default async function sitemap() {
     try {
-        const { data } = await axios.get(`${process.env.NEXT_PUBLIC_LIVE_API}/api${siteMap}`);
+        const { data } = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api${siteMap}`);
         const sitemapData = data?.sitemap?.map((singleData) => ({
             url: singleData.url,
 

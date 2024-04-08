@@ -1,16 +1,9 @@
-import { PageWrapper } from "@/components/Theme";
 import ContactUs from "./ContactUs";
 
 export async function generateMetadata() {
   try {
-    const metaData = await fetch(`${process.env.NEXT_PUBLIC_LIVE_API}/api/contactUs`).then((res) => res.json())
-
-    if (metaData.contactRouteAllMetaData?.length === 0) {
-      return {
-        title: "Contact Us | RH Construction USA",
-        keywords: "Contact Us, RH Construction USA",
-      };
-    }
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/contactUs`);
+    const metaData = await res.json();
 
 
     return {
@@ -20,14 +13,12 @@ export async function generateMetadata() {
 
     }
   } catch (error) {
-    return {
-      title: "Contact Us | RH Construction USA",
-      keywords: "Contact Us, RH Construction USA",
-    };
+    console.error(error)
   }
 
 
 }
+
 
 
 // import API from "@/config/API.config";
@@ -57,11 +48,12 @@ export async function generateMetadata() {
 // }
 
 export default function Page() {
+
   return (
     <main>
-      <PageWrapper>
-        <ContactUs />
-      </PageWrapper>
-    </main>
+      {/* <PageWrapper> */}
+      <ContactUs />
+      {/* </PageWrapper> */}
+    </main >
   );
 }
