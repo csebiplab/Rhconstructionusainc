@@ -1,10 +1,10 @@
 import ProgressBar from "@/components/common/ProgressBar";
 import Footer from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
-import { Roboto } from 'next/font/google';
+import { Roboto_Slab } from 'next/font/google';
 import 'sweetalert2/src/sweetalert2.scss';
 import "../globals.css";
-const roboto = Roboto({
+const roboto = Roboto_Slab({
   weight: '400',
   subsets: ['latin'],
 })
@@ -15,6 +15,7 @@ export async function generateMetadata() {
   try {
     const metaDataResponse = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/home`);
     const metaData = await metaDataResponse.json();
+
 
     // Fetch Google site verification URL
     const googleVerificationResponse = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/verificationUrl`);
@@ -32,11 +33,11 @@ export async function generateMetadata() {
       }
     };
   } catch (error) {
-    return {
-      title: "Construction Company in Brooklyn | RH Construction USA Inc.",
-      keywords: "Home, RH Construction USA",
-      description: "As one of the leading construction companies in Brooklyn, RH Construction USA Inc. offers top-notch general contractor services in Brooklyn."
-    };
+    // return {
+    //   title: "Construction Company in Brooklyn | RH Construction USA Inc.",
+    //   keywords: "Home, RH Construction USA",
+    //   description: "As one of the leading construction companies in Brooklyn, RH Construction USA Inc. offers top-notch general contractor services in Brooklyn."
+    // };
   }
 }
 
