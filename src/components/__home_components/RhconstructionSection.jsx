@@ -15,7 +15,7 @@ const RhconstructionSection = () => {
             width={608}
             height={608}
             alt="rh"
-            layout="responsive"
+            // layout="responsive"
             className="w-full h-full lg:w-[608px] lg:h-[608px] mx-auto"
           />
         </div>
