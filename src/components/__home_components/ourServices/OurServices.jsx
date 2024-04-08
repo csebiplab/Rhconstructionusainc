@@ -2,21 +2,6 @@
 
 import Image from "next/image";
 import { useState } from "react";
-// import bathroom from "../../../../public/assets/services/bithrom.png";
-// import Brick from "../../../../public/assets/services/brick.png";
-// import Brown from "../../../../public/assets/services/brown.png";
-// import Kitchen from "../../../../public/assets/services/kitchen.png";
-// import {
-//   default as Painting,
-//   default as Pointing2,
-// } from "../../../../public/assets/services/painting.png";
-// import Plastering from "../../../../public/assets/services/plastering.png";
-// import Plumbing from "../../../../public/assets/services/plumbing.png";
-// import Power from "../../../../public/assets/services/power.png";
-// import Roofing from "../../../../public/assets/services/roofing.png";
-// import Sheetrock from "../../../../public/assets/services/sheetrock.png";
-// import Water from "../../../../public/assets/services/water.png";
-
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { SwiperNavButtons } from "../Review/SwiperSliderButton";
@@ -88,7 +73,7 @@ export default function OurServices() {
   };
 
   return (
-    <div className=" bg-[#FFB7031A] border border-red-500">
+    <div className=" bg-[#FFB7031A]">
       <div className="container py-6 lg:py-[55px]">
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-40 gap-4 lg:p-5 md:p-3 items-end text-sm">
           <div className="">
@@ -189,19 +174,19 @@ export default function OurServices() {
                   key={index}
                   className="col-span-1 border-2 rounded border-black"
                 >
-                  <div className="mx-auto rounded-lg shadow-lg bg-[#ffb80305] relative">
-                    <div className=" py-7 ">
-                      <p className="mt-4 py-5  mx-auto text-center lg:text-[20px]  text-xs">
+                  <div className="mx-auto rounded-lg bg-[#ffb80305] relative">
+                    <div className="pt-4">
+                      <p className="mt-4 py-5 mx-auto text-center text-xs lg:text-xl">
                         {service.title}{" "}
                       </p>
                     </div>
-                    <div className="absolute  top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                       <Image
-                        className=" lg:w-20 lg:h-20 w-14 h-14 bg-white rounded-full border-black"
+                        className="w-5 h-5 lg:w-[58px] lg:h-[58px]"
                         src={service?.img}
+                        width={58}
+                        height={58}
                         alt="Profile"
-                        width={20}
-                        height={20}
                       />
                     </div>
                   </div>
@@ -216,18 +201,18 @@ export default function OurServices() {
                   key={index}
                   className="col-span-1 border-2 rounded border-black"
                 >
-                  <div className="mx-auto rounded-lg shadow-lg bg-[#ffb80305] relative">
-                    <div className=" py-7 ">
-                      <p className="mt-4 py-5 mx-auto text-center lg:text-[20px]  text-xs">
+                  <div className="mx-auto rounded-lg bg-[#ffb80305] relative">
+                    <div className="pt-4 pb-3">
+                      <p className="mt-4 py-5 mx-auto text-center text-xs lg:text-xl">
                         {service.title}{" "}
                       </p>
                     </div>
-                    <div className="absolute  top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                       <Image
-                        className="lg:w-20 lg:h-20 w-14 h-14 bg-white rounded-full  border-black"
+                        className="w-5 h-5 lg:w-[58px] lg:h-[58px]"
                         src={service?.img}
-                        width={20}
-                        height={20}
+                        width={58}
+                        height={58}
                         alt="Profile"
                       />
                     </div>
