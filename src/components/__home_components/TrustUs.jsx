@@ -10,7 +10,7 @@ const TrustUs = () => {
             src={inspector}
             width={1012}
             height={772}
-            layout="responsive"
+            // layout="responsive"
             alt="inspector"
             className="w-full flex-shrink-0"
           />
@@ -18,15 +18,15 @@ const TrustUs = () => {
         <div className="md:w-[45%] w-full">
           <div className="flex w-full md:py-0 lg:my-2">
             <div className="w-full md:-ml-[80px] -ml-0 rounded-[15px] bg-white lg:p-4 md:p-2 my-class md:text-start text-center">
-             <div className="flex justify-center md:block xs:pt-[18px] md:pt-0">
-             <Image
-                src={trust}
-                width={96}
-                height={18.02}
-                alt="trust"
-                className="my-1"
-              />
-             </div>
+              <div className="flex justify-center md:block xs:pt-[18px] md:pt-0">
+                <Image
+                  src={trust}
+                  width={96}
+                  height={18.02}
+                  alt="trust"
+                  className="my-1"
+                />
+              </div>
               <h1 className="lg:leading-10 py-2 text-[18px] leading-normal md:text-lg lg:text-3xl">
                 TRUSTED GENERAL CONTRACTOR IN BROOKLYN
               </h1>

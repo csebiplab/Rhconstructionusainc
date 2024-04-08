@@ -246,6 +246,7 @@ export function Header() {
                   width={22}
                   height={17}
                   className="w-[22px] h-[17px]"
+                  alt="mail"
                 />
                 {constants.mail}
               </a>
