@@ -4,10 +4,13 @@ import { Header } from "@/components/layout/Header";
 import { Roboto_Slab } from 'next/font/google';
 import 'sweetalert2/src/sweetalert2.scss';
 import "../globals.css";
-const roboto = Roboto_Slab({
-  weight: '400',
-  subsets: ['latin'],
-})
+
+// const roboto = Roboto_Slab({
+//   weight: '400',
+//   subsets: ['latin'],
+// })
+
+const roboto = Roboto_Slab({ subsets: ['latin'], display: 'swap', adjustFontFallback: false })
 
 
 
