@@ -8,7 +8,6 @@ const LocationMap = () => {
         <div className="py-[30px] lg:py-[120px] 5xl:py-[168px]">
           <div className="mx-auto flex flex-col items-center justify-center ">
             <div className="flex items-center pb-2">
-              {/* <Image src={sectionHeaderIcon} className="h-5 w-10 mr-2" /> */}
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

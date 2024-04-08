@@ -246,7 +246,13 @@ const Footer = () => {
                 {" "}
                 <b>WEBSITE DESIGN AND SEO BY:-</b>{" "}
               </p>
-              <Image src={gokundo} alt="gokundo" className=" ml-2 " />
+              <Image
+                src={gokundo}
+                width={30}
+                height={30}
+                alt="gokundo"
+                className=" ml-2 h-auto w-auto"
+              />
             </div>
             <div className=" col-span-4">
               <p className=" lg:text-[18px] md:text-sm  ">
