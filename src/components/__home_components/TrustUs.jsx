@@ -1,8 +1,7 @@
 import inspector from "@/components/__home_components/Images/inspectors.png";
-import trust from "@/components/__home_components/Images/trust.png";
+import { smHeadingTexts } from "@/constants/smHeadingTexts";
 import Image from "next/image";
 import SmallHeadingWithIcon from "../ui/SmallHeadingWithIcon";
-import { smHeadingTexts } from "@/constants/smHeadingTexts";
 const TrustUs = () => {
   return (
     <div className="custom-container">

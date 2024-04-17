@@ -1,0 +1,29 @@
+.bgImage {
+  position: absolute;
+  background-image: url("../Images/personBG.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 80%;
+  height: auto;
+  padding: 10px;
+  right: 0;
+  top: 210px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .bgImage {
+    width: 60%;
+    height: auto;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .bgImage {
+    width: 60%;
+    height: 100%;
+    padding: 6px;
+    top: 30%;
+  }
+}
