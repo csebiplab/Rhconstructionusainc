@@ -18,7 +18,7 @@ const Brand = () => {
                 src={band1}
                 width={110}
                 height={95}
-                alt=""
+                alt="brand1"
                 className="lg:mb-[10px] md:w-3/4 md:mb-[1px] mt-2 mx-auto"
               />
             </div>
@@ -27,26 +27,26 @@ const Brand = () => {
             </p>
           </div>
         </div>
-       
-          <div className="brand w-full md:h-[174px] rounded-[15px] lg:px-2 md:px-1 lg:py-[14px] md:py-[5px]  text-center p-2 md:p-0">
-            <Image
-              src={band2}
-              width={110}
-              height={95}
-              alt=""
-              className="lg:mb-[10px] md:w-3/4 md:mb-[1px] mt-3  mx-auto"
-            />
-            <p className="text-center text-xs md:mt-2 lg:mt-4 lg:text-sm md:leading-[21.1px] ">
-              The Construction company I ever seen.
-            </p>
-          </div>
-        
+
+        <div className="brand w-full md:h-[174px] rounded-[15px] lg:px-2 md:px-1 lg:py-[14px] md:py-[5px]  text-center p-2 md:p-0">
+          <Image
+            src={band2}
+            width={110}
+            height={95}
+            alt="brand1"
+            className="lg:mb-[10px] md:w-3/4 md:mb-[1px] mt-3  mx-auto"
+          />
+          <p className="text-center text-xs md:mt-2 lg:mt-4 lg:text-sm md:leading-[21.1px] ">
+            The Construction company I ever seen.
+          </p>
+        </div>
+
         <div className="brand w-full md:h-[174px] rounded-[15px] lg:px-2 md:px-1 lg:py-[14px] py-[5px] text-center">
           <Image
             src={band3}
             width={110}
             height={95}
-            alt=""
+            alt="brand1"
             className="lg:mb-[10px] md:mt-3 md:mb-[5px] mx-auto"
           />
           <p className="text-center text-xs lg:mt-3 lg:text-sm leading-[21.1px]">
@@ -58,7 +58,7 @@ const Brand = () => {
             src={band4}
             width={80}
             height={70}
-            alt=""
+            alt="brand1"
             className="lg:mb-[10px] md:mb-[2px] mx-auto"
           />
           <p className="text-center lg:mt-2 text-xs lg:text-sm  leading-[21.1px] overflow-hidden">
@@ -70,7 +70,7 @@ const Brand = () => {
             src={band5}
             width={110}
             height={90}
-            alt=""
+            alt="brand1"
             className="lg:mb-[10px] lg:mt-8 md:mt-6 mt-5 mx-auto"
           />
           <p className="text-center md:mt-6  mt-2 text-xs lg:text-sm leading-[21.1px]">
@@ -82,7 +82,7 @@ const Brand = () => {
             src={band6}
             width={110}
             height={90}
-            alt=""
+            alt="brand1"
             className="lg:mb-[10px] md:mb-[5px] md:mt-3 lg:mt-1 mx-auto"
           />
           <p className="text-center text-xs  lg:text-sm leading-[21.1px]">
@@ -95,7 +95,7 @@ const Brand = () => {
             src={band7}
             width={60}
             height={48}
-            alt=""
+            alt="brand1"
             className="lg:mb-[10px] mb-[5px] mx-auto md:mt-6 mt-3 md:w-1/2"
           />
           <p className="text-center lg:mt-4 md:mt-3 text-xs lg:text-sm leading-[21.1px]">

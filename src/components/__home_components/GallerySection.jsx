@@ -2,7 +2,6 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 // import SwiperCore from "swiper";
-import gallery from "@/components/__home_components/Images/gallery.png";
 import Image from "next/image";
 import GalImg1 from "../../../public/assets/galleries/gl1.jpg";
 import GalImg10 from "../../../public/assets/galleries/gl10.jpg";
@@ -47,6 +46,8 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/effect-coverflow";
 import "swiper/css/grid";
+import SmallHeadingWithIcon from "../ui/SmallHeadingWithIcon";
+import { smHeadingTexts } from "@/constants/smHeadingTexts";
 
 const galImgs = [
   GalImg1,
@@ -88,114 +89,105 @@ const galImgs2 = [
   GalImg34,
 ];
 
-
-
 export default function GallerySection() {
-    return (
-      <div className="">
-        <Image
-                src={gallery}
-                width={90}
-                height={18.02}
-                alt="trust"
-                className="my-2 mx-auto"
-              />
-        <h1 className="lg:leading-10 text-center lg:text-4xl text-lg md:py-3 lg:py-6">
-        CONSTRUCTION SERVICES GALLERY OF OUR PAST PROJECTS
-        </h1>
-        <Swiper
-          className="sample-slider w-full"
-          modules={[Autoplay]}
-          loop={true}
-          autoplay={{
-            delay: 0,
-            pauseOnMouseEnter: false,
-            disableOnInteraction: false,
-            reverseDirection: true,
-            stopOnLastSlide: false,
-          }}
-          // slidesPerView={5}
-          speed={4000}
-          allowTouchMove={false}
-          breakpoints={{
-            0: {
-              slidesPerView: 1,
-              spaceBetween: 10,
-            },
-            360: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            750: {
-              slidesPerView: 4,
-              spaceBetween: 40,
-            },
-            950: {
-              slidesPerView: 5,
-              spaceBetween: 50,
-            },
-          }}
-        >
-          {galImgs.map((imgUrl, i) => (
-            <SwiperSlide key={i} className="m-2">
-              <Image
-                // width={400}
-                // height={400}
-
-                // className="w-auto h-52 mx-8 select-none"
-                className="object-contain w-auto h-auto mx-auto"
-                src={imgUrl}
-                alt="gallery"
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-        <Swiper
-          className="sample-slider w-full"
-          modules={[Autoplay]}
-          loop={true}
-          autoplay={{
-            delay: 0,
-            pauseOnMouseEnter: false,
-            disableOnInteraction: false,
-            stopOnLastSlide: false,
-            reverseDirection: false,
-          }}
-          // slidesPerView={5}
-          speed={4000}
-          allowTouchMove={false}
-          breakpoints={{
-            0: {
-              slidesPerView: 1,
-              spaceBetween: 10,
-            },
-            360: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            750: {
-              slidesPerView: 4,
-              spaceBetween: 40,
-            },
-            950: {
-              slidesPerView: 5,
-              spaceBetween: 50,
-            },
-          }}
-        >
-          {galImgs2.map((imgUrl, i) => (
-            <SwiperSlide key={i} className="m-2 ">
-              <Image
-                // width={400}
-                // height={400}
-                // className="w-auto h-52 mx-8 select-none"
-                className="object-contain w-auto h-auto mx-auto "
-                src={imgUrl}
-                alt="gallery"
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+  return (
+    <div className="">
+      <div className="flex justify-center items-center">
+        <SmallHeadingWithIcon smallHeadingText={smHeadingTexts.gallery} />
       </div>
-    );
-  }
+      <h1 className="lg:leading-10 text-center lg:text-4xl text-lg md:py-3 lg:py-6">
+        CONSTRUCTION SERVICES GALLERY OF OUR PAST PROJECTS
+      </h1>
+      <Swiper
+        className="sample-slider w-full"
+        modules={[Autoplay]}
+        loop={true}
+        autoplay={{
+          delay: 0,
+          pauseOnMouseEnter: false,
+          disableOnInteraction: false,
+          reverseDirection: true,
+          stopOnLastSlide: false,
+        }}
+        // slidesPerView={5}
+        speed={4000}
+        allowTouchMove={false}
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          360: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          750: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          950: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        }}
+      >
+        {galImgs.map((imgUrl, i) => (
+          <SwiperSlide key={i} className="m-2">
+            <Image
+              width={300}
+              height={300}
+              className="object-contain w-auto h-auto mx-auto"
+              src={imgUrl}
+              alt="gallery"
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      <Swiper
+        className="sample-slider w-full"
+        modules={[Autoplay]}
+        loop={true}
+        autoplay={{
+          delay: 0,
+          pauseOnMouseEnter: false,
+          disableOnInteraction: false,
+          stopOnLastSlide: false,
+          reverseDirection: false,
+        }}
+        // slidesPerView={5}
+        speed={4000}
+        allowTouchMove={false}
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          360: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          750: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          950: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        }}
+      >
+        {galImgs2.map((imgUrl, i) => (
+          <SwiperSlide key={i} className="m-2 ">
+            <Image
+              width={300}
+              height={300}
+              className="object-contain w-auto h-auto mx-auto "
+              src={imgUrl}
+              alt="gallery"
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+  );
+}

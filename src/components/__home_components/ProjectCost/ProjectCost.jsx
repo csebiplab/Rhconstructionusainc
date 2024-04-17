@@ -1,5 +1,4 @@
 "use client";
-import cost from "@/components/__home_components/Images/cost.png";
 import cost1 from "@/components/__home_components/Images/cost1.png";
 import cost2 from "@/components/__home_components/Images/cost2.png";
 import cost3 from "@/components/__home_components/Images/cost3.png";
@@ -10,9 +9,11 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/navigation";
 import "swiper/css/virtual";
-import { Autoplay, Navigation } from 'swiper/modules';
+import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { SwiperNavButtons } from "./SwiperSliderButton";
+import SmallHeadingWithIcon from "@/components/ui/SmallHeadingWithIcon";
+import { smHeadingTexts } from "@/constants/smHeadingTexts";
 
 const breakpoints = {
   0: {
@@ -23,7 +24,6 @@ const breakpoints = {
   },
 };
 
-
 const ProjectCost = () => {
   return (
     <div className="section-bg">
@@ -31,12 +31,8 @@ const ProjectCost = () => {
         <div className="md:flex py-6 lg:py-[55px] lg:gap-10 md:gap-3">
           <div>
             <div className="flex justify-center md:block">
-              <Image
-                src={cost}
-                width={116}
-                height={18.02}
-                alt="projectCost"
-                className=""
+              <SmallHeadingWithIcon
+                smallHeadingText={smHeadingTexts.projectCost}
               />
             </div>
 
@@ -135,7 +131,7 @@ const ProjectCost = () => {
         <Swiper
           // spaceBetween={21}
           // slidesPerView={3}
-          modules={[Autoplay,Navigation]}
+          modules={[Autoplay, Navigation]}
           loop={true}
           autoplay={{
             delay: 3000,
@@ -146,7 +142,6 @@ const ProjectCost = () => {
           speed={3000}
           allowTouchMove={false}
           breakpoints={breakpoints}
-          
         >
           <SwiperSlide className={`text-center py-4 lg:py-10 px-16 md:px-4`}>
             <div className="mt-0 md:-mt-6 lg:-mt-10">
@@ -155,7 +150,7 @@ const ProjectCost = () => {
                   src={cost1}
                   width={318}
                   height={238}
-                  alt=""
+                  alt="cost"
                   className="w-full"
                 />
 
@@ -170,7 +165,7 @@ const ProjectCost = () => {
                   src={cost2}
                   width={318}
                   height={238}
-                  alt=""
+                  alt="cost"
                   className="w-full"
                 />
 
@@ -185,7 +180,7 @@ const ProjectCost = () => {
                   src={cost3}
                   width={318}
                   height={238}
-                  alt=""
+                  alt="cost"
                   className="w-full"
                 />
 
@@ -217,7 +212,7 @@ const ProjectCost = () => {
                   src={cost5}
                   width={318}
                   height={238}
-                  alt=""
+                  alt="cost"
                   className="w-full"
                 />
 
@@ -230,8 +225,6 @@ const ProjectCost = () => {
 
           <SwiperNavButtons />
         </Swiper>
-
-      
       </div>
     </div>
   );

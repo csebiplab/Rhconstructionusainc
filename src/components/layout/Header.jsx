@@ -93,7 +93,7 @@ function OurServiceManu() {
             className="font-medium text-lg"
           >
             <ListItem
-              className="flex items-center gap-2 rounded-full py-1  pr-4 text-sm md:text-[14px] xl:text-base 2xl:text-[18px] text-black font-medium"
+              className="flex items-center gap-2 rounded-full py-1  pr-4 text-sm md:text-[14px] xl:text-base 2xl:text-lg text-black font-medium"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -156,9 +156,9 @@ function NavList() {
         href="/about-rh-constraction"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-sm lg:text-[14px] xl:text-base 2xl:text-[18px] text-black"
+        className="font-medium rounded-full text-sm lg:text-[14px] xl:text-base 2xl:text-lg text-black"
       >
-        <ListItem className="flex items-center rounded-full hover:bg-primary px-1 lg:px-2 2xl:px-4">
+        <ListItem className="flex items-center rounded-full hover:bg-primary px-1 lg:px-4 xl:px-5 2xl:px-6">
           About
         </ListItem>
       </Typography>
@@ -170,9 +170,9 @@ function NavList() {
         href="/customer-reviews"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-sm md:text-[14px] xl:text-base 2xl:text-[18px] text-black"
+        className="font-medium rounded-full text-sm md:text-[14px] xl:text-base 2xl:text-lg text-black"
       >
-        <ListItem className="flex items-center rounded-full hover:bg-primary px-1 lg:px-2 2xl:px-4">
+        <ListItem className="flex items-center rounded-full hover:bg-primary px-1 lg:px-4 xl:px-5 2xl:px-6">
           Customer Reviews
         </ListItem>
       </Typography>
@@ -181,9 +181,9 @@ function NavList() {
         href="/blogs"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-sm md:text-[14px] xl:text-base 2xl:text-[18px] text-black"
+        className="font-medium rounded-full text-sm md:text-[14px] xl:text-base 2xl:text-lg text-black"
       >
-        <ListItem className="flex items-center rounded-full hover:bg-primary px-1 lg:px-2 2xl:px-4">
+        <ListItem className="flex items-center rounded-full hover:bg-primary px-1 lg:px-4 xl:px-5 2xl:px-6">
           Blogs
         </ListItem>
       </Typography>
@@ -192,9 +192,9 @@ function NavList() {
         href="/our-projects"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-sm md:text-[14px] xl:text-base 2xl:text-[18px] text-black"
+        className="font-medium rounded-full text-sm md:text-[14px] xl:text-base 2xl:text-lg text-black"
       >
-        <ListItem className="flex items-center rounded-full hover:bg-primary px-1 lg:px-2 2xl:px-4">
+        <ListItem className="flex items-center rounded-full hover:bg-primary px-1 lg:px-4 xl:px-5 2xl:px-6">
           Projects
         </ListItem>
       </Typography>
@@ -204,9 +204,9 @@ function NavList() {
         href="/contact"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-sm md:text-[14px] xl:text-base 2xl:text-[18px] text-black"
+        className="font-medium rounded-full text-sm md:text-[14px] xl:text-base 2xl:text-lg text-black"
       >
-        <ListItem className="flex items-center rounded-full hover:bg-primary px-1 lg:px-2 2xl:px-4">
+        <ListItem className="flex items-center rounded-full hover:bg-primary px-1 lg:px-4 xl:px-5 2xl:px-6">
           Contact
         </ListItem>
       </Typography>
@@ -246,6 +246,7 @@ export function Header() {
                   width={22}
                   height={17}
                   className="w-[22px] h-[17px]"
+                  alt="mail"
                 />
                 {constants.mail}
               </a>

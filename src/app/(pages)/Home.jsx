@@ -21,51 +21,6 @@ import WorkingProcess from "@/components/__home_components/WorkingProcess";
 import ContactHome from "@/components/__home_components/contactHome/ContactHome";
 import OurServices from "@/components/__home_components/ourServices/OurServices";
 
-/*
-const HomeBlogs = () => {
-  const {
-    data: blogs,
-    error,
-    isLoading,
-  } = useSwr("/blogs?limit=3", async (uri) => {
-    try {
-      const { data } = await API.get(uri);
-      return data?.data;
-    } catch (error) {
-      throw errorMessage(error);
-    }
-  });
-  if (isLoading) {
-    return (
-      <div className="py-16 flex justify-center">
-        <Spinner height={25} width={25} />
-      </div>
-    );
-  }
-  if (error) return null;
-  return (
-    <section>
-      <div className="container py-16">
-        <div className="text-center mb-5">
-          <h1 className="text-gray-900 font-bold mb-2">
-            POPULAR <span className="text-primary">BLOGS</span>
-          </h1>
-          <p className="max-w-md mx-auto text-secondary">Most recent blogs.</p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {(Array.isArray(blogs) ? blogs : [])?.map((item, key) => (
-            <BlogCard data={item} key={key} />
-          ))}
-        </div>
-        <div className="text-center py-10 ">
-          <Button>SEE MORE </Button>
-        </div>
-      </div>
-    </section>
-  );
-};
-*/
-
 const Home = () => {
   return (
     <main>
@@ -86,7 +41,7 @@ const Home = () => {
 
       {/* =================== Working Process ============== */}
       <div>
-        <OurServices></OurServices>
+        <OurServices />
       </div>
       {/* =================== Working Process ============== */}
 
@@ -122,7 +77,7 @@ const Home = () => {
       {/* ============= Constructor Section ================= */}
       <Constructor />
 
-     {/* ================ Location Map ===================== */}
+      {/* ================ Location Map ===================== */}
       <div>
         <LocationMap />
       </div>

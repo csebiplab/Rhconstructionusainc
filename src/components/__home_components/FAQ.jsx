@@ -1,6 +1,6 @@
 "use client";
-import faq from "@/components/__home_components/Images/FAQ.png";
 import build from "@/components/__home_components/Images/faqBuild.png";
+import { smHeadingTexts } from "@/constants/smHeadingTexts";
 import {
   Accordion,
   AccordionBody,
@@ -8,6 +8,7 @@ import {
 } from "@material-tailwind/react";
 import Image from "next/image";
 import React from "react";
+import SmallHeadingWithIcon from "../ui/SmallHeadingWithIcon";
 
 // FAQ questions and answers for RH Construction USA Inc. information
 const faqQuestionsNAns = [
@@ -58,56 +59,48 @@ export function FAQ() {
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
   return (
-   <div className="py-0 md:py-10 lg:py-12 5xl:py-[120px] container">
-    <div className="md:flex items-center lg:gap-10 md:gap-3">
-    <div>
-    <Image
+    <div className="py-0 md:py-10 lg:py-12 5xl:py-[120px] container">
+      <div className="md:flex items-center lg:gap-10 md:gap-3">
+        <div>
+          <Image
             src={build}
             width={478}
             height={717}
             alt="build"
             className="my-0 md:my-2 w-full h-full md:w-[478px] md:h-[717px]"
           />
-    </div>
-    <div className="mx-auto">
-      <div className="text-center md:mb-2 lg:mb-4">
-      <Image
-            src={faq}
-            width={70}
-            height={18.02}
-            alt="faq"
-            className="my-2 md:mt-0 mt-[26px]"
-          />
-        <h1 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-start">
-        FAQ FOR RH CONSTRUCTION USA INC
-        </h1>
-      </div>
-      <>
-        {faqQuestionsNAns.map(({ question, answer, id }, idx) => (
-          <Accordion
-            key={id}
-            open={open === id}
-            className="mb-2 border text-white bg-black border-blue-gray-100 px-4"
-          >
-            <AccordionHeader onClick={() => handleOpen(id)}>
-              <div
-                className={`border-b-0 transition-colors ${
-                  open === idx + 1
-                    ? "hover:!text-primary text-white"
-                    : ""
-                }`}
+        </div>
+        <div className="mx-auto">
+          <div className="text-center md:mb-2 lg:mb-4">
+            <SmallHeadingWithIcon smallHeadingText={smHeadingTexts.faq} />
+            <h1 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-start">
+              FAQ FOR RH CONSTRUCTION USA INC
+            </h1>
+          </div>
+          <>
+            {faqQuestionsNAns.map(({ question, answer, id }, idx) => (
+              <Accordion
+                key={id}
+                open={open === id}
+                className="mb-2 border text-white bg-black border-blue-gray-100 px-4"
               >
-                <b>Q{id}</b> {question}
-              </div>
-            </AccordionHeader>
-            <AccordionBody className="pt-0 p-1 text-base font-normal bg-white">
-              {answer}
-            </AccordionBody>
-          </Accordion>
-        ))}
-      </>
+                <AccordionHeader onClick={() => handleOpen(id)}>
+                  <div
+                    className={`border-b-0 transition-colors ${
+                      open === idx + 1 ? "hover:!text-primary text-white" : ""
+                    }`}
+                  >
+                    <b>Q{id}</b> {question}
+                  </div>
+                </AccordionHeader>
+                <AccordionBody className="pt-0 p-1 text-base font-normal bg-white">
+                  {answer}
+                </AccordionBody>
+              </Accordion>
+            ))}
+          </>
+        </div>
+      </div>
     </div>
-   </div>
-   </div>
   );
 }
