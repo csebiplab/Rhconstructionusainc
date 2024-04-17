@@ -46,14 +46,14 @@ const RatingComponent = () => {
                     <img src={vector.src} className="w-[22px] h-[24px] ms-3" />
                   </div>
                   <div className="flex justify-center">
-                    <h5 className="me-4 border-2 bg-[#EAEAEA] font-semibold text-[#000] text-sm px-2">
+                    <h5 className="me-4 border-2 bg-[#EAEAEA] font-semibold text-[#000] text-xs md:text-sm px-2">
                       Quality
                     </h5>
-                    <h5 className="border-2 bg-[#EAEAEA] font-semibold text-[#000] text-sm px-2">
+                    <h5 className="border-2 bg-[#EAEAEA] font-semibold text-[#000] text-xs md:text-sm px-2">
                       Value
                     </h5>
                   </div>
-                  <h5 className="border-2 bg-[#EAEAEA] text-[#000] font-semibold text-sm px-2 text-center mt-2 md:w-9/12 lg:w-8/12 mx-auto">
+                  <h5 className="border-2 bg-[#EAEAEA] text-[#000] font-semibold text-xs md:text-sm px-2 text-center mt-2 md:w-9/12 lg:w-8/12 mx-auto">
                     Customer Service
                   </h5>
                 </div>
