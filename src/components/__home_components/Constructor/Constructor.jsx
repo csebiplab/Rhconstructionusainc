@@ -1,5 +1,4 @@
 "use client";
-import cons from "@/components/__home_components/Images/const.png";
 import pp1 from "@/components/__home_components/Images/pp1.png";
 import pp2 from "@/components/__home_components/Images/pp2.png";
 import pp3 from "@/components/__home_components/Images/pp3.png";
@@ -12,6 +11,8 @@ import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./Constructor.css";
 import { SwiperNavButtons } from "./SwiperSliderButton";
+import { smHeadingTexts } from "@/constants/smHeadingTexts";
+import SmallHeadingWithIcon from "@/components/ui/SmallHeadingWithIcon";
 
 const breakpoints = {
   0: {
@@ -27,13 +28,12 @@ const Constructor = () => {
       <div className="container">
         <div className="py-6 lg:py-[55px]">
           <div className="text-center">
-            <Image
-              src={cons}
-              width={115}
-              height={18.02}
-              alt="cons"
-              className="my-2 mx-auto"
-            />
+            <div className="flex justify-center items-center">
+              <SmallHeadingWithIcon
+                smallHeadingText={smHeadingTexts.contractors}
+              />
+            </div>
+
             <h1 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-center">
               WHAT TO CONSIDER FIRST WHEN YOU HIRE THE BEST CONTRACTORS
             </h1>

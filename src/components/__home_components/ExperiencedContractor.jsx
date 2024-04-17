@@ -1,6 +1,7 @@
 import constructor from "@/components/__home_components/Images/constructor.png";
-import exp from "@/components/__home_components/Images/exp.png";
 import Image from "next/image";
+import SmallHeadingWithIcon from "../ui/SmallHeadingWithIcon";
+import { smHeadingTexts } from "@/constants/smHeadingTexts";
 
 const ExperiencedContractor = () => {
   return (
@@ -18,12 +19,8 @@ const ExperiencedContractor = () => {
           </div>
           <div className="mt-[26px] md:mt-0 md:col-span-3">
             <div className="flex justify-center md:block">
-              <Image
-                src={exp}
-                width={190}
-                height={19.02}
-                alt="about"
-                className="my-2"
+              <SmallHeadingWithIcon
+                smallHeadingText={smHeadingTexts.expContractor}
               />
             </div>
             <h1 className="lg:leading-10 mb-1 mt-2 md:mt-0 lg:py-4 text-lg lg:text-4xl md:text-start text-center">

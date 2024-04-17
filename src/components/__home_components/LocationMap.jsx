@@ -1,5 +1,5 @@
-import Image from "next/image";
-import sectionHeaderIcon from "../../../public/assets/icons/headerIcon.png";
+import { smHeadingTexts } from "@/constants/smHeadingTexts";
+import SmallHeadingWithIcon from "../ui/SmallHeadingWithIcon";
 
 const LocationMap = () => {
   return (
@@ -7,21 +7,7 @@ const LocationMap = () => {
       <div className="custom-container">
         <div className="py-[30px] lg:py-[120px] 5xl:py-[168px]">
           <div className="mx-auto flex flex-col items-center justify-center ">
-            <div className="flex items-center pb-2">
-              <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="23"
-                  height="12"
-                  viewBox="0 0 23 12"
-                  fill="none"
-                >
-                  <circle cx="6" cy="6" r="6" fill="#FFB703" />
-                  <circle cx="16.667" cy="6" r="6" fill="black" />
-                </svg>
-              </div>
-              <p>Area</p>
-            </div>
+            <SmallHeadingWithIcon smallHeadingText={smHeadingTexts.area} />
 
             <div>
               <h1 className="lg:leading-10 lg:text-4xl text-lg py-2 lg:py-4">

@@ -1,18 +1,15 @@
-import right from "@/components/__home_components/Images/right.png";
 import worker from "@/components/__home_components/Images/worker.png";
 import Image from "next/image";
+import SmallHeadingWithIcon from "../ui/SmallHeadingWithIcon";
+import { smHeadingTexts } from "@/constants/smHeadingTexts";
 const Right = () => {
   return (
     <div className="py-9 md:py-10 lg:py-12 5xl:py-[120px] container">
       <div className="grid grid-cols-1 md:grid-cols-7 gap-2 lg:gap-3 xl:gap-8 5xl:gap-[78px]">
         <div className="md:col-span-4 order-2 md:order-1">
           <div className="flex justify-center md:block">
-            <Image
-              src={right}
-              width={199}
-              height={18.02}
-              alt="right"
-              className="md:mt-2 md:mb-2 mb-1 mt-[26px]"
+            <SmallHeadingWithIcon
+              smallHeadingText={smHeadingTexts.rightContractorChoosing}
             />
           </div>
           <h1 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-center md:text-start">

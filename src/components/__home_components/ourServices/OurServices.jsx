@@ -11,6 +11,8 @@ import "swiper/css/autoplay";
 import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import "swiper/css/virtual";
+import SmallHeadingWithIcon from "@/components/ui/SmallHeadingWithIcon";
+import { smHeadingTexts } from "@/constants/smHeadingTexts";
 
 const interior = [
   {
@@ -78,7 +80,7 @@ export default function OurServices() {
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-40 gap-4 lg:p-5 md:p-3 items-end text-sm">
           <div className="">
             <div className="flex justify-center md:justify-start items-center pb-2">
-              <div className="flex items-center gap-x-3">
+              {/* <div className="flex items-center gap-x-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="23"
@@ -90,7 +92,10 @@ export default function OurServices() {
                   <circle cx="16.667" cy="6" r="6" fill="black" />
                 </svg>
                 <p className="text-sm">Services</p>
-              </div>
+              </div> */}
+              <SmallHeadingWithIcon
+                smallHeadingText={smHeadingTexts.ourServices}
+              />
             </div>
             <h1 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-center md:text-start">
               Our Services

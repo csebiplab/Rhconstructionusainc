@@ -1,5 +1,4 @@
 "use client";
-import cost from "@/components/__home_components/Images/cost.png";
 import cost1 from "@/components/__home_components/Images/cost1.png";
 import cost2 from "@/components/__home_components/Images/cost2.png";
 import cost3 from "@/components/__home_components/Images/cost3.png";
@@ -13,6 +12,8 @@ import "swiper/css/virtual";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { SwiperNavButtons } from "./SwiperSliderButton";
+import SmallHeadingWithIcon from "@/components/ui/SmallHeadingWithIcon";
+import { smHeadingTexts } from "@/constants/smHeadingTexts";
 
 const breakpoints = {
   0: {
@@ -30,12 +31,8 @@ const ProjectCost = () => {
         <div className="md:flex py-6 lg:py-[55px] lg:gap-10 md:gap-3">
           <div>
             <div className="flex justify-center md:block">
-              <Image
-                src={cost}
-                width={116}
-                height={18.02}
-                alt="projectCost"
-                className=""
+              <SmallHeadingWithIcon
+                smallHeadingText={smHeadingTexts.projectCost}
               />
             </div>
 

@@ -2,7 +2,6 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 // import SwiperCore from "swiper";
-import gallery from "@/components/__home_components/Images/gallery.png";
 import Image from "next/image";
 import GalImg1 from "../../../public/assets/galleries/gl1.jpg";
 import GalImg10 from "../../../public/assets/galleries/gl10.jpg";
@@ -47,6 +46,8 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/effect-coverflow";
 import "swiper/css/grid";
+import SmallHeadingWithIcon from "../ui/SmallHeadingWithIcon";
+import { smHeadingTexts } from "@/constants/smHeadingTexts";
 
 const galImgs = [
   GalImg1,
@@ -91,13 +92,9 @@ const galImgs2 = [
 export default function GallerySection() {
   return (
     <div className="">
-      <Image
-        src={gallery}
-        width={90}
-        height={18.02}
-        alt="trust"
-        className="my-2 mx-auto"
-      />
+      <div className="flex justify-center items-center">
+        <SmallHeadingWithIcon smallHeadingText={smHeadingTexts.gallery} />
+      </div>
       <h1 className="lg:leading-10 text-center lg:text-4xl text-lg md:py-3 lg:py-6">
         CONSTRUCTION SERVICES GALLERY OF OUR PAST PROJECTS
       </h1>
