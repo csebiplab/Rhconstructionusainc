@@ -1,6 +1,7 @@
 import elevate from "@/components/__home_components/Images/elevate.png";
-import project from "@/components/__home_components/Images/project.png";
 import Image from "next/image";
+import SmallHeadingWithIcon from "../ui/SmallHeadingWithIcon";
+import { smHeadingTexts } from "@/constants/smHeadingTexts";
 const ProjectElevate = () => {
   return (
     <div className="section-bg">
@@ -20,12 +21,8 @@ const ProjectElevate = () => {
             <div className="flex w-full lg:my-2">
               <div className="w-full md:-ml-[80px] -ml-0 rounded-[15px] bg-white lg:p-4 md:p-2 my-class">
                 <div className="flex justify-center md:block xs:pt-[18px] md:pt-0">
-                  <Image
-                    src={project}
-                    width={144}
-                    height={18.02}
-                    alt="trust"
-                    className="my-3"
+                  <SmallHeadingWithIcon
+                    smallHeadingText={smHeadingTexts.projectWithUs}
                   />
                 </div>
                 <h1 className="lg:leading-10 py-2 text-[18px] leading-normal md:text-lg lg:text-3xl md:text-start text-center">

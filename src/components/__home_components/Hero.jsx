@@ -19,11 +19,11 @@ const Hero = () => {
                 exceptional <br /> construction & renovation services with
                 expertise and integrity */}
                 Best general contractor in Brooklyn, specializing in home
-                renovations, bathroom renovations & kitchen remodeling, roofing,
-                and construction services.
+                renovations, <br /> bathroom renovations & kitchen remodeling,
+                roofing, and construction services.
               </p>
               <div className="mb-4 md:mb-0">
-                <Button className="rounded-md bg-primary hover:bg-gray-900 text-black hover:text-white text-md lg:text-lg font-semibold tracking-wider capitalize flex items-center gap-2">
+                <Button className="!px-[34px] !py-4 !rounded-none bg-primary hover:bg-gray-900 text-black hover:text-white text-md lg:text-lg font-semibold capitalize flex items-center gap-x-2">
                   <span>Get an Estimate </span>
                   <span>
                     <FaChevronRight />

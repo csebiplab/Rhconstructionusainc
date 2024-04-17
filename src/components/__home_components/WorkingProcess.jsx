@@ -10,6 +10,8 @@ import "swiper/css/scrollbar";
 import "swiper/css/virtual";
 import { Scrollbar } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import SmallHeadingWithIcon from "../ui/SmallHeadingWithIcon";
+import { smHeadingTexts } from "@/constants/smHeadingTexts";
 
 const breakpoints = {
   0: {
@@ -52,12 +54,8 @@ const WorkingProcess = () => {
     <div className="container">
       <div className="py-6 md:py-[55px] lg:py-[120px]">
         <div>
-          <Image
-            src={working}
-            width={146}
-            height={18.02}
-            alt="about"
-            className="my-2"
+          <SmallHeadingWithIcon
+            smallHeadingText={smHeadingTexts.workingProcess}
           />
           <h1 className="lg:leading-10 lg:text-4xl text-lg md:py-2 lg:py-4">
             WORKING PROCESS OF OUR CONSTRUCTION COMPANY IN BROOKLYN

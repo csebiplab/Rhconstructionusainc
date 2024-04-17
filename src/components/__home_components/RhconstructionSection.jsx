@@ -4,6 +4,8 @@ import work1 from "@/components/__home_components/Images/work1.png";
 import work2 from "@/components/__home_components/Images/work2.png";
 import work3 from "@/components/__home_components/Images/work3.png";
 import Image from "next/image";
+import SmallHeadingWithIcon from "../ui/SmallHeadingWithIcon";
+import { smHeadingTexts } from "@/constants/smHeadingTexts";
 
 const RhconstructionSection = () => {
   return (
@@ -21,12 +23,15 @@ const RhconstructionSection = () => {
         </div>
         <div className="mt-[26px] md:mt-0 md:col-span-3">
           <div className="flex justify-center md:block">
-            <Image
+            {/* <Image
               src={title}
               width={298}
               height={18}
               className="lg:m-0 md:m-auto"
               alt="RH Construction"
+            /> */}
+            <SmallHeadingWithIcon
+              smallHeadingText={smHeadingTexts.rhConstructions}
             />
           </div>
           <h1 className="lg:leading-10 mb-1 mt-2 md:mt-0 lg:py-4 text-lg lg:text-4xl lg:text-start text-center">

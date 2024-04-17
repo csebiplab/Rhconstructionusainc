@@ -1,18 +1,15 @@
 import equip from "@/components/__home_components/Images/equip.png";
-import tools from "@/components/__home_components/Images/tools.png";
 import Image from "next/image";
+import SmallHeadingWithIcon from "../ui/SmallHeadingWithIcon";
+import { smHeadingTexts } from "@/constants/smHeadingTexts";
 const Tools = () => {
   return (
     <div className="py-9 md:py-10 lg:py-12 5xl:py-[120px] container">
       <div className="grid grid-cols-1 md:grid-cols-7 gap-2 lg:gap-3 xl:gap-8 5xl:gap-[78px]">
         <div className="md:col-span-4 order-2 md:order-1">
           <div className="flex justify-center md:block">
-            <Image
-              src={tools}
-              width={190}
-              height={18.02}
-              alt="tools"
-              className="md:mt-0 mt-[26px]"
+            <SmallHeadingWithIcon
+              smallHeadingText={smHeadingTexts.toolsNEquip}
             />
           </div>
           <h1 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-center md:text-start">

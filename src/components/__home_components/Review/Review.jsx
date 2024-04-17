@@ -12,6 +12,8 @@ import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./ReviewSlider.css";
 import { SwiperNavButtons } from "./SwiperSliderButton";
+import SmallHeadingWithIcon from "@/components/ui/SmallHeadingWithIcon";
+import { smHeadingTexts } from "@/constants/smHeadingTexts";
 
 const breakpoints = {
   0: {
@@ -67,13 +69,9 @@ const Review = () => {
       <div className="container">
         <div className="py-6 lg:py-[55px]">
           <div className="text-center">
-            <Image
-              src={reviewLogo}
-              width={95}
-              height={18.02}
-              alt="reviewLogo"
-              className="my-2 mx-auto"
-            />
+            <div className="flex justify-center items-center">
+              <SmallHeadingWithIcon smallHeadingText={smHeadingTexts.review} />
+            </div>
             <h1 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[12px] xl:mt-[15px] xl:mb-[25px] text-center">
               Here’s what to expect when you hire us
             </h1>

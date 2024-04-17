@@ -1,6 +1,6 @@
 "use client";
-import faq from "@/components/__home_components/Images/FAQ.png";
 import build from "@/components/__home_components/Images/faqBuild.png";
+import { smHeadingTexts } from "@/constants/smHeadingTexts";
 import {
   Accordion,
   AccordionBody,
@@ -8,6 +8,7 @@ import {
 } from "@material-tailwind/react";
 import Image from "next/image";
 import React from "react";
+import SmallHeadingWithIcon from "../ui/SmallHeadingWithIcon";
 
 // FAQ questions and answers for RH Construction USA Inc. information
 const faqQuestionsNAns = [
@@ -71,13 +72,7 @@ export function FAQ() {
         </div>
         <div className="mx-auto">
           <div className="text-center md:mb-2 lg:mb-4">
-            <Image
-              src={faq}
-              width={70}
-              height={18.02}
-              alt="faq"
-              className="my-2 md:mt-0 mt-[26px]"
-            />
+            <SmallHeadingWithIcon smallHeadingText={smHeadingTexts.faq} />
             <h1 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-start">
               FAQ FOR RH CONSTRUCTION USA INC
             </h1>
