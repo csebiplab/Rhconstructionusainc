@@ -1,25 +1,32 @@
-import title from "@/components/__home_components/Images/title.png";
-import work from "@/components/__home_components/Images/work.png";
+import civil from "@/components/__home_components/Images/civil.png";
+import person from "@/components/__home_components/Images/person.png";
 import work1 from "@/components/__home_components/Images/work1.png";
 import work2 from "@/components/__home_components/Images/work2.png";
 import work3 from "@/components/__home_components/Images/work3.png";
-import Image from "next/image";
-import SmallHeadingWithIcon from "../ui/SmallHeadingWithIcon";
+import SmallHeadingWithIcon from "@/components/ui/SmallHeadingWithIcon";
 import { smHeadingTexts } from "@/constants/smHeadingTexts";
+import Image from "next/image";
+import './RhconstructionSection.css';
 
 const RhconstructionSection = () => {
   return (
     <div className="py-9 md:py-10 lg:py-12 5xl:py-[120px] container">
       <div className="grid grid-cols-1 md:grid-cols-5 gap-4 md:gap-6 lg:gap-10 xl:gap-12 3xl:gap-x-16 5xl:gap-x-20">
-        <div className="md:col-span-2">
+        <div className="md:col-span-2 relative">
           <Image
-            src={work}
-            width={608}
-            height={608}
+            src={civil}
+            width={404.881}
+            height={364.978}
             alt="rh"
-            // layout="responsive"
-            className="w-full h-full lg:w-[608px] lg:h-[608px] mx-auto"
           />
+          <div className="bgImage">
+          <Image
+            src={person}
+            width={318}
+            height={283}
+            alt="rh"
+          />
+          </div>
         </div>
         <div className="mt-[26px] md:mt-0 md:col-span-3">
           <div className="flex justify-center md:block">
@@ -34,10 +41,10 @@ const RhconstructionSection = () => {
               smallHeadingText={smHeadingTexts.rhConstructions}
             />
           </div>
-          <h1 className="lg:leading-10 mb-1 mt-2 md:mt-0 lg:py-4 text-lg lg:text-4xl lg:text-start text-center">
+          <h1 className="lg:leading-10 mt-2 md:mt-0 lg:py-4 text-lg lg:text-4xl lg:text-start text-center">
             R H Construction USA, Inc.
           </h1>
-          <p className="md:text-[16px] text-black mx-auto text-start mt-[10px] md:mt-3 text-[12px] leading-[208%] lg:leading-[250%]">
+          <p className="md:text-[16px] text-black mx-auto text-start mt-[10px] md:mt-1 text-[12px] leading-[208%] lg:leading-[250%]">
             RH Construction USA Inc. stands out as one of the leading
             construction companies in Brooklyn, embodying a commitment to
             excellence and innovation in the industry. With a proven track
@@ -48,7 +55,7 @@ const RhconstructionSection = () => {
           </p>
 
           {/* ============== Image Card =============== */}
-          <div className="grid grid-cols-3 gap-3 lg:gap-3 text-center pt-5 lg:pt-6">
+          <div className="grid grid-cols-3 gap-3 lg:gap-3 text-center pt-5">
             <div className="w-full card-sd rounded-[9x] ">
               <Image
                 src={work1}

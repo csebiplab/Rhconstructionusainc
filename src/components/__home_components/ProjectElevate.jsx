@@ -1,7 +1,7 @@
 import elevate from "@/components/__home_components/Images/elevate.png";
+import { smHeadingTexts } from "@/constants/smHeadingTexts";
 import Image from "next/image";
 import SmallHeadingWithIcon from "../ui/SmallHeadingWithIcon";
-import { smHeadingTexts } from "@/constants/smHeadingTexts";
 const ProjectElevate = () => {
   return (
     <div className="section-bg">
@@ -29,7 +29,7 @@ const ProjectElevate = () => {
                   ELEVATE YOUR CONSTRUCTION PROJECTS WITH RH CONSTRUCTION USA
                   INC
                 </h1>
-                <p className="md:max-w-lg xl:max-w-5xl lg:text-lg text-sm  text-black my-2 md:pb-0 pb-3 md:text-start text-center px-2 md:px-0">
+                <p className="md:text-base text-[12px] leading-[208%] lg:leading-[250%] text-black my-2 md:pb-0 pb-3 md:text-start text-center px-2 md:px-0">
                   Elevate your construction projects to new heights with RH
                   Construction USA Inc., one of the best construction companies
                   in Brooklyn. Renowned for its unwavering commitment to
