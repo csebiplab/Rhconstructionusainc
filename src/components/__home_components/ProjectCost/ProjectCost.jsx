@@ -4,6 +4,8 @@ import cost2 from "@/components/__home_components/Images/cost2.png";
 import cost3 from "@/components/__home_components/Images/cost3.png";
 import cost4 from "@/components/__home_components/Images/cost4.png";
 import cost5 from "@/components/__home_components/Images/cost5.png";
+import SmallHeadingWithIcon from "@/components/ui/SmallHeadingWithIcon";
+import { smHeadingTexts } from "@/constants/smHeadingTexts";
 import Image from "next/image";
 import "swiper/css";
 import "swiper/css/autoplay";
@@ -12,8 +14,6 @@ import "swiper/css/virtual";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { SwiperNavButtons } from "./SwiperSliderButton";
-import SmallHeadingWithIcon from "@/components/ui/SmallHeadingWithIcon";
-import { smHeadingTexts } from "@/constants/smHeadingTexts";
 
 const breakpoints = {
   0: {
@@ -37,7 +37,7 @@ const ProjectCost = () => {
             </div>
 
             <h1 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-center md:text-start">
-              HOW MUCH DOES A CONSTRUCTION PROJECT COST?
+              HOW MUCH DOES <br/> A CONSTRUCTION PROJECT COST?
             </h1>
           </div>
           <div>
