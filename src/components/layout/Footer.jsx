@@ -10,12 +10,13 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import review from "../../../public/assets/footer/100reviews.png.png";
 import years from "../../../public/assets/footer/10year.png.png";
 import brace from "../../../public/assets/footer/Bark-Reviews-Logo.png";
-import gokundo from "../../../public/assets/footer/Gokundu-logo(white and green) 1.png";
 import elite from "../../../public/assets/footer/elite.png.png";
 import facebook from "../../../public/assets/footer/facebook-reviews-logo.png";
+import gokundo from "../../../public/assets/footer/gokundu.png";
 import homeAdv from "../../../public/assets/footer/homeadvisor.png";
 import house from "../../../public/assets/footer/ssa-2023.png.png";
 import topRate from "../../../public/assets/footer/toprated.png.png";
+import './Footer.css';
 
 const footerIcon = [
   {
@@ -48,29 +49,26 @@ const Footer = () => {
   const pathname = usePathname();
   if (pathname.startsWith("/admin")) return null;
   return (
-    <div className="bg-gray-900 px-5">
+    <div className="footer-bg px-5">
       <footer
-        className="z-50 custom-container py-20 text-white"
-        style={{
-          backgroundImage:
-            "url(https://www.rhconstructionusa.com/wp-content/uploads/2022/09/footer-bg.jpg)",
-        }}
+        className="custom-container py-20 text-white"
+        
       >
         <div className="custom-container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-5 lg:mt-36 mt:mb-20 mt-10">
             <div className="col-span-2">
               <img src="/assets/images/footer-logo.webp" alt="" className="" />
-              <p className="text-white pt-6 mb-3 ml-2 lg:text-[36px] md:text-md ">
-                RH Construction USA, Inc. <br /> General Cronstruction.
+              <p className="text-white pt-6 mb-3 ml-3 text-lg md:text-xs">
+                RH Construction USA, Inc. General Cronstruction.
               </p>
               {/* <h5 className="text-gray-500">Customer Reviews</h5> */}
-              <div className="flex items-center text-lg lg:gap-4 gap-2 lg:my-10 my-2 ml-2">
-                <StarIcon className="text-primary lg:h-7 lg:w-7 h-5 w-5" />{" "}
-                <StarIcon className="text-primary lg:h-7 lg:w-7 h-5 w-5" />
-                <StarIcon className="text-primary lg:h-7 lg:w-7 h-5 w-5" />
-                <StarIcon className="text-primary lg:h-7 lg:w-7 h-5 w-5" />{" "}
-                <StarIcon className="text-primary lg:h-7 lg:w-7 h-5 w-5" />
-                <div className="lg:text-[30px] md:text-[20px]">4.9</div>
+              <div className="flex items-center text-base gap-2 lg:my-5 my-2 ml-2">
+                <StarIcon className="text-primary h-5 w-5" />{" "}
+                <StarIcon className="text-primary h-5 w-5" />
+                <StarIcon className="text-primary h-5 w-5" />
+                <StarIcon className="text-primary h-5 w-5" />{" "}
+                <StarIcon className="text-primary h-5 w-5" />
+                <div className="text-base">4.9</div>
               </div>
             </div>
 
@@ -242,26 +240,26 @@ const Footer = () => {
 
           <div className="grid lg:grid-cols-9 gap-5 pt-20 items-center">
             <div className=" col-span-3 flex items-center gap-2">
-              <p className=" lg:text-[18px] md:text-sm ">
+              <p className="text-sm  lg:text-base ">
                 {" "}
                 <b>WEBSITE DESIGN AND SEO BY:-</b>{" "}
               </p>
               <Image
                 src={gokundo}
-                width={30}
-                height={30}
+                width={141}
+                height={36}
                 alt="gokundo"
-                className=" ml-2 h-auto w-auto"
+                className=" ml-2 object-contain"
               />
             </div>
             <div className=" col-span-4">
-              <p className=" lg:text-[18px] md:text-sm  ">
+              <p className="text-sm  lg:text-base">
                 © All Copyright 2024 by RH Construction USA, Inc. General
                 Cronstruction.
               </p>
             </div>
             <div className=" col-span-2">
-              <ul className=" lg:text-[18px] md:text-sm  flex justify-between ">
+              <ul className=" text-sm  lg:text-base flex justify-between ">
                 <li> Terms & Condition </li>
                 <li> Privacy Policy </li>
               </ul>
