@@ -29,7 +29,7 @@ const ProjectElevate = () => {
                   ELEVATE YOUR CONSTRUCTION PROJECTS WITH RH CONSTRUCTION USA
                   INC
                 </h1>
-                <p className="md:text-base text-[12px] leading-[208%] lg:leading-[250%] text-black my-2 md:pb-0 pb-3 md:text-start text-center px-2 md:px-0">
+                <p className="text-[12px] md:text-base leading-[208%] lg:leading-[250%] text-black my-2 md:pb-0 pb-3 md:text-start text-center px-2 md:px-0">
                   Elevate your construction projects to new heights with RH
                   Construction USA Inc., one of the best construction companies
                   in Brooklyn. Renowned for its unwavering commitment to
