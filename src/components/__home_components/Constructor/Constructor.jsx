@@ -22,8 +22,12 @@ const breakpoints = {
     slidesPerView: 1,
   },
   768: {
+    slidesPerView: 2,
+  },
+  1024: {
     slidesPerView: 3,
   },
+
 };
 
 const slideData = [
@@ -233,8 +237,8 @@ const Constructor = () => {
       breakpoints={breakpoints}
     >
       {slideData.map((slide, index) => (
-        <SwiperSlide key={index} className={`text-center py-4 lg:py-10 px-20 md:px-6`}>
-          <div className="w-full card-sd rounded-sm bg-white p-[10px]">
+        <SwiperSlide key={index} className={`text-center py-4 lg:py-10 px-20 md:px-14 lg:px-6`}>
+          <div className="w-full h-auto md:h-[353px] card-sd rounded-sm bg-white p-[10px]">
             <Image
               src={slide.imgSrc}
               width={100}
