@@ -42,12 +42,12 @@ import GalImg9 from "../../../public/assets/galleries/gl9.jpg";
 import { Autoplay } from "swiper/modules";
 
 // Import Swiper styles
+import { smHeadingTexts } from "@/constants/smHeadingTexts";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/effect-coverflow";
 import "swiper/css/grid";
 import SmallHeadingWithIcon from "../ui/SmallHeadingWithIcon";
-import { smHeadingTexts } from "@/constants/smHeadingTexts";
 
 const galImgs = [
   GalImg1,

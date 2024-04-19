@@ -1,7 +1,8 @@
 "use client";
 import google from "@/components/__home_components/Images/google.png";
 import review from "@/components/__home_components/Images/review.png";
-import reviewLogo from "@/components/__home_components/Images/reviewLogo.png";
+import SmallHeadingWithIcon from "@/components/ui/SmallHeadingWithIcon";
+import { smHeadingTexts } from "@/constants/smHeadingTexts";
 import Image from "next/image";
 import "swiper/css";
 import "swiper/css/autoplay";
@@ -12,8 +13,6 @@ import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./ReviewSlider.css";
 import { SwiperNavButtons } from "./SwiperSliderButton";
-import SmallHeadingWithIcon from "@/components/ui/SmallHeadingWithIcon";
-import { smHeadingTexts } from "@/constants/smHeadingTexts";
 
 const breakpoints = {
   0: {

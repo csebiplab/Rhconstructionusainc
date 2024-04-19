@@ -1,4 +1,5 @@
 "use client";
+import arrow from "@/components/__home_components/Images/arrow.png";
 import build from "@/components/__home_components/Images/faqBuild.png";
 import { smHeadingTexts } from "@/constants/smHeadingTexts";
 import {
@@ -67,7 +68,7 @@ export function FAQ() {
             width={478}
             height={717}
             alt="build"
-            className="my-0 md:my-2 w-full h-full md:w-[478px] md:h-[717px]"
+            className="my-4 md:my-2 w-full h-full md:w-[478px] md:h-[717px]"
           />
         </div>
         <div className="mx-auto">
@@ -82,15 +83,29 @@ export function FAQ() {
               <Accordion
                 key={id}
                 open={open === id}
-                className="mb-2 border text-white bg-black border-blue-gray-100 px-4"
+                className="mb-2  text-white bg-black  px-4"
               >
-                <AccordionHeader onClick={() => handleOpen(id)}>
+                <AccordionHeader
+                  onClick={() => handleOpen(id)}
+                  className=" relative"
+                >
                   <div
-                    className={`border-b-0 transition-colors ${
-                      open === idx + 1 ? "hover:!text-primary text-white" : ""
+                    className={`text-white  border-b-0 transition-colors ${
+                      open === idx + 1 ? "hover:!text-primary " : ""
                     }`}
                   >
-                    <b>Q{id}</b> {question}
+                    <span>
+                      <b>Q{id}</b> {question}
+                    </span>
+                  </div>
+                  <div className="absolute right-0">
+                    <Image
+                      src={arrow}
+                      width={9}
+                      height={16}
+                      alt="arrow"
+                      className=""
+                    />
                   </div>
                 </AccordionHeader>
                 <AccordionBody className="pt-0 p-1 text-base font-normal bg-white">
