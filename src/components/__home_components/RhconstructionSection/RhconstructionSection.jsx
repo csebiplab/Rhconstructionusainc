@@ -8,7 +8,6 @@ import { smHeadingTexts } from "@/constants/smHeadingTexts";
 import Image from "next/image";
 import './RhconstructionSection.css';
 
-
 const RhconstructionSection = () => {
   return (
     <div className="py-9 md:py-10 lg:py-12 5xl:py-[120px] container">

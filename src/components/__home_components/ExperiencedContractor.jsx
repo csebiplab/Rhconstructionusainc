@@ -1,23 +1,39 @@
-import constructor from "@/components/__home_components/Images/constructor.png";
+import cleaning from "@/components/__home_components/Images/cleaning.png";
+import cleaning1 from "@/components/__home_components/Images/cleaning1.png";
+import { smHeadingTexts } from "@/constants/smHeadingTexts";
 import Image from "next/image";
 import SmallHeadingWithIcon from "../ui/SmallHeadingWithIcon";
-import { smHeadingTexts } from "@/constants/smHeadingTexts";
 
 const ExperiencedContractor = () => {
   return (
     <div className="section-bg">
       <div className="py-9 md:py-10 lg:py-12 5xl:py-[120px] container">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-4 md:gap-6 lg:gap-10 xl:gap-12 3xl:gap-x-16 5xl:gap-x-20">
-          <div className="md:col-span-2">
+        <div className="md:flex gap-4 lg:gap-10 xl:gap-12 3xl:gap-x-16 5xl:gap-x-20">
+          <div className="md:flex w-full md:w-1/2 gap-0 md:gap-[22px]">
+            <div>
             <Image
-              src={constructor}
+              src={cleaning1}
               width={807}
               height={608}
-              className="md:w-full lg:w-[807px] lg:h-[608px]"
-              alt="constructor"
+              className="md:w-full md:h-full lg:w-[399px] lg:h-[754px]"
+              alt="cleaning1"
             />
+            </div>
+            <div>
+              <div className="text-center yellow-border py-3 md:py-8 my-2 md:my-0">
+                <h2 className="text-2xl lg:text-[80px] lg:leading-10">15+</h2>
+                <p className="text-lg lg:text-[30px] leading-normal mt-2 md:mt-4 px-0 md:px-1">Successful <br/> Years</p>
+              </div>
+              <Image
+              src={cleaning}
+              width={807}
+              height={608}
+              className="md:w-full md:h-3/4 lg:w-[386px] lg:h-[503px] mt-2 lg:mt-[24px]"
+              alt="cleaning"
+            />
+            </div>
           </div>
-          <div className="mt-[26px] md:mt-0 md:col-span-3">
+          <div className="mt-[26px] md:mt-0 w-full md:w-1/2">
             <div className="flex justify-center md:block">
               <SmallHeadingWithIcon
                 smallHeadingText={smHeadingTexts.expContractor}
