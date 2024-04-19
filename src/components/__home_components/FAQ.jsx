@@ -84,14 +84,19 @@ export function FAQ() {
                 open={open === id}
                 className="mb-2 border text-white bg-black border-blue-gray-100 px-4"
               >
-                <AccordionHeader onClick={() => handleOpen(id)}>
+                <AccordionHeader onClick={() => handleOpen(id)} className="border border-red-500 relative">
                   <div
-                    className={`border-b-0 transition-colors ${
-                      open === idx + 1 ? "hover:!text-primary text-white" : ""
+                    className={`text-white border border-red-500 border-b-0 transition-colors ${
+                      open === idx + 1 ? "hover:!text-primary " : ""
                     }`}
                   >
-                    <b>Q{id}</b> {question}
+                    <span>
+                      <b>Q{id}</b> {question}
+                    </span>
+                    
+                    
                   </div>
+                  <div className="absolute right-0">A</div>
                 </AccordionHeader>
                 <AccordionBody className="pt-0 p-1 text-base font-normal bg-white">
                   {answer}
