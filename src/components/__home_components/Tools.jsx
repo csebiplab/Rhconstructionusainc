@@ -1,12 +1,14 @@
-import equip from "@/components/__home_components/Images/equip.png";
+import tool from "@/components/__home_components/Images/tool.png";
+import tool1 from "@/components/__home_components/Images/tool1.png";
+import tool2 from "@/components/__home_components/Images/tool2.png";
 import { smHeadingTexts } from "@/constants/smHeadingTexts";
 import Image from "next/image";
 import SmallHeadingWithIcon from "../ui/SmallHeadingWithIcon";
 const Tools = () => {
   return (
     <div className="py-9 md:py-10 lg:py-12 5xl:py-[120px] container">
-      <div className="grid grid-cols-1 md:grid-cols-7 gap-2 lg:gap-3 xl:gap-8 5xl:gap-[78px]">
-        <div className="md:col-span-4 order-2 md:order-1">
+      <div className="md:flex gap-2 lg:gap-3 xl:gap-8 5xl:gap-[78px]">
+        <div className="md:w-1/2 order-2 md:order-1">
           <div className="flex justify-center md:block">
             <SmallHeadingWithIcon
               smallHeadingText={smHeadingTexts.toolsNEquip}
@@ -37,14 +39,40 @@ const Tools = () => {
             every step of the way.
           </p>
         </div>
-        <div className="md:col-span-3 order-1 md:order-2">
+
+        {/* ======== Images Section ========= */}
+        <div className="w-full md:w-1/2 order-1 md:order-2">
+          <div className="lg:flex gap-4">
+          <div className="hidden lg:block">
           <Image
-            src={equip}
+            src={tool1}
+            width={308}
+            height={273}
+            alt="tool1"
+            className="rounded-lg border-2"
+          />
+          </div>
+          <div className="hidden lg:block">
+          <Image
+            src={tool2}
+            width={310}
+            height={261}
+            alt="tool2"
+            className=""
+          />
+          </div>
+          
+
+          </div>
+          
+          <Image
+            src={tool}
             width={632}
             height={645}
             alt="equip"
-            className="w-full h-full md:w-[632px] md:h-[645px]"
+            className="w-full lg:h-[496px] mt-5 rounded-lg"
           />
+         
         </div>
       </div>
     </div>
