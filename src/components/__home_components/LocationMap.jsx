@@ -95,7 +95,7 @@ const LocationMap = () => {
             spaceBetween={74}
           >
             {locations.map((location, index) => (
-              <SwiperSlide key={index} className={``}>
+              <SwiperSlide key={index} className={`px-[90px] md:px-0`}>
                 <div
                 className={`${
                   (index + 2) % 2 === 0 ? "lg:-mt-10 md:-mt-5" : ""
@@ -103,6 +103,7 @@ const LocationMap = () => {
               >
                 <div className="w-full shadow-md p-0 mt-[45px] lg:mt-[65px] ">
                   <iframe
+                  
                     src={location.iframeSrc}
                     height="325"
                     style={{ border: 0, width: "100%" }}
@@ -111,7 +112,7 @@ const LocationMap = () => {
                     referrerPolicy="no-referrer-when-downgrade"
                   />
 
-                  <h5 className="lg:text-base text-sm py-4 px-3 lg:px-10 bg-yellow-700 ">
+                  <h5 className="lg:text-base text-center text-sm py-4 px-3 lg:px-10 bg-yellow-700 ">
                     {location?.title}
                   </h5>
                 </div>
