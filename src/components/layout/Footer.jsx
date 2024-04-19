@@ -190,7 +190,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="col-span-2">
+            <div className="col-span-2 mx-auto md:mx-0">
               <h3 className="font-semibold text-white   lg:text-[36px] md:text-[25px] lg:mb-10 md:mb-5 mb-3">
                 Contact Us
               </h3>
@@ -238,7 +238,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="grid lg:grid-cols-9 gap-5 pt-20 items-center">
+          <div className="grid lg:grid-cols-9 gap-5 pt-20 items-center justify-center md:justify-start">
             <div className=" col-span-3 flex items-center gap-2">
               <p className="text-sm  lg:text-base ">
                 {" "}

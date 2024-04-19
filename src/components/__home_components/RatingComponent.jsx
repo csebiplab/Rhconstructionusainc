@@ -100,7 +100,7 @@ const RatingComponent = () => {
                     </div>
                   </div>
                   <div className="w-[132px] h-[24px] border-2 bg-[#EAEAEA] ">
-                    <h5 className="text-[#000] font-semibold text-[8px] py-[5px] px-[32px] text-center leading-[12px]">
+                    <h5 className="text-[#000] font-semibold text-[8px] py-[5px] text-center leading-[12px]">
                       {" "}
                       Customer Service
                     </h5>

@@ -2,17 +2,14 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { Autoplay, Navigation } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { SwiperNavButtons } from "../Review/SwiperSliderButton";
 
+import SmallHeadingWithIcon from "@/components/ui/SmallHeadingWithIcon";
+import { smHeadingTexts } from "@/constants/smHeadingTexts";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import "swiper/css/virtual";
-import SmallHeadingWithIcon from "@/components/ui/SmallHeadingWithIcon";
-import { smHeadingTexts } from "@/constants/smHeadingTexts";
 
 const interior = [
   {
@@ -136,7 +133,7 @@ export default function OurServices() {
               onChange={handleCheckboxChange}
             />
             <span
-              className={`flex items-center space-x-[6px] lg:px-32 px-14 rounded-3xl lg:py-4  py-2  lg:text-[20px] text-sm font-medium ${
+              className={`flex items-center space-x-[6px] lg:px-32 px-4 rounded-3xl lg:py-4  py-2  lg:text-[20px] text-sm font-medium ${
                 !isChecked ? "text-white bg-black " : "text-body-color"
               }`}
             >
@@ -156,7 +153,7 @@ export default function OurServices() {
               Interior
             </span>
             <span
-              className={`flex items-center space-x-[6px] lg:px-32 px-14 rounded-3xl lg:py-4 py-2 lg:text-[20px] text-sm font-medium ${
+              className={`flex items-center space-x-[6px] lg:px-32 px-4 rounded-3xl lg:py-4 py-2 lg:text-[20px] text-sm font-medium ${
                 isChecked ? " text-white bg-black " : "text-body-color"
               }`}
             >

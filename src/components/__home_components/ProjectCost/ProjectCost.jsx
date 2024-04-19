@@ -24,6 +24,49 @@ const breakpoints = {
   },
 };
 
+const slideData = [
+  {
+    imgSrc: cost1,
+    title: 'Reputation and Experience',
+  },
+  {
+    imgSrc: cost2,
+    title: 'Specialization and Expertise',
+    
+  },
+  {
+    imgSrc: cost3,
+    title: 'Communication and Transparency',
+    
+  },
+  {
+    imgSrc: cost4,
+    title: 'Reputation and Experience',
+    
+  },
+  {
+    imgSrc: cost5,
+    title: 'Specialization and Expertise',
+    
+  },
+  {
+    imgSrc: cost1,
+    title: 'Reputation and Experience',
+  },
+  {
+    imgSrc: cost2,
+    title: 'Specialization and Expertise',
+    
+  },
+  {
+    imgSrc: cost3,
+    title: 'Communication and Transparency',
+    
+  },
+  
+];
+
+
 const ProjectCost = () => {
   return (
     <div className="section-bg">
@@ -54,177 +97,49 @@ const ProjectCost = () => {
           </div>
         </div>
 
-        {/* //   ======================= Images Card ==================// */}
-
-        {/* <div className="grid grid-cols-2 md:grid-cols-5 md:gap-2 lg:gap-3 px-4 text-center lg:py-10 md:py-4">
-          <div className="mt-0 md:-mt-6 lg:-mt-10">
-            <div className="w-full card-sd rounded-md">
-              <Image
-                src={cost1}
-                width={318}
-                height={238}
-                alt=""
-                className="w-full"
-              />
-
-              <h5 className="lg:text-base text-sm py-2">Scope of Work</h5>
-            </div>
-          </div>
-          <div>
-            <div className="w-full card-sd rounded-md">
-              <Image
-                src={cost2}
-                width={318}
-                height={238}
-                alt=""
-                className="w-full"
-              />
-
-              <h5 className="lg:text-base text-sm py-2">Materials</h5>
-            </div>
-          </div>
-          <div className="mt-0 md:-mt-6 lg:-mt-10">
-            <div className="w-full card-sd rounded-md">
-              <Image
-                src={cost3}
-                width={318}
-                height={238}
-                alt=""
-                className="w-full"
-              />
-
-              <h5 className="lg:text-base text-sm py-2">Labor Costs</h5>
-            </div>
-          </div>
-          <div>
-            <div className="w-full card-sd rounded-md">
-              <Image
-                src={cost4}
-                width={318}
-                height={238}
-                alt=""
-                className="w-full"
-              />
-
-              <h5 className="lg:text-base text-sm py-2">
-                Equipment and Machinery
-              </h5>
-            </div>
-          </div>
-          <div className="mt-0 md:-mt-6 lg:-mt-10">
-            <div className="w-full card-sd rounded-md">
-              <Image
-                src={cost5}
-                width={318}
-                height={238}
-                alt=""
-                className="w-full"
-              />
-
-              <h5 className="lg:text-base text-sm py-2">
-                Permits and Regulations
-              </h5>
-            </div>
-          </div>
-        </div> */}
+        
         {/* =================== Card Section =============== */}
+      
         <Swiper
-          // spaceBetween={21}
-          // slidesPerView={3}
-          modules={[Autoplay, Navigation]}
-          loop={true}
-          autoplay={{
-            delay: 3000,
-            pauseOnMouseEnter: false,
-            disableOnInteraction: false,
-            stopOnLastSlide: false,
-          }}
-          speed={3000}
-          allowTouchMove={false}
-          breakpoints={breakpoints}
-        >
-          <SwiperSlide className={`text-center py-4 lg:py-10 px-16 md:px-4`}>
-            <div className="mt-0 md:-mt-6 lg:-mt-10">
-              <div className="w-full card-sd rounded-md">
+            modules={[Autoplay, Navigation]}
+            loop={true}
+            autoplay={{
+              delay: 3000,
+              pauseOnMouseEnter: false,
+              disableOnInteraction: false,
+              stopOnLastSlide: false,
+            }}
+            speed={3000}
+            allowTouchMove={false}
+            breakpoints={breakpoints}
+            spaceBetween={74}
+          >
+            {slideData.map((data, index) => (
+              <SwiperSlide key={index} className={`text-center py-4 lg:py-10 px-[90px] md:px-0`}>
+                <div
+                className={`${
+                  (index + 2) % 2 === 0 ? "lg:-mt-10 md:-mt-5" : ""
+                }`}
+              >
+              
+                <div className="w-full shadow-md p-0 mt-[45px] lg:mt-[65px] ">
+                  
                 <Image
-                  src={cost1}
+                  src={data.imgSrc}
                   width={318}
                   height={238}
                   alt="cost"
                   className="w-full"
                 />
-
-                <h5 className="lg:text-base text-sm py-2">Scope of Work</h5>
+                  <h5 className="lg:text-base text-sm py-2 text-center">
+                    {data?.title}
+                  </h5>
+                </div>
               </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className={`text-center py-4 lg:py-10 px-16 md:px-4`}>
-            <div>
-              <div className="w-full card-sd rounded-md">
-                <Image
-                  src={cost2}
-                  width={318}
-                  height={238}
-                  alt="cost"
-                  className="w-full"
-                />
-
-                <h5 className="lg:text-base text-sm py-2">Materials</h5>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className={`text-center py-4 lg:py-10 px-16 md:px-4`}>
-            <div className="mt-0 md:-mt-6 lg:-mt-10">
-              <div className="w-full card-sd rounded-md">
-                <Image
-                  src={cost3}
-                  width={318}
-                  height={238}
-                  alt="cost"
-                  className="w-full"
-                />
-
-                <h5 className="lg:text-base text-sm py-2">Labor Costs</h5>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className={`text-center py-4 lg:py-10 px-16 md:px-4`}>
-            <div>
-              <div className="w-full card-sd rounded-md">
-                <Image
-                  src={cost4}
-                  width={318}
-                  height={238}
-                  alt=""
-                  className="w-full"
-                />
-
-                <h5 className="lg:text-base text-sm py-2">
-                  Equipment and Machinery
-                </h5>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className={`text-center py-4 lg:py-10 px-16 md:px-4`}>
-            <div className="mt-0 md:-mt-6 lg:-mt-10">
-              <div className="w-full card-sd rounded-md">
-                <Image
-                  src={cost5}
-                  width={318}
-                  height={238}
-                  alt="cost"
-                  className="w-full"
-                />
-
-                <h5 className="lg:text-base text-sm py-2">
-                  Permits and Regulations
-                </h5>
-              </div>
-            </div>
-          </SwiperSlide>
-
-          <SwiperNavButtons />
-        </Swiper>
+              </SwiperSlide>
+            ))}
+            <SwiperNavButtons />
+          </Swiper>
       </div>
     </div>
   );
