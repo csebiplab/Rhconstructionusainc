@@ -15,7 +15,7 @@ const ExperiencedContractor = () => {
               src={cleaning1}
               width={807}
               height={608}
-              className="md:w-full md:h-full lg:w-[399px] lg:h-[754px]"
+              className="w-[370px] h-[350px] md:w-full md:h-full lg:w-[399px] lg:h-[754px]"
               alt="cleaning1"
             />
             </div>
@@ -28,7 +28,7 @@ const ExperiencedContractor = () => {
               src={cleaning}
               width={807}
               height={608}
-              className="md:w-full md:h-3/4 lg:w-[386px] lg:h-[503px] mt-2 lg:mt-[24px]"
+              className="w-[370px] md:w-full md:h-3/4 lg:w-[386px] lg:h-[503px] mt-2 lg:mt-[24px]"
               alt="cleaning"
             />
             </div>

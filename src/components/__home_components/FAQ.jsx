@@ -68,7 +68,7 @@ export function FAQ() {
             width={478}
             height={717}
             alt="build"
-            className="my-4 md:my-2 w-full h-full md:w-[478px] md:h-[717px]"
+            className="my-4 md:my-2 w-full h-[303px] md:w-[478px] md:h-[717px]"
           />
         </div>
         <div className="mx-auto">

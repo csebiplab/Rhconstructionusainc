@@ -70,7 +70,7 @@ const Tools = () => {
             width={632}
             height={645}
             alt="equip"
-            className="w-full lg:h-[496px] mt-5 rounded-lg"
+            className="w-full h-[245px] md:h-auto lg:h-[496px] mt-5 rounded-lg"
           />
          
         </div>
