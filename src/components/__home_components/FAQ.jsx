@@ -1,6 +1,7 @@
 "use client";
 import arrow from "@/components/__home_components/Images/arrow.png";
 import build from "@/components/__home_components/Images/faqBuild.png";
+import smallBuild from "@/components/__home_components/Images/smallBuild.png";
 import { smHeadingTexts } from "@/constants/smHeadingTexts";
 import {
   Accordion,
@@ -62,13 +63,26 @@ export function FAQ() {
   return (
     <div className="py-0 md:py-10 lg:py-12 5xl:py-[120px] container">
       <div className="md:flex items-center lg:gap-10 md:gap-3">
-        <div>
+
+        {/* ========== For desktop view ======== */}
+        <div className="hidden md:block">
           <Image
             src={build}
             width={478}
             height={717}
             alt="build"
             className="my-4 md:my-2 w-full h-[303px] md:w-[478px] md:h-[717px]"
+          />
+        </div>
+
+        {/* ============= For Mobile View ========= */}
+        <div className="block md:hidden">
+          <Image
+            src={smallBuild}
+            width={370}
+            height={303}
+            alt="smallBuild"
+            className="mb-5 w-full"
           />
         </div>
         <div className="mx-auto">
