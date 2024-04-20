@@ -1,3 +1,4 @@
+import smallTool from "@/components/__home_components/Images/smallTool.png";
 import tool from "@/components/__home_components/Images/tool.png";
 import tool1 from "@/components/__home_components/Images/tool1.png";
 import tool2 from "@/components/__home_components/Images/tool2.png";
@@ -8,6 +9,19 @@ const Tools = () => {
   return (
     <div className="py-9 md:py-10 lg:py-12 5xl:py-[120px] container">
       <div className="md:flex gap-2 lg:gap-3 xl:gap-8 5xl:gap-[78px]">
+
+        {/* =========== For Mobile View ========= */}
+        <div className="block md:hidden mt-2">
+        <Image
+            src={smallTool}
+            width={370}
+            height={245}
+            alt="smallTool"
+            className="w-full mb-6"
+          />
+        </div>
+
+
         <div className="md:w-1/2 order-2 md:order-1">
           <div className="flex justify-center md:block">
             <SmallHeadingWithIcon
@@ -41,7 +55,7 @@ const Tools = () => {
         </div>
 
         {/* ======== Images Section ========= */}
-        <div className="w-full md:w-1/2 order-1 md:order-2">
+        <div className="w-full md:w-1/2 order-1 md:order-2 hidden md:block">
           <div className="lg:flex gap-4">
           <div className="hidden lg:block">
           <Image

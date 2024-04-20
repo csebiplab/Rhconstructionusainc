@@ -14,7 +14,7 @@ const ExperiencedContractor = () => {
 
           {/* =========== Desktop View ============ */}
           <div className="md:flex w-full md:w-1/2 gap-0 md:gap-[22px]">
-            <div  className="hidden md:block">
+            <div className="hidden md:block">
             <Image
               src={cleaning1}
               width={807}
