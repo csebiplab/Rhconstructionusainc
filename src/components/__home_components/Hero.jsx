@@ -18,7 +18,7 @@ const Hero = () => {
                 {/* Top-Rated general constructor in Brooklyn, delivering
                 exceptional <br /> construction & renovation services with
                 expertise and integrity */}
-                Best general contractor in Brooklyn, specializing in home
+                Best general constructor in Brooklyn, specializing in home
                 renovations, <br /> bathroom renovations & kitchen remodeling,
                 roofing, and construction services.
               </p>
