@@ -1,11 +1,10 @@
-import about from "@/components/__home_components/Images/about.png";
 import company from "@/components/__home_components/Images/company.png";
+import { smHeadingTexts } from "@/constants/smHeadingTexts";
 import { Button } from "@material-tailwind/react";
 import Image from "next/image";
 import { BsTelephoneForwardFill } from "react-icons/bs";
 import { FaChevronRight } from "react-icons/fa6";
 import SmallHeadingWithIcon from "../ui/SmallHeadingWithIcon";
-import { smHeadingTexts } from "@/constants/smHeadingTexts";
 const AboutUs = () => {
   return (
     <div className="section-bg py-[34px] 5xl:py-[57px]">
@@ -15,9 +14,9 @@ const AboutUs = () => {
             <div className="flex justify-center md:block">
               <SmallHeadingWithIcon smallHeadingText={smHeadingTexts.aboutUs} />
             </div>
-            <h1 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-center md:text-start">
+            <h2 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-center md:text-start">
               ABOUT OUR GENERAL CONTRACTOR COMPANY
-            </h1>
+            </h2>
             <p className="md:text-base text-[12px] leading-[208%] lg:leading-[250%] text-black text-center md:text-start">
               Since 2009, RH Construction USA Inc. has been dedicated to
               delivering excellence in construction services, boasting over 15

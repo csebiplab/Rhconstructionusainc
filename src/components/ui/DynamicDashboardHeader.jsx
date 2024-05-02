@@ -20,7 +20,7 @@ const DynamicDashboardHeaderTitle = () => {
     };
   }, [pathname]);
 
-  return <h1 className="text-xl font-medium flex-1">{title}</h1>;
+  return <h2 className="text-xl font-medium flex-1">{title}</h2>;
 };
 
 export default DynamicDashboardHeaderTitle;

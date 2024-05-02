@@ -94,9 +94,9 @@ export default function OurServices() {
                 smallHeadingText={smHeadingTexts.ourServices}
               />
             </div>
-            <h1 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-center md:text-start">
+            <h2 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-center md:text-start">
               Our Services
-            </h1>
+            </h2>
             <p className="md:text-base text-[12px] leading-[208%] lg:leading-[250%] text-black text-center md:text-start font-semibold">
               Enjoy a stress-free construction service with our unique build
               process.

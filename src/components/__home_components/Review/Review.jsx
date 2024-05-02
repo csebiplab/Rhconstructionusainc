@@ -71,9 +71,9 @@ const Review = () => {
             <div className="flex justify-center items-center">
               <SmallHeadingWithIcon smallHeadingText={smHeadingTexts.review} />
             </div>
-            <h1 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[12px] xl:mt-[15px] xl:mb-[25px] text-center">
+            <h2 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[12px] xl:mt-[15px] xl:mb-[25px] text-center">
               Here’s what to expect when you hire us
-            </h1>
+            </h2>
           </div>
           {/* =================== Card Section =============== */}
           <Swiper

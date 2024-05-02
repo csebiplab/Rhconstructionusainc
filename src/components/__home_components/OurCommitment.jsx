@@ -45,10 +45,10 @@ const OurCommitment = () => {
       <div className="w-full flex justify-center">
         <div className="">
           <div className="flex justify-center">
-            <h1 className="leading-10 mb-1 max-w-4xl">
+            <h2 className="leading-10 mb-1 max-w-4xl">
               <span className="text-primary">Our Commitment </span> as one of
               the Best Construction Companies in Brooklyn
-            </h1>
+            </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10 justify-center items-center h-full">
             {commitments?.map((commitment, idx) => (

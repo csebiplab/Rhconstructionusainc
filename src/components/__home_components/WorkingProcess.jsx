@@ -2,7 +2,7 @@ import mask1 from "@/components/__home_components/Images/Mask1.png";
 import mask2 from "@/components/__home_components/Images/Mask2.png";
 import mask3 from "@/components/__home_components/Images/Mask3.png";
 import mask4 from "@/components/__home_components/Images/Mask4.png";
-import working from "@/components/__home_components/Images/Working.png";
+import { smHeadingTexts } from "@/constants/smHeadingTexts";
 import Image from "next/image";
 import "swiper/css";
 import "swiper/css/autoplay";
@@ -11,7 +11,6 @@ import "swiper/css/virtual";
 import { Scrollbar } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SmallHeadingWithIcon from "../ui/SmallHeadingWithIcon";
-import { smHeadingTexts } from "@/constants/smHeadingTexts";
 
 const breakpoints = {
   0: {
@@ -57,9 +56,9 @@ const WorkingProcess = () => {
           <SmallHeadingWithIcon
             smallHeadingText={smHeadingTexts.workingProcess}
           />
-          <h1 className="lg:leading-10 lg:text-4xl text-lg md:py-2 lg:py-4">
+          <h2 className="lg:leading-10 lg:text-4xl text-lg md:py-2 lg:py-4">
             WORKING PROCESS OF OUR CONSTRUCTION COMPANY IN BROOKLYN
-          </h1>
+          </h2>
           <p className="font-semibold lg:text-base md:text-sm">
             Certainly! Here's an overview of the working process of our
             construction company in Brooklyn:

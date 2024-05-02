@@ -1,13 +1,12 @@
-import React from "react";
 
 const GeneralContractor = () => {
   return (
     <div className="bg-primary py-12 px-5">
       <div className="flex justify-center">
-        <h1 className="max-w-lg text-center font-bold">
+        <h2 className="max-w-lg text-center font-bold">
           Choosing the Right General{" "}
           <span className="text-white">Contractor in Brooklyn</span>
-        </h1>
+        </h2>
       </div>
       <div className="flex flex-wrap md:flex-nowrap justify-center items-center mt-8 gap-10 container font-medium text-secondary text-xl">
         <p>

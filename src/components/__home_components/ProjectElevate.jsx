@@ -25,10 +25,10 @@ const ProjectElevate = () => {
                     smallHeadingText={smHeadingTexts.projectWithUs}
                   />
                 </div>
-                <h1 className="lg:leading-10 py-2 text-[18px] leading-normal md:text-lg lg:text-3xl md:text-start text-center">
+                <h2 className="lg:leading-10 py-2 text-[18px] leading-normal md:text-lg lg:text-3xl md:text-start text-center">
                   ELEVATE YOUR CONSTRUCTION PROJECTS WITH RH CONSTRUCTION USA
                   INC
-                </h1>
+                </h2>
                 <p className="text-[12px] md:text-base leading-[208%] lg:leading-[250%] text-black my-2 md:pb-0 pb-3 md:text-start text-center px-2 md:px-0">
                   Elevate your construction projects to new heights with RH
                   Construction USA Inc., one of the best construction companies

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 
 const TrustedGeneralContractor = () => {
   return (
@@ -7,9 +6,9 @@ const TrustedGeneralContractor = () => {
       <div className="grid grid-cols-1 md:grid-cols-9 gap-4">
         <div className="w-full md:col-span-5 md:order-2">
           <div className="w-full">
-            <h1 className="font-semibold text-3xl">
+            <h2 className="font-semibold text-3xl">
               Trusted General Contractor in Brooklyn
-            </h1>
+            </h2>
           </div>
           <p className="mt-4">
             As a trusted general contractor in Brooklyn, we prioritize clear and

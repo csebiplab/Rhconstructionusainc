@@ -9,9 +9,9 @@ const RC = () => {
       />
       <section className="py-10">
         <div className="container">
-          <h1 className="mb-6 text-primary">
+          <h2 className="mb-6 text-primary">
             Local Interior Commercial Painting Contractor Near Me
-          </h1>
+          </h2>
           {[
             "If you are looking for a local interior commercial painting contractor near me, then look no further. Yes, we can help you. Whether you need commercial painting on an exterior or interior wall, new windows or siding installation, or an entire home remodel – we are here for you.",
             "We are fully licensed, insured, and bonded for providing the best quality services. In addition, we always make sure that our customers are completely satisfied with our service.",
@@ -83,9 +83,9 @@ const RC = () => {
       ].map((section,key)=>(
         <section className={`py-16 ${key%2!==0?'bg-gray-100':''}`}>
         <div className="container">
-          <h1 className="mb-6 text-primary">
+          <h2 className="mb-6 text-primary">
             {section?.title}
-          </h1>
+          </h2>
           {section.paragraphs.map((item, key) => (
             <p
               key={key}
@@ -99,7 +99,7 @@ const RC = () => {
      
             <section className="py-16">
               <div className="container">
-                <h1 className="text-center text-primary mb-5">Why do you select us as your commercial painting contractor?</h1>
+                <h2 className="text-center text-primary mb-5">Why do you select us as your commercial painting contractor?</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                     <div >
                       {[
@@ -117,7 +117,7 @@ const RC = () => {
      
             <section className="py-16">
               <div className="container">
-                <h1 className="text-center text-primary mb-5">Interior painting ideas for split-level home</h1>
+                <h2 className="text-center text-primary mb-5">Interior painting ideas for split-level home</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                     <div >
                     <img src="https://www.rhconstructionusa.com/wp-content/uploads/2023/03/Local-Interior-Commercial-Painting-Contractor-Near-Me.png.webp" alt="" className="w-full rounded-lg mb-4 shadow-lg shadow-primary/20" />

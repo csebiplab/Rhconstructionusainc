@@ -1,14 +1,14 @@
-import EleveteProjectImg from "../../../public/assets/images/toolsneq.jpg";
 import Image from "next/image";
+import EleveteProjectImg from "../../../public/assets/images/toolsneq.jpg";
 
 export default function ConstructionsToolsNEquepments() {
   return (
     <div>
       <div className="grid grid-cols-1 md:grid-cols-9 gap-x-10 gap-y-3">
         <div className="w-full md:col-span-5 order-1">
-          <h1 className="font-bold">
+          <h2 className="font-bold">
             Heaving all Kinds of Building Tools & Equipments
-          </h1>
+          </h2>
           <p className="mt-4 font-medium">
             RH Construction USA Inc. offers a comprehensive range of building
             tools and equipment tailored to meet the diverse needs of your

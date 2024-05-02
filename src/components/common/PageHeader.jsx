@@ -22,7 +22,7 @@ const PageHeader = ({
     >
       <div className="container py-14">
         <Typography
-          variant="h1"
+          variant="h2"
           color="white"
           className="mb-4 text-shadow text-white"
         >
