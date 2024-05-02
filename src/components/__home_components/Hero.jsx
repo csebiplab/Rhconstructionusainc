@@ -10,7 +10,7 @@ const Hero = () => {
           <div className="w-full md:w-[58%] pl-3 md:pl-5 lg:pl-10 xl:pl-20 2xl:pl-28 3xl:pl-40 4xl:pl-52 5xl:pl-[285px]">
             <div className="py-14 md:py-0 px-4 md:pl-0">
               <h1 className="leading-10 text-xl lg:text-3xl 2xl:text-4xl 4xl:text-5xl 5xl:text-6xl">
-                General Constructor
+                General CONTRACTOR
                 <br />
                 Brooklyn
               </h1>
@@ -18,7 +18,7 @@ const Hero = () => {
                 {/* Top-Rated general constructor in Brooklyn, delivering
                 exceptional <br /> construction & renovation services with
                 expertise and integrity */}
-                Best general constructor in Brooklyn, specializing in home
+                Best general contractor in Brooklyn, specializing in home
                 renovations, <br /> bathroom renovations & kitchen remodeling,
                 roofing, and construction services.
               </p>
