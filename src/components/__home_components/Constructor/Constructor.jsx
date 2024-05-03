@@ -78,9 +78,9 @@ const Constructor = () => {
               />
             </div>
 
-            <h1 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-center">
+            <h2 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-center">
               WHAT TO CONSIDER FIRST WHEN YOU HIRE THE BEST CONTRACTORS
-            </h1>
+            </h2>
           </div>
 
           {/* <Swiper

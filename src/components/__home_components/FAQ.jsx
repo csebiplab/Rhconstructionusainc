@@ -88,9 +88,9 @@ export function FAQ() {
         <div className="mx-auto">
           <div className="text-center md:mb-2 lg:mb-4">
             <SmallHeadingWithIcon smallHeadingText={smHeadingTexts.faq} />
-            <h1 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-start">
+            <h2 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-start">
               FAQ FOR RH CONSTRUCTION USA INC
-            </h1>
+            </h2>
           </div>
           <>
             {faqQuestionsNAns.map(({ question, answer, id }, idx) => (

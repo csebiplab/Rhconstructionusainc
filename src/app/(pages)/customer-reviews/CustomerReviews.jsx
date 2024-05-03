@@ -130,9 +130,9 @@ const CustomerReviews = () => {
 
       {!!reviews?.length ? <section className="bg-gray-100">
         <div className="container py-20">
-          <h1 className="mb-4">
+          <h2 className="mb-4">
             WHAT OUR <span className="text-primary">CLIENT SAYS</span>
-          </h1>
+          </h2>
           {!!reviews?.length? <Swiper
             spaceBetween={10}
             breakpoints={{

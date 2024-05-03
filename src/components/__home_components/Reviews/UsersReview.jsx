@@ -37,7 +37,7 @@ const breakpoints = {
 const UserReviewSection = () => {
   return (
     <div>
-      <h1>Reviews</h1>
+      <h2>Reviews</h2>
       <div className="">
         <Swiper
           // navigation={true}

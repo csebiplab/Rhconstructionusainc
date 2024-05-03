@@ -24,9 +24,9 @@ const TrustUs = () => {
                   smallHeadingText={smHeadingTexts.trustUs}
                 />
               </div>
-              <h1 className="lg:leading-10 py-2 text-[18px] leading-normal md:text-lg lg:text-3xl">
+              <h2 className="lg:leading-10 py-2 text-[18px] leading-normal md:text-lg lg:text-3xl">
                 TRUSTED GENERAL CONTRACTOR IN BROOKLYN
-              </h1>
+              </h2>
               <p className="md:text-base text-[12px] leading-[170%] lg:leading-[175%] text-center md:text-start  text-black my-2 md:pb-0 pb-3 px-2 md:px-0">
                 Since 2009, RH Construction USA Inc. has been dedicated to
                 delivering excellence in construction services, boasting over 15

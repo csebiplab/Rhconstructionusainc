@@ -95,9 +95,9 @@ export default function GallerySection() {
       <div className="flex justify-center items-center">
         <SmallHeadingWithIcon smallHeadingText={smHeadingTexts.gallery} />
       </div>
-      <h1 className="lg:leading-10 text-center lg:text-4xl text-lg md:py-3 lg:py-6">
+      <h2 className="lg:leading-10 text-center lg:text-4xl text-lg md:py-3 lg:py-6">
         CONSTRUCTION SERVICES GALLERY OF OUR PAST PROJECTS
-      </h1>
+      </h2>
       <Swiper
         className="sample-slider w-full"
         modules={[Autoplay]}

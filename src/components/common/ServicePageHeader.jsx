@@ -1,4 +1,3 @@
-import React from "react";
 
 const ServicePageHeader = ({ bg, title }) => {
   return (
@@ -9,7 +8,7 @@ const ServicePageHeader = ({ bg, title }) => {
       }}
     >
       <div className="container text-center">
-        <h1 className="text-white">{title}</h1>
+        <h2 className="text-white">{title}</h2>
       </div>
     </section>
   );

@@ -34,10 +34,10 @@ export default function OurWorkingProcess() {
     <div>
       <div className="grid grid-cols-1 md:grid-cols-11 gap-x-6">
         <div className="w-full md:col-span-7">
-          <h1 className="font-bold mb-2 text-3xl">
+          <h2 className="font-bold mb-2 text-3xl">
             Working Process of Our Construction Company{" "}
             <span className="text-primary">in Brooklyn</span>
-          </h1>
+          </h2>
           <p className="font-semibold">
             Certainly! Here's an overview of the working process of our
             construction company in Brooklyn:

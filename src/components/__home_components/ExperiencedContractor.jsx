@@ -72,9 +72,9 @@ const ExperiencedContractor = () => {
                 smallHeadingText={smHeadingTexts.expContractor}
               />
             </div>
-            <h1 className="lg:leading-10 mb-1 mt-2 md:mt-0 lg:py-4 text-lg lg:text-4xl md:text-start text-center">
+            <h2 className="lg:leading-10 mb-1 mt-2 md:mt-0 lg:py-4 text-lg lg:text-4xl md:text-start text-center">
               EXPERIENCED BROOKLYN GENERAL CONTRACTOR
-            </h1>
+            </h2>
             <p className="md:text-[16px] text-black mx-auto text-start mt-[10px] md:mt-3 text-[12px] leading-[208%] lg:leading-[250%]">
               With years of expertise and a solid educational background, our
               Brooklyn-based general contracting firm stands out as a reliable

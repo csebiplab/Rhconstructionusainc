@@ -1,9 +1,9 @@
 "use client";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import React, { useEffect, useState } from "react";
-import { toast } from "react-toastify";
+import { useEffect, useState } from "react";
 import { HiPencilAlt } from "react-icons/hi";
+import { toast } from "react-toastify";
 import RemoveBtn from "./RemoveBtn";
 const ShareComponent = ({
   editPath,
@@ -238,7 +238,7 @@ const ShareComponent = ({
           ) : (
             <div>
               <hr className="mt-5 mb-3" />
-              <h1> No Testmonials  </h1>
+              <h2> No Testmonials  </h2>
             </div>
           )
         }

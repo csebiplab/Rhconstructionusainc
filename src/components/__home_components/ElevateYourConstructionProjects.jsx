@@ -14,11 +14,11 @@ export default function ElevateYourConstructionProjects() {
           className="w-auto h-full md:col-span-4 order-2 md:order-1"
         />
         <div className="w-full md:col-span-5 order-1 md:order-2">
-          <h1 className="font-bold">
+          <h2 className="font-bold">
             Elevate Your Construction Projects with
             <br />
             <span className="text-primary">RH Construction USA Inc</span>
-          </h1>
+          </h2>
           <p className="mt-4 font-medium">
             Elevate your construction projects to new heights with RH
             Construction USA Inc., one of the best construction companies in

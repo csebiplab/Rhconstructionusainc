@@ -1,10 +1,10 @@
 "use client";
-import React, { useState } from "react";
 import { dashboardConfig } from "@/config/dashboard";
 import { cn } from "@/lib/utils";
+import { Icon } from "@iconify/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Icon } from "@iconify/react";
+import { useState } from "react";
 import ThemeToggle from "../ui/ToggleTheme";
 import { Icons } from "../ui/icons";
 
@@ -12,7 +12,7 @@ export default function DashboardNav() {
 
   return (
     <div className="flex flex-col gap-5 h-full">
-      <h1 className="font-medium text-lg">Dashboard</h1>
+      <h2 className="font-medium text-lg">Dashboard</h2>
       <nav className="flex flex-col flex-1 gap-2">
         {dashboardConfig.sidebarNav.map((item, i=1) => {
           return <div key={i+1}><MenuItem item={item} /></div>;

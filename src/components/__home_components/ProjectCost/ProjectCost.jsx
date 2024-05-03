@@ -79,9 +79,9 @@ const ProjectCost = () => {
               />
             </div>
 
-            <h1 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-center md:text-start">
+            <h2 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-center md:text-start">
               HOW MUCH DOES <br/> A CONSTRUCTION PROJECT COST?
-            </h1>
+            </h2>
           </div>
           <div>
             <p className="md:text-base text-[12px] leading-[208%] lg:leading-[250%] text-black text-center md:text-start mt-0  md:mt-1 lg:mt-4">
