@@ -24,3 +24,34 @@ export async function POST(request) {
         );
     }
 }
+
+export async function GET() {
+    await connectMongoDB();
+
+    const res = await ProjectDetails.find()
+    return NextResponse.json(
+        {
+            status: 200,
+            message: "Request success",
+            data: res
+        },
+        { status: 200 }
+    );
+}
+
+export async function DELETE(request) {
+    const id = request.nextUrl.searchParams.get("id");
+
+    await connectMongoDB();
+
+    await projects.findByIdAndDelete(id);
+
+
+    return NextResponse.json(
+        {
+            status: 200,
+            message: "Request success",
+        },
+        { status: 200 }
+    );
+}
