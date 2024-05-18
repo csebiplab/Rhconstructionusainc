@@ -25,10 +25,22 @@ export async function POST(request) {
     }
 }
 
-export async function GET() {
+export async function GET(req) {
+
+    const projectType = req.nextUrl.searchParams.get("projectType");
+
+    // console.log(search)
+
     await connectMongoDB();
 
-    const res = await ProjectDetails.find()
+    const query = {};
+
+    if (projectType) {
+        query["projectType"] = { $regex: new RegExp(projectType, 'i') };
+    }
+
+    const res = await ProjectDetails.find(query)
+
     return NextResponse.json(
         {
             status: 200,
