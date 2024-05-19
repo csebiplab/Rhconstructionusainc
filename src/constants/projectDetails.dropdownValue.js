@@ -83,3 +83,25 @@ export const projectType = [
     { label: "Interior", value: "Interior" },
     { label: "Exterior", value: "Exterior" },
 ];
+
+export const getYears = () => {
+    const currentYear = new Date().getFullYear();
+    const years = Array.from({ length: 100 }, (_, i) => currentYear - i);
+
+    return years;
+}
+
+export const projectPeriods = [
+    {
+        label: "Before",
+        value: "Before",
+    },
+    {
+        label: "Project Time",
+        value: "Project Time",
+    },
+    {
+        label: "After",
+        value: "After",
+    },
+]
