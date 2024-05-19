@@ -7,6 +7,12 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 
+export const metadata = {
+  title: 'Rh Dashboard',
+  description: 'Rh Dashboard',
+}
+
+
 export default function DashboardLayout({ children }) {
   return (
     <html>
