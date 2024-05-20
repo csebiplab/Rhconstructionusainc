@@ -31,8 +31,8 @@ export default function DashboardLayout({ children }) {
                 {children}
               </DashboardShell>
             </main>
+            <ToastContainer position="bottom-center" />
           </ThemeProvider>
-          <ToastContainer />
         </div>
       </body>
     </html>

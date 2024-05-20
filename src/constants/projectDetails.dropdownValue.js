@@ -79,7 +79,7 @@ export const serviceWithCompanyName = [
     },
 ];
 
-export const projectType = [
+export const projectTypes = [
     { label: "Interior", value: "Interior" },
     { label: "Exterior", value: "Exterior" },
 ];
