@@ -1,5 +1,4 @@
-import ProjectBanner from "@/components/Projects/ProjectBanner/ProjectBanner";
-import RC from "./RC";
+import ProjectsComponent from "@/components/Projects/ProjectComponents/ProjectComponent";
 
 export async function generateMetadata() {
 
@@ -26,13 +25,31 @@ export async function generateMetadata() {
   }
 }
 
-export default function Page() {
+export default async function Page() {
+  const res = await getData()
+
+  if (res?.status !== 200) {
+    <p>Failed To Get Data!!!</p>
+  }
+
+  const projects = res?.data;
+
+  // console.log(projects)
+
   return (
     <main>
       <>
-        <div> <ProjectBanner /></div>
-        <RC />
+        <ProjectsComponent projects={projects} />
       </>
     </main>
   );
+}
+async function getData() {
+  const res = await fetch(process.env.NEXT_PUBLIC_API_URL + '/api/project-details', { cache: 'no-store' })
+
+  if (!res.ok) {
+    throw new Error('Failed to fetch data')
+  }
+
+  return res.json()
 }

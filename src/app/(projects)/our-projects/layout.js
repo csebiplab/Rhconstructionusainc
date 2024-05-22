@@ -3,6 +3,8 @@ import "../../globals.css";
 import ProgressBar from '@/components/common/ProgressBar';
 import { Header } from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import ProjectBanner from '@/components/Projects/ProjectBanner/ProjectBanner';
+import ProjectMenus from '@/components/Projects/ProjectMenus/ProjectMenus';
 
 
 
@@ -17,6 +19,12 @@ export default function RootLayout({ children }) {
                 <ProgressBar />
                 <Header />
                 <main className="min-h-[60vh]">
+                    <>
+                        <ProjectBanner />
+                    </>
+                    <>
+                        <ProjectMenus />
+                    </>
                     {children}
                 </main>
                 <Footer />
