@@ -26,26 +26,64 @@ export async function POST(request) {
 }
 
 export async function GET(req) {
-
     const projectType = req.nextUrl.searchParams.get("projectType");
-
-    // console.log(search)
+    const projectCat = req.nextUrl.searchParams.get("projectCat");
 
     await connectMongoDB();
 
     const query = {};
+    let res;
+    let projectsFields = {
+        _id: 1,
+        projectType: 1,
+        projectCat: 1,
+        projectCatHeading: 1,
+        thumbPic: 1,
+    };
 
     if (projectType) {
         query["projectType"] = { $regex: new RegExp(projectType, 'i') };
     }
 
-    const res = await ProjectDetails.find(query)
+    if (projectCat) {
+        query["projectCat"] = { $regex: new RegExp(projectCat, 'i') };
+        projectsFields = {
+            _id: 1,
+            projectName: 1,
+            projectPictures: 1,
+        };
+
+    }
+
+    const aggregationPipeline = [
+        { $match: query },
+        {
+            $group: {
+                _id: "$projectCat",
+                doc: { $first: "$$ROOT" },
+            },
+        },
+        {
+            $replaceRoot: { newRoot: "$doc" },
+        },
+        {
+            $project: projectsFields,
+        },
+    ];
+
+    if (projectCat) {
+        res = await ProjectDetails.find(query, projectsFields);
+    } else {
+        res = await ProjectDetails.aggregate(aggregationPipeline);
+    }
+
+
 
     return NextResponse.json(
         {
             status: 200,
             message: "Request success",
-            data: res
+            data: res,
         },
         { status: 200 }
     );

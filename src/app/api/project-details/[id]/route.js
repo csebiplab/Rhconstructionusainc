@@ -5,7 +5,19 @@ import { ObjectId } from 'mongodb';
 
 export async function PATCH(request) {
     try {
+        const { id } = params;
         const updateData = await request.json();
+
+        // Check if the id is a valid ObjectId
+        if (!ObjectId.isValid(id)) {
+            return NextResponse.json(
+                {
+                    status: 400,
+                    message: "Invalid project ID format",
+                },
+                { status: 400 }
+            );
+        }
 
         await connectMongoDB();
         const res = await ProjectDetails.findByIdAndUpdate(id, { ...updateData });
@@ -29,21 +41,21 @@ export async function PATCH(request) {
 export async function GET(request, { params }) {
     const { id } = params;
 
-    // Check if the id is a valid ObjectId
-    if (!ObjectId.isValid(id)) {
-        return NextResponse.json(
-            {
-                status: 400,
-                message: "Invalid project ID format",
-            },
-            { status: 400 }
-        );
+    const projectName = id;
+    let projectsFields = {
+        _id: 1,
+        projectName: 1,
+        clientName: 1,
+        city: 1,
+        budget: 1,
+        completedYear: 1,
+        projectPictures: 1,
     }
 
     await connectMongoDB();
 
     try {
-        const res = await ProjectDetails.findById(id);
+        const res = await ProjectDetails.findOne({ projectName: projectName }, projectsFields);
 
         if (!res) {
             return NextResponse.json(
