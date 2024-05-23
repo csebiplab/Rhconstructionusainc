@@ -26,20 +26,21 @@ import ProjectsComponent from "@/components/Projects/ProjectComponents/ProjectCo
 // }
 
 export default async function Page() {
-  const res = await getData()
+  // const res = await getData()
 
-  if (res?.status !== 200) {
-    <p>Failed To Get Data!!!</p>
-  }
+  // if (res?.status !== 200) {
+  //   <p>Failed To Get Data!!!</p>
+  // }
 
-  const projects = res?.data;
+  // const projects = res?.data;
 
   // console.log(projects)
 
   return (
     <main>
       <>
-        <ProjectsComponent projects={projects} />
+        {/* <ProjectsComponent projects={projects} /> */}
+        deploy api
       </>
     </main>
   );
