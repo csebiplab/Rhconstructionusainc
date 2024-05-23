@@ -2,6 +2,7 @@ import Link from "next/link";
 import "./CategoryWiseProject.css";
 
 const CategoryWiseProject = ({ cateGoryWiseProjects, category }) => {
+  console.log(cateGoryWiseProjects);
   return (
     <div className="container">
       <div>
@@ -44,7 +45,17 @@ const CategoryWiseProject = ({ cateGoryWiseProjects, category }) => {
                   (
                     {
                       projectName = "",
-                      projectPictures = [{ name: "", url: "" }],
+                      projectPictures = [
+                        {
+                          projectPeriod: "",
+                          urls: [
+                            {
+                              name: "",
+                              url: "",
+                            },
+                          ],
+                        },
+                      ],
                     },
                     index
                   ) => (
@@ -54,8 +65,8 @@ const CategoryWiseProject = ({ cateGoryWiseProjects, category }) => {
                       className="relative w-full rounded-md"
                     >
                       <img
-                        src={projectPictures[0]?.url}
-                        alt={projectPictures[0]?.name}
+                        src={projectPictures[0]?.urls[0]?.url}
+                        alt={projectPictures[0]?.urls[0]?.name}
                         className="!h-72 rounded-md"
                       />
                       <div className="absolute bottom-3 px-3 w-full">
