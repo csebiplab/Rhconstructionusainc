@@ -3,7 +3,7 @@ import ProjectsComponent from "@/components/Projects/ProjectComponents/ProjectCo
 export async function generateMetadata() {
 
   try {
-    const response = await fetch(`http://localhost:3000/api/projects`);
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/projects`);
     if (!response.ok) {
       console.log('Network response was not ok.');
     }
