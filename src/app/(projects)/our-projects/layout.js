@@ -28,7 +28,9 @@ export default function RootLayout({ children }) {
                     </>
                     {children}
                 </main>
-                <ReadyToWork />
+                <div className='mt-48'>
+                    <ReadyToWork />
+                </div>
                 <Footer />
             </body>
         </html>

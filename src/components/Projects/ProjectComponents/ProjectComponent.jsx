@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import "./ProjectComponent.css";
+import Link from "next/link";
 
 const filterButtonValues = {
   ALL: "All",
@@ -24,7 +25,7 @@ const ProjectsComponent = ({ projects }) => {
   });
 
   return (
-    <section className="container mb-48">
+    <section className="container">
       <div className="flex justify-center mb-16">
         <div className="flex justify-center gap-2">
           {Object.values(filterButtonValues).map((value, i) => (
@@ -55,7 +56,11 @@ const ProjectsComponent = ({ projects }) => {
                 },
                 index
               ) => (
-                <div key={index} className="relative w-full">
+                <Link
+                  href={`our-projects/${projectCat}`}
+                  key={index}
+                  className="relative w-full border border-red-500 rounded-md"
+                >
                   <img
                     src={thumbPic?.url}
                     alt={thumbPic?.name}
@@ -85,7 +90,7 @@ const ProjectsComponent = ({ projects }) => {
                       </span>
                     </div>
                   </div>
-                </div>
+                </Link>
               )
             )}
           </div>
