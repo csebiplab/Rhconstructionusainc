@@ -26,7 +26,7 @@ export default function UploadImageCom() {
         setImageData(data);
     };
 
-    // console.log(imageData)
+    console.log(imageData)
 
     return (
         <div>
