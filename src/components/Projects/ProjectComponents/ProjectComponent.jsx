@@ -59,7 +59,7 @@ const ProjectsComponent = ({ projects }) => {
                 <Link
                   href={`our-projects/${projectCat}`}
                   key={index}
-                  className="relative w-full border border-red-500 rounded-md"
+                  className="relative w-full rounded-md"
                 >
                   <img
                     src={thumbPic?.url}

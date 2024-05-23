@@ -11,8 +11,6 @@ const ProjectMenus = () => {
 
   const pathArr = pathname?.split("/");
 
-  // console.log(pathArr);
-
   return (
     <div className="container mt-9 mb-20">
       <div className="flex items-center gap-1">
@@ -24,10 +22,21 @@ const ProjectMenus = () => {
         </div>
 
         {pathArr?.length > 2 ? (
-          <div className="flex items-center menu__txt">
-            <IoIosArrowForward />
-            <span className="menu__txt">{pathArr[2]}</span>
-          </div>
+          <>
+            {" "}
+            <div className="flex items-center menu__txt">
+              <IoIosArrowForward />
+              <span className="menu__txt">{pathArr[2]}</span>
+            </div>
+            {pathArr?.length > 3 && (
+              <div className="flex items-center menu__txt">
+                <IoIosArrowForward />
+                <span className="menu__txt">
+                  {pathArr[3].split("-").join(" ")}
+                </span>
+              </div>
+            )}
+          </>
         ) : (
           ""
         )}

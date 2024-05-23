@@ -1,13 +1,11 @@
 import CategoryWiseProject from "@/components/Projects/CategoryWiseProject/CategoryWiseProject";
 
 export default async function Page({ params }) {
-    // const data = await getData(params?.slug)
-    // console.log(data)
+    const data = await getData(params?.projectCat)
 
-    const data = []
 
     return <div>
-        <CategoryWiseProject cateGoryWiseProjects={data} category={params?.slug} />
+        <CategoryWiseProject cateGoryWiseProjects={data?.data} category={params?.projectCat} />
     </div>
 }
 
