@@ -2,7 +2,7 @@ import Link from "next/link";
 import "./CategoryWiseProject.css";
 
 const CategoryWiseProject = ({ cateGoryWiseProjects, category }) => {
-  console.log(cateGoryWiseProjects);
+  // console.log(cateGoryWiseProjects);
   return (
     <div className="container">
       <div>
