@@ -16,7 +16,7 @@ export async function POST(request) {
 
 export async function GET() {
   await connectMongoDB();
-  const sitemap = await siteMap.find();
+  const sitemap = await siteMap.find().sort({ createdAt: -1 }).limit(1);
   return NextResponse.json({ sitemap });
 }
 
