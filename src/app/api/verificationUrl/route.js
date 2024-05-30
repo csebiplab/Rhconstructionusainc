@@ -15,7 +15,7 @@ export async function POST(request) {
 
 export async function GET() {
   await connectMongoDB();
-  const verificationUrl = await verificationSite.find();
+  const verificationUrl = await verificationSite.find().sort({ createdAt: -1 }).limit(1);
   return NextResponse.json({ verificationUrl });
 }
 
