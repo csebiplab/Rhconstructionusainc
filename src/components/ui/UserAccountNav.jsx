@@ -21,14 +21,14 @@ export default function UserAccountNav({ user }) {
         <Avatar>
           <AvatarImage src={user?.image} />
           <AvatarFallback>
-            {user.name && getCapitalLettersOfName(user.name)}
+            {user?.name && getCapitalLettersOfName(user?.name)}
           </AvatarFallback>
         </Avatar>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <div className="text-md p-2 flex flex-col">
           <Link href="/dashboard/profile">
-            {user.name && getCapitalLettersOfName(user.name)}
+            {user?.name && getCapitalLettersOfName(user?.name)}
           </Link>
         </div>
         <DropdownMenuSeparator />
