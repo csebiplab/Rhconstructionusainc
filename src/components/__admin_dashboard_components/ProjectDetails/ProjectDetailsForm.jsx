@@ -1,7 +1,7 @@
 "use client";
 
 import {
-  getYears,
+  // getYears,
   projectPeriods,
   projectTypes,
   serviceWithCompanyName,
@@ -19,14 +19,14 @@ const ProjectDetailsForm = () => {
   const [projectName, setProjectName] = useState("");
   const [thumbPic, setThumbPic] = useState(null);
   const [projectPics, setProjectPics] = useState({});
-  const [clientName, setClientName] = useState("");
-  const [city, setCity] = useState("");
-  const [budget, setBudget] = useState("");
-  const [completedYear, setCompletedYear] = useState("");
+  // const [clientName, setClientName] = useState("");
+  // const [city, setCity] = useState("");
+  // const [budget, setBudget] = useState("");
+  // const [completedYear, setCompletedYear] = useState("");
   const [projectPeriod, setProjectPeriod] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const years = getYears();
+  // const years = getYears();
 
   const projectData = {
     projectCat,
@@ -34,10 +34,10 @@ const ProjectDetailsForm = () => {
     projectType,
     projectName,
     thumbPic,
-    clientName,
-    city,
-    budget,
-    completedYear,
+    // clientName,
+    // city,
+    // budget,
+    // completedYear,
     projectPictures: Object.keys(projectPics).map((period) => ({
       projectPeriod: period,
       urls: projectPics[period],
@@ -59,10 +59,6 @@ const ProjectDetailsForm = () => {
   };
 
   const uploadProjectImageHandler = async (e) => {
-    // if (!projectPeriod) {
-    //   toast.warn("Please first choose project period!!!");
-    //   return;
-    // }
     const file = e.target.files[0];
     const formData = new FormData();
     formData.append("image", file);
@@ -110,10 +106,10 @@ const ProjectDetailsForm = () => {
       setProjectName("");
       setThumbPic(null);
       setProjectPics({});
-      setClientName("");
-      setCity("");
-      setBudget("");
-      setCompletedYear("");
+      // setClientName("");
+      // setCity("");
+      // setBudget("");
+      // setCompletedYear("");
       setProjectPeriod("");
 
       toast.success("Project details saved successfully!");
@@ -238,11 +234,12 @@ const ProjectDetailsForm = () => {
               </div>
             )}
           </div>
+
           <div className="mb-9">
-            <h5 className="service__info mb-4">Project Basic Info</h5>
-            <HRSvg />
+            {/* <h5 className="service__info mb-4">Project Basic Info</h5>
+            <HRSvg /> */}
             <div>
-              <div className="mt-6 grid grid-cols-3 gap-y-6 gap-x-10">
+              {/* <div className="mt-6 grid grid-cols-3 gap-y-6 gap-x-10">
                 <div className="w-full">
                   <label className="input__label mb-[10px] block w-full">
                     Clients Name
@@ -298,7 +295,7 @@ const ProjectDetailsForm = () => {
                     ))}
                   </select>
                 </div>
-              </div>
+              </div> */}
 
               <div className="mt-9 mb-6">
                 <HRSvg />
@@ -382,6 +379,7 @@ const ProjectDetailsForm = () => {
                 ))}
             </div>
           </div>
+
           <div className="flex justify-center">
             <button
               className="py-3 px-28 creat__project__btn text-white"
