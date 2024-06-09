@@ -4,10 +4,10 @@ import ProjectImages from "./ProjectImages";
 const SingleProject = ({ singleproject }) => {
   const {
     projectName,
-    clientName,
-    city,
-    budget,
-    completedYear,
+    // clientName,
+    // city,
+    // budget,
+    // completedYear,
     projectPictures,
   } = singleproject ?? {};
 
@@ -16,7 +16,7 @@ const SingleProject = ({ singleproject }) => {
       <div>
         <div>
           <h3 className="projectName__singleShow text-center">{projectName}</h3>
-          <div className="grid gird-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-9 mb-14">
+          {/* <div className="grid gird-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-9 mb-14">
             <div className="client__detail py-3 flex justify-center">
               <div>
                 <p className="text-center client__detailTitle">Clients</p>
@@ -51,11 +51,11 @@ const SingleProject = ({ singleproject }) => {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
-        <>
+        <div className="mt-8">
           <ProjectImages projectPictures={projectPictures} />
-        </>
+        </div>
       </div>
     </div>
   );

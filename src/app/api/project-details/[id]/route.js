@@ -45,10 +45,10 @@ export async function GET(request, { params }) {
     let projectsFields = {
         _id: 1,
         projectName: 1,
-        clientName: 1,
-        city: 1,
-        budget: 1,
-        completedYear: 1,
+        // clientName: 1,
+        // city: 1,
+        // budget: 1,
+        // completedYear: 1,
         projectPictures: 1,
     }
 

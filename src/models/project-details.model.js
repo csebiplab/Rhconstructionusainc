@@ -49,22 +49,22 @@ const ProjectDetailsSchema = new Schema({
         required: true,
     },
     thumbPic: thumbPicSchema,
-    clientName: {
-        type: String,
-        required: true,
-    },
-    city: {
-        type: String,
-        required: true,
-    },
-    budget: {
-        type: String,
-        required: true,
-    },
-    completedYear: {
-        type: String,
-        required: true,
-    },
+    // clientName: {
+    //     type: String,
+    //     required: true,
+    // },
+    // city: {
+    //     type: String,
+    //     required: true,
+    // },
+    // budget: {
+    //     type: String,
+    //     required: true,
+    // },
+    // completedYear: {
+    //     type: String,
+    //     required: true,
+    // },
     projectPictures: [projectPictureSchema],
 });
 
