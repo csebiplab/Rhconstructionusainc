@@ -178,6 +178,17 @@ function NavList() {
       </Typography>
       <Typography
         as={Link}
+        href="/bathroom-reno"
+        variant="small"
+        color="blue-gray"
+        className="font-medium rounded-full text-sm md:text-[14px] xl:text-base 2xl:text-lg text-black"
+      >
+        <ListItem className="flex items-center rounded-full hover:bg-primary px-1 lg:px-4 xl:px-5 2xl:px-6">
+          Bathroom Renovation
+        </ListItem>
+      </Typography>
+      <Typography
+        as={Link}
         href="/blogs"
         variant="small"
         color="blue-gray"
