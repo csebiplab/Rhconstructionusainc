@@ -2,20 +2,6 @@
 
 import "../../styles/Home.css";
 
-
-
-import RhconstructionSection from "@/components/__home_components/RhconstructionSection/RhconstructionSection";
-import AboutUs from "@/components/__home_components/AboutUs";
-import TrustUs from "@/components/__home_components/TrustUs";
-import WorkingProcess from "@/components/__home_components/WorkingProcess";
-import GallerySection from "@/components/__home_components/GallerySection";
-import ExperiencedContractor from "@/components/__home_components/ExperiencedContractor";
-import Right from "@/components/__home_components/Right";
-import ProjectElevate from "@/components/__home_components/ProjectElevate";
-import Tools from "@/components/__home_components/Tools";
-import ProjectCost from "@/components/__home_components/ProjectCost/ProjectCost";
-import { FAQ } from "@/components/__home_components/FAQ";
-import ContactHome from "@/components/__home_components/contactHome/ContactHome";
 import BathroomRenoHero from "@/components/bathroom-reno-components/BathroomRenoHero/BathroomRenoHero";
 import AboutBathroomReno from "@/components/bathroom-reno-components/AboutBathroomReno/AboutBathroomReno";
 import BathroomRemodeling from "@/components/bathroom-reno-components/BathroomRemodeling/BathroomRemodeling";
@@ -32,6 +18,7 @@ import HiringUs from "@/components/bathroom-reno-components/HiringUs/HiringUs";
 import WhyUs from "@/components/bathroom-reno-components/WhyUs/WhyUs";
 import TurnKeys from "@/components/bathroom-reno-components/TurnKeys/TurnKeys";
 import Professional from "@/components/bathroom-reno-components/Professional/Professional";
+import ContactUs from "@/components/bathroom-reno-components/contactUs/ContactUs";
 
 
 const BathroomReno = () => {
@@ -76,14 +63,10 @@ const BathroomReno = () => {
       <FaqSection/>
 
       {/* ================ Location Map ===================== */}
-      <div>
-        <LocationMap/>
-        
-      </div>
-      {/* Our Location Section ends */}
-      <div>
-        <ContactHome/>
-      </div>
+      <LocationMap/>
+
+      {/* ================ Contact Us ===================== */}
+      <ContactUs/>
     </main>
   );
 };

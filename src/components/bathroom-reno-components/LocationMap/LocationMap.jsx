@@ -32,7 +32,6 @@ const locations = [
     iframeSrc:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d282591.6426865487!2d-74.04841253213657!3d40.68744007354902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24369470a592b%3A0x4109d18b6c5c7b05!2sQueens%2C%20NY%2C%USA!5e0!3m2!1sen!2sbd!4v1710652963610!5m2!1sen!2sbd",
   },
-  // ... add other locations here
   {
     title: "Staten Island",
     iframeSrc:
@@ -48,7 +47,6 @@ const locations = [
     iframeSrc:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193146.52505702147!2d-74.0060943983724!3d40.85180194863987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c28b553a697cb1%3A0x556e43a78ff15c77!2sBronx%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1710653132257!5m2!1sen!2sbd",
   },
-  // ... add other locations here
   {
     title: "Staten Island",
     iframeSrc:
