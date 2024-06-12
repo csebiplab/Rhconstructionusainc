@@ -29,6 +29,9 @@ import Constructor from "@/components/bathroom-reno-components/Constructor/Const
 import Expert from "@/components/bathroom-reno-components/Expert/Expert";
 import RatingComponent from "@/components/bathroom-reno-components/RatingComponent";
 import HiringUs from "@/components/bathroom-reno-components/HiringUs/HiringUs";
+import WhyUs from "@/components/bathroom-reno-components/WhyUs/WhyUs";
+import TurnKeys from "@/components/bathroom-reno-components/TurnKeys/TurnKeys";
+import Professional from "@/components/bathroom-reno-components/Professional/Professional";
 
 
 const BathroomReno = () => {
@@ -44,6 +47,8 @@ const BathroomReno = () => {
       {/* ================== AboutBathroomReno Section ===== */}
       <AboutBathroomReno/>
       <Expert/>
+      <TurnKeys/>
+      <Professional/>
       
 
       {/* =================== our service section ============== */}
@@ -53,6 +58,7 @@ const BathroomReno = () => {
         <Review/>
 
         <HiringUs/>
+        <WhyUs/>
 
       {/* ================ Ready to Work ============== */}
       <ReadyToWork/>

@@ -8,8 +8,8 @@ import hiring3 from "../../../../public/assets/images/hiring3.png";
 import hiring4 from "../../../../public/assets/images/hiring4.png";
 import hiring5 from "../../../../public/assets/images/hiring5.png";
 import hiring6 from "../../../../public/assets/images/hiring6.png";
-// import hiring7 from "../../../../../public/assets/images/hiring7.png";
-// import hiring8 from "../../../../../public/assets/images/hiring8.png";
+import hiring7 from "../../../../public/assets/images/hiring7.png";
+import hiring8 from "../../../../public/assets/images/hiring8.png";
 
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
@@ -17,35 +17,46 @@ import { headingIconText } from "@/utils/heading-text";
 const workingData = [
   {
     imgSrc: hiring1,
-    title: "Experience & Expertise",
-    description: `Look for contractors with a proven track record of successful projects similar to yours. Check their portfolio, ask for references, and inquire about their experience in handling projects of your size and complexity.`,
+    title: "Customized Consultations",
+    description: `Our contractors initiate the process with personalized consultations, understanding your specific needs, preferences, and budget constraints. This ensures that the bath renewal.`,
   },
   {
     imgSrc: hiring2,
-    title: "Licensing & Insurance",
-    description: `Ensure the contractor is licensed to work in Toronto and carries adequate insurance, including liability insurance and workers' compensation.`,
+    title: "Innovative Design Solutions",
+    description: `Our bathroom renovation company prides itself on offering innovative design solutions for bath renewals. we specialize in transforming ordinary bathrooms.`,
   },
   {
     imgSrc: hiring3,
-    title: "Reputation & Reviews",
-    description: `Research the contractor's reputation by checking online reviews, testimonials, and ratings on platforms like Google, Yelp, or Houzz. Positive reviews and satisfied clients are indicative of reliable service. `,
+    title: "Transparent Project Planning",
+    description: `We believe in transparent communication. Our contractors provide detailed project plans, outlining the timeline, milestones, and cost estimates.`,
   },
   {
     imgSrc: hiring4,
-    title: "Communication Skills",
-    description: `Effective communication is crucial for a successful project. Ensure the contractor is responsive, listens to your concerns, and provides clear and timely updates throughout the project's duration.`,
+    title: "Quality Craftsmanship",
+    description: `At our bathroom remodeling company, we prioritize quality craftsmanship. From tile installation to plumbing, every aspect of the bath renewal is executed with precision.`,
   },
   {
     imgSrc: hiring5,
-    title: "Transparent Pricing",
-    description: `Obtain detailed estimates from multiple contractors and ensure they include all costs, such as materials, labor, permits, and potential contingencies. Beware of unusually low bids, as they may indicate subpar.`,
+    title: "Sustainable Practices",
+    description: `Environmental responsibility is integral to our work philosophy. Our contractors incorporate sustainable practices, such as eco-friendly materials and energy-efficient.`,
   },
   {
     imgSrc: hiring6,
-    title: "Timelines & Deadlines",
-    description: `Discuss the project timeline with the contractor and ensure they can commit to realistic deadlines. Delays can be costly and inconvenient, so clarity on scheduling is essential from the outset.`,
+    title: "Client Collaboration",
+    description: `We value collaboration with our clients. This collaborative approach sets us apart, fostering a sense of partnership between our team and the client.`,
+  },
+  {
+    imgSrc: hiring7,
+    title: "Thorough Project Manage",
+    description: `Our contractors are adept at project management, overseeing every phase of the bath renewal. From procurement to installation, they ensure that the project stays.`,
+  },
+  {
+    imgSrc: hiring8,
+    title: "Post-Completion Support",
+    description: `We are committed to client satisfaction even after the project is complete. Our contractors provide post-completion support, addressing any concerns or adjustments needed.`,
   },
 ];
+
 
 const HiringUs = () => {
   return (
@@ -67,7 +78,7 @@ const HiringUs = () => {
             {workingData.map((slide, index) => (
               <div
                 key={index}
-                className={`text-center py-4 lg:py-6 lg:px-12 image transition-all duration-0 ease-in-out`}
+                className={`relative text-center py-4 lg:py-6 lg:px-12 image transition-all duration-0 ease-in-out`}
               >
                 <div className="">
                   <Image
@@ -87,7 +98,7 @@ const HiringUs = () => {
                     </p>
                   </div>
                 </div>
-                {/* <hr className="absolute bottom-0 left-0 right-0 border border-black" /> */}
+                <hr className="absolute bottom-0 left-0 right-0 border border-black" />
               </div>
             ))}
           </div>

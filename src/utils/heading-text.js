@@ -10,4 +10,7 @@ export const headingIconText = {
     expert__IconTxt: "Expert",
     readyToWork__IconTxt: "Ready to Work with us",   
     hiringUs__IconTxt: "Hiring Us",   
+    whyUs__IconTxt: "Why Us",   
+    turnKeys__IconTxt: "Turn Keys",   
+    professional__IconTxt: "Professional",   
 }
