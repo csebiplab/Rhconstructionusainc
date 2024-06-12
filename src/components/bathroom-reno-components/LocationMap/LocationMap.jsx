@@ -1,11 +1,12 @@
-import { smHeadingTexts } from "@/constants/smHeadingTexts";
+
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/effect-coverflow";
 import "swiper/css/virtual";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-// import SmallHeadingWithIcon from "../ui/SmallHeadingWithIcon";
+import HeadingIcon from "@/components/ui/HeadingIcon";
+import { headingIconText } from "@/utils/heading-text";
 
 const breakpoints = {
   0: {
@@ -67,11 +68,11 @@ const locations = [
 
 const LocationMap = () => {
   return (
-    <div>
+    <div className="bg___color">
       <div className="custom-container">
         <div className="py-[30px] lg:py-[120px] 5xl:py-[168px]">
           <div className="mx-auto flex flex-col items-center justify-center ">
-            {/* <SmallHeadingWithIcon smallHeadingText={smHeadingTexts.area} /> */}
+          <HeadingIcon text={headingIconText.ourServicearea__IconTxt}/>
 
             <div>
               <h2 className="lg:leading-10 lg:text-4xl text-lg py-2 lg:py-4">

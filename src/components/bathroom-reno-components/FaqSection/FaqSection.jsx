@@ -7,8 +7,8 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-// import HeadingIcon from "@/components/ui/HeadingIcon";
-// import { headingIconText } from "@/utils/heading-text";
+import HeadingIcon from "@/components/ui/HeadingIcon";
+import { headingIconText } from "@/utils/heading-text";
 const faqQuestionsNAns = [
   {
     id: 1,
@@ -59,7 +59,7 @@ const FaqSection = () => {
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
   return (
-    <div className="">
+    <div className="bg-[#FFFAEE]">
       <div className="full__section_r_p pl-3 md:pl-0 common__padding__top">
         <div className=" grid md:grid-cols-7 grid-cols-1 md:gap-[30px]">
           <div className="md:col-span-3 flex items-center ">
@@ -77,7 +77,7 @@ const FaqSection = () => {
           <div className="md:col-span-4 ">
             <div className="flex flex-col justify-center items-start">
               <div>
-                {/* <HeadingIcon text={headingIconText.faq__IconTxt} /> */}
+              <HeadingIcon text={headingIconText.faq__IconTxt}/>
               </div>
 
               <div>

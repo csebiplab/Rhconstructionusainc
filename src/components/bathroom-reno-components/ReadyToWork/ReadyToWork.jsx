@@ -1,11 +1,12 @@
-// import HeadingIcon from "@/components/ui/HeadingIcon";
-// import { headingIconText } from "@/utils/heading-text";
+
 import Image from "next/image";
 import Link from "next/link";
+import HeadingIcon from "@/components/ui/HeadingIcon";
+import { headingIconText } from "@/utils/heading-text";
 
 const ReadyToWork = () => {
   return (
-    <div className="">
+    <div className="bg___color">
       <div className="full__section_r_p pl-3 md:pl-0 common__padding__top">
         <div className=" grid md:grid-cols-7 grid-cols-1 md:gap-[30px]">
           <div className="md:col-span-4 flex items-center ">
@@ -22,7 +23,7 @@ const ReadyToWork = () => {
 
           <div className="md:col-span-3 pt-3 lg:pt-0 flex flex-col justify-center items-center md:items-start md:pt-0">
             <div className="flex md:justify-normal justify-center md:items-start items-center">
-              {/* <HeadingIcon text={headingIconText.readyToWork__IconTxt} /> */}
+            <HeadingIcon text={headingIconText.readyToWork__IconTxt}/>
             </div>
             <h3 className="text-[28px] md:text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-[35px] font-bold text-black md:text-start text-center">
             Award Winning Bathroom Renovation Contractors <br />

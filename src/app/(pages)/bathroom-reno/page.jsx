@@ -3,13 +3,11 @@
 import "../../styles/Home.css";
 
 
-import RatingComponent from "@/components/__home_components/RatingComponent";
+
 import RhconstructionSection from "@/components/__home_components/RhconstructionSection/RhconstructionSection";
 import AboutUs from "@/components/__home_components/AboutUs";
 import TrustUs from "@/components/__home_components/TrustUs";
-import OurServices from "@/components/__home_components/ourServices/OurServices";
 import WorkingProcess from "@/components/__home_components/WorkingProcess";
-import Review from "@/components/__home_components/Review";
 import GallerySection from "@/components/__home_components/GallerySection";
 import ExperiencedContractor from "@/components/__home_components/ExperiencedContractor";
 import Right from "@/components/__home_components/Right";
@@ -17,8 +15,6 @@ import ProjectElevate from "@/components/__home_components/ProjectElevate";
 import Tools from "@/components/__home_components/Tools";
 import ProjectCost from "@/components/__home_components/ProjectCost/ProjectCost";
 import { FAQ } from "@/components/__home_components/FAQ";
-import Constructor from "@/components/__home_components/Constructor/Constructor";
-// import LocationMap from "@/components/__home_components/LocationMap";
 import ContactHome from "@/components/__home_components/contactHome/ContactHome";
 import BathroomRenoHero from "@/components/bathroom-reno-components/BathroomRenoHero/BathroomRenoHero";
 import AboutBathroomReno from "@/components/bathroom-reno-components/AboutBathroomReno/AboutBathroomReno";
@@ -27,11 +23,17 @@ import LocationMap from "@/components/bathroom-reno-components/LocationMap/Locat
 import ReadyToWork from "@/components/bathroom-reno-components/ReadyToWork/ReadyToWork";
 import FaqSection from "@/components/bathroom-reno-components/FaqSection/FaqSection";
 import ProjectGallery from "@/components/bathroom-reno-components/ProjectGallery/ProjectGallery";
+import OurService from "@/components/bathroom-reno-components/ourService/OurService";
+import Review from "@/components/bathroom-reno-components/Review/Review";
+import Constructor from "@/components/bathroom-reno-components/Constructor/Constructor";
+import Expert from "@/components/bathroom-reno-components/Expert/Expert";
+import RatingComponent from "@/components/bathroom-reno-components/RatingComponent";
+import HiringUs from "@/components/bathroom-reno-components/HiringUs/HiringUs";
 
 
 const BathroomReno = () => {
   return (
-    <main>
+    <main className="">
       {/* =============================== Hero Banner =========================== */}
 
       <BathroomRenoHero/>
@@ -41,27 +43,16 @@ const BathroomReno = () => {
 
       {/* ================== AboutBathroomReno Section ===== */}
       <AboutBathroomReno/>
-      <BathroomRemodeling/>
+      <Expert/>
+      
 
-      {/* ================ about us ============== */}
-      {/* <AboutUs /> */}
-      {/* =================== Trust Us ============== */}
-
-      {/* <TrustUs /> */}
-
-      {/* =================== Working Process ============== */}
-      <div>
-        <OurServices />
-      </div>
-      {/* =================== Working Process ============== */}
-
-      {/* =================== Working Process ============== */}
-      <WorkingProcess />
+      {/* =================== our service section ============== */}
+        <OurService/>
 
       {/* =================== Review Section ============== */}
-      <Review />
+        <Review/>
 
-
+        <HiringUs/>
 
       {/* ================ Ready to Work ============== */}
       <ReadyToWork/>
@@ -71,7 +62,9 @@ const BathroomReno = () => {
 
 
       {/* ============= Constructor Section ================= */}
-      <Constructor />
+      <Constructor/>
+
+      <BathroomRemodeling/>
 
       {/* ==================== FAQ Section ======================= */}
       <FaqSection/>

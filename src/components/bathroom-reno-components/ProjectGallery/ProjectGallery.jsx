@@ -4,12 +4,12 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-// import HeadingIcon from "@/components/ui/HeadingIcon";
-// import { headingIconText } from "@/utils/heading-text";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/effect-coverflow";
 import "swiper/css/grid";
+import HeadingIcon from "@/components/ui/HeadingIcon";
+import { headingIconText } from "@/utils/heading-text";
 
 const galImgs = [
   "/assets/gallery/Gallery_1.png",
@@ -58,11 +58,11 @@ const ProjectGallery = () => {
   };
 
   return (
-    <div className="">
+    <div className="bg___color">
       <div className="custom-container common__padding__top">
         <div className="">
           <div className="flex flex-col justify-center items-center">
-            {/* <HeadingIcon text={headingIconText.gallery__IconTxt} /> */}
+            <HeadingIcon text={headingIconText.gallery__IconTxt}/>
             <div>
               <h3 className="pb-4 text-[28px] md:text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px]  leading-[35px] font-bold text-black text-center">
                 Gallery of{" "} <br className="block md:hidden"/>
