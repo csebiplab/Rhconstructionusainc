@@ -82,14 +82,14 @@ const WhyUs = () => {
               </div>
 
               <div>
-                <h5 className="text-black  text-[28px] lg:text-4xl font-medium text-center md:text-left">
+                <h3 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
                 Hire Our Bathroom 
                   <span className="text-primary"> Remodeling Specialist</span>
-                </h5>
+                </h3>
               </div>
 
               <div>
-                <p className=" md:block text-lg font-normal text-center md:text-left text-black pt-4">
+                <p className="text-lg font-normal md:text-start text-center py-[10px]">
                 With a keen eye for design and quality craftsmanship, we offer a comprehensive range of renovation services, from concept to completion. Whether you're looking to update fixtures, install custom cabinetry, or completely overhaul the layout, our experienced team ensures every detail is executed with precision and care.
                 </p>
               </div>

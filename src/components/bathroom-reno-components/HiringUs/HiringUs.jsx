@@ -68,7 +68,7 @@ const HiringUs = () => {
             <HeadingIcon text={headingIconText.hiringUs__IconTxt}/>
             </div>
 
-            <h5 className="mt-4 lg:mb-[25px] mb-[15px] text-[28px] md:text-3xl lg:text-4xl text-dark leading-normal text-center font-medium">
+            <h5 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black text-center">
             How Our Bath Renew 
               <span className="text-primary"> Contractors Work</span>
             </h5>
@@ -90,7 +90,7 @@ const HiringUs = () => {
                   />
 
                   <div className="text-center">
-                    <h6 className="text-[25px] py-2 text-black">
+                    <h6 className="text-[25px] font-bold py-2 text-black">
                       {slide.title}
                     </h6>
                     <p className="text-lg text-center mt-2 mb-3  text-black leading-[24px] md:leading-6">

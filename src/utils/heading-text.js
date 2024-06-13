@@ -1,7 +1,7 @@
 export const headingIconText = {
     review__IconTxt: "Review",
     gallery__IconTxt: "Our Portfolio Gallery",
-    service__IconTxt: "Our Service",
+    service__IconTxt: "Don't Do",
     aboutBathroom__IconTxt: "About Bathroom Renovation",
     bathroomRemodeling__IconTxt: "Bathroom Remodeling",
     faq__IconTxt: "FAQ",

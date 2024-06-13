@@ -71,9 +71,9 @@ const Review = () => {
             <div className="flex justify-center items-center">
             <HeadingIcon text={headingIconText.review__IconTxt}/>
             </div>
-            <h2 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[12px] xl:mt-[15px] xl:mb-[25px] text-center">
+            <h3 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black text-center">
             Review from  <span className="text-primary">Clients</span>
-            </h2>
+            </h3>
           </div>
           {/* =================== Card Section =============== */}
           <Swiper

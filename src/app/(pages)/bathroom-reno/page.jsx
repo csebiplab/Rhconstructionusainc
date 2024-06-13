@@ -36,10 +36,19 @@ const BathroomReno = () => {
       <Expert/>
       <TurnKeys/>
       <Professional/>
+
+      {/* ================ Ready to Work ============== */}
+      <ReadyToWork/>
+
+       {/* ================ Gallery ============== */}
+       <ProjectGallery/>
       
 
       {/* =================== our service section ============== */}
         <OurService/>
+
+        {/* ============= Constructor Section ================= */}
+      <Constructor/>
 
       {/* =================== Review Section ============== */}
         <Review/>
@@ -47,15 +56,12 @@ const BathroomReno = () => {
         <HiringUs/>
         <WhyUs/>
 
-      {/* ================ Ready to Work ============== */}
-      <ReadyToWork/>
+      
 
-      {/* ================ Gallery ============== */}
-      <ProjectGallery/>
+     
 
 
-      {/* ============= Constructor Section ================= */}
-      <Constructor/>
+      
 
       <BathroomRemodeling/>
 
