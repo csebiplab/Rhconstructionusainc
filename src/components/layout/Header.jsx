@@ -156,7 +156,7 @@ function NavList() {
         href="/about-rh-constraction"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-sm lg:text-[14px] xl:text-base 2xl:text-lg text-black"
+        className="font-medium rounded-full text-sm lg:text-[14px] xl:text-base text-black"
       >
         <ListItem className="flex items-center rounded-full hover:bg-primary px-1 lg:px-4 xl:px-5 2xl:px-6">
           About
@@ -170,7 +170,7 @@ function NavList() {
         href="/customer-reviews"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-sm md:text-[14px] xl:text-base 2xl:text-lg text-black"
+        className="font-medium rounded-full text-sm md:text-[14px] xl:text-base text-black"
       >
         <ListItem className="flex items-center rounded-full hover:bg-primary px-1 lg:px-4 xl:px-5 2xl:px-6">
           Customer Reviews
@@ -178,10 +178,21 @@ function NavList() {
       </Typography>
       <Typography
         as={Link}
+        href="/bathroom-reno"
+        variant="small"
+        color="blue-gray"
+        className="font-medium rounded-full text-sm md:text-[14px] xl:text-base text-black"
+      >
+        <ListItem className="flex items-center rounded-full hover:bg-primary px-1 lg:px-4 xl:px-5 2xl:px-6">
+          Bathroom Renovation
+        </ListItem>
+      </Typography>
+      <Typography
+        as={Link}
         href="/blogs"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-sm md:text-[14px] xl:text-base 2xl:text-lg text-black"
+        className="font-medium rounded-full text-sm md:text-[14px] xl:text-base text-black"
       >
         <ListItem className="flex items-center rounded-full hover:bg-primary px-1 lg:px-4 xl:px-5 2xl:px-6">
           Blogs
@@ -192,7 +203,7 @@ function NavList() {
         href="/our-projects"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-sm md:text-[14px] xl:text-base 2xl:text-lg text-black"
+        className="font-medium rounded-full text-sm md:text-[14px] xl:text-base text-black"
       >
         <ListItem className="flex items-center rounded-full hover:bg-primary px-1 lg:px-4 xl:px-5 2xl:px-6">
           Projects
@@ -204,7 +215,7 @@ function NavList() {
         href="/contact"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-sm md:text-[14px] xl:text-base 2xl:text-lg text-black"
+        className="font-medium rounded-full text-sm md:text-[14px] xl:text-base text-black"
       >
         <ListItem className="flex items-center rounded-full hover:bg-primary px-1 lg:px-4 xl:px-5 2xl:px-6">
           Contact

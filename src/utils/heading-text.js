@@ -1,0 +1,16 @@
+export const headingIconText = {
+    review__IconTxt: "Review",
+    gallery__IconTxt: "Our Portfolio Gallery",
+    service__IconTxt: "Don't Do",
+    aboutBathroom__IconTxt: "About Bathroom Renovation",
+    bathroomRemodeling__IconTxt: "Bathroom Remodeling",
+    faq__IconTxt: "FAQ",
+    ourServicearea__IconTxt: "Areas",
+    chooseUs__IconTxt: "Why Choose",
+    expert__IconTxt: "Expert",
+    readyToWork__IconTxt: "Ready to Work with us",   
+    hiringUs__IconTxt: "Hiring Us",   
+    whyUs__IconTxt: "Why Us",   
+    turnKeys__IconTxt: "Turn Keys",   
+    professional__IconTxt: "Professional",   
+}
