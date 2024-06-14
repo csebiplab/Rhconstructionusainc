@@ -15,64 +15,67 @@ import Constructor from "@/components/bathroom-reno-components/Constructor/Const
 import Expert from "@/components/bathroom-reno-components/Expert/Expert";
 import RatingComponent from "@/components/bathroom-reno-components/RatingComponent";
 import HiringUs from "@/components/bathroom-reno-components/HiringUs/HiringUs";
-import WhyUs from "@/components/bathroom-reno-components/WhyUs/WhyUs";
+import WhyUs from "@/components/kitchen-remodeling-components/WhyUs/WhyUs";
 import TurnKeys from "@/components/bathroom-reno-components/TurnKeys/TurnKeys";
 import Professional from "@/components/bathroom-reno-components/Professional/Professional";
 import ContactUs from "@/components/bathroom-reno-components/contactUs/ContactUs";
-
 
 const BathroomReno = () => {
   return (
     <main className="">
       {/* =============================== Hero Banner =========================== */}
 
-      <BathroomRenoHero/>
+      <BathroomRenoHero />
 
       {/* =============== Rating  Section================= */}
       <RatingComponent />
 
       {/* ================== AboutBathroomReno Section ===== */}
-      <AboutBathroomReno/>
-      <Expert/>
-      <TurnKeys/>
-      <Professional/>
+      <AboutBathroomReno />
+
+      {/* ================== Expert Section ===== */}
+      <Expert />
+
+      {/* ================== TurnKeys Section ===== */}
+      <TurnKeys />
+
+      {/* ================== Professional Section ===== */}
+      <Professional />
 
       {/* ================ Ready to Work ============== */}
-      <ReadyToWork/>
+      <ReadyToWork />
 
-       {/* ================ Gallery ============== */}
-       <ProjectGallery/>
-      
+      {/* ================ Gallery ============== */}
+      <ProjectGallery />
 
       {/* =================== our service section ============== */}
-        <OurService/>
+      <OurService />
 
-        {/* ============= Constructor Section ================= */}
-      <Constructor/>
+      {/* ============= Constructor Section ================= */}
+      <Constructor />
 
       {/* =================== Review Section ============== */}
-        <Review/>
+      <Review />
 
-        <HiringUs/>
-        <WhyUs/>
+      {/* ================== HiringUs Section ===== */}
 
-      
+      <HiringUs />
 
-     
+      {/* ================== WhyUs Section ===== */}
+      <WhyUs />
 
+      {/* ================== BathroomRemodeling Section ===== */}
 
-      
-
-      <BathroomRemodeling/>
+      <BathroomRemodeling />
 
       {/* ==================== FAQ Section ======================= */}
-      <FaqSection/>
+      <FaqSection />
 
       {/* ================ Location Map ===================== */}
-      <LocationMap/>
+      <LocationMap />
 
       {/* ================ Contact Us ===================== */}
-      <ContactUs/>
+      <ContactUs />
     </main>
   );
 };

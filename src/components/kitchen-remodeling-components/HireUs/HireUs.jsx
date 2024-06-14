@@ -1,5 +1,5 @@
 "use client";
-import "./WhyUs.css";
+import "./HireUs.css";
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
 
@@ -70,7 +70,7 @@ const easyPool = [
   },
 ];
 
-const WhyUs = () => {
+const HireUs = () => {
   return (
     <div className="bg___color">
       <div className="container">
@@ -78,7 +78,7 @@ const WhyUs = () => {
           <div className=" grid md:grid-cols-3 2xl:gap-[50px] md:gap-[30px] ">
             <div className="mx-auto flex flex-col items-center justify-center">
               <div className="w-full flex md:justify-start justify-center md:items-start items-center">
-              <HeadingIcon text={headingIconText.whyUs__IconTxt}/>
+              <HeadingIcon text={headingIconText.hireUs__IconTxt}/>
               </div>
 
               <div>
@@ -150,4 +150,4 @@ const WhyUs = () => {
   );
 };
 
-export default WhyUs;
+export default HireUs;

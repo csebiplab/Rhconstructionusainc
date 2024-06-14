@@ -27,7 +27,7 @@ import React from "react";
 const our_service_menu_items = {
   interior: [
     { title: "Bathroom Remodeling", route: "/bathroom-remodeling" },
-    { title: "Kitchen Remodeling", route: "/kitchen-remodeling" },
+    { title: "Kitchen Remodeling", route: "/kitchen-remo" },
     { title: "Painting", route: "/painting" },
     { title: "Sheetrock", route: "/sheetrock" },
     { title: "Plastering", route: "/plastering" },

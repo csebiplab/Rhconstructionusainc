@@ -12,5 +12,12 @@ export const headingIconText = {
     hiringUs__IconTxt: "Hiring Us",   
     whyUs__IconTxt: "Why Us",   
     turnKeys__IconTxt: "Turn Keys",   
-    professional__IconTxt: "Professional",   
+    professional__IconTxt: "Professional",
+
+    // -------------------------
+
+    workingProcess__IconTxt:"Working Process",
+    hireUs__IconTxt:"Why Hire Us",
+    aboutKitchen__IconTxt:"About Kitchen Renovation",
+    chooseUs__IconTxt:"WHy Choose Us",
 }
