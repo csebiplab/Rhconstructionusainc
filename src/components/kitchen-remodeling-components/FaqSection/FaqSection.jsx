@@ -13,42 +13,42 @@ const faqQuestionsNAns = [
   {
     id: 1,
     question:
-      "What sets RH Construction USA Inc. apart in bath construction projects?",
+      "Can you provide examples of your previous kitchen remodeling projects?",
     answer:
-      "Our bathroom renovation company distinguishes itself through a commitment to high-quality craftsmanship, innovative design solutions, and a customer-centric approach. Our experienced team ensures each bath construction project is tailored to meet the unique.",
+      "Our kitchen renovation company distinguishes itself through a commitment to high-quality craftsmanship, innovative design solutions, and a customer-centric approach. Our experienced team ensures each bath construction project is tailored to meet the unique.",
   },
   {
     id: 2,
     question:
-      "How does RH Construction USA Inc. ensure cost-effectiveness in bath construction?",
+      "Are you licensed and insured? Can you provide proof of insurance?",
     answer:
       "We prioritize efficiency in project management and sourcing, allowing us to maintain competitive pricing without compromising on the quality of materials or workmanship. Our transparent pricing structure ensures clients are informed at every step.",
   },
   {
     id: 3,
     question:
-      "What steps does RH Construction USA Inc. take to ensure a smooth project timeline?",
+      "Can you provide references from past clients?",
     answer:
       "We meticulously plan each bath construction project, considering factors such as material availability, weather conditions, and potential challenges. Our project management team is adept at adapting to unforeseen circumstances to keep timelines on track.",
   },
   {
     id: 4,
     question:
-      "Can RH Construction USA Inc. handle both small and large-scale bath construction projects?",
+      "What is your process for kitchen remodeling projects? Can you walk me through the steps?",
     answer:
       "Absolutely. Whether it's a small bathroom renovation or a large-scale construction project, our team is dedicated to delivering exceptional results.",
   },
   {
     id: 5,
     question:
-      "How does RH Construction USA Inc. prioritize sustainability in bath construction projects?",
+      "How do you handle permits and regulations for kitchen renovation projects?",
     answer:
       "Sustainability is a core value at our bathroom remodeling services company in Brooklyn. We source eco-friendly materials, incorporate energy-efficient solutions, and adhere to responsible construction practices to minimize the environmental impact of our projects.",
   },
   {
     id: 6,
     question:
-      "What client involvement is encouraged during a bath construction project with RH Construction USA Inc.?",
+      "Do you work with subcontractors, and if so, how do you ensure their work meets your standards?",
     answer:
       "We believe in collaborative partnerships with our clients. From the initial design phase to material selection and throughout the construction process, we actively seek and value client input to ensure their vision is realized.",
   },
@@ -65,9 +65,9 @@ const FaqSection = () => {
           <div className="md:col-span-3 flex items-center ">
             <div className="">
               <Image
-                src="/assets/images/faq.png"
+                src="/assets/kitchen/FAQ.png"
                 width={764}
-                height={556}
+                height={600}
                 alt="faq  image"
                 className=""
               />
@@ -82,10 +82,10 @@ const FaqSection = () => {
 
               <div>
                 <h3 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center pb-2">
-                  Bath Construction
+                Some Questions You Must Ask a 
                   <br />{" "}
                   <span className="text-primary">
-                    Project Questions And Answers
+                  Kitchen Remodeling Expert Before Hiring Them
                   </span>
                 </h3>
               </div>

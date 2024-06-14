@@ -12,7 +12,7 @@ const TrustUs = () => {
           <div className="order-2 md:col-span-3 flex justify-center items-center ">
             <div className="">
               <Image
-                src="/assets/images/Expert.png"
+                src="/assets/kitchen/Trust Us.png"
                 width={680}
                 height={495}
                 alt="expert image"
@@ -26,11 +26,12 @@ const TrustUs = () => {
             <HeadingIcon text={headingIconText.trustUs__IconTxt}/>
             </div>
             <h3 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
-            Expert Bathroom Remodelers <br />{" "}
-              <span className="text-primary">in Brooklyn </span>
+            Brooklyn Kitchen <br/> Remodeling Specialist 
+            <br />{" "}
+              <span className="text-primary">You Can Trust </span>
             </h3>
             <p className="text-lg font-normal md:text-start text-center py-[10px]">
-            RH Construction USA Inc. boasts an expert team of bathroom repair specialists, with precision and efficiency dedicated to delivering top-notch bathroom remodeling services in Brooklyn. With 15 years of experience in the industry, our skilled remodelers understand the intricacies of bathroom repair, from fixing leaks and plumbing issues to addressing tile and grout problems. From plumbing fixes to tile replacements, we prioritize delivering solutions that stand the test of time. Our repairman takes pride in our commitment to excellence, ensuring that each bathroom repair job is completed to the highest standards. With a focus on customer satisfaction, we strive to exceed expectations, making us the go-to choice for all your bathroom repair needs in Brooklyn.
+            Looking to transform your Brooklyn kitchen into a space that reflects your style and functionality needs? Look no further than our trusted team of specialists in kitchen remodeling in Brooklyn. With years of experience and a commitment to quality craftsmanship, we're dedicated to bringing your vision to life. From modern updates to classic designs, we'll work closely with you every step of the way to ensure your satisfaction. Trust us to deliver exceptional results that enhance both the beauty and practicality of your home. Choose our Brooklyn kitchen remodeling specialists for a transformation you can trust.
 
             </p>
           </div>

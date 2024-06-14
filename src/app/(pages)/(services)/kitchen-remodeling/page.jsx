@@ -14,6 +14,7 @@ import KitchenRemodelingServices from "@/components/kitchen-remodeling-component
 import KitchenRenovationCost from "@/components/kitchen-remodeling-components/KitchenRenovationCost/KitchenRenovationCost";
 import ProjectGallery from "@/components/kitchen-remodeling-components/ProjectGallery/ProjectGallery";
 import ReadyToWork from "@/components/kitchen-remodeling-components/ReadyToWork/ReadyToWork";
+import AestheticKitchen from "@/components/kitchen-remodeling-components/AestheticKitchen/AestheticKitchen";
 import Review from "@/components/kitchen-remodeling-components/Review/Review";
 import TrustUs from "@/components/kitchen-remodeling-components/TrustUs/TrustUs";
 import WorkingProcess from "@/components/kitchen-remodeling-components/WorkingProcess/WorkingProcess";
@@ -55,14 +56,17 @@ const KitchenRemodeling = () => {
       {/* =============== kitchenRenovationCost  Section================= */}
       <KitchenRenovationCost />
 
-      {/* =============== ReadyToWork  Section================= */}
-      <ReadyToWork />
-
       {/* =============== KeyPoints  Section================= */}
       <KeyPoints />
 
       {/* =============== HireUs  Section================= */}
       <HireUs />
+
+      {/* =============== ReadyToWork  Section================= */}
+      <ReadyToWork />
+
+      {/* =============== Aesthetic Kitchen  Section================= */}
+      <AestheticKitchen />
 
       {/* =============== FaqSection  Section================= */}
       <FaqSection />

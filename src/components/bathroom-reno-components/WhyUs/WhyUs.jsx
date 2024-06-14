@@ -1,5 +1,5 @@
 "use client";
-import "./HireUs.css";
+import "./WhyUs.css";
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
 
@@ -7,70 +7,70 @@ import Image from "next/image";
 
 const usualPool = [
   {
-    title: "Subpar craftsmanship leads to frequent.",
+    title: "Poor craftsmanship",
   },
   {
-    title: "Poor communication causes delays",
+    title: "Unreliable scheduling",
   },
   {
-    title: "Unreliable scheduling disrupts daily life.",
+    title: "Lack of communication",
   },
   {
-    title: "Low-quality materials result in rapid",
+    title: "Low-quality materials",
   },
   {
-    title: "Lack of attention to detail leaves shoddy",
+    title: "Messy work habits",
   },
   {
-    title: "Unprofessional conduct creates stress.",
+    title: "Inadequate attention to detail",
   },
   {
-    title: "Hidden costs inflate the final bill.",
+    title: "Failure to adhere to agreed-upon budget",
   },
   {
-    title: "Limited design options fail to inspire.",
+    title: "Ignoring client preferences",
   },
   {
-    title: "Inadequate planning leads to incomplete",
+    title: "Difficulty in resolving issues or conflicts",
   },
   {
-    title: "Disregarding safety standards poses",
+    title: "Subpar post-renovation support",
   },
 ];
 const easyPool = [
   {
-    title: "Expert Craftsmanship",
+    title: "Attention to detail",
   },
   {
-    title: "Customized Designs",
+    title: "Timely completion of projects",
   },
   {
-    title: "Premium Quality Materials",
+    title: "Quality craftsmanship",
   },
   {
-    title: "Seamless Installation Process",
+    title: "Excellent communication skills",
   },
   {
-    title: "Innovative Solutions",
+    title: "Knowledgeable the latest trends & materials",
   },
   {
-    title: "Attention to Detail",
+    title: "Respectful of client's space & preferences",
   },
   {
-    title: "Timely Project Completion",
+    title: "Ability to work within budget constraints",
   },
   {
-    title: "Budget-Friendly Options",
+    title: "Flexible and accommodating to changes",
   },
   {
-    title: "Dedicated Customer Service",
+    title: "Provides valuable design suggestions",
   },
   {
-    title: "Stunning Transformation",
+    title: "Provides transparent pricing and estimates",
   },
 ];
 
-const HireUs = () => {
+const WhyUs = () => {
   return (
     <div className="bg___color">
       <div className="container">
@@ -83,21 +83,21 @@ const HireUs = () => {
 
               <div>
                 <h3 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
-                Why Hire Our 
-                  <span className="text-primary"> Kitchen Renovation Brooklyn Contractors?</span>
+                Hire Our Bathroom 
+                  <span className="text-primary"> Remodeling Specialist</span>
                 </h3>
               </div>
 
               <div>
                 <p className="text-lg font-normal md:text-start text-center py-[10px]">
-                Hiring our kitchen renovators ensures expertise, quality, and efficiency in transforming your kitchen space. With years of experience, our kitchen remodeling in Brooklyn team brings innovative design ideas, precise craftsmanship, and attention to detail to every projec
+                With a keen eye for design and quality craftsmanship, we offer a comprehensive range of renovation services, from concept to completion. Whether you're looking to update fixtures, install custom cabinetry, or completely overhaul the layout, our experienced team ensures every detail is executed with precision and care.
                 </p>
               </div>
             </div>
 
             <div className=" border-2 my-6 md:my-0 cart1">
               <p className="title-bg text-center 2xl:py-[15px] py-[10px] text-white text-base md:text-[22px] font-bold">
-              Usual Kitchen Renovators
+              Usual Bathroom Renovators
               </p>
               <div className=" grid grid-rows-8 3xl:py-[35px] py-[25px] 3xl:px-[25px] px-[20px] 2xl:text-[16px] lg:text-[14px] xs:text-[9px]  ">
                 {usualPool.map((usual, idx) => (
@@ -112,7 +112,7 @@ const HireUs = () => {
                       height={23}
                       className="2xl:h-[23px] 2xl:w-[23px] h-[15px] w-[15px]"
                     />
-                    <p className="text-sm md:text-base text-black font-bold">
+                    <p className="text-sm md:text-lg text-black font-bold">
                       {usual.title}
                     </p>
                   </div>
@@ -121,7 +121,7 @@ const HireUs = () => {
             </div>
             <div className=" border-2 my-6 md:my-0 cart2">
               <p className="title-bg2 text-center 2xl:py-[15px] py-[10px] text-white text-base md:text-[22px] font-bold">
-              Our Kitchen Renovation Contractors
+              RH Construction USA Inc.
               </p>
               <div className=" grid grid-rows-8 3xl:py-[35px] py-[25px] 3xl:px-[25px] px-[20px] 2xl:text-[16px] lg:text-[14px] xs:text-[9px]  ">
                 {easyPool.map((usual, idx) => (
@@ -150,4 +150,4 @@ const HireUs = () => {
   );
 };
 
-export default HireUs;
+export default WhyUs;

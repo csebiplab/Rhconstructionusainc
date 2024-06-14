@@ -12,29 +12,30 @@ import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
 
 const galImgs = [
-  "/assets/gallery/Gallery_1.png",
-  "/assets/gallery/Gallery_2.png",
-  "/assets/gallery/Gallery_4.png",
-  "/assets/gallery/Gallery_6.png",
-  "/assets/gallery/Gallery_8.png",
-  "/assets/gallery/Gallery_9.png",
-  "/assets/gallery/Gallery_10.png",
-  "/assets/gallery/Gallery_11.png",
-  "/assets/gallery/Gallery_12.png",
-  "/assets/gallery/Gallery_13.png",
+  "/assets/kitchen/Our Portfolio Gallery-1.png",
+  "/assets/kitchen/Our Portfolio Gallery-2.png",
+  "/assets/kitchen/Our Portfolio Gallery-3.png",
+  "/assets/kitchen/Our Portfolio Gallery-4.png",
+  "/assets/kitchen/Our Portfolio Gallery-5.png",
+  "/assets/kitchen/Our Portfolio Gallery-6.png",
+  "/assets/kitchen/Our Portfolio Gallery-8.png",
+  "/assets/kitchen/Our Portfolio Gallery-9.png",
+  "/assets/kitchen/Our Portfolio Gallery-10.png",
+  "/assets/kitchen/Our Portfolio Gallery-11.png",
+  
 ];
 
 const galImgs2 = [
-  "/assets/gallery/Gallery_1.png",
-  "/assets/gallery/Gallery_2.png",
-  "/assets/gallery/Gallery_4.png",
-  "/assets/gallery/Gallery_6.png",
-  "/assets/gallery/Gallery_8.png",
-  "/assets/gallery/Gallery_9.png",
-  "/assets/gallery/Gallery_10.png",
-  "/assets/gallery/Gallery_11.png",
-  "/assets/gallery/Gallery_12.png",
-  "/assets/gallery/Gallery_13.png",
+  "/assets/kitchen/Our Portfolio Gallery-11.png",
+  "/assets/kitchen/Our Portfolio Gallery-12.png",
+  "/assets/kitchen/Our Portfolio Gallery-13.png",
+  "/assets/kitchen/Our Portfolio Gallery-14.png",
+  "/assets/kitchen/Our Portfolio Gallery-15.png",
+  "/assets/kitchen/Our Portfolio Gallery-1.png",
+  "/assets/kitchen/Our Portfolio Gallery-2.png",
+  "/assets/kitchen/Our Portfolio Gallery-3.png",
+  "/assets/kitchen/Our Portfolio Gallery-4.png",
+  "/assets/kitchen/Our Portfolio Gallery-5.png",
 ];
 
 const ProjectGallery = () => {
@@ -65,7 +66,7 @@ const ProjectGallery = () => {
             <HeadingIcon text={headingIconText.gallery__IconTxt}/>
             <div>
               <h3 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
-              Bathroom Renovation  <br className="block md:hidden"/>
+              Our Kitchen Remodeling  <br className="block md:hidden"/>
                 <span className="text-primary">Gallery of Past Projects</span>
               </h3>
             </div>

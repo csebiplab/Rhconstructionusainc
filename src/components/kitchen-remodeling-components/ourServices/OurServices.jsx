@@ -3,8 +3,8 @@
 import Image from "next/image";
 import { useState } from "react";
 
-import SmallHeadingWithIcon from "@/components/ui/SmallHeadingWithIcon";
-import { smHeadingTexts } from "@/constants/smHeadingTexts";
+import HeadingIcon from "@/components/ui/HeadingIcon";
+import { headingIconText } from "@/utils/heading-text";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/navigation";
@@ -13,53 +13,61 @@ import "swiper/css/virtual";
 
 const interior = [
   {
-    title: "Bathroom Remodeling",
+    title: "Experienced team of renovators",
     img: "/assets/services/bithrom.png",
   },
   {
-    title: "Sheetrock",
+    title: "Specialize in home and commercial property renovations",
     img: "/assets/services/sheetrock.png",
   },
   {
-    title: "Plastering",
+    title: "Customer satisfaction guaranteed",
     img: "/assets/services/plastering.png",
   },
   {
-    title: "Plumbing",
+    title: "Free consultations and estimates",
     img: "/assets/services/plumbing.png",
   },
   {
-    title: "Kitchen Remodeling",
+    title: "Fully licensed and insured",
     img: "/assets/services/kitchen.png",
   },
   {
-    title: " Painting",
+    title: "Timely project completion",
+    img: "/assets/services/painting.png",
+  },
+  {
+    title: "Competitive Pricing",
     img: "/assets/services/painting.png",
   },
 ];
 const exterior = [
   {
-    title: "Roofing",
+    title: "Inefficient communication with renovators",
     img: "/assets/services/roofing.png",
   },
   {
-    title: "Pointing",
+    title: "Lack of clarity on project expectations",
     img: "/assets/services/pointing.png",
   },
   {
-    title: "Water Proofing",
+    title: "Poor project management",
     img: "/assets/services/water.png",
   },
   {
-    title: "Brown Stone Repair",
+    title: "Insufficient supervision and quality control",
     img: "/assets/services/brown.png",
   },
   {
-    title: "Brick Works",
+    title: "Delayed timelines",
     img: "/assets/services/brick.png",
   },
   {
-    title: " Power Wash",
+    title: "Cost overruns",
+    img: "/assets/services/power.png",
+  },
+  {
+    title: "Client dissatisfaction and negative feedback",
     img: "/assets/services/power.png",
   },
 ];
@@ -72,56 +80,20 @@ export default function OurServices() {
   };
 
   return (
-    <div className=" bg-[#FFB7031A]">
+    <div className=" ">
       <div className="container py-6 lg:py-[55px]">
-        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-40 gap-4 lg:p-5 md:p-3 items-end text-sm">
-          <div className="">
-            <div className="flex justify-center md:justify-start items-center pb-2">
-              {/* <div className="flex items-center gap-x-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="23"
-                  height="12"
-                  viewBox="0 0 23 12"
-                  fill="none"
-                >
-                  <circle cx="6" cy="6" r="6" fill="#FFB703" />
-                  <circle cx="16.667" cy="6" r="6" fill="black" />
-                </svg>
-                <p className="text-sm">Services</p>
-              </div> */}
-              <SmallHeadingWithIcon
-                smallHeadingText={smHeadingTexts.ourServices}
-              />
+        {/* <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-40 gap-4 lg:p-5 md:p-3 items-end text-sm">
+          
+        </div> */}
+        <div className="">
+            <div className="flex justify-center items-center pb-2">
+            <HeadingIcon text={headingIconText.doanddonot__IconTxt}/>
+              
             </div>
-            <h2 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-center md:text-start">
-              Our Services
+            <h2 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-center">
+            Our Renovators <span className="text-primary"> Do or Don't</span>
             </h2>
-            <p className="md:text-base text-[12px] leading-[208%] lg:leading-[250%] text-black text-center md:text-start font-semibold">
-              Enjoy a stress-free construction service with our unique build
-              process.
-            </p>
-            <p className="md:text-base text-[12px] leading-[208%] lg:leading-[250%] text-black text-center md:text-start">
-              <span className="font-semibold">RH Construction USA</span>, is
-              your trusted partner for top-notch construction services,
-              dedicated to bringing your dream project to life. From
-              conceptualization to completion, we prioritize quality
-              craftsmanship, timely delivery, and cost-effective solutions to
-              meet and exceed your expectations.
-            </p>
           </div>
-
-          <div className="hidden md:block">
-            <p className="md:text-base text-[12px] leading-[208%] lg:leading-[250%] text-black text-center md:text-start">
-              At our company, we understand that your dream project is a
-              significant investment, and we take pride in delivering
-              unparalleled construction service that reflects our unwavering
-              commitment to customer satisfaction. Whether you're envisioning a
-              residential masterpiece or a commercial endeavor, our experienced
-              team is equipped to handle a diverse range of projects.
-            </p>
-          </div>
-        </div>
 
         {/* taggle button */}
         <div className="flex justify-center items-center lg:py-6 py-4 mb-2 md:mb-6 lg:mb-12 mx-2 lg:px-0 md:px-4">
@@ -150,7 +122,7 @@ export default function OurServices() {
                   </clipPath>
                 </defs>
               </svg>
-              Interior
+              Our renovators do or have
             </span>
             <span
               className={`flex items-center space-x-[6px] lg:px-32 px-4 rounded-3xl lg:py-4 py-2 lg:text-[20px] text-sm font-medium ${
@@ -163,7 +135,7 @@ export default function OurServices() {
                 viewBox="0 0 16 16"
                 className="mr-[6px] fill-current"
               ></svg>
-              Exterior
+              Our renovators don't do
             </span>
           </label>
         </div>
