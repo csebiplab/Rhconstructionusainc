@@ -1,4 +1,6 @@
-"use client";
+"use client"
+import "../../../styles/Home.css";
+
 import RatingComponent from "@/components/__home_components/RatingComponent";
 import LocationMap from "@/components/bathroom-reno-components/LocationMap/LocationMap";
 import ContactUs from "@/components/bathroom-reno-components/contactUs/ContactUs";
