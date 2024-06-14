@@ -18,7 +18,7 @@ import "swiper/css/navigation";
 import "swiper/css/virtual";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "./Constructor.css";
+import "./KeyPoints.css";
 import { SwiperNavButtons } from "./SwiperSliderButton";
 
 
@@ -80,7 +80,7 @@ const slideData = [
 
 
 
-const Constructor = () => {
+const KeyPoints = () => {
   return (
     <div className="bg___color">
       <div className="container common__padding__top">
@@ -136,4 +136,4 @@ const Constructor = () => {
   );
 };
 
-export default Constructor;
+export default KeyPoints;

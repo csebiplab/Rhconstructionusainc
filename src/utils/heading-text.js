@@ -20,4 +20,7 @@ export const headingIconText = {
     hireUs__IconTxt:"Why Hire Us",
     aboutKitchen__IconTxt:"About Kitchen Renovation",
     chooseUs__IconTxt:"WHy Choose Us",
+    trustUs__IconTxt:"Trust Us",
+    kitchenRenovationCost__IconTxt:"Kitchen Renovation Cost",
+    kitchenRemodelingServices__IconTxt:"Kitchen Remodeling Services",
 }
