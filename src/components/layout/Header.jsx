@@ -26,8 +26,8 @@ import React from "react";
 
 const our_service_menu_items = {
   interior: [
-    { title: "Bathroom Remodeling", route: "/bathroom-remodeling-brooklyn" },
-    { title: "Kitchen Remodeling", route: "/kitchen-remodeling" },
+    { title: "Bathroom Remodeling", route: "/bathroom-remodeling" },
+    { title: "Kitchen Remodeling", route: "/kitchen-remo" },
     { title: "Painting", route: "/painting" },
     { title: "Sheetrock", route: "/sheetrock" },
     { title: "Plastering", route: "/plastering" },
@@ -93,7 +93,7 @@ function OurServiceManu() {
             className="font-medium text-lg"
           >
             <ListItem
-              className="flex items-center gap-2 rounded-full py-1  pr-4 text-sm md:text-[14px] xl:text-base 2xl:text-lg text-black font-medium"
+              className="flex items-center gap-2 rounded-full py-1  pr-4 font-normal  text-sm lg:text-base 5xl:text-[17px]   text-black"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -156,7 +156,7 @@ function NavList() {
         href="/about-rh-constraction"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-sm lg:text-[14px] xl:text-base text-black"
+        className="font-normal rounded-full text-sm lg:text-base 5xl:text-[17px]  text-black"
       >
         <ListItem className="flex items-center rounded-full hover:bg-primary px-1 lg:px-4 xl:px-5 2xl:px-6">
           About
@@ -170,29 +170,29 @@ function NavList() {
         href="/customer-reviews"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-sm md:text-[14px] xl:text-base text-black"
+        className="font-normal rounded-full text-sm lg:text-base 5xl:text-[17px]  text-black"
       >
         <ListItem className="flex items-center rounded-full hover:bg-primary px-1 lg:px-4 xl:px-5 2xl:px-6">
           Customer Reviews
         </ListItem>
       </Typography>
-      <Typography
+      {/* <Typography
         as={Link}
-        href="/bathroom-reno"
+        href="/bathroom-remodeling"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-sm md:text-[14px] xl:text-base text-black"
+        className="font-medium rounded-full text-sm  text-black"
       >
         <ListItem className="flex items-center rounded-full hover:bg-primary px-1 lg:px-4 xl:px-5 2xl:px-6">
           Bathroom Renovation
         </ListItem>
-      </Typography>
+      </Typography> */}
       <Typography
         as={Link}
         href="/blogs"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-sm md:text-[14px] xl:text-base text-black"
+        className="font-normal rounded-full text-sm lg:text-base 5xl:text-[17px]  text-black"
       >
         <ListItem className="flex items-center rounded-full hover:bg-primary px-1 lg:px-4 xl:px-5 2xl:px-6">
           Blogs
@@ -203,7 +203,7 @@ function NavList() {
         href="/our-projects"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-sm md:text-[14px] xl:text-base text-black"
+        className="font-normal rounded-full text-sm lg:text-base 5xl:text-[17px]  text-black"
       >
         <ListItem className="flex items-center rounded-full hover:bg-primary px-1 lg:px-4 xl:px-5 2xl:px-6">
           Projects
@@ -215,7 +215,7 @@ function NavList() {
         href="/contact"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-sm md:text-[14px] xl:text-base text-black"
+        className="font-normal rounded-full text-sm lg:text-base 5xl:text-[17px]   text-black"
       >
         <ListItem className="flex items-center rounded-full hover:bg-primary px-1 lg:px-4 xl:px-5 2xl:px-6">
           Contact
@@ -326,12 +326,12 @@ export function Header() {
                   className="w-7 h-7 2xl:w-[37px] 2xl:h-[37px]"
                 />
                 <div>
-                  <span className="text-sm md:text-[14px] xl:text-base 2xl:text-[17px] text-dark block">
+                  <span className="text-sm  text-dark block">
                     Quick Contact
                   </span>
                   <Link
                     href={`tel:+1 (646) 683-4612`}
-                    className="text-xs md:text-sm 2xl:text-xl font-bold text-dark"
+                    className="text-sm font-bold text-dark"
                   >
                     +1 (646) 683-4612
                   </Link>

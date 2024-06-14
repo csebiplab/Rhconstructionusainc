@@ -38,9 +38,9 @@ export default function ContactUs() {
                   <FaLinkedin className=" lg:w-6 lg:h-6 w-auto h-auto" />
                 </div>
 
-                <h4 className=" lg:text-[25px] text-[20px] font-bold lg:py-12 py-5">
+                <h6 className=" lg:text-[25px] text-[20px] font-bold lg:py-12 py-5">
                 Best Bath Construction Company Brooklyn
-                </h4>
+                </h6>
                 <div className="flex justify-center md:justify-start">
                   <Image
                     src={contactUsLogo}
@@ -50,9 +50,9 @@ export default function ContactUs() {
                     alt="logo"
                   />
                 </div>
-                <h4 className=" lg:text-[25px] text-[20px] font-bold lg:pt-12 pt-5">
+                <h6 className=" lg:text-[25px] text-[20px] font-bold lg:pt-12 pt-5">
                 R H CONSTRUCTION USA, INC.
-                </h4>
+                </h6>
               </div>
             </div>
 
@@ -64,27 +64,27 @@ export default function ContactUs() {
                     <div>
                       {" "}
                       <h5 className="mb-2">Your name *</h5>
-                      <label className="sr-only" htmlFor="email">
+                      <label className="sr-only" htmlFor="name">
                         name
                       </label>
                       <input
-                        className="w-full rounded-lg bg-[#FFB70326] shadow-sm shadow-black p-3 text-sm"
+                        className="w-full input__bg p-3 text-sm"
                         placeholder="Robot Fox"
-                        type="email"
-                        id="email"
+                        type="text"
+                        id="text"
                       />
                     </div>
 
                     <div>
                       <h5 className="mb-2">Email *</h5>
-                      <label className="sr-only" htmlFor="phone">
-                        Phone
+                      <label className="sr-only" htmlFor="email">
+                        Email
                       </label>
                       <input
-                        className="w-full rounded-lg bg-[#FFB70326] shadow-sm shadow-black p-3 text-sm"
-                        placeholder="info.example@gmail.com"
-                        type="tel"
-                        id="phone"
+                        className="w-full input__bg p-3 text-sm"
+                        placeholder="rhconusa@gmail.com"
+                        type="email"
+                        id="email"
                       />
                     </div>
                   </div>
@@ -93,14 +93,14 @@ export default function ContactUs() {
                 <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:mb-8 mb-4  ">
                   <div>
                     <h5 className="mb-2">Subjects *</h5>
-                    <label className="sr-only" htmlFor="email">
-                      Email
+                    <label className="sr-only" htmlFor="subject">
+                      Subject
                     </label>
                     <input
-                      className="w-full rounded-lg bg-[#FFB70326] shadow-sm shadow-black p-3 text-sm"
+                      className="w-full input__bg p-3 text-sm"
                       placeholder="Subjects "
-                      type="email"
-                      id="email"
+                      type="text"
+                      id="subject"
                     />
                   </div>
 
@@ -110,8 +110,8 @@ export default function ContactUs() {
                       Phone
                     </label>
                     <input
-                      className="w-full rounded-lg bg-[#FFB70326] shadow-sm shadow-black p-3 text-sm"
-                      placeholder="+8801700000000"
+                      className="w-full input__bg p-3 text-sm"
+                      placeholder="+1 (646) 683-4612"
                       type="tel"
                       id="phone"
                     />

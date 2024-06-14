@@ -75,7 +75,7 @@ const FaqSection = () => {
           </div>
 
           <div className="md:col-span-4 pt-3 md:pt-0">
-            <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-col justify-center items-center md:items-start ">
               <div>
               <HeadingIcon text={headingIconText.faq__IconTxt}/>
               </div>
