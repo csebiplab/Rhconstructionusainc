@@ -2,14 +2,14 @@
 
 import Image from "next/image";
 
-import hiring1 from "../../../../public/assets/images/hiring1.png";
-import hiring2 from "../../../../public/assets/images/hiring2.jpg";
-import hiring3 from "../../../../public/assets/images/hiring3.png";
-import hiring4 from "../../../../public/assets/images/hiring4.png";
-import hiring5 from "../../../../public/assets/images/hiring5.png";
-import hiring6 from "../../../../public/assets/images/hiring6.png";
-import hiring7 from "../../../../public/assets/images/hiring7.png";
-import hiring8 from "../../../../public/assets/images/hiring8.png";
+import hiring1 from "../../../../public/assets/kitchen/hiring1.png";
+import hiring2 from "../../../../public/assets/kitchen/hiring2.png";
+import hiring3 from "../../../../public/assets/kitchen/hiring3.png";
+import hiring4 from "../../../../public/assets/kitchen/hiring4.png";
+import hiring5 from "../../../../public/assets/kitchen/hiring5.png";
+import hiring6 from "../../../../public/assets/kitchen/hiring6.png";
+import hiring7 from "../../../../public/assets/kitchen/hiring7.png";
+import hiring8 from "../../../../public/assets/kitchen/hiring8.png";
 
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
@@ -17,43 +17,43 @@ import { headingIconText } from "@/utils/heading-text";
 const workingData = [
   {
     imgSrc: hiring1,
-    title: "Customized Consultations",
-    description: `Our contractors initiate the process with personalized consultations, understanding your specific needs, preferences, and budget constraints. This ensures that the bath renewal.`,
+    title: "Initial Consultation",
+    description: `Meet with the homeowners to discuss their vision, requirements, and budget for the kitchen remodelling project. Assess the existing kitchen space, including layout, plumbing, electrical systems, and structural considerations.`,
   },
   {
     imgSrc: hiring2,
-    title: "Innovative Design Solutions",
-    description: `Our bathroom renovation company prides itself on offering innovative design solutions for bath renewals. we specialize in transforming ordinary bathrooms.`,
+    title: "Design Phase",
+    description: `Collaborate with the homeowners to create a detailed kitchen design that incorporates their preferences, style, and functional needs. Select materials, finishes, and color schemes in line with the design concept.`,
   },
   {
     imgSrc: hiring3,
-    title: "Transparent Project Planning",
-    description: `We believe in transparent communication. Our contractors provide detailed project plans, outlining the timeline, milestones, and cost estimates.`,
+    title: "Permitting & Approvals",
+    description: `Determine and acquire the necessary permits for the remodeling project, ensuring compliance with local building codes and regulations. Obtain any required approvals from homeowners' associations or other relevant entities.`,
   },
   {
     imgSrc: hiring4,
-    title: "Quality Craftsmanship",
-    description: `At our bathroom remodeling company, we prioritize quality craftsmanship. From tile installation to plumbing, every aspect of the bath renewal is executed with precision.`,
+    title: "Demolition & Site Prepare",
+    description: `Safely remove existing fixtures, cabinets, appliances, and flooring. Prepare the site for construction, addressing any structural issues and ensuring a clean and safe work environment.`,
   },
   {
     imgSrc: hiring5,
-    title: "Sustainable Practices",
-    description: `Environmental responsibility is integral to our work philosophy. Our contractors incorporate sustainable practices, such as eco-friendly materials and energy-efficient.`,
+    title: "Rough-In Work",
+    description: `Address plumbing and electrical requirements, making necessary adjustments or installations to accommodate the new kitchen layout. Confirm that all rough-in work meets building codes and standards.`,
   },
   {
     imgSrc: hiring6,
-    title: "Client Collaboration",
-    description: `We value collaboration with our clients. This collaborative approach sets us apart, fostering a sense of partnership between our team and the client.`,
+    title: "Cabinet & Appliance Install",
+    description: `Install new kitchen cabinets, ensuring proper alignment and functionality. Place and secure appliances, incorporating them seamlessly into the design.`,
   },
   {
     imgSrc: hiring7,
-    title: "Thorough Project Manage",
-    description: `Our contractors are adept at project management, overseeing every phase of the bath renewal. From procurement to installation, they ensure that the project stays.`,
+    title: "Countertop & Flooring Install",
+    description: `Install chosen countertops, such as granite, quartz, or marble, paying careful attention to precision and aesthetics. Lay and finish flooring materials, whether it be tile, hardwood, or another selected option.`,
   },
   {
     imgSrc: hiring8,
-    title: "Post-Completion Support",
-    description: `We are committed to client satisfaction even after the project is complete. Our contractors provide post-completion support, addressing any concerns or adjustments needed.`,
+    title: "Quality Checks",
+    description: `Conduct thorough inspections to verify that all work meets quality standards and safety requirements. Address any issues or deficiencies promptly.`,
   },
 ];
 
@@ -62,15 +62,14 @@ const WorkingProcess = () => {
   return (
     <div className="bg-[#FFF9EE]">
       <div className="container">
-        <div className="py-[60px] lg:py-[70px] xl:py-[80px] 2xl:py-[90px] 3xl:py-[100px] 4xl:py-[110px] 5xl:py-[120px]">
+        <div className="common__padding__top">
           <div className="text-center">
             <div className="flex justify-center items-center">
             <HeadingIcon text={headingIconText.workingProcess__IconTxt}/>
             </div>
 
             <h5 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black text-center">
-            How Our Bath Renew 
-              <span className="text-primary"> Contractors Work</span>
+            Working Process of Our <span className="text-primary">Outdoor Kitchen Builders</span>
             </h5>
           </div>
 

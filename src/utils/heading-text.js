@@ -23,4 +23,6 @@ export const headingIconText = {
     trustUs__IconTxt:"Trust Us",
     kitchenRenovationCost__IconTxt:"Kitchen Renovation Cost",
     kitchenRemodelingServices__IconTxt:"Kitchen Remodeling Services",
+    doanddonot__IconTxt:"Do or Don't",
+    aestheticKitchen__IconTxt:"Aesthetic Kitchen",
 }

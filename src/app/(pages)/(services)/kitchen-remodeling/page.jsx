@@ -14,10 +14,11 @@ import KitchenRemodelingServices from "@/components/kitchen-remodeling-component
 import KitchenRenovationCost from "@/components/kitchen-remodeling-components/KitchenRenovationCost/KitchenRenovationCost";
 import ProjectGallery from "@/components/kitchen-remodeling-components/ProjectGallery/ProjectGallery";
 import ReadyToWork from "@/components/kitchen-remodeling-components/ReadyToWork/ReadyToWork";
+import AestheticKitchen from "@/components/kitchen-remodeling-components/AestheticKitchen/AestheticKitchen";
 import Review from "@/components/kitchen-remodeling-components/Review/Review";
 import TrustUs from "@/components/kitchen-remodeling-components/TrustUs/TrustUs";
 import WorkingProcess from "@/components/kitchen-remodeling-components/WorkingProcess/WorkingProcess";
-import OurServices from "@/components/kitchen-remodeling-components/ourServices/OurServices";
+import OurServices from "@/components/kitchen-remodeling-components/OurServices/OurServices";
 
 const KitchenRemodeling = () => {
   return (
@@ -26,7 +27,10 @@ const KitchenRemodeling = () => {
       <KitchenRemodelingHero />
 
       {/* =============== RatingComponent  Section================= */}
+      
+      <div className="bg___color">
       <RatingComponent />
+      </div>
 
       {/* =============== AboutKitchenRemodeling  Section================= */}
       <AboutKitchenRemodeling />
@@ -44,7 +48,8 @@ const KitchenRemodeling = () => {
       <Review />
 
       {/* =============== OurServices  Section================= */}
-      <OurServices />
+      
+      <OurServices/>
 
       {/* =============== ChooseUs  Section================= */}
       <ChooseUs />
@@ -55,14 +60,17 @@ const KitchenRemodeling = () => {
       {/* =============== kitchenRenovationCost  Section================= */}
       <KitchenRenovationCost />
 
-      {/* =============== ReadyToWork  Section================= */}
-      <ReadyToWork />
-
       {/* =============== KeyPoints  Section================= */}
       <KeyPoints />
 
       {/* =============== HireUs  Section================= */}
       <HireUs />
+
+      {/* =============== ReadyToWork  Section================= */}
+      <ReadyToWork />
+
+      {/* =============== Aesthetic Kitchen  Section================= */}
+      <AestheticKitchen />
 
       {/* =============== FaqSection  Section================= */}
       <FaqSection />

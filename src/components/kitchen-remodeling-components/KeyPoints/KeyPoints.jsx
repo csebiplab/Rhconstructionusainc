@@ -1,12 +1,12 @@
 "use client";
-import pp1 from "../../../../public/assets/images/pp1.png"
-import pp2 from "../../../../public/assets/images/pp2.png"
-import pp3 from "../../../../public/assets/images/pp3.png"
-import pp4 from "../../../../public/assets/images/pp4.png"
-import pp5 from "../../../../public/assets/images/pp5.png"
-import pp6 from "../../../../public/assets/images/pp6.png"
-import pp7 from "../../../../public/assets/images/pp7.png"
-import pp8 from "../../../../public/assets/images/pp8.png"
+import pp1 from "../../../../public/assets/kitchen/pp1.png"
+import pp2 from "../../../../public/assets/kitchen/pp2.png"
+import pp3 from "../../../../public/assets/kitchen/pp3.png"
+import pp4 from "../../../../public/assets/kitchen/pp4.png"
+import pp5 from "../../../../public/assets/kitchen/pp5.png"
+import pp6 from "../../../../public/assets/kitchen/pp6.png"
+import pp7 from "../../../../public/assets/kitchen/pp7.png"
+import pp8 from "../../../../public/assets/kitchen/pp8.png"
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
 import Image from "next/image";
@@ -38,43 +38,43 @@ const breakpoints = {
 const slideData = [
   {
     imgSrc: pp1,
-    title: 'Craftsmanship Excellence',
-    description: `Our bathroom renovation company takes immense pride in delivering top-notch craftsmanship.`,
+    title: 'Layout and Design',
+    description: `Consider the overall layout of your kitchen. Think about the work triangle (the relationship between the stove, sink, and refrigerator) for an efficient workflow.`,
   },
   {
     imgSrc: pp2,
-    title: 'Tailored Designs',
-    description: `From modern and sleek designs to classic and timeless aesthetics, we tailor our services to bring your vision to life.`,
+    title: 'Cabinetry',
+    description: `Choose the type of cabinets that suit your style and needs. Options include traditional wooden cabinets, sleek modern designs, or open shelving. `,
   },
   {
     imgSrc: pp3,
-    title: 'Transparent Communication',
-    description: `Communication is key to any successful remodeling project. We prioritize transparent & open communication throughout the process`,
+    title: 'Countertops',
+    description: `Consider durability, maintenance, and visual appeal when selecting the countertop material.`,
   },
   {
     imgSrc: pp4,
-    title: 'Timely Project Delivery',
-    description: `We understand the importance of timelines when it comes to home renovations. You can trust our bathroom remodeling company`,
+    title: 'Appliances',
+    description: `Upgrade kitchen appliances to newer, energy-efficient models. Consider the layout and flow of the kitchen when placing appliances like the refrigerator, stove, and dishwasher.`,
   },
   {
     imgSrc: pp5,
-    title: 'Quality Materials',
-    description: `We source and utilize only high-quality materials for our projects. Whether it's fixtures, tiles, or cabinetry, we prioritize durability.`,
+    title: 'Lighting',
+    description: `Plan for ample and strategically placed lighting. This could include overhead fixtures, under-cabinet lighting, and pendant lights. Explore energy-efficient and smart lighting.`,
   },
   {
     imgSrc: pp6,
-    title: 'Experienced Team',
-    description: `Our company boasts a team of experienced and skilled professionals. Our craftsmen, designers, and project managers bring years of expertise`,
+    title: 'Flooring',
+    description: `Consider the visual impact and how well the flooring complements the rest of the kitchen design.`,
   },
   {
     imgSrc: pp7,
-    title: 'Customer Satisfaction Guarantee',
-    description: `Your satisfaction is our priority. If there are any concerns or adjustments needed post-project completion, we are committed.`,
+    title: 'Backsplash',
+    description: `Explore various backsplash materials like tile, glass, or metal. Use the backsplash as an opportunity to add a pop of color or a unique design element to the kitchen.`,
   },
   {
     imgSrc: pp8,
-    title: 'Budget-Friendly Options',
-    description: `Our company provides flexible and budget-friendly options without compromising on the quality of work.`,
+    title: 'Storage Solutions',
+    description: `Plan for efficient storage solutions, such as pull-out pantry shelves, deep drawers, and custom cabinets to maximize space.`,
   },
 ];
 
@@ -91,8 +91,9 @@ const KeyPoints = () => {
             </div>
 
             <h3 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black text-center">
-            Why Choose Our <span className="text-primary">Bathroom Remodeling Services</span>
+            Key Points to Consider a  <span className="text-primary">Kitchen Remodel</span>
             </h3>
+            <p className="text-lg font-normal text-center">Kitchen remodeling can involve several different elements, ranging from design and layout to materials and appliances. Here are some key areas to consider when planning a kitchen remodel:</p>
           </div>
 
          

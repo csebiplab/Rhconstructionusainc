@@ -1,7 +1,14 @@
-import mask1 from "@/components/__home_components/Images/Mask1.png";
-import mask2 from "@/components/__home_components/Images/Mask2.png";
-import mask3 from "@/components/__home_components/Images/Mask3.png";
-import mask4 from "@/components/__home_components/Images/Mask4.png";
+import s1 from "../../../../public/assets/kitchen/Kitchen Remodeling Services-1.png"
+import s2 from "../../../../public/assets/kitchen/Kitchen Remodeling Services-2.png"
+import s3 from "../../../../public/assets/kitchen/Kitchen Remodeling Services-3.png"
+import s4 from "../../../../public/assets/kitchen/Kitchen Remodeling Services-4.png"
+import s5 from "../../../../public/assets/kitchen/Kitchen Remodeling Services-5.png"
+import s6 from "../../../../public/assets/kitchen/Kitchen Remodeling Services-6.png"
+import s7 from "../../../../public/assets/kitchen/Kitchen Remodeling Services-7.png"
+import s8 from "../../../../public/assets/kitchen/Kitchen Remodeling Services-8.png"
+import s9 from "../../../../public/assets/kitchen/Kitchen Remodeling Services-9.png"
+import s10 from "../../../../public/assets/kitchen/Kitchen Remodeling Services-10.png"
+
 import Image from "next/image";
 import "swiper/css";
 import "swiper/css/autoplay";
@@ -13,72 +20,92 @@ import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
 import { SwiperNavButtons } from "./SwiperSliderButton";
 
+import "./KitchenRemodelingServices.css"
+
 const breakpoints = {
   0: {
-    slidesPerView: 2,
+    slidesPerView: 1,
   },
   768: {
-    slidesPerView: 4,
+    slidesPerView: 3,
   },
 };
 
 const slideContents = [
   {
-    imageSrc: mask1,
-    title: "Project Planning and Design",
+    imageSrc: s1,
+    title: "Kitchen Sink Remodel",
     description:
-      "We begin by meeting with clients to understand their needs, goals, and budget constraints.",
+      "Embarking on a kitchen sink remodel is an exciting journey that goes beyond mere functionality to redefine the heart of the home.",
   },
   {
-    imageSrc: mask2,
-    title: "Procurement of Materials & Resources",
+    imageSrc: s2,
+    title: "Concrete Kitchen Sink",
     description:
-      "We source high-quality materials and engage skilled laborers and subcontractors necessary for the project.",
+      "A concrete kitchen sink seamlessly blends functionality with contemporary design, making it a popular choice for modern kitchens.",
   },
   {
-    imageSrc: mask3,
-    title: "Quality Control and Assurance",
+    imageSrc: s3,
+    title: "Marble Kitchen Sink",
     description:
-      "Throughout the construction phase, we conduct regular inspections and quality control checks to ensure.",
+      "A marble kitchen sink adds a touch of timeless elegance and sophistication to any culinary space.",
   },
   {
-    imageSrc: mask4,
-    title: "Client Communication and Updates",
+    imageSrc: s4,
+    title: "Concrete Kitchen Floor",
     description:
-      "We maintain open lines of communication with clients, providing regular updates on the progress of their projects.",
+      "A concrete kitchen floor is a contemporary and versatile choice that brings a touch of industrial chic to any home.",
   },
   {
-    imageSrc: mask2,
-    title: "Procurement of Materials & Resources",
+    imageSrc: s5,
+    title: "Polished Concrete Kitchen Floor",
     description:
-      "We source high-quality materials and engage skilled laborers and subcontractors necessary for the project.",
+      "A polished concrete kitchen floor offers a sleek and contemporary aesthetic, seamlessly blending style with functionality.",
   },
   {
-    imageSrc: mask3,
-    title: "Quality Control and Assurance",
+    imageSrc: s6,
+    title: "Concrete Kitchen Cabinets",
     description:
-      "Throughout the construction phase, we conduct regular inspections and quality control checks to ensure.",
+      "Concrete kitchen cabinets bring a unique and modern aesthetic to contemporary home design.",
   },
   {
-    imageSrc: mask4,
-    title: "Client Communication and Updates",
+    imageSrc: s7,
+    title: "Marble Kitchen Floors",
     description:
-      "We maintain open lines of communication with clients, providing regular updates on the progress of their projects.",
+      "The marble kitchen floor exudes timeless elegance and luxury, transforming any culinary space into a masterpiece of sophistication.",
+  },
+  {
+    imageSrc: s8,
+    title: "Luxury Black Marble Kitchen",
+    description:
+      "A luxury black marble kitchen epitomizes sophistication and modern elegance.",
+  },
+  {
+    imageSrc: s9,
+    title: "Pink Marble Kitchen",
+    description:
+      "A pink marble kitchen exudes elegance and sophistication, transforming the heart of the home into a luxurious culinary haven.",
+  },
+  {
+    imageSrc: s10,
+    title: "White Marble Kitchen Flooring",
+    description:
+      "The white marble kitchen floor adds an air of timeless elegance and sophistication to any culinary space.",
   },
 ];
 
 const KitchenRemodelingServices = () => {
   return (
-    <div className="container">
-      <div className="">
-        <div>
+    <div className="bg-[#FFFAEE]">
+      <div className="container">
+      <div className="common__padding__top">
+        <div className="flex flex-col justify-center items-center">
         <HeadingIcon text={headingIconText.kitchenRemodelingServices__IconTxt}/>
-          <h2 className="lg:leading-10 lg:text-4xl text-lg md:py-2 lg:py-4">
-            WORKING PROCESS OF OUR CONSTRUCTION COMPANY IN BROOKLYN
-          </h2>
-          <p className="font-semibold lg:text-base md:text-sm">
-            Certainly! Here's an overview of the working process of our
-            construction company in Brooklyn:
+          <h3 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black  text-center">
+          Best Kitchen Remodeling Services in Brooklyn
+          </h3>
+          <p className="font-normal lg:text-base md:text-sm text-center">
+          As a reputable company, RH Construction USA Inc. prioritizes customer satisfaction, focusing on transparent communication and attention to detail throughout the entire process of kitchen remodeling in Brooklyn. Our commitment to excellence is evident in the use of premium materials, meticulous planning, and adherence to timelines. Various kitchen renovation services are offered by our company:
           </p>
         </div>
 
@@ -103,8 +130,8 @@ const KitchenRemodelingServices = () => {
             // Add your Swiper props here
           >
             {slideContents.map((slide, index) => (
-              <SwiperSlide key={index} className={`text-center py-4`}>
-                <div className="w-full h-[290px] card-sd section-bg rounded-md mb-2">
+              <SwiperSlide key={index} className={`text-center pt-4 !h-auto !md:h-full`}>
+                <div className="w-full !h-full card">
                   <Image
                     src={slide.imageSrc}
                     width={175}
@@ -112,9 +139,9 @@ const KitchenRemodelingServices = () => {
                     alt="mask"
                     className="w-full h-1/2 mb-[6px] rounded-md"
                   />
-                  <div className="text-center py-2 px-1">
-                    <h4 className="text-xs">{slide.title}</h4>
-                    <p className="text-[9px] leading-[16px] my-[8px] text-black">
+                  <div className="text-center pt-2 px-1">
+                    <h4 className="text-lg font-bold">{slide.title}</h4>
+                    <p className="text-base font-normal leading-[16px] mt-[8px] text-black">
                       {slide.description}
                     </p>
                   </div>
@@ -127,6 +154,8 @@ const KitchenRemodelingServices = () => {
         </div>
       </div>
     </div>
+    </div>
+    
   );
 };
 

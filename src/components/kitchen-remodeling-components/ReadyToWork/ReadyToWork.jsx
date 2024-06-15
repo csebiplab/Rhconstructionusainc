@@ -12,7 +12,7 @@ const ReadyToWork = () => {
           <div className="md:col-span-4 flex items-center ">
             <div className="">
               <Image
-                src="/assets/images/ready-to-work.png"
+                src="/assets/kitchen/Ready to Work with us.png"
                 width={940}
                 height={580}
                 alt="ready to work image"
@@ -26,19 +26,20 @@ const ReadyToWork = () => {
             <HeadingIcon text={headingIconText.readyToWork__IconTxt}/>
             </div>
             <h3 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
-            Award Winning Bathroom Renovation Contractors <br />
+            Award Winning Kitchen  Renovation Contractors 
+            <br />
               <span className="text-primary">
               in Brooklyn
               </span>
             </h3>
-            <p className="text-lg font-normal md:text-start text-center py-[10px]">Welcome to a better bathroom remodeling experience.  Ready To Start work with General Contractors in Toronto</p>
-            <div className="flex justify-center md:justify-start pt-[35px]">
+            <p className="text-lg font-normal md:text-start text-center py-[10px]">Welcome to a better kitchen remodeling experience.  Ready To Start work with General Contractors in Toronto</p>
+            <div className="flex justify-center md:justify-start pt-[15px]">
               <button
                 type="submit"
                 className="rounded-md bg-primary px-6 lg:px-10 py-2 text-lg font-medium flex justify-center items-center"
               >
                 <span className="mr-2">
-                <Link href="tel:(416) 994-4597" className="text-white">Get Your Free Estimated</Link>
+                <Link href="tel:(416) 994-4597" className="text-black">Get Your Free Estimated</Link>
                 </span>
               </button>
             </div>

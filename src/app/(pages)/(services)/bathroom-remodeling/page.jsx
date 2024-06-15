@@ -14,10 +14,10 @@ import Constructor from "@/components/bathroom-reno-components/Constructor/Const
 import Expert from "@/components/bathroom-reno-components/Expert/Expert";
 import RatingComponent from "@/components/bathroom-reno-components/RatingComponent";
 import HiringUs from "@/components/bathroom-reno-components/HiringUs/HiringUs";
-// import WhyUs from "@/components/kitchen-remodeling-components/WhyUs/WhyUs";
 import TurnKeys from "@/components/bathroom-reno-components/TurnKeys/TurnKeys";
 import Professional from "@/components/bathroom-reno-components/Professional/Professional";
 import ContactUs from "@/components/bathroom-reno-components/contactUs/ContactUs";
+import WhyUs from "@/components/bathroom-reno-components/WhyUs/WhyUs";
 
 const BathroomReno = () => {
   return (
@@ -61,7 +61,7 @@ const BathroomReno = () => {
       <HiringUs />
 
       {/* ================== WhyUs Section ===== */}
-      {/* <WhyUs /> */}
+      <WhyUs />
 
       {/* ================== BathroomRemodeling Section ===== */}
 
