@@ -3,7 +3,7 @@
 import Image from "next/image";
 
 import hiring1 from "../../../../public/assets/images/hiring1.png";
-import hiring2 from "../../../../public/assets/images/hiring2.jpg";
+import hiring2 from "../../../../public/assets/images/hiring2.png";
 import hiring3 from "../../../../public/assets/images/hiring3.png";
 import hiring4 from "../../../../public/assets/images/hiring4.png";
 import hiring5 from "../../../../public/assets/images/hiring5.png";

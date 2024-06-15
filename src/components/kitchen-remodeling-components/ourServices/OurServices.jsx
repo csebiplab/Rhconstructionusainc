@@ -153,7 +153,7 @@ const OurServices = () => {
                 onChange={handleCheckboxChange}
               />
               <span
-                className={`flex items-center border pr-5  lg:px-32 rounded-3xl lg:py-4 py-2  text-xs md:text-base 3xl:text-lg 5xl:text-[20px] 5xl:leading-[25px] font-bold ${
+                className={`flex items-center border pr-5  lg:px-32 rounded-3xl lg:py-3 py-2 text-[10px] sm:text-xs md:text-base 3xl:text-lg 5xl:text-[20px] 5xl:leading-[25px] font-semibold md:font-bold ${
                   !isChecked ? "text-white bg-black " : "text-body-color"
                 }`}
               >
@@ -173,7 +173,7 @@ const OurServices = () => {
                 Our renovators do or have
               </span>
               <span
-                className={`flex items-center pr-5 lg:px-32 rounded-3xl lg:py-4 py-2 text-xs md:text-base 3xl:text-lg 5xl:text-[20px] 5xl:leading-[25px] font-bold ${
+                className={`flex items-center pr-5 lg:px-32 rounded-3xl lg:py-3 py-2 text-[10px] sm:text-xs md:text-base 3xl:text-lg 5xl:text-[20px] 5xl:leading-[25px] font-semibold md:font-bold ${
                   isChecked ? "text-white bg-black " : "text-body-color"
                 }`}
               >

@@ -101,7 +101,7 @@ const KitchenRemodelingServices = () => {
       <div className="common__padding__top">
         <div className="flex flex-col justify-center items-center">
         <HeadingIcon text={headingIconText.kitchenRemodelingServices__IconTxt}/>
-          <h3 className="lg:leading-10 lg:text-4xl text-lg md:py-2 lg:py-4 text-center">
+          <h3 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black  text-center">
           Best Kitchen Remodeling Services in Brooklyn
           </h3>
           <p className="font-normal lg:text-base md:text-sm text-center">

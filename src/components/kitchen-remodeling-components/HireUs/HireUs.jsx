@@ -95,11 +95,11 @@ const HireUs = () => {
               </div>
             </div>
 
-            <div className=" border-2 my-6 md:my-0 cart1">
-              <p className="title-bg text-center 2xl:py-[15px] py-[10px] text-white text-base md:text-[22px] font-bold">
+            <div className="w-full border-2 my-6 md:my-0 cart1">
+              <p className="title-bg text-center 2xl:py-[15px] py-[10px] text-white text-base md:text-lg font-bold">
               Usual Kitchen Renovators
               </p>
-              <div className=" grid grid-rows-8 3xl:py-[35px] py-[25px] 3xl:px-[25px] px-[20px] 2xl:text-[16px] lg:text-[14px] xs:text-[9px]  ">
+              <div className=" grid grid-rows-8 3xl:py-[35px] py-[25px] px-lg 2xl:text-[16px] lg:text-[14px] xs:text-[9px]  ">
                 {usualPool.map((usual, idx) => (
                   <div
                     key={idx}
@@ -108,22 +108,22 @@ const HireUs = () => {
                     <Image
                       src="/assets/icons/x.png"
                       alt="x"
-                      width={23}
-                      height={23}
-                      className="2xl:h-[23px] 2xl:w-[23px] h-[15px] w-[15px]"
+                      width={20}
+                      height={20}
+                      className="2xl:h-[20px] 2xl:w-[20px] h-[15px] w-[15px]"
                     />
-                    <p className="text-sm md:text-base text-black font-bold">
+                    <p className="text-xs md:text-sm text-black font-bold">
                       {usual.title}
                     </p>
                   </div>
                 ))}
               </div>
             </div>
-            <div className=" border-2 my-6 md:my-0 cart2">
-              <p className="title-bg2 text-center 2xl:py-[15px] py-[10px] text-white text-base md:text-[22px] font-bold">
+            <div className="border-2 my-6 md:my-0 cart2">
+              <p className="title-bg2 text-center 2xl:py-[15px] py-[10px] text-white text-base md:text-lg font-bold">
               Our Kitchen Renovation Contractors
               </p>
-              <div className=" grid grid-rows-8 3xl:py-[35px] py-[25px] 3xl:px-[25px] px-[20px] 2xl:text-[16px] lg:text-[14px] xs:text-[9px]  ">
+              <div className=" grid grid-rows-8 3xl:py-[35px] py-[25px]  px-[20px] 2xl:text-[16px] lg:text-[14px] xs:text-[9px]  ">
                 {easyPool.map((usual, idx) => (
                   <div
                     key={idx}
@@ -132,11 +132,11 @@ const HireUs = () => {
                     <Image
                       src="/assets/icons/r.png"
                       alt="r"
-                      width={23}
-                      height={23}
-                      className="2xl:h-[23px] 2xl:w-[23px] h-[15px] w-[15px]"
+                      width={20}
+                      height={20}
+                      className="2xl:h-[20px] 2xl:w-[20px] h-[15px] w-[15px]"
                     />
-                    <p className="text-xs md:text-base text-black font-bold">
+                    <p className="text-xs md:text-sm text-black font-bold">
                       {usual.title}
                     </p>
                   </div>
