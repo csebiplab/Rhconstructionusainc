@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import "../../../styles/Home.css";
 
 import RatingComponent from "@/components/__home_components/RatingComponent";
@@ -18,7 +18,7 @@ import AestheticKitchen from "@/components/kitchen-remodeling-components/Aesthet
 import Review from "@/components/kitchen-remodeling-components/Review/Review";
 import TrustUs from "@/components/kitchen-remodeling-components/TrustUs/TrustUs";
 import WorkingProcess from "@/components/kitchen-remodeling-components/WorkingProcess/WorkingProcess";
-import OurServices from "@/components/kitchen-remodeling-components/OurServices/OurServices";
+import OurServices from "@/components/kitchen-remodeling-components/ourServices/OurServices";
 
 const KitchenRemodeling = () => {
   return (
@@ -27,9 +27,9 @@ const KitchenRemodeling = () => {
       <KitchenRemodelingHero />
 
       {/* =============== RatingComponent  Section================= */}
-      
+
       <div className="bg___color">
-      <RatingComponent />
+        <RatingComponent />
       </div>
 
       {/* =============== AboutKitchenRemodeling  Section================= */}
@@ -48,8 +48,8 @@ const KitchenRemodeling = () => {
       <Review />
 
       {/* =============== OurServices  Section================= */}
-      
-      <OurServices/>
+
+      <OurServices />
 
       {/* =============== ChooseUs  Section================= */}
       <ChooseUs />
@@ -77,7 +77,7 @@ const KitchenRemodeling = () => {
 
       {/* =============== LocationMap  Section================= */}
       <LocationMap />
-      
+
       {/* =============== ContactUs  Section================= */}
       <ContactUs />
     </main>
