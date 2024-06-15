@@ -1,26 +1,24 @@
 "use client";
 
 import { useState } from "react";
-import { MdArrowForwardIos } from "react-icons/md";
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
 
 import "./OurServices.css";
-import p1 from "../../../../public/assets/kitchen/p1.png"
-import p2 from "../../../../public/assets/kitchen/p2.png"
-import p3 from "../../../../public/assets/kitchen/p3.png"
-import p4 from "../../../../public/assets/kitchen/p4.png"
-import p5 from "../../../../public/assets/kitchen/p5.png"
-import p6 from "../../../../public/assets/kitchen/p6.png"
-import p7 from "../../../../public/assets/kitchen/p7.png"
-import p8 from "../../../../public/assets/kitchen/p8.png"
-import p9 from "../../../../public/assets/kitchen/p9.png"
-import p10 from "../../../../public/assets/kitchen/p10.png"
-import p11 from "../../../../public/assets/kitchen/p11.png"
-import p12 from "../../../../public/assets/kitchen/p12.png"
-import p13 from "../../../../public/assets/kitchen/p13.png"
-import p14 from "../../../../public/assets/kitchen/p14.png"
-
+import p1 from "../../../../public/assets/kitchen/p1.png";
+import p2 from "../../../../public/assets/kitchen/p2.png";
+import p3 from "../../../../public/assets/kitchen/p3.png";
+import p4 from "../../../../public/assets/kitchen/p4.png";
+import p5 from "../../../../public/assets/kitchen/p5.png";
+import p6 from "../../../../public/assets/kitchen/p6.png";
+import p7 from "../../../../public/assets/kitchen/p7.png";
+import p8 from "../../../../public/assets/kitchen/p8.png";
+import p9 from "../../../../public/assets/kitchen/p9.png";
+import p10 from "../../../../public/assets/kitchen/p10.png";
+import p11 from "../../../../public/assets/kitchen/p11.png";
+import p12 from "../../../../public/assets/kitchen/p12.png";
+import p13 from "../../../../public/assets/kitchen/p13.png";
+import p14 from "../../../../public/assets/kitchen/p14.png";
 
 import Image from "next/image";
 
@@ -89,7 +87,7 @@ const services = [
   {
     title: "Competitive Pricing",
     img: p7,
-  }
+  },
 ];
 const services2 = [
   {
@@ -119,7 +117,7 @@ const services2 = [
   {
     title: "Client dissatisfaction and negative feedback",
     img: p14,
-  }
+  },
 ];
 
 const OurServices = () => {
@@ -133,13 +131,12 @@ const OurServices = () => {
     <div className="!overflow-hidden">
       <div className="bg___color">
         <div className="container common__padding__top">
-        <div className="">
+          <div className="">
             <div className="flex justify-center items-center pb-2">
-            <HeadingIcon text={headingIconText.doanddonot__IconTxt}/>
-              
+              <HeadingIcon text={headingIconText.doanddonot__IconTxt} />
             </div>
             <h3 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-center">
-            Our Renovators <span className="text-primary"> Do or Don't</span>
+              Our Renovators <span className="text-primary"> Do or Don't</span>
             </h3>
           </div>
 
@@ -227,7 +224,7 @@ const OurServices = () => {
                     </div>
                   </SwiperSlide>
                 ))}
-                <SwiperNavButtons/>
+                <SwiperNavButtons />
               </Swiper>
             )}
 
@@ -269,7 +266,7 @@ const OurServices = () => {
                     </div>
                   </SwiperSlide>
                 ))}
-                <SwiperNavButtons/>
+                <SwiperNavButtons />
               </Swiper>
             )}
           </div>
