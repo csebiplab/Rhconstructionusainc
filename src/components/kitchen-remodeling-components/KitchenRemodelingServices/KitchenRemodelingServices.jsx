@@ -101,9 +101,9 @@ const KitchenRemodelingServices = () => {
       <div className="common__padding__top">
         <div className="flex flex-col justify-center items-center">
         <HeadingIcon text={headingIconText.kitchenRemodelingServices__IconTxt}/>
-          <h2 className="lg:leading-10 lg:text-4xl text-lg md:py-2 lg:py-4 text-center">
+          <h3 className="lg:leading-10 lg:text-4xl text-lg md:py-2 lg:py-4 text-center">
           Best Kitchen Remodeling Services in Brooklyn
-          </h2>
+          </h3>
           <p className="font-normal lg:text-base md:text-sm text-center">
           As a reputable company, RH Construction USA Inc. prioritizes customer satisfaction, focusing on transparent communication and attention to detail throughout the entire process of kitchen remodeling in Brooklyn. Our commitment to excellence is evident in the use of premium materials, meticulous planning, and adherence to timelines. Various kitchen renovation services are offered by our company:
           </p>
@@ -130,8 +130,8 @@ const KitchenRemodelingServices = () => {
             // Add your Swiper props here
           >
             {slideContents.map((slide, index) => (
-              <SwiperSlide key={index} className={`text-center py-4 !h-auto !md:h-full`}>
-                <div className="w-full !h-full card mb-2">
+              <SwiperSlide key={index} className={`text-center pt-4 !h-auto !md:h-full`}>
+                <div className="w-full !h-full card">
                   <Image
                     src={slide.imageSrc}
                     width={175}
@@ -139,9 +139,9 @@ const KitchenRemodelingServices = () => {
                     alt="mask"
                     className="w-full h-1/2 mb-[6px] rounded-md"
                   />
-                  <div className="text-center py-2 px-1">
+                  <div className="text-center pt-2 px-1">
                     <h4 className="text-lg font-bold">{slide.title}</h4>
-                    <p className="text-lg font-normal leading-[16px] my-[8px] text-black">
+                    <p className="text-base font-normal leading-[16px] mt-[8px] text-black">
                       {slide.description}
                     </p>
                   </div>

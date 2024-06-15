@@ -75,7 +75,7 @@ const HireUs = () => {
     <div className="bg___color">
       <div className="container">
         <div className="2xl:py-20 py-10 shadow-sm md:mx-0 xs:mx-[35px] ">
-          <div className=" grid md:grid-cols-3 2xl:gap-[50px] md:gap-[30px] ">
+          <div className=" grid md:grid-cols-3 2xl:gap-[40px] md:gap-[30px] ">
             <div className="mx-auto flex flex-col items-center justify-center">
               <div className="w-full flex md:justify-start justify-center md:items-start items-center">
               <HeadingIcon text={headingIconText.hireUs__IconTxt}/>

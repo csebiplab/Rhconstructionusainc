@@ -12,7 +12,7 @@ export const SwiperNavButtons = () => {
       {/* <button onClick={() => swiper.slidePrev()}>Prev</button>
       <button onClick={() => swiper.slideNext()}>Next</button> */}
       <>
-        <div className="flex lg:gap-8 gap-3 items-center justify-center lg:pt-6 pt-4">
+        <div className="flex lg:gap-8 gap-3 items-center justify-center lg:py-6 py-5">
           {/* ========= first line ======== */}
           <div className="lg:w-[330px] w-[154px] h-0.5 bg-black">
 
