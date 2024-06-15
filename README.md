@@ -1,2 +1,0 @@
-username: rhadminupdated
-pass: rhadminpass
