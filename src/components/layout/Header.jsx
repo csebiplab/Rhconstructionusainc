@@ -329,12 +329,12 @@ export function Header() {
                   <span className="text-sm  text-dark block">
                     Quick Contact
                   </span>
-                  <Link
+                  <a
                     href={`tel:+1 (646) 683-4612`}
                     className="text-sm font-bold text-dark"
                   >
                     +1 (646) 683-4612
-                  </Link>
+                  </a>
                 </div>
               </div>
               <IconButton
