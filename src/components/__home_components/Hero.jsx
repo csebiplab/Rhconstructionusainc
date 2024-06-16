@@ -23,12 +23,14 @@ const Hero = () => {
                 roofing, and construction services.
               </p>
               <div className="mb-4 md:mb-0">
-                <Button className="!px-[34px] !py-4 !rounded-none bg-primary hover:bg-gray-900 text-black hover:text-white text-md lg:text-lg font-semibold capitalize flex items-center gap-x-2">
-                  <span>Get an Estimate </span>
-                  <span>
-                    <FaChevronRight />
-                  </span>
-                </Button>
+                <a href={`tel:+1 (646) 683-4612`}>
+                  <Button className="!px-[34px] !py-4 !rounded-none bg-primary hover:bg-gray-900 text-black hover:text-white text-md lg:text-lg font-semibold capitalize flex items-center gap-x-2">
+                    <span>Get an Estimate </span>
+                    <span>
+                      <FaChevronRight />
+                    </span>
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
