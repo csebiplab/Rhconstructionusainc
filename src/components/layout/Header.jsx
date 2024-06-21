@@ -26,8 +26,8 @@ import React from "react";
 
 const our_service_menu_items = {
   interior: [
-    { title: "Bathroom Remodeling", route: "/bathroom-remodeling" },
-    { title: "Kitchen Remodeling", route: "/kitchen-remodeling" },
+    { title: "Bathroom Remodeling", route: "/bathroom-remodeling-in-brooklyn" },
+    { title: "Kitchen Remodeling", route: "/kitchen-remodeling-in-brooklyn" },
     { title: "Painting", route: "/painting" },
     { title: "Sheetrock", route: "/sheetrock" },
     { title: "Plastering", route: "/plastering" },
@@ -176,17 +176,6 @@ function NavList() {
           Customer Reviews
         </ListItem>
       </Typography>
-      {/* <Typography
-        as={Link}
-        href="/bathroom-remodeling"
-        variant="small"
-        color="blue-gray"
-        className="font-medium rounded-full text-sm  text-black"
-      >
-        <ListItem className="flex items-center rounded-full hover:bg-primary px-1 lg:px-4 xl:px-5 2xl:px-6">
-          Bathroom Renovation
-        </ListItem>
-      </Typography> */}
       <Typography
         as={Link}
         href="/blogs"
