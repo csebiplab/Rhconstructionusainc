@@ -38,12 +38,12 @@ const ReadyToWork = () => {
                 className="rounded-md bg-primary px-6 lg:px-10 py-2 text-lg font-medium flex justify-center items-center"
               >
                 <span className="mr-2">
-                <Link href="tel:(416) 994-4597" className="text-white">Get Your Free Estimated</Link>
+                <Link href={`tel:+1 (646) 683-4612`} className="text-black">Get Your Free Estimated</Link>
                 </span>
               </button>
             </div>
             <p className="text-black text-2xl font-bold leading-normal mt-4 text-center md:text-left">
-            or Call Us: <span className="text-primary"><Link href="tel:(416) 994-4597">(646) 683-4612</Link></span>
+            or Call Us: <span className="text-primary"><Link href={`tel:+1 (646) 683-4612`}>+1 (646) 683-4612</Link></span>
             </p>
           </div>
         </div>

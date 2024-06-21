@@ -1,5 +1,6 @@
 import Image from "next/image";
 import "./ContactUs.css"
+import Link from "next/link";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import {
   FaLocationArrow,
@@ -21,15 +22,23 @@ export default function ContactUs() {
                 <h2 className=" lg:text-[36px] text-[20px] ">Contact Us</h2>
                 <div className="flex gap-2 items-center lg:text-[18px] text-[14px] lg:py-8 py-4 justify-center md:justify-start">
                   <FaMapLocationDot className=" lg:w-5 lg:h-5 w-auto h-auto" />
-                  <p> 553 E 2nd St, Brooklyn, NY 11218, United States</p>
+                  <Link href={`Location:553 E 2nd St, Brooklyn, NY 11218, United States`}>
+                  <p > 553 E 2nd St, Brooklyn, NY 11218, United States</p>
+                  </Link>
                 </div>
                 <div className="flex gap-2 items-center lg:text-[18px] text-[14px] justify-center md:justify-start">
                   <FaPhoneVolume className=" lg:w-5 lg:h-5 w-auto h-auto" />
+                  
+                  <Link href={`tel:+1 (646) 683-4612`}>
                   <p> +1 (646) 683-4612</p>
+                  </Link>
                 </div>
                 <div className=" flex gap-2 my-auto items-center lg:text-[18px] text-[14px] lg:py-8 py-4 justify-center md:justify-start">
                   <IoIosMail className=" lg:w-5 lg:h-5 w-auto h-auto" />
+                  
+                  <Link href={`email:rhconusa@gmail.com`}>
                   <p>rhconusa@gmail.com</p>
+                  </Link>
                 </div>
                 <div className="flex lg:gap-8 gap-3 justify-center md:justify-start">
                   <FaFacebook className=" lg:w-6 lg:h-6 w-auto h-auto" />
