@@ -11,8 +11,8 @@ const roboto = Roboto_Slab({ subsets: ['latin'], display: 'swap', adjustFontFall
 export async function generateMetadata() {
   try {
     const [metaDataResponse, googleVerificationResponse] = await Promise.all([
-      fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/home`),
-      fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/siteMap`),
+      fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/home`, { cache: "no-store" }),
+      fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/siteMap`, { cache: "no-store" }),
     ]);
 
     if (!metaDataResponse.ok || !googleVerificationResponse.ok) {
@@ -39,7 +39,6 @@ export async function generateMetadata() {
       }
     };
   } catch (error) {
-    console.error('Error fetching metadata:', error);
     return {
       title: "Construction Company in Brooklyn | RH Construction USA Inc.",
       description: "As one of the leading construction companies in Brooklyn, RH Construction USA Inc. offers top-notch general contractor services in Brooklyn.",
