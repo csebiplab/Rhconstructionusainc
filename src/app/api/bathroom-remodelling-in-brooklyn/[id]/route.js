@@ -3,7 +3,7 @@ import connectMongoDB from "@/lib/db";
 import BathroomRemodelling from "@/models/bathroomRemodelling.model";
 import { NextResponse } from "next/server";
 
-export async function PATCH(request, { params }) {
+export async function PUT(request, { params }) {
     const { id } = params;
     const { title, description, keywords } = await request.json();
 
