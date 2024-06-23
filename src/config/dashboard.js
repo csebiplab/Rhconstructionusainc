@@ -54,6 +54,11 @@ export const dashboardConfig = {
           href: "/dashboard/allpages/bathroom-remodelling-in-brooklyn",
           icon: "dessert",
         },
+        {
+          title: "Kitchen Remodelling",
+          href: "/dashboard/allpages/kitchen-remodelling-in-brooklyn",
+          icon: "dessert",
+        },
       ],
     },
     {
