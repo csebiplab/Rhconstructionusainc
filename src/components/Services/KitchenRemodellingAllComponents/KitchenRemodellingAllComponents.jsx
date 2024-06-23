@@ -1,5 +1,6 @@
 "use client";
-import "../../../styles/Home.css";
+
+import "../../../app/styles/Home.css";
 
 import RatingComponent from "@/components/__home_components/RatingComponent";
 import LocationMap from "@/components/bathroom-reno-components/LocationMap/LocationMap";
@@ -20,7 +21,7 @@ import TrustUs from "@/components/kitchen-remodeling-components/TrustUs/TrustUs"
 import WorkingProcess from "@/components/kitchen-remodeling-components/WorkingProcess/WorkingProcess";
 import OurServices from "@/components/kitchen-remodeling-components/ourServices/OurServices";
 
-const KitchenRemodeling = () => {
+const KitchenRemodelingAllComponents = () => {
   return (
     <main>
       {/* =============== KitchenRemodelingHero  Section================= */}
@@ -84,4 +85,4 @@ const KitchenRemodeling = () => {
   );
 };
 
-export default KitchenRemodeling;
+export default KitchenRemodelingAllComponents;

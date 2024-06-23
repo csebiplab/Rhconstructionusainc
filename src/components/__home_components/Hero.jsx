@@ -15,15 +15,12 @@ const Hero = () => {
                 Brooklyn
               </h1>
               <p className="text-sm lg:text-base mb-5 leading-6 mt-4 text-black">
-                {/* Top-Rated general constructor in Brooklyn, delivering
-                exceptional <br /> construction & renovation services with
-                expertise and integrity */}
                 Best general contractor in Brooklyn, specializing in home
                 renovations, <br /> bathroom renovations & kitchen remodeling,
                 roofing, and construction services.
               </p>
               <div className="mb-4 md:mb-0">
-                <a href={`tel:+1 (646) 683-4612`}>
+                <a href={`tel:+1 (646) 683-4612`} className="inline-flex">
                   <Button className="!px-[34px] !py-4 !rounded-none bg-primary hover:bg-gray-900 text-black hover:text-white text-md lg:text-lg font-semibold capitalize flex items-center gap-x-2">
                     <span>Get an Estimate </span>
                     <span>
