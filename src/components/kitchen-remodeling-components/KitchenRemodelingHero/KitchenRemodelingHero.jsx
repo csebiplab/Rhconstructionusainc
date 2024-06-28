@@ -17,7 +17,7 @@ const KitchenRemodelingHero = () => {
               <br/> in Brooklyn
               </h1>
               <p className="text-base lg:text-lg font-normal mb-5 leading-6 mt-4 text-black">
-              Remodel your space with our expert kitchen renovators, who specialize in kitchen remodeling and renovation services in Brooklyn.
+              Remodel your space with our expert kitchen renovators, who specialize <br className="hidden 5xl:block"/> in kitchen remodeling and renovation services in Brooklyn.
               </p>
               <div className="mb-4 md:mb-0">
               <Link

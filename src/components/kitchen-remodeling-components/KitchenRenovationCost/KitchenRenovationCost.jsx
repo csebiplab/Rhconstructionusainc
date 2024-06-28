@@ -41,7 +41,7 @@ const KitchenRenovationCost = () => {
               className="text-sm font-bold text-black"
             >
               <Button className="!px-[34px] !py-2 rounded-[10px] bg-primary text-black text-xs lg:text-lg font-bold capitalize flex items-center gap-x-2">
-                <span>Get an Estimate </span>
+                <span>Learn More</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="9"
