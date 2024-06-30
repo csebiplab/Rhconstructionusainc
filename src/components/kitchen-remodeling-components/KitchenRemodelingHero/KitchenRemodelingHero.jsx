@@ -1,6 +1,7 @@
 "use client"
 import { Button } from "@material-tailwind/react";
 import Image from "next/image";
+import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa6";
 import "../../kitchen-remodeling-components/KitchenRemodelingHero/KitchenRemodelingHero.css"
 
@@ -16,15 +17,20 @@ const KitchenRemodelingHero = () => {
               <br/> in Brooklyn
               </h1>
               <p className="text-base lg:text-lg font-normal mb-5 leading-6 mt-4 text-black">
-              Remodel your space with our expert kitchen renovators, who specialize in kitchen remodeling and renovation services in Brooklyn.
+              Remodel your space with our expert kitchen renovators, who specialize <br className="hidden 5xl:block"/> in kitchen remodeling and renovation services in Brooklyn.
               </p>
               <div className="mb-4 md:mb-0">
-                <Button className="!px-[34px] !py-4 !rounded-none bg-primary hover:bg-gray-900 text-black hover:text-white text-xs lg:text-lg font-bold capitalize flex items-center gap-x-2">
-                  <span>Get an Estimate </span>
-                  <span>
-                    <FaChevronRight />
-                  </span>
-                </Button>
+              <Link
+                  href={`tel:+1 (646) 683-4612`}
+                  className="text-sm font-bold text-black"
+                >
+                  <Button className="!px-[34px] !py-4 !rounded-none bg-primary text-black text-xs lg:text-lg font-bold capitalize flex items-center gap-x-2">
+                    <span>Get an Estimate </span>
+                    <span>
+                      <FaChevronRight />
+                    </span>
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

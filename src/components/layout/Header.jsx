@@ -315,12 +315,12 @@ export function Header() {
                   className="w-7 h-7 2xl:w-[37px] 2xl:h-[37px]"
                 />
                 <div>
-                  <span className="text-sm  text-dark block">
+                  <span className=" text-sm lg:text-base 5xl:text-[17px] font-normaltext-dark block">
                     Quick Contact
                   </span>
                   <a
                     href={`tel:+1 (646) 683-4612`}
-                    className="text-sm font-bold text-dark"
+                    className="text-[15px] xl:text-base 3xl:text-lg 5xl:text-[20px] font-bold text-dark"
                   >
                     +1 (646) 683-4612
                   </a>
