@@ -3,12 +3,12 @@
 import Image from "next/image";
 import { useState } from "react";
 
-// import bathroom from "../../../../public/assets/services/bathroom.png";
-// import sheetrock from "../../../../public/assets/services/sheetrock.png";
-// import plastering from "../../../../public/assets/services/plastering.png";
-// import plumbing from "../../../../public/assets/services/plumbing.png";
-// import kitchen from "../../../../public/assets/services/kitchen.png";
-// import painting from "../../../../public/assets/services/painting.png";
+// import bathroom from "../../../../public/assets/serviceImgs/bathroom.png";
+// import sheetrock from "../../../../public/assets/serviceImgs/sheetrock.png";
+// import plastering from "../../../../public/assets/serviceImgs/plastering.png";
+// import plumbing from "../../../../public/assets/serviceImgs/plumbing.png";
+// import kitchen from "../../../../public/assets/serviceImgs/kitchen.png";
+// import painting from "../../../../public/assets/serviceImgs/painting.png";
 
 import SmallHeadingWithIcon from "@/components/ui/SmallHeadingWithIcon";
 import { smHeadingTexts } from "@/constants/smHeadingTexts";
