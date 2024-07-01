@@ -51,59 +51,59 @@ const breakpoints = {
 const interior = [
   {
     title: "Bathroom Remodeling",
-    img: "/assets/services/bathroom.png",
+    img: "/assets/serviceImgs/bathroom.png",
     // img: bathroom,
   },
   {
     title: "Sheetrock",
-    img: "/assets/services/sheetrock.png",
+    img: "/assets/serviceImgs/sheetrock.png",
     // img: sheetrock,
   },
   {
     title: "Plastering",
-    img: "/assets/services/plastering.png",
+    img: "/assets/serviceImgs/plastering.png",
     // img: plastering,
   },
   {
     title: "Plumbing",
-    img: "/assets/services/plumbing.png",
+    img: "/assets/serviceImgs/plumbing.png",
     // img: plumbing,
   },
   {
     title: "Kitchen Remodeling",
-    img: "/assets/services/kitchen.png",
+    img: "/assets/serviceImgs/kitchen.png",
     // img: kitchen,
   },
   {
     title: " Painting",
-    img: "/assets/services/painting.png",
+    img: "/assets/serviceImgs/painting.png",
     // img: painting,
   },
 ];
 const exterior = [
   {
     title: "Roofing",
-    img: "/assets/services/roofing.png",
+    img: "/assets/serviceImgs/roofing.png",
   },
   {
     title: "Pointing",
-    img: "/assets/services/pointing.png",
+    img: "/assets/serviceImgs/pointing.png",
   },
   {
     title: "Water Proofing",
-    img: "/assets/services/water.png",
+    img: "/assets/serviceImgs/water.png",
   },
   {
     title: "Brown Stone Repair",
-    img: "/assets/services/brown.png",
+    img: "/assets/serviceImgs/brown.png",
   },
   {
     title: "Brick Works",
-    img: "/assets/services/brick.png",
+    img: "/assets/serviceImgs/brick.png",
   },
   {
     title: " Power Wash",
-    img: "/assets/services/power.png",
+    img: "/assets/serviceImgs/power.png",
   },
 ];
 
