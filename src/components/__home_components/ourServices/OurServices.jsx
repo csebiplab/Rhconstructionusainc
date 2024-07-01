@@ -5,11 +5,41 @@ import { useState } from "react";
 
 import SmallHeadingWithIcon from "@/components/ui/SmallHeadingWithIcon";
 import { smHeadingTexts } from "@/constants/smHeadingTexts";
+
+import { Navigation, Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import "swiper/css/virtual";
+
+const breakpoints = {
+  0: {
+    slidesPerView: 1,
+    spaceBetween: 30,
+  },
+  640: {
+    slidesPerView: 2,
+    spaceBetween: 20,
+  },
+  767: {
+    slidesPerView: 3,
+    spaceBetween: 20,
+  },
+  1024: {
+    slidesPerView: 4,
+    spaceBetween: 20,
+  },
+  1280: {
+    slidesPerView: 4,
+    spaceBetween: 20,
+  },
+  1440: {
+    slidesPerView: 5,
+    spaceBetween: 20,
+  },
+};
 
 const interior = [
   {
@@ -72,24 +102,11 @@ export default function OurServices() {
   };
 
   return (
-    <div className=" bg-[#FFB7031A]">
+    <div className="overflow-hidden bg-[#FFB7031A]">
       <div className="container py-6 lg:py-[55px]">
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-40 gap-4 lg:p-5 md:p-3 items-end text-sm">
           <div className="">
             <div className="flex justify-center md:justify-start items-center pb-2">
-              {/* <div className="flex items-center gap-x-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="23"
-                  height="12"
-                  viewBox="0 0 23 12"
-                  fill="none"
-                >
-                  <circle cx="6" cy="6" r="6" fill="#FFB703" />
-                  <circle cx="16.667" cy="6" r="6" fill="black" />
-                </svg>
-                <p className="text-sm">Services</p>
-              </div> */}
               <SmallHeadingWithIcon
                 smallHeadingText={smHeadingTexts.ourServices}
               />
@@ -170,9 +187,24 @@ export default function OurServices() {
 
         <div className="py-5 lg:py-10">
           {!isChecked && (
-            <div className="grid grid-cols-3 lg:grid-cols-6 gap-5 gap-y-8">
+            // <div className="grid grid-cols-3 lg:grid-cols-6 gap-5 gap-y-8">
+
+            <Swiper
+              modules={[Navigation, Autoplay]}
+              breakpoints={breakpoints}
+              loop={true}
+              autoplay={{
+                delay: 3000,
+                pauseOnMouseEnter: false,
+                disableOnInteraction: false,
+                stopOnLastSlide: false,
+              }}
+              speed={3000}
+              allowTouchMove={false}
+              className="!px-5 md:px-0 !overflow-visible"
+            >
               {interior.map((service, index) => (
-                <div
+                <SwiperSlide
                   key={index}
                   className="col-span-1 border-2 rounded border-black"
                 >
@@ -192,14 +224,27 @@ export default function OurServices() {
                       />
                     </div>
                   </div>
-                </div>
+                </SwiperSlide>
               ))}
-            </div>
+            </Swiper>
           )}
           {isChecked && (
-            <div className="grid grid-cols-3 lg:grid-cols-6 gap-5 gap-y-8">
+            <Swiper
+              modules={[Navigation, Autoplay]}
+              breakpoints={breakpoints}
+              loop={true}
+              autoplay={{
+                delay: 3000,
+                pauseOnMouseEnter: false,
+                disableOnInteraction: false,
+                stopOnLastSlide: false,
+              }}
+              speed={3000}
+              allowTouchMove={false}
+              className="!px-5 md:px-0 !overflow-visible"
+            >
               {exterior.map((service, index) => (
-                <div
+                <SwiperSlide
                   key={index}
                   className="col-span-1 border-2 rounded border-black"
                 >
@@ -219,51 +264,10 @@ export default function OurServices() {
                       />
                     </div>
                   </div>
-                </div>
-              ))}
-            </div>
-          )}
-
-          {/* PHONE VIEW SWIPER SLIDER STARTS */}
-          {/* <div className="hidden mb-5">
-            <Swiper
-              slidesPerView={1}
-              modules={[Autoplay, Navigation]}
-              loop={true}
-              autoplay={{
-                delay: 3000,
-                pauseOnMouseEnter: false,
-                disableOnInteraction: false,
-                stopOnLastSlide: false,
-              }}
-              speed={3000}
-              allowTouchMove={false}
-            >
-              {interior.map((service, index) => (
-                <SwiperSlide key={index} className={`text-center !px-10`}>
-                  <div className="col-span-1 border-2 border-black px-10 mx-auto rounded-lg shadow-lg bg-[#ffb80305] relative">
-                    <div className="">
-                      <div className=" py-7 ">
-                        <p className="mt-4 py-5  mx-auto text-center lg:text-[20px]  text-xs">
-                          {service.title}{" "}
-                        </p>
-                      </div>
-                      <div className="absolute  top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                        <img
-                          className=" lg:w-20 lg:h-20 w-14 h-14 bg-white rounded-full border-black"
-                          src={service.img.src}
-                          alt="Profile"
-                        />
-                      </div>
-                    </div>
-                  </div>
                 </SwiperSlide>
               ))}
-
-              <SwiperNavButtons />
             </Swiper>
-          </div> */}
-          {/* PHONE VIEW SWIPER SLIDER ENDS */}
+          )}
 
           <div className="block md:hidden">
             <p className="md:text-base text-[12px] leading-[208%] lg:leading-[250%] text-black text-center md:text-start">
