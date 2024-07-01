@@ -3,6 +3,13 @@
 import Image from "next/image";
 import { useState } from "react";
 
+import bathroom from "../../../../public/assets/services/bathroom.png";
+import sheetrock from "../../../../public/assets/services/sheetrock.png";
+import plastering from "../../../../public/assets/services/plastering.png";
+import plumbing from "../../../../public/assets/services/plumbing.png";
+import kitchen from "../../../../public/assets/services/kitchen.png";
+import painting from "../../../../public/assets/services/painting.png";
+
 import SmallHeadingWithIcon from "@/components/ui/SmallHeadingWithIcon";
 import { smHeadingTexts } from "@/constants/smHeadingTexts";
 
@@ -44,27 +51,32 @@ const breakpoints = {
 const interior = [
   {
     title: "Bathroom Remodeling",
-    img: "/assets/services/bithrom.png",
+    // img: "/assets/services/bathroom.png",
+    img: bathroom,
   },
   {
     title: "Sheetrock",
-    img: "/assets/services/sheetrock.png",
+    // img: "/assets/services/sheetrock.png",
+    img: sheetrock,
   },
   {
     title: "Plastering",
-    img: "/assets/services/plastering.png",
+    // img: "/assets/services/plastering.png",
+    img: plastering,
   },
   {
     title: "Plumbing",
-    img: "/assets/services/plumbing.png",
+    img: plumbing,
   },
   {
     title: "Kitchen Remodeling",
-    img: "/assets/services/kitchen.png",
+    // img: "/assets/services/kitchen.png",
+    img: kitchen,
   },
   {
     title: " Painting",
-    img: "/assets/services/painting.png",
+    // img: "/assets/services/painting.png",
+    img: painting,
   },
 ];
 const exterior = [

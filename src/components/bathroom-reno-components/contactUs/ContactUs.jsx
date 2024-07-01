@@ -2,11 +2,7 @@ import Image from "next/image";
 import "./ContactUs.css";
 import Link from "next/link";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
-import {
-  FaMapLocationDot,
-  FaPhoneVolume,
-  FaXTwitter,
-} from "react-icons/fa6";
+import { FaMapLocationDot, FaPhoneVolume, FaXTwitter } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 import contactUsLogo from "../../../../public/assets/logos/contact-logo.png";
 
@@ -18,7 +14,9 @@ export default function ContactUs() {
           <div className="grid grid-cols-1 gap-x-16 lg:grid-cols-6 items-center ">
             <div className="lg:col-span-3 py-[60px] pl-[60px] pr-[50px] contact__bg">
               <div className="text-center md:text-start">
-                <h4 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black text-center md:text-left">Contact Us</h4>
+                <h4 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black text-center md:text-left">
+                  Contact Us
+                </h4>
                 <div className="flex gap-2 items-center lg:text-[18px] text-[14px] lg:py-8 py-4 justify-center md:justify-start">
                   <FaMapLocationDot className=" lg:w-5 lg:h-5 w-auto h-auto" />
                   <Link
@@ -30,9 +28,9 @@ export default function ContactUs() {
                 <div className="flex gap-2 items-center lg:text-[18px] text-[14px] justify-center md:justify-start">
                   <FaPhoneVolume className=" lg:w-5 lg:h-5 w-auto h-auto" />
 
-                  <Link href={`tel:+1 (646) 683-4612`}>
+                  <a href={`tel:+1 (646) 683-4612`}>
                     <p> +1 (646) 683-4612</p>
-                  </Link>
+                  </a>
                 </div>
                 <div className=" flex gap-2 my-auto items-center lg:text-[18px] text-[14px] lg:py-8 py-4 justify-center md:justify-start">
                   <IoIosMail className=" lg:w-5 lg:h-5 w-auto h-auto" />
@@ -67,7 +65,10 @@ export default function ContactUs() {
             </div>
 
             <div className="rounded-lg p-5 lg:col-span-3 lg:p-12 items-center">
-              <h4 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black text-left lg:mb-8 mb-5"> Give Us Feedback </h4>
+              <h4 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black text-left lg:mb-8 mb-5">
+                {" "}
+                Give Us Feedback{" "}
+              </h4>
               <form action="#" className="space-y-4 ">
                 <div>
                   <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:mb-8 mb-4">
@@ -147,7 +148,8 @@ export default function ContactUs() {
                     className=" w-full rounded-md bg-[#FBCC21E4] px-10 py-4 lg:px-20 text-lg font-bold  sm:w-auto text-black items-center flex lg:mt-13 mt-8"
                   >
                     Submit{" "}
-                    <svg className="ml-2"
+                    <svg
+                      className="ml-2"
                       xmlns="http://www.w3.org/2000/svg"
                       width="18"
                       height="14"

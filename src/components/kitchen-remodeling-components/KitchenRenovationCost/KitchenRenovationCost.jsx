@@ -36,7 +36,7 @@ const KitchenRenovationCost = () => {
               more.
             </p>
             <div className="flex justify-center md:justify-start">
-            <Link
+            <a
               href={`tel:+1 (646) 683-4612`}
               className="text-sm font-bold text-black"
             >
@@ -55,7 +55,7 @@ const KitchenRenovationCost = () => {
                   />
                 </svg>
               </Button>
-            </Link>
+            </a>
             </div>
           </div>
           <div className="md:col-span-3 flex justify-center items-center ">
