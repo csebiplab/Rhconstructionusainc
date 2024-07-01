@@ -20,7 +20,7 @@ const BathroomRenoHero = () => {
                 floors to <br /> sleek concrete countertops!
               </p>
               <div className="mb-4 md:mb-0">
-                <Link
+                <a
                   href={`tel:+1 (646) 683-4612`}
                   className="text-sm font-bold text-black"
                 >
@@ -30,7 +30,7 @@ const BathroomRenoHero = () => {
                       <FaChevronRight />
                     </span>
                   </Button>
-                </Link>
+                </a>
               </div>
             </div>
           </div>
