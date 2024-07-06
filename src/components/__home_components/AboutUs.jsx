@@ -34,23 +34,26 @@ const AboutUs = () => {
             </p>
 
             <div className="w-full flex justify-center md:block">
-              <div className="flex items-center text-center mt-5 mb-[33px] gap-3 sm:gap-6 lg:gap-8">
-                <div>
+              <a className="flex items-center text-center mt-5 mb-[33px] gap-3 sm:gap-6 lg:gap-8">
+                <a href="tel:+1 (646) 683-4612">
                   <Button className="rounded-md bg-primary hover:bg-gray-900 text-black hover:text-white md:text-sm lg:text-lg font-semibold tracking-wider capitalize flex items-center gap-2">
                     <span>Request A Quote</span>
                     <span>
                       <FaChevronRight />
                     </span>
                   </Button>
-                </div>
+                </a>
                 <h3 className="lg:text-2xl md:text-sm">Or</h3>
-                <div className="flex items-center gap-3">
+                <a
+                  href="tel:+1 (646) 683-4612"
+                  className="flex items-center gap-3"
+                >
                   <BsTelephoneForwardFill />
                   <span className="text-base lg:text-xl font-semibold text-black">
-                    +1 (646) 683-4612
+                    +1 (646) 6834612
                   </span>
-                </div>
-              </div>
+                </a>
+              </a>
             </div>
           </div>
           <div className="md:col-span-3 order-1 md:order-2">
