@@ -34,7 +34,7 @@ const AboutUs = () => {
             </p>
 
             <div className="w-full flex justify-center md:block">
-              <a className="flex items-center text-center mt-5 mb-[33px] gap-3 sm:gap-6 lg:gap-8">
+              <div className="flex items-center text-center mt-5 mb-[33px] gap-3 sm:gap-6 lg:gap-8">
                 <a href="tel:+1 (646) 683-4612">
                   <Button className="rounded-md bg-primary hover:bg-gray-900 text-black hover:text-white md:text-sm lg:text-lg font-semibold tracking-wider capitalize flex items-center gap-2">
                     <span>Request A Quote</span>
@@ -53,7 +53,7 @@ const AboutUs = () => {
                     +1 (646) 6834612
                   </span>
                 </a>
-              </a>
+              </div>
             </div>
           </div>
           <div className="md:col-span-3 order-1 md:order-2">
