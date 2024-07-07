@@ -84,7 +84,7 @@ const Home = () => {
       </div>
       {/* Our Location Section ends */}
       <div>
-        <ContactHome></ContactHome>
+        <ContactHome />
       </div>
     </main>
   );
