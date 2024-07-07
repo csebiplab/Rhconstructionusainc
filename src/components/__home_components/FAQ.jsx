@@ -62,10 +62,9 @@ export function FAQ() {
 
   return (
     <div className="py-0 md:py-10 lg:py-12 5xl:py-[120px] container">
-      <div className="md:flex items-center lg:gap-10 md:gap-3">
-
+      <div className="w-full md:flex items-center lg:gap-10 md:gap-3">
         {/* ========== For desktop view ======== */}
-        <div className="hidden md:block">
+        <div className="hidden md:block lg:w-5/12 ">
           <Image
             src={build}
             width={478}
@@ -85,7 +84,7 @@ export function FAQ() {
             className="mb-5 w-full"
           />
         </div>
-        <div className="mx-auto">
+        <div className="mx-auto lg:w-7/12 ">
           <div className="text-center md:mb-2 lg:mb-4">
             <SmallHeadingWithIcon smallHeadingText={smHeadingTexts.faq} />
             <h2 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-start">
