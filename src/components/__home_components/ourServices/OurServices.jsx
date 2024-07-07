@@ -213,7 +213,7 @@ export default function OurServices() {
                 stopOnLastSlide: false,
               }}
               speed={3000}
-              allowTouchMove={false}
+              allowTouchMove={true}
               className="!px-5 md:px-0 !overflow-visible"
             >
               {interior.map((service, index) => (
@@ -253,7 +253,7 @@ export default function OurServices() {
                 stopOnLastSlide: false,
               }}
               speed={3000}
-              allowTouchMove={false}
+              allowTouchMove={true}
               className="!px-5 md:px-0 !overflow-visible"
             >
               {exterior.map((service, index) => (

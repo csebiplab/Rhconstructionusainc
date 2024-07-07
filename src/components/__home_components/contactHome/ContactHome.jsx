@@ -22,10 +22,13 @@ export default function ContactHome() {
                   <FaMapLocationDot className=" lg:w-5 lg:h-5 w-auto h-auto" />
                   <p> 553 E 2nd St, Brooklyn, NY 11218, United States</p>
                 </div>
-                <div className="my-3 flex gap-2 items-center lg:text-[18px] text-[14px] justify-center md:justify-start">
+                <a
+                  href="tel:+1 (646) 683-4612"
+                  className="my-3 flex gap-2 items-center lg:text-[18px] text-[14px] justify-center md:justify-start"
+                >
                   <FaPhoneVolume className=" lg:w-5 lg:h-5 w-auto h-auto" />
-                  <p> +1 (646) 683-4612</p>
-                </div>
+                  <span> +1 (646) 683-4612</span>
+                </a>
                 <div className=" flex gap-2 my-auto items-center lg:text-[18px] text-[14px] lg:py-8 py-4 justify-center md:justify-start">
                   <IoIosMail className=" lg:w-5 lg:h-5 w-auto h-auto" />
                   <p>rhconusa@gmail.com</p>
@@ -63,27 +66,27 @@ export default function ContactHome() {
                     <div>
                       {" "}
                       <h5 className="mb-2">Your name *</h5>
-                      <label className="sr-only" htmlFor="email">
-                        name
+                      <label className="sr-only" htmlFor="name">
+                        Name
                       </label>
                       <input
                         className="w-full rounded-lg bg-[#FFB70326] shadow-sm shadow-black p-3 text-sm"
                         placeholder="Robot Fox"
-                        type="email"
-                        id="email"
+                        type="text"
+                        id="name"
                       />
                     </div>
 
                     <div>
                       <h5 className="mb-2">Email *</h5>
-                      <label className="sr-only" htmlFor="phone">
-                        Phone
+                      <label className="sr-only" htmlFor="email">
+                        Email
                       </label>
                       <input
                         className="w-full rounded-lg bg-[#FFB70326] shadow-sm shadow-black p-3 text-sm"
-                        placeholder="info.example@gmail.com"
-                        type="tel"
-                        id="phone"
+                        placeholder="rhconusa@gmail.com"
+                        type="text"
+                        id="email"
                       />
                     </div>
                   </div>
@@ -92,14 +95,14 @@ export default function ContactHome() {
                 <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:mb-8 mb-4  ">
                   <div>
                     <h5 className="mb-2">Subjects *</h5>
-                    <label className="sr-only" htmlFor="email">
-                      Email
+                    <label className="sr-only" htmlFor="subject">
+                      Subject
                     </label>
                     <input
                       className="w-full rounded-lg bg-[#FFB70326] shadow-sm shadow-black p-3 text-sm"
                       placeholder="Subjects "
-                      type="email"
-                      id="email"
+                      type="text"
+                      id="subject"
                     />
                   </div>
 
@@ -110,7 +113,7 @@ export default function ContactHome() {
                     </label>
                     <input
                       className="w-full rounded-lg bg-[#FFB70326] shadow-sm shadow-black p-3 text-sm"
-                      placeholder="+8801700000000"
+                      placeholder="+1 (646) 683-4612"
                       type="tel"
                       id="phone"
                     />

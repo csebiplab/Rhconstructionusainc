@@ -17,7 +17,11 @@ const OurService = () => {
 
       <section>
         <div className="container py-20 grid grid-cols-1 md:grid-cols-2 gap-10">
-          <img src="/assets/images/service-man.webp" alt="" className="w-fll rounded-md mx-auto" />
+          <img
+            src="/assets/images/service-man.webp"
+            alt=""
+            className="w-fll rounded-md mx-auto"
+          />
           <div>
             <Typography variant="h1" classNamemb-7 font-semibold>
               WHAT <span className="text-primary">WE ARE</span>{" "}
@@ -150,8 +154,8 @@ const OurService = () => {
             <div className="lg:col-span-2" />
             <div className="lg:col-span-3">
               <h2 className=" mb-5 leading-relaxed ">
-                Quality Without Compromise’ is the cornerstone of our
-                commitment. Try our services now!
+                Quality Without Compromise is the cornerstone of our commitment.
+                Try our services now!
               </h2>
               <div className="flex gap-3  items-center flex-wrap">
                 <Button className="rounded-full bg-white hover:bg-gray-900 text-black hover:text-white text-lg font-semibold tracking-wider">
