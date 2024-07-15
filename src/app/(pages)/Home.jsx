@@ -21,6 +21,7 @@ import TrustUs from "@/components/__home_components/TrustUs";
 import WorkingProcess from "@/components/__home_components/WorkingProcess";
 import ContactHome from "@/components/__home_components/contactHome/ContactHome";
 import OurServices from "@/components/__home_components/ourServices/OurServices";
+import AllGoogleReviws from "@/components/__shared/AllGoogleReviews";
 
 const Home = () => {
   return (
@@ -50,7 +51,9 @@ const Home = () => {
       <WorkingProcess />
 
       {/* =================== Review Section ============== */}
-      <Review />
+      {/* <Review /> */}
+
+      <AllGoogleReviws />
 
       {/* ================ Gallery ============== */}
       <div className="md:py-6 lg:py-[55px] custom-container">
