@@ -16,7 +16,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { allGoogleReviws } from "@/utils/allGoogleReviw";
 
 import "./ReviewSlider.css";
-import { SwiperNavButtons } from "./SwiperSliderButton";
+// import { SwiperNavButtons } from "./SwiperSliderButton";
 
 const breakpoints = {
     0: {
@@ -89,7 +89,7 @@ const AllGoogleReviws = () => {
                             </SwiperSlide>
                         ))}
 
-                        <SwiperNavButtons />
+                        {/* <SwiperNavButtons /> */}
                     </Swiper>
                 </div>
             </div>
