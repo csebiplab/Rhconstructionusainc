@@ -31,4 +31,16 @@ export const headingIconText = {
 
     // Brooklyn Home Remodeling Services page 
     hiringUs__HeadingIconText : "Hiring Us",
+    aboutHomeRenovation__HeadingIconText : "About Home Renovation",
+    trusUs__HeadingIconText : "Trust Us",
+    stunningDesign__HeadingIconText : "Stunning Design",
+    portfolioGallery__HeadingIconText : "Our Portfolio Gallery",
+    knowDetails__HeadingIconText : "Know Details",
+    aboutHomeRenovation__HeadingIconText : "About Home Renovation",
+    planning__HeadingIconText : "Planning",
+    getReadyWithUs__HeadingIconText : "Get Ready with us",
+    affordableServices__HeadingIconText : "Affordable Services",
+    faq__HeadingIconText : "FAQ",
+    planning__HeadingIconText : "Planning",
+
 }
