@@ -28,7 +28,7 @@ const our_service_menu_items = {
   interior: [
     { title: "Bathroom Remodeling", route: "/bathroom-remodeling-in-brooklyn" },
     { title: "Kitchen Remodeling", route: "/kitchen-remodeling-in-brooklyn" },
-    { title: "Painting", route: "/painting" },
+    { title: "Brooklyn Home Remodeling Services", route: "/brooklyn-home-remodeling-services" },
     { title: "Sheetrock", route: "/sheetrock" },
     { title: "Plastering", route: "/plastering" },
     {

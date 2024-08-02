@@ -50,7 +50,10 @@ module.exports = withMT({
         sans: ['var(--font-raleway)', 'sans-serif'],
       },
       colors: {
-        primary: "#fab704",
+        primary : {
+          DEFAULT : "#fab704",
+          50 : "#FFB703"
+        },
         secondary: "#555",
         "gray-1": "var(--gray-1)",
         "gray-2": "var(--gray-2)",

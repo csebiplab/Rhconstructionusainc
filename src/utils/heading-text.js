@@ -1,4 +1,6 @@
 export const headingIconText = {
+    // Bathrooom Renovation page 
+
     review__IconTxt: "Review",
     gallery__IconTxt: "Our Portfolio Gallery",
     service__IconTxt: "Don't Do",
@@ -14,7 +16,7 @@ export const headingIconText = {
     turnKeys__IconTxt: "Turn Keys",   
     professional__IconTxt: "Professional",
 
-    // -------------------------
+    // Kitchen Renovation page 
 
     workingProcess__IconTxt:"Working Process",
     hireUs__IconTxt:"Why Hire Us",
@@ -25,4 +27,8 @@ export const headingIconText = {
     kitchenRemodelingServices__IconTxt:"Kitchen Remodeling Services",
     doanddonot__IconTxt:"Do or Don't",
     aestheticKitchen__IconTxt:"Aesthetic Kitchen",
+
+
+    // Brooklyn Home Remodeling Services page 
+    hiringUs__HeadingIconText : "Hiring Us",
 }
