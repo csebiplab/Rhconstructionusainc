@@ -179,3 +179,10 @@ img {
   filter: invert(98%) sepia(79%) saturate(2476%) hue-rotate(330deg)
     brightness(95%) contrast(95%);
 }
+
+
+
+/* Custom hover effect */
+.Images:hover {
+  filter: invert(88%) sepia(92%) saturate(7332%) hue-rotate(355deg) brightness(80%) contrast(110%);
+}
