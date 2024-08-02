@@ -36,7 +36,7 @@ export const headingIconText = {
     stunningDesign__HeadingIconText : "Stunning Design",
     portfolioGallery__HeadingIconText : "Our Portfolio Gallery",
     knowDetails__HeadingIconText : "Know Details",
-    aboutHomeRenovation__HeadingIconText : "About Home Renovation",
+    projectCost__HeadingIconText : "Project Cost",
     planning__HeadingIconText : "Planning",
     getReadyWithUs__HeadingIconText : "Get Ready with us",
     affordableServices__HeadingIconText : "Affordable Services",
