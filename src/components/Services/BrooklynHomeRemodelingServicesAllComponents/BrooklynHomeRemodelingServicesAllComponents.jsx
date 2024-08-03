@@ -6,8 +6,11 @@ import AffordableHome from "@/components/brooklyn-home-remodeling-services-compo
 import BrooklynHomeRemodelingServiceHero from "@/components/brooklyn-home-remodeling-services-components/BrooklynHomeRemodelingServiceHero/BrooklynHomeRemodelingServiceHero";
 import FAQ from "@/components/brooklyn-home-remodeling-services-components/FAQ/FAQ";
 import GetReadyWithUs from "@/components/brooklyn-home-remodeling-services-components/GetReadyWithUs/GetReadyWithUs";
+import HireUs from "@/components/brooklyn-home-remodeling-services-components/HireUs/HireUs";
 import HiringUs from "@/components/brooklyn-home-remodeling-services-components/HiringUs/HiringUs";
+import KnowDetails from "@/components/brooklyn-home-remodeling-services-components/KnowDetails/KnowDetails";
 import ProjectCost from "@/components/brooklyn-home-remodeling-services-components/ProjectCost/ProjectCost";
+import ProjectGallery from "@/components/brooklyn-home-remodeling-services-components/ProjectGallery/ProjectGallery";
 import StunningDesign from "@/components/brooklyn-home-remodeling-services-components/StunningDesign/StunningDesign";
 import TrustUs from "@/components/brooklyn-home-remodeling-services-components/TrustUs/TrustUs";
 import Review from "@/components/kitchen-remodeling-components/Review/Review";
@@ -42,6 +45,14 @@ const BrooklynHomeRemodelingServicesAllComponents = () => {
       </section>
 
       <section>
+        <ProjectGallery />
+      </section>
+
+      <section>
+        <KnowDetails />
+      </section>
+
+      <section>
         <ProjectCost/>
       </section>
 
@@ -58,6 +69,11 @@ const BrooklynHomeRemodelingServicesAllComponents = () => {
       <section>
         <AffordableHome/>
       </section>
+
+      <section>
+        <HireUs/>
+      </section>
+
 
       <section>
         <FAQ/>
