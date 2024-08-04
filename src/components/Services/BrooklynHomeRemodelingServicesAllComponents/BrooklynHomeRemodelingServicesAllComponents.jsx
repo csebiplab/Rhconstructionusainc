@@ -9,6 +9,7 @@ import GetReadyWithUs from "@/components/brooklyn-home-remodeling-services-compo
 import HireUs from "@/components/brooklyn-home-remodeling-services-components/HireUs/HireUs";
 import HiringUs from "@/components/brooklyn-home-remodeling-services-components/HiringUs/HiringUs";
 import KnowDetails from "@/components/brooklyn-home-remodeling-services-components/KnowDetails/KnowDetails";
+import Planning from "@/components/brooklyn-home-remodeling-services-components/Planning/Planning";
 import ProjectCost from "@/components/brooklyn-home-remodeling-services-components/ProjectCost/ProjectCost";
 import ProjectGallery from "@/components/brooklyn-home-remodeling-services-components/ProjectGallery/ProjectGallery";
 import StunningDesign from "@/components/brooklyn-home-remodeling-services-components/StunningDesign/StunningDesign";
@@ -54,6 +55,10 @@ const BrooklynHomeRemodelingServicesAllComponents = () => {
 
       <section>
         <ProjectCost/>
+      </section>
+
+      <section>
+        <Planning/>
       </section>
 
       {/* =============== Review  Section================= */}
