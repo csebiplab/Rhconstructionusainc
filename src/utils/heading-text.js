@@ -44,4 +44,25 @@ export const headingIconText = {
     planning__HeadingIconText : "Planning",
     hireUs__HeadingIconText : "Hire Us",
 
+
+    // Roofing Contractor in Brooklyn page 
+    aboutOurRoofingContractor__headingIconText : "About Our Roofing Contractor",
+    roofingContractor__headingIconText : "#1 Roofing Contractor",
+    expert__headingIconText : "Expert",
+    whyChoose__headingIconText : "Why Choose",
+    residentialRoofing__headingIconText : "Residential Roofing",
+    commercialRoofing__headingIconText : "Commercial Roofing",
+    metalRoofing__headingIconText : "Metal Roofing",
+    steelRoof__headingIconText : "Steel Roof",
+    tileRoof__headingIconText : "Tile Roof",
+    smallRoofRepair__headingIconText : "Small Roof Repair",
+    roofingContractors__headingIconText : "Roofing Contractors",
+    ourPortfolioGallery__headingIconText : "Our Portfolio Gallery",
+    review__headingIconText : "Review",
+    startWithRhConstruction__headingIconText : "Start With RH Construction",
+    faq__headingIconText : "FAQ",
+    areas__headingIconText : "Areas",
+    areas__headingIconText : "Areas",
+
+
 }

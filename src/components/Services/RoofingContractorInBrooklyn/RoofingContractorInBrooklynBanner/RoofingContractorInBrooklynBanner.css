@@ -1,0 +1,18 @@
+/* Hero section */
+.hero-section {
+    width: 100%;
+    height: auto;
+    background-image: url("/assets/roofing_contractor/hero-section.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .hero-right {
+    width: 42%;
+  }
+  
+  .hero-right .hero-main-image {
+    width: 100%;
+    object-fit: cover;
+  }
