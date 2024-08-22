@@ -65,4 +65,20 @@ export const headingIconText = {
     areas__headingIconText : "Areas",
 
 
+    // Roof Repair in Brooklyn, NY page 
+    aboutOurRoofRepair__headingIconText : "About Our Roof Repair",
+    roofRepairSpecialists__headingIconText : "Roof Repair Specialists",
+    roofingRepairCompany__headingIconText : "#1 Roofing Repair Company",
+    affordable__headingIconText : "Affordable",
+    smallRoofRepair__headingIconText : "Small Roof Repair",
+    roofRepairServices__headingIconText : "Roof Repair Services",
+    ourPortfolioGallery__headingIconText : "Our Portfolio Gallery",
+    dependable__headingIconText : "Dependable",
+    costIdeas__headingIconText : "Cost Ideas",
+    review__headingIconText : "Review",
+    whyHireUs__headingIconText : "Why Hire Us",
+    readyToWorkWithUs__headingIconText : "Ready to Work with us",
+    faq__headingIconText : "FAQ",
+    areas__headingIconText : "Areas"
+
 }
