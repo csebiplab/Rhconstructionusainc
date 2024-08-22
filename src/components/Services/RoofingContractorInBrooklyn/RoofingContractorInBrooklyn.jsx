@@ -91,10 +91,7 @@ const RoofingContractorInBrooklyn = () => {
       <section>
         <FAQ/>
       </section>
-
-
-
-
+      
       <section>
       <LocationMap />
       </section>
