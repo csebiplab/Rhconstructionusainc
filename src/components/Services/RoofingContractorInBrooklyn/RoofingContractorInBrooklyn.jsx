@@ -13,6 +13,13 @@ import ContactUs from "@/components/bathroom-reno-components/contactUs/ContactUs
 import LocationMap from "@/components/bathroom-reno-components/LocationMap/LocationMap";
 import RoofingContractors from "./RoofingContractors/RoofingContractors";
 import CommercialRoofing from "./CommercialRoofing/CommercialRoofing";
+import RoofingContractor from "./RoofingContractor/RoofingContractor";
+import SmallRoofRepair from "./SmallRoofRepair/SmallRoofRepair";
+import StartWithRHConstruction from "./StartWithRHConstruction/StartWithRHConstruction";
+import FAQ from "./FAQ/FAQ";
+import Review from "@/components/kitchen-remodeling-components/Review/Review";
+import ProjectGallery from "./ProjectGallery/ProjectGallery";
+import WhyChoose from "./WhyChoose/WhyChoose";
 
 const RoofingContractorInBrooklyn = () => {
   return (
@@ -30,7 +37,15 @@ const RoofingContractorInBrooklyn = () => {
       </section>
 
       <section>
+        <RoofingContractor/>
+      </section>
+
+      <section>
         <Expert/>
+      </section>
+
+      <section>
+        <WhyChoose/>
       </section>
 
       <section>
@@ -54,7 +69,27 @@ const RoofingContractorInBrooklyn = () => {
       </section>
 
       <section>
+        <SmallRoofRepair/>
+      </section>
+
+      <section>
         <RoofingContractors/>
+      </section>
+
+      <section>
+        <ProjectGallery/>
+      </section>
+
+      <section>
+        <Review/>
+      </section>
+      
+      <section>
+        <StartWithRHConstruction/>
+      </section>
+
+      <section>
+        <FAQ/>
       </section>
 
 
