@@ -4,18 +4,18 @@ import Link from "next/link";
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
 
-const ReadyToWork = () => {
+const SmallRoofRepair = () => {
   return (
     <div className="bg___color">
-      <div className="full__section_r_p pl-3 md:pl-0 common__padding__top">
+      <div className="full__section_r_p common__padding__top">
         <div className=" grid md:grid-cols-7 grid-cols-1 md:gap-[30px]">
           <div className="md:col-span-4 flex items-center ">
             <div className="">
               <Image
-                src="/assets/kitchen/Ready to Work with us.png"
-                width={940}
-                height={580}
-                alt="ready to work image"
+                src="/assets/roofing_contractor/Small Roof Repair.png"
+                width={810}
+                height={582}
+                alt="Small Roof Repair image"
                 className=""
               />
             </div>
@@ -23,16 +23,16 @@ const ReadyToWork = () => {
 
           <div className="md:col-span-3 pt-3 lg:pt-0 flex flex-col justify-center items-center md:items-start md:pt-0">
             <div className="flex md:justify-normal justify-center md:items-start items-center">
-            <HeadingIcon text={headingIconText.readyToWork__IconTxt}/>
+            <HeadingIcon text={headingIconText.smallRoofRepair__headingIconText}/>
             </div>
             <h3 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
-            Award Winning Kitchen  Renovation Contractors 
+            Small Roof Repair 
             <br />
               <span className="text-primary">
-              in Brooklyn
+              Contractors
               </span>
             </h3>
-            <p className="text-lg font-normal md:text-start text-center py-[10px]">Welcome to a better kitchen remodeling experience.  Ready To Start work with General Contractors in Toronto</p>
+            <p className="text-lg font-normal md:text-start text-center py-[10px]">RH Construction USA Inc. provides expert services as small roof repair contractors, specializing in addressing minor roofing issues efficiently and effectively. Whether it's fixing leaks, or repairing damaged shingles, our experienced team is equipped to handle various small-scale repairs with precision. We understand that even small roof problems can lead to significant issues if not addressed promptly. That's why we offer quick and reliable repairs to ensure your roof remains in excellent condition and continues to protect your property. Our approach includes thorough inspections to identify the root cause of the problem and provide lasting solutions. With a focus on customer satisfaction, RH Construction delivers dependable repair services that restore your roof's integrity and functionality.</p>
             <div className="flex justify-center md:justify-start pt-[15px]">
               <button
                 type="submit"
@@ -53,4 +53,4 @@ const ReadyToWork = () => {
   );
 };
 
-export default ReadyToWork;
+export default SmallRoofRepair;

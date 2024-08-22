@@ -6,7 +6,7 @@ import { headingIconText } from "@/utils/heading-text";
 const AboutOur = () => {
   return (
     <div className="bg___color">
-      <div className="full__section_l_p common__padding__top">
+      <div className="full__section_l_p pr-3 md:pr-0 common__padding__top">
         <div className=" grid md:grid-cols-6 grid-cols-1 gap-10 md:mx-0 mx-[35px]">
           <div className="md:col-span-3">
             <div className="flex md:justify-normal justify-center md:items-start items-center">
