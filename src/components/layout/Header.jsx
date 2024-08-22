@@ -30,12 +30,13 @@ const our_service_menu_items = {
     { title: "Kitchen Remodeling", route: "/kitchen-remodeling-in-brooklyn" },
     { title: "Brooklyn Home Remodeling Services", route: "/brooklyn-home-remodeling-services" },
     { title: "Roofing Contractor in Brooklyn", route: "/roofing_contractor_in_brooklyn" },
+    { title: "Roof Repair in Brooklyn, NY", route: "/roof-repair-in-brooklyn" },
     { title: "Sheetrock", route: "/sheetrock" },
-    { title: "Plastering", route: "/plastering" },
-    {
-      title: "Electrical & Plumbing",
-      route: "/emergency-electrical-service",
-    },
+    // { title: "Plastering", route: "/plastering" },
+    // {
+    //   title: "Electrical & Plumbing",
+    //   route: "/emergency-electrical-service",
+    // },
   ],
   exterior: [
     { title: "Concrete Contractor", route: "/concrete-contractor" },
