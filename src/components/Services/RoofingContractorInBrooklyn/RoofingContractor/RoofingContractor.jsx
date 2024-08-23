@@ -16,7 +16,7 @@ const RoofingContractor = () => {
                 width={940}
                 height={580}
                 alt="Roofing Contractors1 image"
-                className=""
+                className="w-[940px] h-[400px] md:h-[580px] "
               />
             </div>
           </div>

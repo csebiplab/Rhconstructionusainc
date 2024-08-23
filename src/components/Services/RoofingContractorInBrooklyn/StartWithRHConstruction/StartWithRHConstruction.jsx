@@ -16,7 +16,7 @@ const StartWithRHConstruction = () => {
                 width={940}
                 height={580}
                 alt="Start With RH Construction image"
-                className=""
+                className="w-[940px] h-[400px] md:h-[580px]"
               />
             </div>
           </div>
@@ -27,12 +27,10 @@ const StartWithRHConstruction = () => {
             </div>
             <h3 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
             Start With RH Construction  
-            <br />
-              <span className="text-primary">
-              USA Inc 
-              </span>
+            <br className="hidden md:block"/>
+              <span className="text-primary"> USA Inc</span>
             </h3>
-            <p className="text-lg font-normal md:text-start text-center py-[10px]">RH is your premier choice for roofing contractors in Brooklyn, NY, offering unparalleled expertise and quality in all roofing services. Specializing in both residential and commercial projects, we deliver top-notch roofing solutions that ensure durability and longevity. Our experienced team is dedicated to using high-grade materials and advanced techniques to provide reliable installations, repairs, and maintenance. We focus on meticulous craftsmanship and personalized service to meet your specific needs. Which ensures that your roof remains in excellent condition and enhances the value of your property. From complete roof replacements to routine inspections, RH Construction USA is committed to delivering exceptional results and customer satisfaction. Choose us for enduring roofing solutions that provide both protection and aesthetic appeal for your home or business.</p>
+            <p className="text-lg font-normal md:text-start text-center py-[10px]">RH is your premier choice for roofing contractors in Brooklyn, NY, offering unparalleled expertise and quality in all roofing services. Specializing in both residential and commercial projects, we deliver top-notch roofing solutions that ensure durability and longevity. Our experienced team is dedicated to using <Link className="text-primary hover:underline" href="https://en.wikipedia.org/wiki/High_grading">high-grade materials</Link> and advanced techniques to provide reliable installations, repairs, and maintenance. We focus on meticulous craftsmanship and personalized service to meet your specific needs. Which ensures that your roof remains in excellent condition and enhances the value of your property. From complete roof replacements to routine inspections, RH Construction USA is committed to delivering exceptional results and customer satisfaction. Choose us for enduring roofing solutions that provide both protection and aesthetic appeal for your home or business.</p>
             <div className="flex justify-center md:justify-start pt-[15px]">
               <button
                 type="submit"

@@ -61,19 +61,19 @@ const FAQ = () => {
     <div className="bg-[#FFFAEE]">
       <div className="full__section_l_p pr-3 md:pr-0 common__padding__top">
         <div className=" grid md:grid-cols-6 grid-cols-1 md:gap-[30px]">
-          <div className="order-2 md:col-span-3 flex items-center ">
+          <div className="order-1 md:order-2 md:col-span-3 flex items-center ">
             <div className="">
               <Image
                 src="/assets/roof_repair/FAQ.png"
                 width={764}
                 height={551}
                 alt="faq  image"
-                className="w-[764px] h-[551px]"
+                className="w-[764px] h-[315px] md:h-[551px]"
               />
             </div>
           </div>
 
-          <div className="order-1 md:col-span-3 pt-3 md:pt-0">
+          <div className="order-2 md:order-1 md:col-span-3 pt-3 md:pt-0">
             <div className="flex flex-col justify-center items-center md:items-start ">
               <div>
               <HeadingIcon text={headingIconText.faq__HeadingIconText}/>
