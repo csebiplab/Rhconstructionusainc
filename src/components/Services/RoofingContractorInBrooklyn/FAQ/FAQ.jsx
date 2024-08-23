@@ -68,7 +68,7 @@ const FAQ = () => {
                 width={764}
                 height={597}
                 alt="faq  image"
-                className="w-[764px] h-[597px]"
+                className="w-[764px] h-[315px] md:h-[597px]"
               />
             </div>
           </div>

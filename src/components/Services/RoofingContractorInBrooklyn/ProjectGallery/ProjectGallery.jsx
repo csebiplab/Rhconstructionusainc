@@ -74,7 +74,7 @@ const ProjectGallery = () => {
           <div>
             <div className="grid grid-cols-1 gap-2">
               {galImgs.slice(0, showAll ? galImgs.length : 4).map((imgUrl, idx) => (
-                <div key={idx} className="m-2 px-6">
+                <div key={idx} className="m-2 px-0 md:px-6">
                   <Image
                     width={370}
                     height={250}
@@ -89,7 +89,7 @@ const ProjectGallery = () => {
               <div className="text-center mt-4 px-10">
                 <button
                   onClick={handleLoadMore}
-                  className="flex items-center justify-center gap-2 w-full text-lg font-medium px-4 py-2 bg-primary text-black rounded"
+                  className="flex items-center justify-center gap-2 w-full text-lg font-bold px-4 py-2 bg-primary text-black rounded"
                 >
                   Load More <svg xmlns="http://www.w3.org/2000/svg" width="7" height="11" viewBox="0 0 7 11" fill="none">
   <path d="M1.38997 0.4375L0 1.67633L4.22005 5.4375L0 9.19867L1.38997 10.4375L7 5.4375L1.38997 0.4375Z" fill="black"/>

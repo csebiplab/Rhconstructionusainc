@@ -28,8 +28,8 @@ const our_service_menu_items = {
   interior: [
     { title: "Bathroom Remodeling", route: "/bathroom-remodeling-in-brooklyn" },
     { title: "Kitchen Remodeling", route: "/kitchen-remodeling-in-brooklyn" },
-    { title: "Brooklyn Home Remodeling Services", route: "/brooklyn-home-remodeling-services" },
-    { title: "Roofing Contractor in Brooklyn", route: "/roofing_contractor_in_brooklyn" },
+    { title: "Brooklyn Home Remodeling", route: "/brooklyn-home-remodeling-services" },
+    { title: "Roofing Contractor in Brooklyn", route: "/roofing-contractor-in-brooklyn" },
     { title: "Roof Repair in Brooklyn, NY", route: "/roof-repair-in-brooklyn" },
     { title: "Sheetrock", route: "/sheetrock" },
     // { title: "Plastering", route: "/plastering" },

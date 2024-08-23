@@ -4,6 +4,7 @@ import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
 
 import Image from "next/image";
+import Link from "next/link";
 
 const usualPool = [
   {
@@ -90,7 +91,7 @@ const WhyHireUs = () => {
 
               <div>
                 <p className="text-lg font-normal md:text-start text-center py-[10px]">
-                Choose RH Construction USA Inc. for your roof repair needs and benefit from our expert craftsmanship, reliable service, and personalized solutions. Our skilled team delivers high-quality repairs tailored to your roof type and specific issues, ensuring durability and long-term protection. We prioritize transparency, efficiency, and customer satisfaction, making us
+                Choose RH Construction USA Inc. for your roof repair needs and benefit from our expert craftsmanship, reliable service, and personalized solutions. Our skilled team delivers high-quality repairs tailored to your roof type and specific issues, ensuring durability and <Link className="text-primary hover:underline" href="https://en.wikipedia.org/wiki/Long-term_care">long-term protection.</Link> We prioritize transparency, efficiency, and customer satisfaction, making us
                 </p>
               </div>
             </div>

@@ -7,7 +7,7 @@ import { headingIconText } from "@/utils/heading-text";
 const SmallRoofRepair = () => {
   return (
     <div className="bg___color">
-      <div className="full__section_r_p common__padding__top">
+      <div className="full__section_r_p pl-3 md:pl-0 common__padding__top">
         <div className=" grid md:grid-cols-7 grid-cols-1 md:gap-[30px]">
           <div className="md:col-span-4 flex items-center ">
             <div className="">
@@ -27,10 +27,7 @@ const SmallRoofRepair = () => {
             </div>
             <h3 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
             Small Roof Repair 
-            <br />
-              <span className="text-primary">
-              Contractors
-              </span>
+              <span className="text-primary"> Contractors</span>
             </h3>
             <p className="text-lg font-normal md:text-start text-center py-[10px]">RH Construction USA Inc. provides expert services as small roof repair contractors, specializing in addressing minor roofing issues efficiently and effectively. Whether it's fixing leaks, or repairing damaged shingles, our experienced team is equipped to handle various small-scale repairs with precision. We understand that even small roof problems can lead to significant issues if not addressed promptly. That's why we offer quick and reliable repairs to ensure your roof remains in excellent condition and continues to protect your property. Our approach includes thorough inspections to identify the root cause of the problem and provide lasting solutions. With a focus on customer satisfaction, RH Construction delivers dependable repair services that restore your roof's integrity and functionality.</p>
             <div className="flex justify-center md:justify-start pt-[15px]">
