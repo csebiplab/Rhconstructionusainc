@@ -115,7 +115,7 @@ export default function OurServices() {
   };
 
   return (
-    <div className="overflow-hidden bg-[#FFB7031A]">
+    <div className=" bg-[#FFB7031A]">
       <div className="container py-6 lg:py-[55px]">
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-40 gap-4 lg:p-5 md:p-3 items-end text-sm">
           <div className="">
@@ -198,7 +198,7 @@ export default function OurServices() {
           </label>
         </div>
 
-        <div className="py-5 lg:py-10">
+        <div className="overflow-hidden py-5 lg:py-10">
           {!isChecked && (
             // <div className="grid grid-cols-3 lg:grid-cols-6 gap-5 gap-y-8">
 

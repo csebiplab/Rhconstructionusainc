@@ -80,7 +80,7 @@ function OurServiceManu() {
   const renderItems = (data = []) => {
     return data?.map(({ route, title }, key) => (
       <Link href={route} key={key}>
-        <MenuItem className="rounded-md border-none">
+        <MenuItem className="rounded-md ">
           <Typography className="flex items-cneter gap-3 text-primary hover:text-black text-sm font-bold leading-normal"><FaKitchenSet /> {title}</Typography>
         </MenuItem>
       </Link>
