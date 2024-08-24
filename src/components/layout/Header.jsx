@@ -6,6 +6,7 @@ import {
   ChevronDownIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
+import { FaKitchenSet } from "react-icons/fa6";
 import {
   Collapse,
   Drawer,
@@ -23,6 +24,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
+
+
+const drop_down_nav_icons = [
+  "/assets/drop_down_nav_icon/bathroom_icon.png",
+  "/assets/drop_down_nav_icon/kitchen_icon.png",
+  "/assets/drop_down_nav_icon/roofing_icon.png",
+  "/assets/drop_down_nav_icon/bathroom_icon.png",
+  "/assets/drop_down_nav_icon/bathroom_icon.png",
+  "/assets/drop_down_nav_icon/bathroom_icon.png",
+]
 
 const our_service_menu_items = {
   interior: [
@@ -69,8 +80,8 @@ function OurServiceManu() {
   const renderItems = (data = []) => {
     return data?.map(({ route, title }, key) => (
       <Link href={route} key={key}>
-        <MenuItem className="rounded-md">
-          <Typography color="blue-gray">{title}</Typography>
+        <MenuItem className="rounded-md border-none">
+          <Typography className="flex items-cneter gap-3 text-primary hover:text-black text-sm font-bold leading-normal"><FaKitchenSet /> {title}</Typography>
         </MenuItem>
       </Link>
     ));
@@ -115,22 +126,28 @@ function OurServiceManu() {
             </ListItem>
           </Typography>
         </MenuHandler>
-        <MenuList className="hidden max-w-[100vw] w-screen lg:block border-0 outline-0 bg-gray-100">
-          <div className="container grid grid-cols-3 gap-y-2">
-            <div>
-              <h3 className="mb-1 text-primary font-semibold">Interior</h3>
-              <ul>{renderItems(our_service_menu_items.interior)}</ul>
-            </div>
-            <div>
-              <h3 className="mb-1 text-primary font-semibold">Exterior</h3>
+        <MenuList className="hidden max-w-[100vw] w-screen lg:block rounded-[3px] border border-[#E9E9E9] bg-white -mt-1">
+          <div className="container grid grid-cols-4 gap-y-2">
+            <div className="border-r-[1.5px] border-primary ">
+              <h3 className="text-[22px] uppercase text-black font-bold leading-normal pl-3">Interior</h3>
               <ul>
-                {renderItems(our_service_menu_items.exterior.slice(0, 6))}
+                <li className="text-primary">{renderItems(our_service_menu_items.interior.slice(0,3))}</li>
+              </ul>
+            </div>
+            <div className="border-r-[1.5px] border-primary">
+              <h3 className="text-[22px] uppercase text-black font-bold leading-normal"> <br/></h3>
+              <ul>{renderItems(our_service_menu_items.interior.slice(3,6))}</ul>
+            </div>
+            <div className="border-r-[1.5px] border-primary">
+              <h3 className="text-[22px] uppercase text-black font-bold leading-normal pl-3">Exterior</h3>
+              <ul>
+                {renderItems(our_service_menu_items.exterior.slice(0, 3))}
               </ul>
             </div>
             <div>
-              <h3 className="mb-1 text-primary font-semibold"></h3>
+              <h3 className="text-[22px] uppercase text-black font-bold leading-normal"><br/></h3>
               <ul>
-                {renderItems(our_service_menu_items.exterior.slice(6, 12))}
+                {renderItems(our_service_menu_items.exterior.slice(3, 6))}
               </ul>
             </div>
           </div>
