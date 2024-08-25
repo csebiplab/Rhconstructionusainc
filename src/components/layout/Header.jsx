@@ -155,10 +155,10 @@ function OurServiceManu() {
       </Menu>
       <div className="block lg:hidden">
         <Collapse open={isMobileMenuOpen}>
-          <h4 className="text-primary mb-1 font-semibold">Interior</h4>
+          <p className="text-primary mb-1 font-semibold">Interior</p>
           <ul>{renderItems(our_service_menu_items.interior)}</ul>
           <hr className="my-1" />
-          <h4 className="text-primary mb-1 font-semibold">Exterior</h4>
+          <p className="text-primary mb-1 font-semibold">Exterior</p>
           <ul>{renderItems(our_service_menu_items.exterior)}</ul>
           <hr className="my-1" />
         </Collapse>

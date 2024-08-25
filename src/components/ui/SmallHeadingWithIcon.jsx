@@ -11,7 +11,7 @@ const SmallHeadingWithIcon = ({ smallHeadingText = "Heading Missing" }) => {
         <circle cx="6" cy="6" r="6" fill="#FFB703" />
         <circle cx="16.667" cy="6" r="6" fill="black" />
       </svg>
-      <h5 className="!text-sm !font-normal">{smallHeadingText}</h5>
+      <p className="!text-sm !font-normal">{smallHeadingText}</p>
     </div>
   );
 };

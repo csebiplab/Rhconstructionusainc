@@ -28,9 +28,9 @@ const Tools = () => {
               smallHeadingText={smHeadingTexts.toolsNEquip}
             />
           </div>
-          <h2 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-center md:text-start">
+          <h3 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-center md:text-start">
             HEAVING ALL KINDS OF BUILDING TOOLS & EQUIPMENTS
-          </h2>
+          </h3>
           <p className="md:text-base text-[12px] leading-[208%] lg:leading-[250%] text-black text-center md:text-start">
             RH Construction USA Inc. offers a comprehensive range of building
             tools and equipment tailored to meet the diverse needs of your

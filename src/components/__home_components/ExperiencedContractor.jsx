@@ -24,7 +24,7 @@ const ExperiencedContractor = () => {
             </div>
             <div className="hidden md:block">
               <div className="text-center yellow-border py-3 md:py-8 my-2 md:my-0">
-                <h2 className="text-2xl lg:text-[80px] lg:leading-10">15+</h2>
+                <p className="text-2xl lg:text-[80px] lg:leading-10">15+</p>
                 <p className="text-lg lg:text-[30px] leading-normal mt-2 md:mt-4 px-0 md:px-1">
                   Successful <br /> Years
                 </p>
@@ -53,7 +53,7 @@ const ExperiencedContractor = () => {
             </div>
 
             <div className="text-center yellow-border py-3 my-3">
-              <h2 className="text-2xl lg:text-[80px] lg:leading-10">15+</h2>
+              <p className="text-2xl lg:text-[80px] lg:leading-10">15+</p>
               <p className="text-lg lg:text-[30px] leading-normal mt-2 md:mt-4 px-0 md:px-1">
                 Successful <br /> Years
               </p>
@@ -75,9 +75,9 @@ const ExperiencedContractor = () => {
                 smallHeadingText={smHeadingTexts.expContractor}
               />
             </div>
-            <h2 className="lg:leading-10 mb-1 mt-2 md:mt-0 lg:py-4 text-lg lg:text-4xl md:text-start text-center">
+            <h3 className="lg:leading-10 mb-1 mt-2 md:mt-0 lg:py-4 text-lg lg:text-4xl md:text-start text-center">
               EXPERIENCED BROOKLYN GENERAL CONTRACTOR
-            </h2>
+            </h3>
             <p className="md:text-[16px] text-black mx-auto text-start mt-[10px] md:mt-3 text-[12px] leading-[208%] lg:leading-[250%]">
               With years of expertise and a solid educational background, our
               Brooklyn-based general contracting firm stands out as a reliable

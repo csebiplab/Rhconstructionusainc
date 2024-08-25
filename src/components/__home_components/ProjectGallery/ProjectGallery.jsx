@@ -66,9 +66,9 @@ const ProjectGallery = () => {
           <div className="flex flex-col justify-center items-center">
           <SmallHeadingWithIcon smallHeadingText={smHeadingTexts.gallery} />
             <div>
-              <h3 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
+              <h4 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
               CONSTRUCTION SERVICES GALLARY OF OUR PAST PROJECTS
-              </h3>
+              </h4>
             </div>
           </div>
         </div>

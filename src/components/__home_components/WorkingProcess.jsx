@@ -56,9 +56,9 @@ const WorkingProcess = () => {
           <SmallHeadingWithIcon
             smallHeadingText={smHeadingTexts.workingProcess}
           />
-          <h2 className="lg:leading-10 lg:text-4xl text-lg md:py-2 lg:py-4">
+          <h3 className="lg:leading-10 lg:text-4xl text-lg md:py-2 lg:py-4">
             WORKING PROCESS OF OUR CONSTRUCTION COMPANY IN BROOKLYN
-          </h2>
+          </h3>
           <p className="font-semibold lg:text-base md:text-sm">
             Certainly! Here's an overview of the working process of our
             construction company in Brooklyn:
@@ -77,9 +77,9 @@ const WorkingProcess = () => {
                 className="w-full"
               />
               <div className="text-center md:py-2 lg:py-3">
-                <h4 className="lg:text-base md:text-sm py-2">
+                <p className="lg:text-base md:text-sm py-2 font-bold">
                   Project Planning and Design
-                </h4>
+                </p>
                 <p className="lg:text-sm md:text-xs">
                   We begin by meeting with clients to understand their needs,
                   goals, and budget constraints.
@@ -95,9 +95,9 @@ const WorkingProcess = () => {
                 className="w-full rounded-md"
               />
               <div className="text-center md:py-2 lg:py-3">
-                <h4 className="lg:text-base md:text-sm py-2">
+                <p className="lg:text-base md:text-sm py-2 font-bold">
                   Procurement of Materials & Resources
-                </h4>
+                </p>
                 <p className="lg:text-sm md:text-xs text-black">
                   We source high-quality materials and engage skilled laborers
                   and subcontractors necessary for the project.
@@ -113,9 +113,9 @@ const WorkingProcess = () => {
                 className="w-full rounded-md"
               />
               <div className="text-center md:py-2 lg:py-3">
-                <h4 className="lg:text-base md:text-sm py-2">
+                <p className="lg:text-base md:text-sm py-2 font-bold">
                   Quality Control and Assurance
-                </h4>
+                </p>
                 <p className="lg:text-sm md:text-xs text-black">
                   Throughout the construction phase, we conduct regular
                   inspections and quality control checks to ensure.
@@ -131,9 +131,9 @@ const WorkingProcess = () => {
                 className="w-full rounded-md"
               />
               <div className="text-center md:py-2 lg:py-3">
-                <h4 className="lg:text-base md:text-sm py-2">
+                <p className="lg:text-base md:text-sm py-2 font-bold">
                   Client Communication and Updates
-                </h4>
+                </p>
                 <p className="lg:text-sm md:text-xs text-black">
                   We maintain open lines of communication with clients,
                   providing regular updates on the progress of their projects.
@@ -173,7 +173,7 @@ const WorkingProcess = () => {
                     className="w-full h-1/2 mb-[6px] rounded-md"
                   />
                   <div className="text-center py-2 px-1">
-                    <h4 className="text-xs">{slide.title}</h4>
+                    <p className="text-xs font-bold">{slide.title}</p>
                     <p className="text-[9px] leading-[16px] my-[8px] text-black">
                       {slide.description}
                     </p>

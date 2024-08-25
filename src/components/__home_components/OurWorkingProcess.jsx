@@ -46,7 +46,7 @@ export default function OurWorkingProcess() {
             <ul className="list-disc list-inside marker:text-primary marker:font-extrabold marker:text-2xl">
               {workingProcessLists.map(({ id, title, desc }) => (
                 <div key={id} className="mb-2">
-                  <h5 className="font-bold -mb-2">{title}</h5>
+                  <p className="font-bold -mb-2">{title}</p>
                   <li className="ml-8 font-medium">{desc}</li>
                 </div>
               ))}
@@ -55,7 +55,7 @@ export default function OurWorkingProcess() {
           <p className="w-full font-medium">
             <span className="text-primary text-xl">*</span> By following this
             comprehensive working process, we aim to deliver exceptional
-            construction projects that exceed our client’s expectations while
+            construction projects that exceed our client's expectations while
             contributing positively to the Brooklyn community.
           </p>
         </div>
