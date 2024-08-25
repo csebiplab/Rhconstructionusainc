@@ -13,12 +13,12 @@ const AboutKitchenRemodeling = () => {
             <div className="flex md:justify-normal justify-center md:items-start items-center">
             <HeadingIcon text={headingIconText.aboutKitchen__IconTxt}/>
             </div>
-            <h3 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
+            <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
             About Our Brooklyn 
  
              <br />{" "}
               <span className="text-primary">Kitchen Renovation Company</span>
-            </h3>
+            </h2>
             <p className="text-lg font-normal md:text-start text-center py-[10px]">
             Welcome to RH Construction USA Inc. the best kitchen renovation company in Brooklyn, where we transform your culinary space into a haven of functionality and style. Whether you're looking for a modern minimalist aesthetic or a cozy traditional vibe, our team of experts is dedicated to delivering exceptional results tailored to your tastes and needs. From concept to completion, we prioritize experience of communication, collaboration, and attention to detail to ensure a seamless kitchen remodeling in Brooklyn. As we embark on the journey of remodeling your kitchen, we prioritize open communication and transparency. From the initial consultation to the final touches, our kitchen renovators ensure that your dream aesthetic kitchen is a collaborative creation, reflecting your style and surpassing your expectations.
             </p>

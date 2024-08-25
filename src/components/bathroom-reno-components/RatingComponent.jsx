@@ -40,22 +40,22 @@ const RatingComponent = () => {
               <div className="w-[260px] md:block hidden">
                 <div>
                   <div className="flex">
-                    <h4 className="text-[#000] lg:text-lg md:text-base font-bold lg:mb-5 md:mb-2">
+                    <p className="text-[#000] lg:text-lg md:text-base font-bold lg:mb-5 md:mb-2">
                       Highly rated for
-                    </h4>
+                    </p>
                     <img src={vector.src} className="w-[22px] h-[24px] ms-3" />
                   </div>
                   <div className="flex justify-center">
-                    <h5 className="me-4 border-2 bg-[#EAEAEA] font-semibold text-[#000] text-sm px-2">
+                    <p className="me-4 border-2 bg-[#EAEAEA] font-semibold text-[#000] text-sm px-2">
                       Quality
-                    </h5>
-                    <h5 className="border-2 bg-[#EAEAEA] font-semibold text-[#000] text-sm px-2">
+                    </p>
+                    <p className="border-2 bg-[#EAEAEA] font-semibold text-[#000] text-sm px-2">
                       Value
-                    </h5>
+                    </p>
                   </div>
-                  <h5 className="border-2 bg-[#EAEAEA] text-[#000] font-semibold text-sm px-2 text-center mt-2 md:w-9/12 lg:w-8/12 mx-auto">
+                  <p className="border-2 bg-[#EAEAEA] text-[#000] font-semibold text-sm px-2 text-center mt-2 md:w-9/12 lg:w-8/12 mx-auto">
                     Customer Service
-                  </h5>
+                  </p>
                 </div>
               </div>
               {/* Desktop End */}
@@ -82,28 +82,28 @@ const RatingComponent = () => {
               <div className="block md:hidden">
                 <div>
                   <div className="flex items-center">
-                    <h4 className="text-[#000] text-[12px] md:text-base font-bold lg:mb-5 md:mb-2">
+                    <p className="text-[#000] text-[12px] md:text-base font-bold lg:mb-5 md:mb-2">
                       Highly rated for
-                    </h4>
+                    </p>
                     <img src={vector.src} className="w-[10px] h-[11px] ms-3" />
                   </div>
                   <div className="flex my-[15px] gap-[8px]">
                     <div className="w-[68px] h-[24px] border-2 bg-[#EAEAEA] py-[5px] px-[19px]">
-                      <h5 className="font-semibold text-[#000] text-[8px]  leading-[12px] text-center">
+                      <p className="font-semibold text-[#000] text-[8px]  leading-[12px] text-center">
                         Quality
-                      </h5>
+                      </p>
                     </div>
                     <div className="w-[56px] h-[24px] border-2 bg-[#EAEAEA] py-[5px] px-[19px]">
-                      <h5 className="font-semibold text-[#000] text-[8px]  leading-[12px] text-center">
+                      <p className="font-semibold text-[#000] text-[8px]  leading-[12px] text-center">
                         Value
-                      </h5>
+                      </p>
                     </div>
                   </div>
                   <div className="w-[132px] h-[24px] border-2 bg-[#EAEAEA] ">
-                    <h5 className="text-[#000] font-semibold text-[8px] py-[5px] text-center leading-[12px]">
+                    <p className="text-[#000] font-semibold text-[8px] py-[5px] text-center leading-[12px]">
                       {" "}
                       Customer Service
-                    </h5>
+                    </p>
                   </div>
                 </div>
               </div>

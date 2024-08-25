@@ -68,9 +68,9 @@ const WorkingProcess = () => {
             <HeadingIcon text={headingIconText.workingProcess__IconTxt}/>
             </div>
 
-            <h5 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black text-center">
+            <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black text-center">
             Working Process of Our <span className="text-primary">Outdoor Kitchen Builders</span>
-            </h5>
+            </h2>
           </div>
 
           <div className="grid gird-cols-1 lg:grid-cols-3 gap-12">
@@ -89,9 +89,9 @@ const WorkingProcess = () => {
                   />
 
                   <div className="text-center">
-                    <h6 className="text-[25px] font-bold py-2 text-black">
+                    <p className="text-[25px] font-bold py-2 text-black">
                       {slide.title}
-                    </h6>
+                    </p>
                     <p className="text-lg text-center mt-2 mb-3  text-black leading-[24px] md:leading-6">
                       {slide.description}
                     </p>
