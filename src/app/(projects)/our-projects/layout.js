@@ -2,10 +2,10 @@ import { Roboto_Slab } from 'next/font/google';
 import "../../globals.css";
 import ProgressBar from '@/components/common/ProgressBar';
 import { Header } from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
 import ProjectBanner from '@/components/Projects/ProjectBanner/ProjectBanner';
 import ProjectMenus from '@/components/Projects/ProjectMenus/ProjectMenus';
 import ReadyToWork from '@/components/Projects/Layouts/ReadyToWork/ReadyToWork';
+import Footer from '@/components/layout/Footer/Footer';
 
 
 
