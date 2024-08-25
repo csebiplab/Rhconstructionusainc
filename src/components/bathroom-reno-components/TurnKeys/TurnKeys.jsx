@@ -70,14 +70,14 @@ const TurnKeys = () => {
             <div className="flex md:justify-normal justify-center md:items-start items-center">
               <HeadingIcon text={headingIconText.turnKeys__IconTxt} />
             </div>
-            <h3 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
+            <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
               Turn Keys to Our
               <br />{" "}
               <span className="text-primary">
                 {" "}
                 Bathroom Remodeling Services
               </span>
-            </h3>
+            </h2>
             <p className="text-lg font-normal md:text-start text-center py-[10px]">
               With our turnkey approach, we handle every aspect of your bathroom
               renovation project, ensuring a seamless and stress-free experience
@@ -94,9 +94,9 @@ const TurnKeys = () => {
                     height={48}
                     className="w-[48px] h-[48px] mx-auto border-2 border-black rounded-full p-2"
                   />
-                  <h6 className="text-center text-base font-bold">
+                  <p className="text-center text-base font-bold">
                     {key.title}
-                  </h6>
+                  </p>
                 </div>
               ))}
             </div>

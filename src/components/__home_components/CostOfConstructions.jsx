@@ -50,9 +50,9 @@ const CostOfConstructions = () => {
       <div className="grid grid-cols-1 md:grid-cols-9 gap-4">
         <div className="w-full md:col-span-5 md:order-2">
           <div className="w-full">
-            <h2 className="font-bold">
+            <h4 className="font-bold">
               How Much Does a Construction Project Cost?
-            </h2>
+            </h4>
           </div>
           <p className="mt-4 mb-3">
             The cost of a construction project can vary widely depending on

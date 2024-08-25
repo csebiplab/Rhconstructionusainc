@@ -22,9 +22,6 @@ const Brand = () => {
                 className="lg:mb-[10px] md:w-3/4 md:mb-[1px] mt-2 mx-auto"
               />
             </div>
-            <p className="text-center text-xs lg:text-sm md:leading-relaxed lg:leading-[21.1px] md:mt-0 lg:mt-4 md:mb-1">
-              R H CONSTRUCTION responds to texts.
-            </p>
           </div>
         </div>
 
@@ -36,9 +33,6 @@ const Brand = () => {
             alt="brand1"
             className="lg:mb-[10px] md:w-3/4 md:mb-[1px] mt-3  mx-auto"
           />
-          <p className="text-center text-xs md:mt-2 lg:mt-4 lg:text-sm md:leading-[21.1px] ">
-            The Construction company I ever seen.
-          </p>
         </div>
 
         <div className="brand w-full md:h-[174px] rounded-[15px] lg:px-2 md:px-1 lg:py-[14px] py-[5px] text-center">
@@ -49,9 +43,6 @@ const Brand = () => {
             alt="brand1"
             className="lg:mb-[10px] md:mt-3 md:mb-[5px] mx-auto"
           />
-          <p className="text-center text-xs lg:mt-3 lg:text-sm leading-[21.1px]">
-            We hired RH CONSTRUCTION
-          </p>
         </div>
         <div className="brand w-full md:h-[174px] rounded-[15px] lg:px-2 md:px-1 lg:py-[14px] py-[5px] md:text-start text-center">
           <Image
@@ -61,9 +52,6 @@ const Brand = () => {
             alt="brand1"
             className="lg:mb-[10px] md:mb-[2px] mx-auto"
           />
-          <p className="text-center lg:mt-2 text-xs lg:text-sm  leading-[21.1px] overflow-hidden">
-            Maricelas R H CONSTRUCTION
-          </p>
         </div>
         <div className="brand w-full md:h-[174px] rounded-[15px] lg:px-2 md:px-1 lg:py-[14px] md:py[5px] text-center">
           <Image
@@ -73,9 +61,6 @@ const Brand = () => {
             alt="brand1"
             className="lg:mb-[10px] lg:mt-8 md:mt-6 mt-5 mx-auto"
           />
-          <p className="text-center md:mt-6  mt-2 text-xs lg:text-sm leading-[21.1px]">
-            We never used a Construction service
-          </p>
         </div>
         <div className="brand w-full md:h-[174px] rounded-[15px] lg:px-2 px-1 lg:py-[14px] md:py-[5px] text-center">
           <Image
@@ -85,9 +70,6 @@ const Brand = () => {
             alt="brand1"
             className="lg:mb-[10px] md:mb-[5px] md:mt-3 lg:mt-1 mx-auto"
           />
-          <p className="text-center text-xs  lg:text-sm leading-[21.1px]">
-            What a pleasure it was working with R H
-          </p>
         </div>
 
         <div className="brand band-card w-full md:h-[174px] rounded-[15px] lg:px-2 px-1 lg:py-[14px] md:py-[5px] py-3 text-center xs:mx-auto mx-0">
@@ -98,9 +80,6 @@ const Brand = () => {
             alt="brand1"
             className="lg:mb-[10px] mb-[5px] mx-auto md:mt-6 mt-3 md:w-1/2"
           />
-          <p className="text-center lg:mt-4 md:mt-3 text-xs lg:text-sm leading-[21.1px]">
-            I always receive excellent service.
-          </p>
         </div>
       </div>
     </div>

@@ -41,9 +41,9 @@ const RhconstructionSection = () => {
               smallHeadingText={smHeadingTexts.rhConstructions}
             />
           </div>
-          <h6 className="lg:leading-10 mt-2 md:mt-0 lg:py-4 text-lg lg:text-4xl lg:text-start text-center">
+          <h4 className="lg:leading-10 mt-2 md:mt-0 lg:py-4 text-lg lg:text-4xl lg:text-start text-center">
             R H Construction USA, Inc.
-          </h6>
+          </h4>
           <p className="md:text-[16px] text-black mx-auto text-start mt-[10px] md:mt-1 text-[12px] leading-[208%] lg:leading-[250%]">
             RH Construction USA Inc. stands out as one of the leading
             construction companies in Brooklyn, embodying a commitment to
@@ -65,9 +65,9 @@ const RhconstructionSection = () => {
                 className="w-full"
               />
               <div className="text-center py-3">
-                <h6 className="lg:text-base md:text-sm py-1 md:py-2 text-xs">
+                <p className="lg:text-base md:text-sm py-1 md:py-2 text-xs font-bold">
                   Highly trained Staff
-                </h6>
+                </p>
                 <p className="lg:text-sm md:text-xs text-[8px] md:px-1 text-black">
                   We hire only highly trained staff for best results.
                 </p>
@@ -82,9 +82,9 @@ const RhconstructionSection = () => {
                 className="w-full"
               />
               <div className="text-center py-3">
-                <h6 className="lg:text-base md:text-sm py-1 md:py-2 text-xs">
+                <p className="lg:text-base md:text-sm py-1 md:py-2 text-xs font-bold">
                   Competitive Pricing
-                </h6>
+                </p>
                 <p className="lg:text-sm md:text-xs text-[8px] md:px-1 text-black">
                   We quote the best price possible in the industry.
                 </p>
@@ -99,9 +99,9 @@ const RhconstructionSection = () => {
                 className="w-full"
               />
               <div className="text-center py-3">
-                <h6 className="lg:text-base md:text-sm py-1 md:py-2 text-xs">
+                <p className="lg:text-base md:text-sm py-1 md:py-2 text-xs font-bold">
                   Satisfaction Guaranteed
-                </h6>
+                </p>
                 <p className="lg:text-sm md:text-xs text-[8px] md:px-1 text-black">
                   100% Customer satisfaction is our sole motto.
                 </p>

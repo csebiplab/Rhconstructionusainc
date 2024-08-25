@@ -16,11 +16,11 @@ const KitchenRenovationCost = () => {
                 text={headingIconText.kitchenRenovationCost__IconTxt}
               />
             </div>
-            <h3 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
+            <h4 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
               How Much Does a
               <br />{" "}
               <span className="text-primary"> Kitchen Renovation Cost?</span>
-            </h3>
+            </h4>
             <p className="text-lg font-normal md:text-start text-center py-[10px]">
               The cost of a kitchen remodeling project can vary widely depending
               on various factors, including the scope of the renovation, the

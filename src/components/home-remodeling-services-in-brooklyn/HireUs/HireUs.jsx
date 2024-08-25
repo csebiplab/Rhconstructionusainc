@@ -78,9 +78,9 @@ const HireUs = () => {
             <HeadingIcon text={headingIconText.hireUs__HeadingIconText}/>
             </div>
 
-            <h3 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-normal text-black text-center">
+            <h5 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-normal text-black text-center">
             Hiring Us as Your Home Contractor -  <span className="text-primary">What to Expect</span>
-            </h3>
+            </h5>
           </div>
 
          
@@ -108,7 +108,7 @@ const HireUs = () => {
               className="mx-auto mt-[10px] w-[70px] h-[70px] border-2 rounded-full bg-white p-4 "
             />
             <div className="text-center">
-              <h6 className="text-[20px] font-bold py-2">{slide?.title}</h6>
+              <p className="text-[20px] font-bold py-2">{slide?.title}</p>
               <p className="text-base font-normal mt-2 mb-3  text-black ">
                 {slide.description}
               </p>

@@ -90,9 +90,9 @@ const Constructor = () => {
             <HeadingIcon text={headingIconText.chooseUs__IconTxt}/>
             </div>
 
-            <h3 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black text-center">
+            <h4 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black text-center">
             Why Choose Our <span className="text-primary">Bathroom Remodeling Services</span>
-            </h3>
+            </h4>
           </div>
 
          

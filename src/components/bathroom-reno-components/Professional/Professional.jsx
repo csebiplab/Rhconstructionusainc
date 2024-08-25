@@ -5,6 +5,7 @@ import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
 
 import { BsDot } from "react-icons/bs";
+import Link from "next/link";
 
 const trustedLine1 = [
     {
@@ -85,13 +86,13 @@ const Professional = () => {
             <div className="flex md:justify-normal justify-center md:items-start items-center">
             <HeadingIcon text={headingIconText.professional__IconTxt}/>
             </div>
-            <h3 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
+            <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
             Professional Bathroom <br/> Remodeling Services 
                 <br />
               <span className="text-[#FB9401]">in Brooklyn </span>
-            </h3>
+            </h2>
             <p className="text-lg font-normal md:text-start text-center py-[10px]">
-            As a leading construction company in Brooklyn, our company brings years of experience and a team of skilled professionals to every project, ensuring high-quality craftsmanship and timely completion. Some bathroom renovation services that our company offers
+            As a leading <Link className="text-primary hover:underline" href="https://en.wikipedia.org/wiki/Category:Construction_companies">construction company</Link> in Brooklyn, our company brings years of experience and a team of skilled professionals to every project, ensuring high-quality craftsmanship and timely completion. Some bathroom renovation services that our company offers
 
             </p>
             <p className="text-lg font-normal md:text-start text-center py-[10px]">

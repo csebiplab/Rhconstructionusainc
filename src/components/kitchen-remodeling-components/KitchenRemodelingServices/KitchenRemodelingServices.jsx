@@ -101,9 +101,9 @@ const KitchenRemodelingServices = () => {
       <div className="common__padding__top">
         <div className="flex flex-col justify-center items-center">
         <HeadingIcon text={headingIconText.kitchenRemodelingServices__IconTxt}/>
-          <h3 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black  text-center">
+          <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black  text-center">
           Best Kitchen Remodeling Services in Brooklyn
-          </h3>
+          </h2>
           <p className="font-normal lg:text-base md:text-sm text-center">
           As a reputable company, RH Construction USA Inc. prioritizes customer satisfaction, focusing on transparent communication and attention to detail throughout the entire process of kitchen remodeling in Brooklyn. Our commitment to excellence is evident in the use of premium materials, meticulous planning, and adherence to timelines. Various kitchen renovation services are offered by our company:
           </p>
@@ -140,7 +140,7 @@ const KitchenRemodelingServices = () => {
                     className="w-full h-1/2 mb-[6px] rounded-md"
                   />
                   <div className="text-center pt-2 px-1">
-                    <h4 className="text-lg font-bold">{slide.title}</h4>
+                    <p className="text-lg font-bold">{slide.title}</p>
                     <p className="text-base font-normal leading-[16px] mt-[8px] text-black">
                       {slide.description}
                     </p>

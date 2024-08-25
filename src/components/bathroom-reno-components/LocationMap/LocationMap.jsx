@@ -111,9 +111,9 @@ const LocationMap = () => {
                     referrerPolicy="no-referrer-when-downgrade"
                   />
 
-                  <h5 className="lg:text-base text-center text-sm py-4 px-3 lg:px-10 bg-yellow-700 ">
+                  <p className="lg:text-base text-center text-sm font-bold py-4 px-3 lg:px-10 bg-yellow-700 ">
                     {location?.title}
-                  </h5>
+                  </p>
                 </div>
               </div>
               </SwiperSlide>

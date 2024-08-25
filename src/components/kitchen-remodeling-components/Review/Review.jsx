@@ -119,9 +119,9 @@ const Review = () => {
                     <p className="text-[10px] md:text-[12px] mt-4  text-black leading-[22px] md:leading-6">
                       {reviewText}
                     </p>
-                    <h6 className="font-semibold lg:text-sm text-xs mt-3">
+                    <p className="font-semibold lg:text-sm text-xs mt-3">
                       {author}
-                    </h6>
+                    </p>
                     <p className="text-[#4A4A4A] text-[8px] mt-2">{address}</p>
                   </div>
                 </div>
