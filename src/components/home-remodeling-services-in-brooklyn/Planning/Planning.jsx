@@ -135,9 +135,9 @@ const Planning = () => {
                     <div className="!h-full">
                       
                       <div className="cart   px-3 py-4">
-                        <h5 className="text-white text-lg font-bold text-center">
+                        <p className="text-white text-lg font-bold text-center">
                           {service.title}{" "}
-                        </h5>
+                        </p>
                     </div>
                     </div>
 

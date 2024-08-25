@@ -12,12 +12,12 @@ const StunningDesign = () => {
             <div className="flex md:justify-normal justify-center md:items-start items-center">
             <HeadingIcon text={headingIconText.stunningDesign__HeadingIconText}/>
             </div>
-            <h3 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-normal text-black md:text-start text-center">
+            <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-normal text-black md:text-start text-center">
             Stunning Designs for  
  
              <br className="hidden 2xl:block"/>{" "}
               <span className="text-primary-50">Exceptional Home Remodeling</span>
-            </h3>
+            </h2>
             <p className="text-lg font-normal md:text-start text-center pt-[10px]">
             At our Brooklyn home remodeling company, our home renovator believes that stunning designs are the heart of every successful home renovation. Our talented designers work closely with clients to understand their preferences and lifestyles, creating spaces that not only meet but exceed expectations. Whether you're looking for a modern, sleek makeover or a classic, timeless design, our experts have the creativity and expertise to bring your ideas to life.
             </p>

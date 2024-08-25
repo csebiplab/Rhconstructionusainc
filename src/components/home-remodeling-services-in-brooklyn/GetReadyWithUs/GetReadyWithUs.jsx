@@ -12,12 +12,12 @@ const GetReadyWithUs = () => {
             <div className="flex md:justify-normal justify-center md:items-start items-center">
             <HeadingIcon text={headingIconText.getReadyWithUs__HeadingIconText}/>
             </div>
-            <h3 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-normal text-black md:text-start text-center">
+            <h4 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-normal text-black md:text-start text-center">
             Ready To Start Your 
              <br className="hidden 2xl:block"/>{" "}
               <span className="text-primary-50">
               Home Remodeling in Brooklyn?  </span>
-            </h3>
+            </h4>
             <p className="text-lg font-normal md:text-start text-center pt-[10px]">
             It's an exciting journey where the familiar transforms into the extraordinary, and every room becomes a canvas awaiting your personal touch. Ready to start your home remodeling in Brooklyn with our experienced home renovator? Picture the possibilities as walls are repainted, floors come to life with new textures, and spaces are redefined to suit your evolving lifestyle. Whether it's a small update or a complete overhaul, this endeavor is a testament to your commitment to making your home a true reflection of your tastes and aspirations. So, gather your ideas, engage your creativity, and let the transformation begin - turning your house into a haven that not only shelters but also speaks volumes about who you are. Get ready to witness the magic unfold as your vision merges seamlessly with the bricks and mortar of your cherished abode.
 

@@ -56,9 +56,10 @@ const HiringUs = () => {
             <HeadingIcon text={headingIconText.hiringUs__HeadingIconText}/>
             </div>
 
-            <h5 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-normal text-black text-center">
-            Hiring Us as Your Home Contractor -  <span className="text-primary-50">What to Expect</span>
-            </h5>
+            <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-normal text-black text-center">
+            Our Way to Home Remodeling <span className="text-primary">Is Different</span>
+            </h2>
+            <p className="text-lg font-normal text-center ">At RH Construction USA Inc., our approach to home remodeling in Brooklyn is anything but conventional. <br/> Experience the difference - where passion meets craftsmanship.</p>
           </div>
 
           <div className="grid gird-cols-1 lg:grid-cols-3 gap-10">
@@ -77,9 +78,9 @@ const HiringUs = () => {
                   />
 
                   <div className="text-center pt-[15px]">
-                    <h6 className="text-[25px] font-bold pb-[27px] text-black">
+                    <p className="text-[25px] font-bold pb-[27px] text-black">
                       {data.title}
-                    </h6>
+                    </p>
                     <p className="text-lg text-center pb-[40px]  text-black leading-[24px] md:leading-6">
                       {data.description}
                     </p>

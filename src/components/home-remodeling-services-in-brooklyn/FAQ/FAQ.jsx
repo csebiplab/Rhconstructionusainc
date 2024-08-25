@@ -81,13 +81,13 @@ const FAQ = () => {
               </div>
 
               <div>
-                <h3 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-normal text-black md:text-start text-center pb-2">
+                <h6 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-normal text-black md:text-start text-center pb-2">
                 FAQ About the Home Renovators of 
                   <br />{" "}
                   <span className="text-primary">
                   RH Construction USA Inc 
                   </span>
-                </h3>
+                </h6>
               </div>
             </div>
             <>

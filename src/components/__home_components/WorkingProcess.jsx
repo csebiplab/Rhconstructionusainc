@@ -51,7 +51,7 @@ const slideContents = [
 const WorkingProcess = () => {
   return (
     <div className="container">
-      <div className="py-6 md:py-[55px] lg:py-[120px]">
+      <div className="common__padding__top">
         <div>
           <SmallHeadingWithIcon
             smallHeadingText={smHeadingTexts.workingProcess}
