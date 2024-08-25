@@ -87,9 +87,9 @@ const services = [
 const OurService = () => {
   return (
     <div className="bg___color common__padding__top">
-      <div className="!overflow-hidden">
-        <div className="">
-          <div className="container">
+      <div className="container">
+        <div className="!overflow-hidden">
+          <div className="">
             <div className="grid grid-cols-1  lg:grid-cols-2 lg:gap-40 gap-4  p-5 items-center text-sm ">
               <div className="  ">
                 <div className="flex justify-center lg:justify-normal items-center">
