@@ -64,7 +64,7 @@ const OurService = () => {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <figure>
-                  <h3 className="mb-2">Interior</h3>
+                  <p className="mb-2">Interior</p>
                   <ul>
                     {[
                       "Bathroom Remodeling",
@@ -87,7 +87,7 @@ const OurService = () => {
                   </ul>
                 </figure>
                 <figure>
-                  <h3 className="mb-2">Interior</h3>
+                  <p className="mb-2">Interior</p>
                   <ul>
                     {[
                       "Bathroom Remodeling",

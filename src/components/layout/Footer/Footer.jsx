@@ -77,7 +77,7 @@ const Footer = () => {
                   key={index}
                   className="mt-5 md:mt-0 text-center md:text-start"
                 >
-                  <h3 className="text-white !text-xl mb-5">{category.cat}</h3>
+                  <h5 className="text-white !text-xl mb-5">{category.cat}</h5>
                   <ul>
                     {category.links.map((link, idx) => (
                       <li key={idx} className="mb-6">

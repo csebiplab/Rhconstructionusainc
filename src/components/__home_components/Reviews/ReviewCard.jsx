@@ -14,9 +14,9 @@ export default function ReviewCard() {
             alt="cons"
             className="my-2 mx-auto"
           />
-          <h2 className="leading-10 mb-1 py-4">
-            Here’s what to expect when you hire us
-          </h2>
+          <h5 className="leading-10 mb-1 py-4">
+            Here's what to expect when you hire us
+          </h5>
         </div>
       </div>
       {/* =================== Review Card ============== */}

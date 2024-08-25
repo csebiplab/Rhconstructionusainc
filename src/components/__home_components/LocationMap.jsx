@@ -74,9 +74,9 @@ const LocationMap = () => {
             <SmallHeadingWithIcon smallHeadingText={smHeadingTexts.area} />
 
             <div>
-              <h2 className="lg:leading-10 lg:text-4xl text-lg py-2 lg:py-4">
+              <h6 className="lg:leading-10 lg:text-4xl text-lg py-2 lg:py-4">
                 SERVICE AREA IN RH CONSTRUCTION USA INC
-              </h2>
+              </h6>
             </div>
           </div>
           
@@ -112,9 +112,9 @@ const LocationMap = () => {
                     referrerPolicy="no-referrer-when-downgrade"
                   />
 
-                  <h5 className="lg:text-base text-center text-sm py-4 px-3 lg:px-10 bg-yellow-700 ">
+                  <p className="lg:text-base text-center text-sm py-4 px-3 lg:px-10 bg-yellow-700 ">
                     {location?.title}
-                  </h5>
+                  </p>
                 </div>
               </div>
               </SwiperSlide>

@@ -43,7 +43,7 @@ const AboutUs = () => {
                     </span>
                   </Button>
                 </a>
-                <h3 className="lg:text-2xl md:text-sm">Or</h3>
+                <p className="lg:text-2xl md:text-sm">Or</p>
                 <a
                   href="tel:+1 (646) 683-4612"
                   className="flex items-center gap-3"

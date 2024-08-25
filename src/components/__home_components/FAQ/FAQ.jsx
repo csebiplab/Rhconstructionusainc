@@ -25,7 +25,7 @@ const faqQuestionsNAns = [
     id: 3,
     question: "Is RH Construction USA Inc. licensed and insured?",
     answer:
-      "Yes, RH Construction USA Inc. is a fully licensed and insured company. We adhere to all necessary regulations and standards to ensure the safety and satisfaction of our clients.",
+      "Yes, RH Construction USA Inc. is a fully licensed and insured company. Our general contractors adhere to all necessary regulations and standards to ensure the safety and satisfaction of our clients.",
   },
   {
     id: 4,
@@ -39,7 +39,7 @@ const faqQuestionsNAns = [
     question:
       "Can RH Construction USA Inc. assist with obtaining permits for construction projects?",
     answer:
-      "Yes, we can assist you with obtaining the necessary permits for your construction project. Our team is familiar with the permit process and will work closely with local authorities to ensure all requirements are met.",
+      "Yes, RH Construction can assist you with obtaining the necessary permits for your construction project. Our team of general contractors is familiar with the permit process and will work closely with local authorities to ensure all requirements are met",
   },
   {
     id: 6,
@@ -77,9 +77,9 @@ const Faq = () => {
               </div>
 
               <div>
-                <h3 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center pb-2">
+                <h6 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center pb-2">
                 FAQ FOR RH CONSTRUCTION USA INC
-                </h3>
+                </h6>
               </div>
             </div>
             <>
