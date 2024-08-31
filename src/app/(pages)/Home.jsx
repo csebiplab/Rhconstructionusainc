@@ -24,7 +24,7 @@ import ContactUs from "@/components/bathroom-reno-components/contactUs/ContactUs
 
 const Home = () => {
   return (
-    <main>
+    <main className="custom-container">
       {/* =============================== Hero Banner =========================== */}
       <Hero />
 

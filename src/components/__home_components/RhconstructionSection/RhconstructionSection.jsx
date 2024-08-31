@@ -41,9 +41,9 @@ const RhconstructionSection = () => {
               smallHeadingText={smHeadingTexts.rhConstructions}
             />
           </div>
-          <h4 className="lg:leading-10 mt-2 md:mt-0 lg:py-4 text-lg lg:text-4xl lg:text-start text-center">
+          <h3 className="lg:leading-10 mt-2 md:mt-0 lg:py-4 text-lg lg:text-4xl lg:text-start text-center">
             R H Construction USA, Inc.
-          </h4>
+          </h3>
           <p className="md:text-[16px] text-black mx-auto text-start mt-[10px] md:mt-1 text-[12px] leading-[208%] lg:leading-[250%]">
             RH Construction USA Inc. stands out as one of the leading
             construction companies in Brooklyn, embodying a commitment to

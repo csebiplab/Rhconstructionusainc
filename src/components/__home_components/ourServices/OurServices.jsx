@@ -124,12 +124,11 @@ export default function OurServices() {
                 smallHeadingText={smHeadingTexts.ourServices}
               />
             </div>
-            <h4 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-center md:text-start">
-              Our Services
-            </h4>
+            <h2 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-center md:text-start">
+            Remarkable Services Provided by RH Construction USA Inc
+            </h2>
             <p className="md:text-base text-[12px] leading-[208%] lg:leading-[250%] text-black text-center md:text-start font-semibold">
-              Enjoy a stress-free construction service with our unique build
-              process.
+            Enjoy a stress-free construction service with our unique build process
             </p>
             <p className="md:text-base text-[12px] leading-[208%] lg:leading-[250%] text-black text-center md:text-start">
               <span className="font-semibold">RH Construction USA</span>, is
@@ -143,12 +142,7 @@ export default function OurServices() {
 
           <div className="hidden md:block">
             <p className="md:text-base text-[12px] leading-[208%] lg:leading-[250%] text-black text-center md:text-start">
-              At our company, we understand that your dream project is a
-              significant investment, and we take pride in delivering
-              unparalleled construction service that reflects our unwavering
-              commitment to customer satisfaction. Whether you're envisioning a
-              residential masterpiece or a commercial endeavor, our experienced
-              team is equipped to handle a diverse range of projects.
+            At our company, our general contractor in Brooklyn understands that your dream project is a significant investment, and we take pride in delivering unparalleled construction service that reflects our unwavering commitment to customer satisfaction. Whether you're envisioning a residential masterpiece or a commercial endeavor, our experienced team is equipped to handle a diverse range of projects.
             </p>
           </div>
         </div>

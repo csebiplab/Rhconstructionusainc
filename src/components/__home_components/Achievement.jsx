@@ -24,9 +24,9 @@ const Achievement = () => {
           </div>
         </div>
         <div className="md:w-[604px] md:h-[147.98px]  my-class rounded-[8px] px-[22.5px] pt-2">
-          <h6 className="text-base lg:text-lg font-bold lg:leading-[27px] mb-[5px]">
+          <p className="text-base lg:text-lg font-bold lg:leading-[27px] mb-[5px]">
             Achievements
-          </h6>
+          </p>
           <Image
             src={achievement}
             width={559}
