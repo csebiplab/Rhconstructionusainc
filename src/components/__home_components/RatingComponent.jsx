@@ -12,9 +12,9 @@ const RatingComponent = () => {
       <div className="w-full mx-auto">
         <div className="w-full max-w-[980px] mx-auto">
           <div className="rating p-6 rounded-[8px]">
-            <h6 className="lg:text-2xl md:text-lg lg:leading-[36px] mb-3">
+            <p className="lg:text-2xl md:text-lg lg:leading-[36px] mb-3">
               Ratings
-            </h6>
+            </p>
             <div className="md:flex justify-between gap-5">
               {/* =========== Desktop View ============ */}
               <div className="md:w-[260px] md:block hidden">

@@ -14,9 +14,9 @@ export default function ContactUs() {
           <div className="grid grid-cols-1 gap-x-16 lg:grid-cols-6 items-center ">
             <div className="lg:col-span-3 pt-[40px] pb-[60px] pl-[60px] pr-[50px] contact__bg">
               <div className="text-center md:text-start">
-                <h5 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black text-center md:text-left">
+                <p className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black text-center md:text-left">
                   Contact Us
-                </h5>
+                </p>
                 <div className="flex gap-2 items-center 5xl:text-[18px] md:text-base text-[14px] 5xl:py-8 py-4 justify-center md:justify-start">
                   <FaMapLocationDot className=" lg:w-5 lg:h-5 w-auto h-auto" />
                   <Link
@@ -46,9 +46,9 @@ export default function ContactUs() {
                   <FaLinkedin className=" lg:w-6 lg:h-6 w-auto h-auto" />
                 </div>
 
-                <h6 className=" 5xl:text-[25px] text-[20px] font-bold 5xl:py-10 py-6">
+                <p className=" 5xl:text-[25px] text-[20px] font-bold 5xl:py-10 py-6">
                   Best Bath Construction Company Brooklyn
-                </h6>
+                </p>
                 <div className="flex justify-center md:justify-start">
                   <Image
                     src={contactUsLogo}
@@ -58,17 +58,17 @@ export default function ContactUs() {
                     alt="logo"
                   />
                 </div>
-                <h6 className=" 5xl:text-[25px] text-[20px] font-bold 5xl:pt-10 pt-6">
+                <p className=" 5xl:text-[25px] text-[20px] font-bold 5xl:pt-10 pt-6">
                   R H CONSTRUCTION USA, INC.
-                </h6>
+                </p>
               </div>
             </div>
 
             <div className="rounded-lg p-5 lg:col-span-3 lg:p-12 items-center">
-              <h4 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black text-left  mb-5">
+              <p className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black text-left  mb-5">
                 {" "}
                 Give Us Feedback{" "}
-              </h4>
+              </p>
               <form action="#" className="space-y-4 ">
                 <div>
                   <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:mb-5 mb-4">

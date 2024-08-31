@@ -79,9 +79,9 @@ const ProjectCost = () => {
               />
             </div>
 
-            <h4 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-center md:text-start">
+            <h2 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-center md:text-start">
               HOW MUCH DOES <br/> A CONSTRUCTION PROJECT COST?
-            </h4>
+            </h2>
           </div>
           <div>
             <p className="md:text-base text-[12px] leading-[208%] lg:leading-[250%] text-black text-center md:text-start mt-0  md:mt-1 lg:mt-4">
@@ -96,8 +96,6 @@ const ProjectCost = () => {
             </p>
           </div>
         </div>
-
-        
         {/* =================== Card Section =============== */}
       
         <Swiper
@@ -131,9 +129,9 @@ const ProjectCost = () => {
                   alt="cost"
                   className="w-full"
                 />
-                  <h5 className="lg:text-base text-sm py-2 text-center">
+                  <p className="lg:text-base text-sm font-semibold py-2 text-center">
                     {data?.title}
-                  </h5>
+                  </p>
                 </div>
               </div>
               </SwiperSlide>

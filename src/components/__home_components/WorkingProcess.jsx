@@ -56,12 +56,11 @@ const WorkingProcess = () => {
           <SmallHeadingWithIcon
             smallHeadingText={smHeadingTexts.workingProcess}
           />
-          <h3 className="lg:leading-10 lg:text-4xl text-lg md:py-2 lg:py-4">
-            WORKING PROCESS OF OUR CONSTRUCTION COMPANY IN BROOKLYN
-          </h3>
+          <h2 className="lg:leading-10 lg:text-4xl text-lg md:py-2 lg:py-4">
+          Working Process of Our General Contractor in Brooklyn
+          </h2>
           <p className="font-semibold lg:text-base md:text-sm">
-            Certainly! Here's an overview of the working process of our
-            construction company in Brooklyn:
+          Certainly! Here's an overview of the working process of our general contractor's construction company in Brooklyn:
           </p>
         </div>
 

@@ -39,7 +39,7 @@ const faqQuestionsNAns = [
     question:
       "Can RH Construction USA Inc. assist with obtaining permits for construction projects?",
     answer:
-      "Yes, RH Construction can assist you with obtaining the necessary permits for your construction project. Our team of general contractors is familiar with the permit process and will work closely with local authorities to ensure all requirements are met",
+      "Yes, RH Construction can assist you with obtaining the necessary permits for your construction project. Our team of general contractors is familiar with the permit process and will work closely with local authorities to ensure all requirements are met.",
   },
   {
     id: 6,
@@ -77,9 +77,9 @@ const Faq = () => {
               </div>
 
               <div>
-                <h6 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center pb-2">
+                <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center pb-2">
                 FAQ FOR RH CONSTRUCTION USA INC
-                </h6>
+                </h2>
               </div>
             </div>
             <>

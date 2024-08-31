@@ -77,7 +77,7 @@ const Footer = () => {
                   key={index}
                   className="mt-5 md:mt-0 text-center md:text-start"
                 >
-                  <h5 className="text-white !text-xl mb-5">{category.cat}</h5>
+                  <p className="text-white !text-xl font-bold mb-5">{category.cat}</p>
                   <ul>
                     {category.links.map((link, idx) => (
                       <li key={idx} className="mb-6">
@@ -98,7 +98,7 @@ const Footer = () => {
                   key={index}
                   className="mt-5 md:mt-0 text-center md:text-start"
                 >
-                  <h5 className="text-white !text-xl mb-5">{category.cat}</h5>
+                  <p className="text-white !text-xl font-bold mb-5">{category.cat}</p>
                   <ul>
                     {category.links.map((link, idx) => (
                       <li key={idx} className="mb-6">
@@ -115,7 +115,7 @@ const Footer = () => {
               </div>
 
               <div className="w-full lg:w-auto text-center md:text-start">
-                <h5 className="text-white !text-xl pb-5">Contact Us</h5>
+                <p className="text-white !text-xl font-bold pb-5">Contact Us</p>
                 <ul className="text-center md:text-start mx-auto">
                   <li>
                     <Link

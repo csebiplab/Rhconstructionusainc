@@ -28,7 +28,7 @@ const TrustUs = () => {
                 TRUSTED GENERAL CONTRACTOR IN BROOKLYN
               </h2>
               <p className="md:text-base text-[12px] leading-[170%] lg:leading-[175%] text-center md:text-start  text-black my-2 md:pb-0 pb-3 px-2 md:px-0">
-              As a trusted general contractor in Brooklyn, we prioritize clear and open communication with clients, keeping us informed at every stage of the construction process. Our skilled professionals bring innovative solutions to the table, ensuring that your vision is not only realized but surpassed. Our team of general contractors is dedicated to delivering high-quality craftsmanship and exceptional service from start to finish. With 15 years of experience in the industry, we handle projects of all sizes with precision and care.
+              As a trusted general contractor in Brooklyn, we prioritize clear and open communication with clients, keeping us informed at every stage of the construction process. Our skilled professionals bring innovative solutions to the table, ensuring that your vision is not only realized but surpassed. Our general contractors deliver high-quality craftsmanship and exceptional service from start to finish with dedication. With 15 years of experience in the industry, we handle projects of all sizes with precision and care.
               </p>
             </div>
           </div>
