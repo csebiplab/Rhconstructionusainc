@@ -61,7 +61,7 @@ const FAQ = () => {
   return (
     <div className="bg-[#FFFAEE]">
       <div className="full__section_r_p pl-3 md:pl-0 common__padding__top">
-        <div className=" grid md:grid-cols-7 grid-cols-1 md:gap-[30px]">
+        <div className=" grid md:grid-cols-6 grid-cols-1 md:gap-[30px]">
           <div className="md:col-span-3 flex items-center ">
             <div className="">
               <Image
@@ -69,25 +69,25 @@ const FAQ = () => {
                 width={764}
                 height={600}
                 alt="faq  image"
-                className=""
+                className="w-full h-[600px]"
               />
             </div>
           </div>
 
-          <div className="md:col-span-4 pt-3 md:pt-0">
+          <div className="md:col-span-3 pt-3 md:pt-0">
             <div className="flex flex-col justify-center items-center md:items-start ">
               <div>
               <HeadingIcon text={headingIconText.faq__HeadingIconText}/>
               </div>
 
               <div>
-                <h6 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-normal text-black md:text-start text-center pb-2">
+                <h3 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-normal text-black md:text-start text-center pb-2">
                 FAQ About the Home Renovators of 
                   <br />{" "}
                   <span className="text-primary">
                   RH Construction USA Inc 
                   </span>
-                </h6>
+                </h3>
               </div>
             </div>
             <>
