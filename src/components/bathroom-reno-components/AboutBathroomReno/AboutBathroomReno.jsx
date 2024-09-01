@@ -1,6 +1,5 @@
 
 import Image from "next/image";
-import "./AboutBathroomReno.css";
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
 

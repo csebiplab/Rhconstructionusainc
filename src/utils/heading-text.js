@@ -15,6 +15,7 @@ export const headingIconText = {
     whyUs__IconTxt: "Why Us",   
     turnKeys__IconTxt: "Turn Keys",   
     professional__IconTxt: "Professional",
+    bathroomRemodelingServices__IconTxt: "Bathroom Remodeling Services",
 
     // Kitchen Renovation page 
 

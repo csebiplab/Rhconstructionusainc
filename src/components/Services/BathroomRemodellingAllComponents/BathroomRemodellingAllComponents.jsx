@@ -19,6 +19,7 @@ import BathroomRemodeling from "@/components/bathroom-reno-components/BathroomRe
 import FaqSection from "@/components/bathroom-reno-components/FaqSection/FaqSection";
 import LocationMap from "@/components/bathroom-reno-components/LocationMap/LocationMap";
 import ContactUs from "@/components/bathroom-reno-components/contactUs/ContactUs";
+import BathroomRemodelingServices from "@/components/bathroom-reno-components/BathroomRemodelingServices/BathroomRemodelingServices";
 
 const BathroomRemodellingAllComponents = () => {
   return (
@@ -56,6 +57,9 @@ const BathroomRemodellingAllComponents = () => {
 
       {/* =================== Review Section ============== */}
       <Review />
+
+      {/* =================== BathroomRemodelingServices Section ============== */}
+      <BathroomRemodelingServices />
 
       {/* ================== HiringUs Section ===== */}
 
