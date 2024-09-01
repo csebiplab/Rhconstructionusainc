@@ -128,20 +128,20 @@ const OurServices = () => {
   };
 
   return (
-    <div className="!overflow-hidden">
-      <div className="bg___color">
-        <div className="container common__padding__top">
+    <div className="bg___color">
+      <div className="container common__padding__top">
+        <div className="!overflow-hidden">
           <div className="">
             <div className="flex justify-center items-center pb-2">
               <HeadingIcon text={headingIconText.doanddonot__IconTxt} />
             </div>
-            <h3 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-center">
+            <h2 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-center">
               Our Renovators <span className="text-primary"> Do or Don't</span>
-            </h3>
+            </h2>
           </div>
 
           {/* taggle button */}
-          <div className="flex justify-center items-center py-5 mb-12 mx-2 ">
+          <div className=" flex justify-center items-center py-5 mb-12 mx-2 ">
             <label className="themeSwitcherTwo shadow-card relative inline-flex cursor-pointer select-none items-center justify-center rounded-3xl bg-white border border-black">
               <input
                 type="checkbox"

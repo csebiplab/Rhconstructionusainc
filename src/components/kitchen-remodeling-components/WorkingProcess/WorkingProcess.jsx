@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 import hiring1 from "../../../../public/assets/kitchen/hiring1.png";
 import hiring2 from "../../../../public/assets/kitchen/hiring2.png";
@@ -71,6 +72,8 @@ const WorkingProcess = () => {
             <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black text-center">
             Working Process of Our <span className="text-primary">Outdoor Kitchen Builders</span>
             </h2>
+            <p className="text-lg font-normal text-center py-[3px]">Certainly! Here are key points outlining the process of Brooklyn kitchen remodeling:</p>
+            <p className="text-lg font-normal text-center py-[5px]">Clients can trust our kitchen renovators to turn their outdoor kitchen dreams into reality, elevating the overall enjoyment of their <Link className="text-primary hover:underline" rel="nofollow" target="_blank" href="https://en.wikipedia.org/wiki/The_Outdoor_Room">outdoor living</Link> experience.</p>
           </div>
 
           <div className="grid gird-cols-1 lg:grid-cols-3 gap-12">
