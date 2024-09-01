@@ -90,9 +90,9 @@ const KeyPoints = () => {
             <HeadingIcon text={headingIconText.chooseUs__IconTxt}/>
             </div>
 
-            <h4 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black text-center">
+            <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black text-center">
             Key Points to Consider a  <span className="text-primary">Kitchen Remodel</span>
-            </h4>
+            </h2>
             <p className="text-lg font-normal text-center">Kitchen remodeling can involve several different elements, ranging from design and layout to materials and appliances. Here are some key areas to consider when planning a kitchen remodel:</p>
           </div>
 

@@ -24,10 +24,10 @@ const ReadyToWork = () => {
             <div className="flex md:justify-normal justify-center md:items-start items-center">
               <HeadingIcon text={headingIconText.readyToWork__IconTxt} />
             </div>
-            <h3 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
+            <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
               Award Winning Bathroom Renovation Contractors <br />
               <span className="text-primary">in Brooklyn</span>
-            </h3>
+            </h2>
             <p className="text-lg font-normal md:text-start text-center py-[10px]">
               Welcome to a better bathroom remodeling experience. Ready To Start
               work with General Contractors in Toronto

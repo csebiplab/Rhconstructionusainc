@@ -23,7 +23,7 @@ import OurServices from "@/components/kitchen-remodeling-components/ourServices/
 
 const KitchenRemodelingAllComponents = () => {
   return (
-    <main>
+    <main className="custom-container">
       {/* =============== KitchenRemodelingHero  Section================= */}
       <KitchenRemodelingHero />
 

@@ -78,9 +78,9 @@ const HireUs = () => {
             <HeadingIcon text={headingIconText.hireUs__HeadingIconText}/>
             </div>
 
-            <h5 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-normal text-black text-center">
+            <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-normal text-black text-center">
             Hiring Us as Your Home Contractor -  <span className="text-primary">What to Expect</span>
-            </h5>
+            </h2>
           </div>
 
          

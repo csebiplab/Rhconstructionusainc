@@ -105,9 +105,9 @@ const Planning = () => {
               <div className="flex justify-center lg:justify-normal items-center">
               <HeadingIcon text={headingIconText.planning__HeadingIconText}/>
               </div>
-              <h3 className="text-[28px] md:text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px]  leading-[35px] font-normal text-black text-center pb-[25px]">
+              <h2 className="text-[28px] md:text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px]  leading-[35px] font-normal text-black text-center pb-[25px]">
               Considerations to Start Planning for Your <span className="text-primary-50">Home Remodeling</span>
-              </h3>
+              </h2>
             </div>
 
             <div className="w-full h-[3px] bg-black" />

@@ -92,7 +92,7 @@ const Professional = () => {
               <span className="text-[#FB9401]">in Brooklyn </span>
             </h2>
             <p className="text-lg font-normal md:text-start text-center py-[10px]">
-            As a leading <Link className="text-primary hover:underline" href="https://en.wikipedia.org/wiki/Category:Construction_companies">construction company</Link> in Brooklyn, our company brings years of experience and a team of skilled professionals to every project, ensuring high-quality craftsmanship and timely completion. Some bathroom renovation services that our company offers
+            As a leading <Link className="text-primary hover:underline" rel="nofollow" target="_blank" href="https://en.wikipedia.org/wiki/Category:Construction_companies">construction company</Link> in Brooklyn, our company brings years of experience and a team of skilled professionals to every project, ensuring high-quality craftsmanship and timely completion. Some bathroom renovation services that our company offers
 
             </p>
             <p className="text-lg font-normal md:text-start text-center py-[10px]">

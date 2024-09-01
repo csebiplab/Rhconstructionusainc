@@ -13,11 +13,11 @@ const BathroomRemodeling = () => {
             <div className="flex md:justify-normal justify-center md:items-start items-center">
             <HeadingIcon text={headingIconText.bathroomRemodeling__IconTxt}/>
             </div>
-            <h6 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
+            <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
             Start With Our 
             <br />{" "}
               <span className="text-primary"> Bathroom Remodeling Services</span>
-            </h6>
+            </h2>
             <p className="text-lg font-normal md:text-start text-center py-[10px]">
             Our expert team is dedicated to transforming your outdated or impractical bathroom into a luxurious oasis tailored to your needs and style preferences. From modern minimalist designs to timeless classics, we specialize in delivering high-quality craftsmanship and innovative solutions. Let us take the stress out of remodeling as we guide you through every step of the process, from initial consultation to final installation. Say goodbye to your old bathroom and hello to a space that reflects your personality and enhances your daily routine. Experience the ultimate in comfort, functionality, and aesthetics with our bathroom remodeling services in Brooklyn.
             </p>

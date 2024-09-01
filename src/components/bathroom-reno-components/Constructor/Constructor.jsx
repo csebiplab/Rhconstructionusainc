@@ -90,9 +90,9 @@ const Constructor = () => {
             <HeadingIcon text={headingIconText.chooseUs__IconTxt}/>
             </div>
 
-            <h4 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black text-center">
+            <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black text-center">
             Why Choose Our <span className="text-primary">Bathroom Remodeling Services</span>
-            </h4>
+            </h2>
           </div>
 
          
@@ -120,7 +120,7 @@ const Constructor = () => {
               className="mx-auto mt-[10px] w-[70px] h-[70px] border-2 rounded-full bg-white p-4 "
             />
             <div className="text-center">
-              <h6 className="text-[20px] font-bold py-2">{slide?.title}</h6>
+              <p className="text-[20px] font-bold py-2">{slide?.title}</p>
               <p className="text-base font-normal mt-2 mb-3  text-black ">
                 {slide.description}
               </p>

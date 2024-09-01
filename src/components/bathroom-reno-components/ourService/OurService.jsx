@@ -95,16 +95,16 @@ const OurService = () => {
                 <div className="flex justify-center lg:justify-normal items-center">
                   <HeadingIcon text={headingIconText.service__IconTxt} />
                 </div>
-                <h3 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
+                <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
                   Our Bathroom <br /> Remodeling Contractors <br />{" "}
                   <span className="text-primary"> Don't Do</span>
-                </h3>
+                </h2>
               </div>
 
-              <div className="flex justify-center items-center">
-                <p className="text-lg font-normal md:text-start text-center py-[10px]">
-                  We have done bathroom remodeling so many times. When
-                  considering a bathroom remodeling project in Brooklyn, there
+              <div className="flex flex-col justify-center items-center">
+                <h3 className="text-lg font-semibold md:text-start text-center py-[10px]">We have done bathroom remodeling so many times.</h3>
+                <p className="text-lg font-normal md:text-start text-center pb-[10px]">
+                   When considering a bathroom remodeling project in Brooklyn, there
                   are certain actions that contractors should avoid to ensure
                   the best results and customer satisfaction:
                 </p>

@@ -368,7 +368,7 @@ export function Header() {
         className="p-4 overflow-y-auto pb-24 !z-[1000000000000000000]"
       >
         <div className="mb-6 flex items-center justify-between">
-          <Typography variant="h5" color="blue-gray">
+          <Typography variant="p" color="blue-gray">
             RH Construction
           </Typography>
           <IconButton

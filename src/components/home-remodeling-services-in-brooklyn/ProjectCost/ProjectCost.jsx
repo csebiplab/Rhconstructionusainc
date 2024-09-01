@@ -12,12 +12,12 @@ const ProjectCost = () => {
             <div className="flex md:justify-normal justify-center md:items-start items-center">
             <HeadingIcon text={headingIconText.projectCost__HeadingIconText}/>
             </div>
-            <h3 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-normal text-black md:text-start text-center">
+            <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-normal text-black md:text-start text-center">
             How Much Does  
              <br className="hidden 2xl:block"/>{" "}
               <span className="text-primary-50">
               The Home Remodeling Project Cost? </span>
-            </h3>
+            </h2>
             <p className="text-lg font-normal md:text-start text-center pt-[10px]">
             Embarking on a home remodeling project is an exciting yet budget-conscious endeavor. When considering the cost, it's essential to factor in the expenses associated with hiring professionals. The total cost of a complete home renovation can vary widely, ranging from <b>$10,000 to $50,000</b>  or more. This range encompasses a spectrum of projects, from minor updates to major transformations. Factors influencing the overall cost include the size of the space, the extent of structural changes, the quality of materials selected, and the level of craftsmanship desired.
             </p>
