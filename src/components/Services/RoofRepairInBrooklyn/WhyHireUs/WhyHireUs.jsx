@@ -83,15 +83,15 @@ const WhyHireUs = () => {
               </div>
 
               <div>
-                <h3 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
+                <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
                 Why Choose Our  
                   <span className="text-primary"> Roof Repair Specialist</span>
-                </h3>
+                </h2>
               </div>
 
               <div>
                 <p className="text-lg font-normal md:text-start text-center py-[10px]">
-                Choose RH Construction USA Inc. for your roof repair needs and benefit from our expert craftsmanship, reliable service, and personalized solutions. Our skilled team delivers high-quality repairs tailored to your roof type and specific issues, ensuring durability and <Link className="text-primary hover:underline" href="https://en.wikipedia.org/wiki/Long-term_care">long-term protection.</Link> We prioritize transparency, efficiency, and customer satisfaction, making us
+                Choose RH Construction USA Inc. for your roof repair needs and benefit from our expert craftsmanship, reliable service, and personalized solutions. Our skilled team delivers high-quality repairs tailored to your roof type and specific issues, ensuring durability and <Link rel='nofollow' target="_blank" className="text-primary hover:underline" href="https://en.wikipedia.org/wiki/Long-term_care">long-term protection.</Link> We prioritize transparency, efficiency, and customer satisfaction, making us
                 </p>
               </div>
             </div>

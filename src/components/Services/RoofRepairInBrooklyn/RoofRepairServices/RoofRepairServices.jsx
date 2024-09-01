@@ -120,9 +120,9 @@ const RoofRepairServices = () => {
                         height={115}
                         className="-mt-12 5xl:-mt-16 w-[100px] 5xl:w-[115px] h-[100px] 5xl:h-[115px] mx-auto p-1 rounded-full border  border-primary shadow-lg bg-white"
                       />
-                      <h5 className="pt-[20px] text-[25px] text-black font-bold text-center">
+                      <p className="pt-[20px] text-[25px] text-black font-bold text-center">
                         {data.title}
-                      </h5>
+                      </p>
                       <p className="text-base 5xl:text-lg pb-[30px] font-normal text-center text-black pt-[5px]">
                         {data.desc}
                       </p>
@@ -138,9 +138,9 @@ const RoofRepairServices = () => {
               <HeadingIcon text={headingIconText.roofRepairServices__headingIconText}/>
               </div>
 
-              <h3 className="text-[25px] md:text-[27px] lg:text-[28px] xl:text-[30px] 2xl:text-[31px] 3xl:text-[33px] 4xl:text-[35px] 5xl:text-[36px] leading-normal font-bold text-black text-center md:text-left pb-[10px]">
+              <h2 className="text-[25px] md:text-[27px] lg:text-[28px] xl:text-[30px] 2xl:text-[31px] 3xl:text-[33px] 4xl:text-[35px] 5xl:text-[36px] leading-normal font-bold text-black text-center md:text-left pb-[10px]">
               Roof Repair <br />  <span className="text-primary">Services We Provide</span>
-              </h3>
+              </h2>
               <p className="text-black text-lg font-normal text-center md:text-left">At RH Construction USA Inc., we offer a full range of roof repair services in Brooklyn, NY, including leak repairs, shingle replacements, flat and metal roof fixes, tile and steel roof restoration, garage roof repairs, and emergency services. Our expert team delivers prompt, reliable, and high-quality solutions to keep your roof in optimal condition and protect your home or business.
               </p>
             </div>
