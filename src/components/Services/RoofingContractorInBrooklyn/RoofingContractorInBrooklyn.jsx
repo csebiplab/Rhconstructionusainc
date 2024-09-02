@@ -23,7 +23,7 @@ import WhyChoose from "./WhyChoose/WhyChoose";
 
 const RoofingContractorInBrooklyn = () => {
   return (
-    <div>
+    <div className="custom-container">
       <section>
         <RoofingContractorInBrooklynBanner />
       </section>

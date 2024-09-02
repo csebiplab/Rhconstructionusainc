@@ -62,10 +62,10 @@ const ProjectGallery = () => {
           <div className="flex flex-col justify-center items-center">
             <HeadingIcon text={headingIconText.gallery__IconTxt}/>
             <div>
-              <h3 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
+              <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
               Our Roofing Contractor<br className="block md:hidden"/>
                 <span className="text-primary"> Gallery of Past Projects</span>
-              </h3>
+              </h2>
             </div>
           </div>
         </div>
