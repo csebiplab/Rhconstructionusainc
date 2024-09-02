@@ -25,10 +25,10 @@ const ReadyToWorkWithUs = () => {
             <div className="flex md:justify-normal justify-center md:items-start items-center">
             <HeadingIcon text={headingIconText.readyToWorkWithUs__headingIconText}/>
             </div>
-            <h3 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
+            <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
             Start Your 
                <span className="text-primary"> Project With Us</span>
-            </h3>
+            </h2>
             <p className="text-lg font-normal md:text-start text-center py-[10px]">Start your project with us and experience top-notch roof repair services from a team of skilled professionals dedicated to quality and customer satisfaction. We offer expert solutions, clear communication, and reliable results to ensure your roofing needs are met efficiently and effectively. Reach out today to begin your project and protect your home with confidence. From initial consultation and detailed inspections to prompt repairs and final quality checks, we ensure a seamless and stress-free experience. We are committed to delivering exceptional craftsmanship and lasting results, tailored to your specific roofing needs. Let us handle your project with professionalism and expertise, providing you with peace of mind and a roof you can depend on. Contact us today to get started and see the difference our dedicated service can make.</p>
             <div className="flex justify-center md:justify-start pt-[15px]">
               <button
