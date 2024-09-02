@@ -20,7 +20,7 @@ import Review from "@/components/kitchen-remodeling-components/Review/Review";
 
 const RoofRepairInBrooklyn = () => {
   return (
-    <div>
+    <div className="custom-container">
       <section>
         <RoofRepairInBrooklynBanner />
       </section>

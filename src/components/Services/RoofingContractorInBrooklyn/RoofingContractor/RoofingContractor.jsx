@@ -25,13 +25,13 @@ const RoofingContractor = () => {
             <div className="flex md:justify-normal justify-center md:items-start items-center">
             <HeadingIcon text={headingIconText.roofingContractor__headingIconText}/>
             </div>
-            <h3 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
+            <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
             #1 Roofing Contractor 
             <br />
               <span className="text-primary">
               Brooklyn, NY 
               </span>
-            </h3>
+            </h2>
             <p className="text-lg font-normal md:text-start text-center py-[10px]">As the #1 roofing contractor in Brooklyn, NY, RH Construction USA Inc. is dedicated to providing superior roofing services for residential and commercial properties. Our expert team is well-versed in all aspects of roofing, from installation and repairs to routine maintenance, ensuring that every project is completed with precision and care. We use only the highest quality materials and the latest industry techniques to deliver results that not only meet but exceed client expectations. Whether you need a simple repair, a full roof replacement, or an inspection, our skilled professionals are committed to delivering top-notch service with a focus on durability and longevity. At RH Construction USA Inc., customer satisfaction is our top priority. We understand that your roof is a critical component of your property's protection, and we take every step to ensure it withstands the test of time and weather.</p>
             <div className="flex justify-center md:justify-start pt-[15px]">
               <button
