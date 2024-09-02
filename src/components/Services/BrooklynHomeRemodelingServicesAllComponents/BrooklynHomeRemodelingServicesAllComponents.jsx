@@ -19,7 +19,7 @@ import React from "react";
 
 const BrooklynHomeRemodelingServicesAllComponents = () => {
   return (
-    <div>
+    <div className="custom-container">
 
       <section>
         <BrooklynHomeRemodelingServiceHero />
