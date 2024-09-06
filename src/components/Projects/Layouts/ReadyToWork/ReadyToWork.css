@@ -1,0 +1,46 @@
+.ready__section {
+  background: rgba(255, 183, 3, 0.1);
+}
+
+.ready__heading {
+  color: #000;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.ready__p {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 250% */
+}
+
+.ready__btn {
+  background: #ffb703;
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.25);
+
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.ready__or {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.ready__phone {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}

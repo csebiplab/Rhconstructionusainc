@@ -1,0 +1,57 @@
+.filter__btn {
+  width: 192px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.filter__btn__active {
+  width: 192px;
+  border-radius: 6px;
+  background: #ffb703;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.project__parent {
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.project__type {
+  background: #ffb703;
+}
+
+.img__compnayHeading {
+  background: #fff;
+}
+
+.project__typeTxt {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 142.857% */
+}
+
+.project__typeAnCompnayTxt {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+}
