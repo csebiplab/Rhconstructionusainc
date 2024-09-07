@@ -1,6 +1,6 @@
 import mongoose, { Schema, models } from "mongoose";
 
-const AdminSchema = new Schema(
+const adminSchema = new Schema(
     {
         username: String,
         password: String,
@@ -11,6 +11,6 @@ const AdminSchema = new Schema(
 );
 
 // Check if the Admin model already exists before defining it
-const Admin = models.Admin || mongoose.model("Admin", AdminSchema);
+const AdminModel = models.Admin || mongoose.model("Admin", adminSchema);
 
-export default Admin;
+export default AdminModel;

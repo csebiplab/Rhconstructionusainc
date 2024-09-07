@@ -1,7 +1,7 @@
 import CredentialsProvider from "next-auth/providers/credentials";
 import { compare } from "bcrypt";
 import connectMongoDB from "./db";
-import Admin from "@/models/admin";
+import AdminModel from "@/models/admin.model";
 
 const authOptions = {
   session: {
@@ -18,7 +18,7 @@ const authOptions = {
         await connectMongoDB();
 
         // Find the admin by username
-        const admin = await Admin.findOne({ username });
+        const admin = await AdminModel.findOne({ username });
 
         // If admin is not found, return an error
         if (!admin) {
@@ -32,12 +32,13 @@ const authOptions = {
         }
 
         const user = { id: admin._id, name: admin.username };
+        console.log(user, "from auth")
         return user;
       },
     }),
   ],
   pages: {
-    signIn: "/",
+    // signIn: "/",
   },
 };
 
