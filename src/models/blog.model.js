@@ -1,6 +1,6 @@
 import mongoose, { Schema } from "mongoose";
 
-const metaDataSchema = new Schema(
+const blogSchema = new Schema(
 
   {
     blogTitle: String,
@@ -16,9 +16,6 @@ const metaDataSchema = new Schema(
   }
 );
 
-const blogContent =
-  mongoose.models.blogContent || mongoose.model("blogContent", metaDataSchema);
-export default blogContent;
-
-//database stored by post api
-//also get api applied
+const Blog =
+  mongoose.models.Blog || mongoose.model("Blog", blogSchema);
+export default Blog;

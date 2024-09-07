@@ -11,7 +11,7 @@ const metaDataSchema = new Schema(
   }
 );
 
-const blogCategory =
-  mongoose.models.blogCategory ||
-  mongoose.model("blogCategory", metaDataSchema);
-export default blogCategory;
+const BlogCategory =
+  mongoose.models.BlogCategory ||
+  mongoose.model("BlogCategory", metaDataSchema);
+export default BlogCategory;
