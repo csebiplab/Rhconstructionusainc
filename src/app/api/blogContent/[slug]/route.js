@@ -2,7 +2,7 @@
 import { NextResponse } from "next/server";
 import { ObjectId } from 'mongodb';
 import convertToLink from "@/helpers/trimSpace";
-import blogContent from "@/models/blogContentFile";
+import blogContent from "@/models/blog.model";
 import connectMongoDB from "@/lib/db";
 
 
